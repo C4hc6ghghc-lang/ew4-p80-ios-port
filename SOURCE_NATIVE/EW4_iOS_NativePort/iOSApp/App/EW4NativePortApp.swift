@@ -86,7 +86,10 @@ final class NativePresentationView: SKView {
         super.layoutSubviews()
         if bounds.size != lastLoggedSize {
             lastLoggedSize = bounds.size
-            startupLog.notice("SKView layout \(Double(bounds.width)) x \(Double(bounds.height)), scene=\(String(describing: scene.map { type(of: $0) }), privacy: .public)")
+            let width = Double(bounds.width)
+            let height = Double(bounds.height)
+            let selectedScene = String(describing: scene.map { type(of: $0) })
+            startupLog.notice("SKView layout \(width) x \(height), scene=\(selectedScene, privacy: .public)")
         }
     }
 }
