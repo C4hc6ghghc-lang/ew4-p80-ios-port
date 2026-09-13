@@ -39,7 +39,7 @@ say "Swift parity/regression tests"
 SWIFT_TESTING_COUNT="$(python3 - "$REPORT_DIR/swift_test.log" <<'PY'
 import re,sys
 s=open(sys.argv[1],encoding='utf-8',errors='replace').read()
-m=re.findall(r'Test run with (\d+) tests .* passed',s)
+m=re.findall(r'Test run with (\d+) tests\b[^\n]*\bpassed\b',s)
 print(m[-1] if m else '')
 PY
 )"
