@@ -36,7 +36,10 @@ final class NativeLaunchUITests: XCTestCase {
 
     @MainActor
     private func capture(_ app: XCUIApplication, name: String) throws -> [UInt8] {
-        let screenshot = app.screenshot()
+        XCTAssertEqual(app.state, .runningForeground)
+        // Application-scoped captures can crop a rotated simulator's buffer.
+        // Capture the physical screen, while separately asserting the app is active.
+        let screenshot = XCUIScreen.main.screenshot()
         let attachment = XCTAttachment(screenshot: screenshot)
         attachment.name = name
         attachment.lifetime = .keepAlways
@@ -52,7 +55,7 @@ final class NativeLaunchUITests: XCTestCase {
         let lit = stride(from: 0, to: pixels.count, by: 4).filter {
             max(pixels[$0], max(pixels[$0 + 1], pixels[$0 + 2])) > 40
         }.count
-        XCTAssertGreaterThan(Double(lit) / 4096, 0.12,
+        XCTAssertGreaterThan(Double(lit) / 4096, 0.40,
                              "\(name) is black or almost empty; process survival is insufficient")
         return pixels
     }

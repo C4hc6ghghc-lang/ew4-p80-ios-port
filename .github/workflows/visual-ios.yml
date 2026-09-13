@@ -10,15 +10,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: [baseline, fixed]
+        variant: [fixed]
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Select original scene host for comparison
-        if: matrix.variant == 'baseline'
-        run: git show ee67e7cd9af94ec5158b99e7045f837b6fb6871a:SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift > SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift
       - name: Test actual pixels and campaign/conquest taps
         shell: bash
         run: |
