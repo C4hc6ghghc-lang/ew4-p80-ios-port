@@ -1,28 +1,36 @@
-# P80 iOS build status — 2026-09-13
+# P80 黑屏修复：1.0.1（81）
 
-This is the user's P80 reverse-engineered iOS port, separate from the Emperor's Triumph Android mod. No game-rule changes from that mod request were applied here.
+旧版在 iPhone、iPad 模拟器上均复现全黑。修复版已在两种设备上通过主菜单显示、战役入口和征服入口的实际点击测试，并人工检查全屏截图。之前仅凭进程仍在运行判定启动通过，验证不足，不能证明画面正常；本次已补上画面及交互验收。
 
-## Verified
+## 修复内容
 
-- Device Release arm64 build and unsigned IPA packaging succeeded: run 34748461764, source ee67e7cd9af94ec5158b99e7045f837b6fb6871a.
-- iPhone 16 Pro and iPad Pro 11-inch (M4), both iOS 18.5: installation, launch and process checks after 15 seconds passed in run 34748471619. Its test step succeeded; the workflow as a whole failed because GitHub returned HTTP 502 while creating the evidence release. Screenshots were captured remotely but could not be retrieved for visual review.
-- Evidence-upload retries were added in 9401f65 without changing app source. Follow-up screenshot run 34748760655 was queued at handoff; its result is not counted as verified here.
-- 126 JS regression files, 286 Swift Testing cases and 9 XCTest cases passed on macOS.
-- Source reference inventory: 6321 exact hashes; native resource inventory: 1751 exact hashes. The final downloaded IPA's resources also match all 1751 original hashes and sizes.
-- Native preflight: 26 checks; Xcode candidate static gate: 6 checks.
+- 将 SwiftUI 的 SpriteView 场景承载改为持久的原生 SKView，通过 presentScene 显式挂载及切换场景，避免停留在初始空场景。
+- 资源路径严格定位到应用包的 GameAssets/Resources，检查关键启动资源；删除掩盖缺失目录的回退路径。
+- 启动失败会显示错误与重试按钮，同时输出启动阶段日志。日志已确认资源初始化、showMainMenu、主菜单创建及 scene attached=true 均执行成功。
+- 保留原资源包。1,751 个文件的大小和 SHA-256 均与用户提供的原生项目一致。
 
-## Packaging and compiler fixes
+对照测试表明问题位于启动/场景显示链，未发现本次打包遗漏原生资源。没有把包体积作为黑屏诊断依据，也没有通过添加无用资源扩大 IPA。
 
-The Apple SDK build required MainActor isolation for SpriteKit helper classes, corrections to missing scene members, closure lifetimes, rectangle conversion/hit testing, public move-result construction, placement labels, initialization captures, scrolling delta, and a tutorial assignment typo. The build pipeline installs the reference canvas dependency and correctly parses Swift Testing summaries.
+## 安装
 
-App metadata now declares landscape orientations, version 1.0.0 (80) and iPhone/iPad support. Resources are copied intact to GameAssets/Resources because a top-level Resources directory makes CFBundle misidentify the iOS app and prevents installation. Runtime resource lookup and payload gates use the same nested path, preserving all duplicate basenames.
+请使用 `EW4-P80-1.0.1-81-unsigned.ipa`，版本 1.0.1（81），iPhoneOS arm64，iOS 15 及以上，支持 iPhone、iPad 横屏。此交付包未签名，需要重新导入你原先使用的签名工具，以有效签名安装。旧文件名 EW4-P80-unsigned.ipa 和下载 ZIP 也已更新为本次修复版，避免误装旧版。
 
-## Delivery limits
+大小：31,197,103 字节（31.20 MB，约 29.75 MiB）。
 
-The IPA is unsigned and requires valid signing before physical-device installation. iOS 15+ is the deployment target; physical devices and complete campaign/conquest playthroughs have not been verified. A successful simulator process check is not visual or full gameplay acceptance.
+SHA-256：`ec9a8c55909249dc60d93de55361de122e32c1badd4d4dc72f1f8c7b2514bbd6`
 
-## GitHub
+## 验证记录
 
-Repository is now PUBLIC at the user's request. Standard macos-15 hosted Actions runs are free for this public repository. Twenty old Actions artifacts were deleted from the account; all three inspected repositories reported zero remaining artifacts. Billing settings and payment methods were not changed.
+- 设备构建：[34749328311](https://github.com/C4hc6ghghc-lang/ew4-p80-ios-port/actions/runs/34749328311)，应用源码 bf48f652f34ea1f9e1ba8961d1bbfd83a80e2e24。
+- 全屏界面测试：[34749688951](https://github.com/C4hc6ghghc-lang/ew4-p80-ios-port/actions/runs/34749688951)，测试源码 11a4c307d117d588f319829a0abe96757cfce018；与上述 IPA 的应用源码和资源相同。
+- 对照运行：[34749282171](https://github.com/C4hc6ghghc-lang/ew4-p80-ios-port/actions/runs/34749282171)，baseline 分支因复现全黑而预期失败，fixed 分支通过。
+- iPhone 16 Pro、iPad Pro 11-inch（M4），均为 iOS 18.5 模拟器；截图和阶段日志位于 visual-validation。
+- 126 个 JS 回归测试文件、286 项 Swift Testing、9 项 XCTest 通过；设备 IPA 结构与全部原生资源哈希检查通过。
 
-Builds and diagnostics are stored in draft Release assets, not Actions artifacts. The owner must sign in to retrieve drafts. Historical archive notes describing earlier blockers are superseded by this status file.
+尚未验证实体设备签名安装及完整战役/征服对局，不能把菜单通过等同于所有玩法均已验收。
+
+## 关于体积
+
+最初约 31 MB 的 IPA 解压后约 50.5 MB，其中原生资源约 45.6 MB。用户 ZIP 还包含参考 Web 工程、重复资产、测试及审计资料，因此源 ZIP 大小不能直接等同 IPA。体积核查详见 IPA体积核查.md；1,751 个文件齐全只说明没有漏掉所提供的原生资源，不证明该移植覆盖官方游戏的所有内容。
+
+此 P80 项目与《皇帝的凯旋》APK 分开；本次没有加入另一个 mod 请求中的无限资源或将领规则修改。
