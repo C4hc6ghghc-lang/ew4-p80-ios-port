@@ -15,7 +15,7 @@ pass=0; fail=0
 cd "$LEAN"
 while IFS= read -r f; do
   [ -n "$f" ] || continue
-  if node "$f" >> "$log" 2>&1; then pass=$((pass+1)); else echo "FAILED $f" >> "$log"; fail=$((fail+1)); fi
+  if node "$f" >> "$log" 2>&1; then pass=$((pass+1)); else echo "FAILED $f" | tee -a "$log"; tail -n 70 "$log"; fail=$((fail+1)); fi
 done < "$ROOT/js_test_list_126.txt"
 echo "JS_TEST_FILES_PASS=$pass FAIL=$fail TOTAL=$((pass+fail))" | tee -a "$log"
 [ "$pass" -eq 126 ] && [ "$fail" -eq 0 ] || { echo 'ERROR: mature SOURCE_LEAN regression failed' >&2; exit 2; }

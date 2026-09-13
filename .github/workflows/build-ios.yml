@@ -2,7 +2,7 @@ name: Build EW4 P80 unsigned IPA
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: ew4-p80-ipa-${{ github.ref }}
   cancel-in-progress: false
@@ -37,29 +37,35 @@ jobs:
           chmod +x BUILD_FROM_CODEX_MAC.sh
           chmod +x SOURCE_NATIVE/EW4_iOS_NativePort/BUILD_FROM_CODEX_MAC.sh
           chmod +x SOURCE_NATIVE/EW4_iOS_NativePort/Tools/build_unsigned_ipa.sh
+      - name: Install reference rendering test dependency
+        shell: bash
+        run: |
+          npm install --prefix "$RUNNER_TEMP/ew4-test-deps" --no-audit --no-fund skia-canvas@3.0.8
+          echo "NODE_PATH=$RUNNER_TEMP/ew4-test-deps/node_modules" >> "$GITHUB_ENV"
       - name: Run preserved checks and build IPA
         shell: bash
         run: |
           set -euo pipefail
           bash BUILD_FROM_CODEX_MAC.sh 2>&1 | tee cloud-build.log
-      - name: Upload unsigned IPA
-        uses: actions/upload-artifact@v4
-        with:
-          name: EW4-P80-unsigned-IPA
-          path: |
-            SOURCE_NATIVE/EW4_iOS_NativePort/build/EW4NativePort-unsigned.ipa
-            SOURCE_NATIVE/EW4_iOS_NativePort/build/EW4NativePort-unsigned.ipa.sha256
-          if-no-files-found: error
-          retention-days: 7
-      - name: Upload diagnostics even if build fails
+      - name: Save IPA and diagnostics to private draft release
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: EW4-P80-build-diagnostics
-          path: |
-            cloud-build.log
-            P80_CODEX_JS_REGRESSION.log
-            P80_MAP_UNIT_DYNAMIC_STATE_AUDIT.log
-            SOURCE_NATIVE/EW4_iOS_NativePort/build/reports/
-          if-no-files-found: warn
-          retention-days: 7
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import pathlib, zipfile
+          candidates = [pathlib.Path(x) for x in ('cloud-build.log', 'P80_CODEX_JS_REGRESSION.log', 'P80_MAP_UNIT_DYNAMIC_STATE_AUDIT.log')]
+          candidates += list(pathlib.Path('SOURCE_NATIVE/EW4_iOS_NativePort/build/reports').rglob('*'))
+          with zipfile.ZipFile('build-diagnostics.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
+              for path in candidates:
+                  if path.is_file(): archive.write(path, path.as_posix())
+          PY
+          tag="build-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          gh release create "$tag" --draft --target "$GITHUB_SHA" --title "P80 build ${GITHUB_RUN_NUMBER}" --notes "Private build output and diagnostics. Check the Actions run for build status. Any IPA is unsigned and requires device testing."
+          gh release upload "$tag" build-diagnostics.zip
+          ipa=SOURCE_NATIVE/EW4_iOS_NativePort/build/EW4NativePort-unsigned.ipa
+          if [ -f "$ipa" ] && [ -f "$ipa.sha256" ]; then
+            gh release upload "$tag" "$ipa" "$ipa.sha256"
+          fi
