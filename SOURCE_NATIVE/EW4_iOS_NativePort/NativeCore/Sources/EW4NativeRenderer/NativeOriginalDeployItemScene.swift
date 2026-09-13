@@ -35,9 +35,10 @@ public final class NativeOriginalDeployItemScene: SKScene {
 
     public init(store: NativeResourceStore, profile: NativePlayerProfile, commanderID: Int) throws {
         self.store = store; self.profile = profile
-        self.commanders = try store.commanders(); self.portraits = try store.portraitManifest(); self.items = try store.items(); self.strings = (try? store.stringsCN()) ?? [:]
+        let loadedCommanders = try store.commanders()
+        self.commanders = loadedCommanders; self.portraits = try store.portraitManifest(); self.items = try store.items(); self.strings = (try? store.stringsCN()) ?? [:]
         self.generalOverrides = try store.playerGeneralOverrides(); self.princessOverrides = try store.playerPrincessOverrides()
-        self.commanderIDs = profile.ownedCommanderIDs.filter { self.commanders[$0] != nil }.sorted()
+        self.commanderIDs = profile.ownedCommanderIDs.filter { loadedCommanders[$0] != nil }.sorted()
         self.commanderIndex = self.commanderIDs.firstIndex(of: commanderID) ?? 0
         super.init(size: CGSize(width: EW4LogicalSpace.width, height: EW4LogicalSpace.height))
         scaleMode = .aspectFit; anchorPoint = CGPoint(x: 0, y: 0); backgroundColor = .black

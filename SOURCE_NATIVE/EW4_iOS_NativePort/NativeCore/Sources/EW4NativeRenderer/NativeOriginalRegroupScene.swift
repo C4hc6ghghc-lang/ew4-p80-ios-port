@@ -19,8 +19,9 @@ public final class NativeOriginalRegroupScene: SKScene {
     private let backRect=NativeRect(x:0,y:275,width:45,height:45); private let commitRect=NativeOriginalFormGeometryCore.Regroup.regroupButton
     private let confirmRect=NativeOriginalFormGeometryCore.RegroupConfirm.confirmButton; private let cancelRect=NativeOriginalFormGeometryCore.RegroupConfirm.cancelButton
     public init(store:NativeResourceStore,profile:NativePlayerProfile,targetID:Int)throws{
-        self.store=store;self.profile=profile;self.targetID=targetID;commanders=try store.commanders();portraits=try store.portraitManifest();items=try store.items();strings=(try? store.stringsCN()) ?? [:];generalOverrides=try store.playerGeneralOverrides();princessOverrides=try store.playerPrincessOverrides()
-        let choices=profile.ownedCommanderIDs.filter{$0 != targetID && !NativePlayerProfile.princessIDs.contains($0) && commanders[$0] != nil}.sorted();sourceID=choices.first
+        let loadedCommanders = try store.commanders()
+        self.store=store;self.profile=profile;self.targetID=targetID;commanders=loadedCommanders;portraits=try store.portraitManifest();items=try store.items();strings=(try? store.stringsCN()) ?? [:];generalOverrides=try store.playerGeneralOverrides();princessOverrides=try store.playerPrincessOverrides()
+        let choices=profile.ownedCommanderIDs.filter{$0 != targetID && !NativePlayerProfile.princessIDs.contains($0) && loadedCommanders[$0] != nil}.sorted();sourceID=choices.first
         super.init(size:CGSize(width:568,height:320));scaleMode = .aspectFit;anchorPoint=CGPoint(x:0,y:0);backgroundColor = .black;root.position=CGPoint(x:0,y:320);addChild(root);render()
     }
     @available(*,unavailable) required init?(coder:NSCoder){fatalError()}
