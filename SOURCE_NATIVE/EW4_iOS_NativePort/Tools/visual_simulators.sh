@@ -29,6 +29,8 @@ while IFS=$'\t' read -r family udid; do
   fi
   xcrun xcresulttool export attachments --path "$REPORT/$family.xcresult" \
     --output-path "$REPORT/$family-screenshots" || true
+  xcrun simctl spawn "$udid" log show --last 15m --style compact \
+    --predicate 'subsystem == "local.ew4.nativeport"' > "$REPORT/$family-startup.log" 2>&1 || true
   xcrun simctl shutdown "$udid" || true
 done < "$REPORT/selected-devices.tsv"
 exit "$failed"

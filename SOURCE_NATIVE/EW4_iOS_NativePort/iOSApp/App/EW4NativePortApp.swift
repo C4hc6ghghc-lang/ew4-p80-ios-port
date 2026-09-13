@@ -2,8 +2,11 @@ import SwiftUI
 import Combine
 import SpriteKit
 import UIKit
+import OSLog
 import EW4NativeCore
 import EW4NativeRenderer
+
+private let startupLog = Logger(subsystem: "local.ew4.nativeport", category: "startup")
 
 @main
 struct EW4NativePortApp: App {
@@ -40,7 +43,10 @@ struct NativeGameHost: View {
                 .foregroundStyle(.white)
             #endif
         }
-        .task { coordinator.bootIfNeeded() }
+        .task {
+            startupLog.notice("SwiftUI host task started")
+            coordinator.bootIfNeeded()
+        }
     }
 }
 
@@ -52,7 +58,8 @@ struct NativeSceneView: UIViewRepresentable {
     let scene: SKScene
 
     func makeUIView(context: Context) -> SKView {
-        let view = SKView(frame: .zero)
+        let view = NativePresentationView(frame: .zero)
+        startupLog.notice("Created native SKView")
         view.backgroundColor = .black
         view.ignoresSiblingOrder = true
         view.preferredFramesPerSecond = 60
@@ -63,8 +70,24 @@ struct NativeSceneView: UIViewRepresentable {
     }
 
     func updateUIView(_ view: SKView, context: Context) {
-        if view.scene !== scene { view.presentScene(scene) }
+        if view.scene !== scene {
+            startupLog.notice("Presenting scene \(String(describing: type(of: scene)), privacy: .public), nodes=\(scene.children.count)")
+            view.presentScene(scene)
+            startupLog.notice("Scene attached=\(scene.view === view)")
+        }
         view.accessibilityValue = String(describing: type(of: scene))
+    }
+}
+
+@MainActor
+final class NativePresentationView: SKView {
+    private var lastLoggedSize: CGSize = .zero
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if bounds.size != lastLoggedSize {
+            lastLoggedSize = bounds.size
+            startupLog.notice("SKView layout \(Double(bounds.width)) x \(Double(bounds.height)), scene=\(String(describing: scene.map { type(of: $0) }), privacy: .public)")
+        }
     }
 }
 
@@ -95,10 +118,12 @@ final class NativeGameCoordinator: ObservableObject {
     }
 
     func bootIfNeeded() {
+        startupLog.notice("Bootstrap entered; alreadyBooted=\(self.booted)")
         guard !booted else { return }
         booted = true
         do {
             let store = try NativeResourceStore()
+            startupLog.notice("Resources resolved: \(store.resourceRoot.path, privacy: .public)")
             let support = try FileManager.default.url(
                 for: .applicationSupportDirectory,
                 in: .userDomainMask,
@@ -111,12 +136,14 @@ final class NativeGameCoordinator: ObservableObject {
             self.profileStore = profileStore
             self.battleSaveStore = battleSaveStore
             self.audioController = NativeAudioController(resourceRoot: store.resourceRoot)
+            startupLog.notice("Storage and audio initialized")
             #if DEBUG
             let report = try NativeResourceAuditor.audit(resourceRoot: store.resourceRoot)
             guard report.passed else { debugMessage = "Native resource audit failed"; return }
             #endif
             showMainMenu()
         } catch {
+            startupLog.error("Bootstrap failed: \(String(describing: error), privacy: .public)")
             startupError = "无法读取游戏资源或存档目录：\(error.localizedDescription)"
             #if DEBUG
             debugMessage = "Native boot error: \(error.localizedDescription)"
@@ -127,6 +154,7 @@ final class NativeGameCoordinator: ObservableObject {
     private var currentProfile: NativePlayerProfile { profileStore?.load() ?? .fresh() }
 
     private func showMainMenu() {
+        startupLog.notice("showMainMenu entered")
         guard let store else { return }
         let menu = NativeOriginalMainMenuScene(store: store)
         menu.achievementHandler = { [weak self] in self?.showAchievement() }
@@ -142,6 +170,7 @@ final class NativeGameCoordinator: ObservableObject {
             }
         }
         scene = menu
+        startupLog.notice("Main menu selected; top-level nodes=\(menu.children.count)")
         setStatus("Native main menu")
     }
 
