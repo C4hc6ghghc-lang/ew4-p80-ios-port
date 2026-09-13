@@ -84,7 +84,7 @@ public final class NativeOriginalDeployItemScene: SKScene {
         let pair = NativeHeadquartersManagementCore.equipmentPair(profile: profile, commander: c)
         for i in 0..<2 {
             let r = G.equipmentSlots[i]
-            if let id = pair[i], let item = item(id), let icon = itemNode(item) { placeAspectFit(icon, .init(x:r.origin.x+2,y:r.origin.y+2,width:41,height:41), z:6); root.addChild(icon) }
+            if let id = pair[i], let item = item(id), let icon = itemNode(item) { placeAspectFit(icon, .init(x:r.origin.x+2,y:r.origin.y+2,width:41,height:41), 6); root.addChild(icon) }
             if i == selectedEquipmentSlot, let sel=sprite("image_ui_hd","item_selected_ex.png"){place(sel,r,7);root.addChild(sel)}
         }
         if let frame=sprite("image_ui_hd","common_lineframe_bold.png"){place(frame,G.descriptionGroup,4);root.addChild(frame)}
