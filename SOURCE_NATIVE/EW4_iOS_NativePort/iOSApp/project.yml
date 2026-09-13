@@ -32,8 +32,8 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: local.ew4.nativeport
         PRODUCT_NAME: EW4NativePort
-        MARKETING_VERSION: "1.0.0"
-        CURRENT_PROJECT_VERSION: "80"
+        MARKETING_VERSION: "1.0.1"
+        CURRENT_PROJECT_VERSION: "81"
         SWIFT_VERSION: 6.0
         IPHONEOS_DEPLOYMENT_TARGET: "15.0"
         GENERATE_INFOPLIST_FILE: YES
@@ -45,3 +45,24 @@ targets:
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
         TARGETED_DEVICE_FAMILY: "1,2"
         CODE_SIGN_STYLE: Automatic
+  EW4NativePortUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: EW4NativePort
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.ew4.nativeport.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+        TEST_TARGET_NAME: EW4NativePort
+schemes:
+  EW4NativePort:
+    build:
+      targets:
+        EW4NativePort: all
+    test:
+      targets:
+        - EW4NativePortUITests

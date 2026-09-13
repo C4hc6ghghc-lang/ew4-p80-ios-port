@@ -1,0 +1,48 @@
+name: Verify iOS rendering and menu taps
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  visual:
+    runs-on: macos-15
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [baseline, fixed]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Select original scene host for comparison
+        if: matrix.variant == 'baseline'
+        run: git show ee67e7cd9af94ec5158b99e7045f837b6fb6871a:SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift > SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift
+      - name: Test actual pixels and campaign/conquest taps
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
+          if ! command -v xcodegen >/dev/null; then brew install xcodegen; fi
+          mkdir -p visual-results
+          bash SOURCE_NATIVE/EW4_iOS_NativePort/Tools/visual_simulators.sh 2>&1 | tee visual-results/run.log
+      - name: Save visual evidence with retries
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          zip -qr visual-evidence.zip visual-results
+          tag="visual-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${{ matrix.variant }}"
+          for attempt in 1 2 3; do
+            if gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --draft --target "$GITHUB_SHA" --title "P80 visual ${{ matrix.variant }} ${GITHUB_RUN_NUMBER}" --notes "Screenshots and real UI tests. Baseline comparison may fail; inspect test results."; then break; fi
+            sleep 5
+          done
+          gh release view "$tag" >/dev/null
+          for attempt in 1 2 3; do
+            if gh release upload "$tag" visual-evidence.zip --clobber; then exit 0; fi
+            sleep 5
+          done
+          exit 1

@@ -1,6 +1,7 @@
 import SwiftUI
 import Combine
 import SpriteKit
+import UIKit
 import EW4NativeCore
 import EW4NativeRenderer
 
@@ -16,8 +17,21 @@ struct NativeGameHost: View {
 
     var body: some View {
         ZStack(alignment: .topLeading) {
-            SpriteView(scene: coordinator.scene, options: [.ignoresSiblingOrder])
+            NativeSceneView(scene: coordinator.scene)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea()
+            if let error = coordinator.startupError {
+                VStack(spacing: 16) {
+                    Text("游戏启动失败").font(.headline)
+                    Text(error).multilineTextAlignment(.center)
+                    Button("重新尝试") { coordinator.retryBoot() }
+                }
+                .padding(24)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.black)
+                .foregroundStyle(.white)
+                .accessibilityIdentifier("native.startup.error")
+            }
             #if DEBUG
             Text(coordinator.debugMessage)
                 .font(.system(size: 10, weight: .medium, design: .monospaced))
@@ -30,8 +44,33 @@ struct NativeGameHost: View {
     }
 }
 
+// Keep a single SKView and explicitly present each newly selected scene.
+// SwiftUI state changes must reach SpriteKit's presentation layer, including
+// the first transition from the placeholder scene to the main menu.
+@MainActor
+struct NativeSceneView: UIViewRepresentable {
+    let scene: SKScene
+
+    func makeUIView(context: Context) -> SKView {
+        let view = SKView(frame: .zero)
+        view.backgroundColor = .black
+        view.ignoresSiblingOrder = true
+        view.preferredFramesPerSecond = 60
+        view.isAccessibilityElement = true
+        view.accessibilityIdentifier = "native.game.surface"
+        view.accessibilityLabel = "欧陆战争4游戏画面"
+        return view
+    }
+
+    func updateUIView(_ view: SKView, context: Context) {
+        if view.scene !== scene { view.presentScene(scene) }
+        view.accessibilityValue = String(describing: type(of: scene))
+    }
+}
+
 @MainActor
 final class NativeGameCoordinator: ObservableObject {
+    @Published var startupError: String?
     @Published var scene: SKScene = {
         let scene = SKScene(size: CGSize(width: EW4LogicalSpace.width, height: EW4LogicalSpace.height))
         scene.scaleMode = .aspectFit
@@ -48,6 +87,12 @@ final class NativeGameCoordinator: ObservableObject {
     private var battleSaveStore: NativeBattleSaveSlotStore?
     private var currentLaunch: NativeOriginalOuterMenuScene.BattleLaunch?
     private var audioController: NativeAudioController?
+
+    func retryBoot() {
+        booted = false
+        startupError = nil
+        bootIfNeeded()
+    }
 
     func bootIfNeeded() {
         guard !booted else { return }
@@ -72,10 +117,9 @@ final class NativeGameCoordinator: ObservableObject {
             #endif
             showMainMenu()
         } catch {
+            startupError = "无法读取游戏资源或存档目录：\(error.localizedDescription)"
             #if DEBUG
             debugMessage = "Native boot error: \(error.localizedDescription)"
-            #else
-            assertionFailure("Native boot error: \(error)")
             #endif
         }
     }

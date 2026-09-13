@@ -10,10 +10,13 @@ public final class NativeResourceStore: @unchecked Sendable {
         self.bundle = bundle
         if let url = bundle.resourceURL?.appendingPathComponent("GameAssets/Resources"), FileManager.default.fileExists(atPath: url.path) {
             self.resourceRoot = url
-        } else if let url = bundle.resourceURL {
-            self.resourceRoot = url
         } else {
-            throw CocoaError(.fileNoSuchFile)
+            throw CocoaError(.fileNoSuchFile, userInfo: [NSLocalizedDescriptionKey: "游戏资源目录 GameAssets/Resources 缺失"])
+        }
+        for relative in ["Data/battles_runtime.json", "Textures/mainmenu_wide.png", "Textures/title_hd.png"] {
+            guard FileManager.default.fileExists(atPath: resourceRoot.appendingPathComponent(relative).path) else {
+                throw CocoaError(.fileNoSuchFile, userInfo: [NSLocalizedDescriptionKey: "游戏资源缺失：\(relative)"])
+            }
         }
     }
 
