@@ -19,6 +19,10 @@ public struct NativeRect: Equatable, Sendable {
         self.origin = .init(x: x, y: y)
         self.size = .init(width: width, height: height)
     }
+    public func contains(_ point: NativePoint) -> Bool {
+        point.x >= origin.x && point.x <= origin.x + size.width &&
+        point.y >= origin.y && point.y <= origin.y + size.height
+    }
 }
 
 public struct HexCell: Equatable, Hashable, Sendable {

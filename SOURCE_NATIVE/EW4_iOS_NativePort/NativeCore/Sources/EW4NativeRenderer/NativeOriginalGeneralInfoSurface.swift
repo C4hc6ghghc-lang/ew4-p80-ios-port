@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 enum NativeOriginalGeneralInfoSurface {
     static func render(
         parent: SKNode,

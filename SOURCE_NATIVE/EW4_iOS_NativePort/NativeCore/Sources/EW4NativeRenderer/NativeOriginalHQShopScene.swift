@@ -148,7 +148,7 @@ public final class NativeOriginalHQShopScene: SKScene {
 
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard startedInInventory, let t = touches.first else { return }; let p = nativePoint(t.location(in: self))
-        if abs(delta) > 3 { dragged = true }
+        if abs(p.y - startY) > 3 { dragged = true }
         inventoryScroll = NativeShopFormCore.buyerScroll(startScroll: startScroll, startY: startY, currentY: p.y); render()
     }
 

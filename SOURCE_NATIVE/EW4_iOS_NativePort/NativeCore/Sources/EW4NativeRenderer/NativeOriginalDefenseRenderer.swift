@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalDefenseRenderer {
     enum Kind { case installation, fortress }
     enum Action: Equatable { case close, confirm, select(Int), none }

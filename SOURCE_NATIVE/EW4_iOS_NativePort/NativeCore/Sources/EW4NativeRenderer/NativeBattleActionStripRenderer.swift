@@ -70,6 +70,7 @@ public struct NativeBattleActionButton: Equatable, Sendable {
     public init(_ id: NativeBattleActionID, enabled: Bool = true) { self.id = id; self.enabled = enabled }
 }
 
+@MainActor
 final class NativeBattleActionStripRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

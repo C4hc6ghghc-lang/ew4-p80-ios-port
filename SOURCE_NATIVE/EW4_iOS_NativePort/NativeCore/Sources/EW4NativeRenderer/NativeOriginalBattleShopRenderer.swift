@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalBattleShopRenderer {
     enum Action: Equatable { case close, buy(Int), sell(Int), none }
     private enum Selection: Equatable { case seller(Int), buyer(Int) }

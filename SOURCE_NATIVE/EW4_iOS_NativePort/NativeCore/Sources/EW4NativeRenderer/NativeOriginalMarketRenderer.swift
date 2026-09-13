@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalMarketRenderer {
     enum Action: Equatable { case close, buy(Int), sell(Int), none }
     private weak var parent: SKNode?

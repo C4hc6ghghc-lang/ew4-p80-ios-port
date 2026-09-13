@@ -45,6 +45,7 @@ public final class NativeBattleScene: SKScene {
     public let interactionLayer = SKNode()
     public let hudLayer = SKNode()
     public let formLayer = SKNode()
+    private let nativeGridLayer = SKShapeNode()
     private let tutorialWorldLayer = SKNode()
     private let tutorialOverlayLayer = SKNode()
 
@@ -360,7 +361,7 @@ public final class NativeBattleScene: SKScene {
         sprites: [String: SpriteManifestEntry],
         persistenceContext: NativeBattlePersistenceContext,
         profileRuntime: NativePlayerProfileRuntime,
-        roundProjectionProvider: NativeRoundRuntimeAdapter.ProjectionProvider
+        roundProjectionProvider: @escaping NativeRoundRuntimeAdapter.ProjectionProvider
     ) throws {
         activeSession = session
         gameplayState = gameplay
@@ -415,11 +416,11 @@ public final class NativeBattleScene: SKScene {
             parent: formLayer, store: store, spriteManifest: sprites, commanders: commanderCatalog
         )
         let portraitManifest = (try? store.portraitManifest()) ?? [:]
-        originalTavernRenderer = NativeOriginalTavernRenderer(parent: formLayer, store: store, portraits: portraitManifest, items: items)
+        originalTavernRenderer = NativeOriginalTavernRenderer(parent: formLayer, store: store, portraits: portraitManifest, items: itemEffectCatalog)
         originalMarketRenderer = NativeOriginalMarketRenderer(parent: formLayer, store: store)
         originalBattleShopRenderer = NativeOriginalBattleShopRenderer(parent: formLayer, store: store)
         originalBattleUnitInfoRenderer = NativeOriginalBattleUnitInfoRenderer(parent: formLayer, store: store, portraits: portraitManifest)
-        originalBattleGeneralInfoRenderer = NativeOriginalBattleGeneralInfoRenderer(parent: formLayer, store: store, portraits: portraitManifest, strings: stringCatalog, items: items)
+        originalBattleGeneralInfoRenderer = NativeOriginalBattleGeneralInfoRenderer(parent: formLayer, store: store, portraits: portraitManifest, strings: stringCatalog, items: itemEffectCatalog)
         originalGeneralDeploymentRenderer = NativeOriginalBattleGeneralDeploymentRenderer(parent: formLayer, store: store, portraits: portraitManifest)
         originalActionResourceRenderer = NativeOriginalActionResourceRenderer(parent: formLayer, store: store, spriteManifest: sprites)
         originalRecruitUnitRenderer = NativeOriginalRecruitUnitRenderer(parent: formLayer, store: store)
@@ -1201,8 +1202,8 @@ public final class NativeBattleScene: SKScene {
         switch command.string ?? "" {
         case "group_res": base = .init(x:0,y:0,width:208,height:23)
         case "group_incom": base = .init(x:0,y:31,width:110,height:48)
-        case "btn_next": base = NativeBattleHUDCore.next
-        case "btn_undo": base = NativeBattleHUDCore.undo
+        case "btn_next": let r = NativeBattleHUDCore.next; base = .init(x: r.x, y: r.y, width: r.width, height: r.height)
+        case "btn_undo": let r = NativeBattleHUDCore.undo; base = .init(x: r.x, y: r.y, width: r.width, height: r.height)
         case "btn_bar", "btn_trading", "btn_general", "btn_item", "btn_training", "btn_upgrade", "btn_city", "btn_factory", "btn_defense", "btn_fortress", "btn_ship": base = battleActionStripRenderer?.rect(for: command.string ?? "")
         case "btn_buy_1", "btn_buy_2", "btn_buy_3", "btn_buy_4", "btn_sell_1", "btn_sell_2", "btn_sell_3", "btn_sell_4": base = originalMarketRenderer?.rect(alias: command.string ?? "")
         case "lbox_unit": base = originalRecruitUnitRenderer?.rect(alias: "lbox_unit", row: command.row)

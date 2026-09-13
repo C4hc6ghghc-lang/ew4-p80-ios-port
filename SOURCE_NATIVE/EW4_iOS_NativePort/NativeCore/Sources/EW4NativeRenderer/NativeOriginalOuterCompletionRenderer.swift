@@ -5,6 +5,7 @@ import EW4NativeCore
 
 /// Original `form_complete` renderer. Campaign completion, Asia Challenge and
 /// Conquest summary all reuse the same recovered 346x190 surface.
+@MainActor
 final class NativeOriginalOuterCompletionRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

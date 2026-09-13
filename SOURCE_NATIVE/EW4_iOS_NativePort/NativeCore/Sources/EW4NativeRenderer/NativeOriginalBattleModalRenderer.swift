@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalBattleModalRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

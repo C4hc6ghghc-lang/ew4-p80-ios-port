@@ -62,7 +62,7 @@ public final class NativeOriginalTutorialScene: SKScene {
         if let c=sprite("image_ui_hd","button_close.png"){place(c,noticeCloseRect,26);root.addChild(c)}
     }
     public override func touchesBegan(_ touches:Set<UITouch>,with event:UIEvent?){
-        guard noticeVisible,let t=touches.first else{return};let p=nativePoint(t.location(in:self));noticeDragStartY=p.y;noticeDragStartScroll=noticeScroll;draggingNoticeScrollbar=contains(noticeScrollbarTrack,p);draggingNoticeContent=!draggingNoticeScrollbar && contains(noticeViewport,p)
+        guard noticeVisible,let t=touches.first else{return};let p=nativePoint(t.location(in:self));noticeDragStartY=p.y;noticeDragStartScroll=noticeScroll;draggingNoticeScrollbar=contains(noticeScrollbarTrack,p);draggingNoticeContent = !draggingNoticeScrollbar && contains(noticeViewport,p)
     }
     public override func touchesMoved(_ touches:Set<UITouch>,with event:UIEvent?){
         guard noticeVisible,let t=touches.first else{return};let p=nativePoint(t.location(in:self));let count=noticeLines.count

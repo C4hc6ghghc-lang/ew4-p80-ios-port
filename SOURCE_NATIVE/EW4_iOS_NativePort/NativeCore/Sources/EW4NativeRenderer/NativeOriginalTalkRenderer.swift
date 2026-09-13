@@ -5,6 +5,7 @@ import EW4NativeCore
 
 /// SpriteKit renderer for the mature P39/original EW4 Talk form. It lives in
 /// screen-space `formLayer`, never in the zooming/panning world layer.
+@MainActor
 final class NativeOriginalTalkRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

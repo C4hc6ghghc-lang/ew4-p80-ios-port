@@ -5,6 +5,7 @@ import EW4NativeCore
 
 /// Screen-space renderer for original form_stageintro. Coordinates are the
 /// recovered XML/P39 logical pixels and never inherit world camera transforms.
+@MainActor
 final class NativeOriginalStageIntroRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

@@ -6,6 +6,7 @@ import EW4NativeCore
 /// Native binding for original `form_recruitgeneral` (300x275).
 /// Recruitment semantics remain in `NativeBattleTavernCore`; this renderer only
 /// restores the original four-row presentation and hit geometry.
+@MainActor
 final class NativeOriginalTavernRenderer {
     enum Action: Equatable { case close, recruit(Int), info(Int), none }
     private weak var parent: SKNode?

@@ -49,14 +49,14 @@ public final class NativeOriginalDeployItemScene: SKScene {
 
     private func render() {
         root.removeAllChildren()
-        if let bg = textureNode("campaign_wide.png") { place(bg, .init(x: 0, y: 0, width: 568, height: 320), z: 0); root.addChild(bg) }
+        if let bg = textureNode("campaign_wide.png") { place(bg, .init(x: 0, y: 0, width: 568, height: 320), 0); root.addChild(bg) }
         let dim = shape(.init(x: 0, y: 0, width: 568, height: 320), fill: UIColor(white: 0, alpha: 0.35), stroke: .clear); dim.zPosition = 1; root.addChild(dim)
-        if let board = sprite("image_ui_hd", "form_back.png") { place(board, G.screenFrame, z: 2); root.addChild(board) }
+        if let board = sprite("image_ui_hd", "form_back.png") { place(board, G.screenFrame, 2); root.addChild(board) }
         else { let board = shape(G.screenFrame, fill: ui(222,216,203), stroke: ui(111,104,92)); board.zPosition = 2; root.addChild(board) }
         label(strings["title_deployitem"] ?? "物  品", .init(x:G.screenFrame.origin.x,y:G.screenFrame.origin.y+4,width:G.screenFrame.size.width,height:22), 9, ui(75,69,61), 4)
-        if let close = sprite("image_ui_hd", "button_close.png") { place(close, G.closeButton, z: 8); root.addChild(close) }
-        if let prev = sprite("image_ui_hd", "button_changegeneral_gray.png") { place(prev, G.prevButton, z: 5); root.addChild(prev) }
-        if let next = sprite("image_ui_hd", "button_changegeneral_gray_2.png") { place(next, G.nextButton, z: 5); root.addChild(next) }
+        if let close = sprite("image_ui_hd", "button_close.png") { place(close, G.closeButton, 8); root.addChild(close) }
+        if let prev = sprite("image_ui_hd", "button_changegeneral_gray.png") { place(prev, G.prevButton, 5); root.addChild(prev) }
+        if let next = sprite("image_ui_hd", "button_changegeneral_gray_2.png") { place(next, G.nextButton, 5); root.addChild(next) }
         guard let c = commander else { label(strings["text_empty"] ?? "无", .init(x:G.screenFrame.origin.x,y:120,width:G.screenFrame.size.width,height:30), 9, ui(70,65,57), 6); return }
         renderCommander(c)
         renderInventory()
@@ -64,7 +64,7 @@ public final class NativeOriginalDeployItemScene: SKScene {
     }
 
     private func renderCommander(_ c: Commander) {
-        if let p = portraitNode(id: c.id) { place(p, G.commanderPortrait, z: 5); root.addChild(p); let border=shape(G.commanderPortrait,fill:.clear,stroke:ui(119,105,79));border.zPosition=5.1;root.addChild(border) }
+        if let p = portraitNode(id: c.id) { place(p, G.commanderPortrait, 5); root.addChild(p); let border=shape(G.commanderPortrait,fill:.clear,stroke:ui(119,105,79));border.zPosition=5.1;root.addChild(border) }
         if let nameboard=sprite("image_ui_hd","general_nameboard.png"){place(nameboard,G.commanderName,5.2);root.addChild(nameboard)}
         label(strings["name_\(c.name)"] ?? c.name, G.commanderName, 6.2, ui(73,67,58), 6)
 
@@ -91,7 +91,7 @@ public final class NativeOriginalDeployItemScene: SKScene {
         if let split=sprite("image_ui_hd","common_boldline.png"){place(split,G.split,4.5);root.addChild(split)}
         if let group=sprite("image_ui_hd","common_lineframe_bold.png"){place(group,G.itemsGroup,4);root.addChild(group)}
         let buttonText=equipButtonText(c)
-        if let b=sprite("image_ui_hd", "button_confirm_blue.png") { place(b, G.equipButton, z: 7); root.addChild(b) }
+        if let b=sprite("image_ui_hd", "button_confirm_blue.png") { place(b, G.equipButton, 7); root.addChild(b) }
         label(buttonText, G.equipButton, 6.5, .white, 8)
     }
 
@@ -121,7 +121,7 @@ public final class NativeOriginalDeployItemScene: SKScene {
             let r=G.itemRect(index:i,scroll:inventoryScroll)
             let slot=bank.slots[i]
             if !slot.isEmpty, let def=item(slot.item) {
-                if let icon=itemNode(def){placeAspectFit(icon,.init(x:r.origin.x+2,y:r.origin.y+2,width:41,height:37),z:2);inventoryContent.addChild(icon)}
+                if let icon=itemNode(def){placeAspectFit(icon,.init(x:r.origin.x+2,y:r.origin.y+2,width:41,height:37),2);inventoryContent.addChild(icon)}
                 if slot.count>1{label("×\(slot.count)",.init(x:r.origin.x+2,y:r.origin.y+35,width:41,height:9),4.5,ui(75,68,59),3,parent:inventoryContent)}
             }
             if selectedBankIndex == i, let sel=sprite("image_ui_hd","item_selected_ex.png"){place(sel,r,3.5);inventoryContent.addChild(sel)}
@@ -161,8 +161,8 @@ public final class NativeOriginalDeployItemScene: SKScene {
     private func textureNode(_ file:String)->SKSpriteNode?{guard let image=UIImage(contentsOfFile:store.url("Textures",file).path)?.cgImage else{return nil};return SKSpriteNode(texture:SKTexture(cgImage:image))}
     private func sprite(_ folder:String,_ file:String)->SKSpriteNode?{guard let image=UIImage(contentsOfFile:store.url("Sprites/\(folder)",file).path)?.cgImage else{return nil};return SKSpriteNode(texture:SKTexture(cgImage:image))}
     private func shape(_ rect:NativeRect,fill:UIColor,stroke:UIColor)->SKShapeNode{let n=SKShapeNode(rect:CGRect(x:rect.origin.x,y:-(rect.origin.y+rect.size.height),width:rect.size.width,height:rect.size.height));n.fillColor=fill;n.strokeColor=stroke;n.lineWidth=1;return n}
-    private func place(_ n:SKSpriteNode,_ r:NativeRect,z:CGFloat){n.anchorPoint=CGPoint(x:0,y:1);n.position=CGPoint(x:r.origin.x,y:-r.origin.y);n.size=CGSize(width:r.size.width,height:r.size.height);n.zPosition=z}
-    private func placeAspectFit(_ n:SKSpriteNode,_ r:NativeRect,_ z:CGFloat){let s=n.texture?.size() ?? .zero;guard s.width>0 && s.height>0 else{place(n,r,z:z);return};let scale=min(CGFloat(r.size.width)/s.width,CGFloat(r.size.height)/s.height),w=s.width*scale,h=s.height*scale;n.anchorPoint=CGPoint(x:0,y:1);n.position=CGPoint(x:r.origin.x+(r.size.width-Double(w))/2,y:-(r.origin.y+(r.size.height-Double(h))/2));n.size=CGSize(width:w,height:h);n.zPosition=z}
+    private func place(_ n:SKSpriteNode,_ r:NativeRect,_ z:CGFloat){n.anchorPoint=CGPoint(x:0,y:1);n.position=CGPoint(x:r.origin.x,y:-r.origin.y);n.size=CGSize(width:r.size.width,height:r.size.height);n.zPosition=z}
+    private func placeAspectFit(_ n:SKSpriteNode,_ r:NativeRect,_ z:CGFloat){let s=n.texture?.size() ?? .zero;guard s.width>0 && s.height>0 else{place(n,r,z);return};let scale=min(CGFloat(r.size.width)/s.width,CGFloat(r.size.height)/s.height),w=s.width*scale,h=s.height*scale;n.anchorPoint=CGPoint(x:0,y:1);n.position=CGPoint(x:r.origin.x+(r.size.width-Double(w))/2,y:-(r.origin.y+(r.size.height-Double(h))/2));n.size=CGSize(width:w,height:h);n.zPosition=z}
     private func label(_ text:String,_ r:NativeRect,_ size:CGFloat,_ color:UIColor,_ z:CGFloat,parent:SKNode?=nil,lines:Int=1){if lines>1||text.contains("\n"){let a=text.split(separator:"\n",omittingEmptySubsequences:false);let count=max(1,min(lines,a.count));let h=r.size.height/Double(count);for i in 0..<count{label(String(a[i]),.init(x:r.origin.x,y:r.origin.y+Double(i)*h,width:r.size.width,height:h),size,color,z,parent:parent)};return};let n=SKLabelNode(fontNamed:"PingFangSC-Semibold");n.text=text;n.fontSize=size;n.fontColor=color;n.horizontalAlignmentMode = .center;n.verticalAlignmentMode = .center;n.position=CGPoint(x:r.origin.x+r.size.width/2,y:-(r.origin.y+r.size.height/2));n.zPosition=z;(parent ?? root).addChild(n)}
     private func nativePoint(_ p:CGPoint)->NativePoint{.init(x:p.x,y:EW4LogicalSpace.height-p.y)}
     private func contains(_ r:NativeRect,_ p:NativePoint)->Bool{p.x>=r.origin.x&&p.y>=r.origin.y&&p.x<=r.origin.x+r.size.width&&p.y<=r.origin.y+r.size.height}

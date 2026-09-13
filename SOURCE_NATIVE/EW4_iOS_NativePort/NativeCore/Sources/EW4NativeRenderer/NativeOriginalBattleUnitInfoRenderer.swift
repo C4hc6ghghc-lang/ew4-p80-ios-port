@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalBattleUnitInfoRenderer {
     enum Action: Equatable { case close, generalInfo, none }
 
@@ -124,6 +125,7 @@ final class NativeOriginalBattleUnitInfoRenderer {
     private func ui(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat,_ a:CGFloat=255)->UIColor{UIColor(red:r/255,green:g/255,blue:b/255,alpha:a/255)}
 }
 
+@MainActor
 final class NativeOriginalBattleGeneralInfoRenderer {
     enum Action { case close, none }
     private weak var parent: SKNode?

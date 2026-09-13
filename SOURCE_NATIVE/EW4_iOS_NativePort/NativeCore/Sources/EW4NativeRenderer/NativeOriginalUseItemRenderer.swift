@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalUseItemRenderer {
     enum Action: Equatable { case close, confirm, select(Int), none }
 

@@ -3,6 +3,7 @@ import SpriteKit
 import UIKit
 import EW4NativeCore
 
+@MainActor
 final class NativeOriginalRecruitUnitRenderer {
     enum Action: Equatable { case close, confirm, select(Int), none }
     private weak var parent: SKNode?

@@ -5,6 +5,7 @@ import EW4NativeCore
 
 /// Original-EW4 result surfaces in fixed 568×320 screen space. These nodes
 /// never inherit world camera/LOD transforms.
+@MainActor
 final class NativeOriginalBattleResultRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

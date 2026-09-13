@@ -5,6 +5,7 @@ import EW4NativeCore
 
 /// Original battle-context `SceneDeployGeneral` / `form_deploygeneral` renderer.
 /// The same outer form is used by HQ, but this renderer owns only battle assignment.
+@MainActor
 final class NativeOriginalBattleGeneralDeploymentRenderer {
     enum Action: Equatable {
         case close

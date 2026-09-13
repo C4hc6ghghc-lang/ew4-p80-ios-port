@@ -11,6 +11,7 @@ enum NativeActionResourceKind: Equatable {
 
 enum NativeActionResourceAction: Equatable { case close, confirm, none }
 
+@MainActor
 final class NativeOriginalActionResourceRenderer {
     private weak var parent: SKNode?
     private let store: NativeResourceStore

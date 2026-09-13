@@ -169,6 +169,12 @@ public struct NativeBattleMoveResult: Equatable, Sendable {
     public let path: [HexCell]
     public let capturedObjectIndices: [Int]
     public let undoAvailable: Bool
+    public init(unitIndex: Int, path: [HexCell], capturedObjectIndices: [Int], undoAvailable: Bool) {
+        self.unitIndex = unitIndex
+        self.path = path
+        self.capturedObjectIndices = capturedObjectIndices
+        self.undoAvailable = undoAvailable
+    }
 }
 
 public typealias NativeCombatGrowthHandler = @Sendable (_ commanderID: Int, _ damage: Int, _ killed: Bool, _ victimGrade: Int, _ victimHasCommander: Bool) -> NativeGeneralGrowthApplication?
