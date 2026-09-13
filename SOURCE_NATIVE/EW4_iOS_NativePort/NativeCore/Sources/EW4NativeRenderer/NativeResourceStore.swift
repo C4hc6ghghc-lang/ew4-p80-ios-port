@@ -8,7 +8,7 @@ public final class NativeResourceStore: @unchecked Sendable {
 
     public init(bundle: Bundle = .main) throws {
         self.bundle = bundle
-        if let url = bundle.resourceURL?.appendingPathComponent("Resources"), FileManager.default.fileExists(atPath: url.path) {
+        if let url = bundle.resourceURL?.appendingPathComponent("GameAssets/Resources"), FileManager.default.fileExists(atPath: url.path) {
             self.resourceRoot = url
         } else if let url = bundle.resourceURL {
             self.resourceRoot = url

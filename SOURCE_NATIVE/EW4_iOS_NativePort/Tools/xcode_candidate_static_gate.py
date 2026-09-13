@@ -23,7 +23,7 @@ def main():
     ],'swift_package_contract')
     need_text(IOS/'project.yml',[
         r'name:\s*EW4NativePort', r'path:\s*\.\./NativeCore',
-        r'path:\s*\.\./Resources\s*\n\s*type:\s*folder\s*\n\s*buildPhase:\s*resources',
+        r'path:\s*\.\./Resources\s*\n\s*type:\s*folder\s*\n(?:\s*#[^\n]*\n)*\s*buildPhase:\s*\n\s*copyFiles:\s*\n\s*destination:\s*resources\s*\n\s*subpath:\s*GameAssets',
         r'product:\s*EW4NativeCore', r'product:\s*EW4NativeRenderer',
         r'PRODUCT_BUNDLE_IDENTIFIER:\s*local\.ew4\.nativeport', r'SWIFT_VERSION:\s*6\.0',
         r'IPHONEOS_DEPLOYMENT_TARGET:\s*"15\.0"', r'UIInterfaceOrientationLandscapeLeft', r'UIInterfaceOrientationLandscapeRight'

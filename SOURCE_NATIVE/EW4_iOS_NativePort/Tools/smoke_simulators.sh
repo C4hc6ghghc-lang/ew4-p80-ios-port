@@ -10,6 +10,10 @@ xcodebuild -project EW4NativePort.xcodeproj -scheme EW4NativePort -configuration
   -derivedDataPath "$ROOT/build/SimulatorData" CODE_SIGNING_ALLOWED=NO build > "$REPORT/simulator-build.log" 2>&1
 APP="$ROOT/build/SimulatorData/Build/Products/Release-iphonesimulator/EW4NativePort.app"
 test -d "$APP"
+plutil -convert xml1 -o "$REPORT/Info.plist" "$APP/Info.plist"
+find "$APP" -maxdepth 2 -type d > "$REPORT/bundle-directories.txt"
+test ! -d "$APP/Resources"
+test -f "$APP/GameAssets/Resources/Data/battles_runtime.json"
 xcrun simctl list devices available --json > "$REPORT/devices.json"
 python3 - "$REPORT/devices.json" > "$REPORT/selected-devices.tsv" <<'PY'
 import json,sys

@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, hashlib, json, zipfile
+import argparse, hashlib, json, plistlib, struct, zipfile
 from pathlib import Path
 
 REQUIRED_SUFFIXES = [
-    "Resources/Data/battles_runtime.json",
-    "Resources/Data/worldmaps.json",
-    "Resources/Data/native_animation_core877.json",
-    "Resources/Bile/def_motion.xml",
-    "Resources/Maps/europe.png",
-    "Resources/Maps/america.png",
-    "Resources/Audio/battle1.mp3",
-    "Resources/sprite_manifest.json",
+    "GameAssets/Resources/Data/battles_runtime.json",
+    "GameAssets/Resources/Data/worldmaps.json",
+    "GameAssets/Resources/Data/native_animation_core877.json",
+    "GameAssets/Resources/Bile/def_motion.xml",
+    "GameAssets/Resources/Maps/europe.png",
+    "GameAssets/Resources/Maps/america.png",
+    "GameAssets/Resources/Audio/battle1.mp3",
+    "GameAssets/Resources/sprite_manifest.json",
 ]
 FORBIDDEN_EXT = {'.apk','.aab','.html','.js','.mjs'}
 
@@ -38,6 +38,19 @@ def main():
         app=apps[0] if len(apps)==1 else None
         if app:
             prefix=f'Payload/{app}/'
+            if any(n.startswith(prefix+'Resources/') for n in names):
+                errors.append('reserved Resources directory at iOS app root prevents installation')
+            try:
+                info=plistlib.loads(z.read(prefix+'Info.plist'))
+                for key in ('CFBundleIdentifier','CFBundleExecutable','CFBundleVersion','CFBundleShortVersionString'):
+                    if not info.get(key): errors.append(f'missing app metadata: {key}')
+                if info.get('CFBundlePackageType') != 'APPL': errors.append('not an application bundle')
+                if info.get('UIDeviceFamily') != [1,2]: errors.append('iPhone/iPad device family missing')
+                binary=z.read(prefix+info['CFBundleExecutable'])
+                if binary[:4] != b'\xcf\xfa\xed\xfe' or struct.unpack_from('<I',binary,4)[0] != 0x0100000c:
+                    errors.append('expected native arm64 Mach-O executable')
+            except (KeyError,ValueError,plistlib.InvalidFileException,struct.error) as error:
+                errors.append(f'invalid app metadata/executable: {error}')
             for suffix in REQUIRED_SUFFIXES:
                 if prefix+suffix not in names: errors.append(f'missing bundle sentinel: {suffix}')
             forbidden=[n for n in names if n.startswith(prefix) and Path(n).suffix.casefold() in FORBIDDEN_EXT]

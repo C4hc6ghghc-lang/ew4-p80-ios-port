@@ -139,14 +139,14 @@ if command -v otool >/dev/null; then
 fi
 
 for rel in \
-  Resources/Data/battles_runtime.json \
-  Resources/Data/worldmaps.json \
-  Resources/Data/native_animation_core877.json \
-  Resources/Bile/def_motion.xml \
-  Resources/Maps/europe.png \
-  Resources/Maps/america.png \
-  Resources/Audio/battle1.mp3 \
-  Resources/sprite_manifest.json; do
+  GameAssets/Resources/Data/battles_runtime.json \
+  GameAssets/Resources/Data/worldmaps.json \
+  GameAssets/Resources/Data/native_animation_core877.json \
+  GameAssets/Resources/Bile/def_motion.xml \
+  GameAssets/Resources/Maps/europe.png \
+  GameAssets/Resources/Maps/america.png \
+  GameAssets/Resources/Audio/battle1.mp3 \
+  GameAssets/Resources/sprite_manifest.json; do
   [ -f "$APP/$rel" ] || die "bundle resource hierarchy broken; missing $rel"
 done
 [ ! -f "$APP/battles_runtime.json" ] || die "resource flattening detected"

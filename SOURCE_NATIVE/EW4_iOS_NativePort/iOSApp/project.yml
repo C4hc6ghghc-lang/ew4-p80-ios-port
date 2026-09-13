@@ -17,7 +17,12 @@ targets:
       # flattening resources would silently overwrite runtime assets.
       - path: ../Resources
         type: folder
-        buildPhase: resources
+        # A top-level Resources folder makes CFBundle misidentify an iOS app.
+        # Preserve the hierarchy beneath a non-reserved parent instead.
+        buildPhase:
+          copyFiles:
+            destination: resources
+            subpath: GameAssets
     dependencies:
       - package: EW4NativeCore
         product: EW4NativeCore
@@ -27,6 +32,8 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: local.ew4.nativeport
         PRODUCT_NAME: EW4NativePort
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "80"
         SWIFT_VERSION: 6.0
         IPHONEOS_DEPLOYMENT_TARGET: "15.0"
         GENERATE_INFOPLIST_FILE: YES

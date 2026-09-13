@@ -100,11 +100,11 @@ def main():
     g.ok('resource_inventory',f"files={len(files)} bytes={sum(p.stat().st_size for p in files)} duplicate_basename_groups={len(dup)}")
 
     spec=text(IOS/'project.yml')
-    folder_pattern=r"-\s*path:\s*\.\./Resources\s*\n\s*type:\s*folder\s*\n\s*buildPhase:\s*resources"
+    folder_pattern=r"-\s*path:\s*\.\./Resources\s*\n\s*type:\s*folder\s*\n(?:\s*#[^\n]*\n)*\s*buildPhase:\s*\n\s*copyFiles:\s*\n\s*destination:\s*resources\s*\n\s*subpath:\s*GameAssets"
     if re.search(folder_pattern,spec,re.M):
         g.ok('xcodegen_resource_folder_reference',f"folder reference required; duplicate basename groups={len(dup)}")
     else:
-        g.fail('xcodegen_resource_folder_reference',"../Resources must be type: folder + buildPhase: resources; flattening can overwrite duplicate basenames")
+        g.fail('xcodegen_resource_folder_reference',"../Resources must be type: folder + copyFiles into GameAssets; flattening can overwrite duplicate basenames")
 
     # 3) Full resource hash contract.
     if not args.no_hash:
