@@ -1,0 +1,32 @@
+name: Smoke test P80 iPhone and iPad
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  smoke:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Build and launch simulator app
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -d /Applications/Xcode_16.4.app ]; then
+            sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
+          fi
+          if ! command -v xcodegen >/dev/null; then brew install xcodegen; fi
+          mkdir -p smoke-results
+          bash SOURCE_NATIVE/EW4_iOS_NativePort/Tools/smoke_simulators.sh 2>&1 | tee smoke-results/smoke.log
+      - name: Save simulator evidence
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          zip -qr simulator-evidence.zip smoke-results
+          gh release create "smoke-${GITHUB_RUN_ID}" simulator-evidence.zip --draft --target "$GITHUB_SHA" --title "P80 simulator smoke ${GITHUB_RUN_NUMBER}" --notes "Private iPhone and iPad simulator launch evidence. This does not replace physical-device gameplay testing."
