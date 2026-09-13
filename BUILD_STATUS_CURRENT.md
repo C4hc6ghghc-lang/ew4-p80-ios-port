@@ -23,6 +23,8 @@ GitHub refused to start build run 34747767610 and simulator smoke run 3474776897
 
 > The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings
 
+The billing overview subsequently confirmed 2000/2000 included Actions minutes and 0.5/0.5 GB included storage consumed, with included usage resetting in 18 days. Billable usage after discounts was $0 at inspection.
+
 No billing settings were changed. No final IPA has been generated or retrieved. No simulator launch or physical-device gameplay validation has completed.
 
 After billing is resolved, rerun **Build EW4 P80 unsigned IPA** and **Smoke test P80 iPhone and iPad** on main. There is no need to re-import the source.
