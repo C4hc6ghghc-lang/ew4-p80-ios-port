@@ -1,0 +1,28 @@
+#if canImport(SpriteKit) && canImport(UIKit)
+import Foundation
+import SpriteKit
+import UIKit
+import EW4NativeCore
+
+/// Original-sized dismissal confirmation. Unlike Regroup, equipped items are returned
+/// atomically to ItemBank; dismissal is blocked when the 28-slot bank cannot accept them.
+public final class NativeOriginalDismissScene: SKScene {
+    public var backHandler:(()->Void)?
+    public var profileDidChangeHandler:((NativePlayerProfile)->Void)?
+    public var completedHandler:(()->Void)?
+    public var statusHandler:((String)->Void)?
+    public private(set) var profile:NativePlayerProfile
+    private let store:NativeResourceStore; private let commander:Commander; private let items:NativeItemEffectCatalog; private let portraits:[String:String]; private let root=SKNode()
+    private let panel=NativeRect(x:154,y:88,width:260,height:145), cancel=NativeRect(x:183,y:188,width:75,height:30), confirm=NativeRect(x:310,y:188,width:75,height:30)
+    public init(store:NativeResourceStore,profile:NativePlayerProfile,commanderID:Int)throws{self.store=store;self.profile=profile;guard let c=try store.commanders()[commanderID] else{throw CocoaError(.fileReadCorruptFile)};commander=c;items=try store.items();portraits=try store.portraitManifest();super.init(size:CGSize(width:568,height:320));scaleMode = .aspectFit;anchorPoint=CGPoint(x:0,y:0);backgroundColor = .black;root.position=CGPoint(x:0,y:320);addChild(root);render()}
+    @available(*,unavailable) required init?(coder:NSCoder){fatalError()}
+    private func render(){if let bg=texture("campaign_wide.png"){place(bg,.init(x:0,y:0,width:568,height:320),0);root.addChild(bg)};let dim=shape(.init(x:0,y:0,width:568,height:320),UIColor(white:0,alpha:0.45),.clear);dim.zPosition=1;root.addChild(dim);let b=shape(panel,ui(224,217,204),ui(105,98,87));b.zPosition=2;root.addChild(b);label("解　雇",.init(x:154,y:94,width:260,height:22),10,ui(73,67,58),3);if let p=portrait(commander.id){place(p,.init(x:170,y:120,width:58,height:61),4);root.addChild(p)};let preview=NativeHeadquartersManagementCore.dismissalPreview(profile:profile,commander:commander,items:items);let pair=NativeHeadquartersManagementCore.equipmentPair(profile:profile,commander:commander).compactMap{$0};let names=pair.compactMap{items[String($0)]?.name}.joined(separator:" / ");let text=NativePlayerProfile.princessIDs.contains(commander.id) ? "公主不能解雇" : (preview.ok ? "\(commander.name)\n装备返还：\(names.isEmpty ? "无":names)" : "物品栏空间不足\n无法安全返还装备");label(text,.init(x:235,y:122,width:165,height:54),6.2,preview.ok ? ui(75,69,61):ui(132,54,45),4,lines:2);button(cancel,"取　消",false,true);button(confirm,"确　认",true,preview.ok)}
+    private func button(_ r:NativeRect,_ text:String,_ blue:Bool,_ enabled:Bool){if let b=sprite("image_ui_hd",blue ? "btn_common_blue.png":"btn_common_green.png"){place(b,r,5);b.alpha=enabled ? 1:0.35;root.addChild(b)};label(text,r,7,.white,6)}
+    public override func touchesEnded(_ touches:Set<UITouch>,with event:UIEvent?){guard let t=touches.first else{return};let p=pt(t.location(in:self));if contains(cancel,p){backHandler?();return};if contains(confirm,p){let preview=NativeHeadquartersManagementCore.dismissalPreview(profile:profile,commander:commander,items:items);guard preview.ok else{statusHandler?(preview.reason == .princess ? "公主不能解雇":"物品栏已满，解雇被阻止");return};let r=NativeHeadquartersManagementCore.dismiss(profile:&profile,commander:commander,items:items);if r.ok{profileDidChangeHandler?(profile);statusHandler?("已解雇 \(commander.name)，装备已返还");completedHandler?()}}}
+    private func portrait(_ id:Int)->SKSpriteNode?{guard let raw=portraits[String(id)]else{return nil};let f=URL(fileURLWithPath:raw).lastPathComponent;guard let im=UIImage(contentsOfFile:store.url("Portraits",f).path)?.cgImage else{return nil};return SKSpriteNode(texture:SKTexture(cgImage:im))}
+    private func texture(_ f:String)->SKSpriteNode?{guard let im=UIImage(contentsOfFile:store.url("Textures",f).path)?.cgImage else{return nil};return SKSpriteNode(texture:SKTexture(cgImage:im))};private func sprite(_ folder:String,_ f:String)->SKSpriteNode?{guard let im=UIImage(contentsOfFile:store.url("Sprites/\(folder)",f).path)?.cgImage else{return nil};return SKSpriteNode(texture:SKTexture(cgImage:im))}
+    private func shape(_ r:NativeRect,_ fill:UIColor,_ stroke:UIColor)->SKShapeNode{let n=SKShapeNode(rect:CGRect(x:r.origin.x,y:-(r.origin.y+r.size.height),width:r.size.width,height:r.size.height));n.fillColor=fill;n.strokeColor=stroke;n.lineWidth=1;return n};private func place(_ n:SKSpriteNode,_ r:NativeRect,_ z:CGFloat){n.anchorPoint=CGPoint(x:0,y:1);n.position=CGPoint(x:r.origin.x,y:-r.origin.y);n.size=CGSize(width:r.size.width,height:r.size.height);n.zPosition=z}
+    private func label(_ s:String,_ r:NativeRect,_ fs:CGFloat,_ c:UIColor,_ z:CGFloat,lines:Int=1){if lines>1||s.contains("\n"){let a=s.split(separator:"\n",omittingEmptySubsequences:false);let ct=max(1,min(lines,a.count));let h=r.size.height/Double(ct);for i in 0..<ct{label(String(a[i]),.init(x:r.origin.x,y:r.origin.y+Double(i)*h,width:r.size.width,height:h),fs,c,z)};return};let n=SKLabelNode(fontNamed:"PingFangSC-Semibold");n.text=s;n.fontSize=fs;n.fontColor=c;n.verticalAlignmentMode = .center;n.horizontalAlignmentMode = .center;n.position=CGPoint(x:r.origin.x+r.size.width/2,y:-(r.origin.y+r.size.height/2));n.zPosition=z;root.addChild(n)}
+    private func pt(_ p:CGPoint)->NativePoint{.init(x:p.x,y:320-p.y)};private func contains(_ r:NativeRect,_ p:NativePoint)->Bool{p.x>=r.origin.x&&p.y>=r.origin.y&&p.x<=r.origin.x+r.size.width&&p.y<=r.origin.y+r.size.height};private func ui(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat,_ a:CGFloat=255)->UIColor{UIColor(red:r/255,green:g/255,blue:b/255,alpha:a/255)}
+}
+#endif

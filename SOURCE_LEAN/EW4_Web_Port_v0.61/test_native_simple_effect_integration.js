@@ -1,0 +1,16 @@
+'use strict';
+const assert=require('assert');const fs=require('fs');const path=require('path');
+const dir=__dirname,app=fs.readFileSync(path.join(dir,'app.js'),'utf8'),html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
+assert(html.includes('<script src="native_simple_effect_runtime.js"></script>'));
+assert(html.includes('<script src="native_movement_effect_core.js"></script>'));
+assert(app.includes('EW4NativeSimpleEffect.createInstance(effect,{x:0,y:0})'));
+assert(app.includes('EW4NativeSimpleEffect.advance(inst.runtime,dt)'));
+assert(app.includes('EW4NativeSimpleEffect.drawInstance(ctx,atlas,inst.runtime,z,anchor)'));
+assert(!app.includes('EW4NativeSimpleEffect.makeParticles('));
+assert(!app.includes('EW4NativeSimpleEffect.drawEffect('));
+assert(app.includes("spawnNativeSimpleEffect('effect_build',o.q,o.r)"));
+assert(app.includes('spawnNativeMovementEffect(u,u.moveAnim)'));
+assert(app.includes('EW4NativeMovementEffect.effectForMovement(u,armyStat(u))'));
+assert(app.includes('inst.runtime.rect={x0:prev.x,y0:prev.y,x1:cur.x,y1:cur.y}'));
+assert(app.includes('EW4NativeSimpleEffect.stopInstance(inst.runtime)'));
+console.log('native simple effect integration PASS: static + moving world-space emitters wired into battle renderer');

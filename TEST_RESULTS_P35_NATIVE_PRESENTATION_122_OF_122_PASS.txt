@@ -1,0 +1,3 @@
+P35 Final Native Presentation regression
+122/122 PASS
+New coverage: HiDPI battle/conquest backing, transformed touch inversion, shell hardening, map/unit asset integrity.

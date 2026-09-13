@@ -1,0 +1,44 @@
+
+<Elements numelements="41">
+	<Element index="0" libName="canada" colorAlphaPercent="100" tx="1946.45" ty="193.45" left="1285.35" top="147.45" width="1322.2" height="92"/>
+	<Element index="1" libName="province_of_quebec" colorAlphaPercent="100" tx="1981.05" ty="826.65" left="1757.9" top="470" width="446.35" height="713.35"/>
+	<Element index="2" libName="louisiana" colorAlphaPercent="100" tx="298.75" ty="1836.5" left="29.9" top="1406.35" width="537.7" height="860.35"/>
+	<Element index="3" libName="maine" colorAlphaPercent="100" tx="3131.2" ty="846.25" left="2968.85" top="818.45" width="324.7" height="55.6"/>
+	<Element index="4" libName="new_hampshire" colorAlphaPercent="100" tx="2878.5" ty="1111.65" left="2801.25" top="987.35" width="154.5" height="248.6"/>
+	<Element index="5" libName="massachusetts" colorAlphaPercent="100" tx="2860.55" ty="1337.45" left="2729.1" top="1322.45" width="262.95" height="30"/>
+	<Element index="6" libName="connecticut" colorAlphaPercent="100" tx="2760.35" ty="1454.45" left="2649.45" top="1440.1" width="221.8" height="28.7"/>
+	<Element index="7" libName="long_island" colorAlphaPercent="100" tx="2726.55" ty="1602.45" left="2648.1" top="1591.75" width="156.9" height="21.4"/>
+	<Element index="8" libName="new_jersey" colorAlphaPercent="100" tx="2516" ty="1742.2" left="2445.05" top="1649.15" width="141.9" height="186.1"/>
+	<Element index="9" libName="new_york" colorAlphaPercent="100" tx="2290.25" ty="1261.65" left="2069.1" top="1237.95" width="442.35" height="47.45"/>
+	<Element index="10" libName="pennsylvania" colorAlphaPercent="100" tx="2035.95" ty="1569.7" left="1814.6" top="1545.95" width="442.75" height="47.5"/>
+	<Element index="11" libName="westsylvania" colorAlphaPercent="100" tx="1872.3" ty="1817.9" left="1764.8" top="1652.7" width="215" height="330.45"/>
+	<Element index="12" libName="maryland" colorAlphaPercent="100" tx="2198.9" ty="1951.5" left="2133.75" top="1848" width="130.35" height="207"/>
+	<Element index="13" libName="virginia" colorAlphaPercent="100" tx="1583.1" ty="2074.45" left="1238.75" top="2047.45" width="688.7" height="54"/>
+	<Element index="14" libName="north_carolina" colorAlphaPercent="100" tx="1408.05" ty="2361.7" left="893.65" top="2332.85" width="1028.8" height="57.7"/>
+	<Element index="15" libName="georgia" colorAlphaPercent="100" tx="1147.45" ty="2671.2" left="900.45" top="2642.85" width="494" height="56.7"/>
+	<Element index="16" libName="south_carolina" colorAlphaPercent="100" tx="1773.1" ty="2634.35" left="1671.1" top="2490.5" width="204.05" height="287.7"/>
+	<Element index="17" libName="west_florida" colorAlphaPercent="100" tx="756.25" ty="3095.75" left="396.15" top="3071.05" width="720.2" height="49.4"/>
+	<Element index="18" libName="atlantic_ocean" colorAlphaPercent="100" tx="2802.05" ty="2704.15" left="2353.25" top="2000.6" width="886.55" height="1407.1"/>
+	<Element index="19" libName="east_florida" colorAlphaPercent="100" tx="1602.35" ty="3481.95" left="1473.95" top="3271.7" width="256.85" height="420.5"/>
+	<Element index="20" libName="gulf_of_mexico" colorAlphaPercent="100" tx="736.45" ty="3660.45" left="191.35" top="3538.45" width="1090.2" height="244"/>
+	<Element index="21" libName="lake_superior" colorAlphaPercent="100" tx="907.6" ty="370.95" left="714.35" top="319.45" width="386.5" height="103"/>
+	<Element index="22" libName="lake_erie" colorAlphaPercent="100" tx="1711.6" ty="1355.7" left="1623.6" top="1334.5" width="178.2" height="48.4"/>
+	<Element index="23" libName="lake_ontario" colorAlphaPercent="100" tx="2122.75" ty="1084.65" left="1987.35" top="1061.25" width="270.8" height="46.8"/>
+	<Element index="24" libName="lake_michigan" colorAlphaPercent="100" tx="997.3" ty="940.6" left="891.1" top="783.1" width="212.45" height="315"/>
+	<Element index="25" libName="lake_huron" colorAlphaPercent="100" tx="1489.35" ty="882.75" left="1414" top="758.65" width="150.7" height="248.25"/>
+	<Element index="26" libName="red" colorAlphaPercent="100" tx="92.8" ty="2944.1" left="67.05" top="2911.7" width="51.5" height="64.85"/>
+	<Element index="27" libName="arkansas" colorAlphaPercent="100" tx="137.85" ty="2461.3" left="97.55" top="2397.85" width="80.65" height="126.9"/>
+	<Element index="28" libName="mississippi" colorAlphaPercent="100" tx="471.1" ty="2413.3" left="407.8" top="2315.6" width="126.6" height="195.45"/>
+	<Element index="29" libName="mississippi" colorAlphaPercent="100" tx="538.05" ty="1460.55" left="474.75" top="1362.85" width="126.6" height="195.45"/>
+	<Element index="30" libName="mississippi" colorAlphaPercent="100" tx="278.65" ty="589.3" left="215.35" top="491.6" width="126.6" height="195.45"/>
+	<Element index="31" libName="illinois" colorAlphaPercent="100" tx="642.25" ty="1597.55" left="597.3" top="1532.15" width="89.9" height="130.85"/>
+	<Element index="32" libName="missouri" colorAlphaPercent="100" tx="119.85" ty="1813.45" left="55.35" top="1802.45" width="129" height="22"/>
+	<Element index="33" libName="Ohio" colorAlphaPercent="100" tx="1258.1" ty="1927.7" left="1217.35" top="1915.95" width="81.5" height="23.5"/>
+	<Element index="34" libName="tennessee" colorAlphaPercent="100" tx="877.35" ty="2522.45" left="805.85" top="2511.45" width="143" height="22"/>
+	<Element index="35" libName="chattahoochee" colorAlphaPercent="100" tx="1188.75" ty="3050.15" left="1138.8" top="2976.7" width="99.95" height="146.9"/>
+	<Element index="36" libName="james" colorAlphaPercent="100" tx="2079.85" ty="2142.45" left="2027.35" top="2129.45" width="105" height="26"/>
+	<Element index="37" libName="susquehanna" colorAlphaPercent="100" tx="2300.1" ty="1603.75" left="2254.55" top="1539.25" width="91.15" height="129.05"/>
+	<Element index="38" libName="delaware" colorAlphaPercent="100" tx="2521.85" ty="1552.6" left="2482.3" top="1498.7" width="79.15" height="107.8"/>
+	<Element index="39" libName="saint_lawrence" colorAlphaPercent="100" tx="2516" ty="807.5" left="2462.55" top="727.7" width="106.9" height="159.6"/>
+	<Element index="40" libName="hudson" colorAlphaPercent="100" tx="2680.1" ty="1160.85" left="2651.8" top="1119.55" width="56.65" height="82.65"/>
+</Elements>

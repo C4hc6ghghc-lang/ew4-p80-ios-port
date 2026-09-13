@@ -1,0 +1,38 @@
+{
+  "source_lean": {
+    "base_files": 6321,
+    "current_files": 6321,
+    "changed": [],
+    "missing": [],
+    "new": []
+  },
+  "source_native": {
+    "base_files": 1832,
+    "current_files": 1841,
+    "changed": [
+      "Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "NativeCore/Sources/EW4NativeCore/BattleGameplayCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleRehydrationCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleSnapshotCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativePlayerProfileCore.swift",
+      "NativeCore/Sources/EW4NativeCore/ResourceModels.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/BattleGameplayTests.swift",
+      "iOSApp/App/EW4NativePortApp.swift"
+    ],
+    "missing": [],
+    "new": [
+      "NativeCore/Sources/EW4NativeCore/NativeBattleEnvironmentCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleEventCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleSidecarCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeGeneralGrowthCore.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleEnvironmentTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleEventTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleSidecarTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeGeneralGrowthTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativePlayerProfileGrowthRuntimeTests.swift"
+    ]
+  },
+  "visual_frozen_sensitive_changes": []
+}

@@ -1,0 +1,11 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('sw.js','utf8');
+for(const n of ['function nativeRoundTurnGeneralIds','function renderNativeRoundTurn','function openNativeRoundTurn','function closeNativeRoundTurn'])assert(app.includes(n),n);
+assert(app.includes("playNativeFormOpenSfx('form_roundturn')"));
+assert(app.includes('const roundSummary=settlePlayerRound()'));
+assert(app.includes('openNativeRoundTurn(roundSummary'));
+for(const id of ['roundturn-panel','roundturn-close','rt-money','rt-industry','rt-roundnum','rt-best','rt-win','rt-food-add','rt-food-del','rt-generals'])assert(html.includes(`id="${id}"`),id);
+assert(html.includes('#roundturn-panel{left:124px;top:72px;width:320px;height:175px'));
+assert(html.includes('food_add.png')&&html.includes('food_reduce.png')&&html.includes('star_board.png'));
+for(const x of ['food_add.png','food_reduce.png','star_board.png','pattern_save.png','common_line_hor.png','common_line_ver.png'])assert(sw.includes(x),`roundturn offline asset missing ${x}`);
+console.log('P19 native form_roundturn: PASS');

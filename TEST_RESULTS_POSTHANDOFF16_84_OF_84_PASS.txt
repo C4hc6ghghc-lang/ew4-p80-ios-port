@@ -1,0 +1,19 @@
+EW4 Web Port r14-39 Post-Handoff 16 regression
+Date: 2026-09-09
+Runner: independent Node process per test_*.js
+Total suites: 84
+PASS: 84
+FAIL: 0
+
+P16-specific coverage includes:
+- exact five-grade result thresholds and medal delta
+- BTL win/best stage-limit behavior
+- six participating general result slots
+- last-non-hidden campaign completion decision
+- six-zone SceneComplete first/repeat rewards
+- CollectMedal/getmedal strict damage thresholds and native unit type/level adjustment
+- BattleSave schema 5 + legacy schema 4 normalization
+- ContinueBattle-equivalent SceneMain handoff
+- offline PWA precache of P16 VictoryText/getmedal/SceneComplete assets
+
+Result: PASS

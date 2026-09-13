@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layouts>
+	<!-- 调试信息界面 -->
+	<Layout id="form_debuginfo" type="window" x="0" y="150" w="500" h="550">
+		<Element id="btn_win" type="button" frm1="button_generalinfo.png" x="0" y="0" w="27" h="25"/>
+		<Element id="tbox_debug" type="TextBox" font="font_text_1" maxrows="100" rowbland="5"/>
+	</Layout>
+	<!-- 客服界面 -->
+	<Layout id="form_servicedialog" type="user_window" x="0" y="0" w="300" h="150" anim="1" prevent="1" fade="1" btn_close="true">
+		<Element id="text_info" type="text" font="font_text_3" color="64,64,64,255" x="30" y="40" w="250" h="100" breakwords="true" text="msg_TipService"/>
+		<Element id="btn_info" type="tmp_button" frm1="btn_common_blue.png" x="50" y="105" w="75" h="30" font="font_text_3" text="btn_info"/>
+		<Element id="btn_restore" type="tmp_button" frm1="btn_common_blue.png" x="175" y="105" w="75" h="30" font="font_text_3" text="btn_restore"/>
+	</Layout>
+	<!-- 主菜单界面 -->
+	<Layout id="form_mainmenu" type="window">
+		<Element id="bg1" type="image" texture="tex_mainmenu_back_ip5.pkm" x="0" y="0" w="512" h="320" tx="1" ty="1" tw="510" th="318" vscale="1.006289"/>
+		<Element id="bg2" type="image" texture="tex_mainmenu_back_ip5.pkm" x="501" y="320" w="1" h="1" tx="1" ty="321" tw="318" th="66" rot="-90" hscale="1.006289" vscale="1.030303"/>
+		<Element id="image_title" type="image" texture="title_hd.png" x="20" y="15" scale="0.5"/>
+		<Element id="btn_home" type="button" frm1="button_homepage.png" x="0" y="287" w="33" h="33"/>
+		<Element id="image_new_game" type="image" name="new_game_tip.png" x="15" y="285" w="19" h="8"/>
+		<Element id="btn_achi" type="button" frm1="button_achievement.png" x="35" y="287" w="33" h="33"/>
+		<Element id="btn_email" type="button" frm1="button_email.png" x="70" y="287" w="33" h="33"/>
+		<Element id="menu" type="window" x="435" y="115" w="134" h="260">
+			<Element id="btn_battle" type="button" frm1="button_mainmenu.png" x="0" y="0" w="134" h="33">
+				<Element id="" type="text" font="font_text_4" text="btn2_campaign" align="center" valign="middle"/>
+			</Element>
+			<Element id="btn_conquest" type="button" frm1="button_mainmenu.png" x="0" y="38" w="134" h="33">
+				<Element id="" type="text" font="font_text_4" text="btn2_conquest" align="center" valign="middle"/>
+			</Element>
+			<Element id="btn_tutorials" type="button" frm1="button_mainmenu.png" x="0" y="76" w="134" h="33">
+				<Element id="" type="text" font="font_text_4" text="btn2_tutorials" align="center" valign="middle"/>
+			</Element>
+			<Element id="btn_hq" type="button" frm1="button_mainmenu.png" x="0" y="114" w="134" h="33">
+				<Element id="" type="text" font="font_text_4" text="btn2_hq" align="center" valign="middle"/>
+			</Element>
+			<Element id="btn_options" type="button" frm1="button_mainmenu.png" x="0" y="152" w="134" h="33">
+				<Element id="" type="text" font="font_text_4" text="btn2_options" align="center" valign="middle"/>
+			</Element>
+		</Element>
+		<Element id="lbox_forms" type="listbox" x="100" y="10" w="100" h="300" itemh="20" interval="2" font="font_char_1" LineColor="0,0,0,0"/>
+	</Layout>
+	<!-- LOADING界面 -->
+	<Layout id="form_loading" type="window">
+		<Element id="image_title" type="image" name="title.png" x="10" y="8"/>
+		<Element id="text_desc" type="text" font="font_text_2" x="20" y="150" w="527" h="80" breakwords="true"/>
+		<Element id="text_loading" type="text" font="font_char_3" x="480" y="300"/>
+	</Layout>
+	<!-- 选择战役界面 -->
+	<Layout id="form_selcampaign" type="user_window" anim="0" prevent="1" fade="0" title="title_campaigns" back="tex_campaign_back.pkm" tx="0" ty="60" tw="1024" th="604" btn_back="true" btn_load="true">
+		<Element id="btn_selcamp_1" type="button" frm1="button_choosebattlezone_france.png" x="300" y="118" w="54" h="62"/>
+		<Element id="btn_selcamp_2" type="button" frm1="button_choosebattlezone_coalition.png" x="356" y="70" w="54" h="62"/>
+		<Element id="btn_selcamp_3" type="button" frm1="button_choosebattlezone_holyroman.png" x="415" y="140" w="54" h="62"/>
+		<Element id="btn_selcamp_4" type="button" frm1="button_choosebattlezone_east.png" x="490" y="95" w="54" h="62"/>
+		<Element id="btn_selcamp_5" type="button" frm1="button_choosebattlezone_usa.png" x="76" y="103" w="54" h="62"/>
+		<Element id="btn_selcamp_6" type="button" frm1="button_choosebattlezone_uk.png" x="265" y="38" w="54" h="62"/>
+		<Element id="btn_ad" type="button" frm1="btn_rewardedad.png" x="10" y="280" w="28" h="28">
+			<Element id="img_num" type="image" name="icon_dot_0.png" x="22" y="-6"/>
+		</Element>
+	</Layout>
+	<!-- 选择征服界面 -->
+	<Layout id="form_selconquest" type="user_window" anim="0" prevent="1" fade="0" title="title_conquest" back="tex_campaign_back.pkm" tx="2" ty="92" tw="1020" th="536" btn_back="true" btn_load="true">
+		<Element id="group_conq_1" type="groupbox" x="52" y="37" w="222" h="83" LineColor="0,0,0,0">
+			<Element id="image_shadow" type="image" name="common_shadow.png" x="7" y="9" w="222" h="83" DrawMode="extend"/>
+			<Element id="btn_selconq_1" type="button" tex1="tex_conquest_1793.png"/>
+			<Element id="image_pos" type="image" name="conquest_text_europe.png" x="15" y="46"/>
+			<Element id="image_age" type="image" name="conquest_text_1798.png" x="65" y="47"/>
+			<Element id="scale_split" type="image" name="button_conquest_whiteline.png" x="15" y="61" w="180" h="2" DrawMode="hextend"/>
+			<Element id="lbox_country_1" type="listbox" x="15" y="62" w="200" h="15" orient="1" itemh="25" interval="3" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="group_conq_2" type="groupbox" x="292" y="37" w="222" h="83" LineColor="0,0,0,0">
+			<Element id="image_shadow" type="image" name="common_shadow.png" x="7" y="9" w="222" h="83" DrawMode="extend"/>
+			<Element id="btn_selconq_2" type="button" tex1="tex_conquest_1775.png"/>
+			<Element id="image_pos" type="image" name="conquest_text_america.png" x="15" y="46"/>
+			<Element id="image_age" type="image" name="conquest_text_1775.png" x="78" y="47"/>
+			<Element id="scale_split" type="image" name="button_conquest_whiteline.png" x="15" y="61" w="180" h="2" DrawMode="hextend"/>
+			<Element id="lbox_country_2" type="listbox" x="15" y="62" w="200" h="15" orient="1" itemh="25" interval="3" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="group_conq_3" type="groupbox" x="52" y="132" w="222" h="83" LineColor="0,0,0,0">
+			<Element id="image_shadow" type="image" name="common_shadow.png" x="7" y="9" w="222" h="83" DrawMode="extend"/>
+			<Element id="btn_selconq_3" type="button" tex1="tex_conquest_1806.png"/>
+			<Element id="image_pos" type="image" name="conquest_text_europe.png" x="15" y="46"/>
+			<Element id="image_age" type="image" name="conquest_text_1806.png" x="65" y="47"/>
+			<Element id="scale_split" type="image" name="button_conquest_whiteline.png" x="15" y="61" w="180" h="2" DrawMode="hextend"/>
+			<Element id="lbox_country_3" type="listbox" x="15" y="62" w="200" h="15" orient="1" itemh="25" interval="3" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="group_conq_4" type="groupbox" x="292" y="132" w="222" h="83" LineColor="0,0,0,0">
+			<Element id="image_shadow" type="image" name="common_shadow.png" x="7" y="9" w="222" h="83" DrawMode="extend"/>
+			<Element id="btn_selconq_4" type="button" tex1="tex_conquest_1809.png"/>
+			<Element id="image_pos" type="image" name="conquest_text_europe.png" x="15" y="46"/>
+			<Element id="image_age" type="image" name="conquest_text_1809.png" x="65" y="47"/>
+			<Element id="scale_split" type="image" name="button_conquest_whiteline.png" x="15" y="61" w="180" h="2" DrawMode="hextend"/>
+			<Element id="lbox_country_4" type="listbox" x="15" y="62" w="200" h="15" orient="1" itemh="25" interval="3" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="group_conq_5" type="groupbox" x="52" y="227" w="222" h="83" LineColor="0,0,0,0">
+			<Element id="image_shadow" type="image" name="common_shadow.png" x="7" y="9" w="222" h="83" DrawMode="extend"/>
+			<Element id="btn_selconq_5" type="button" tex1="tex_conquest_1812.png"/>
+			<Element id="image_pos" type="image" name="conquest_text_america.png" x="15" y="46"/>
+			<Element id="image_age" type="image" name="conquest_text_1812.png" x="78" y="47"/>
+			<Element id="scale_split" type="image" name="button_conquest_whiteline.png" x="15" y="61" w="180" h="2" DrawMode="hextend"/>
+			<Element id="lbox_country_5" type="listbox" x="15" y="62" w="200" h="15" orient="1" itemh="25" interval="3" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="group_conq_6" type="groupbox" x="292" y="227" w="222" h="83" LineColor="0,0,0,0">
+			<Element id="image_shadow" type="image" name="common_shadow.png" x="7" y="9" w="222" h="83" DrawMode="extend"/>
+			<Element id="btn_selconq_6" type="button" tex1="tex_conquest_1815.png"/>
+			<Element id="image_pos" type="image" name="conquest_text_europe.png" x="15" y="46"/>
+			<Element id="image_age" type="image" name="conquest_text_1815.png" x="65" y="47"/>
+			<Element id="scale_split" type="image" name="button_conquest_whiteline.png" x="15" y="61" w="180" h="2" DrawMode="hextend"/>
+			<Element id="lbox_country_6" type="listbox" x="15" y="62" w="200" h="15" orient="1" itemh="25" interval="3" LineColor="0,0,0,0"/>
+		</Element>
+	</Layout>
+	<!-- 战役信息界面 -->
+	<Layout id="form_campaigninfo" type="window" x="0" y="0" w="155" h="83" anim="1" prevent="0" fade="0">
+		<Element id="image_back" type="image" name="button_choosebattlezoneinfo.png" x="-9" y="-4" h="70" DrawMode="extend"/>
+		<Element id="image_arrow" type="image" name="arrow_choosebattlezoneinfo.png" x="60" y="56"/>
+		<Element id="text_title" type="text" font="font_text_2" w="139" h="19" align="center" valign="middle"/>
+		<Element id="text_age" type="text" font="font_char_2" y="21" w="139" h="25" color="64,64,64,255" align="center"/>
+		<Element id="text_tips" type="text" font="font_text_1" x="7" y="25" w="124" h="25" color="64,64,64,255" align="center" valign="middle" breakwords="true"/>
+		<Element id="lbox_nation" type="listbox" x="4" y="34" w="150" h="15" orient="1" itemh="26" interval="2" LineColor="0,0,0,0"/>
+		<Element id="btn_ok" type="button" frm1="button_confrim.png" x="110" y="28" w="31" h="32"/>
+	</Layout>
+	<!-- 战役列表界面 -->
+	<Layout id="form_compaignlist" type="form_selbattle" anim="0" prevent="1" fade="0" back="choosestage_back.png" title="title_selbattle" btn_back="true" btn_lvlup="true" btn_ok="false">
+		<Element id="image_listback" type="image" name="choosestage_back.png" x="442" y="23" w="150" h="361" DrawMode="extend"/>
+		<Element id="lbox_battles" type="listbox" x="410" y="23" w="160" h="275" itemh="45" interval="2" font="font_text_3" LineColor="0,0,0,0"/>
+		<Element id="winbtn_ok" type="button" frm1="new_confirm.png" x="468" y="298" w="80" h="22"/>
+		<Element id="group_intro" type="groupbox" x="42" y="232" w="345" h="88" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="board_dialog_ex.png" x="51" y="-6.8" w="303" h="105" DrawMode="extend"/>
+			<Element id="image_commander" type="image" name="Sebastiani.png" x="0" y="0" scale="0.9"/>
+			<Element id="image_nameboard" type="image" name="general_nameboard.png" x="0" y="70" scale="0.9"/>
+			<Element id="text_commander" type="text" x="0" y="70" w="70" h="18" font="font_text_2" align="center" valign="middle"/>
+			<Element id="group_content" type="groupbox" x="74" y="3" w="267" h="82" LineColor="0,0,0,0">
+				<Element id="text_content" type="text" font="font_text_1" breakwords="true" color="64,64,64,255"/>
+			</Element>
+		</Element>
+	</Layout>
+	<!-- 征服列表界面 -->
+	<Layout id="form_conquestlist" type="form_selbattle" anim="0" prevent="1" fade="0" back="choosestage_back.png" title="title_selbattle" btn_back="true" btn_ok="false">
+		<Element id="image_listback" type="image" name="choosestage_back.png" x="442" y="23" w="160" h="297" DrawMode="extend"/>
+		<Element id="lbox_battles" type="listbox" x="410" y="23" w="160" h="275" itemh="45" interval="2" font="font_text_2" LineColor="0,0,0,0"/>
+		<Element id="winbtn_ok" type="button" frm1="new_confirm.png" x="468" y="298" w="80" h="22"/>
+	</Layout>
+	<!-- 选择势力（国家）界面 -->
+	<Layout id="form_selcountry" type="user_window" x="0" y="0" w="234" h="150" anim="1" prevent="1" fade="0" title="title_selcountry" btn_close="true" btn_ok="true">
+		<Element id="btn_left" type="button" x="17" y="36" w="85" h="67">
+			<Element id="image_frame" type="image" name="common_lineframe_bold.png" DrawMode="extend"/>
+			<Element id="image_deco_left" type="image" name="pattern_save.png" x="3" y="22"/>
+			<Element id="image_deco_right" type="image" name="pattern_save.png" x="83" y="22" hscale="-1"/>
+			<Element id="image_nation_1" type="image" name="nationflag_frace_test.png" x="30" y="16"/>
+			<Element id="image_back" type="image" name="general_nameboard.png" y="43" h="25" DrawMode="extend"/>
+			<Element id="text_nation_1" type="text" font="font_text_2" y="45" h="20" align="center" valign="middle"/>
+		</Element>
+		<Element id="btn_right" type="button" x="132" y="36" w="85" h="67">
+			<Element id="image_frame" type="image" name="common_lineframe_bold.png" DrawMode="extend"/>
+			<Element id="image_deco_left" type="image" name="pattern_save.png" x="3" y="22"/>
+			<Element id="image_deco_right" type="image" name="pattern_save.png" x="83" y="22" hscale="-1"/>
+			<Element id="image_nation_2" type="image" name="nationflag_frace_test.png" x="30" y="16"/>
+			<Element id="image_back" type="image" name="general_nameboard.png" y="43" h="25" DrawMode="extend"/>
+			<Element id="text_nation_2" type="text" font="font_text_2" y="45" h="20" align="center" valign="middle"/>
+		</Element>
+		<Element id="group_select" type="groupbox" x="17" y="36" w="85" h="67" frame="item_selected_ex.png" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="button_lottery_generals.png" y="43" h="25" DrawMode="extend"/>
+			<Element id="text_nation" type="text" font="font_text_2" y="45" h="20" text="nation_france" align="center" valign="middle"/>
+		</Element>
+		<Element id="scale_bottom_line" type="image" name="common_boldline.png" x="0" y="119" h="2" DrawMode="extend"/>
+		<Element id="image_bottom_flower" type="image" name="pattern_stage_intro.png" y="125" align="hmiddle"/>
+	</Layout>
+	<!-- 招募界面 -->
+	<Layout id="form_recruitunit" type="user_window" x="0" y="0" w="441" h="185" anim="1" prevent="1" fade="0" title="title_recruitunit" btn_close="true" btn_ok="true">
+		<Element id="lbox_unit" type="listbox" orient="1" x="2" y="37" w="440" h="65" itemh="72" interval="1" font="font_char_1" selectbox="item_selected_ex.png" LineColor="0,0,0,0"/>
+		<Element id="grid_info" type="grid" x="2" y="109" w="152" h="72" cols="4" rowh="24" font="font_char_4" frame="common_lineframe_bold.png">
+			<Element id="image_line" type="image" name="common_line_hor.png" y="23.5" DrawMode="hextend"/>
+			<Element id="image_line" type="image" name="common_line_hor.png" y="47.5" DrawMode="hextend"/>
+		</Element>
+		<Element id="group_desc" type="groupbox" x="155" y="109" w="284" h="72" frame="common_lineframe_bold.png">
+			<Element id="intitle" type="tmp_intitle" y="1" title="title" textcolor="100,100,100,255"/>
+			<Element id="text_desc" type="text" font="font_text_1" text="btn_upgrade" x="2" y="19" w="280" h="51" color="64,64,64,255"/>
+		</Element>
+		<Element id="image_line_2" type="image" name="build_side.png" w="68" h="3" DrawMode="extend"/>
+		<Element id="image_line_1" type="image" name="build_side.png" w="70" h="3" DrawMode="extend"/>
+		<Element id="image_active" type="image" name="" w="72" h="65"/>
+		<Element id="image_border" type="image" name="build_frame.png" w="72" h="65"/>
+	</Layout>
+	<!-- 整编界面 -->
+	<Layout id="form_regroup" type="user_window" prevent="1" fade="1" title="title_regroup" btn_close="true">
+		<Element id="group_infos" type="groupbox" x="8" y="37" w="146" h="120" frame="common_lineframe_bold.png">
+			<Element id="image_title" type="image" name="infomarker_board.png" h="26" DrawMode="extend"/>
+			<Element id="text_title" type="text" h="26" font="font_text_2" text="text_preview" align="center" valign="middle"/>
+			<Element id="rank_military" type="tmp_rank" x="10" y="32" ranktype="military"/>
+			<Element id="rank_nobility" type="tmp_rank" x="80" y="32" ranktype="nobility"/>
+			<Element id="image_life" type="image" name="marker_hp_dark.png" x="51" y="32"/>
+			<Element id="text_life" type="text" x="37" y="47" w="40" h="15" font="font_char_2" text="200" align="center" valign="middle" color="64,64,64,255"/>
+			<Element id="image_apply" type="image" name="marker_recover_dark.png" x="118" y="30"/>
+			<Element id="text_apply" type="text" x="105" y="47" w="40" h="15" font="font_char_2" text="500" align="center" valign="middle" color="64,64,64,255"/>
+			<Element id="image_box" type="image" name="common_lineframe.png" x="0" y="64" h="56" DrawMode="extend"/>
+			<Element id="grid_preview" type="grid" x="0" y="64" h="56" cols="2" rowh="28" font="font_text_2" LineColor="0,0,0,0"/>
+			<Element id="image_split" type="image" name="common_line_hor.png" x="0" y="91.5" DrawMode="hextend" LineColor="200,200,200,255"/>
+		</Element>
+		<Element id="group_items" type="groupbox" x="415" y="37" w="146" h="120" frame="common_lineframe_bold.png">
+			<Element id="image_title" type="image" name="infomarker_board.png" h="26" DrawMode="extend"/>
+			<Element id="text_title" type="text" h="26" font="font_text_2" text="text_equipitem" align="center" valign="middle"/>
+			<Element id="lbox_equipitem" type="listbox" x="22" y="51" w="100" h="45" orient="1" itemh="45" interval="10" font="font_text_2" LineColor="0,0,0,0"/>
+			<Element id="image_top" type="image" name="pattern_reoganizion.png" x="10" y="30" align="hmiddle"/>
+			<Element id="image_bottom" type="image" name="pattern_reoganizion.png" x="10" y="116" align="hmiddle" vscale="-1"/>
+			<Element id="image_split" type="image" name="common_line_hor.png" x="0" y="44" DrawMode="hextend" LineColor="200,200,200,255"/>
+			<Element id="image_split" type="image" name="common_line_hor.png" x="0" y="101" DrawMode="hextend" LineColor="200,200,200,255"/>
+		</Element>
+		<Element id="btn_regroup" type="tmp_button" frm1="btn_common_red.png" x="243" y="100" w="83" h="35" font="font_text_3" text="btn_regroup"/>
+		<Element id="tcmder_target" type="tmp_commander" font="font_text_2" x="331" y="37" w="78" h="98"/>
+		<Element id="image_arrow" type="image" name="arrow_reoganizion.png" y="48" align="hmiddle"/>
+		<Element id="tcmder_source" type="tmp_commander" font="font_text_2" x="160" y="37" w="78" h="98"/>
+		<Element id="text_notice" type="text" font="font_text_2" text="text_notice" x="0" y="164" h="15" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="scale_bottom_line" type="image" name="common_line_hor.png" x="0" y="180" h="2" DrawMode="extend"/>
+		<Element id="lbox_general" type="listbox" orient="1" x="24" y="190" w="550" h="98" itemh="78" interval="10" font="font_text_2" selectbox="item_selected_ex.png" LineColor="0,0,0,0" sound="sfx_select.wav"/>
+		<Element id="scale_bottom_line" type="image" name="common_line_hor.png" x="0" y="295" h="2" DrawMode="extend"/>
+		<Element id="image_pattern" type="image" name="pattern_bg_bottom.png" y="303" align="hmiddle"/>
+		<Element id="scale_bottom_boldline" type="image" name="common_boldline.png" y="316" h="4" DrawMode="extend" color="64,64,64,200"/>
+	</Layout>
+	<!-- 购买勋章界面 -->
+	<Layout id="form_buymedal" type="user_window" prevent="1" fade="0" title="title_buymedal" btn_back="true">
+		<Element id="group_deco_top" type="groupbox" x="0" y="31" h="50" LineColor="0,0,0,0">
+			<Element id="image_flower_left" type="image" name="pattern_inapp.png" x="206" y="10"/>
+			<Element id="image_flower_right" type="image" name="pattern_inapp.png" x="360" y="10" hscale="-1"/>
+			<Element id="image_flower" type="image" name="pattern_stage_intro.png" y="5" align="hmiddle"/>
+			<Element id="scale_line_top" type="image" name="common_boldline.png" x="0" y="30" h="2" DrawMode="extend"/>
+		</Element>
+		<Element id="lbox_medal" type="listbox" orient="1" x="16" y="72" w="535" h="185" itemh="113" interval="5" font="font_char_4" LineColor="0,0,0,255"/>
+		<Element id="group_resource" type="groupbox" x="0" y="270" h="45" LineColor="0,0,0,0">
+			<Element id="image_medal" type="image" name="medals.png" x="120" y="12"/>
+			<Element id="text_medal" type="text" font="font_char_4" text="999" x="137" y="10" color="64,64,64,255"/>
+			<Element id="image_badge" type="image" name="badges.png" x="360" y="12"/>
+			<Element id="text_badge" type="text" font="font_char_4" text="999" x="380" y="10" color="64,64,64,255"/>
+		</Element>
+		<Element id="group_deco_bottom" type="groupbox" x="0" y="266" h="168" LineColor="0,0,0,0">
+			<Element id="scale_line_top" type="image" name="common_boldline.png" x="0" y="0" h="2" DrawMode="extend"/>
+			<Element id="image_flower_left" type="image" name="pattern_reoganizion.png" x="280" y="360"/>
+			<Element id="image_flower_middle" type="image" name="pattern_reoganizion.png" x="280" y="360"/>
+			<Element id="image_flower_right" type="image" name="pattern_reoganizion.png" x="280" y="360"/>
+		</Element>
+		<Element id="image_bottom" type="image" name="pattern_bg_bottom.png" y="303" align="hmiddle"/>
+		<Element id="image_bottom_line" type="image" name="common_boldline.png" y="316" h="4" DrawMode="extend" color="64,64,64,200"/>
+	</Layout>
+	<!-- 抽取将军界面 -->
+	<Layout id="form_getgeneral" type="user_window" prevent="1" fade="0" title="title_buygeneral" btn_back="true" btn_add2="true">
+		<Element id="image_grayback" type="image" name="gray_board.png" y="93" h="152" DrawMode="extend" color="198,195,188,100"/>
+		<Element id="image_box" type="image" name="framebox_thin.png" x="0" y="93" h="152" DrawMode="extend"/>
+		<Element id="group_buttons" type="groupbox" x="51" y="36" w="463" h="55" LineColor="0,0,0,0">
+			<Element id="image_checkline" type="image" name="button_lottery_generals.png" x="-5" y="0" w="158" h="58" DrawMode="extend"/>
+			<Element id="cbtn_0" type="CheckButton" UncheckImage="button_general_6.png" CheckedImage="button_general_6.png" x="0" y="0" w="152" h="55"/>
+			<Element id="cbtn_1" type="CheckButton" UncheckImage="button_general_4.png" CheckedImage="button_general_4.png" x="156" y="0" w="152" h="55"/>
+			<Element id="cbtn_2" type="CheckButton" UncheckImage="button_general_2.png" CheckedImage="button_general_2.png" x="312" y="0" w="152" h="55"/>
+		</Element>
+		<Element id="image_deco_1" type="image" name="pattern_getgeneral_2_1.png" x="110" y="128" vscale="0.8" hscale="-0.8"/>
+		<Element id="image_deco_2" type="image" name="pattern_getgeneral_2_1.png" x="206" y="128" vscale="0.8" hscale="0.8"/>
+		<Element id="image_deco_3" type="image" name="pattern_getgeneral_2_1.png" x="362" y="128" vscale="0.8" hscale="-0.8"/>
+		<Element id="image_deco_4" type="image" name="pattern_getgeneral_2_1.png" x="458" y="128" vscale="0.8" hscale="0.8"/>
+		<Element id="lbox_general" type="listbox" orient="1" x="25" y="110" w="519" h="98" itemh="78" font="font_text_2" selectbox="item_selected_ex.png" LineColor="0,0,0,0"/>
+		<Element id="image_scale_1" type="image" name="" w="78" h="78"/>
+		<Element id="image_scale_2" type="image" name="" w="78" h="78"/>
+		<Element id="image_scale_3" type="image" name="" w="78" h="78"/>
+		<Element id="image_scale_4" type="image" name="" w="78" h="78"/>
+		<Element id="image_scale_5" type="image" name="" w="78" h="78"/>
+		<Element id="image_scale_6" type="image" name="" w="78" h="78"/>
+		<Element id="btn_buy_1" type="tmp_button" frm1="btn_common_green.png" x="0" y="0" w="55" h="32">
+			<Element id="image_icon" type="image" name="medals.png" x="10" y="7" DrawMode="vmiddle"/>
+			<Element id="text_price" type="text" font="font_text_3" x="15" y="0" w="40" h="30" align="center" valign="middle"/>
+		</Element>
+		<Element id="btn_buy_2" type="tmp_button" frm1="btn_common_red.png" x="60" y="0" w="55" h="32">
+			<Element id="image_icon" type="image" name="badges.png" x="10" y="7" DrawMode="vmiddle"/>
+			<Element id="text_price" type="text" font="font_text_3" x="15" y="0" w="40" h="30" align="center" valign="middle"/>
+		</Element>
+		<Element id="image_left" type="image" name="pattern_getgeneral_2_1.png" x="220" y="265" vscale="0.5" hscale="-0.5"/>
+		<Element id="image_right" type="image" name="pattern_getgeneral_2_1.png" x="347" y="265" scale="0.5"/>
+		<Element id="btn_refresh" type="tmp_button" frm1="btn_common_blue.png" x="234" y="257" w="100" h="40">
+			<Element id="image_refresh_1" type="image" name="button_refresh.png" x="15" y="12"/>
+			<Element id="image_refresh_2" type="image" name="button_refresh.png" x="43" y="12"/>
+			<Element id="image_refresh_3" type="image" name="button_refresh.png" x="70" y="12"/>
+			<Element id="image_percent" type="image" name="gray_board.png" x="10" y="9" w="80" h="22" DrawMode="extend"/>
+			<Element id="text_percent" type="text" font="font_char_2" x="10" y="9" w="80" h="22" align="center" valign="middle"/>
+		</Element>
+		<Element id="image_line" type="image" name="common_line_hor.png" y="27" DrawMode="hextend"/>
+		<Element id="image_bottom" type="image" name="pattern_bg_bottom.png" y="303" align="hmiddle"/>
+		<Element id="image_side" type="image" name="common_boldline.png" y="316" h="4" DrawMode="extend" color="64,64,64,200"/>
+	</Layout>
+	<!-- 购买将军提示界面 -->
+	<Layout id="form_getgeneraltips" type="user_window" x="0" y="0" w="152" h="184" anim="1" prevent="1" fade="0" sound="sfx_lvup2.wav" title="title_generaltips" btn_ok="true">
+		<Element id="tcmder" type="tmp_commander" font="font_text_2" x="36" y="42" w="78" h="98"/>
+		<Element id="scale_splite" type="image" name="common_boldline.png" y="153" h="1" DrawMode="extend"/>
+		<Element id="image_bottom" type="image" name="pattern_gotgeneral.png" y="160" align="hmiddle"/>
+	</Layout>
+	<!-- 将领信息界面 -->
+	<Layout id="form_generalinfo" type="user_window" x="0" y="0" w="440" h="217" anim="1" prevent="1" fade="1" sound="sfx_pop.wav" title="title_headquarters" btn_close="true">
+		<Element id="tcmder" type="tmp_commander" font="font_text_2" x="2" y="30" w="78" h="98"/>
+		<Element id="group_items" type="groupbox" x="82" y="30" w="194" h="74" frame="common_lineframe_bold.png">
+			<Element id="intitle" type="tmp_intitle" x="3" y="1" w="100" title="text_equipitem" textcolor="100,100,100,255"/>
+			<Element id="lbox_equipitem" type="listbox" x="5" y="23" w="103" h="45" orient="1" itemh="45" interval="5" sound="" LineColor="0,0,0,0" font="font_text_2"/>
+			<Element id="btn_regroup" type="tmp_button" frm1="btn_common_org.png" x="107" y="3" w="83" h="33" font="font_text_3" text="btn_regroup"/>
+			<Element id="btn_item" type="tmp_button" frm1="btn_common_blue.png" x="107" y="38" w="83" h="33" font="font_text_3" text="btn_item"/>
+		</Element>
+		<Element id="group_skills" type="groupbox" x="278" y="30" w="160" h="74" frame="common_lineframe_bold.png">
+			<Element id="lbox_skills" type="listbox" itemh="18" interval="0" font="font_text_2" sound="" LineColor="0,0,0,0"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="19" DrawMode="hextend"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="38" DrawMode="hextend"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="56" DrawMode="hextend"/>
+		</Element>
+		<Element id="group_infos" type="groupbox" x="2" y="130" w="78" h="85" frame="common_lineframe_bold.png">
+			<Element id="rank_military" type="tmp_rank" x="8" y="8" w="75" ranktype="military"/>
+			<Element id="" type="image" name="common_line_hor.png" x="0" y="43" DrawMode="hextend"/>
+			<Element id="rank_nobility" type="tmp_rank" x="8" y="50" w="75" ranktype="nobility"/>
+			<Element id="image_life" type="image" name="marker_hp_dark.png" x="49" y="10"/>
+			<Element id="text_life" type="text" x="36" y="24" w="40" h="15" font="font_char_2" text="0" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="image_apply" type="image" name="marker_recover_dark.png" x="49" y="50"/>
+			<Element id="text_apply" type="text" x="36" y="66" w="40" h="15" font="font_char_2" text="0" color="64,64,64,255" align="center" valign="middle"/>
+		</Element>
+		<Element id="group_values" type="groupbox" x="82" y="106" w="356" h="109" frame="common_lineframe_bold.png">
+			<Element id="lbox_rank_left" type="listbox" x="0" y="0" w="178" h="110" itemh="27" interval="0" font="font_text_2" sound="" LineColor="0,0,0,0"/>
+			<Element id="lbox_rank_right" type="listbox" x="178" y="0" w="179" h="110" itemh="27" interval="0" font="font_text_2" sound="" LineColor="0,0,0,0"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="27" DrawMode="hextend"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="55" DrawMode="hextend"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="82" DrawMode="hextend"/>
+		</Element>
+	</Layout>
+	<!-- 单位信息界面 -->
+	<Layout id="form_unitinfo" type="user_window" x="0" y="0" w="330" h="187" anim="1" prevent="1" fade="1" title="title_unitinfo" btn_close="true">
+		<Element id="group_unit" type="groupbox" x="2" y="30" w="78" h="78" LineColor="0,0,0,0">
+			<Element id="image_unit" type="image" name="recruit_grenadier.png" x="3" y="7"/>
+			<Element id="image_side" type="image" name="build_frame.png" x="3" y="6" w="72" h="65" DrawMode="extend"/>
+			<Element id="image_back_1" type="image" name="buildmaker.png" x="3" y="42" w="75" h="56"/>
+			<Element id="image_icon_1" type="image" name="" x="4" y="42" w="75" h="56"/>
+			<Element id="image_back_2" type="image" name="buildmaker.png" x="7" y="42" w="75" h="56"/>
+			<Element id="image_icon_2" type="image" name="" x="8" y="42" w="75" h="56"/>
+			<Element id="image_back_3" type="image" name="buildmaker.png" x="11" y="42" w="75" h="56"/>
+			<Element id="image_icon_3" type="image" name="" x="12" y="42" w="75" h="56"/>
+			<Element id="image_money" type="image" name="marker_money.png" x="4" y="59" scale="0.6"/>
+			<Element id="text_money" type="text" font="font_char_2" x="15" y="59"/>
+			<Element id="image_indus" type="image" name="marker_industry.png" x="44" y="59" scale="0.6"/>
+			<Element id="text_indus" type="text" font="font_char_2" x="54" y="59"/>
+		</Element>
+		<Element id="group_info" type="groupbox" x="249" y="30" w="78" h="78" LineColor="0,0,0,0">
+			<Element id="tcmder" type="tmp_commander"/>
+			<Element id="btn_info" type="button" frm1="button_generalinfo_blue.png" x="55" y="2" w="23" h="23"/>
+		</Element>
+		<Element id="group_ability" type="groupbox" x="80" y="33" w="165" h="72" frame="common_lineframe_bold.png">
+			<Element id="grid_ability" type="grid" cols="4" rowh="24" font="font_char_4" LineColor="0,0,0,0"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="23.5" DrawMode="hextend"/>
+			<Element id="scale_split" type="image" name="common_line_hor.png" x="0" y="47.5" DrawMode="hextend"/>
+		</Element>
+		<Element id="group_desc" type="groupbox" x="4" y="110" w="323" h="74" frame="common_lineframe_bold.png">
+			<Element id="intitle" type="tmp_intitle" x="0" y="1" title="text_equipitem" textcolor="100,100,100,255"/>
+			<Element id="text_desc" type="text" font="font_text_1" x="2" y="20" w="320" h="52" breakwords="true" color="64,64,64,255"/>
+		</Element>
+	</Layout>
+	<!-- 失败界面 -->
+	<Layout id="form_failure" type="user_window" x="0" y="0" w="151" h="184" anim="1" prevent="1" fade="1" title="title_failure" btn_ok="true">
+		<Element id="group_common" type="groupbox" x="33" y="58" w="85" h="67" frame="common_lineframe_bold.png">
+			<Element id="image_deco_left" type="image" name="pattern_save.png" x="2" y="22"/>
+			<Element id="image_deco_right" type="image" name="pattern_save.png" x="82" y="22" hscale="-1"/>
+			<Element id="image_flag" type="image" name="nationflag_frace_test.png" x="30" y="16"/>
+			<Element id="scale_back" type="image" name="Board_generalinfomarker.png" y="47" h="20" DrawMode="extend"/>
+			<Element id="text_country" type="text" font="font_text_2" y="47" h="20" align="center" valign="middle"/>
+		</Element>
+		<Element id="scale_splite" type="image" name="common_boldline.png" y="153" h="1" DrawMode="extend"/>
+		<Element id="image_bottom" type="image" name="pattern_stage_intro.png" y="160" align="hmiddle"/>
+	</Layout>
+	<!-- 暂停界面 -->
+	<Layout id="form_pause" type="user_window" w="166" h="272" anim="1" prevent="1" fade="1" title="title_pause" btn_close="true">
+		<Element id="image_deco_left" type="image" name="pattern_save.png" x="23" y="40"/>
+		<Element id="image_deco_right" type="image" name="pattern_save.png" x="142" y="40" hscale="-1"/>
+		<Element id="text_turnword" type="text" font="font_text_3" text="text_round_word" x="50" y="35" color="64,64,64,255"/>
+		<Element id="text_turnnums" type="text" font="font_char_2" text="1" x="85" y="36" w="35" h="15" color="64,64,64,255" align="center" valign="vmiddle"/>
+		<Element id="btn_save" type="tmp_button" frm1="btn_common_blue.png" x="42" y="65" w="83" h="35" font="font_text_3" text="btn_save"/>
+		<Element id="btn_option" type="tmp_button" frm1="btn_common_blue.png" x="42" y="115" w="83" h="35" font="font_text_3" text="btn_option"/>
+		<Element id="btn_restart" type="tmp_button" frm1="btn_common_blue.png" x="42" y="165" w="83" h="35" font="font_text_3" text="btn_restart"/>
+		<Element id="btn_exit" type="tmp_button" frm1="btn_common_blue.png" x="42" y="215" w="83" h="35" font="font_text_3" text="btn_exit"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="58" w="126" DrawMode="hextend"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="108" w="126" DrawMode="hextend"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="158" w="126" DrawMode="hextend"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="208" w="126" DrawMode="hextend"/>
+		<Element id="image_flower" type="image" name="pattern_reoganizion.png" y="270" align="hmiddle" vscale="-1"/>
+	</Layout>
+	<!-- 多人模式暂停界面 -->
+	<Layout id="form_pause_multiplay" type="user_window" w="166" h="222" anim="1" prevent="1" fade="1" title="title_pause" btn_close="true">
+		<Element id="image_deco_left" type="image" name="pattern_save.png" x="23" y="40"/>
+		<Element id="image_deco_right" type="image" name="pattern_save.png" x="142" y="40" hscale="-1"/>
+		<Element id="text_turnword" type="text" font="font_text_3" text="text_round_word" x="50" y="35" color="64,64,64,255"/>
+		<Element id="text_turnnums" type="text" font="font_char_2" text="1" x="85" y="36" w="35" h="15" color="64,64,64,255" align="center" valign="vmiddle"/>
+		<Element id="btn_option" type="tmp_button" frm1="btn_common_blue.png" x="41" y="65" w="83" h="35" font="font_text_3" text="btn_option"/>
+		<Element id="btn_surrender" type="tmp_button" frm1="btn_common_blue.png" x="41" y="115" w="83" h="35" font="font_text_3" text="btn_surrender"/>
+		<Element id="btn_exit" type="tmp_button" frm1="btn_common_blue.png" x="41" y="165" w="83" h="35" font="font_text_3" text="btn_exit"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="57" w="126" DrawMode="hextend"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="107" w="126" DrawMode="hextend"/>
+		<Element id="image_splite" type="image" name="common_line_hor.png" x="20" y="157" w="126" DrawMode="hextend"/>
+		<Element id="image_flower" type="image" name="pattern_reoganizion.png" y="220" align="hmiddle" vscale="-1"/>
+	</Layout>
+	<!-- 战斗介绍界面 -->
+	<Layout id="form_stageintro" type="user_window" x="0" y="0" w="360" h="219" anim="1" prevent="1" fade="0" title="" btn_close="true">
+		<Element id="tcmder" type="tmp_commander" font="font_text_2" x="2" y="30" w="78" h="98"/>
+		<Element id="group_desc" type="groupbox" x="83" y="30" w="275" h="98" frame="common_lineframe.png">
+			<Element id="text_desc" type="text" font="font_text_1" x="3" y="3" w="269" h="92" text="this is description" color="64,64,64,255"/>
+		</Element>
+		<Element id="group_condwin" type="groupbox" x="0" y="130" w="180" h="60" frame="common_lineframe.png" title="Board_generalinfomarker.png" titleHeight="18" text="text_victory" font="font_text_2">
+			<Element id="text_victory" type="text" font="font_char_4" text="20" y="30" align="center" color="64,64,64,255"/>
+			<Element id="text_round" type="text" font="font_text_1" text="text_round_word" x="108" y="33" color="64,64,64,255"/>
+		</Element>
+		<Element id="group_condlost" type="groupbox" x="180" y="130" w="180" h="60" frame="common_lineframe.png" title="Board_generalinfomarker.png" titleHeight="18" text="text_bestvic" font="font_text_2">
+			<Element id="text_bestvic" type="text" font="font_char_4" text="30" y="30" align="center" color="64,64,64,255"/>
+			<Element id="text_round" type="text" font="font_text_1" text="text_round_word" x="108" y="33" color="64,64,64,255"/>
+		</Element>
+		<Element id="image_flower" type="image" name="pattern_stage_intro.png" y="195" align="hmiddle"/>
+	</Layout>
+	<!-- 交易界面 -->
+	<Layout id="form_exchange" type="user_window" x="0" y="0" w="440" h="259" anim="1" prevent="1" fade="1" title="title_business" btn_close="true">
+		<Element id="group_seller" type="groupbox" x="0" y="30" w="440" h="98" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="Merchant.png" x="0.5"/>
+			<Element id="image_name" type="image" name="general_nameboard.png" y="78"/>
+			<Element id="text_name" type="text" font="font_text_2" x="0" y="78" w="78" h="20" text="name_Seller" align="center" valign="middle"/>
+			<Element id="" type="image" name="common_boldline.png" x="80" y="0" w="358" h="1" DrawMode="extend"/>
+			<Element id="intitle" type="tmp_intitle" x="80" y="1" w="358" title="text_buy" textcolor="100,100,100,255"/>
+			<Element id="btn_buy_1" type="tmp_button" frm1="btn_common_blue.png" x="86" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="5" y="14"/>
+				<Element id="text_buy_1a" type="text" font="font_char_2" x="22" y="17"/>
+				<Element id="image_icon" type="image" name="marker_industry.png" x="45" y="14"/>
+				<Element id="text_buy_1b" type="text" font="font_char_2" x="60" y="17"/>
+			</Element>
+			<Element id="btn_buy_2" type="tmp_button" frm1="btn_common_blue.png" x="173" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="1" y="14"/>
+				<Element id="text_buy_2a" type="text" font="font_char_2" x="16" y="17"/>
+				<Element id="image_icon" type="image" name="marker_industry.png" x="45" y="14"/>
+				<Element id="text_buy_2b" type="text" font="font_char_2" x="60" y="17"/>
+			</Element>
+			<Element id="btn_buy_3" type="tmp_button" frm1="btn_common_blue.png" x="261" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="5" y="14"/>
+				<Element id="text_buy_3a" type="text" font="font_char_2" x="22" y="17"/>
+				<Element id="image_icon" type="image" name="marker_food.png" x="45" y="14"/>
+				<Element id="text_buy_3b" type="text" font="font_char_2" x="60" y="17"/>
+			</Element>
+			<Element id="btn_buy_4" type="tmp_button" frm1="btn_common_blue.png" x="348" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="1" y="14"/>
+				<Element id="text_buy_4a" type="text" font="font_char_2" x="16" y="17"/>
+				<Element id="image_icon" type="image" name="marker_food.png" x="45" y="14"/>
+				<Element id="text_buy_4b" type="text" font="font_char_2" x="60" y="17"/>
+			</Element>
+		</Element>
+		<Element id="group_player" type="groupbox" x="0" y="161" w="440" h="98" LineColor="0,0,0,0">
+			<Element id="tcmder_player" type="tmp_commander" font="font_text_2" x="362" y="0" w="78" h="98"/>
+			<Element id="" type="image" name="common_boldline.png" x="2" y="0" w="358" h="1" DrawMode="extend"/>
+			<Element id="intitle" type="tmp_intitle" x="2" y="1" w="358" title="text_sell" textcolor="100,100,100,255"/>
+			<Element id="btn_sell_1" type="tmp_button" frm1="btn_common_green.png" x="8" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_industry.png" x="5" y="14"/>
+				<Element id="text_sell_1a" type="text" font="font_char_2" x="20" y="17"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="45" y="14"/>
+				<Element id="text_sell_1b" type="text" font="font_char_2" x="62" y="17"/>
+			</Element>
+			<Element id="btn_sell_2" type="tmp_button" frm1="btn_common_green.png" x="96" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_industry.png" x="5" y="14"/>
+				<Element id="text_sell_2a" type="text" font="font_char_2" x="20" y="17"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="45" y="14"/>
+				<Element id="text_sell_2b" type="text" font="font_char_2" x="62" y="17"/>
+			</Element>
+			<Element id="btn_sell_3" type="tmp_button" frm1="btn_common_green.png" x="183" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_food.png" x="2" y="14"/>
+				<Element id="text_sell_3a" type="text" font="font_char_2" x="16" y="17"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="45" y="14"/>
+				<Element id="text_sell_3b" type="text" font="font_char_2" x="62" y="17"/>
+			</Element>
+			<Element id="btn_sell_4" type="tmp_button" frm1="btn_common_green.png" x="271" y="35" w="83" h="46" sound="">
+				<Element id="text_equal" type="text" y="5" h="30" font="font_char_4" string="=" align="center" valign="middle"/>
+				<Element id="image_icon" type="image" name="marker_food.png" x="1" y="14"/>
+				<Element id="text_sell_4a" type="text" font="font_char_2" x="16" y="17"/>
+				<Element id="image_icon" type="image" name="marker_money.png" x="45" y="14"/>
+				<Element id="text_sell_4b" type="text" font="font_char_2" x="62" y="17"/>
+			</Element>
+		</Element>
+		<Element id="group_info" type="groupbox" x="0" y="129" h="31" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="gray_board.png" DrawMode="extend"/>
+			<Element id="image_middle" type="image" name="general_nameboard.png" x="125" y="0" w="190" DrawMode="extend"/>
+			<Element id="image_line_ver" type="image" name="whiteline_for_button_close.png" x="125" color="255,255,255,255" DrawMode="vextend"/>
+			<Element id="image_line_ver" type="image" name="whiteline_for_button_close.png" x="315" color="255,255,255,255" DrawMode="vextend"/>
+			<Element id="image_flower_left" type="image" name="pattern_1.png" x="130" y="13"/>
+			<Element id="image_flower_right" type="image" name="pattern_1.png" x="311" y="13" hscale="-1"/>
+			<Element id="image_flower_middle" type="image" name="pattern_2.png" x="196" y="8"/>
+			<Element id="text_rate" type="text" x="217" y="10" font="font_char_3"/>
+			<Element id="text_word" type="text" x="0" y="1" w="125" h="30" font="font_text_2" text="text_sellersays" breakwords="true" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="image_trade" type="image" name="skill_39.png" x="320" y="6"/>
+			<Element id="lbox_stars" type="listbox" orient="1" x="350" y="9" w="75" h="15" itemh="13" interval="1" LineColor="0,0,0,0"/>
+		</Element>
+	</Layout>
+	<!-- 商店界面 -->
+	<Layout id="form_shop" type="user_window" x="0" y="0" w="425" h="259" anim="1" prevent="1" fade="1" title="title_shop" btn_close="true" btn_add="true">
+		<Element id="group_seller" type="groupbox" x="0" y="30" h="98" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="Merchant.png" x="0.5"/>
+			<Element id="image_name" type="image" name="general_nameboard.png" y="78"/>
+			<Element id="text_name" type="text" font="font_text_2" x="0" y="78" w="78" h="20" text="name_Seller" align="center" valign="middle"/>
+			<Element id="grid_seller" type="grid" x="80" y="0" w="345" cols="7" rowh="45" hbland="4" vbland="4" xoffset="2" yoffset="2" font="font_char_1" scrollback="scrollbar_gray.png" scrollbar="scrollbar_darkgray.png" selectbox="item_selected_ex.png" frame="common_lineframe_bold.png"/>
+		</Element>
+		<Element id="group_buyer" type="groupbox" x="0" y="161" h="98" LineColor="0,0,0,0">
+			<Element id="tcmder_buyer" type="tmp_commander" font="font_text_2" x="347" y="0"/>
+			<Element id="grid_buyer" type="grid" x="0" y="0" w="345" cols="7" rowh="45" hbland="4" vbland="4" xoffset="2" yoffset="2" font="font_char_2" scrollback="scrollbar_gray.png" scrollbar="scrollbar_darkgray.png" selectbox="item_selected_ex.png" frame="common_lineframe_bold.png"/>
+		</Element>
+		<Element id="group_info" type="groupbox" x="0" y="129" h="31" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="gray_board.png" DrawMode="extend"/>
+			<Element id="image_middle" type="image" name="general_nameboard.png" x="100" y="0" w="225" DrawMode="extend"/>
+			<Element id="image_line_hor" type="image" name="common_line_hor.png" x="0" y="15" w="100" color="255,255,255,255" DrawMode="hextend"/>
+			<Element id="image_line_ver" type="image" name="whiteline_for_button_close.png" x="100" color="255,255,255,255" DrawMode="vextend"/>
+			<Element id="image_line_ver" type="image" name="whiteline_for_button_close.png" x="325" color="255,255,255,255" DrawMode="vextend"/>
+			<Element id="text_name" type="text" x="0" y="0" w="100" h="15" font="font_text_2" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="image_medal" type="image" name="medals.png" x="20" y="17" scale="0.7"/>
+			<Element id="text_price" type="text" font="font_char_2" x="40" y="18" text="0" color="64,64,64,255"/>
+			<Element id="text_discount" type="text" font="font_char_2" x="67" y="18" color="64,64,64,255"/>
+			<Element id="text_desc" type="text" font="font_text_1" x="101" y="0" w="223" h="30" breakwords="true"/>
+			<Element id="image_trade" type="image" name="skill_39.png" x="327" y="6"/>
+			<Element id="lbox_stars" type="listbox" orient="1" x="349" y="9" w="75" h="15" itemh="13" interval="2" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="btn_buy" type="button" frm1="button_confirm_blue.png" x="0" y="0" w="59" h="26" sound="">
+			<Element id="text_buy" type="text" font="font_text_3" text="text_buy" w="52" h="20" align="center" valign="middle"/>
+		</Element>
+	</Layout>
+	<!-- 物品配置界面 -->
+	<Layout id="form_deployitem" type="user_window" x="0" y="0" w="353" h="261" anim="1" prevent="1" fade="1" title="title_deployitem" btn_close="true">
+		<Element id="group_general" type="groupbox" x="5" y="31" w="78" h="119" LineColor="0,0,0,0">
+			<Element id="btn_prev" type="button" frm1="button_changegeneral_gray.png" frm2="button_changegeneral.png" x="0" y="0" w="38" h="20"/>
+			<Element id="btn_next" type="button" frm1="button_changegeneral_gray_2.png" frm2="button_changegeneral_2.png" x="40" y="0" w="38" h="20"/>
+			<Element id="tcmder" type="tmp_commander" font="font_text_2" y="21" w="78" h="98"/>
+		</Element>
+		<Element id="group_level" type="groupbox" x="89" y="31" w="110" h="52" frame="common_lineframe_bold.png">
+			<Element id="rank_military" type="tmp_rank" x="15" y="5" w="75" ranktype="military"/>
+			<Element id="rank_nobility" type="tmp_rank" x="69" y="5" w="75" ranktype="nobility"/>
+			<Element id="image_life" type="image" name="marker_hp_dark.png" x="11" y="35"/>
+			<Element id="text_life" type="text" x="22" y="37" w="30" h="15" font="font_char_2" text="200" color="64,64,64,255" align="center" vlign="middle"/>
+			<Element id="image_apply" type="image" name="marker_recover_dark.png" x="65" y="32"/>
+			<Element id="text_apply" type="text" x="77" y="37" w="30" h="15" font="font_char_2" text="500" color="64,64,64,255" align="center" vlign="middle"/>
+		</Element>
+		<Element id="group_equip" type="groupbox" x="88" y="81" w="110" h="74" LineColor="0,0,0,0">
+			<Element id="intitle" type="tmp_intitle" x="0" y="4" w="110" title="text_equipitem" textcolor="100,100,100,255"/>
+			<Element id="lbox_equipitem" type="listbox" x="5" y="25" w="100" h="45" orient="1" itemh="45" interval="10" LineColor="0,0,0,0" font="font_char_2" selectbox="item_selected_ex.png"/>
+		</Element>
+		<Element id="group_desc" type="groupbox" x="205" y="31" w="142" h="120" frame="common_lineframe_bold.png">
+			<Element id="intitle_desc" type="tmp_intitle" title="0" textcolor="64,64,64,255"/>
+			<Element id="text_desc" type="text" font="font_text_1" x="4" y="20" w="135" h="96" breakwords="true" color="64,64,64,255"/>
+		</Element>
+		<Element id="group_items" type="groupbox" x="4" y="159" w="344" h="99" frame="common_lineframe_bold.png">
+			<Element id="grid_items" type="grid" x="2" y="2" w="342" h="95" cols="7" rowh="45" hbland="3" vbland="3" scrollback="scrollbar_gray.png" scrollbar="scrollbar_darkgray.png" selectbox="item_selected_ex.png" font="font_char_2" LineColor="0,0,0,0"/>
+		</Element>
+		<Element id="scale_split" type="image" name="common_boldline.png" x="0" y="155" w="353" h="1" DrawMode="extend"/>
+		<Element id="btn_equip" type="button" frm1="button_confirm_blue.png" x="215" y="132" w="55" h="21" font="font_text_3" text="btn_equip" align="center" valign="middle"/>
+	</Layout>
+	<!-- 部署将军界面 -->
+	<Layout id="form_deploygeneral" type="user_window" prevent="1" fade="1" title="title_deploygeneral" btn_back="true" btn_add="true">
+		<Element id="btn_princess" type="tmp_button" frm1="btn_common_green.png" x="20" y="30" w="70" h="40" font="font_text_3" text="btn_princess" align="center" valign="middle"/>
+		<Element id="btn_college" type="tmp_button" frm1="btn_common_green.png" x="480" y="30" w="70" h="40" font="font_text_3" text="btn_college" align="center" valign="middle"/>
+		<Element id="grid_general" type="grid" x="30" y="85" w="508" h="204" cols="6" rowh="99" hbland="8" vbland="6" font="font_text_2" selectbox="item_selected_ex.png" LineColor="0,0,0,0"/>
+		<Element id="image_depnums" type="image" name="generalnumber.png" x="255" y="43"/>
+		<Element id="text_depnums" type="text" x="290" y="43" font="font_char_4" text="0" color="64,64,64,255"/>
+		<Element id="" type="image" name="common_boldline.png" y="73" h="1" DrawMode="extend"/>
+		<Element id="" type="image" name="common_boldline.png" y="298" h="1" DrawMode="extend"/>
+		<Element id="image_pattern" type="image" name="pattern_bg_bottom.png" y="303" align="hmiddle"/>
+		<Element id="image_boldline" type="image" name="common_boldline.png" y="316" h="4" DrawMode="extend" color="64,64,64,200"/>
+		<Element id="btn_deploy" type="button" frm1="button_confirm_blue.png" w="59" h="26">
+			<Element id="text_deploy" type="text" x="0" y="0" w="53" h="22" font="font_text_3" text="btn_deploy" align="center" valign="middle"/>
+		</Element>
+		<Element id="btn_shop" type="tmp_button" frm1="btn_common_blue.png" x="249" y="30" w="70" h="40">
+			<Element id="image_icon" type="image" name="image_shop.png" x="25" y="12"/>
+		</Element>
+	</Layout>
+	<!-- 酒馆(招将)界面 -->
+	<Layout id="form_recruitgeneral" type="user_window" w="300" h="275" anim="1" prevent="1" fade="1" title="title_tavern" btn_close="true">
+		<Element id="group_gen_1" type="groupbox" x="0" y="30" h="55" frame="common_lineframe_bold.png">
+			<Element id="btn_rec_1" type="tmp_button" frm1="btn_common_green.png" x="216" y="8" w="80" h="40" font="font_text_3" text="btn_recruit"/>
+			<Element id="tcmder" type="tmp_commander" x="5" y="2" scale="0.65">
+				<Element id="btn_gen_1" type="button" x="28" y="1" w="24" h="24" frm1="button_generalinfo_blue.png"/>
+			</Element>
+			<Element id="image_name" type="image" name="general_nameboard.png" x="60" y="5" w="75" h="15" DrawMode="extend"/>
+			<Element id="text_name" type="text" x="60" y="5" w="75" h="15" font="font_text_2" text="text_medal" align="center" valign="middle"/>
+			<Element id="rank_military" type="tmp_rank" x="65" y="24" w="75" ranktype="military"/>
+			<Element id="rank_nobility" type="tmp_rank" x="104" y="24" w="75" ranktype="nobility"/>
+			<Element id="group" type="groupbox" x="139" y="3" h="49" w="75" frame="common_lineframe.png">
+				<Element id="image_medal" type="image" name="medals.png" x="8" y="4" scale="0.8"/>
+				<Element id="image_money" type="image" name="marker_money.png" x="5" y="20" scale="0.7"/>
+				<Element id="image_indus" type="image" name="marker_industry.png" x="5" y="34" scale="0.7"/>
+				<Element id="text_medal" type="text" x="27" y="5" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_money" type="text" x="27" y="20" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_indus" type="text" x="27" y="35" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+			</Element>
+		</Element>
+		<Element id="group_gen_2" type="groupbox" x="0" y="30" h="55" frame="common_lineframe_bold.png">
+			<Element id="btn_rec_2" type="tmp_button" frm1="btn_common_green.png" x="216" y="8" w="80" h="40" font="font_text_3" text="btn_recruit"/>
+			<Element id="tcmder" type="tmp_commander" x="5" y="2" scale="0.65">
+				<Element id="btn_gen_2" type="button" x="28" y="1" w="24" h="24" frm1="button_generalinfo_blue.png"/>
+			</Element>
+			<Element id="image_name" type="image" name="general_nameboard.png" x="60" y="5" w="75" h="15" DrawMode="extend"/>
+			<Element id="text_name" type="text" x="60" y="5" w="75" h="15" font="font_text_2" text="text_medal" align="center" valign="middle"/>
+			<Element id="rank_military" type="tmp_rank" x="65" y="24" w="75" ranktype="military"/>
+			<Element id="rank_nobility" type="tmp_rank" x="104" y="24" w="75" ranktype="nobility"/>
+			<Element id="group" type="groupbox" x="139" y="3" h="49" w="75" frame="common_lineframe.png">
+				<Element id="image_medal" type="image" name="medals.png" x="8" y="4" scale="0.8"/>
+				<Element id="image_money" type="image" name="marker_money.png" x="5" y="20" scale="0.7"/>
+				<Element id="image_indus" type="image" name="marker_industry.png" x="5" y="34" scale="0.7"/>
+				<Element id="text_medal" type="text" x="27" y="5" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_money" type="text" x="27" y="20" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_indus" type="text" x="27" y="35" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+			</Element>
+		</Element>
+		<Element id="group_gen_3" type="groupbox" x="0" y="30" h="55" frame="common_lineframe_bold.png">
+			<Element id="btn_rec_3" type="tmp_button" frm1="btn_common_green.png" x="216" y="8" w="80" h="40" font="font_text_3" text="btn_recruit"/>
+			<Element id="tcmder" type="tmp_commander" x="5" y="2" scale="0.65">
+				<Element id="btn_gen_3" type="button" x="28" y="1" w="24" h="24" frm1="button_generalinfo_blue.png"/>
+			</Element>
+			<Element id="image_name" type="image" name="general_nameboard.png" x="60" y="5" w="75" h="15" DrawMode="extend"/>
+			<Element id="text_name" type="text" x="60" y="5" w="75" h="15" font="font_text_2" text="text_medal" align="center" valign="middle"/>
+			<Element id="rank_military" type="tmp_rank" x="65" y="24" w="75" ranktype="military"/>
+			<Element id="rank_nobility" type="tmp_rank" x="104" y="24" w="75" ranktype="nobility"/>
+			<Element id="group" type="groupbox" x="139" y="3" h="49" w="75" frame="common_lineframe.png">
+				<Element id="image_medal" type="image" name="medals.png" x="8" y="4" scale="0.8"/>
+				<Element id="image_money" type="image" name="marker_money.png" x="5" y="20" scale="0.7"/>
+				<Element id="image_indus" type="image" name="marker_industry.png" x="5" y="34" scale="0.7"/>
+				<Element id="text_medal" type="text" x="27" y="5" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_money" type="text" x="27" y="20" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_indus" type="text" x="27" y="35" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+			</Element>
+		</Element>
+		<Element id="group_gen_4" type="groupbox" x="0" y="30" h="55" frame="common_lineframe_bold.png">
+			<Element id="btn_rec_4" type="tmp_button" frm1="btn_common_green.png" x="216" y="8" w="80" h="40" font="font_text_3" text="btn_recruit"/>
+			<Element id="tcmder" type="tmp_commander" x="5" y="2" scale="0.65">
+				<Element id="btn_gen_4" type="button" x="28" y="1" w="24" h="24" frm1="button_generalinfo_blue.png"/>
+			</Element>
+			<Element id="image_name" type="image" name="general_nameboard.png" x="60" y="5" w="75" h="15" DrawMode="extend"/>
+			<Element id="text_name" type="text" x="60" y="5" w="75" h="15" font="font_text_2" text="text_medal" align="center" valign="middle"/>
+			<Element id="rank_military" type="tmp_rank" x="65" y="24" w="75" ranktype="military"/>
+			<Element id="rank_nobility" type="tmp_rank" x="104" y="24" w="75" ranktype="nobility"/>
+			<Element id="group" type="groupbox" x="139" y="3" h="49" w="75" frame="common_lineframe.png">
+				<Element id="image_medal" type="image" name="medals.png" x="8" y="4" scale="0.8"/>
+				<Element id="image_money" type="image" name="marker_money.png" x="5" y="20" scale="0.7"/>
+				<Element id="image_indus" type="image" name="marker_industry.png" x="5" y="34" scale="0.7"/>
+				<Element id="text_medal" type="text" x="27" y="5" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_money" type="text" x="27" y="20" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+				<Element id="text_indus" type="text" x="27" y="35" w="50" h="15" font="font_char_2" color="64,64,64,255"/>
+			</Element>
+		</Element>
+	</Layout>
+	<!-- 防御设施/要塞界面 -->
+	<Layout id="form_defense" type="user_window" x="0" y="0" w="300" h="184" anim="1" prevent="1" fade="1" title="title_defend" btn_close="true" btn_ok="true">
+		<Element id="lbox_defense" type="listbox" orient="1" x="2" y="30" w="298" h="65" itemh="72" interval="3" font="font_char_1" selectbox="item_selected_ex.png" LineColor="0,0,0,0"/>
+		<Element id="group_desc" type="groupbox" x="2" y="98" w="296" h="84" frame="common_lineframe_bold.png">
+			<Element id="intitle" type="tmp_intitle" x="0" y="1" h="16" title="title" textcolor="64,64,64,255"/>
+			<Element id="text_desc" type="text" font="font_text_1" x="2" y="19" w="292" h="63" color="64,64,64,255"/>
+		</Element>
+	</Layout>
+	<!-- 回合结算界面 -->
+	<Layout id="form_roundturn" type="user_window" x="0" y="0" w="320" h="175" anim="1" prevent="1" fade="1" title="title_roundturn" btn_close="true">
+		<Element id="scale_line_ver" type="image" name="common_line_ver.png" x="106" y="28" h="63" DrawMode="vextend"/>
+		<Element id="scale_line_ver" type="image" name="common_line_ver.png" x="213" y="28" h="63" DrawMode="vextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" x="3" y="91" w="314" DrawMode="hextend"/>
+		<Element id="image_hor" type="image" name="common_line_hor.png" x="4" y="45" w="100" DrawMode="hextend"/>
+		<Element id="text_economy" type="text" font="font_text_2" x="4" y="30" w="100" h="16" text="text_economy" color="64,64,64,255" align="center"/>
+		<Element id="image_money" type="image" name="marker_money.png" x="28" y="50"/>
+		<Element id="image_indus" type="image" name="marker_industry.png" x="28" y="70"/>
+		<Element id="text_money" type="text" font="font_char_2" x="55" y="55" color="64,64,64,255"/>
+		<Element id="text_indus" type="text" font="font_char_2" x="55" y="75" color="64,64,64,255"/>
+		<Element id="image_hor" type="image" name="common_line_hor.png" x="111" y="45" w="97" DrawMode="hextend"/>
+		<Element id="text_round" type="text" font="font_text_2" x="111" y="30" w="56" h="16" text="text_round" color="64,64,64,255" align="center"/>
+		<Element id="text_roundnum" type="text" font="font_char_4" x="111" y="59" w="50" align="center" color="64,64,64,255"/>
+		<Element id="image_star" type="image" name="star_board.png" x="162" y="28"/>
+		<Element id="text_roundmin" type="text" font="font_char_2" x="190" y="39" text="12"/>
+		<Element id="text_roundmax" type="text" font="font_char_2" x="190" y="69" text="12"/>
+		<Element id="image_hor" type="image" name="common_line_hor.png" x="217" y="45" w="100" DrawMode="hextend"/>
+		<Element id="text_foodsuply" type="text" font="font_text_2" x="217" y="30" w="100" h="16" text="text_foodsuply" color="64,64,64,255" align="center"/>
+		<Element id="image_addfood" type="image" name="food_add.png" x="240" y="50"/>
+		<Element id="image_delfood" type="image" name="food_reduce.png" x="240" y="70"/>
+		<Element id="text_addfood" type="text" font="font_char_2" x="270" y="55" color="64,64,64,255"/>
+		<Element id="text_delfood" type="text" font="font_char_2" x="270" y="75" color="64,64,64,255"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" x="3" y="100" w="314" h="1" DrawMode="extend"/>
+		<Element id="lbox_general" type="listbox" orient="1" x="11" y="105" w="299" h="59" itemh="78" interval="4" scale="0.6" font="font_char_1" LineColor="0,0,0,0"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" x="3" y="167" w="314" h="1" DrawMode="extend"/>
+	</Layout>
+	<!-- 胜利界面 -->
+	<Layout id="form_victory" type="user_window" x="0" y="0" w="346" h="210" anim="1" prevent="1" fade="0" title="title_victory">
+		<Element id="scale_line_ver" type="image" name="common_line_ver.png" x="240" y="27" w="1" h="63" DrawMode="vextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" y="90" h="1" DrawMode="hextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" x="240" y="47" w="105" h="1" DrawMode="hextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" y="158" h="1" DrawMode="hextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" y="206" h="1" DrawMode="hextend"/>
+		<Element id="text_round" type="text" font="font_text_2" x="240" y="27" w="65" h="20" text="text_round" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="text_roundval" type="text" font="font_char_4" x="240" y="59" w="57" h="20" text="12" color="64,64,64,255" align="center"/>
+		<Element id="group_starlevel" type="groupbox" x="295" y="27" w="51" h="63" LineColor="0,0,0,0">
+			<Element id="image_star" type="image" name="star_board.png"/>
+			<Element id="text_star" type="text" font="font_char_2" x="29" y="11" w="115" h="20" text="20"/>
+			<Element id="text_star2" type="text" font="font_char_2" x="29" y="42" w="115" h="20" text="15"/>
+		</Element>
+		<Element id="text_battle" type="text" font="font_text_2" x="2" y="27" w="240" h="20" text="Battle Name" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="lbox_stars" type="listbox" orient="1" x="85" y="47" w="75" h="15" itemh="13" interval="1" LineColor="0,0,0,0"/>
+		<Element id="text_award" type="text" font="font_text_2" x="12" y="70" w="50" h="15" text="text_award" color="64,64,64,255" align="right" valign="middle"/>
+		<Element id="image_medal" type="image" name="medals.png" x="67" y="69"/>
+		<Element id="text_award_val" type="text" font="font_char_2" x="80" y="71" w="40" h="15" text="999" color="64,64,64,255"/>
+		<Element id="text_gain" type="text" font="font_text_2" x="90" y="70" w="85" h="15" text="text_gain" color="64,64,64,255" align="right" valign="middle"/>
+		<Element id="image_medal" type="image" name="medals.png" x="182" y="69"/>
+		<Element id="text_gain_val" type="text" font="font_char_2" x="195" y="71" w="40" h="15" text="999" color="64,64,64,255"/>
+		<Element id="lbox_general" type="listbox" orient="1" x="13" y="95" w="320" h="59" itemh="78" interval="8" scale="0.6" font="font_char_3" LineColor="0,0,0,0"/>
+		<Element id="btn_continue" type="tmp_button" frm1="btn_common_green.png" x="40" y="165" w="70" h="35" text="btn_continue" font="font_text_3"/>
+		<Element id="btn_restart" type="tmp_button" frm1="btn_common_green.png" x="40" y="165" w="70" h="35" text="btn_restart" font="font_text_3"/>
+		<Element id="btn_exit" type="tmp_button" frm1="btn_common_blue.png" x="235" y="165" w="70" h="35" text="btn_exit" font="font_text_3"/>
+		<Element id="image_pattern" type="image" name="pattern_stage_intro.png" y="172" align="hmiddle"/>
+	</Layout>
+	<!-- 多人游戏胜利界面 -->
+	<Layout id="form_multiplayervictory" type="user_window" x="0" y="0" w="280" h="120" anim="1" prevent="1" fade="0" title="title_victory" btn_ok="true">
+		<Element id="scale_line_ver" type="image" name="common_line_ver.png" x="200" y="27" w="1" h="63" DrawMode="vextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" y="91" h="1" DrawMode="hextend"/>
+		<Element id="scale_line_hor" type="image" name="common_line_hor.png" x="200" y="47" w="80" h="1" DrawMode="hextend"/>
+		<Element id="text_round" type="text" font="font_text_2" x="200" y="27" w="80" h="20" text="text_round" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="text_roundval" type="text" font="font_char_4" x="200" y="59" w="80" h="20" text="12" color="64,64,64,255" align="center"/>
+		<Element id="text_battle" type="text" font="font_text_2" x="2" y="27" w="200" h="20" text="Battle Name" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="text_award" type="text" font="font_text_2" x="57" y="70" w="50" h="15" text="text_award" color="64,64,64,255" align="right" valign="middle"/>
+		<Element id="image_medal" type="image" name="medals.png" x="112" y="69"/>
+		<Element id="text_award_val" type="text" font="font_char_2" x="130" y="72" w="40" h="15" text="999" color="64,64,64,255"/>
+		<Element id="image_pattern" type="image" name="pattern_stage_intro.png" y="97" align="hmiddle"/>
+	</Layout>
+	<!-- 谈话界面 -->
+	<Layout id="form_talk" type="window" y="450" w="325" h="83" prevent="1">
+		<Element id="image_back" type="image" name="board_dialog_ex.png" DrawMode="extend"/>
+		<Element id="image_commander" type="image" name="" x="10" y="7" scale="1.0"/>
+		<Element id="group_content" type="groupbox" x="88" y="7" w="220" h="76" LineColor="0,0,0,0">
+			<Element id="intitle" type="tmp_intitle" x="4" y="1" font="font_text_2" title="name" textcolor="100,100,100,255"/>
+			<Element id="text_content" type="text" x="2" y="20" h="66" font="font_text_1" breakwords="true" color="64,64,64,255"/>
+		</Element>
+	</Layout>
+	<!-- 游戏设置界面 -->
+	<Layout id="form_option" type="user_window" x="0" y="0" w="360" h="218" anim="1" prevent="1" fade="1" sound="sfx_pop.wav" title="title_option" btn_close="true" btn_ok="true">
+		<Element id="intitle" type="tmp_intitle" x="32" y="35" w="120" title="name_music" textcolor="100,100,100,255"/>
+		<Element id="image_musicback" type="image" name="volume_bar.png" x="25" y="68"/>
+		<Element id="sbar_music" type="scrollbar" slider1="slider_gray.png" slider2="slider_press.png" x="41" y="68" w="100" h="18" sliderw="7" sliderh="18"/>
+		<Element id="intitle" type="tmp_intitle" x="206" y="35" w="120" title="name_sound" textcolor="100,100,100,255"/>
+		<Element id="image_soundback" type="image" name="volume_bar.png" x="202" y="68"/>
+		<Element id="sbar_sound" type="scrollbar" slider1="slider_gray.png" slider2="slider_press.png" x="218" y="68" w="100" h="18" sliderw="7" sliderh="18"/>
+		<Element id="scale_split" type="image" name="common_boldline.png" x="5" y="102" w="350" h="1" DrawMode="extend"/>
+		<Element id="intitle" type="tmp_intitle" x="32" y="123" w="120" title="name_gamespeed" drawline="false" textcolor="100,100,100,255"/>
+		<Element id="image_speedback" type="image" name="speed_bar.png" x="205" y="124"/>
+		<Element id="btn_block1" type="button" frm1="speed_brick.png" x="218" y="125" w="20" h="15"/>
+		<Element id="btn_block2" type="button" frm1="speed_brick.png" x="238" y="125" w="20" h="15"/>
+		<Element id="btn_block3" type="button" frm1="speed_brick.png" x="258" y="125" w="20" h="15"/>
+		<Element id="btn_block4" type="button" frm1="speed_brick.png" x="278" y="125" w="20" h="15"/>
+		<Element id="btn_block5" type="button" frm1="speed_brick.png" x="298" y="125" w="20" h="15"/>
+		<Element id="scale_split" type="image" name="common_boldline.png" x="5" y="160" w="350" h="1" DrawMode="extend"/>
+		<Element id="intitle" type="tmp_intitle" x="32" y="180" w="120" title="name_showgrid" drawline="false" textcolor="100,100,100,255"/>
+		<Element id="btn_check" type="button" frm1="grid_box.png" frm2="grid_box.png" x="258" y="180" w="19" h="19"/>
+	</Layout>
+	<!-- 游戏界面 -->
+	<Layout id="form_game" type="window">
+		<Element id="btn_pause" type="button" frm1="button_pause.png" x="541" y="0" w="37" h="37"/>
+		<Element id="btn_undo" type="button" frm1="button_return.png" x="0" y="293" w="37" h="37"/>
+		<Element id="btn_skip" type="button" frm1="button_skip.png" x="0" y="293" w="37" h="37"/>
+		<Element id="btn_next" type="button" frm1="button_round.png" x="541" y="293" w="37" h="37"/>
+		<Element id="group_func" type="groupbox" x="140" y="309" w="270" h="11" LineColor="0,0,0,0">
+			<Element id="image_funcback" type="image" name="board_buttons.png" DrawMode="hextend"/>
+			<Element id="btn_upgrade" type="button" frm1="button_buildupgrade.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_defense" type="button" frm1="button_builddefense.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_fortress" type="button" frm1="button_buildfortress.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_general" type="button" frm1="button_generals.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_training" type="button" frm1="button_training.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_factory" type="button" frm1="button_factory.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_trading" type="button" frm1="button_trade.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_stable" type="button" frm1="button_stable.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_city" type="button" frm1="button_city.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_shop" type="button" frm1="button_shop.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_bar" type="button" frm1="button_bar.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_port" type="button" frm1="button_dock.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_item" type="button" frm1="button_items.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_ship" type="button" frm1="button_buyship.png" x="0" y="-22" w="33" h="33"/>
+			<Element id="btn_unitinfo" type="button" frm1="button_info.png" x="0" y="-22" w="33" h="33"/>
+		</Element>
+		<Element id="image_resback" type="image" name="board_resources.png" w="165" DrawMode="hextend"/>
+		<Element id="group_res" type="groupbox" x="0" y="0" w="208" h="23" LineColor="0,0,0,0">
+			<Element id="image_money" type="image" name="marker_money.png" x="3" y="3"/>
+			<Element id="text_money" type="text" x="21" y="0" font="font_char_3" text="0" valign="middle"/>
+			<Element id="image_industry" type="image" name="marker_industry.png" x="53" y="3"/>
+			<Element id="text_industry" type="text" x="70" y="0" font="font_char_3" text="0" valign="middle"/>
+			<Element id="image_food" type="image" name="marker_food.png" x="103" y="3"/>
+			<Element id="text_food" type="text" x="125" y="0" font="font_char_3" text="0" valign="middle"/>
+		</Element>
+		<Element id="group_incom" type="groupbox" x="0" y="31" w="110" h="48" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="board_terrain_info.png" w="110" DrawMode="hextend"/>
+			<Element id="image_icon_1" type="image" name="marker_money.png" x="2" y="3"/>
+			<Element id="text_value_1" type="text" x="20" y="6" font="font_char_2" text="0"/>
+			<Element id="image_icon_2" type="image" name="marker_industry.png" x="2" y="26"/>
+			<Element id="text_value_2" type="text" x="20" y="30" font="font_char_2" text="0"/>
+			<Element id="image_icon_3" type="image" name="marker_dfs_all.png" x="48" y="3"/>
+			<Element id="text_value_3" type="text" x="67" y="6" font="font_char_2" text="0"/>
+			<Element id="image_icon_4" type="image" name="marker_dfs_artillery.png" x="48" y="26"/>
+			<Element id="text_value_4" type="text" x="67" y="30" font="font_char_2" text="0"/>
+		</Element>
+		<Element id="group_funcres" type="groupbox" x="0" y="0" w="84" h="56" LineColor="0,0,0,0">
+			<Element id="image_back" type="image" name="board_button.png" x="14" y="8"/>
+			<Element id="image_money" type="image" name="marker_money.png" x="14" y="8"/>
+			<Element id="image_apply" type="image" name="marker_industry.png" x="15" y="29"/>
+			<Element id="text_needmoney" type="text" x="32" y="8" w="50" h="19" font="font_text_4" color="64,64,64,255" text="888" align="center" valign="middle"/>
+			<Element id="text_needapply" type="text" x="32" y="28" w="50" h="19" font="font_text_4" color="64,64,64,255" text="999" align="center" valign="middle"/>
+			<Element id="image_line_hor" type="image" name="common_line_hor.png" x="14" y="28" w="68" color="255,255,255,255" DrawMode="hextend"/>
+			<Element id="btn_done" type="button" frm1="button_ok.png" x="33" y="55" w="33" h="33"/>
+		</Element>
+		<Element id="group_aiaction" type="groupbox" x="506" y="298" w="137" h="22" LineColor="0,0,0,0">
+			<Element id="image_aiback" type="image" name="board_aiaction.png" x="0" y="0"/>
+			<Element id="image_flag" type="image" name="fra1.png" x="13" y="5"/>
+			<Element id="text_playing" type="text" x="44" y="7" w="40" h="23" font="font_text_1" string=">>>"/>
+		</Element>
+	</Layout>
+	<!-- 存档界面 -->
+	<Layout id="form_save" type="user_window" x="0" y="0" w="352" h="235" anim="1" prevent="1" fade="1" sound="sfx_pop.wav" title="title_savegame" btn_close="true">
+		<Element id="group_autosave" type="groupbox" x="119" y="31" w="114" h="201" LineColor="0,0,0,0">
+			<Element id="image_back1" type="image" name="save_grayboard.png" x="0" y="0" w="114" h="58" DrawMode="extend"/>
+			<Element id="image_back2" type="image" name="save_grayboard.png" x="0" y="143" w="114" h="58" DrawMode="extend"/>
+			<Element id="intitle" type="tmp_intitle" x="7" y="18" w="100" title="text_autosave" textcolor="100,100,100,255" drawline="false"/>
+			<Element id="image_intro" type="image" name="pattern_stage_intro.png" y="165" align="hmiddle"/>
+		</Element>
+		<Element id="group_save_0" type="groupbox" x="119" y="88" w="114" h="87" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="30" align="center"/>
+			<Element id="image_flag" type="image" y="53" align="hmiddle"/>
+			<Element id="btn_ok_0" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="57" w="30" h="30"/>
+		</Element>
+		<Element id="group_save_1" type="groupbox" x="4" y="31" w="114" h="67" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="25" h="30" align="center"/>
+			<Element id="image_flag" type="image" y="47" align="hmiddle"/>
+			<Element id="btn_ok_1" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="36" w="30" h="30"/>
+		</Element>
+		<Element id="group_save_2" type="groupbox" x="4" y="98" w="114" h="67" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="25" h="30" align="center"/>
+			<Element id="image_flag" type="image" y="47" align="hmiddle"/>
+			<Element id="btn_ok_2" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="36" w="30" h="30"/>
+		</Element>
+		<Element id="group_save_3" type="groupbox" x="4" y="165" w="114" h="67" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="25" h="30" align="center"/>
+			<Element id="image_flag" type="image" y="47" align="hmiddle"/>
+			<Element id="btn_ok_3" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="36" w="30" h="30"/>
+		</Element>
+		<Element id="group_save_4" type="groupbox" x="235" y="31" w="114" h="67" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="25" h="30" align="center"/>
+			<Element id="image_flag" type="image" y="47" align="hmiddle"/>
+			<Element id="btn_ok_4" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="36" w="30" h="30"/>
+		</Element>
+		<Element id="group_save_5" type="groupbox" x="235" y="98" w="114" h="67" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="25" h="30" align="center"/>
+			<Element id="image_flag" type="image" y="47" align="hmiddle"/>
+			<Element id="btn_ok_5" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="36" w="30" h="30"/>
+		</Element>
+		<Element id="group_save_6" type="groupbox" x="235" y="165" w="114" h="67" title="general_nameboard.png" titleHeight="23" text="game save" font="font_text_2" frame="common_lineframe_bold.png">
+			<Element id="text_date" type="text" font="font_char_1" y="25" h="30" align="center"/>
+			<Element id="image_flag" type="image" y="47" align="hmiddle"/>
+			<Element id="btn_ok_6" type="button" frm1="button_ok_gray_noshadow.png" x="83" y="36" w="30" h="30"/>
+		</Element>
+	</Layout>
+	<!-- 升级界面 -->
+	<Layout id="form_upgrade" type="user_window" x="0" y="0" w="421" h="265" anim="1" prevent="1" fade="1" sound="sfx_pop.wav" title="title_upgrade" btn_close="true">
+		<Element id="group_pages" type="groupbox" x="3" y="60" w="300" h="202" frame="common_lineframe_bold.png">
+			<Element id="image_verbar" type="image" name="upgrade_back.png" w="49" h="202" DrawMode="extend"/>
+			<Element id="grid_units" type="grid" x="0" y="5" w="300" h="192" cols="6" rowh="40" hbland="0" vbland="10" font="font_char_1" LineColor="0,0,0,0"/>
+			<Element id="image_selbox" type="image" name="button_upgrade_selbox.png"/>
+		</Element>
+		<Element id="group_buttons" type="groupbox" x="3" y="30" w="300" h="274" LineColor="0,0,0,0">
+			<Element id="cbtn_0" type="CheckButton" UncheckImage="upgrade_tag.png" CheckedImage="upgrade_tag_selected.png" x="1" y="0" w="49" h="27">
+				<Element id="icon" type="image" name="upgrade_tag_infantry.png" y="3" align="hmiddle"/>
+			</Element>
+			<Element id="cbtn_1" type="CheckButton" UncheckImage="upgrade_tag.png" CheckedImage="upgrade_tag_selected.png" x="51" y="0" w="49" h="27">
+				<Element id="icon" type="image" name="upgrade_tag_cavalry.png" y="3" align="hmiddle"/>
+			</Element>
+			<Element id="cbtn_2" type="CheckButton" UncheckImage="upgrade_tag.png" CheckedImage="upgrade_tag_selected.png" x="101" y="0" w="49" h="27">
+				<Element id="icon" type="image" name="upgrade_tag_artillery.png" y="3" align="hmiddle"/>
+			</Element>
+			<Element id="cbtn_3" type="CheckButton" UncheckImage="upgrade_tag.png" CheckedImage="upgrade_tag_selected.png" x="151" y="0" w="49" h="27">
+				<Element id="icon" type="image" name="upgrade_tag_ship.png" y="3" align="hmiddle"/>
+			</Element>
+			<Element id="cbtn_4" type="CheckButton" UncheckImage="upgrade_tag.png" CheckedImage="upgrade_tag_selected.png" x="201" y="0" w="49" h="27">
+				<Element id="icon" type="image" name="upgrade_tag_fortress.png" y="3" align="hmiddle"/>
+			</Element>
+		</Element>
+		<Element id="group_func" type="groupbox" x="305" y="30" w="111" h="232" LineColor="0,0,0,0">
+			<Element id="image_title" type="image" y="5" align="hmiddle"/>
+			<Element id="image_needback" type="image" name="general_nameboard.png" x="6" y="56" w="100" h="24" DrawMode="extend"/>
+			<Element id="image_currstar" type="image" name="stage_star.png" x="20" y="59"/>
+			<Element id="text_currstar" type="text" font="font_char_3" x="45" y="62"/>
+			<Element id="intitle" type="tmp_intitle" x="2" y="85" w="109" title="text_unit" textcolor="64,64,64,255"/>
+			<Element id="image_side" type="image" name="button_fortress_soldiers.png" x="20" y="110" w="72" h="65" DrawMode="extend"/>
+			<Element id="image_unit" type="image" name="stage_star.png" x="20" y="110"/>
+			<Element id="image_arrow" type="image" name="arrow.png" x="52" y="166"/>
+			<Element id="text_from" type="text" text="LV0" font="font_char_1" x="20" y="163" w="30" h="12" align="center" valign="middle"/>
+			<Element id="text_to" type="text" text="LV1" font="font_char_1" x="60" y="163" w="30" h="12" align="center" valign="middle"/>
+			<Element id="btn_upgrade" type="tmp_button" frm1="btn_common_blue.png" x="15" y="190" w="83" h="35">
+				<Element id="image_needstar" type="image" name="stage_star.png" x="20" y="9"/>
+				<Element id="text_needstar" type="text" font="font_char_3" x="50" y="12"/>
+			</Element>
+		</Element>
+	</Layout>
+	<!-- 消息框界面 -->
+	<Layout id="form_messagebox" type="user_window" x="0" y="0" w="300" h="150" anim="1" prevent="1" fade="1">
+		<Element id="text_info" type="text" font="font_text_3" color="64,64,64,255" x="24" y="40" w="252" h="40" align="center" valign="middle" breakwords="1"/>
+		<Element id="btn_confirm" type="tmp_button" frm1="btn_common_blue.png" x="50" y="100" w="75" h="30" font="font_text_3" text="btn_confirm"/>
+		<Element id="btn_cancel" type="tmp_button" frm1="btn_common_blue.png" x="175" y="100" w="75" h="30" font="font_text_3" text="btn_cancel"/>
+	</Layout>
+	<!-- 使用物品界面 -->
+	<Layout id="form_useitem" type="user_window" x="0" y="0" w="280" h="175" anim="1" prevent="1" fade="1" title="title_useitem" btn_close="true" btn_ok="true">
+		<Element id="lbox_item" type="listbox" orient="1" x="9" y="35" w="269" h="45" itemh="45" interval="9" font="font_char_2" selectbox="item_selected_ex.png" LineColor="0,0,0,0"/>
+		<Element id="group_desc" type="groupbox" x="2" y="88" w="275" h="84" frame="common_lineframe_bold.png">
+			<Element id="intitle" type="tmp_intitle" x="0" y="1" h="16" title="title" textcolor="100,100,100,255"/>
+			<Element id="text_desc" type="text" x="3" y="19" w="269" h="63" font="font_text_1" text="food" breakwords="1" color="64,64,64,255"/>
+		</Element>
+	</Layout>
+	<!-- 成就界面 -->
+	<Layout id="form_achivement" type="user_window" prevent="1" title="title_achivement" btn_back="true">
+		<Element id="btn_champion" type="button" frm1="button_champion.png" x="15" y="31" w="49" h="32"/>
+		<Element id="btn_ranking" type="button" frm1="button_rank.png" x="80" y="31" w="49" h="32"/>
+		<Element id="image_medal" type="image" x="193" y="37" name="stage_star.png"/>
+		<Element id="text_medal" type="text" x="218" y="38" font="font_char_4" text="100/200" color="64,64,64,255"/>
+		<Element id="group_milrank" type="groupbox" x="327" y="28" w="120" h="38" LineColor="0,0,0,0">
+			<Element id="image_milback" type="image" name="board_rankclass.png"/>
+			<Element id="image_milrank" type="image" name="marker_rank.png" x="7" y="2"/>
+			<Element id="text_millevel" type="text" x="5" y="27" w="60" h="15" font="font_char_1" text="lvl10"/>
+			<Element id="text_milscore" type="text" x="43" y="10" w="60" h="15" font="font_char_4" text="123" color="64,64,64,255"/>
+		</Element>
+		<Element id="group_nobrank" type="groupbox" x="448" y="28" w="120" h="38" LineColor="0,0,0,0">
+			<Element id="image_nobback" type="image" name="board_rankclass.png"/>
+			<Element id="image_nobrank" type="image" name="marker_class.png" x="7" y="2"/>
+			<Element id="text_noblevel" type="text" x="5" y="27" w="60" h="15" font="font_char_1" text="lvl05"/>
+			<Element id="text_nobscore" type="text" x="43" y="10" w="60" h="15" font="font_char_4" text="999" color="64,64,64,255"/>
+		</Element>
+		<Element id="image" type="image" x="65" y="74" name="pattern_save.png"/>
+		<Element id="text" type="text" x="87" y="68" w="75" h="15" font="font_text_4" text="text2_european" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="image" type="image" x="184" y="74" name="pattern_save.png" hscale="-1"/>
+		<Element id="image" type="image" x="220" y="74" name="pattern_save.png"/>
+		<Element id="text" type="text" x="242" y="68" w="75" h="15" font="font_text_4" text="text2_american" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="image" type="image" x="339" y="74" name="pattern_save.png" hscale="-1"/>
+		<Element id="image" type="image" x="375" y="74" name="pattern_save.png"/>
+		<Element id="text" type="text" x="397" y="68" w="75" h="15" font="font_text_4" text="text2_asia" color="64,64,64,255" align="center" valign="middle"/>
+		<Element id="image" type="image" x="494" y="74" name="pattern_save.png" hscale="-1"/>
+		<Element id="scale_top" type="image" name="common_line_hor.png" x="0" y="66" h="1" DrawMode="hextend"/>
+		<Element id="image_icon_1" type="image" x="75" y="85" name="button_rule_europa.png"/>
+		<Element id="image_rule_11" type="image" x="97" y="189"/>
+		<Element id="image_rule_12" type="image" x="117" y="189"/>
+		<Element id="image_rule_13" type="image" x="137" y="189"/>
+		<Element id="text_rule" type="text" x="64" y="200" font="font_text_4" text="text2_rule" color="64,64,64,255"/>
+		<Element id="text_year" type="text" x="157" y="200" font="font_text_4" text="text2_year" color="64,64,64,255"/>
+		<Element id="image_icon_2" type="image" x="230" y="85" name="button_rule_america.png"/>
+		<Element id="image_rule_21" type="image" x="252" y="189"/>
+		<Element id="image_rule_22" type="image" x="272" y="189"/>
+		<Element id="image_rule_23" type="image" x="292" y="189"/>
+		<Element id="text_rule" type="text" x="219" y="200" font="font_text_4" text="text2_rule" color="64,64,64,255"/>
+		<Element id="text_year" type="text" x="310" y="200" font="font_text_4" text="text2_year" color="64,64,64,255"/>
+		<Element id="image_icon_3" type="image" x="385" y="85" name="button_rule_asia.png"/>
+		<Element id="image_rule_31" type="image" x="407" y="189"/>
+		<Element id="image_rule_32" type="image" x="427" y="189"/>
+		<Element id="image_rule_33" type="image" x="447" y="189"/>
+		<Element id="text_rule" type="text" x="374" y="200" font="font_text_4" text="text2_rule" color="64,64,64,255"/>
+		<Element id="text_year" type="text" x="467" y="200" font="font_text_4" text="text2_year" color="64,64,64,255"/>
+		<Element id="scale_mid" type="image" name="common_line_hor.png" x="0" y="217" h="2" DrawMode="extend"/>
+		<Element id="lbox_general" type="listbox" orient="1" x="23" y="223" w="600" h="98" scale="0.75" itemh="78" interval="8" font="font_text_2" sound="" LineColor="0,0,0,0"/>
+		<Element id="scale_bot" type="image" name="common_line_hor.png" x="0" y="300" h="2" DrawMode="extend"/>
+		<Element id="image_bot" type="image" name="pattern_bg_bottom.png" y="303" align="hmiddle"/>
+		<Element id="image_side" type="image" name="common_line_hor.png" y="316" h="4" DrawMode="extend" color="64,64,64,200"/>
+	</Layout>
+	<!-- 公主界面 -->
+	<Layout id="form_princess" type="user_window" w="468" h="300" anim="1" prevent="1" fade="1" sound="sfx_pop.wav" title="title_princess" btn_close="true">
+		<Element id="lbox_princess_up" type="listbox" orient="1" x="50" y="35" w="746" h="98" itemh="78" interval="20" font="font_text_2" LineColor="0,0,0,0" sound=""/>
+		<Element id="btn_go_1" type="button" frm1="button_confirm_blue.png" x="60" y="135" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="btn_go_2" type="button" frm1="button_confirm_blue.png" x="158" y="135" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="btn_go_3" type="button" frm1="button_confirm_blue.png" x="256" y="135" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="btn_go_4" type="button" frm1="button_confirm_blue.png" x="354" y="135" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="lbox_princess_dn" type="listbox" orient="1" x="50" y="164" w="746" h="98" itemh="78" interval="20" font="font_text_2" LineColor="0,0,0,0" sound=""/>
+		<Element id="btn_go_5" type="button" frm1="button_confirm_blue.png" x="60" y="264" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="btn_go_6" type="button" frm1="button_confirm_blue.png" x="158" y="264" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="btn_go_7" type="button" frm1="button_confirm_blue.png" x="256" y="264" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+		<Element id="btn_go_8" type="button" frm1="button_confirm_blue.png" x="354" y="264" w="55" h="22" text="btn_gobattle" font="font_text_3"/>
+	</Layout>
+	<!-- 战线完成界面 -->
+	<Layout id="form_complete" type="user_window" w="346" h="190" anim="1" prevent="1" fade="1" sound="sfx_pop.wav" title="title_complete">
+		<Element id="group_campaign" type="groupbox" x="0" y="25" h="165" LineColor="0,0,0,0">
+			<Element id="image_picture" type="image" x="2" y="2" name="button_conquest_1815.png"/>
+			<Element id="image_back_bar" type="image" x="0" y="122" h="39" name="gray_board.png" DrawMode="extend"/>
+			<Element id="scale_split" type="image" name="common_boldline.png" y="122" h="1" DrawMode="extend"/>
+			<Element id="scale_split" type="image" name="common_boldline.png" y="161" h="1" DrawMode="extend"/>
+			<Element id="text_award" type="text" x="65" y="136" font="font_text_2" color="80,80,80,255" text="text_award"/>
+			<Element id="image_medal" type="image" x="150" y="134" name="medals.png"/>
+			<Element id="text_award_medal" type="text" x="170" y="137" font="font_char_3" color="80,80,80,255"/>
+			<Element id="image_badge" type="image" x="200" y="134" name="badges.png"/>
+			<Element id="text_award_badge" type="text" x="220" y="137" font="font_char_3" color="80,80,80,255"/>
+			<Element id="image_score" type="image" x="248" y="134" name="button_refresh.png"/>
+			<Element id="text_award_score" type="text" x="270" y="137" font="font_char_3" color="80,80,80,255"/>
+			<Element id="btn_ok" type="button" frm1="button_confrim.png" x="317" y="136" w="31" h="31"/>
+		</Element>
+		<Element id="group_challenge" type="groupbox" x="0" y="25" h="165" LineColor="0,0,0,0">
+			<Element id="image_picture" type="image" x="4" y="0" texture="conquest_asia.png" align="hmiddle"/>
+			<Element id="text_desc" type="text" y="95" h="15" font="font_text_1" color="80,80,80,255" text="999" align="center"/>
+			<Element id="scale_split" type="image" name="common_boldline.png" y="110" h="1" DrawMode="extend"/>
+			<Element id="scale_split" type="image" name="common_boldline.png" y="161" h="1" DrawMode="extend"/>
+			<Element id="image_flower" type="image" y="132" name="pattern_stage_intro.png" align="hmiddle"/>
+			<Element id="btn_chal_asia" type="tmp_button" frm1="btn_common_green.png" x="40" y="117" w="100" h="35" text="btn_chal_asia" font="font_text_3"/>
+			<Element id="btn_chal_euro" type="tmp_button" frm1="btn_common_blue.png" x="205" y="117" w="100" h="35" text="btn_chal_euro" font="font_text_3"/>
+		</Element>
+		<Element id="group_conquest" type="groupbox" x="0" y="25" h="165" LineColor="0,0,0,0">
+			<Element id="image_battle" type="image" x="8" y="15" name="button_conquest_1815.png"/>
+			<Element id="image_archive" type="image" x="237" y="5" name="button_rule_locked.png"/>
+			<Element id="text_rule_title" type="text" x="250" y="115" w="80" h="15" font="font_text_3" color="80,80,80,255" text="text_rule" align="center"/>
+			<Element id="text_rule_years" type="text" x="297" y="141" w="80" h="15" font="font_text_2" color="80,80,80,255" text="text_year"/>
+			<Element id="image_rule_1" type="image" x="237" y="130"/>
+			<Element id="image_rule_2" type="image" x="257" y="130"/>
+			<Element id="image_rule_3" type="image" x="277" y="130"/>
+			<Element id="text_round_title" type="text" x="18" y="118" w="80" h="15" font="font_text_3" color="80,80,80,255" text="text_round" align="center"/>
+			<Element id="text_round_value" type="text" x="18" y="136" w="80" h="15" font="font_char_4" color="80,80,80,255" text="365" align="center"/>
+			<Element id="text_medal_title" type="text" x="125" y="130" font="font_text_2" color="80,80,80,255" text="text_gain"/>
+			<Element id="text_medal_value" type="text" x="208" y="131" font="font_char_2" color="80,80,80,255" text="999"/>
+			<Element id="image_medal" type="image" x="188" y="128" name="medals.png"/>
+			<Element id="scale_ver1" type="image" name="common_line_ver.png" x="115" y="112" w="1" h="48" DrawMode="extend"/>
+			<Element id="scale_ver2" type="image" name="common_line_ver.png" x="231" y="112" w="1" h="48" DrawMode="extend"/>
+			<Element id="scale_split" type="image" name="common_boldline.png" y="110" h="1" DrawMode="extend"/>
+			<Element id="scale_split" type="image" name="common_boldline.png" y="161" h="1" DrawMode="extend"/>
+			<Element id="btn_ok" type="button" frm1="button_confrim.png" x="317" y="136" w="31" h="31"/>
+		</Element>
+	</Layout>
+	<!-- 教程界面 -->
+	<Layout id="form_tutorials" type="user_window" w="250" h="200" anim="1" prevent="1" fade="1" title="title_tutorials" btn_close="true">
+		<Element id="btn_basic" type="tmp_button" frm1="btn_common_green.png" x="53" y="40" w="145" h="40" text="btn_basic" font="font_text_3"/>
+		<Element id="btn_classic" type="tmp_button" frm1="btn_common_green.png" x="53" y="85" w="145" h="40" text="btn_classic" font="font_text_3"/>
+		<Element id="btn_notice" type="tmp_button" frm1="btn_common_green.png" x="53" y="130" w="145" h="40" text="btn_notice" font="font_text_3"/>
+	</Layout>
+	<!-- 玩法说明界面 -->
+	<Layout id="form_playnotice" type="user_window" w="400" h="225" anim="1" prevent="1" fade="1" title="title_playnotice" btn_close="true">
+		<Element id="group_conquest" type="groupbox" x="5" y="33" w="390" h="186" frame="common_lineframe_bold.png">
+			<Element id="tbox_items" type="HtmlBox" font="font_text_1" maxrows="999" rowblank="20" text="html_notice" color="80,80,80,255" scrollback="scrollbar_gray.png" scrollbar="scrollbar_darkgray.png"/>
+		</Element>
+	</Layout>
+	<!-- 选择多人游戏模式界面 -->
+	<Layout id="form_multiplayermode" type="user_window" w="250" h="155" anim="1" prevent="1" fade="1" title="title_multiplayer" btn_close="true">
+		<Element id="btn_global" type="tmp_button" frm1="btn_common_green.png" x="53" y="40" w="145" h="40" text="btn_global" font="font_text_3"/>
+		<Element id="btn_local" type="tmp_button" frm1="btn_common_green.png" x="53" y="85" w="145" h="40" text="btn_local" font="font_text_3"/>
+	</Layout>
+	<!-- 本地联机模式界面 -->
+	<Layout id="form_localmode" type="user_window" w="250" h="150" anim="1" prevent="1" fade="1" title="title_multiplayer" btn_close="true">
+		<Element id="btn_host" type="tmp_button" frm1="btn_common_green.png" x="53" y="40" w="145" h="40" text="btn_host" font="font_text_3"/>
+		<Element id="btn_join" type="tmp_button" frm1="btn_common_green.png" x="53" y="85" w="145" h="40" text="btn_join" font="font_text_3"/>
+	</Layout>
+	<!-- 选择主机界面 -->
+	<Layout id="form_selhost" type="user_window" w="250" h="250" anim="1" prevent="1" fade="1" title="title_selhost" btn_close="true">
+		<Element id="btn_host1" type="tmp_button" frm1="btn_common_green.png" x="52" y="40" w="145" h="40">
+			<Element id="text_info" type="text" y="11" sysfont="Arial" fontsize="15" color="255,255,255,255" text=" " align="center"/>
+		</Element>
+		<Element id="btn_host2" type="tmp_button" frm1="btn_common_green.png" x="52" y="85" w="145" h="40">
+			<Element id="text_info" type="text" y="11" sysfont="Arial" fontsize="15" color="255,255,255,255" text=" " align="center"/>
+		</Element>
+		<Element id="btn_host3" type="tmp_button" frm1="btn_common_green.png" x="52" y="130" w="145" h="40">
+			<Element id="text_info" type="text" y="11" sysfont="Arial" fontsize="15" color="255,255,255,255" text=" " align="center"/>
+		</Element>
+		<Element id="btn_host4" type="tmp_button" frm1="btn_common_green.png" x="52" y="175" w="145" h="40">
+			<Element id="text_info" type="text" y="11" sysfont="Arial" fontsize="15" color="255,255,255,255" text=" " align="center"/>
+		</Element>
+		<Element id="text_connectstate" type="text" x="10" y="230" w="230" h="10" font="font_text_3" color="64,64,64,255" text="msg_connecting" align="center"/>
+	</Layout>
+	<!-- 等待玩家加入界面 -->
+	<Layout id="form_waitingplayer" type="user_window" w="250" h="100" anim="1" prevent="1" fade="1" title="title_waiting" btn_close="true">
+		<Element id="text_info" type="text" x="10" y="60" w="230" h="10" font="font_text_3" color="64,64,64,255" text="msg_waitingplayer" align="center" breakwords="1"/>
+	</Layout>
+	<!-- 数据传输中界面 -->
+	<Layout id="form_transmitting" type="user_window" w="250" h="100" anim="1" prevent="1" fade="1" title="title_waiting">
+		<Element id="text_info" type="text" x="10" y="60" w="230" h="10" font="font_text_3" color="64,64,64,255" text="transmitting" align="center"/>
+	</Layout>
+	<!-- 多人游戏消息界面 -->
+	<Layout id="form_multiplaymsg" type="user_window" x="0" y="0" w="300" h="150" anim="1" prevent="1" fade="1">
+		<Element id="text_info" type="text" font="font_text_3" color="64,64,64,255" text="multiplay message box information" x="24" y="40" w="252" h="40" align="center" valign="middle" breakwords="1"/>
+		<Element id="btn_confirm" type="tmp_button" frm1="btn_common_blue.png" x="50" y="100" w="75" h="30" font="font_text_3" text="btn_confirm"/>
+		<Element id="btn_cancel" type="tmp_button" frm1="btn_common_blue.png" x="175" y="100" w="75" h="30" font="font_text_3" text="btn_cancel"/>
+	</Layout>
+	<!-- 浮动文本 -->
+	<Layout id="form_floattext" type="window" x="0" y="0" w="125" h="150" anim="1">
+		<Element id="image_back" type="image" name="box_skilldetail.png" DrawMode="extend"/>
+		<Element id="image_arrow" type="image" name="box_skilldetail_arrow.png"/>
+		<Element id="btn_form" type="button">
+			<Element id="text_info" type="text" font="font_text_1" x="7" y="7" w="110" h="135" breakwords="1"/>
+		</Element>
+	</Layout>
+	<!-- 胜利文本 -->
+	<Layout id="form_victorytext" type="window" prevent="1" fade="1">
+		<Element id="image_back" type="image" name="board_victory.png" y="104" DrawMode="hextend"/>
+		<Element id="image_text" type="image" texture="tex_victory.png" y="130" align="hmiddle"/>
+	</Layout>
+	<!-- 整编确认界面 -->
+	<Layout id="form_regroupconfirm" type="user_window" x="0" y="0" w="320" h="222" anim="1" prevent="1" fade="1" title="title_notice">
+		<Element id="text_tips" type="text" font="font_text_2" text="text_regroupnotice" color="64,64,64,255" y="30" align="center"/>
+		<Element id="text_info" type="text" font="font_text_2" text="text_regroup" color="64,64,64,255" y="47" align="center"/>
+		<Element id="image_back" type="image" name="gray_board.png" y="65" h="107" DrawMode="extend"/>
+		<Element id="scale_split" type="image" name="common_boldline.png" y="64" h="2" DrawMode="extend"/>
+		<Element id="scale_split" type="image" name="common_boldline.png" y="172" h="2" DrawMode="extend"/>
+		<Element id="tcmder" type="tmp_commander" font="font_text_2" x="50" y="70" w="78" h="98"/>
+		<Element id="group_items" type="groupbox" x="137" y="70" w="132" h="98" frame="common_lineframe_bold.png">
+			<Element id="image_title" type="image" name="infomarker_board.png" h="20" DrawMode="extend"/>
+			<Element id="text_title" type="text" h="20" font="font_text_2" text="text_equipitem" align="center" valign="middle"/>
+			<Element id="lbox_equipitem" type="listbox" x="16" y="36" w="100" h="45" orient="1" itemh="45" interval="10" font="font_text_2" LineColor="0,0,0,0"/>
+			<Element id="image_top" type="image" name="pattern_reoganizion.png" y="22" align="hmiddle"/>
+			<Element id="image_bottom" type="image" name="pattern_reoganizion.png" y="95" align="hmiddle" vscale="-1"/>
+			<Element id="image_split" type="image" name="common_line_hor.png" x="0" y="34" DrawMode="hextend" LineColor="200,200,200,255"/>
+			<Element id="image_split" type="image" name="common_line_hor.png" x="0" y="82" DrawMode="hextend" LineColor="200,200,200,255"/>
+		</Element>
+		<Element id="btn_confirm" type="tmp_button" frm1="btn_common_blue.png" x="50" y="182" w="75" h="30" font="font_text_3" text="btn_confirm"/>
+		<Element id="btn_cancel" type="tmp_button" frm1="btn_common_blue.png" x="195" y="182" w="75" h="30" font="font_text_3" text="btn_cancel"/>
+	</Layout>
+	<!-- 将领升级界面 -->
+	<Layout id="form_generalupgrade" type="user_window" x="0" y="0" w="325" h="185" anim="1" prevent="1" fade="1" title="title_upgrade" btn_close="true">
+		<Element id="tcmder" type="tmp_commander" font="font_text_2" x="5" y="32" w="156" h="196"/>
+		<Element id="group_military" type="groupbox" x="86" y="33" w="235" h="47" frame="gray_board.png">
+			<Element id="rank_from" type="tmp_rank" x="7" y="10" w="75" ranktype="military"/>
+			<Element id="image_lifefrom" type="image" name="marker_hp_dark.png" x="40" y="10"/>
+			<Element id="text_lifefrom" type="text" x="29" y="25" w="35" h="12" font="font_char_2" text="0" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="image_arrow" type="image" name="arrow_reoganizion.png" x="90" y="11" hscale="-0.6" vscale="0.6"/>
+			<Element id="rank_to" type="tmp_rank" x="100" y="10" w="75" ranktype="military"/>
+			<Element id="image_lifeto" type="image" name="marker_hp_dark.png" x="132" y="10"/>
+			<Element id="text_lifeto" type="text" x="121" y="25" w="35" h="12" font="font_char_2" text="0" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="btn_militaryfull" type="tmp_button" frm1="btn_common_blue.png" x="156" y="9" w="75" h="30" font="font_text_3">
+				<Element id="image_medal" type="image" name="medals.png" x="10" y="6"/>
+				<Element id="text_medal" type="text" x="25" y="9" w="35" h="12" font="font_char_2" text="0" color="200,200,200,255" valign="middle"/>
+			</Element>
+		</Element>
+		<Element id="group_nobility" type="groupbox" x="86" y="83" w="235" h="47" frame="gray_board.png">
+			<Element id="rank_from" type="tmp_rank" x="7" y="10" w="75" ranktype="nobility"/>
+			<Element id="image_lifefrom" type="image" name="marker_recover_dark.png" x="40" y="10"/>
+			<Element id="text_lifefrom" type="text" x="29" y="25" w="35" h="12" font="font_char_2" text="0" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="image_arrow" type="image" name="arrow_reoganizion.png" x="90" y="11" hscale="-0.6" vscale="0.6"/>
+			<Element id="rank_to" type="tmp_rank" x="100" y="10" w="75" ranktype="nobility"/>
+			<Element id="image_lifeto" type="image" name="marker_recover_dark.png" x="132" y="10"/>
+			<Element id="text_lifeto" type="text" x="121" y="25" w="35" h="12" font="font_char_2" text="0" color="64,64,64,255" align="center" valign="middle"/>
+			<Element id="btn_nobilityfull" type="tmp_button" frm1="btn_common_blue.png" x="156" y="9" w="75" h="30" font="font_text_3">
+				<Element id="image_medal" type="image" name="medals.png" x="10" y="6"/>
+				<Element id="text_medal" type="text" x="25" y="9" w="35" h="12" font="font_char_2" text="0" color="200,200,200,255" valign="middle"/>
+			</Element>
+		</Element>
+		<Element id="group_fullrank" type="groupbox" x="86" y="133" w="235" h="47" frame="gray_board.png">
+			<Element id="rank_mili" type="tmp_rank" x="2" y="10" w="75" ranktype="military"/>
+			<Element id="image_mili" type="image" name="rank_14.png" x="5" y="15"/>
+			<Element id="rank_nobi" type="tmp_rank" x="32" y="10" w="75" ranktype="nobility"/>
+			<Element id="image_nobi" type="image" name="class_9.png" x="35" y="15"/>
+			<Element id="image_arrow" type="image" name="arrow_reoganizion.png" x="90" y="11" hscale="-0.6" vscale="0.6"/>
+			<Element id="image_max" type="image" name="marker_max_2.png" x="100" y="10"/>
+			<Element id="btn_allfull" type="tmp_button" frm1="btn_common_green.png" x="156" y="9" w="75" h="30" font="font_text_3">
+				<Element id="image_medal" type="image" name="medals.png" x="10" y="6"/>
+				<Element id="text_medal" type="text" x="25" y="9" w="35" h="12" font="font_char_2" text="0" color="64,64,64,255" valign="middle"/>
+			</Element>
+		</Element>
+		<Element id="image_deco" type="image" name="pattern_stage_intro.png" x="28" y="148"/>
+	</Layout>
+	<!-- 客服界面 -->
+	<Layout id="form_servicedialog" type="user_window" x="0" y="0" w="300" h="150" anim="1" prevent="1" fade="1" btn_close="true">
+		<Element id="text_info" type="text" font="font_text_newgame_1" color="64,64,64,255" x="25" y="40" w="250" h="100" breakwords="true" text="newgame1_service_2"/>
+		<Element id="btn_info" type="tmp_button" frm1="btn_common_blue.png" x="50" y="105" w="75" h="30" font="font_text_newgame_3" text="btn_info"/>
+		<Element id="btn_restore" type="tmp_button" frm1="btn_common_blue.png" x="175" y="105" w="75" h="30" font="font_text_newgame_3" text="btn_restore"/>
+	</Layout>
+	<!-- 关于界面 -->
+	<Layout id="form_aboutdialog" type="user_window" x="0" y="0" w="390" h="230" anim="1" prevent="1" fade="1" title="title_about" btn_close="true">
+		<Element id="image_back" type="image" texture="icon.png" x="20" y="40"/>
+		<Element id="text_info" type="text" font="font_text_3" color="64,64,64,255" x="120" y="40" w="250" h="100" breakwords="true" text="msg_About"/>
+		<Element id="text_version" type="text" font="font_text_3" color="64,64,64,255" x="20" y="130" w="370" h="100" breakwords="true" text="msg_InfoVersion"/>
+		<Element id="text_info2" type="text" font="font_text_3" color="64,64,64,255" x="20" y="150" w="370" h="100" breakwords="true" text="msg_MoreWeibo"/>
+		<Element id="btn_OfficialWeb" type="tmp_button" frm1="btn_common_blue.png" x="95" y="185" w="75" h="30" font="font_text_3" text="btn_OfficialWeb"/>
+		<Element id="btn_Weibo" type="tmp_button" frm1="btn_common_green.png" x="220" y="185" w="75" h="30" font="font_text_3" text="btn_Weibo"/>
+	</Layout>
+	<!-- 解锁slot选择支付界面 -->
+	<Layout id="form_selunlocktool" type="user_window" x="0" y="0" w="170" h="160" anim="1" prevent="1" fade="1" title="title_unitinfo" btn_close="true">
+		<Element id="btn_selcmcc" type="tmp_button" frm1="btn_common_blue.png" x="50" y="75" w="75" h="30" font="font_text_3" text="btn_cmcc"/>
+	</Layout>
+	<!-- 新游戏界面 -->
+	<Layout id="form_new_game" type="window" x="0" y="0" w="398" h="262" anim="1" prevent="0" fade="1">
+		<Element id="group_top" type="groupbox" x="0" y="0" w="398" h="22">
+			<Element id="cbtn_recommend" type="CheckButton" UncheckImage="new_game_recommend.png" CheckedImage="new_game_recommend_sel.png" x="252" y="0" w="93" h="22">
+				<Element id="text_recommend" type="text" font="font_text_newgame_4" color="255,255,255,255" x="8" y="4" w="78" h="15" text="newgame4_recommend" align="center"/>
+			</Element>
+			<Element id="cbtn_service" type="CheckButton" UncheckImage="new_game_service.png" CheckedImage="new_game_service_sel.png" x="325" y="0" w="93" h="22">
+				<Element id="text_service" type="text" font="font_text_newgame_4" color="255,255,255,255" x="8" y="4" w="78" h="15" text="newgame4_service" align="center"/>
+			</Element>
+			<Element id="cbtn_update_info" type="CheckButton" UncheckImage="new_game_update.png" CheckedImage="new_game_update_sel.png" x="179" y="0" w="93" h="22">
+				<Element id="text_update_info" type="text" font="font_text_newgame_4" color="255,255,255,255" x="8" y="4" w="78" h="15" text="newgame4_update_info" align="center"/>
+			</Element>
+			<Element id="cbtn_survey" type="CheckButton" UncheckImage="new_game_survey.png" CheckedImage="new_game_survey_sel.png" x="106" y="0" w="93" h="22">
+				<Element id="text_survey" type="text" font="font_text_newgame_4" color="255,255,255,255" x="8" y="4" w="78" h="15" text="newgame4_survey" align="center"/>
+			</Element>
+			<Element id="cbtn_iab_event" type="CheckButton" UncheckImage="new_game_iab_event.png" CheckedImage="new_game_iab_event_sel.png" x="33" y="0" w="93" h="22">
+				<Element id="text_survey" type="text" font="font_text_newgame_4" color="255,255,255,255" x="8" y="4" w="78" h="15" text="newgame4_iab_event" align="center"/>
+			</Element>
+			<Element id="image_update_info_tip" type="image" name="new_game_red_dot.png" x="237" y="0" w="8" h="8"/>
+			<Element id="image_survey_tip" type="image" name="new_game_red_dot.png" x="164" y="0" w="8" h="8"/>
+			<Element id="image_iab_event_tip" type="image" name="new_game_red_dot.png" x="91" y="0" w="8" h="8"/>
+		</Element>
+		<Element id="group_left" type="groupbox" x="0" y="21" w="135" h="241" frame="new_game_left_bg.png">
+			<Element id="group_logo" type="groupbox" x="2" y="18" w="129" h="129" frame="new_game_btn_3.png">
+				<Element id="image_logo" type="image" name="new_game_logo.png" x="4" y="6" w="124" h="124"/>
+			</Element>
+			<Element id="btn_close" type="button" frm1="new_game_close.png" x="7" y="4" w="16" h="16"/>
+			<Element id="btn_website" type="button" frm1="new_game_btn_1.png" x="2" y="147" w="129" h="30">
+				<Element id="image_website" type="image" name="new_game_website.png" x="8" y="6" w="16" h="16"/>
+				<Element id="text_website" type="text" font="font_text_newgame_3" color="229,229,229,255" x="45" y="8" w="90" h="15" text="newgame3_website"/>
+			</Element>
+			<Element id="btn_facebook" type="button" frm1="new_game_btn_2.png" x="2" y="179" w="129" h="30">
+				<Element id="image_facebook" type="image" name="new_game_facebook.png" x="8" y="6" w="16" h="16"/>
+				<Element id="text_facebook" type="text" font="font_text_newgame_3" color="229,229,229,255" x="45" y="8" w="90" h="15" text="newgame3_facebook"/>
+			</Element>
+			<Element id="btn_youtube" type="button" frm1="new_game_btn_3.png" x="2" y="211" w="129" h="30">
+				<Element id="image_youtube" type="image" name="new_game_youtube.png" x="8" y="6" w="16" h="16"/>
+				<Element id="text_youtube" type="text" font="font_text_newgame_3" color="229,229,229,255" x="45" y="8" w="90" h="15" text="newgame3_youtube"/>
+			</Element>
+		</Element>
+		<Element id="group_right" type="groupbox" x="133" y="21" w="265" h="241" frame="new_game_right_bg.png">
+			<Element id="group_survey" type="groupbox" x="0" y="0" w="265" h="241">
+				<Element id="image_survey" type="image" name="new_game_survey_txt.png" x="90" y="17" w="78" h="23"/>
+				<Element id="image_dot_1" type="image" name="new_game_dot.png" x="44" y="57" w="7" h="7"/>
+				<Element id="image_dot_2" type="image" name="new_game_dot.png" x="44" y="95" w="7" h="7"/>
+				<Element id="text_info" type="text" font="font_text_newgame_2" color="240,240,240,255" x="35" y="54" w="205" h="10" breakwords="true" text="newgame2_txt_1"/>
+				<Element id="text_info" type="text" font="font_text_newgame_2" color="240,240,240,255" x="35" y="92" w="205" h="10" breakwords="true" text="newgame2_txt_2"/>
+				<Element id="btn_survey" type="button" frm1="new_game_btn_dl.png" x="153" y="190" w="104" h="27">
+					<Element id="text_download" type="text" font="font_text_newgame_3" color="255,255,255,255" x="0" y="3" w="104" h="10" text="newgame3_join" align="center"/>
+				</Element>
+				<Element id="image_easytech_txt" type="image" name="new_game_easytech_txt.png" x="17" y="220" w="39" h="7"/>
+				<Element id="scale_split" type="image" name="new_game_line.png" x="35" y="230" w="218" h="1" DrawMode="extend"/>
+				<Element id="scale_split" type="image" name="new_game_line_b.png" x="35" y="229" w="21" h="3" DrawMode="extend"/>
+			</Element>
+			<Element id="group_recommend" type="groupbox" x="0" y="0" w="265" h="241">
+				<Element id="image_recommend" type="image" texture="ew6_en.webp" x="0" y="0" w="265" h="241" scale="0.427"/>
+				<Element id="btn_download" type="button" frm1="new_game_btn_dl.png" x="153" y="210" w="104" h="27">
+					<Element id="text_download" type="text" font="font_text_newgame_3" color="255,255,255,255" x="0" y="3" w="104" h="10" text="newgame3_download" align="center"/>
+				</Element>
+			</Element>
+			<Element id="group_service" type="groupbox" x="0" y="0" w="265" h="241">
+				<Element id="scale_split" type="image" name="new_game_line.png" x="10" y="8" w="245" h="1" DrawMode="extend"/>
+				<Element id="scale_split" type="image" name="new_game_line.png" x="10" y="8" w="1" h="33" DrawMode="extend"/>
+				<Element id="img_service_dot_1" type="image" name="new_game_dot.png" x="36" y="46" w="7" h="7"/>
+				<Element id="img_service_dot_2" type="image" name="new_game_dot.png" x="36" y="82" w="7" h="7"/>
+				<Element id="txt_service_1" type="text" font="font_text_newgame_1" color="240,240,240,255" x="28" y="43" w="210" h="10" breakwords="true" text="newgame1_service_1"/>
+				<Element id="txt_service_2" type="text" font="font_text_newgame_1" color="240,240,240,255" x="28" y="79" w="210" h="10" breakwords="true" text="newgame1_service_2"/>
+				<Element id="text_info" type="text" font="font_text_newgame_1" color="240,240,240,255" x="8" y="210" w="210" h="10" text="newgame1_version"/>
+				<Element id="btn_mail" type="button" frm1="new_game_btn_dl.png" x="153" y="183" w="104" h="27">
+					<Element id="text_mail" type="text" font="font_text_newgame_3" color="255,255,255,255" x="0" y="3" w="104" h="10" text="newgame3_mail" align="center"/>
+				</Element>
+				<Element id="text_version" type="text" font="font_text_newgame_1" color="240,240,240,255" x="58" y="210" w="210" h="10" text="newgame1_version"/>
+				<Element id="scale_split" type="image" name="new_game_line.png" x="10" y="223" w="228" h="1" DrawMode="extend"/>
+				<Element id="scale_split" type="image" name="new_game_line_b.png" x="217" y="222" w="21" h="3" DrawMode="extend"/>
+				<Element id="image_easytech_txt" type="image" name="new_game_easytech_txt.png" x="218" y="228" w="39" h="7"/>
+			</Element>
+			<Element id="group_iab_event" type="groupbox" x="0" y="0" w="265" h="241">
+				<Element id="image_iab_event" type="image" texture="ew6_1.webp" x="0" y="0" w="265" h="241" scale="0.427"/>
+				<Element id="btn_iab_event" type="button" frm1="new_game_btn_dl.png" x="153" y="210" w="104" h="27">
+					<Element id="text_download" type="text" font="font_text_newgame_3" color="255,255,255,255" x="0" y="3" w="104" h="10" text="newgame3_join" align="center"/>
+				</Element>
+			</Element>
+			<Element id="group_update_info" type="groupbox" x="0" y="0" w="265" h="241">
+				<Element id="lbl_update_info" type="text" font="font_text_newgame_1" text="newgame1_update_info1" color="255,255,255,255" valign="center" x="30" y="50" w="200" h="10" breakwords="true"/>
+				<Element id="lbl_update_info1" type="text" font="font_text_newgame_1" text="newgame1_update_info" color="255,255,255,255" valign="center" x="80" y="50" w="265" h="241"/>
+				<Element id="btn_update" type="button" frm1="new_game_btn_dl.png" x="153" y="210" w="104" h="27">
+					<Element id="text_download" type="text" font="font_text_newgame_3" color="255,255,255,255" x="0" y="3" w="104" h="10" text="newgame3_download" align="center"/>
+				</Element>
+			</Element>
+		</Element>
+	</Layout>
+	<!-- 激励视频界面 -->
+	<Layout id="form_rewardedvideo" type="user_window" x="0" y="0" w="280" h="155" anim="1" prevent="1" fade="1" title="watch_video" btn_close="true" btn_ok="true" font="font_text_4b">
+		<Element id="lbl_info" type="text" x="3" y="38" w="269" h="30" font="font_text_1b" text="rewardedvideo_desc" breakwords="1" color="64,64,64,255" align="center"/>
+		<Element id="lbox_item" type="listbox" orient="1" x="29" y="70" w="269" h="45" itemh="45" interval="14" font="font_char_2" selectbox="item_selected_ex.png" LineColor="0,0,0,0"/>
+		<Element id="image_medal_bg" type="image" name="btn_common_green.png" x="208" y="70" w="45" h="45" DrawMode="extend">
+			<Element id="image_medal" type="image" name="medals.png" x="7" y="13"/>
+			<Element id="text_medal" type="text" x="22" y="16" w="35" h="12" font="font_char_3" string="0" color="255,255,255,255" valign="middle"/>
+		</Element>
+		<Element id="btn_adsetting" type="button" x="2" y="145" w="43" h="9" frm1="adsetting.png"/>
+	</Layout>
+	<!-- 领取奖励界面 -->
+	<Layout id="form_claim" type="user_window" x="0" y="0" w="200" h="100" anim="1" prevent="1" fade="1" title="video_reward" btn_close="false" btn_ok="true" font="font_text_4b">
+		<Element id="image_medal_bg" type="image" name="btn_common_green.png" x="77" y="40" w="45" h="45" DrawMode="extend">
+			<Element id="image_medal" type="image" name="medals.png" x="7" y="13"/>
+			<Element id="text_medal" type="text" x="22" y="16" w="35" h="12" font="font_char_3" string="20" color="255,255,255,255" valign="middle"/>
+		</Element>
+		<Element id="image_item" type="image" name="Wine.png" x="77" y="40" w="45" h="45" DrawMode="extend">
+			<Element id="text_num" type="text" x="2" y="32" w="35" h="12" font="font_char_2" string="20" color="255,255,255,255"/>
+		</Element>
+	</Layout>
+</Layouts>

@@ -1,0 +1,29 @@
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;
+  root.EW4NativeConstruction=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const ICONS=Object.freeze({
+    money:'marker_money.png',industry:'marker_industry.png',food:'marker_food.png',
+    all:'marker_dfs_all.png',infantry:'marker_dfs_infantry.png',cavalry:'marker_dfs_cavalry.png',artillery:'marker_dfs_artillery.png'
+  });
+  const ORDER=Object.freeze(['money','industry','food','all','infantry','cavalry','artillery']);
+  function n(v){v=Number(v);return Number.isFinite(v)?v:0}
+  // Native group_incom uses four display cells whose icon is selected dynamically from
+  // money / industry / food / ALL / infantry / cavalry / artillery defense markers.
+  function summaryEntries(values={}){
+    const normalized={
+      money:n(values.money??values.tax),industry:n(values.industry),food:n(values.food),all:n(values.all??values.avoid),
+      infantry:n(values.infantry??values.penalty_infantry),cavalry:n(values.cavalry??values.penalty_cavalry),artillery:n(values.artillery??values.penalty_artillery)
+    };
+    return ORDER.filter(k=>normalized[k]!==0).slice(0,4).map(k=>({kind:k,value:normalized[k],icon:ICONS[k]}));
+  }
+  // Native defense selector takes construction avoidance directly when a construction is
+  // present. Only cells without a construction fall back to max(terrain, field-work).
+  function mapAvoidance({hasConstruction=false,constructionAvoid=0,terrainAvoid=0,installationAvoid=0}={}){
+    if(hasConstruction)return Math.max(0,n(constructionAvoid));
+    return Math.max(0,n(terrainAvoid),n(installationAvoid));
+  }
+  return Object.freeze({ICONS,ORDER,summaryEntries,mapAvoidance});
+});

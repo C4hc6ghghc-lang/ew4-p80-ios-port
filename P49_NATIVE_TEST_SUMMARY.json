@@ -1,0 +1,9 @@
+{
+  "discovered_unique_test_ids": 163,
+  "xctest_parallel_entries": 9,
+  "swift_testing_summary_passed": 154,
+  "overall_swift_test_exit_code": 0,
+  "overall": "163/163 PASS",
+  "cold_build": true,
+  "notes": "swift test list contains 163 unique EW4NativeCoreTests identifiers; swift test --parallel ran 9 XCTest entries then Swift Testing reported 154 passed, with process exit 0."
+}

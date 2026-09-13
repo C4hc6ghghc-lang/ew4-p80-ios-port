@@ -1,0 +1,62 @@
+{
+  "baseline": "EW4_R14_39_P67_NATIVE_PLAYNOTICE_SCROLL_AUDITED_PORT_ONLY_2026-09-12.zip",
+  "target": "P68 working tree",
+  "scopes": {
+    "product_swift": {
+      "counts": {
+        "added": 0,
+        "modified": 2,
+        "deleted": 0
+      },
+      "added": [],
+      "modified": [
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+          "old_sha256": "63e0cfd1b97ecc7d3cfe5ffcadb295e4439f0d42975ec43bec7155f4ab7dd0bf",
+          "new_sha256": "0491f2a3e68c3e784098debc30d344e6ff0da4dc31a1b3769ae0b09a5f4aa2de"
+        },
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalRegroupScene.swift",
+          "old_sha256": "84b056ee01311df3e221fbeff2505ad39510770b997022a367e14ec235774ca8",
+          "new_sha256": "65bf8c01ef32b966e6170afb55d9139910a5e95b27d0d99311508a57ce175767"
+        }
+      ],
+      "deleted": []
+    },
+    "test_swift": {
+      "counts": {
+        "added": 1,
+        "modified": 0,
+        "deleted": 0
+      },
+      "added": [
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/P68RegroupConfirmPreviewFidelityTests.swift",
+          "sha256": "20cfb70b4bfed9ad51a0e899e1250dd037f214cfe4f71e8f550e6dba876e8bd6"
+        }
+      ],
+      "modified": [],
+      "deleted": []
+    },
+    "native_resources": {
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "added": [],
+      "modified": [],
+      "deleted": []
+    },
+    "source_lean": {
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "added": [],
+      "modified": [],
+      "deleted": []
+    }
+  }
+}

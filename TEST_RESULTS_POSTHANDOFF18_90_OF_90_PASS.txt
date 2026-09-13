@@ -1,0 +1,14 @@
+EW4 Web Port r14-39 Post-Handoff 18 Native General
+Date: 2026-09-09
+
+Independent full JS test tree: 90 / 90 PASS
+Syntax: app.js PASS; native_general_core.js PASS
+P18 added/updated contracts:
+- native general upgrade/regroup formulas
+- native battle military/nobility growth + equipment/skill priority
+- production combat-growth integration
+- native form_deployitem 353x261 / 28-slot ItemBank / explicit Equip
+- P17 cache-generation test upgraded to permit later frozen generations
+- legacy R14 instant equipment-picker contract retired
+
+No P1-P17 functional regression detected.

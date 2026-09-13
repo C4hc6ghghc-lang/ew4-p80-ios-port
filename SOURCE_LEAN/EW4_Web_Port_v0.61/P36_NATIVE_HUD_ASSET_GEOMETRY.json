@@ -1,0 +1,94 @@
+{
+  "board_resources.png": {
+    "size": [
+      74,
+      46
+    ],
+    "alpha_left_min": 0,
+    "alpha_left_max": 0,
+    "alpha_right_min": 59,
+    "alpha_right_max": 74,
+    "preserved_right_hd_px": 15,
+    "sha256": "4b3a43916e3bb633c890072488bf4c7c98485c1cf345d025662e0bf71c0e2b4a"
+  },
+  "board_terrain_info.png": {
+    "size": [
+      118,
+      95
+    ],
+    "alpha_left_min": 0,
+    "alpha_left_max": 0,
+    "alpha_right_min": 86,
+    "alpha_right_max": 118,
+    "preserved_right_hd_px": 32,
+    "sha256": "645e3668ad47710b55b7faa1eafa6e0ae305f46d9117e20479e98905273f8251"
+  },
+  "board_buttons.png": {
+    "size": [
+      109,
+      22
+    ],
+    "alpha_left_min": 13,
+    "alpha_left_max": 20,
+    "alpha_right_min": 90,
+    "alpha_right_max": 97,
+    "preserved_left_hd_px": 20,
+    "preserved_right_hd_px": 19,
+    "sha256": "6cbba7a612a49bf2a9d7afe38de9960d289c272491ed90266fe5d40b024acc15"
+  },
+  "marker_money.png": {
+    "size": [
+      39,
+      39
+    ],
+    "logical_2x_size": [
+      19.5,
+      19.5
+    ],
+    "sha256": "96095e40971f56b2b1250f58ee5a5a3706fd16e416bcb9c42aa2507043a6ed50"
+  },
+  "marker_industry.png": {
+    "size": [
+      39,
+      39
+    ],
+    "logical_2x_size": [
+      19.5,
+      19.5
+    ],
+    "sha256": "c57a10426349fe13ad590e371499d3c56b8ef8deeb7981dff047b571f87f9f55"
+  },
+  "marker_food.png": {
+    "size": [
+      39,
+      39
+    ],
+    "logical_2x_size": [
+      19.5,
+      19.5
+    ],
+    "sha256": "03e28f93755e4089a540dba57b8c98b6d05e7003ab0d0ed721f1f6d80940d5a2"
+  },
+  "marker_dfs_all.png": {
+    "size": [
+      39,
+      39
+    ],
+    "logical_2x_size": [
+      19.5,
+      19.5
+    ],
+    "sha256": "9fc98d5d455419607364a0d9f594aa608b5951fae91fb3dac8dc40e865014082"
+  },
+  "marker_dfs_artillery.png": {
+    "size": [
+      39,
+      39
+    ],
+    "logical_2x_size": [
+      19.5,
+      19.5
+    ],
+    "sha256": "7c035762184a6d998a08bacf7a8192d570f1ef1558ac6be1d58475b00ce26001"
+  }
+}

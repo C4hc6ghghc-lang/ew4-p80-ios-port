@@ -1,0 +1,303 @@
+{
+  "checkpoint": "P76 Xcode Candidate Readiness",
+  "source": "SOURCE_LEAN/EW4_Web_Port_v0.61/assets/data/original_layout-568h.xml",
+  "layout_declarations": 58,
+  "unique_forms": 57,
+  "duplicate_layout_ids": [
+    "form_servicedialog"
+  ],
+  "counts": {
+    "covered": 39,
+    "excluded_by_scope": 15,
+    "deferred_nonblocking": 2,
+    "restored_unbound_by_evidence": 1
+  },
+  "forms": [
+    {
+      "form": "form_debuginfo",
+      "status": "excluded_by_scope",
+      "note": "Debug-only original surface; excluded from Release candidate."
+    },
+    {
+      "form": "form_servicedialog",
+      "status": "excluded_by_scope",
+      "note": "Legacy service/customer-support platform surface; excluded from offline PORT_ONLY."
+    },
+    {
+      "form": "form_mainmenu",
+      "status": "covered",
+      "note": "NativeOriginalMainMenuScene; primary offline routes wired."
+    },
+    {
+      "form": "form_loading",
+      "status": "deferred_nonblocking",
+      "note": "Startup-only original loading presentation. Mature Web restores it, but Native iOS currently boots from a black placeholder directly to main menu. Cosmetic/startup acceptance item, not a gameplay-route blocker."
+    },
+    {
+      "form": "form_selcampaign",
+      "status": "covered",
+      "note": "NativeOriginalOuterMenuScene campaign selection."
+    },
+    {
+      "form": "form_selconquest",
+      "status": "covered",
+      "note": "NativeOriginalOuterMenuScene conquest selection."
+    },
+    {
+      "form": "form_campaigninfo",
+      "status": "covered",
+      "note": "P73 restored pin -> CampaignInfo -> confirm -> campaign list."
+    },
+    {
+      "form": "form_compaignlist",
+      "status": "covered",
+      "note": "NativeOriginalOuterMenuScene campaign list."
+    },
+    {
+      "form": "form_conquestlist",
+      "status": "covered",
+      "note": "NativeOriginalOuterMenuScene conquest list."
+    },
+    {
+      "form": "form_selcountry",
+      "status": "covered",
+      "note": "Native conquest country selection/save flow."
+    },
+    {
+      "form": "form_recruitunit",
+      "status": "covered",
+      "note": "P60 original recruit content/layout + resource-backed unit art."
+    },
+    {
+      "form": "form_regroup",
+      "status": "covered",
+      "note": "P69 main regroup parity structure."
+    },
+    {
+      "form": "form_buymedal",
+      "status": "excluded_by_scope",
+      "note": "IAP/medal-purchase surface; excluded; user medals are intentionally unlimited."
+    },
+    {
+      "form": "form_getgeneral",
+      "status": "covered",
+      "note": "NativeOriginalAcademyScene military-academy acquisition surface."
+    },
+    {
+      "form": "form_getgeneraltips",
+      "status": "covered",
+      "note": "Academy acquired-general tip restored in NativeOriginalAcademyScene."
+    },
+    {
+      "form": "form_generalinfo",
+      "status": "covered",
+      "note": "Shared NativeOriginalGeneralInfoSurface."
+    },
+    {
+      "form": "form_unitinfo",
+      "status": "covered",
+      "note": "NativeOriginalBattleUnitInfoRenderer."
+    },
+    {
+      "form": "form_failure",
+      "status": "covered",
+      "note": "NativeOriginalBattleResultRenderer failure surface."
+    },
+    {
+      "form": "form_pause",
+      "status": "covered",
+      "note": "NativeOriginalBattleModalRenderer pause flow."
+    },
+    {
+      "form": "form_pause_multiplay",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer-only."
+    },
+    {
+      "form": "form_stageintro",
+      "status": "covered",
+      "note": "NativeOriginalStageIntroRenderer."
+    },
+    {
+      "form": "form_exchange",
+      "status": "covered",
+      "note": "NativeOriginalMarketRenderer / commerce core."
+    },
+    {
+      "form": "form_shop",
+      "status": "covered",
+      "note": "HQ/battle shop flow; selection -> info -> confirmation and scroll parity."
+    },
+    {
+      "form": "form_deployitem",
+      "status": "covered",
+      "note": "P70 NativeOriginalDeployItemScene parity pass."
+    },
+    {
+      "form": "form_deploygeneral",
+      "status": "covered",
+      "note": "P75 battle deploy-general original flow."
+    },
+    {
+      "form": "form_recruitgeneral",
+      "status": "covered",
+      "note": "P74 NativeOriginalTavernRenderer parity pass."
+    },
+    {
+      "form": "form_defense",
+      "status": "covered",
+      "note": "P61/P62 defense geometry, hitboxes and original art."
+    },
+    {
+      "form": "form_roundturn",
+      "status": "covered",
+      "note": "NativeOriginalBattleModalRenderer round settlement."
+    },
+    {
+      "form": "form_victory",
+      "status": "covered",
+      "note": "NativeOriginalBattleResultRenderer victory surface."
+    },
+    {
+      "form": "form_multiplayervictory",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer-only."
+    },
+    {
+      "form": "form_talk",
+      "status": "covered",
+      "note": "NativeOriginalTalkRenderer."
+    },
+    {
+      "form": "form_option",
+      "status": "covered",
+      "note": "NativeOriginalOptionsScene."
+    },
+    {
+      "form": "form_game",
+      "status": "covered",
+      "note": "NativeBattleScene runtime."
+    },
+    {
+      "form": "form_save",
+      "status": "covered",
+      "note": "NativeOriginalBattleModalRenderer save/load slots."
+    },
+    {
+      "form": "form_upgrade",
+      "status": "covered",
+      "note": "Native campaign technology/upgrade flow (P21 lineage)."
+    },
+    {
+      "form": "form_messagebox",
+      "status": "deferred_nonblocking",
+      "note": "Generic confirm/cancel shell. No proven mature offline single-player trigger found in current evidence; do not invent a route solely for coverage."
+    },
+    {
+      "form": "form_useitem",
+      "status": "covered",
+      "note": "P61 original consumable art + unified geometry."
+    },
+    {
+      "form": "form_achivement",
+      "status": "covered",
+      "note": "P72 NativeOriginalAchievementScene route + P28 math."
+    },
+    {
+      "form": "form_princess",
+      "status": "covered",
+      "note": "P75 8-princess deployment child flow."
+    },
+    {
+      "form": "form_complete",
+      "status": "covered",
+      "note": "NativeOriginalOuterCompletionRenderer: campaign complete, conquest summary, Asia challenge."
+    },
+    {
+      "form": "form_tutorials",
+      "status": "covered",
+      "note": "NativeOriginalTutorialScene."
+    },
+    {
+      "form": "form_playnotice",
+      "status": "covered",
+      "note": "P67 full 24/24 scrollable notice box."
+    },
+    {
+      "form": "form_multiplayermode",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer-only."
+    },
+    {
+      "form": "form_localmode",
+      "status": "excluded_by_scope",
+      "note": "Legacy multiplayer/local-network setup."
+    },
+    {
+      "form": "form_selhost",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer host selection."
+    },
+    {
+      "form": "form_waitingplayer",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer waiting room."
+    },
+    {
+      "form": "form_transmitting",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer transport/status."
+    },
+    {
+      "form": "form_multiplaymsg",
+      "status": "excluded_by_scope",
+      "note": "Multiplayer message surface."
+    },
+    {
+      "form": "form_floattext",
+      "status": "covered",
+      "note": "Equivalent battle damage/floating presentation in NativeBattleScene; not a separate routed scene."
+    },
+    {
+      "form": "form_victorytext",
+      "status": "covered",
+      "note": "NativeOriginalBattleResultRenderer victory-text presentation."
+    },
+    {
+      "form": "form_regroupconfirm",
+      "status": "covered",
+      "note": "P66/P68 confirm geometry + source commander/equipment preview."
+    },
+    {
+      "form": "form_generalupgrade",
+      "status": "covered",
+      "note": "P71 NativeOriginalGeneralUpgradeScene + HQ rank hotspot."
+    },
+    {
+      "form": "form_aboutdialog",
+      "status": "excluded_by_scope",
+      "note": "Non-gameplay legacy about/service surface; not required for offline single-player acceptance."
+    },
+    {
+      "form": "form_selunlocktool",
+      "status": "excluded_by_scope",
+      "note": "Legacy operator/unlock-tool surface (btn_cmcc); excluded from offline single-player."
+    },
+    {
+      "form": "form_new_game",
+      "status": "excluded_by_scope",
+      "note": "Legacy online/promotional/new-game shell containing platform/social/service hooks; excluded from offline PORT_ONLY."
+    },
+    {
+      "form": "form_rewardedvideo",
+      "status": "excluded_by_scope",
+      "note": "Rewarded-ad surface; excluded."
+    },
+    {
+      "form": "form_claim",
+      "status": "restored_unbound_by_evidence",
+      "note": "Original 200x100 claim visual shell is restored as a reusable Native component, but intentionally not bound to Achievement because no local offline trigger evidence proves that relationship."
+    }
+  ],
+  "conclusion": "No newly proven Release-visible offline single-player route break remains in this census. The only explicit Native parity backlog found here is the startup-only form_loading presentation; form_messagebox lacks a proven local trigger; form_claim is restored but intentionally unbound."
+}

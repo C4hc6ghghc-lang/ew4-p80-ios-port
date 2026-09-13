@@ -1,0 +1,406 @@
+{
+  "worlds": {
+    "europe": {
+      "width": 79,
+      "height": 68,
+      "cells": 5372
+    },
+    "america": {
+      "width": 55,
+      "height": 76,
+      "cells": 4180
+    }
+  },
+  "battle_count": 101,
+  "battle_map_distribution": {
+    "1": 84,
+    "2": 17
+  },
+  "battle_header_bounds_ok": true,
+  "battle_unit_bounds_ok": true,
+  "battle_object_bounds_ok": true,
+  "map_sha": {
+    "europe": {
+      "native_sha256": "d614cb88599c3d926ac623bf008daf5453081d854268855c5b8eefb8b04f99fa",
+      "frozen_sha256": "d614cb88599c3d926ac623bf008daf5453081d854268855c5b8eefb8b04f99fa",
+      "identical": true
+    },
+    "america": {
+      "native_sha256": "ac7a24db6ae06be7a02fbda2e32fe27d02cc962deb4263f9e16e07999de98c22",
+      "frozen_sha256": "ac7a24db6ae06be7a02fbda2e32fe27d02cc962deb4263f9e16e07999de98c22",
+      "identical": true
+    }
+  },
+  "battle_unit_count": 7407,
+  "battle_unit_visual_resolved": 7407,
+  "unit_family_counts": {
+    "Armored Car": 60,
+    "Battleship": 297,
+    "Coastal Fort": 472,
+    "Fortress": 495,
+    "Frigate": 476,
+    "Grenadier": 528,
+    "Guards": 508,
+    "Guards Cavalry": 361,
+    "Heavy Artillery": 547,
+    "Heavy Cavalry": 431,
+    "Ironclad": 17,
+    "Large Fortress": 272,
+    "Light Artillery": 597,
+    "Light Cavalry": 352,
+    "Light Infantry": 357,
+    "Line Infantry": 528,
+    "Machine Gun": 43,
+    "Militia": 224,
+    "Privateer": 208,
+    "Rocket": 125,
+    "Siege Artillery": 78,
+    "Small Fortress": 431
+  },
+  "unit_family_resolved": {
+    "Armored Car": 60,
+    "Battleship": 297,
+    "Coastal Fort": 472,
+    "Fortress": 495,
+    "Frigate": 476,
+    "Grenadier": 528,
+    "Guards": 508,
+    "Guards Cavalry": 361,
+    "Heavy Artillery": 547,
+    "Heavy Cavalry": 431,
+    "Ironclad": 17,
+    "Large Fortress": 272,
+    "Light Artillery": 597,
+    "Light Cavalry": 352,
+    "Light Infantry": 357,
+    "Line Infantry": 528,
+    "Machine Gun": 43,
+    "Militia": 224,
+    "Privateer": 208,
+    "Rocket": 125,
+    "Siege Artillery": 78,
+    "Small Fortress": 431
+  },
+  "unresolved_units": [],
+  "ready_missing": [],
+  "resource_missing": [],
+  "animation_units": 877,
+  "animation_assets": 1272,
+  "bile_resources": [
+    "army_armoredcar",
+    "army_artillery",
+    "army_fort",
+    "army_grenadier",
+    "army_guards",
+    "army_guardscavalry",
+    "army_heavycavalry",
+    "army_lightcavalry",
+    "army_lightinfantry",
+    "army_lineinfantry",
+    "army_militia",
+    "army_ship"
+  ],
+  "bile_identity": {
+    "army_armoredcar": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "f7a67e2f33ae51dcd31324ac4800f78f7b0b44750c01398b74ee580e7505d7f8",
+        "frozen_sha256": "f7a67e2f33ae51dcd31324ac4800f78f7b0b44750c01398b74ee580e7505d7f8"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "e330c7479e27a45df9ddc28cf3bcc1725ef6cb09d533205522c2a6f01a737083",
+        "frozen_sha256": "e330c7479e27a45df9ddc28cf3bcc1725ef6cb09d533205522c2a6f01a737083"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "55f80f519b18f648ba36681e2c80957248cbc9534021037068d1606c41b077f8",
+        "frozen_sha256": "55f80f519b18f648ba36681e2c80957248cbc9534021037068d1606c41b077f8"
+      },
+      "all_identical": true
+    },
+    "army_artillery": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "562c66389b1c6863108a8d796736266f2aa3ed53107f1f63c67234c756809d37",
+        "frozen_sha256": "562c66389b1c6863108a8d796736266f2aa3ed53107f1f63c67234c756809d37"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "ba9700ce23bdbed1f99a33fca528018290d3d8d76aafa2660ed9c75032874252",
+        "frozen_sha256": "ba9700ce23bdbed1f99a33fca528018290d3d8d76aafa2660ed9c75032874252"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "17da6aa99612055f2ad153a9fd4c3e07f9647d102a0f88e8dad27c5d3e6e75bc",
+        "frozen_sha256": "17da6aa99612055f2ad153a9fd4c3e07f9647d102a0f88e8dad27c5d3e6e75bc"
+      },
+      "all_identical": true
+    },
+    "army_fort": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "c6697bf7f0eabec8759bd0620b0b75b6bc22425ad94eedd11e73517c1bc9eb99",
+        "frozen_sha256": "c6697bf7f0eabec8759bd0620b0b75b6bc22425ad94eedd11e73517c1bc9eb99"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "8a900b1daa5949509c5861b69bf66ad6d3fec93f0aff0ee811c416a22a25d5e0",
+        "frozen_sha256": "8a900b1daa5949509c5861b69bf66ad6d3fec93f0aff0ee811c416a22a25d5e0"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "8ddb65b7d98dc9cec93853913c2f94be504c8841585a243fccd9b932c5e36132",
+        "frozen_sha256": "8ddb65b7d98dc9cec93853913c2f94be504c8841585a243fccd9b932c5e36132"
+      },
+      "all_identical": true
+    },
+    "army_grenadier": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "475d1da3f17b69ad664eb58be022e3c1f1f33a56d8223c05f6708824c2dbb4b4",
+        "frozen_sha256": "475d1da3f17b69ad664eb58be022e3c1f1f33a56d8223c05f6708824c2dbb4b4"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "2072a834e85738416334f31bcc5cce939f55097d299ae4f8e3b874044d3a0294",
+        "frozen_sha256": "2072a834e85738416334f31bcc5cce939f55097d299ae4f8e3b874044d3a0294"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "853b22981421f9a730bb90cf9236acee51e0ad3d1cf9f688e92970e1219a98f3",
+        "frozen_sha256": "853b22981421f9a730bb90cf9236acee51e0ad3d1cf9f688e92970e1219a98f3"
+      },
+      "all_identical": true
+    },
+    "army_guards": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "da3bde2c168f28b9059f0d288f6b7b9b7c1a66151b1cdca5805d026320141405",
+        "frozen_sha256": "da3bde2c168f28b9059f0d288f6b7b9b7c1a66151b1cdca5805d026320141405"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "fc33fd9bf2dd14f1beb27b7bdf40d7c4d3e4e5550fe87f25271a5a01c3cee694",
+        "frozen_sha256": "fc33fd9bf2dd14f1beb27b7bdf40d7c4d3e4e5550fe87f25271a5a01c3cee694"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "6a4bd8c864dfb083ce98ede7a241f454da21e389181924520cba861a52cdd71f",
+        "frozen_sha256": "6a4bd8c864dfb083ce98ede7a241f454da21e389181924520cba861a52cdd71f"
+      },
+      "all_identical": true
+    },
+    "army_guardscavalry": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "d495e49c19372efe1f2ff87ba0167e7738688eda555da9c8fcc4745f6c3652e5",
+        "frozen_sha256": "d495e49c19372efe1f2ff87ba0167e7738688eda555da9c8fcc4745f6c3652e5"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "fa35a0efa9fb0f62ef3bee633458383741e9e0d6909ca6724e9569a8a30a21d2",
+        "frozen_sha256": "fa35a0efa9fb0f62ef3bee633458383741e9e0d6909ca6724e9569a8a30a21d2"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "528cfa1ac6c769806ffc93b348c025cadc7e524ed1d83edc4081bb697355024c",
+        "frozen_sha256": "528cfa1ac6c769806ffc93b348c025cadc7e524ed1d83edc4081bb697355024c"
+      },
+      "all_identical": true
+    },
+    "army_heavycavalry": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "552da6180b037cffacbb2a881b75003edb730c269cc599c8d664f43f80b76a43",
+        "frozen_sha256": "552da6180b037cffacbb2a881b75003edb730c269cc599c8d664f43f80b76a43"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "46cc8d240b7a34ea3ea35723e0eec21b2f492e9de6210fc255124940a42ea9e6",
+        "frozen_sha256": "46cc8d240b7a34ea3ea35723e0eec21b2f492e9de6210fc255124940a42ea9e6"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "50feec2d7a154f18e174fa0cbf37469874b1e2d504e7859c92237cab26f5a00b",
+        "frozen_sha256": "50feec2d7a154f18e174fa0cbf37469874b1e2d504e7859c92237cab26f5a00b"
+      },
+      "all_identical": true
+    },
+    "army_lightcavalry": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "7de70c8f8c7a3123d09e69aadfedc01b3e18b25207f30f934b974cdd5c293694",
+        "frozen_sha256": "7de70c8f8c7a3123d09e69aadfedc01b3e18b25207f30f934b974cdd5c293694"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "b8ed5514eb521d228ee5dc0e1fefb9b61b94d97b5de9174d81e81d045c759e23",
+        "frozen_sha256": "b8ed5514eb521d228ee5dc0e1fefb9b61b94d97b5de9174d81e81d045c759e23"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "14a7cfb0f1a2fcddedcc6c9dadd7a5f4c9ec2140b34fa06157a38a2b15b11b61",
+        "frozen_sha256": "14a7cfb0f1a2fcddedcc6c9dadd7a5f4c9ec2140b34fa06157a38a2b15b11b61"
+      },
+      "all_identical": true
+    },
+    "army_lightinfantry": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "4891624f6edc84cfa7414ff3534c1802dcb6de9d023f288b1d8f9cf0fa2a66cb",
+        "frozen_sha256": "4891624f6edc84cfa7414ff3534c1802dcb6de9d023f288b1d8f9cf0fa2a66cb"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "d07e4775547726021eca97afa8f2c11d0eecc9acd227d67f6744ef279a5ca15a",
+        "frozen_sha256": "d07e4775547726021eca97afa8f2c11d0eecc9acd227d67f6744ef279a5ca15a"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "fde68c77fe1ec1464eec643d444eb72d01a858b756aac50ff29236ac9fe20cff",
+        "frozen_sha256": "fde68c77fe1ec1464eec643d444eb72d01a858b756aac50ff29236ac9fe20cff"
+      },
+      "all_identical": true
+    },
+    "army_lineinfantry": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "d985d59b94cd9301069bb84b402e90ceb34bb93926a73aca8d811112d8b74642",
+        "frozen_sha256": "d985d59b94cd9301069bb84b402e90ceb34bb93926a73aca8d811112d8b74642"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "4abdd1a1042f1eff9dcf8eca56291ab850d7f12b4695ac437c16881919cac447",
+        "frozen_sha256": "4abdd1a1042f1eff9dcf8eca56291ab850d7f12b4695ac437c16881919cac447"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "6d14254984c494a6a260b4869978b6eed1402a440ec645f39c8cb6936b3ff7ef",
+        "frozen_sha256": "6d14254984c494a6a260b4869978b6eed1402a440ec645f39c8cb6936b3ff7ef"
+      },
+      "all_identical": true
+    },
+    "army_militia": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "4c48e502099e209da0b2997b1c37987f5237d0e10f060225862dd777d2be5180",
+        "frozen_sha256": "4c48e502099e209da0b2997b1c37987f5237d0e10f060225862dd777d2be5180"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "329f9265ed9a0e7f0236600dd0ed74c6c953f3fb9bc8fcf59ef4d73e0a8df4c7",
+        "frozen_sha256": "329f9265ed9a0e7f0236600dd0ed74c6c953f3fb9bc8fcf59ef4d73e0a8df4c7"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "c773cac47baf7b71ed9db6d7c8d4cf2eca0a6b0a42628fa2b149f210f2e5cc88",
+        "frozen_sha256": "c773cac47baf7b71ed9db6d7c8d4cf2eca0a6b0a42628fa2b149f210f2e5cc88"
+      },
+      "all_identical": true
+    },
+    "army_ship": {
+      "bin": {
+        "identical": true,
+        "native_sha256": "20bcc6f535370236d2fceb0c610b6f468ab853d997934bab8cef3bb31a2312e9",
+        "frozen_sha256": "20bcc6f535370236d2fceb0c610b6f468ab853d997934bab8cef3bb31a2312e9"
+      },
+      "xml": {
+        "identical": true,
+        "native_sha256": "e6dc8757c61b1b82c08ffd24cece494cdf81ae6b9fdfc0f321051b017b85e391",
+        "frozen_sha256": "e6dc8757c61b1b82c08ffd24cece494cdf81ae6b9fdfc0f321051b017b85e391"
+      },
+      "png": {
+        "identical": true,
+        "native_sha256": "9f2213efbeda6127636e918640e7c55777b9aea033ee08a38a1635bfabdb19c6",
+        "frozen_sha256": "9f2213efbeda6127636e918640e7c55777b9aea033ee08a38a1635bfabdb19c6"
+      },
+      "all_identical": true
+    }
+  },
+  "transport_assets": {
+    "transportship1.png": {
+      "manifest": {
+        "file": "assets/sprites/buildings_hd/transportship1.png",
+        "w": 151,
+        "h": 170,
+        "refx": 70,
+        "refy": 107,
+        "atlas": "buildings_hd"
+      },
+      "expected": [
+        151,
+        170,
+        70,
+        107
+      ],
+      "manifest_identical": true,
+      "asset_identical": true,
+      "ok": true
+    },
+    "transportship2.png": {
+      "manifest": {
+        "file": "assets/sprites/buildings_hd/transportship2.png",
+        "w": 150,
+        "h": 194,
+        "refx": 94,
+        "refy": 119,
+        "atlas": "buildings_hd"
+      },
+      "expected": [
+        150,
+        194,
+        94,
+        119
+      ],
+      "manifest_identical": true,
+      "asset_identical": true,
+      "ok": true
+    }
+  },
+  "native_transport_renderer_contract": {
+    "embarked_branch": true,
+    "transport_render": true,
+    "armored_function12": true,
+    "move_facing": true,
+    "ready_skip": true,
+    "embark_refresh": true
+  },
+  "status_sprites": {
+    "hpbar_green.png": true,
+    "hpbar_blue.png": true,
+    "hpbar_red.png": true,
+    "hpbar_black.png": true
+  },
+  "army_markers_0_21": {
+    "mark_unit_0.png": true,
+    "mark_unit_1.png": true,
+    "mark_unit_2.png": true,
+    "mark_unit_3.png": true,
+    "mark_unit_4.png": true,
+    "mark_unit_5.png": true,
+    "mark_unit_6.png": true,
+    "mark_unit_7.png": true,
+    "mark_unit_8.png": true,
+    "mark_unit_9.png": true,
+    "mark_unit_10.png": true,
+    "mark_unit_11.png": true,
+    "mark_unit_12.png": true,
+    "mark_unit_13.png": true,
+    "mark_unit_14.png": true,
+    "mark_unit_15.png": true,
+    "mark_unit_16.png": true,
+    "mark_unit_17.png": true,
+    "mark_unit_18.png": true,
+    "mark_unit_19.png": true,
+    "mark_unit_20.png": true,
+    "mark_unit_21.png": true
+  },
+  "presentation_source_contract": {
+    "lod_threshold_0_5": true,
+    "lod_min_0_76": true,
+    "lod_max_1_18": true,
+    "anchor_consumed": true
+  },
+  "errors": []
+}

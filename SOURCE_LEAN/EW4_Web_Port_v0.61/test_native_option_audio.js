@@ -1,0 +1,15 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8'),css=fs.readFileSync('r14_native_forms.css','utf8'),sw=fs.readFileSync('sw.js','utf8');
+assert(app.includes('bgVol:50,seVol:50'),'original 50/50 defaults missing');
+assert(app.includes("saveState.bgVol==null)saveState.bgVol=saveState.music===false?0:50"),'legacy music migration missing');
+assert(app.includes('function bgVolume(){return clampSettingPercent(saveState.bgVol)/100}'));
+assert(app.includes('function seVolume(){return clampSettingPercent(saveState.seVol)/100}'));
+assert(app.includes('a.volume=seVolume()'),'SFX does not use SEVol');
+assert(app.includes('d.volume=bgVolume()'),'defeat music does not use BGVol');
+assert(app.includes('au.volume=bgVolume()'),'battle music does not use BGVol');
+for(const id of ['option-bgvol','option-sevol','option-native'])assert(html.includes(`id="${id}"`),id);
+assert(css.includes('#option-native{left:104px;top:51px;width:360px;height:218px'),'form_option geometry');
+assert(css.includes('.option-slider.music{left:41px;top:68px}'),'music slider geometry');
+assert(css.includes('.option-slider.sound{left:218px;top:68px}'),'sound slider geometry');
+for(const f of ['volume_bar.png','slider_gray.png','slider_press.png'])assert(sw.includes(f),`precache ${f}`);
+console.log('native option audio tests passed');

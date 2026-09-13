@@ -1,0 +1,160 @@
+﻿<Texture name="army_artillery.png" />
+<Images>
+    <Image name="130炮1.png" x="1" y="1" w="119" h="86" refx="0" refy="0" />
+    <Image name="90炮.png" x="121" y="1" w="128" h="50" refx="0" refy="0" />
+    <Image name="90轮子1.png" x="1" y="88" w="137" h="71" refx="0" refy="0" />
+    <Image name="90轮子7.png" x="1" y="160" w="137" h="71" refx="0" refy="0" />
+    <Image name="70炮.png" x="250" y="1" w="145" h="69" refx="0" refy="0" />
+    <Image name="110炮.png" x="139" y="71" w="156" h="83" refx="0" refy="0" />
+    <Image name="70轮子1.png" x="139" y="155" w="167" h="73" refx="0" refy="0" />
+    <Image name="70轮子9.png" x="296" y="71" w="167" h="73" refx="0" refy="0" />
+    <Image name="70棒子1.png" x="396" y="1" w="5" h="65" refx="0" refy="0" />
+    <Image name="90轮子2.png" x="307" y="145" w="51" h="49" refx="0" refy="0" />
+    <Image name="90轮子3.png" x="402" y="1" w="51" h="49" refx="0" refy="0" />
+    <Image name="70轮子2.png" x="454" y="1" w="48" h="48" refx="0" refy="0" />
+    <Image name="70轮子3.png" x="359" y="145" w="48" h="48" refx="0" refy="0" />
+    <Image name="110火箭炮1.png" x="1" y="232" w="49" h="20" refx="0" refy="0" />
+    <Image name="80军官衣服1.png" x="464" y="50" w="16" h="40" refx="0" refy="0" />
+    <Image name="70身体1.png" x="307" y="195" w="18" h="38" refx="0" refy="0" />
+    <Image name="71军官衣服1.png" x="359" y="194" w="15" h="38" refx="0" refy="0" />
+    <Image name="75身体1.png" x="326" y="195" w="15" h="38" refx="0" refy="0" />
+    <Image name="84身体1.png" x="342" y="195" w="15" h="38" refx="0" refy="0" />
+    <Image name="75军官衣服1.png" x="121" y="52" w="14" h="35" refx="0" refy="0" />
+    <Image name="84军官衣服1.png" x="481" y="50" w="14" h="34" refx="0" refy="0" />
+    <Image name="80军官的剑1.png" x="408" y="145" w="17" h="31" refx="0" refy="0" />
+    <Image name="80军官的剑2.png" x="464" y="91" w="17" h="27" refx="0" refy="0" />
+    <Image name="71身体1.png" x="139" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="72军官衣服1.png" x="153" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="72身体1.png" x="167" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="73军官衣服1.png" x="181" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="73身体1.png" x="195" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="76军官衣服1.png" x="209" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="76身体1.png" x="223" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="87军官衣服1.png" x="237" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="87身体1.png" x="251" y="229" w="13" h="26" refx="0" refy="0" />
+    <Image name="78军官的剑1.png" x="265" y="229" w="19" h="25" refx="0" refy="0" />
+    <Image name="78军官的剑2.png" x="285" y="229" w="17" h="24" refx="0" refy="0" />
+    <Image name="70小腿1.png" x="51" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="70小腿2.png" x="59" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="71小腿1.png" x="67" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="71小腿2.png" x="75" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="71高级右小腿.png" x="83" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="72小腿1.png" x="91" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="72小腿2.png" x="99" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="72高级右小腿.png" x="107" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="73小腿2.png" x="115" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="76小腿1.png" x="123" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="76小腿2.png" x="131" y="232" w="7" h="22" refx="0" refy="0" />
+    <Image name="78小腿1.png" x="496" y="50" w="9" h="22" refx="0" refy="0" />
+    <Image name="78小腿2.png" x="358" y="233" w="9" h="22" refx="0" refy="0" />
+    <Image name="84军官右小脚.png" x="503" y="1" w="7" h="22" refx="0" refy="0" />
+    <Image name="84军官左小脚.png" x="503" y="24" w="7" h="22" refx="0" refy="0" />
+    <Image name="84小腿1.png" x="496" y="73" w="7" h="22" refx="0" refy="0" />
+    <Image name="84小腿2.png" x="482" y="85" w="7" h="22" refx="0" refy="0" />
+    <Image name="47身体1.png" x="303" y="234" w="13" h="21" refx="0" refy="0" />
+    <Image name="71人 小腿1.png" x="317" y="234" w="9" h="21" refx="0" refy="0" />
+    <Image name="72人 小腿1.png" x="464" y="119" w="9" h="21" refx="0" refy="0" />
+    <Image name="73小腿1.png" x="327" y="234" w="7" h="21" refx="0" refy="0" />
+    <Image name="78军官衣服1.png" x="335" y="234" w="13" h="21" refx="0" refy="0" />
+    <Image name="70大腿2.png" x="454" y="50" w="9" h="20" refx="0" refy="0" />
+    <Image name="72大腿2.png" x="426" y="145" w="9" h="20" refx="0" refy="0" />
+    <Image name="73大腿2.png" x="408" y="177" w="9" h="20" refx="0" refy="0" />
+    <Image name="75高级右大腿1.png" x="436" y="145" w="9" h="20" refx="0" refy="0" />
+    <Image name="75高级左大腿1.png" x="375" y="194" w="9" h="20" refx="0" refy="0" />
+    <Image name="78大腿2.png" x="385" y="194" w="9" h="20" refx="0" refy="0" />
+    <Image name="84大腿2.png" x="395" y="194" w="9" h="20" refx="0" refy="0" />
+    <Image name="70大腿.png" x="402" y="51" w="6" h="19" refx="0" refy="0" />
+    <Image name="71大腿1.png" x="409" y="51" w="6" h="19" refx="0" refy="0" />
+    <Image name="72大腿1.png" x="416" y="51" w="6" h="19" refx="0" refy="0" />
+    <Image name="75大腿1.png" x="423" y="51" w="6" h="19" refx="0" refy="0" />
+    <Image name="78大腿.png" x="430" y="51" w="9" h="19" refx="0" refy="0" />
+    <Image name="84大腿1.png" x="440" y="51" w="6" h="19" refx="0" refy="0" />
+    <Image name="shadow.png" x="375" y="215" w="36" h="19" refx="0" refy="0" />
+    <Image name="45人 大腿1.png" x="136" y="52" w="13" h="18" refx="0" refy="0" />
+    <Image name="72人 大腿1.png" x="150" y="52" w="13" h="18" refx="0" refy="0" />
+    <Image name="73人 大腿1.png" x="164" y="52" w="13" h="18" refx="0" refy="0" />
+    <Image name="78人 大腿1.png" x="178" y="52" w="13" h="18" refx="0" refy="0" />
+    <Image name="78刀鞘.png" x="192" y="52" w="16" h="18" refx="0" refy="0" />
+    <Image name="84人 大腿1.png" x="209" y="52" w="13" h="18" refx="0" refy="0" />
+    <Image name="71帽子1.png" x="223" y="52" w="10" h="16" refx="0" refy="0" />
+    <Image name="75军官帽子1.png" x="234" y="52" w="10" h="16" refx="0" refy="0" />
+    <Image name="71军官帽子1.png" x="368" y="235" w="15" h="14" refx="0" refy="0" />
+    <Image name="72军官帽子1.png" x="446" y="145" w="11" h="15" refx="0" refy="0" />
+    <Image name="71高级左上手臂.png" x="504" y="73" w="7" h="14" refx="0" refy="0" />
+    <Image name="73帽子1.png" x="458" y="145" w="10" h="14" refx="0" refy="0" />
+    <Image name="80军官帽子1.png" x="446" y="161" w="16" h="14" refx="0" refy="0" />
+    <Image name="84军官左上手臂1.png" x="447" y="51" w="6" h="14" refx="0" refy="0" />
+    <Image name="40右上手臂1.png" x="506" y="47" w="5" h="13" refx="0" refy="0" />
+    <Image name="40左上袖子1.png" x="349" y="234" w="6" h="13" refx="0" refy="0" />
+    <Image name="42右上手臂1.png" x="490" y="85" w="5" h="13" refx="0" refy="0" />
+    <Image name="42左上袖子1.png" x="490" y="99" w="6" h="13" refx="0" refy="0" />
+    <Image name="43右上手臂1.png" x="497" y="96" w="5" h="13" refx="0" refy="0" />
+    <Image name="43左上袖子1.png" x="503" y="96" w="6" h="13" refx="0" refy="0" />
+    <Image name="47右上手臂1.png" x="497" y="110" w="5" h="13" refx="0" refy="0" />
+    <Image name="47右下袖子1.png" x="503" y="110" w="7" h="13" refx="0" refy="0" />
+    <Image name="47左上袖子1.png" x="482" y="113" w="6" h="13" refx="0" refy="0" />
+    <Image name="70右下手臂1.png" x="489" y="113" w="7" h="13" refx="0" refy="0" />
+    <Image name="70左下手臂1.png" x="474" y="127" w="9" h="13" refx="0" refy="0" />
+    <Image name="71右下手臂1.png" x="484" y="127" w="7" h="13" refx="0" refy="0" />
+    <Image name="71左下手臂1.png" x="426" y="166" w="8" h="13" refx="0" refy="0" />
+    <Image name="71普通右下手臂1.png" x="435" y="166" w="7" h="13" refx="0" refy="0" />
+    <Image name="72右下手臂1.png" x="418" y="180" w="7" h="13" refx="0" refy="0" />
+    <Image name="72左下手臂1.png" x="426" y="180" w="8" h="13" refx="0" refy="0" />
+    <Image name="72普通右下手臂1.png" x="418" y="194" w="7" h="13" refx="0" refy="0" />
+    <Image name="73左下手臂1.png" x="405" y="198" w="8" h="13" refx="0" refy="0" />
+    <Image name="73普通右下手臂1.png" x="412" y="212" w="7" h="13" refx="0" refy="0" />
+    <Image name="75右上手臂1.png" x="426" y="194" w="5" h="13" refx="0" refy="0" />
+    <Image name="75右下手臂1.png" x="435" y="180" w="7" h="13" refx="0" refy="0" />
+    <Image name="75左上袖子1.png" x="443" y="176" w="6" h="13" refx="0" refy="0" />
+    <Image name="75普通右下手臂1.png" x="492" y="127" w="7" h="13" refx="0" refy="0" />
+    <Image name="76右上手臂1.png" x="469" y="141" w="5" h="13" refx="0" refy="0" />
+    <Image name="76左上袖子1.png" x="475" y="141" w="6" h="13" refx="0" refy="0" />
+    <Image name="76普通右下手臂1.png" x="482" y="141" w="7" h="13" refx="0" refy="0" />
+    <Image name="76高级有下手臂1.png" x="469" y="155" w="8" h="13" refx="0" refy="0" />
+    <Image name="84军官右下手臂.png" x="384" y="235" w="7" h="13" refx="0" refy="0" />
+    <Image name="84军官左下手臂.png" x="450" y="176" w="9" h="13" refx="0" refy="0" />
+    <Image name="84右上手臂1.png" x="463" y="160" w="5" h="13" refx="0" refy="0" />
+    <Image name="84右下手臂1.png" x="500" y="124" w="7" h="13" refx="0" refy="0" />
+    <Image name="84左上袖子1.png" x="432" y="194" w="6" h="13" refx="0" refy="0" />
+    <Image name="84左下手臂1.png" x="412" y="226" w="8" h="13" refx="0" refy="0" />
+    <Image name="87右上手臂1.png" x="439" y="194" w="5" h="13" refx="0" refy="0" />
+    <Image name="87左上袖子1.png" x="463" y="174" w="6" h="13" refx="0" refy="0" />
+    <Image name="45人 裤衩1.png" x="392" y="235" w="12" h="9" refx="0" refy="0" />
+    <Image name="47左下袖子1.png" x="478" y="155" w="8" h="12" refx="0" refy="0" />
+    <Image name="70帽子1.png" x="490" y="141" w="11" h="12" refx="0" refy="0" />
+    <Image name="71高级有下手臂1.png" x="420" y="208" w="8" h="12" refx="0" refy="0" />
+    <Image name="72高级有下手臂1.png" x="429" y="208" w="8" h="12" refx="0" refy="0" />
+    <Image name="73高级有下手臂1.png" x="445" y="190" w="8" h="12" refx="0" refy="0" />
+    <Image name="75左下手臂1.png" x="405" y="240" w="9" h="12" refx="0" refy="0" />
+    <Image name="75帽子1.png" x="454" y="190" w="11" h="12" refx="0" refy="0" />
+    <Image name="75高级有下手臂1.png" x="445" y="203" w="8" h="12" refx="0" refy="0" />
+    <Image name="78帽子1.png" x="421" y="221" w="9" h="12" refx="0" refy="0" />
+    <Image name="72帽子1.png" x="490" y="154" w="11" h="11" refx="0" refy="0" />
+    <Image name="73人 裤衩1.png" x="392" y="245" w="12" h="9" refx="0" refy="0" />
+    <Image name="87帽子1.png" x="478" y="168" w="13" h="9" refx="0" refy="0" />
+    <Image name="73军官帽子1.png" x="470" y="178" w="14" h="12" refx="0" refy="0" />
+    <Image name="87普通右下手臂1.png" x="502" y="138" w="7" h="13" refx="0" refy="0" />
+    <Image name="73右下手臂1.png" x="502" y="152" w="7" h="12" refx="0" refy="0" />
+    <Image name="87高级有下手臂1.png" x="431" y="221" w="8" h="12" refx="0" refy="0" />
+    <Image name="drum2.png" x="136" y="71" w="1" h="12" refx="0" refy="0" />
+    <Image name="40脸1.png" x="296" y="145" w="7" h="8" refx="0" refy="0" />
+    <Image name="46脸1.png" x="421" y="234" w="7" h="8" refx="0" refy="0" />
+    <Image name="40人 脚1.png" x="349" y="248" w="8" h="6" refx="0" refy="0" />
+    <Image name="71人 脚1.png" x="454" y="203" w="8" h="6" refx="0" refy="0" />
+    <Image name="47人 脚1.png" x="440" y="216" w="9" h="6" refx="0" refy="0" />
+    <Image name="78脚1.png" x="368" y="250" w="9" h="5" refx="0" refy="0" />
+    <Image name="left hand2.png" x="378" y="250" w="9" h="5" refx="0" refy="0" />
+    <Image name="70脚1.png" x="492" y="166" w="10" h="5" refx="0" refy="0" />
+    <Image name="71脚1.png" x="466" y="191" w="10" h="5" refx="0" refy="0" />
+    <Image name="76帽子1.png" x="485" y="178" w="10" h="7" refx="0" refy="0" />
+    <Image name="78军官帽子1.png" x="466" y="197" w="10" h="7" refx="0" refy="0" />
+    <Image name="72人 裤衩1.png" x="450" y="216" w="12" h="9" refx="0" refy="0" />
+    <Image name="75高级裤衩1.png" x="429" y="234" w="12" h="9" refx="0" refy="0" />
+    <Image name="84人 裤衩1.png" x="477" y="191" w="12" h="9" refx="0" refy="0" />
+    <Image name="44帽子1.png" x="496" y="172" w="14" h="8" refx="0" refy="0" />
+    <Image name="76军官帽子1.png" x="415" y="244" w="15" h="11" refx="0" refy="0" />
+    <Image name="40右手1.png" x="447" y="66" w="5" h="4" refx="0" refy="0" />
+    <Image name="40左手1.png" x="506" y="61" w="5" h="4" refx="0" refy="0" />
+    <Image name="60右手1.png" x="504" y="88" w="6" h="4" refx="0" refy="0" />
+    <Image name="60左手7771.png" x="474" y="119" w="6" h="4" refx="0" refy="0" />
+</Images>

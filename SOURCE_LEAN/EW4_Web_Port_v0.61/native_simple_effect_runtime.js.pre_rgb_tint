@@ -1,0 +1,136 @@
+'use strict';
+/* Original EW4 simple particle-effect runtime.
+   Evidence source: libeuropean-war-4.so parser/runtime + original effect XML.
+   Only recovered semantics are implemented here; unsupported emitter types are
+   deliberately not invented. */
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;
+  root.EW4NativeSimpleEffect=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  const num=(v,d=0)=>Number.isFinite(+v)?+v:d;
+  const clamp01=v=>Math.max(0,Math.min(1,num(v,0)));
+  const EPS=1e-7,DEG=Math.PI/180;
+
+  function sampleRange(a,b,rng=Math.random){a=num(a,0);b=num(b,a);if(b<a)[a,b]=[b,a];return a+(b-a)*clamp01(rng())}
+  function sampleByte(a,b,rng=Math.random){a=Math.max(0,Math.min(255,Math.round(num(a,255))));b=Math.max(a,Math.min(255,Math.round(num(b,a))));return a+Math.floor(clamp01(rng())*(b-a+1-EPS))}
+
+  function sampleTrack(points,t,key,def=1){
+    if(!Array.isArray(points)||!points.length)return def;
+    t=clamp01(t);const rows=[...points].sort((a,b)=>num(a.life)-num(b.life));
+    if(t<=num(rows[0].life))return num(rows[0][key],def);
+    for(let i=1;i<rows.length;i++){
+      const b=rows[i],bt=num(b.life);
+      if(t<=bt){const a=rows[i-1],at=num(a.life),span=bt-at,f=span>0?(t-at)/span:0;return num(a[key],def)+(num(b[key],def)-num(a[key],def))*f}
+    }
+    return num(rows[rows.length-1][key],def);
+  }
+
+  // Native type=area spawn @ x86_64 c9d64..c9e3e:
+  // 1) choose ONE random t and lerp both x/y along the emitter's previous->current segment;
+  // 2) add independent centered width/height jitter.  The native 0.5 constant at
+  //    rodata 0x1b431c makes the final jitter ranges [-width/2,+width/2] and
+  //    [-height/2,+height/2].
+  // Build/recover omit width/height and are attached with a point segment, so
+  // their particle spawn location is exactly the supplied anchor.
+  function sampleAreaPosition(rect,settings={},rng=Math.random){
+    const x0=num(rect?.x0,0),x1=num(rect?.x1,x0),y0=num(rect?.y0,0),y1=num(rect?.y1,y0),w=num(settings?.width,0),h=num(settings?.height,0);
+    const r=()=>clamp01(rng()),t=r(),jx=(r()-.5)*w,jy=(r()-.5)*h;
+    return{x:x0+(x1-x0)*t+jx,y:y0+(y1-y0)*t+jy};
+  }
+
+  function particleLife(effect,rng=Math.random){
+    const a=Math.max(0,num(effect?.particle_life_min,0)),b=Math.max(a,num(effect?.particle_life_max,a));return sampleRange(a,b,rng);
+  }
+  function createParticle(effect,pos,rng=Math.random){
+    const angle=sampleRange(effect?.angle_min, effect?.angle_max, rng)*DEG;
+    const speed=sampleRange(effect?.speed_min, effect?.speed_max, rng);
+    const gravityBase=sampleRange(effect?.gravity_min, effect?.gravity_max, rng);
+    const scaleBase=sampleRange(effect?.scale_min==null?1:effect.scale_min, effect?.scale_max==null?effect?.scale_min??1:effect.scale_max, rng);
+    const rotSpeedBase=sampleRange(effect?.rotspeed_min, effect?.rotspeed_max, rng);
+    const rotType=String(effect?.rotangle_type||'').toLowerCase();
+    const rotation=(rotType==='random'?sampleRange(effect?.rotangle_min,effect?.rotangle_max,rng):num(effect?.rotangle_min,0))*DEG;
+    const cmin=effect?.color_min||effect?.color||{},cmax=effect?.color_max||effect?.color||cmin;
+    const color={r:sampleByte(cmin.r,cmax.r,rng),g:sampleByte(cmin.g,cmax.g,rng),b:sampleByte(cmin.b,cmax.b,rng),a:sampleByte(cmin.a,cmax.a,rng)};
+    return{...pos,age:0,life:particleLife(effect,rng),vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,gravityBase,scaleBase,rotation,rotSpeedBase,color};
+  }
+  function effectDuration(effect){return Math.max(0,num(effect?.emitter_life,0))+Math.max(0,num(effect?.particle_life_max,effect?.particle_life_min||0))}
+  function isContinuous(effect){return String(effect?.settings?.mode||'once').toLowerCase()!=='once'}
+  function stopInstance(inst){if(inst)inst.active=false;return inst}
+
+  function createInstance(effect,anchor={x:0,y:0},{rng=Math.random,rect=null}={}){
+    if(!effect)return null;const tracks=Array.isArray(effect.timetrack)?effect.timetrack:[];
+    const first=tracks[0]||{time:0,quantity:0},base=rect||{x0:num(anchor.x),x1:num(anchor.x),y0:num(anchor.y),y1:num(anchor.y)};
+    return{effect,rect:base,rng,active:true,emitterAge:0,trackIndex:0,currentRate:num(first.quantity,0),rateSlope:0,spawnRemainder:0,particles:[]};
+  }
+
+  // Mirrors native c9180 ordering closely enough for recovered once/area effects:
+  // existing particles advance first; emitter time/rate advance; crossed time-track
+  // keys recompute the slope; spawn count is floor(dt*currentRate + remainder).
+  function advance(inst,dt){
+    if(!inst||!(dt>0))return inst;dt=Math.max(0,num(dt,0));
+    // Native particle struct/update @ x86_64 c93c0+: position is advanced
+    // using direction * current life-track speed multiplier, then vertical
+    // velocity receives gravity, and rotation receives tracked rot-speed.
+    // The track value used for this step is the value at the particle's
+    // current age (explicit-Euler ordering, matching the native update).
+    for(const p of inst.particles){
+      const t=p.life>0?clamp01(p.age/p.life):1,track=inst.effect.lifetrack||[];
+      const sf=sampleTrack(track,t,'speed',1),gf=sampleTrack(track,t,'gravity',1),rf=sampleTrack(track,t,'rotspeed',1);
+      p.x+=num(p.vx,0)*sf*dt;p.y+=num(p.vy,0)*sf*dt;
+      p.vy+=num(p.gravityBase,0)*gf*dt;p.rotation+=num(p.rotSpeedBase,0)*rf*DEG*dt;p.age+=dt;
+    }
+    inst.particles=inst.particles.filter(p=>p.age<p.life);
+    if(!inst.active)return inst;
+    const e=inst.effect,tracks=Array.isArray(e.timetrack)?e.timetrack:[];
+    inst.emitterAge+=dt;inst.currentRate+=inst.rateSlope*dt;
+    while(tracks.length&&inst.trackIndex<tracks.length&&inst.emitterAge+EPS>=num(tracks[inst.trackIndex].time,0)){
+      if(inst.trackIndex>=tracks.length-1){inst.currentRate=num(tracks[inst.trackIndex].quantity,inst.currentRate);inst.rateSlope=0;break}
+      inst.trackIndex++;
+      const next=tracks[inst.trackIndex],remaining=Math.max(EPS,num(next.time)-inst.emitterAge);
+      inst.rateSlope=(num(next.quantity,0)-inst.currentRate)/remaining;
+      if(inst.emitterAge+EPS>=num(next.time)){inst.currentRate=num(next.quantity,0);continue}
+      break;
+    }
+    const life=Math.max(0,num(e.emitter_life,0));if(!isContinuous(e)&&life>0&&inst.emitterAge+EPS>=life){
+      // Native mode=once (parser flag 0) self-disables at emitter life.
+      // mode=cont (flag 1) remains active until its owning animation/controller
+      // explicitly stops it; existing particles always finish their own lives.
+      inst.active=false;
+    }
+    const want=Math.max(0,dt*Math.max(0,inst.currentRate)+inst.spawnRemainder),count=Math.floor(want);inst.spawnRemainder=want-count;
+    const settings=e.settings||{};
+    for(let i=0;i<count&&inst.particles.length<100;i++){
+      const pos=(settings.type==='area')?sampleAreaPosition(inst.rect,settings,inst.rng):{x:inst.rect.x0,y:inst.rect.y0};
+      inst.particles.push(createParticle(e,pos,inst.rng));
+    }
+    return inst;
+  }
+  function isAlive(inst){return !!inst&&(inst.active||inst.particles.length>0)}
+
+  function particleState(effect,p){
+    if(!p||!(p.life>0)||p.age>=p.life)return{alive:false,t:1,alpha:0,scale:0,rotation:0};
+    const t=clamp01(p.age/p.life),base=p.color||effect.color||{};
+    return{alive:true,t,rotation:num(p.rotation,0),
+      alpha:clamp01(num(base.a,255)/255)*clamp01(sampleTrack(effect.lifetrack,t,'a',1)),
+      scale:num(p.scaleBase,effect.scale_min==null?1:effect.scale_min)*sampleTrack(effect.lifetrack,t,'scale',1),
+      r:clamp01(num(base.r,255)/255*sampleTrack(effect.lifetrack,t,'r',1)),
+      g:clamp01(num(base.g,255)/255*sampleTrack(effect.lifetrack,t,'g',1)),
+      b:clamp01(num(base.b,255)/255*sampleTrack(effect.lifetrack,t,'b',1))};
+  }
+
+  function drawParticle(ctx,atlas,effect,particle,state,zoom=1,origin={x:0,y:0}){
+    if(!ctx||!atlas||!state?.alive||state.alpha<=0)return false;const a=effect.atlas_rect||{},sw=num(a.w),sh=num(a.h);if(!(sw>0&&sh>0))return false;
+    const dw=num(effect.particle_width,sw)*state.scale*num(zoom,1),dh=num(effect.particle_height,sh)*state.scale*num(zoom,1),rx=num(a.refx,sw/2)/sw,ry=num(a.refy,sh/2)/sh;
+    const x=num(origin.x)+num(particle.x)*num(zoom,1),y=num(origin.y)+num(particle.y)*num(zoom,1);
+    ctx.save();ctx.globalAlpha*=state.alpha;if(String(effect.blend).toLowerCase()==='add')ctx.globalCompositeOperation='lighter';
+    if('filter' in ctx&&Math.abs(state.r-state.g)<1e-7&&Math.abs(state.r-state.b)<1e-7&&Math.abs(state.r-1)>1e-7)ctx.filter=`brightness(${Math.max(0,state.r)*100}%)`;
+    ctx.translate(x,y);if(Math.abs(state.rotation)>EPS)ctx.rotate(state.rotation);
+    ctx.drawImage(atlas,num(a.x),num(a.y),sw,sh,-dw*rx,-dh*ry,dw,dh);ctx.restore();return true;
+  }
+  function drawInstance(ctx,atlas,inst,zoom=1,origin={x:0,y:0}){
+    if(!inst)return false;let drew=false;for(const p of inst.particles)drew=drawParticle(ctx,atlas,inst.effect,p,particleState(inst.effect,p),zoom,origin)||drew;return drew;
+  }
+
+  return Object.freeze({sampleTrack,sampleAreaPosition,sampleRange,particleLife,createParticle,effectDuration,isContinuous,stopInstance,createInstance,advance,isAlive,particleState,drawParticle,drawInstance});
+});

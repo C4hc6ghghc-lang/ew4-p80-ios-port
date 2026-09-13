@@ -1,0 +1,10 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8');
+assert(app.includes("playNativeFormOpenSfx('form_exchange')"));
+for(const x of ['btn_buy_1','btn_buy_2','btn_buy_3','btn_buy_4','btn_sell_1','btn_sell_2','btn_sell_3','btn_sell_4'])assert(app.includes(`'${x}'`),`missing original exchange alias ${x}`);
+assert(app.includes('function marketResourceIcon'));assert(app.includes('exchange-buy-row')&&app.includes('exchange-sell-row')&&app.includes('exchange-player'));
+assert(html.includes('#commerce-panel[data-mode="market"]{left:64px;top:30px;width:440px;height:259px'));
+assert(html.includes('#commerce-panel[data-mode="shop"]{left:72px;top:30px;width:425px;height:259px'));
+assert(html.includes('#commerce-panel[data-mode="tavern"]{left:134px;top:22px;width:300px;height:275px'));
+assert(app.includes('tavern-grid native-tavern'));
+console.log('P19 native exchange / recruitgeneral geometry: PASS');

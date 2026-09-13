@@ -1,0 +1,20 @@
+'use strict';
+const assert=require('assert');
+const C=require('./native_commerce_core.js');
+assert.strictEqual(C.tradeRate(0),3);
+assert.strictEqual(C.tradeRate(1),2.6);
+assert.strictEqual(C.tradeRate(3),1.8);
+assert.strictEqual(C.tradeRate(5),1);
+assert.deepStrictEqual(C.marketBuyQuote(0,0),{direction:'buy',index:0,rate:3,payResource:'money',pay:30,receiveResource:'industry',receive:2});
+assert.deepStrictEqual(C.marketBuyQuote(1,5),{direction:'buy',index:1,rate:1,payResource:'money',pay:50,receiveResource:'industry',receive:10});
+assert.deepStrictEqual(C.marketBuyQuote(2,3),{direction:'buy',index:2,rate:1.8,payResource:'money',pay:18,receiveResource:'food',receive:50});
+assert.deepStrictEqual(C.marketSellQuote(0,0),{direction:'sell',index:0,rate:3,payResource:'industry',pay:6,receiveResource:'money',receive:10});
+assert.deepStrictEqual(C.marketSellQuote(3,5),{direction:'sell',index:3,rate:1,payResource:'food',pay:250,receiveResource:'money',receive:50});
+assert.strictEqual(C.shopDiscountPercent(0),0);
+assert.strictEqual(C.shopDiscountPercent(3),12);
+assert.strictEqual(C.shopDiscountPercent(5),20);
+assert.strictEqual(C.shopBuyPrice(815,0),815);
+assert.strictEqual(C.shopBuyPrice(815,3),718); // 815 - floor(97.8)
+assert.strictEqual(C.shopBuyPrice(815,5),652);
+const r={money:100,industry:0,food:0};assert(C.applyQuote(r,C.marketBuyQuote(1,5)));assert.deepStrictEqual(r,{money:50,industry:10,food:0});
+console.log('native commerce core PASS');

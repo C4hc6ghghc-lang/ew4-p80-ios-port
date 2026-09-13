@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('assert'),I=require('./native_impact_effect_core.js');
+assert.deepStrictEqual([1,10,11,25,26,40,41,90].map(I.damageTier),[0,0,1,1,2,2,3,3]);
+assert.equal(I.resolveTimeline({attackerArmyId:13,weapon:'rocket',targetType:'infantry',damage:50,dx:1}),'rocketstrike');
+assert.equal(I.resolveTimeline({weapon:'cannon',targetType:'infantry',targetSea:false,damage:9,dx:1}),'strike1');
+assert.equal(I.resolveTimeline({weapon:'cannon',targetType:'warship',targetSea:true,damage:44,dx:1}),'seastrike4');
+assert.equal(I.resolveTimeline({weapon:'gun',targetType:'infantry',damage:9,dx:1}),'bodystrike1 right');
+assert.equal(I.resolveTimeline({weapon:'gun',targetType:'infantry',damage:44,dx:-1}),'bodystrike2 left');
+assert.equal(I.resolveTimeline({weapon:'mgun',targetType:'warship',damage:28,dx:1}),'woodstrike2 right');
+assert.equal(I.resolveTimeline({weapon:'gun',targetType:'fort',damage:28,dx:-1}),'stonestrike2 left');
+assert.equal(I.resolveTimeline({weapon:'cold',targetType:'infantry',damage:8,dx:1}),'coldstrike1');
+assert.equal(I.resolveTimeline({weapon:'cold',targetType:'fort',damage:45,dx:1}),'coldstonestrike2');
+assert.equal(I.resolveTimeline({weapon:'guns',targetType:'fort',damage:45,dx:-1}),'strike4');
+console.log('native impact selector PASS');

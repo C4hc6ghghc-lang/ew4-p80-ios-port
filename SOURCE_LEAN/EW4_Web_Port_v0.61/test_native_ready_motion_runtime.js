@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8');
+assert(app.includes("pickMotion(unit,'ready',0,direction)"),'runtime must sample native READY motion');
+assert(app.includes('nativeFrameDrawSpec(u,p,uz)||nativeReadyFrameDrawSpec(u,p,uz)'),'attack chain must override READY, with READY as normal tactical state');
+assert(app.includes('EW4NativeAnimation.frameAtElapsed'),'READY runtime must advance actual BILE frames');
+assert(app.includes('ensureNativeReadyLoop()'),'battle renderer must keep native READY animation alive');
+assert(app.includes("if(isSeaUnit(u)||u.embarked||isFort(u))u.nativeFacing=b.x<a.x?'left':'right'"),'moving sea/embarked directional units must update native facing');
+assert(app.includes('unitPresentationVisible(u)&&cellVisible(u.q,u.r,vb)'),'continuous READY pass must cull offscreen units while retaining pending-impact deaths');
+assert(app.includes('w:(+m.w||1)*scale,h:(+m.h||1)*scale'),'static fallback must use same native 0.5 scale as BILE frames');
+console.log('P32 native READY/movement runtime PASS');

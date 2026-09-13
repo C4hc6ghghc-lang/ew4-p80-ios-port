@@ -1,0 +1,4038 @@
+{
+  "source": "APK assets/def_effectsanim.xml",
+  "timeline_count": 143,
+  "timelines": {
+    "xx right": [
+      {
+        "at": 0.0,
+        "effect": "effect_gunfire.xml",
+        "x": 3.25,
+        "y": -24.6,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 0.08,
+        "effect": "effect_mgunfire.xml",
+        "x": 17.8,
+        "y": -7.2,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "xx left": [
+      {
+        "at": 0.0,
+        "effect": "effect_gunfire.xml",
+        "x": -3.25,
+        "y": -24.6,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 0.08,
+        "effect": "effect_mgunfire.xml",
+        "x": -17.8,
+        "y": -7.2,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "privateer right": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "privateer left": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "frigate right": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "frigate left": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "battleship right": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "battleship left": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "ironclad right": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "ironclad left": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "light cavalry 1 right": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife1.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      }
+    ],
+    "light cavalry 1 left": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife1.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      }
+    ],
+    "light cavalry 2 right": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife1.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      }
+    ],
+    "light cavalry 2 left": [
+      {
+        "at": 0.0,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife1.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife2.wav"
+      }
+    ],
+    "heavy cavalry 1 right": [
+      {
+        "at": 0.6,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      }
+    ],
+    "heavy cavalry 1 left": [
+      {
+        "at": 0.6,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      }
+    ],
+    "heavy cavalry 2 right": [
+      {
+        "at": 0.6,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      }
+    ],
+    "heavy cavalry 2 left": [
+      {
+        "at": 0.6,
+        "effect": "",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_knife3.wav"
+      }
+    ],
+    "militia 1 right": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 44.0,
+        "y": 32.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": 58.0,
+        "y": 24.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 74.0,
+        "y": 16.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia 1 left": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -44.0,
+        "y": 32.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": -58.0,
+        "y": 24.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -74.0,
+        "y": 16.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia ind 1 right": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 42.0,
+        "y": 21.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": 53.0,
+        "y": 13.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 73.0,
+        "y": 5.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia ind 1 left": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -42.0,
+        "y": 21.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": -53.0,
+        "y": 13.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -73.0,
+        "y": 5.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia 2 right": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 60.0,
+        "y": 58.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": 43.0,
+        "y": 30.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": 77.0,
+        "y": 48.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": 70.0,
+        "y": 16.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia 2 left": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -60.0,
+        "y": 58.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": -43.0,
+        "y": 30.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": -77.0,
+        "y": 48.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": -70.0,
+        "y": 16.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia ind 2 right": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 55.0,
+        "y": 46.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": 74.0,
+        "y": 36.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": 42.0,
+        "y": 17.9,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": 69.0,
+        "y": 4.8,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia ind 2 left": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -55.0,
+        "y": 46.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": -74.0,
+        "y": 36.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": -42.0,
+        "y": 17.9,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": -69.0,
+        "y": 4.8,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia 3 right": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 54.0,
+        "y": 56.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": 35.0,
+        "y": 30.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": 72.5,
+        "y": 49.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": 68.5,
+        "y": 14.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia 3 left": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -54.0,
+        "y": 56.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": -35.0,
+        "y": 30.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": -72.5,
+        "y": 49.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": -68.5,
+        "y": 14.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia ind 3 right": [
+      {
+        "at": 0.917,
+        "effect": "effect_gunfire.xml",
+        "x": 42.0,
+        "y": 20.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": 60.0,
+        "y": 47.2,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": 54.9,
+        "y": 10.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.083,
+        "effect": "effect_gunfire.xml",
+        "x": 75.5,
+        "y": 37.9,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.167,
+        "effect": "effect_gunfire.xml",
+        "x": 70.5,
+        "y": 2.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "militia ind 3 left": [
+      {
+        "at": 0.917,
+        "effect": "effect_gunfire.xml",
+        "x": -42.0,
+        "y": 20.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": -47.2,
+        "y": 47.2,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.04,
+        "effect": "effect_gunfire.xml",
+        "x": -54.9,
+        "y": 10.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.083,
+        "effect": "effect_gunfire.xml",
+        "x": -75.5,
+        "y": 37.9,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.167,
+        "effect": "effect_gunfire.xml",
+        "x": -70.5,
+        "y": 2.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "line infantry 1 right": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 29.0,
+        "y": 38.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": 35.0,
+        "y": 30.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": 61.0,
+        "y": 22.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "line infantry 1 left": [
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -29.0,
+        "y": 38.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": -35.0,
+        "y": 30.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": -61.0,
+        "y": 22.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "line infantry 2 right": [
+      {
+        "at": 1.05,
+        "effect": "effect_gunfire.xml",
+        "x": 45.5,
+        "y": 63.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 63.5,
+        "y": 53.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.21,
+        "effect": "effect_gunfire.xml",
+        "x": 31.0,
+        "y": 32.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": 56.5,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "line infantry 2 left": [
+      {
+        "at": 1.05,
+        "effect": "effect_gunfire.xml",
+        "x": -45.5,
+        "y": 63.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -63.5,
+        "y": 53.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.21,
+        "effect": "effect_gunfire.xml",
+        "x": -31.0,
+        "y": 32.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": -56.5,
+        "y": 20.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "line infantry 3 right": [
+      {
+        "at": 1.01,
+        "effect": "effect_gunfire.xml",
+        "x": 42.5,
+        "y": 62.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 66.0,
+        "y": 57.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.21,
+        "effect": "effect_gunfire.xml",
+        "x": 29.5,
+        "y": 38.0,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.34,
+        "effect": "effect_gunfire.xml",
+        "x": 61.5,
+        "y": 22.5,
+        "rot": 0.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "line infantry 3 left": [
+      {
+        "at": 1.01,
+        "effect": "effect_gunfire.xml",
+        "x": -42.5,
+        "y": 62.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -66.0,
+        "y": 57.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.21,
+        "effect": "effect_gunfire.xml",
+        "x": -29.5,
+        "y": 38.0,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      },
+      {
+        "at": 1.34,
+        "effect": "effect_gunfire.xml",
+        "x": -61.5,
+        "y": 22.5,
+        "rot": 180.0,
+        "sound": "sfx_fire.wav"
+      }
+    ],
+    "light infantry 1 right": [
+      {
+        "at": 0.86,
+        "effect": "effect_gunfire.xml",
+        "x": 30.0,
+        "y": 23.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_gunfire.xml",
+        "x": 42.5,
+        "y": 14.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.18,
+        "effect": "effect_gunfire.xml",
+        "x": 60.5,
+        "y": 6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry 1 left": [
+      {
+        "at": 0.86,
+        "effect": "effect_gunfire.xml",
+        "x": -30.0,
+        "y": 23.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_gunfire.xml",
+        "x": -42.5,
+        "y": 14.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.18,
+        "effect": "effect_gunfire.xml",
+        "x": -60.5,
+        "y": 6.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry ind 1 right": [
+      {
+        "at": 0.86,
+        "effect": "effect_gunfire.xml",
+        "x": 39.0,
+        "y": 22.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_gunfire.xml",
+        "x": 54.5,
+        "y": 14.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.18,
+        "effect": "effect_gunfire.xml",
+        "x": 70.5,
+        "y": 6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry ind 1 left": [
+      {
+        "at": 0.86,
+        "effect": "effect_gunfire.xml",
+        "x": -39.0,
+        "y": 22.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_gunfire.xml",
+        "x": -54.5,
+        "y": 14.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.18,
+        "effect": "effect_gunfire.xml",
+        "x": -70.5,
+        "y": 6.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry 2 right": [
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 45.0,
+        "y": 51.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 30.0,
+        "y": 19.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.05,
+        "effect": "effect_gunfire.xml",
+        "x": 62.5,
+        "y": 40.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 55.5,
+        "y": 6.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry 2 left": [
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -45.0,
+        "y": 51.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -30.0,
+        "y": 19.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.05,
+        "effect": "effect_gunfire.xml",
+        "x": -62.5,
+        "y": 40.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -55.5,
+        "y": 6.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry ind 2 right": [
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 60.0,
+        "y": 50.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 74.5,
+        "y": 37.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.05,
+        "effect": "effect_gunfire.xml",
+        "x": 41.5,
+        "y": 17.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 68.0,
+        "y": 6.9,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry ind 2 left": [
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -60.0,
+        "y": 50.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -74.5,
+        "y": 37.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.05,
+        "effect": "effect_gunfire.xml",
+        "x": -41.5,
+        "y": 17.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -68.5,
+        "y": 6.9,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry 3 right": [
+      {
+        "at": 0.88,
+        "effect": "effect_gunfire.xml",
+        "x": 47.5,
+        "y": 50.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.88,
+        "effect": "effect_gunfire.xml",
+        "x": 29.0,
+        "y": 22.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": 64.5,
+        "y": 41.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.12,
+        "effect": "effect_gunfire.xml",
+        "x": 60.0,
+        "y": 6.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry 3 left": [
+      {
+        "at": 0.88,
+        "effect": "effect_gunfire.xml",
+        "x": -47.5,
+        "y": 50.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.88,
+        "effect": "effect_gunfire.xml",
+        "x": -29.0,
+        "y": 22.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": -64.5,
+        "y": 41.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.12,
+        "effect": "effect_gunfire.xml",
+        "x": -60.0,
+        "y": 6.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry ind 3 right": [
+      {
+        "at": 0.917,
+        "effect": "effect_gunfire.xml",
+        "x": 55.5,
+        "y": 51.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.958,
+        "effect": "effect_gunfire.xml",
+        "x": 73.0,
+        "y": 42.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.042,
+        "effect": "effect_gunfire.xml",
+        "x": 35.5,
+        "y": 23.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.167,
+        "effect": "effect_gunfire.xml",
+        "x": 50.5,
+        "y": 14.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.25,
+        "effect": "effect_gunfire.xml",
+        "x": 67.0,
+        "y": 8.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "light infantry ind 3 left": [
+      {
+        "at": 0.917,
+        "effect": "effect_gunfire.xml",
+        "x": -55.5,
+        "y": 51.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.958,
+        "effect": "effect_gunfire.xml",
+        "x": -73.0,
+        "y": 42.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.042,
+        "effect": "effect_gunfire.xml",
+        "x": -35.5,
+        "y": 23.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.167,
+        "effect": "effect_gunfire.xml",
+        "x": -50.0,
+        "y": 14.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.25,
+        "effect": "effect_gunfire.xml",
+        "x": -67.0,
+        "y": 8.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "grenadier 1 right": [
+      {
+        "at": 0.94,
+        "effect": "effect_gunfire.xml",
+        "x": 31.0,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_gunfire.xml",
+        "x": 45.5,
+        "y": 12.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": 61.5,
+        "y": 4.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "grenadier 1 left": [
+      {
+        "at": 0.94,
+        "effect": "effect_gunfire.xml",
+        "x": -31.0,
+        "y": 20.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_gunfire.xml",
+        "x": -45.5,
+        "y": 12.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": -61.5,
+        "y": 4.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "grenadier 2 right": [
+      {
+        "at": 0.88,
+        "effect": "effect_gunfire.xml",
+        "x": 45.5,
+        "y": 48.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 64.5,
+        "y": 38.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 31.0,
+        "y": 17.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": 58.0,
+        "y": 4.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "grenadier 2 left": [
+      {
+        "at": 0.88,
+        "effect": "effect_gunfire.xml",
+        "x": -45.5,
+        "y": 48.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -64.5,
+        "y": 38.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -31.0,
+        "y": 17.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": -58.0,
+        "y": 4.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "grenadier 3 right": [
+      {
+        "at": 0.87,
+        "effect": "effect_gunfire.xml",
+        "x": 48.5,
+        "y": 48.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.91,
+        "effect": "effect_gunfire.xml",
+        "x": 30.0,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": 67.5,
+        "y": 40.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.06,
+        "effect": "effect_gunfire.xml",
+        "x": 62.0,
+        "y": 4.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "grenadier 3 left": [
+      {
+        "at": 0.87,
+        "effect": "effect_gunfire.xml",
+        "x": -48.5,
+        "y": 48.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.91,
+        "effect": "effect_gunfire.xml",
+        "x": -30.0,
+        "y": 20.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": -67.5,
+        "y": 40.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.06,
+        "effect": "effect_gunfire.xml",
+        "x": -62.0,
+        "y": 4.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards 1 right": [
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": 28.0,
+        "y": 22.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.11,
+        "effect": "effect_gunfire.xml",
+        "x": 45.5,
+        "y": 14.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": 60.5,
+        "y": 6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards 1 left": [
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": -28.0,
+        "y": 22.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.11,
+        "effect": "effect_gunfire.xml",
+        "x": -45.5,
+        "y": 14.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": -60.5,
+        "y": 6.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards ind 1 right": [
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": 41.5,
+        "y": 20.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.11,
+        "effect": "effect_gunfire.xml",
+        "x": 56.5,
+        "y": 12.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": 72.0,
+        "y": 4.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards ind 1 left": [
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": -41.5,
+        "y": 20.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.11,
+        "effect": "effect_gunfire.xml",
+        "x": -56.5,
+        "y": 12.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.28,
+        "effect": "effect_gunfire.xml",
+        "x": -72.0,
+        "y": 4.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards 2 right": [
+      {
+        "at": 0.8,
+        "effect": "effect_gunfire.xml",
+        "x": 45.0,
+        "y": 44.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 30.0,
+        "y": 19.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 63.0,
+        "y": 40.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": 57.5,
+        "y": 6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards 2 left": [
+      {
+        "at": 0.8,
+        "effect": "effect_gunfire.xml",
+        "x": -45.0,
+        "y": 44.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -30.0,
+        "y": 19.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -63.0,
+        "y": 40.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": -57.5,
+        "y": 6.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards ind 2 right": [
+      {
+        "at": 0.8,
+        "effect": "effect_gunfire.xml",
+        "x": 55.0,
+        "y": 47.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": 75.0,
+        "y": 36.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 40.0,
+        "y": 18.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": 67.0,
+        "y": 4.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards ind 2 left": [
+      {
+        "at": 0.8,
+        "effect": "effect_gunfire.xml",
+        "x": -55.0,
+        "y": 47.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.92,
+        "effect": "effect_gunfire.xml",
+        "x": -75.0,
+        "y": 36.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -40.0,
+        "y": 18.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": -67.0,
+        "y": 4.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards 3 right": [
+      {
+        "at": 0.78,
+        "effect": "effect_gunfire.xml",
+        "x": 46.5,
+        "y": 49.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.91,
+        "effect": "effect_gunfire.xml",
+        "x": 30.0,
+        "y": 21.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": 66.0,
+        "y": 41.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.06,
+        "effect": "effect_gunfire.xml",
+        "x": 61.5,
+        "y": 6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards 3 left": [
+      {
+        "at": 0.78,
+        "effect": "effect_gunfire.xml",
+        "x": -46.5,
+        "y": 49.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.91,
+        "effect": "effect_gunfire.xml",
+        "x": -30.0,
+        "y": 21.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.95,
+        "effect": "effect_gunfire.xml",
+        "x": -66.0,
+        "y": 41.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.06,
+        "effect": "effect_gunfire.xml",
+        "x": -61.5,
+        "y": 6.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards ind 3 right": [
+      {
+        "at": 0.917,
+        "effect": "effect_gunfire.xml",
+        "x": 59.0,
+        "y": 47.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": 40.5,
+        "y": 19.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.042,
+        "effect": "effect_gunfire.xml",
+        "x": 56.0,
+        "y": 11.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": 76.0,
+        "y": 38.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": 72.0,
+        "y": 4.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards ind 3 left": [
+      {
+        "at": 0.917,
+        "effect": "effect_gunfire.xml",
+        "x": -59.0,
+        "y": 47.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": -40.5,
+        "y": 19.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.042,
+        "effect": "effect_gunfire.xml",
+        "x": -56.0,
+        "y": 11.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.125,
+        "effect": "effect_gunfire.xml",
+        "x": -76.0,
+        "y": 38.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.2,
+        "effect": "effect_gunfire.xml",
+        "x": -72.0,
+        "y": 4.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "machine gun 1 right": [
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": 13.5,
+        "y": -28.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": 28.5,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "machine gun 1 left": [
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": -13.5,
+        "y": -28.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": -28.5,
+        "y": 0.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "machine gun 2 right": [
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": 11.5,
+        "y": -33.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": 39.0,
+        "y": -17.5,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": 19.0,
+        "y": 6.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "machine gun 2 left": [
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": -11.5,
+        "y": -33.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": -39.0,
+        "y": -17.5,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_mgunfire.xml",
+        "x": -19.0,
+        "y": 6.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "guards cavalry 1 right": [
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": 46.0,
+        "y": 19.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": 56.0,
+        "y": 5.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards cavalry 1 left": [
+      {
+        "at": 0.96,
+        "effect": "effect_gunfire.xml",
+        "x": -46.0,
+        "y": 19.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.08,
+        "effect": "effect_gunfire.xml",
+        "x": -56.0,
+        "y": 5.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards cavalry 2 right": [
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": 61.0,
+        "y": 25.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": 44.5,
+        "y": 15.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.375,
+        "effect": "effect_gunfire.xml",
+        "x": 59.0,
+        "y": 5.5,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "guards cavalry 2 left": [
+      {
+        "at": 1.0,
+        "effect": "effect_gunfire.xml",
+        "x": -61.0,
+        "y": 25.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.17,
+        "effect": "effect_gunfire.xml",
+        "x": -44.5,
+        "y": 15.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 1.375,
+        "effect": "effect_gunfire.xml",
+        "x": -59.0,
+        "y": 5.5,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "armored chariot 1 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": 24.5,
+        "y": -13.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "armored chariot 1 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": -24.5,
+        "y": -13.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "armored chariot 2 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": 15.5,
+        "y": -33.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": 25.0,
+        "y": -8.5,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "armored chariot 2 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": -15.5,
+        "y": -33.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": -25.0,
+        "y": -8.5,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "light artillery 1 right": [
+      {
+        "at": 1.7,
+        "effect": "effect_lightgun.xml",
+        "x": 20.0,
+        "y": -13.5,
+        "rot": -2.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "light artillery 1 left": [
+      {
+        "at": 1.7,
+        "effect": "effect_lightgun.xml",
+        "x": -20.0,
+        "y": -13.5,
+        "rot": 182.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "light artillery 2 right": [
+      {
+        "at": 1.6,
+        "effect": "effect_lightgun.xml",
+        "x": 26.0,
+        "y": -13.5,
+        "rot": -2.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "light artillery 2 left": [
+      {
+        "at": 1.6,
+        "effect": "effect_lightgun.xml",
+        "x": -26.0,
+        "y": -13.5,
+        "rot": 182.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "heavy artillery 1 right": [
+      {
+        "at": 1.5,
+        "effect": "effect_gunnery.xml",
+        "x": 25.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "heavy artillery 1 left": [
+      {
+        "at": 1.5,
+        "effect": "effect_gunnery.xml",
+        "x": -25.0,
+        "y": -20.0,
+        "rot": 220.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "heavy artillery 2 right": [
+      {
+        "at": 1.6,
+        "effect": "effect_gunnery.xml",
+        "x": 24.0,
+        "y": -21.5,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "heavy artillery 2 left": [
+      {
+        "at": 1.6,
+        "effect": "effect_gunnery.xml",
+        "x": -24.0,
+        "y": -21.5,
+        "rot": 220.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "siege artillery 1 right": [
+      {
+        "at": 1.45,
+        "effect": "effect_gunnery1.xml",
+        "x": 20.0,
+        "y": -24.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "siege artillery 1 left": [
+      {
+        "at": 1.45,
+        "effect": "effect_gunnery1.xml",
+        "x": -20.0,
+        "y": -24.0,
+        "rot": 250.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "siege artillery 2 right": [
+      {
+        "at": 1.5,
+        "effect": "effect_gunnery1.xml",
+        "x": 18.0,
+        "y": -21.5,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "siege artillery 2 left": [
+      {
+        "at": 1.5,
+        "effect": "effect_gunnery1.xml",
+        "x": -18.0,
+        "y": -21.5,
+        "rot": 250.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "rocket 1 right": [
+      {
+        "at": 1.6,
+        "effect": "effect_rocket1.xml",
+        "x": 25.0,
+        "y": -23.0,
+        "rot": 0.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 1.8,
+        "effect": "effect_rocket1.xml",
+        "x": 25.0,
+        "y": -23.0,
+        "rot": 0.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 2.0,
+        "effect": "effect_rocket1.xml",
+        "x": 25.0,
+        "y": -23.0,
+        "rot": 0.0,
+        "sound": "sfx_rocket.wav"
+      }
+    ],
+    "rocket 1 left": [
+      {
+        "at": 1.6,
+        "effect": "effect_rocket1.xml",
+        "x": -25.0,
+        "y": -23.0,
+        "rot": 220.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 1.8,
+        "effect": "effect_rocket1.xml",
+        "x": -25.0,
+        "y": -23.0,
+        "rot": 220.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 2.0,
+        "effect": "effect_rocket1.xml",
+        "x": -25.0,
+        "y": -23.0,
+        "rot": 220.0,
+        "sound": "sfx_rocket.wav"
+      }
+    ],
+    "rocket 2 right": [
+      {
+        "at": 1.6,
+        "effect": "effect_rocket1.xml",
+        "x": 12.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 1.8,
+        "effect": "effect_rocket1.xml",
+        "x": 12.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 2.0,
+        "effect": "effect_rocket1.xml",
+        "x": 12.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_rocket.wav"
+      }
+    ],
+    "rocket 2 left": [
+      {
+        "at": 1.6,
+        "effect": "effect_rocket1.xml",
+        "x": -12.0,
+        "y": -20.0,
+        "rot": 220.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 1.8,
+        "effect": "effect_rocket1.xml",
+        "x": -12.0,
+        "y": -20.0,
+        "rot": 220.0,
+        "sound": "sfx_rocket.wav"
+      },
+      {
+        "at": 2.0,
+        "effect": "effect_rocket1.xml",
+        "x": -12.0,
+        "y": -20.0,
+        "rot": 220.0,
+        "sound": "sfx_rocket.wav"
+      }
+    ],
+    "Small Fortress right": [
+      {
+        "at": 0.0,
+        "effect": "effect_gunfire.xml",
+        "x": -3.0,
+        "y": -6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_gunfire.xml",
+        "x": -3.0,
+        "y": -6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_gunfire.xml",
+        "x": -3.0,
+        "y": -6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "Small Fortress left": [
+      {
+        "at": 0.0,
+        "effect": "effect_gunfire.xml",
+        "x": -3.0,
+        "y": -6.0,
+        "rot": 180.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_gunfire.xml",
+        "x": -3.0,
+        "y": -6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_gunfire.xml",
+        "x": -3.0,
+        "y": -6.0,
+        "rot": 0.0,
+        "sound": "sfx_fire1.wav"
+      }
+    ],
+    "Fortress right": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun1.xml",
+        "x": 14.0,
+        "y": -13.5,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "Fortress left": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun1.xml",
+        "x": -14.0,
+        "y": -13.5,
+        "rot": 180.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "Large Fortress right": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun2.xml",
+        "x": 14.0,
+        "y": -16.0,
+        "rot": 0.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "Large Fortress left": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun2.xml",
+        "x": -14.0,
+        "y": -16.0,
+        "rot": 180.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "Coastal Fort right": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun3.xml",
+        "x": 32.0,
+        "y": -15.0,
+        "rot": -5.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "Coastal Fort left": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun3.xml",
+        "x": -28.5,
+        "y": -16.0,
+        "rot": 180.0,
+        "sound": "sfx_naval_gun.wav"
+      }
+    ],
+    "airstrike": [
+      {
+        "at": 0.0,
+        "effect": "effect_airstrike.xml",
+        "x": 40.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      },
+      {
+        "at": 0.06,
+        "effect": "effect_airstrike.xml",
+        "x": 20.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.12,
+        "effect": "effect_airstrike.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.18,
+        "effect": "effect_airstrike.xml",
+        "x": -20.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.24,
+        "effect": "effect_airstrike.xml",
+        "x": -40.0,
+        "y": 0.0,
+        "rot": 0.0
+      }
+    ],
+    "bombing": [
+      {
+        "at": 0.5,
+        "effect": "effect_bombingfire.xml",
+        "x": 25.0,
+        "y": 5.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.7,
+        "effect": "effect_bombingfire.xml",
+        "x": 10.0,
+        "y": -14.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.9,
+        "effect": "effect_bombingfire.xml",
+        "x": -4.0,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_bombingfire.xml",
+        "x": -20.0,
+        "y": -30.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.3,
+        "effect": "effect_bombingfire.xml",
+        "x": -4.0,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.5,
+        "effect": "effect_bombingfire.xml",
+        "x": -20.0,
+        "y": -30.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "seabombing": [
+      {
+        "at": 0.5,
+        "effect": "effect_waterfire.xml",
+        "x": 25.0,
+        "y": -12.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.7,
+        "effect": "effect_bombingfire.xml",
+        "x": 10.0,
+        "y": -3.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.9,
+        "effect": "effect_waterfire.xml",
+        "x": -4.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_bombingfire.xml",
+        "x": 20.0,
+        "y": -5.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.3,
+        "effect": "effect_waterfire.xml",
+        "x": 8.0,
+        "y": 14.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.5,
+        "effect": "effect_bombingfire.xml",
+        "x": -20.0,
+        "y": 3.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "airborne": [
+      {
+        "at": 0.0,
+        "effect": "effect_parachuter.xml",
+        "x": 0.0,
+        "y": -60.0,
+        "rot": 0.0,
+        "sound": "parach.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "parach.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "parach.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "parach.wav"
+      }
+    ],
+    "strike1": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike1.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      }
+    ],
+    "strike2": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike2.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      }
+    ],
+    "strike3": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike3.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      }
+    ],
+    "strike4": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike4.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      }
+    ],
+    "seastrike1": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike1.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_waterfire.xml",
+        "x": 10.0,
+        "y": -12.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "seastrike2": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike2.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_waterfire.xml",
+        "x": -18.0,
+        "y": -12.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "seastrike3": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike3.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_waterfire.xml",
+        "x": -10.0,
+        "y": 12.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "seastrike4": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike4.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_explode.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_waterfire.xml",
+        "x": 18.0,
+        "y": 12.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "bodystrike1 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      }
+    ],
+    "bodystrike2 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike5.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike5.xml",
+        "x": -20.0,
+        "y": -10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike5.xml",
+        "x": -25.0,
+        "y": 10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      }
+    ],
+    "bodystrike1 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      }
+    ],
+    "bodystrike2 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike7.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike7.xml",
+        "x": 20.0,
+        "y": -10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike7.xml",
+        "x": 25.0,
+        "y": 10.0,
+        "rot": 0.0
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire2.wav"
+      }
+    ],
+    "stonestrike1 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      }
+    ],
+    "stonestrike2 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike5.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike5.xml",
+        "x": -20.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike5.xml",
+        "x": -25.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      }
+    ],
+    "stonestrike1 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      }
+    ],
+    "stonestrike2 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike7.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike7.xml",
+        "x": 20.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike7.xml",
+        "x": 25.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire1.wav"
+      }
+    ],
+    "woodstrike1 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      }
+    ],
+    "woodstrike2 right": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike5.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike5.xml",
+        "x": -30.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike5.xml",
+        "x": -20.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike5.xml",
+        "x": -25.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      }
+    ],
+    "woodstrike1 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": -20.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.1,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      }
+    ],
+    "woodstrike2 left": [
+      {
+        "at": 0.0,
+        "effect": "effect_strike7.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.0,
+        "effect": "effect_strike6.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike7.xml",
+        "x": 30.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.3,
+        "effect": "effect_strike6.xml",
+        "x": -10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike7.xml",
+        "x": 20.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": -10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike7.xml",
+        "x": 25.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_strike6.xml",
+        "x": 10.0,
+        "y": 10.0,
+        "rot": 0.0,
+        "sound": "sfx_gunfire3.wav"
+      }
+    ],
+    "coldstrike1": [
+      {
+        "at": 0.0,
+        "effect": "effect_knifestrike1.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_knifestrike2.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike1.wav"
+      }
+    ],
+    "coldstrike2": [
+      {
+        "at": 0.0,
+        "effect": "effect_knifestrike1.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike1.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_knifestrike2.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike1.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_knifestrike3.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike1.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_knifestrike4.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike1.wav"
+      }
+    ],
+    "coldstonestrike1": [
+      {
+        "at": 0.0,
+        "effect": "effect_knifestrike1.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike2.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_knifestrike2.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike2.wav"
+      }
+    ],
+    "coldstonestrike2": [
+      {
+        "at": 0.0,
+        "effect": "effect_knifestrike1.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike2.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_knifestrike2.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike2.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_knifestrike3.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike2.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_knifestrike4.xml",
+        "x": 0.0,
+        "y": 0.0,
+        "rot": 0.0,
+        "sound": "sfx_knifestrike2.wav"
+      }
+    ],
+    "rocketstrike": [
+      {
+        "at": 0.3,
+        "effect": "effect_bombingfire.xml",
+        "x": 10.0,
+        "y": -14.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.5,
+        "effect": "effect_bombingfire.xml",
+        "x": -4.0,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.7,
+        "effect": "effect_bombingfire.xml",
+        "x": 30.0,
+        "y": 5.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 0.9,
+        "effect": "effect_bombingfire.xml",
+        "x": -20.0,
+        "y": -30.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.1,
+        "effect": "effect_bombingfire.xml",
+        "x": 0.0,
+        "y": 20.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      },
+      {
+        "at": 1.3,
+        "effect": "effect_bombingfire.xml",
+        "x": -30.0,
+        "y": -30.0,
+        "rot": 0.0,
+        "sound": "sfx_exp.wav"
+      }
+    ],
+    "fortfireleft": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun.xml",
+        "x": -30.0,
+        "y": -34.0,
+        "rot": 180.0,
+        "sound": "sfx_cannon.wav"
+      }
+    ],
+    "fortfireright": [
+      {
+        "at": 0.0,
+        "effect": "effect_lightgun.xml",
+        "x": 30.0,
+        "y": -34.0,
+        "rot": 0.0,
+        "sound": "sfx_cannon.wav"
+      }
+    ],
+    "bunkerfire left": [
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": -16.0,
+        "y": -19.0,
+        "rot": 180.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "bunkerfire right": [
+      {
+        "at": 0.0,
+        "effect": "effect_mgunfire.xml",
+        "x": 13.0,
+        "y": -19.0,
+        "rot": 0.0,
+        "sound": "sfx_machine_gun.wav"
+      }
+    ],
+    "antiaircraftfire": [
+      {
+        "at": 0.0,
+        "effect": "effect_airgun.xml",
+        "x": 8.0,
+        "y": -47.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      },
+      {
+        "at": 0.2,
+        "effect": "effect_airgun.xml",
+        "x": 8.0,
+        "y": -47.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_airgun.xml",
+        "x": 8.0,
+        "y": -47.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_airgun.xml",
+        "x": 8.0,
+        "y": -47.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      }
+    ],
+    "antiaircraftexp": [
+      {
+        "at": 0.2,
+        "effect": "effect_airfire.xml",
+        "x": 40.0,
+        "y": -90.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      },
+      {
+        "at": 0.4,
+        "effect": "effect_airfire.xml",
+        "x": 20.0,
+        "y": -90.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      },
+      {
+        "at": 0.6,
+        "effect": "effect_airfire.xml",
+        "x": 0.0,
+        "y": -90.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      },
+      {
+        "at": 0.8,
+        "effect": "effect_airfire.xml",
+        "x": -20.0,
+        "y": -90.0,
+        "rot": 0.0,
+        "sound": "sfx_strike.wav"
+      }
+    ],
+    "upgraderank": [],
+    "upgradenobility": [],
+    "assaultart": [],
+    "defenseart": [],
+    "getrefresh": [],
+    "getmedal": []
+  }
+}

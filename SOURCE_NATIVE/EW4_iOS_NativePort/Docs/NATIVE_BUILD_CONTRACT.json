@@ -1,0 +1,76 @@
+{
+  "checkpoint": "P80_NATIVE_FIRE_PRESENTATION_CLOSURE",
+  "mainline": "P78 transport -> P79 battlefield overlays -> P80 dynamic fire-cell presentation -> first real Xcode/iPhoneOS build",
+  "swift_test_count": 286,
+  "resource_file_count": 1751,
+  "duplicate_basename_groups": 232,
+  "resource_bundle_root": "Resources",
+  "xcodegen_resource_type": "folder",
+  "xcodegen_resource_build_phase": "resources",
+  "audit_contract": {
+    "battleCount": 101,
+    "battleUnitCount": 7407,
+    "battleUnitVisualResolved": 7407,
+    "battleObjectSpriteEligible": 5482,
+    "battleObjectSpriteResolved": 5482,
+    "animationUnitCount": 877,
+    "defMotionMotionCount": 3519,
+    "bileResourceCount": 12,
+    "bileDecoded": 12,
+    "errors": []
+  },
+  "frozen_native_presentation": {
+    "logical_width": 568,
+    "logical_height": 320,
+    "camera_min_zoom": 0.2,
+    "camera_max_zoom": 1.0,
+    "detail_zoom": 0.5,
+    "unit_zoom_exponent": 0.46,
+    "unit_zoom_min": 0.76,
+    "unit_zoom_max": 1.18,
+    "tap_axis_slop": 15,
+    "pinch_min_distance": 40,
+    "native_asset_scale": 0.5
+  },
+  "forbidden_native_runtime": [
+    "WKWebView",
+    "JavaScriptCore",
+    "evaluateJavaScript",
+    "html/js/mjs payload"
+  ],
+  "iphoneos_build_verified_here": false,
+  "mature_source_lean_frozen_files": 6321,
+  "mature_source_lean_regression_files": 126,
+  "swift_test_minimum_from_p43": 286,
+  "native_preflight_checks": 26,
+  "swift_testing_count": 286,
+  "xctest_count": 9,
+  "native_total_test_count": 295,
+  "minimum_xcode_major": 16,
+  "minimum_swift_major": 6,
+  "xcode_project_generation": "XcodeGen project.yml -> EW4NativePort.xcodeproj on Mac",
+  "product_swift_zero_diff_from_p78": false,
+  "handoff_status": "transport_overlays_fire_closed_pending_first_apple_sdk_build",
+  "native_product_swift_count": 110,
+  "native_test_swift_count": 82,
+  "native_swift_tree_count": 193,
+  "native_package_source_swift_count": 109,
+  "native_package_manifest_count": 1,
+  "native_app_swift_count": 1,
+  "native_core_sources_plus_tests_count": 191,
+  "map_unit_dynamic_overlay_audit": "P79_MAP_UNIT_DYNAMIC_OVERLAY_AUDIT.json: 0 errors; 7407/7407 unit visuals; transportship1/2; 4-frame flags; 190 battle commander portraits; morale overlays; Native renderer routes verified",
+  "p79_to_p80_product_delta": {
+    "added": [
+      "NativeCore/Sources/EW4NativeCore/NativeBattleFirePresentationCore.swift"
+    ],
+    "modified": [
+      "NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift"
+    ],
+    "tests_added": [
+      "NativeCore/Tests/EW4NativeCoreTests/P80BattleFirePresentationTests.swift"
+    ],
+    "native_resources_changed": 0,
+    "source_lean_changed": 0
+  },
+  "map_unit_dynamic_state_audit": "P80_MAP_UNIT_DYNAMIC_STATE_AUDIT.json: 0 errors; 7407/7407 unit visuals; transportship1/2; flags; 190 commander portraits; morale; fireCells six-frame anim_fire_hd presentation; Native renderer routes verified"
+}

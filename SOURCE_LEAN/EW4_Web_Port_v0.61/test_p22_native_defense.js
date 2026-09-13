@@ -1,0 +1,17 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),path=require('path');
+const root=__dirname,app=fs.readFileSync(path.join(root,'app.js'),'utf8'),html=fs.readFileSync(path.join(root,'index.html'),'utf8'),css=fs.readFileSync(path.join(root,'r14_native_forms.css'),'utf8'),sw=fs.readFileSync(path.join(root,'sw.js'),'utf8'),layout=fs.readFileSync(path.join(root,'assets/data/original_layout-568h.xml'),'utf8');
+assert(/<Layout id="form_defense"[^>]*w="300" h="184"/.test(layout));
+assert(/id="lbox_defense"[^>]*x="2" y="30" w="298" h="65"/.test(layout));
+assert(/id="group_desc"[^>]*x="2" y="98" w="296" h="84"/.test(layout));
+for(const id of ['defense-panel','defense-list','defense-desc','defense-desc-title','defense-desc-text','defense-confirm'])assert(html.includes(`id="${id}"`),id);
+assert(!html.includes('id="defense-cost"'),'old Web-only standalone defense cost strip must be removed');
+assert(css.includes('#defense-panel{left:134px!important;top:68px!important;width:300px!important;height:184px!important'));
+assert(css.includes('#defense-list{position:absolute!important;left:2px!important;top:30px!important;width:298px!important;height:65px!important'));
+assert(css.includes('#defense-desc{position:absolute;left:2px;top:98px;width:296px;height:84px'));
+assert(app.includes("bindTutorialUI(b,'lbox_defense',i)"));assert(app.includes("bindTutorialUI(ok,'winbtn_ok')"));
+assert(app.includes("EW4NativeUpgrade.recruitAllowed(activeBattleTechLevel(EW4NativeUpgrade.techIdForFort(name)))"),'Campaign fort tech gate missing');
+assert(app.includes("choice?.desc||'当前战区科技尚未解锁可建造的防御设施。'"));
+for(const x of ['item_selected_ex.png','defense_moat.png','defense_fences.png','defense_bunker.png','buildmarker_smallfortress.png','buildmarker_mediumfortress.png','buildmarker_largefortress.png','buildmarker_coastalartillery.png'])assert(sw.includes(x),`P22 offline defense asset missing ${x}`);
+assert(/posthandoff(?:22-defense|[2-9][3-9]|30-final-pass)/.test(sw),'P22 or later cache generation required');
+console.log('P22 native form_defense: PASS');

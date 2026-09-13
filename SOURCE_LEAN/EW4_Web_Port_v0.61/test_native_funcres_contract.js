@@ -1,0 +1,17 @@
+const fs=require('fs'),assert=require('assert');
+const html=fs.readFileSync('index.html','utf8'),app=fs.readFileSync('app.js','utf8'),css=fs.readFileSync('r14_native_forms.css','utf8');
+assert(html.includes('id="native-action-resource"'));
+assert(html.includes('id="native-funcres-money"'));
+assert(html.includes('id="native-funcres-secondary-icon"'));
+assert(html.includes('id="native-funcres-confirm"'));
+assert(app.includes("function openNativeActionResource(anchor,{money=0,secondary=0,secondaryKind='industry'"));
+assert(app.includes("secondaryKind==='food'?'marker_food.png':'marker_industry.png'"));
+assert(app.includes("ok.disabled=!affordable"));
+assert(app.includes("promptUpgradeConstruction(o,button)"));
+assert(app.includes("onConfirm:()=>upgradeConstruction(o)"));
+assert(app.includes("promptManualTrainUnit(u,button)"));
+assert(app.includes("secondaryKind:'food',onConfirm:()=>manualTrainUnit(u)"));
+assert(css.includes('#native-action-resource{position:absolute;width:84px;height:88px'));
+assert(css.includes('left:33px;top:55px;width:33px;height:33px'));
+assert(css.includes("button_ok_gray.png"));
+console.log('native group_funcres contract PASS');

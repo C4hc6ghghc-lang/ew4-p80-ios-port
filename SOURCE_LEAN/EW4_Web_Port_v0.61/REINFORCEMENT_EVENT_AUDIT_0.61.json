@@ -1,0 +1,163 @@
+{
+  "format": "EW4 reinforcement reverse-engineering safety audit v0.61",
+  "status": "unresolved_no_speculative_spawning",
+  "reinforcement_word_dialogue_events": [
+    {
+      "battle_file": "campaign1_10.btl",
+      "sequence": 3,
+      "event_id": 1101,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 1,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "全军收缩防线，等待援军的到来！坚持住！",
+      "runtime_interpretation": "round_dialogue_only"
+    },
+    {
+      "battle_file": "campaign1_15.btl",
+      "sequence": 5,
+      "event_id": 1152,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 1,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "我们击败眼前的敌军应该不难，但是敌人的援军已经接近这里了。",
+      "runtime_interpretation": "round_dialogue_only"
+    },
+    {
+      "battle_file": "campaign2_06.btl",
+      "sequence": 6,
+      "event_id": 2066,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 4,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "由于敌人的援军大量的加入战场，我的军队目前损失很大。",
+      "runtime_interpretation": "round_dialogue_only"
+    },
+    {
+      "battle_file": "campaign2_11.btl",
+      "sequence": 5,
+      "event_id": 2112,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 1,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "我们击败眼前的敌军应该不难，但是敌人的援军已经接近这里了。",
+      "runtime_interpretation": "round_dialogue_only"
+    },
+    {
+      "battle_file": "campaign3_14.btl",
+      "sequence": 4,
+      "event_id": 3142,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 1,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "我会尽量坚持到援军的到来，也请你的军队加快进军的速度！",
+      "runtime_interpretation": "round_dialogue_only"
+    },
+    {
+      "battle_file": "campaign4_03.btl",
+      "sequence": 2,
+      "event_id": 4035,
+      "trigger_type": 2,
+      "param_a": 1,
+      "round_param_b": 11,
+      "param_c": 0,
+      "country": "tur",
+      "dialogue_zh": "由于敌人的援军大量的加入战场，我的军队目前损失很大。",
+      "runtime_interpretation": "verified_country_morale_action"
+    },
+    {
+      "battle_file": "campaign6_01.btl",
+      "sequence": 3,
+      "event_id": 6013,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 1,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "全军收缩防线，等待援军的到来！坚持住！",
+      "runtime_interpretation": "round_dialogue_only"
+    },
+    {
+      "battle_file": "campaign6_08.btl",
+      "sequence": 1,
+      "event_id": 6081,
+      "trigger_type": 2,
+      "param_a": 4,
+      "round_param_b": 1,
+      "param_c": 0,
+      "country": "",
+      "dialogue_zh": "我们击败眼前的敌军应该不难，但是敌人的援军已经接近这里了。",
+      "runtime_interpretation": "round_dialogue_only"
+    }
+  ],
+  "copenhagen_round4_counterexample": {
+    "battle_file": "campaign2_06.btl",
+    "round": 4,
+    "units_with_raw_4_equal_4": 0,
+    "units_with_raw_9_equal_4": 13,
+    "raw_9_note": "raw[8..9] is the decoded uint16 map-position field; equality with round 4 is coincidental and cannot be used as activation timing."
+  },
+  "critical_dialogue_not_spawn_counterexample": {
+    "battle_file": "campaign4_03.btl",
+    "event_id": 4035,
+    "round": 11,
+    "param_a": 1,
+    "country": "tur",
+    "verified_runtime_effect": "country morale -1 for the native three-round timer",
+    "dialogue_zh": "由于敌人的援军大量的加入战场，我的军队目前损失很大。",
+    "conclusion": "Reinforcement wording is narrative evidence only and cannot authorize spawning or hidden-unit activation."
+  },
+  "safe_runtime_rule": "Do not hide, delay, spawn, or activate BTL units as reinforcements until a native activation/group field or code path is verified.",
+  "copenhagen_french_units_already_in_btl": {
+    "country_index": 8,
+    "country_code": "fra",
+    "decoded_relation_hint": null,
+    "unit_count": 3,
+    "units": [
+      {
+        "index": 37,
+        "army_name": "Frigate",
+        "q": 31,
+        "r": 13,
+        "raw_4": 0,
+        "raw_28": 0,
+        "raw_29": 0,
+        "raw_30": 0,
+        "raw_31": 1
+      },
+      {
+        "index": 39,
+        "army_name": "Battleship",
+        "q": 31,
+        "r": 14,
+        "raw_4": 0,
+        "raw_28": 3,
+        "raw_29": 0,
+        "raw_30": 0,
+        "raw_31": 1
+      },
+      {
+        "index": 45,
+        "army_name": "Frigate",
+        "q": 29,
+        "r": 15,
+        "raw_4": 0,
+        "raw_28": 3,
+        "raw_29": 0,
+        "raw_30": 0,
+        "raw_31": 1
+      }
+    ],
+    "observation": "The three French ships named by the scenario as reinforcements already exist in the decoded BTL unit table. This supports either pre-deployment or later native activation/relation-state logic; it does not prove which.",
+    "tail_flag_note": "raw[31] is 1 for every decoded unit across the current 101-BTL corpus, so it cannot be a hidden/active reinforcement flag."
+  }
+}

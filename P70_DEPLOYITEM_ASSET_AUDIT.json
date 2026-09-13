@@ -1,0 +1,245 @@
+{
+  "assets": [
+    {
+      "name": "button_changegeneral_gray.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/button_changegeneral_gray.png"
+      ]
+    },
+    {
+      "name": "button_changegeneral_gray_2.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/button_changegeneral_gray_2.png"
+      ]
+    },
+    {
+      "name": "general_nameboard.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/general_nameboard.png"
+      ]
+    },
+    {
+      "name": "common_lineframe_bold.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/common_lineframe_bold.png"
+      ]
+    },
+    {
+      "name": "marker_hp_dark.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/marker_hp_dark.png"
+      ]
+    },
+    {
+      "name": "marker_recover_dark.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/marker_recover_dark.png"
+      ]
+    },
+    {
+      "name": "item_selected_ex.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/item_selected_ex.png"
+      ]
+    },
+    {
+      "name": "scrollbar_gray.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/scrollbar_gray.png"
+      ]
+    },
+    {
+      "name": "scrollbar_darkgray.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/scrollbar_darkgray.png"
+      ]
+    },
+    {
+      "name": "button_confirm_blue.png",
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/button_confirm_blue.png"
+      ]
+    }
+  ],
+  "rank_assets": [
+    {
+      "id": 1,
+      "count": 2,
+      "paths": [
+        "Sprites/buildings_hd/rank_1.png",
+        "Sprites/image_ui_hd/rank_1.png"
+      ]
+    },
+    {
+      "id": 2,
+      "count": 2,
+      "paths": [
+        "Sprites/buildings_hd/rank_2.png",
+        "Sprites/image_ui_hd/rank_2.png"
+      ]
+    },
+    {
+      "id": 3,
+      "count": 2,
+      "paths": [
+        "Sprites/buildings_hd/rank_3.png",
+        "Sprites/image_ui_hd/rank_3.png"
+      ]
+    },
+    {
+      "id": 4,
+      "count": 2,
+      "paths": [
+        "Sprites/buildings_hd/rank_4.png",
+        "Sprites/image_ui_hd/rank_4.png"
+      ]
+    },
+    {
+      "id": 5,
+      "count": 2,
+      "paths": [
+        "Sprites/buildings_hd/rank_5.png",
+        "Sprites/image_ui_hd/rank_5.png"
+      ]
+    },
+    {
+      "id": 6,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_6.png"
+      ]
+    },
+    {
+      "id": 7,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_7.png"
+      ]
+    },
+    {
+      "id": 8,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_8.png"
+      ]
+    },
+    {
+      "id": 9,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_9.png"
+      ]
+    },
+    {
+      "id": 10,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_10.png"
+      ]
+    },
+    {
+      "id": 11,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_11.png"
+      ]
+    },
+    {
+      "id": 12,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_12.png"
+      ]
+    },
+    {
+      "id": 13,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_13.png"
+      ]
+    },
+    {
+      "id": 14,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/rank_14.png"
+      ]
+    }
+  ],
+  "class_assets": [
+    {
+      "id": 1,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_1.png"
+      ]
+    },
+    {
+      "id": 2,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_2.png"
+      ]
+    },
+    {
+      "id": 3,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_3.png"
+      ]
+    },
+    {
+      "id": 4,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_4.png"
+      ]
+    },
+    {
+      "id": 5,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_5.png"
+      ]
+    },
+    {
+      "id": 6,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_6.png"
+      ]
+    },
+    {
+      "id": 7,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_7.png"
+      ]
+    },
+    {
+      "id": 8,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_8.png"
+      ]
+    },
+    {
+      "id": 9,
+      "count": 1,
+      "paths": [
+        "Sprites/image_ui_hd/class_9.png"
+      ]
+    }
+  ],
+  "all_required_present": true
+}

@@ -1,0 +1,549 @@
+Building for debugging...
+[0/6] Write swift-version--1BA0962812E73E12.txt
+Build complete! (0.10s)
+Test Suite 'All tests' started at 2026-09-11 23:19:19.055
+Test Suite 'debug.xctest' started at 2026-09-11 23:19:19.056
+Test Suite 'NativeGeneralGrowthTests' started at 2026-09-11 23:19:19.056
+Test Case 'NativeGeneralGrowthTests.testAwardSeparatesMilitaryHitFromKillNobility' started at 2026-09-11 23:19:19.056
+Test Case 'NativeGeneralGrowthTests.testAwardSeparatesMilitaryHitFromKillNobility' passed (0.001 seconds)
+Test Case 'NativeGeneralGrowthTests.testEquipmentOverridesSkillMultiplierAndBestWins' started at 2026-09-11 23:19:19.057
+Test Case 'NativeGeneralGrowthTests.testEquipmentOverridesSkillMultiplierAndBestWins' passed (0.0 seconds)
+Test Case 'NativeGeneralGrowthTests.testMaxLevelClearsProgress' started at 2026-09-11 23:19:19.058
+Test Case 'NativeGeneralGrowthTests.testMaxLevelClearsProgress' passed (0.0 seconds)
+Test Case 'NativeGeneralGrowthTests.testMilitaryDamageGainMatchesP39' started at 2026-09-11 23:19:19.058
+Test Case 'NativeGeneralGrowthTests.testMilitaryDamageGainMatchesP39' passed (0.0 seconds)
+Test Case 'NativeGeneralGrowthTests.testNobilityGainOnlyUsesKillInputs' started at 2026-09-11 23:19:19.058
+Test Case 'NativeGeneralGrowthTests.testNobilityGainOnlyUsesKillInputs' passed (0.0 seconds)
+Test Case 'NativeGeneralGrowthTests.testProgressMayCrossMultipleThresholdsExactlyLikeP39' started at 2026-09-11 23:19:19.058
+Test Case 'NativeGeneralGrowthTests.testProgressMayCrossMultipleThresholdsExactlyLikeP39' passed (0.0 seconds)
+Test Suite 'NativeGeneralGrowthTests' passed at 2026-09-11 23:19:19.058
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'NativePlayerProfileGrowthRuntimeTests' started at 2026-09-11 23:19:19.058
+Test Case 'NativePlayerProfileGrowthRuntimeTests.testGrowthEquipmentOverridesSkillUsingRealItemCatalog' started at 2026-09-11 23:19:19.058
+Test Case 'NativePlayerProfileGrowthRuntimeTests.testGrowthEquipmentOverridesSkillUsingRealItemCatalog' passed (0.012 seconds)
+Test Case 'NativePlayerProfileGrowthRuntimeTests.testRuntimeProviderSeesRankGrowthImmediately' started at 2026-09-11 23:19:19.070
+Test Case 'NativePlayerProfileGrowthRuntimeTests.testRuntimeProviderSeesRankGrowthImmediately' passed (0.009 seconds)
+Test Case 'NativePlayerProfileGrowthRuntimeTests.testUnownedCommanderDoesNotGainPlayerGrowth' started at 2026-09-11 23:19:19.078
+Test Case 'NativePlayerProfileGrowthRuntimeTests.testUnownedCommanderDoesNotGainPlayerGrowth' passed (0.009 seconds)
+Test Suite 'NativePlayerProfileGrowthRuntimeTests' passed at 2026-09-11 23:19:19.087
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.029 (0.029) seconds
+Test Suite 'debug.xctest' passed at 2026-09-11 23:19:19.087
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.031 (0.031) seconds
+Test Suite 'All tests' passed at 2026-09-11 23:19:19.087
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.031 (0.031) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Suite "Native SceneShop grid / scroll parity" started.
+◇ Test moraleAndInstallationsSurviveSchema6Rehydration() started.
+◇ Suite "Native battle shop parity" started.
+◇ Test battleGameplayMarkEndedClearsInteractionStateAndStaysEnded() started.
+◇ Test fullPlayerRoundSettlementMatchesP39Sequence() started.
+◇ Suite NativeBattleTavernCoreTests started.
+◇ Test conquestContinueRequiresFastWinChoiceOnlyWhenAsiaEligible() started.
+◇ Test playerOverridesParity() started.
+◇ Test p55DefenseBuildsInstallationAndOneFortressPerRound() started.
+◇ Test p62DefenseRendererConsumesOriginalArtAndSelectionOverlay() started.
+◇ Test conquestScenarioMetadataMatchesP39SixScenarioShell() started.
+◇ Test p63OriginalCNStringAuthorityValuesAreFrozen() started.
+◇ Suite "Native battle unit info core" started.
+◇ Test freshProfileMatchesP39CoreDefaultsAndUnlocksAllPrincesses() started.
+◇ Test originalFormsKeepRecoveredXMLDimensions() started.
+◇ Test campaignMetaStorageIsStableAcross500Reloads() started.
+◇ Suite NativeHeadquartersManagementCoreTests started.
+◇ Test compactOriginMatchesRecoveredContract() started.
+◇ Test conquestSlowVictoryRecordsNormalContinentImmediately() started.
+◇ Test battleSaveSchema6EnvelopeMatchesP39Contract() started.
+◇ Test allCampaignTurnLimitsProduceValidNativeScores() started.
+◇ Test countryTurnCoreFixtureParity() started.
+◇ Test machineGunSpeedShortensRealDuration() started.
+◇ Test counterDamageGetsIndependentAuthoredImpact() started.
+◇ Test liveRoundSettlementBlocksTentWhenUnitAttackedLastRound() started.
+◇ Test playerNobilityFlagAndTentHealingMatchP39Ordering() started.
+◇ Test p65NativeRenderersConsumeOuterAndHQStringAuthority() started.
+◇ Test realInstallationPenaltiesMatchP39Catalog() started.
+◇ Test napoleonPlayerEffectiveCommanderMatchesP39OverrideUnion() started.
+◇ Test victoryGeometryKeepsOriginalButtonAndGeneralRows() started.
+◇ Suite NativeBattleCommerceCoreTests started.
+◇ Test campaignZoneCompletionRewardIsOneShot() started.
+◇ Test campaignSceneSourceLocksAuthoredImpactAndSettlementBeforeResultPresentation() started.
+◇ Test roundTrainingHealCapsAtMaxHP() started.
+◇ Test campaignAuthoredSnapshotUsesPristineBTLContract() started.
+◇ Test p68FrozenXMLContainsCommanderAndEquipmentPreviewInternals() started.
+◇ Test stageIntroUsesP39ScreenPlacementAndRecoveredCloseHitbox() started.
+◇ Test dialogueQueueShowsOnlyOneEventAtATime() started.
+◇ Test nativePresentationLODFrozen() started.
+◇ Test nativeRecruitArmyIdsAndCampaignTrainingStayOnRecoveredMapping() started.
+◇ Test saveSlotDisplaysKeepOneAutosavePlusSixManualAndResolveCountryFlag() started.
+◇ Suite NativeTutorialCoreTests started.
+◇ Test fastAIPresentationPreservesAlreadyShortImpact() started.
+◇ Test nativeGameplayEndedProjectionMatchesPhase() started.
+◇ Test p62DefenseCardContentGeometryMatchesMatureP39Contract() started.
+◇ Suite NativeGeneralDeploymentCoreTests started.
+◇ Test counterDamageResultValueMatchesActuallyAppliedP39Multiplier() started.
+◇ Test campaignEconomicBonusesMatchP39UpgradeTable() started.
+◇ Test playerPrimaryAttackCollectsBattleMedalUsingSameRNGStream() started.
+◇ Test constructionAdvancesAfterGlobalActionResetLikeP39() started.
+◇ Test buildingUpgradeIsAtomicAndIncrementsLevel() started.
+◇ Test campaignRowsOpenHiddenProgressionAndSecretSelectionMatchP39() started.
+◇ Test campaignLegacyMigrationMatchesP39ExactlyOnce() started.
+◇ Test nativeAppliedAndFiredEventKeysSurviveSchema6Snapshot() started.
+◇ Test nativeOriginalVictoryResultUsesExistingP39ScoreAndBattleState() started.
+◇ Test corruptOrUnsupportedBattleSaveSlotBehavesAsEmptyLikeP39() started.
+◇ Suite NativeOptionsCoreTests started.
+◇ Test nativeOriginalDefeatResultUsesRecoveredFailureNarrationKeys() started.
+◇ Test p63ShopSurfacesBindOriginalCNShopStrings() started.
+◇ Test p66OriginalXMLBindsTutorialAndRegroupConfirmation() started.
+◇ Test nativeGameplayTurnBoundaryResetsPlayerActions() started.
+◇ Test snareDrumFunction4ForcesFullFormationAtLowHP() started.
+◇ Test campaignContinueCompletionRewardIsOneShot() started.
+◇ Test originalOuterSelectionHitboxesMatchRecoveredShell() started.
+◇ Test p63StageIntroUsesOriginalCNKeysInsteadOfInventedBestVictoryCopy() started.
+◇ Test legacyCameraGeometryFallsBackToPlayerOpeningFocusButKeepsZoom() started.
+◇ Test originalMainMenuHitboxesRouteCampaignConquestHQWithoutDrift() started.
+◇ Test headquartersRoutesShopAndAcademyIntoNativeScenes() started.
+◇ Test movementPresentationDurationMatchesP39Contract() started.
+◇ Test originalMainMenuGeometryMatchesFrozenP39Shell() started.
+◇ Test nativeEventCatalogMatchesRecoveredP39Coverage() started.
+◇ Test nativeTrainingTablesMatchP39() started.
+◇ Test logicalSpaceFrozen() started.
+◇ Test originalCompleteHitboxesUseRecoveredButtonPositions() started.
+◇ Test roundTurnGeometryMatchesRecoveredXMLAndP39Placement() started.
+◇ Test nativeCameraFocusVisibilityUsesRecoveredInsets() started.
+◇ Test nativeBattleCornerHUDGeometryFrozen() started.
+◇ Test nativeOuterShellRoutesCampaignConquestAndAutosaveWithoutWebRuntime() started.
+◇ Test profileDecodeMigratesLegacyStarsBeforeDefaultsCanMaskThem() started.
+◇ Test campaignResultAwardsOnlyPositiveBestRatingDeltaAndCapsStars() started.
+◇ Test nativeAppBootsThroughOriginalMainMenuInsteadOfHardcodedToulon() started.
+◇ Test nativeDefenseChoicesKeepRecoveredCostsAndTypes() started.
+◇ Test campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() started.
+◇ Test buildingKeyMatchesRecoveredRules() started.
+◇ Test actionPairFocusRestoresOneToOneZoomBelowDetailThreshold() started.
+◇ Test actionPairFocusSkipsWhenBothCellsFitSafeViewport() started.
+◇ Test oppositeFlankIsMinusOneAndFullSurroundIsMinusTwo() started.
+◇ Test attackIntervalAndFormationParity() started.
+◇ Test manualSetCameraCancelsProgrammaticMotor() started.
+◇ Test conquestAchievementUsesAllOwnedGeneralLevelsAndCampaignStageRatings() started.
+◇ Test aiCommanderNeverConsumesPlayerProfileOrOverrides() started.
+◇ Test playerPairFocusDefersMutationUntilCameraMotorStops() started.
+◇ Test aiCountryEconomyWritesBackToPersistenceLedger() started.
+◇ Test p66NativeRenderersConsumeOriginalTutorialAndRegroupAuthority() started.
+◇ Test advancingDialoguePresentsNextThenDrainsExactlyOnce() started.
+◇ Test nativeFiveGradeResultFormulaMatchesP39() started.
+◇ Test battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields() started.
+◇ Test originalPauseAndSaveActionHitboxesDoNotDrift() started.
+◇ Test roundTurnSceneOrderingKeepsSettlementModalDialogueAutosaveContract() started.
+◇ Test movementSearchParity() started.
+◇ Test battleSaveSlotStoreAtomicallyRoundTripsAndExposesNativeFormMetadata() started.
+◇ Test p64OriginalXMLBindsBattleModalStringKeys() started.
+◇ Test gunsAgainstFortUseAttack1AndSkipTail() started.
+◇ Test headquartersShopDailyStockAndPurchasePersist() started.
+◇ Test movementPresentationInterpolatesAlongAuthoredHexPath() started.
+◇ Test aiPairFocusHoldsMutatedGameplayAndDriverOffLiveStateUntilCameraStops() started.
+◇ Test nativeCameraSemantics() started.
+◇ Test nativeSnapshotRoundTripPreservesGameplayAndP39Sidecar() started.
+◇ Test headquartersGridKeepsSixColumnOriginalLayoutAndScroll() started.
+◇ Test saveRehydrationRestoresCapturedFacilityAndEndedPhase() started.
+◇ Test directionalMotionFallsBackOnlyWhenNeeded() started.
+◇ Test nativeBattleConsumablesMatchRecoveredUseRulesAndRemainStateOnly() started.
+◇ Test fastAIPresentationCapsAuthoredImpactAtNinetyMilliseconds() started.
+◇ Test aiPlannerPrefersLegalFiringCellWhenAvailable() started.
+◇ Test playerCounterDuringAITurnCanCollectBattleMedal() started.
+◇ Test realTerrainPenaltiesDecodeFromRecoveredWorldData() started.
+◇ Test campaignBattleFlowTurnLimitIsStrictlyAfterWinRound() started.
+◇ Test pauseAndSaveUseMatureP39BattleScreenPlacement() started.
+◇ Test liveGeneralGrowthHandlerAppliesRankHPDeltaWithoutChangingLegacyAttackAPI() started.
+◇ Test conquestPlayerCanBeDefeatedWithOnlyNavyRemainingAndNeutralIsExcluded() started.
+◇ Test incrementalAIDriverYieldsVisibleMovesInsteadOfCollapsingWholeRound() started.
+◇ Test nativeBattleSceneConsumesGameSpeedForTutorialProgrammaticCamera() started.
+◇ Test trainingAndConstructionRuntimeStateSurvivesNativeSaveRoundTrip() started.
+◇ Test authoredImpactUsesEndOfAttackPhaseNotFullReloadFinishChain() started.
+◇ Test saveRehydrationDoesNotApplyPlayerHPBonusTwice() started.
+◇ Test originalCountrySelectorAndBattleListsCannotDrift() started.
+◇ Test visualResolverNationalThenGeneric() started.
+◇ Test profileUnknownFieldsSurviveLosslessRoundTrip() started.
+◇ Test originalResultActionHitboxesStayBoundToRecoveredButtons() started.
+◇ Test headquartersItemBankUsesNativeStackRules() started.
+◇ Test playerProfileStoreAtomicRoundTripAndCorruptFallback() started.
+◇ Test manualTrainingCostAndHealMatchP39() started.
+◇ Test p65OriginalXMLBindsOuterAndHQKeys() started.
+◇ Test campaignCountryVariantsAndBranchSpecificSecretsMatchRecoveredP39() started.
+◇ Test conquestSceneSourceUsesSharedImpactBoundariesAndChallengeIsDeferredUntilContinue() started.
+◇ Test conquestChallengeUsesOriginalHomeButtonByMap() started.
+◇ Test authoredBTLRawTrainingLevelFeedsFreshNativeUnitState() started.
+◇ Test originalCampaignAndConquestSelectionGeometryMatches568hXML() started.
+◇ Test conquestAchievementRecordKeepsBestStoredValueOnly() started.
+◇ Test facilityIncomeAndUpkeepMatchP39() started.
+◇ Test recoveredRoundFireCellUsesNativeWorldWidthAndPersists() started.
+◇ Test p64BattleModalOriginalCNValuesAreFrozen() started.
+◇ Test playerMovementEquipmentFunction9MatchesP39TargetRule() started.
+◇ Test pendingKilledUnitRemainsVisibleUntilImpactThenCommitsHP() started.
+◇ Test originalVictoryFailureAndVictoryTextGeometryCannotDrift() started.
+◇ Test p64BattleModalRendererConsumesFrozenCNKeys() started.
+◇ Test incrementalAIDriverMatchesHeadlessRoundFinalState() started.
+◇ Test fireproofCommanderBlocksNativeFireAndClearsExistingCell() started.
+◇ Test p68OriginalRegroupConfirmPreviewGeometryMatchesXML() started.
+◇ Test nativeProgrammaticCameraMotorMatchesRecoveredCoefficients() started.
+◇ Test p66TutorialAndRegroupCNValuesAreFrozen() started.
+◇ Test equipmentFunction0PreservesP39TerrainIgnoreSemantics() started.
+◇ Test fullNativeAIRoundReturnsControlToPlayerDeterministically() started.
+◇ Test pauseAndSaveHitGeometryMatchesRecoveredLayout() started.
+◇ Test conquestAchievementRoundAndResourceFormulasMatchRecoveredP39() started.
+◇ Test eventMoraleLastsExactlyThreeRoundsAndLeadershipClearsNegative() started.
+◇ Test conquestBattleFlowDelegatesExactFrozenExtinctionRule() started.
+◇ Test conquestPortOrLandFacilityOrArtilleryEachPreservesNation() started.
+◇ Test conquestAchievementPrepareVictoryOffersAsiaOnlyWithinRecoveredFastWinThreshold() started.
+◇ Test princessOverridesAffectOnlySpecifiedThreePrincesses() started.
+◇ Test captureAndDeathBindingsResolveExactRecoveredTargets() started.
+◇ Test p61UseItemRendererUsesOriginalArtworkAndNoRawIDPlaceholder() started.
+◇ Test recoveredRoundMoraleLastsNThroughNPlusTwo() started.
+◇ Test nativeGameplayCavalryAnnihilationGrantsExtraAction() started.
+◇ Test campaignContinueRewardsAndMedalProcMatchP39() started.
+◇ Test p60RecruitArtCatalogCoversAllRecruitableArmyFamilies() started.
+◇ Test armoredCarrierFunction12SuppressesEmbarkedAttackPenalty() started.
+◇ Test aiExecutionMovesAndAttacksUnderNativePhaseRules() started.
+◇ Test p62DefenseArtworkCatalogMatchesMatureP39AndFrozenResources() started.
+◇ Test battleSaveSlotsMatchP39AutoPlusSixContract() started.
+◇ Test academyPurchasedOutFixedNullPoolsStayPersistedInsteadOfRerolling() started.
+◇ Test academyKeepsNativeSixFourTwoTiersAndInfiniteCurrencyPurchase() started.
+◇ Test p60RecruitFormKeepsRecoveredXMLGeometry() started.
+◇ Test actionPairFocusUsesExactMidpointWhenEitherCellIsOutsideSafeViewport() started.
+◇ Test weaponArmorAndAdjacentFlagsMatchP39CombatEquipmentPipeline() started.
+◇ Test trainingThenFacilitySupplyApplyToAllOwners() started.
+◇ Test attackSidecarAddsCollectedMedalsExactlyOnce() started.
+◇ Test nativeGameplayHostileFacilityCaptureDisablesUndo() started.
+◇ Test conquestNavyAndFortDoNotPreserveNationAfterLandAndFacilitiesAreGone() started.
+◇ Test campaignTargetManifestMatchesRecoveredTotalsAndRelations() started.
+◇ Test p67PlayNoticeXMLAndFrozenContentAreComplete() started.
+◇ Test battleSaveRoundTripClampsCameraAndPreservesExtendedState() started.
+◇ Test originalAudioPolicyMatchesRecoveredFormAndBattleContract() started.
+◇ Test roundDialogueUsesFiredDedupeWithoutPollutingAppliedSet() started.
+◇ Test persistedPlayerGrowthAndEquipmentOverrideEffectiveCommander() started.
+◇ Test combatTrainingAwardsAfterPrimaryAndCounterUsingActualDamage() started.
+◇ Test nativeAttack0ChainMatchesRecoveredStateMachine() started.
+◇ Test trainingExperienceThresholdsMatchP39() started.
+◇ Test nativeGameplayAttackAndCounter() started.
+◇ Test headquartersPrincessOrderMatchesMatureController() started.
+◇ Test campaignBattleFlowUsesPristineObjectiveSnapshotAndDetectsCapturedObjectiveVictory() started.
+◇ Test originalOuterListHitboxesHonorVisibleWindowOffset() started.
+◇ Test constructionPresenceOverridesTerrainEvenWhenAvoidIsZero() started.
+◇ Test captureScriptEventAppliesMoraleAndDedupesDialogueAndEffect() started.
+◇ Test p61DefenseAndUseItemFormsKeepRecoveredXMLGeometry() started.
+◇ Test nativeNoonRegressionContractFrozen() started.
+◇ Test damageBoundsParity() started.
+◇ Test buildingUpgradeCostsMatchRecoveredNativeTables() started.
+◇ Test p65OuterAndHQOriginalCNValuesAreFrozen() started.
+◇ Test p67RendererUsesClippedScrollableNoticeAndCloseOnlyDismissal() started.
+◇ Test p61ConsumableItemArtworkResolvesToFrozenOriginalResources() started.
+◇ Test playerProfileEquipmentNeverLeaksIntoAICommanderMovement() started.
+◇ Test all877NativeUnitsBuildAttackChainsInBothHorizontalDirections() started.
+◇ Test defMotionSmallFixture() started.
+◇ Test tentDoesNotHealAfterAttackOrInsideConstruction() started.
+◇ Test campaignYellowObjectiveUnlockPersistsAndDoesNotDuplicate() started.
+◇ Test originalCompleteChallengeSummaryUseSame346By190Form() started.
+◇ Test roundTurnContentUsesCompletedRoundSettlementAndLivingPlayerGenerals() started.
+◇ Test freshPersistenceContextUsesAuthoredLedgersAndDeployedCommanders() started.
+◇ Test nativeUnitStatusRecoveredMath() started.
+◇ Test p67PlayNoticeGeometryAndScrollMetricsMatchOriginalContract() started.
+◇ Test p68RendererConsumesSourceCommanderAndRealEquipmentPreview() started.
+◇ Test nativeMedalDeltaAndDescriptionMatchP39() started.
+◇ Test headquartersRecoveredGeometryAndRouting() started.
+◇ Test tacticsAndSpecialsParity() started.
+◇ Test nativeAIFastForwardKeepsSimulationDriverButBypassesCameraAndCompressesPresentation() started.
+◇ Test everyRecoveredCampaignMapTargetResolvesToAuthoredBTLObject() started.
+◇ Test affineMatchesJSMulOrder() started.
+◇ Test p55RecruitCommitsCostPlayerHPBuffAndSpentActionStateAtomically() started.
+◇ Test terminalReadyStartsAtFrameZeroAfterActiveChain() started.
+◇ Test toulonStageIntroContentComesFromRecoveredP39BattleData() started.
+◇ Test enqueueDuringActiveDialogueDoesNotReplaceCurrentSpeaker() started.
+◇ Test nativeGameplayPlayerBuffMoveAndUndo() started.
+◇ Test talkUsesP39AdaptedBattlePlacementAndOriginalInternals() started.
+◇ Test aiPlannerIsDeterministicForSameState() started.
+◇ Test p63BattleFormsUseOriginalCNTitleKeys() started.
+◇ Test nativeHexCentersAndRoundTrip() started.
+◇ Test facilityIncomeEquipmentUsesMaxMultiplierNotAddition() started.
+◇ Test p66RecoveredTutorialAndRegroupGeometryMatchesXML() started.
+◇ Test liveRoundSettlementUsesPreviousAttackedFlagBeforeReset() started.
+◇ Test aiPlannerTargetsOnlyHostiles() started.
+◇ Test clippedRowsCannotReceiveTouchesOutsideViewport() started.
+◇ Test recoveredGridContract() started.
+◇ Test allTwentyEightSlotsRemainFullSizeAndScrollable() started.
+◇ Test scrollClampsAtBothEnds() started.
+◇ Test recoveredBusinessPricingMatchesMatureTruth() started.
+◇ Test initialStateFindsStoreByObjectIndexAndConsumesSellerSlot() started.
+◇ Test initialCatalogNormalizesAndFindsByObjectIndex() started.
+◇ Test recruitmentHonorsRoundOwnedAndResourceLocksWithoutMutation() started.
+◇ Test recruitmentUsesMoneyAndIndustryButDoesNotDeductMedalAndShiftsQueue() started.
+✔ Test playerOverridesParity() passed after 2.119 seconds.
+✔ Test fullPlayerRoundSettlementMatchesP39Sequence() passed after 2.201 seconds.
+✔ Test p55DefenseBuildsInstallationAndOneFortressPerRound() passed after 2.201 seconds.
+✔ Test p62DefenseRendererConsumesOriginalArtAndSelectionOverlay() passed after 2.201 seconds.
+✔ Test conquestScenarioMetadataMatchesP39SixScenarioShell() passed after 2.496 seconds.
+◇ Test "player interval includes global +4 and matching skill bonuses" started.
+◇ Test "enemy interval does not get player bonus" started.
+✔ Test freshProfileMatchesP39CoreDefaultsAndUnlocksAllPrincesses() passed after 2.502 seconds.
+✔ Test originalFormsKeepRecoveredXMLDimensions() passed after 2.605 seconds.
+✔ Test p63OriginalCNStringAuthorityValuesAreFrozen() passed after 2.812 seconds.
+◇ Test consumableAndFlagLockAreRejectedWithoutMutation() started.
+◇ Test transferTablesMatchMatureControllerContract() started.
+◇ Test dismissalBlocksAtomicallyWhenReturnedEquipmentCannotFit() started.
+◇ Test equipmentSwapReturnsOldItemAndConsumesSelectedInventorySlot() started.
+◇ Test dismissReturnsEquipmentButRegroupDeletesSourceEquipment() started.
+✔ Test compactOriginMatchesRecoveredContract() passed after 2.839 seconds.
+✔ Test campaignMetaStorageIsStableAcross500Reloads() passed after 2.840 seconds.
+✔ Test battleSaveSchema6EnvelopeMatchesP39Contract() passed after 2.911 seconds.
+✔ Test battleGameplayMarkEndedClearsInteractionStateAndStaysEnded() passed after 2.912 seconds.
+✔ Test countryTurnCoreFixtureParity() passed after 2.945 seconds.
+✔ Test conquestSlowVictoryRecordsNormalContinentImmediately() passed after 3.294 seconds.
+✔ Test conquestContinueRequiresFastWinChoiceOnlyWhenAsiaEligible() passed after 3.393 seconds.
+✔ Test machineGunSpeedShortensRealDuration() passed after 3.393 seconds.
+✔ Test playerNobilityFlagAndTentHealingMatchP39Ordering() passed after 3.593 seconds.
+✔ Test realInstallationPenaltiesMatchP39Catalog() passed after 3.594 seconds.
+✔ Test napoleonPlayerEffectiveCommanderMatchesP39OverrideUnion() passed after 3.597 seconds.
+✔ Test victoryGeometryKeepsOriginalButtonAndGeneralRows() passed after 3.597 seconds.
+✔ Test p65NativeRenderersConsumeOuterAndHQStringAuthority() passed after 3.597 seconds.
+✔ Test campaignZoneCompletionRewardIsOneShot() passed after 3.601 seconds.
+◇ Test nativeQuotesMatchRecoveredTables() started.
+◇ Test quoteApplicationIsAtomic() started.
+✔ Test campaignSceneSourceLocksAuthoredImpactAndSettlementBeforeResultPresentation() passed after 3.766 seconds.
+✔ Test roundTrainingHealCapsAtMaxHP() passed after 4.177 seconds.
+✔ Test moraleAndInstallationsSurviveSchema6Rehydration() passed after 4.178 seconds.
+✔ Test counterDamageGetsIndependentAuthoredImpact() passed after 4.210 seconds.
+✔ Test stageIntroUsesP39ScreenPlacementAndRecoveredCloseHitbox() passed after 4.240 seconds.
+✔ Test dialogueQueueShowsOnlyOneEventAtATime() passed after 4.240 seconds.
+✔ Test nativePresentationLODFrozen() passed after 4.240 seconds.
+✔ Test nativeRecruitArmyIdsAndCampaignTrainingStayOnRecoveredMapping() passed after 4.242 seconds.
+✔ Test p68FrozenXMLContainsCommanderAndEquipmentPreviewInternals() passed after 4.538 seconds.
+◇ Test areaMathAndRowSensitiveUIWaitMatchMatureController() started.
+◇ Test recoveredTutorialScriptsRemainExactAndRunnableThroughWaitStates() started.
+✔ Test fastAIPresentationPreservesAlreadyShortImpact() passed after 4.939 seconds.
+✔ Test nativeGameplayEndedProjectionMatchesPhase() passed after 5.262 seconds.
+✔ Test p62DefenseCardContentGeometryMatchesMatureP39Contract() passed after 5.262 seconds.
+◇ Test duplicatePlayerCarrierIsClearedEnemyCarrierIsUntouched() started.
+◇ Test occupiedCommandersAreExcludedFromTargetGrid() started.
+◇ Test preservesAbsoluteDamageWhenCommanderChanges() started.
+✔ Test counterDamageResultValueMatchesActuallyAppliedP39Multiplier() passed after 5.263 seconds.
+✔ Test campaignEconomicBonusesMatchP39UpgradeTable() passed after 5.263 seconds.
+✔ Test allCampaignTurnLimitsProduceValidNativeScores() passed after 5.345 seconds.
+✔ Test playerPrimaryAttackCollectsBattleMedalUsingSameRNGStream() passed after 5.345 seconds.
+✔ Test buildingUpgradeIsAtomicAndIncrementsLevel() passed after 5.749 seconds.
+✔ Test liveRoundSettlementBlocksTentWhenUnitAttackedLastRound() passed after 5.750 seconds.
+✔ Test campaignLegacyMigrationMatchesP39ExactlyOnce() passed after 5.996 seconds.
+✔ Test campaignAuthoredSnapshotUsesPristineBTLContract() passed after 5.996 seconds.
+✔ Test saveSlotDisplaysKeepOneAutosavePlusSixManualAndResolveCountryFlag() passed after 6.005 seconds.
+✔ Test corruptOrUnsupportedBattleSaveSlotBehavesAsEmptyLikeP39() passed after 6.004 seconds.
+◇ Test recoveredOptionGeometryAndSliderClampingStayExact() started.
+◇ Test recoveredDefaultsAndCommitMatchMatureSaveContract() started.
+✔ Test constructionAdvancesAfterGlobalActionResetLikeP39() passed after 6.005 seconds.
+✔ Test p63ShopSurfacesBindOriginalCNShopStrings() passed after 6.005 seconds.
+✔ Test p66OriginalXMLBindsTutorialAndRegroupConfirmation() passed after 6.005 seconds.
+✔ Test nativeGameplayTurnBoundaryResetsPlayerActions() passed after 6.292 seconds.
+✔ Test snareDrumFunction4ForcesFullFormationAtLowHP() passed after 6.310 seconds.
+✔ Test campaignRowsOpenHiddenProgressionAndSecretSelectionMatchP39() passed after 6.785 seconds.
+✔ Test originalOuterSelectionHitboxesMatchRecoveredShell() passed after 6.812 seconds.
+✔ Test p63StageIntroUsesOriginalCNKeysInsteadOfInventedBestVictoryCopy() passed after 7.046 seconds.
+✔ Test nativeOriginalVictoryResultUsesExistingP39ScoreAndBattleState() passed after 7.309 seconds.
+✔ Test originalMainMenuHitboxesRouteCampaignConquestHQWithoutDrift() passed after 8.439 seconds.
+✔ Test headquartersRoutesShopAndAcademyIntoNativeScenes() passed after 8.797 seconds.
+✔ Test movementPresentationDurationMatchesP39Contract() passed after 9.197 seconds.
+✔ Test originalMainMenuGeometryMatchesFrozenP39Shell() passed after 9.197 seconds.
+✔ Test nativeOriginalDefeatResultUsesRecoveredFailureNarrationKeys() passed after 9.197 seconds.
+✔ Test nativeTrainingTablesMatchP39() passed after 9.197 seconds.
+✔ Test logicalSpaceFrozen() passed after 9.197 seconds.
+✔ Test originalCompleteHitboxesUseRecoveredButtonPositions() passed after 9.197 seconds.
+✔ Test roundTurnGeometryMatchesRecoveredXMLAndP39Placement() passed after 9.197 seconds.
+✔ Test nativeCameraFocusVisibilityUsesRecoveredInsets() passed after 9.197 seconds.
+✔ Test nativeBattleCornerHUDGeometryFrozen() passed after 9.197 seconds.
+✔ Test nativeOuterShellRoutesCampaignConquestAndAutosaveWithoutWebRuntime() passed after 9.197 seconds.
+✔ Test profileDecodeMigratesLegacyStarsBeforeDefaultsCanMaskThem() passed after 9.197 seconds.
+✔ Test campaignResultAwardsOnlyPositiveBestRatingDeltaAndCapsStars() passed after 9.197 seconds.
+✔ Test nativeAppBootsThroughOriginalMainMenuInsteadOfHardcodedToulon() passed after 9.197 seconds.
+✔ Test nativeAppliedAndFiredEventKeysSurviveSchema6Snapshot() passed after 9.198 seconds.
+✔ Test nativeDefenseChoicesKeepRecoveredCostsAndTypes() passed after 9.197 seconds.
+✔ Test buildingKeyMatchesRecoveredRules() passed after 9.197 seconds.
+✔ Test actionPairFocusRestoresOneToOneZoomBelowDetailThreshold() passed after 9.197 seconds.
+✔ Test actionPairFocusSkipsWhenBothCellsFitSafeViewport() passed after 9.197 seconds.
+✔ Test oppositeFlankIsMinusOneAndFullSurroundIsMinusTwo() passed after 9.197 seconds.
+✔ Test attackIntervalAndFormationParity() passed after 9.200 seconds.
+✔ Test manualSetCameraCancelsProgrammaticMotor() passed after 9.200 seconds.
+✔ Test conquestAchievementUsesAllOwnedGeneralLevelsAndCampaignStageRatings() passed after 9.200 seconds.
+✔ Test aiCommanderNeverConsumesPlayerProfileOrOverrides() passed after 9.200 seconds.
+✔ Test playerPairFocusDefersMutationUntilCameraMotorStops() passed after 9.200 seconds.
+✔ Test campaignContinueCompletionRewardIsOneShot() passed after 9.201 seconds.
+✔ Test p66NativeRenderersConsumeOriginalTutorialAndRegroupAuthority() passed after 9.199 seconds.
+✔ Test advancingDialoguePresentsNextThenDrainsExactlyOnce() passed after 9.199 seconds.
+✔ Test legacyCameraGeometryFallsBackToPlayerOpeningFocusButKeepsZoom() passed after 9.201 seconds.
+✔ Test battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields() passed after 9.195 seconds.
+✔ Test originalPauseAndSaveActionHitboxesDoNotDrift() passed after 9.195 seconds.
+✔ Test roundTurnSceneOrderingKeepsSettlementModalDialogueAutosaveContract() passed after 9.195 seconds.
+✔ Test movementSearchParity() passed after 9.195 seconds.
+✔ Test battleSaveSlotStoreAtomicallyRoundTripsAndExposesNativeFormMetadata() passed after 9.195 seconds.
+✔ Test p64OriginalXMLBindsBattleModalStringKeys() passed after 9.195 seconds.
+✔ Test gunsAgainstFortUseAttack1AndSkipTail() passed after 9.195 seconds.
+✔ Test headquartersShopDailyStockAndPurchasePersist() passed after 9.195 seconds.
+✔ Test movementPresentationInterpolatesAlongAuthoredHexPath() passed after 9.195 seconds.
+✔ Test aiPairFocusHoldsMutatedGameplayAndDriverOffLiveStateUntilCameraStops() passed after 9.195 seconds.
+✔ Test nativeCameraSemantics() passed after 9.195 seconds.
+✔ Test nativeEventCatalogMatchesRecoveredP39Coverage() passed after 9.202 seconds.
+✔ Test headquartersGridKeepsSixColumnOriginalLayoutAndScroll() passed after 9.195 seconds.
+✔ Test campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() passed after 9.201 seconds.
+✔ Test nativeFiveGradeResultFormulaMatchesP39() passed after 9.198 seconds.
+✔ Test nativeBattleConsumablesMatchRecoveredUseRulesAndRemainStateOnly() passed after 9.197 seconds.
+✔ Test fastAIPresentationCapsAuthoredImpactAtNinetyMilliseconds() passed after 9.197 seconds.
+✔ Test aiCountryEconomyWritesBackToPersistenceLedger() passed after 9.203 seconds.
+✔ Test playerCounterDuringAITurnCanCollectBattleMedal() passed after 8.839 seconds.
+✔ Test directionalMotionFallsBackOnlyWhenNeeded() passed after 9.197 seconds.
+✔ Test realTerrainPenaltiesDecodeFromRecoveredWorldData() passed after 8.839 seconds.
+✔ Test pauseAndSaveUseMatureP39BattleScreenPlacement() passed after 8.839 seconds.
+✔ Test liveGeneralGrowthHandlerAppliesRankHPDeltaWithoutChangingLegacyAttackAPI() passed after 8.746 seconds.
+✔ Test conquestPlayerCanBeDefeatedWithOnlyNavyRemainingAndNeutralIsExcluded() passed after 8.746 seconds.
+✔ Test nativeSnapshotRoundTripPreservesGameplayAndP39Sidecar() passed after 9.198 seconds.
+✔ Test nativeBattleSceneConsumesGameSpeedForTutorialProgrammaticCamera() passed after 8.746 seconds.
+✔ Test saveRehydrationRestoresCapturedFacilityAndEndedPhase() passed after 9.198 seconds.
+✔ Test authoredImpactUsesEndOfAttackPhaseNotFullReloadFinishChain() passed after 8.702 seconds.
+✔ Test campaignBattleFlowTurnLimitIsStrictlyAfterWinRound() passed after 8.839 seconds.
+✔ Test originalCountrySelectorAndBattleListsCannotDrift() passed after 8.698 seconds.
+✔ Test visualResolverNationalThenGeneric() passed after 8.698 seconds.
+✔ Test profileUnknownFieldsSurviveLosslessRoundTrip() passed after 8.698 seconds.
+✔ Test originalResultActionHitboxesStayBoundToRecoveredButtons() passed after 8.663 seconds.
+✔ Test headquartersItemBankUsesNativeStackRules() passed after 8.663 seconds.
+✔ Test playerProfileStoreAtomicRoundTripAndCorruptFallback() passed after 8.657 seconds.
+✔ Test manualTrainingCostAndHealMatchP39() passed after 8.657 seconds.
+✔ Test p65OriginalXMLBindsOuterAndHQKeys() passed after 8.657 seconds.
+✔ Test aiPlannerPrefersLegalFiringCellWhenAvailable() passed after 8.840 seconds.
+✔ Test conquestSceneSourceUsesSharedImpactBoundariesAndChallengeIsDeferredUntilContinue() passed after 8.649 seconds.
+✔ Test conquestChallengeUsesOriginalHomeButtonByMap() passed after 8.649 seconds.
+✔ Test trainingAndConstructionRuntimeStateSurvivesNativeSaveRoundTrip() passed after 8.739 seconds.
+✔ Test originalCampaignAndConquestSelectionGeometryMatches568hXML() passed after 8.649 seconds.
+✔ Test conquestAchievementRecordKeepsBestStoredValueOnly() passed after 8.641 seconds.
+✔ Test facilityIncomeAndUpkeepMatchP39() passed after 8.641 seconds.
+✔ Test campaignCountryVariantsAndBranchSpecificSecretsMatchRecoveredP39() passed after 8.657 seconds.
+✔ Test p64BattleModalOriginalCNValuesAreFrozen() passed after 8.641 seconds.
+✔ Test saveRehydrationDoesNotApplyPlayerHPBonusTwice() passed after 8.702 seconds.
+✔ Test pendingKilledUnitRemainsVisibleUntilImpactThenCommitsHP() passed after 8.637 seconds.
+✔ Test originalVictoryFailureAndVictoryTextGeometryCannotDrift() passed after 8.637 seconds.
+✔ Test p64BattleModalRendererConsumesFrozenCNKeys() passed after 8.637 seconds.
+✔ Test incrementalAIDriverYieldsVisibleMovesInsteadOfCollapsingWholeRound() passed after 8.747 seconds.
+✔ Test authoredBTLRawTrainingLevelFeedsFreshNativeUnitState() passed after 8.649 seconds.
+✔ Test p68OriginalRegroupConfirmPreviewGeometryMatchesXML() passed after 8.634 seconds.
+✔ Test nativeProgrammaticCameraMotorMatchesRecoveredCoefficients() passed after 8.637 seconds.
+✔ Test p66TutorialAndRegroupCNValuesAreFrozen() passed after 8.637 seconds.
+✔ Test recoveredRoundFireCellUsesNativeWorldWidthAndPersists() passed after 8.644 seconds.
+✔ Test fireproofCommanderBlocksNativeFireAndClearsExistingCell() passed after 8.638 seconds.
+✔ Test pauseAndSaveHitGeometryMatchesRecoveredLayout() passed after 8.637 seconds.
+✔ Test conquestAchievementRoundAndResourceFormulasMatchRecoveredP39() passed after 8.637 seconds.
+✔ Test eventMoraleLastsExactlyThreeRoundsAndLeadershipClearsNegative() passed after 8.626 seconds.
+✔ Test equipmentFunction0PreservesP39TerrainIgnoreSemantics() passed after 8.638 seconds.
+✔ Test conquestPortOrLandFacilityOrArtilleryEachPreservesNation() passed after 8.626 seconds.
+✔ Test conquestAchievementPrepareVictoryOffersAsiaOnlyWithinRecoveredFastWinThreshold() passed after 8.306 seconds.
+✔ Test princessOverridesAffectOnlySpecifiedThreePrincesses() passed after 8.306 seconds.
+✔ Test playerMovementEquipmentFunction9MatchesP39TargetRule() passed after 8.641 seconds.
+✔ Test p61UseItemRendererUsesOriginalArtworkAndNoRawIDPlaceholder() passed after 8.306 seconds.
+✔ Test conquestBattleFlowDelegatesExactFrozenExtinctionRule() passed after 8.626 seconds.
+✔ Test nativeGameplayCavalryAnnihilationGrantsExtraAction() passed after 8.072 seconds.
+✔ Test campaignContinueRewardsAndMedalProcMatchP39() passed after 8.072 seconds.
+✔ Test p60RecruitArtCatalogCoversAllRecruitableArmyFamilies() passed after 8.072 seconds.
+✔ Test armoredCarrierFunction12SuppressesEmbarkedAttackPenalty() passed after 7.927 seconds.
+✔ Test captureAndDeathBindingsResolveExactRecoveredTargets() passed after 8.306 seconds.
+✔ Test p62DefenseArtworkCatalogMatchesMatureP39AndFrozenResources() passed after 7.795 seconds.
+✔ Test battleSaveSlotsMatchP39AutoPlusSixContract() passed after 7.795 seconds.
+✔ Test academyPurchasedOutFixedNullPoolsStayPersistedInsteadOfRerolling() passed after 7.795 seconds.
+✔ Test academyKeepsNativeSixFourTwoTiersAndInfiniteCurrencyPurchase() passed after 7.795 seconds.
+✔ Test p60RecruitFormKeepsRecoveredXMLGeometry() passed after 7.795 seconds.
+✔ Test actionPairFocusUsesExactMidpointWhenEitherCellIsOutsideSafeViewport() passed after 7.772 seconds.
+✔ Test weaponArmorAndAdjacentFlagsMatchP39CombatEquipmentPipeline() passed after 7.772 seconds.
+✔ Test trainingThenFacilitySupplyApplyToAllOwners() passed after 7.772 seconds.
+✔ Test attackSidecarAddsCollectedMedalsExactlyOnce() passed after 7.772 seconds.
+✔ Test nativeGameplayHostileFacilityCaptureDisablesUndo() passed after 7.772 seconds.
+✔ Test conquestNavyAndFortDoNotPreserveNationAfterLandAndFacilitiesAreGone() passed after 7.764 seconds.
+✔ Test campaignTargetManifestMatchesRecoveredTotalsAndRelations() passed after 7.764 seconds.
+✔ Test p67PlayNoticeXMLAndFrozenContentAreComplete() passed after 7.764 seconds.
+✔ Test battleSaveRoundTripClampsCameraAndPreservesExtendedState() passed after 7.764 seconds.
+✔ Test originalAudioPolicyMatchesRecoveredFormAndBattleContract() passed after 7.764 seconds.
+✔ Test recoveredRoundMoraleLastsNThroughNPlusTwo() passed after 8.097 seconds.
+✔ Test persistedPlayerGrowthAndEquipmentOverrideEffectiveCommander() passed after 7.764 seconds.
+✔ Test combatTrainingAwardsAfterPrimaryAndCounterUsingActualDamage() passed after 7.764 seconds.
+✔ Test incrementalAIDriverMatchesHeadlessRoundFinalState() passed after 8.642 seconds.
+✔ Test trainingExperienceThresholdsMatchP39() passed after 7.764 seconds.
+✔ Test nativeGameplayAttackAndCounter() passed after 7.494 seconds.
+✔ Test headquartersPrincessOrderMatchesMatureController() passed after 7.494 seconds.
+✔ Test nativeAttack0ChainMatchesRecoveredStateMachine() passed after 7.764 seconds.
+✔ Test originalOuterListHitboxesHonorVisibleWindowOffset() passed after 7.494 seconds.
+✔ Test constructionPresenceOverridesTerrainEvenWhenAvoidIsZero() passed after 7.494 seconds.
+✔ Test aiExecutionMovesAndAttacksUnderNativePhaseRules() passed after 7.796 seconds.
+✔ Test p61DefenseAndUseItemFormsKeepRecoveredXMLGeometry() passed after 7.494 seconds.
+✔ Test nativeNoonRegressionContractFrozen() passed after 7.494 seconds.
+✔ Test damageBoundsParity() passed after 7.494 seconds.
+✔ Test buildingUpgradeCostsMatchRecoveredNativeTables() passed after 7.494 seconds.
+✔ Test p65OuterAndHQOriginalCNValuesAreFrozen() passed after 7.493 seconds.
+✔ Test p67RendererUsesClippedScrollableNoticeAndCloseOnlyDismissal() passed after 7.493 seconds.
+✔ Test p61ConsumableItemArtworkResolvesToFrozenOriginalResources() passed after 7.493 seconds.
+✔ Test roundDialogueUsesFiredDedupeWithoutPollutingAppliedSet() passed after 7.764 seconds.
+✔ Test all877NativeUnitsBuildAttackChainsInBothHorizontalDirections() passed after 7.200 seconds.
+✔ Test defMotionSmallFixture() passed after 7.200 seconds.
+✔ Test tentDoesNotHealAfterAttackOrInsideConstruction() passed after 7.200 seconds.
+✔ Test campaignBattleFlowUsesPristineObjectiveSnapshotAndDetectsCapturedObjectiveVictory() passed after 7.495 seconds.
+✔ Test originalCompleteChallengeSummaryUseSame346By190Form() passed after 7.200 seconds.
+✔ Test captureScriptEventAppliesMoraleAndDedupesDialogueAndEffect() passed after 7.494 seconds.
+✔ Test campaignYellowObjectiveUnlockPersistsAndDoesNotDuplicate() passed after 7.200 seconds.
+✔ Test nativeUnitStatusRecoveredMath() passed after 7.200 seconds.
+✔ Test p67PlayNoticeGeometryAndScrollMetricsMatchOriginalContract() passed after 7.200 seconds.
+✔ Test p68RendererConsumesSourceCommanderAndRealEquipmentPreview() passed after 7.200 seconds.
+✔ Test nativeMedalDeltaAndDescriptionMatchP39() passed after 7.200 seconds.
+✔ Test headquartersRecoveredGeometryAndRouting() passed after 7.200 seconds.
+✔ Test tacticsAndSpecialsParity() passed after 7.200 seconds.
+✔ Test nativeAIFastForwardKeepsSimulationDriverButBypassesCameraAndCompressesPresentation() passed after 7.200 seconds.
+✔ Test fullNativeAIRoundReturnsControlToPlayerDeterministically() passed after 8.640 seconds.
+✔ Test affineMatchesJSMulOrder() passed after 7.200 seconds.
+✔ Test p55RecruitCommitsCostPlayerHPBuffAndSpentActionStateAtomically() passed after 7.200 seconds.
+✔ Test terminalReadyStartsAtFrameZeroAfterActiveChain() passed after 7.200 seconds.
+✔ Test freshPersistenceContextUsesAuthoredLedgersAndDeployedCommanders() passed after 7.201 seconds.
+✔ Test enqueueDuringActiveDialogueDoesNotReplaceCurrentSpeaker() passed after 7.200 seconds.
+✔ Test nativeGameplayPlayerBuffMoveAndUndo() passed after 7.200 seconds.
+✔ Test talkUsesP39AdaptedBattlePlacementAndOriginalInternals() passed after 7.200 seconds.
+✔ Test roundTurnContentUsesCompletedRoundSettlementAndLivingPlayerGenerals() passed after 7.201 seconds.
+✔ Test p63BattleFormsUseOriginalCNTitleKeys() passed after 7.174 seconds.
+✔ Test nativeHexCentersAndRoundTrip() passed after 7.174 seconds.
+✔ Test facilityIncomeEquipmentUsesMaxMultiplierNotAddition() passed after 7.174 seconds.
+✔ Test p66RecoveredTutorialAndRegroupGeometryMatchesXML() passed after 7.174 seconds.
+✔ Test playerProfileEquipmentNeverLeaksIntoAICommanderMovement() passed after 7.494 seconds.
+✔ Test everyRecoveredCampaignMapTargetResolvesToAuthoredBTLObject() passed after 7.201 seconds.
+✔ Test clippedRowsCannotReceiveTouchesOutsideViewport() passed after 7.136 seconds.
+✔ Test recoveredGridContract() passed after 7.136 seconds.
+✔ Test allTwentyEightSlotsRemainFullSizeAndScrollable() passed after 7.136 seconds.
+✔ Test scrollClampsAtBothEnds() passed after 7.136 seconds.
+✔ Test recoveredBusinessPricingMatchesMatureTruth() passed after 7.133 seconds.
+✔ Test initialStateFindsStoreByObjectIndexAndConsumesSellerSlot() passed after 7.133 seconds.
+✔ Test initialCatalogNormalizesAndFindsByObjectIndex() passed after 7.132 seconds.
+✔ Test recruitmentHonorsRoundOwnedAndResourceLocksWithoutMutation() passed after 7.132 seconds.
+✔ Test recruitmentUsesMoneyAndIndustryButDoesNotDeductMedalAndShiftsQueue() passed after 7.132 seconds.
+✔ Test "player interval includes global +4 and matching skill bonuses" passed after 6.712 seconds.
+✔ Test "enemy interval does not get player bonus" passed after 6.712 seconds.
+✔ Test consumableAndFlagLockAreRejectedWithoutMutation() passed after 6.402 seconds.
+✔ Test transferTablesMatchMatureControllerContract() passed after 6.402 seconds.
+✔ Test dismissalBlocksAtomicallyWhenReturnedEquipmentCannotFit() passed after 6.402 seconds.
+✔ Test equipmentSwapReturnsOldItemAndConsumesSelectedInventorySlot() passed after 6.402 seconds.
+✔ Test dismissReturnsEquipmentButRegroupDeletesSourceEquipment() passed after 6.402 seconds.
+✔ Test nativeQuotesMatchRecoveredTables() passed after 5.613 seconds.
+✔ Test quoteApplicationIsAtomic() passed after 5.613 seconds.
+✔ Test areaMathAndRowSensitiveUIWaitMatchMatureController() passed after 4.656 seconds.
+✔ Test recoveredTutorialScriptsRemainExactAndRunnableThroughWaitStates() passed after 4.656 seconds.
+✔ Test duplicatePlayerCarrierIsClearedEnemyCarrierIsUntouched() passed after 3.951 seconds.
+✔ Test occupiedCommandersAreExcludedFromTargetGrid() passed after 3.951 seconds.
+✔ Test preservesAbsoluteDamageWhenCommanderChanges() passed after 3.951 seconds.
+✔ Test recoveredOptionGeometryAndSliderClampingStayExact() passed after 3.209 seconds.
+✔ Test recoveredDefaultsAndCommitMatchMatureSaveContract() passed after 3.209 seconds.
+✔ Suite "Native SceneShop grid / scroll parity" passed after 9.239 seconds.
+✔ Suite "Native battle shop parity" passed after 9.240 seconds.
+✔ Suite NativeBattleTavernCoreTests passed after 9.239 seconds.
+✔ Suite "Native battle unit info core" passed after 9.239 seconds.
+✔ Suite NativeHeadquartersManagementCoreTests passed after 9.239 seconds.
+✔ Suite NativeBattleCommerceCoreTests passed after 9.239 seconds.
+✔ Suite NativeTutorialCoreTests passed after 9.239 seconds.
+✔ Suite NativeGeneralDeploymentCoreTests passed after 9.238 seconds.
+✔ Suite NativeOptionsCoreTests passed after 9.238 seconds.
+✔ Test toulonStageIntroContentComesFromRecoveredP39BattleData() passed after 7.389 seconds.
+✔ Test aiPlannerIsDeterministicForSameState() passed after 7.494 seconds.
+✔ Test aiPlannerTargetsOnlyHostiles() passed after 7.499 seconds.
+✔ Test liveRoundSettlementUsesPreviousAttackedFlagBeforeReset() passed after 7.508 seconds.
+✔ Test run with 247 tests in 9 suites passed after 9.548 seconds.

@@ -1,0 +1,99 @@
+PASS test_battle_save_core.js :: battle save core PASS {"schema":6,"round":7,"units":1,"slots":"auto+1..6"}
+PASS test_cavalry_supply_rules.js :: cavalry + facility supply rules PASS
+PASS test_combat_core.js :: combat_core 0.61 native-skill tests: PASS
+PASS test_compact_bile_full_parity.js :: compact BILE full parity PASS · 1076/1076 assets · Machine Gun Finish corrected 18/18
+PASS test_compact_bile_render_contract.js :: compact BILE production-render contract PASS · direct Canvas path + native anchor math + offline source cache
+PASS test_compact_bile_runtime.js :: compact BILE runtime PASS · 877 units / 3519 motions / 9.87 MiB raw source pack
+PASS test_core_map_unit_contract.js :: core map/unit contract PASS: native odd-row 64x54 grid + commander-first opening camera + native pose anchor path
+PASS test_country_turn_core.js :: country turn core PASS {"conquestOwners":14,"russia":{"money":50,"industry":70,"food":500},"campaignOwners":8,"campaignSameHint":"not-used-as-alliance"}
+PASS test_data_integrity.js :: data integrity PASS: 101 battles, 208 commanders, 3 fieldworks, Coastal Fort preserved
+PASS test_effective_ui_contract.js :: effective UI contract PASS: battle/recruit/general display paths consume effective values; original raw data remains untouched
+PASS test_enhanced_generals_combat.js :: enhanced player-general combat regressions: PASS
+PASS test_full_animation_877.js :: full compact animation coverage PASS · 877/877 units · 3519/3519 motions · 1754/1754 directional chains · 7407/7407 battle units resolved
+PASS test_general_deployment_core.js :: in-battle general deployment core PASS
+PASS test_item_inventory_core.js :: item inventory core PASS {"slots":28,"slot0Max":999,"normalMax":99}
+PASS test_mod_general_dismissal_p19.js :: P19 mod general dismissal: PASS
+PASS test_native_academy_core.js :: native academy core PASS
+PASS test_native_action_audio.js :: native action audio: PASS
+PASS test_native_ai_action_camera_focus.js :: native AI action camera focus: PASS
+PASS test_native_animation_integration.js :: native animation integration PASS: 877 units / 3519 motions / 1272 compact assets / direct BILE production runtime
+PASS test_native_artillery_visual_timeline.js :: native artillery visual timeline PASS: light/heavy/siege original effects + timing/offset/rotation wired
+PASS test_native_audio_inventory.js :: native audio inventory PASS: 38 WAV + 5 MP3 byte-identical to APK
+PASS test_native_battle_music.js :: native battle music PASS: 4 APK tracks restored, randomized per battle scene, BGVol-driven with original 50% default
+PASS test_native_camera_interaction.js :: native camera interaction PASS: zoom .2..1, detail .5, tap 15px/axis, pinch >40 stationary-anchor, incremental pan, no drag fling
+PASS test_native_camera_programmatic.js :: native programmatic camera PASS: GameSpeed motor + no-fling separation + commander-first fresh-battle focus
+PASS test_native_campaign_p17_integration.js :: native campaign P17 integration: PASS
+PASS test_native_campaign_targets_exhaustive_p17.js :: native campaign exhaustive P17 PASS: 87 campaign BTL · red stages 84 · red victory sims 84 · red defeat sims 83 · yellow 11/11
+PASS test_native_campaign_targets_p17.js :: native campaign target/secret P17: PASS
+PASS test_native_commerce_core.js :: native commerce core PASS
+PASS test_native_commerce_forms_p19.js :: P19 native exchange / recruitgeneral geometry: PASS
+PASS test_native_conquest_ui.js :: native conquest UI contract PASS
+PASS test_native_construction_core.js :: native construction economy/UI/avoidance PASS
+PASS test_native_deployitem_p18.js :: P18 native deployitem: PASS
+PASS test_native_effect_audio_core.js :: native effect audio core PASS: 143 timelines; all current army grades resolve both directions
+PASS test_native_effects_visual_coverage.js :: native effects visual coverage PASS {"effects":65,"groups":23,"combatSourceGroups":22}
+PASS test_native_entity_triggers.js :: }
+PASS test_native_fire_events.js :: PASS native fire events: events=31 battles=16 round11=6 dialogues=3
+PASS test_native_funcres_contract.js :: native group_funcres contract PASS
+PASS test_native_general_core.js :: native general battle growth: PASS
+PASS test_native_general_p18_integration.js :: P18 native general integration: PASS
+PASS test_native_getgeneral_effect.js :: native getgeneral effect data PASS
+PASS test_native_getgeneral_tips.js :: native getgeneral tips contract PASS
+PASS test_native_headquarters_flow.js :: native headquarters/deploygeneral flow PASS
+PASS test_native_hex_battle_roundtrip.js :: native hex BTL roundtrip PASS: 101 battles / 7407 units / 8001 objects
+PASS test_native_hex_geometry.js :: native hex geometry PASS {"center00":{"x":0,"y":-18},"center01":{"x":32,"y":36},"campaign101Fallback":{"x":1472,"y":2133}}
+PASS test_native_impact_effect_core.js :: native impact selector PASS
+PASS test_native_lowzoom_lod.js :: native low-zoom strategic marker LOD: PASS
+PASS test_native_lowzoom_status.js :: native low-zoom relation/HP status layer: PASS
+PASS test_native_machinegun_visual_timeline.js :: native machine-gun visual timeline PASS: original offsets/rotation + dual emitters wired
+PASS test_native_main_campaign_layout.js :: native main/campaign layout PASS
+PASS test_native_maptext_core.js :: native maptext core PASS · 338 BILE items / 178 atlas elements / Europe 102 placements / America 41 placements
+PASS test_native_maptext_runtime.js :: native maptext runtime PASS · original BILE/atlas/placements cached + battle world-layer draw wired
+PASS test_native_morale_events.js :: native morale events PASS 31
+PASS test_native_motion_speed.js :: native Motion@speed PASS: live duration/frame math uses native deltaTime*speed semantics
+PASS test_native_movement_effect_core.js :: native movement effect core PASS: sea-first + infantry/cavalry/artillery moving1-4 mapping
+PASS test_native_movement_effect_integration.js :: native movement effect integration PASS: moving emitter follows unit world path and stops with move animation
+PASS test_native_moving_effect_canvas.js :: native moving effect canvas PASS: dust 1102px + water 704px rasterized
+PASS test_native_option_audio.js :: native option audio tests passed
+PASS test_native_option_controller.js :: native option controller PASS
+PASS test_native_path_tiebreak.js :: PASS native movement route direction/tie-break contract
+PASS test_native_player_action_camera_focus.js :: native player action camera focus PASS: 64/72 safe-view test + midpoint motor + wait-before-player-action
+PASS test_native_princess_deployment.js :: native princess deployment PASS · original form entry/geometry + 8 unlocked summon flow + no hard-slot gate
+PASS test_native_result_core.js :: native result core PASS: exact 5-grade turn formula + cumulative medal delta table 0/5/15/25/50
+PASS test_native_result_integration.js :: native result integration PASS: runtime limits + 5-grade result form + reward delta + defeat timeout bridge
+PASS test_native_result_p16_behavior.js :: P16 behavior PASS: result grades + generals + Continue/Complete + getmedal + current save schema
+PASS test_native_result_p16_integration.js :: P16 integration PASS: ContinueBattle SceneMain handoff + offline result assets
+PASS test_native_rocket_visual_timeline.js :: native rocket visual timeline PASS: original triple cue 1.6/1.8/2.0 + offsets/220deg left rotation + two native emitters wired
+PASS test_native_roundturn_p19.js :: P19 native form_roundturn: PASS
+PASS test_native_scene_shop_core.js :: native SceneShop core PASS: shared 14-slot seller, 28-slot bank, HQ daily stock, buy/sell pricing
+PASS test_native_simple_effect_canvas.js :: native simple effect canvas PASS: build raster 563 nontransparent pixels, max alpha 182
+PASS test_native_simple_effect_integration.js :: native simple effect integration PASS: static + moving world-space emitters wired into battle renderer
+PASS test_native_simple_effect_runtime.js :: native simple effect runtime PASS: native rate accumulator + area spawn + native moving particle integration
+PASS test_native_simple_effects.js :: native simple effects data PASS: build/recover + moving1-4 XML and original eff.png atlas preserved
+PASS test_native_stageintro_p20.js :: P20 native SceneStageIntro: PASS
+PASS test_native_timed_battle_sfx.js :: native timed battle SFX PASS: def_effectsanim at= seconds drive battle sounds; AI presentation scaling isolated
+PASS test_native_training_core.js :: native training core PASS
+PASS test_native_triggers.js :: PASS native triggers: battles=101 objectives=144/144 events=360 countryCodes=86 dialogues=323
+PASS test_native_tutorial_core.js :: native tutorial core PASS: 2 original scripts / 273 commands / exact source SHA + wait-state semantics
+PASS test_native_tutorial_forms.js :: native tutorial/playnotice forms PASS
+PASS test_native_tutorial_integration.js :: native tutorial integration PASS: 273/273 commands wired · 19 wait-ui aliases · undo/fortress/defense/ship/recruit formation controllers present
+PASS test_native_ui_audio.js :: native UI/result audio tests passed
+PASS test_native_upgrade_core.js :: native upgrade core PASS
+PASS test_native_useitem_contract.js :: native use-item form/runtime contract tests passed
+PASS test_native_useitem_core.js :: native use-item core tests passed
+PASS test_native_warzone_tech_manifest.js :: P21 native warzone tech manifest reproducibility: PASS
+PASS test_original_forms_568h.js :: original 568h forms contract PASS
+PASS test_p21_scene_upgrade_integration.js :: P21 native SceneUpgrade integration: PASS
+PASS test_p22_native_defense.js :: P22 native form_defense: PASS
+PASS test_p23_native_pause.js :: P23 native form_pause: PASS
+PASS test_player_infinite_resources.js :: PASS player infinite medals/badges + non-consuming battle consumables
+PASS test_player_overrides.js :: player_general_overrides 0.61 tests: PASS
+PASS test_player_princess_overrides.js :: player princess overrides PASS: all 8 unlocked; Lan/Victoria/Isabela only; no forced campaign turn-limit defeat
+PASS test_player_unit_rules.js :: player unit rules PASS: attack +4/+4 lives in combat_core; HP +120; movement +2; old +40 saves migrate by delta; AI unchanged
+PASS test_r14_runtime_contract.js :: r14 runtime contract PASS: SW navigation, phase/skip, camera clamp/semantic scale
+PASS test_reinforcement_safety.js :: reinforcement safety PASS {"copenhagenRaw4Round4":0,"positionHighByteEquals4":13,"frenchUnitsAlreadyDecoded":3,"raw31ConstantUnits":7407,"campaign4_03_action":1}
+PASS test_round_dialogues.js :: }
+PASS test_shop_itemstore_contract.js :: shared SceneShop contract PASS {"battleStores":151,"filledSlots":515,"sellerSlots":14,"buyerSlots":28,"hqConsumables":6}
+PASS test_stage_turn_limits.js :: stage turn limits PASS: 87/87 campaign BTLs, raw12>=raw13
+PASS test_tavern_contract.js :: tavern contract PASS {"battles":7,"taverns":38,"sample":5}
+PASS test_ui_contract.js :: ui/runtime contract PASS: pause save/load fire turn-limits country-turn-ledger r14

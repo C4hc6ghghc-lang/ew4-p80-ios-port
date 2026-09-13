@@ -1,0 +1,154 @@
+﻿<Texture name="army_lightinfantry.png" />
+<Images>
+    <Image name="21gun1.png" x="1" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="21gun2.png" x="12" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="22gun2.png" x="23" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--gun2.png" x="34" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="22衣服1.png" x="1" y="71" w="23" h="47" refx="0" refy="0" />
+    <Image name="24衣服1.png" x="25" y="71" w="23" h="43" refx="0" refy="0" />
+    <Image name="29衣服2.png" x="45" y="1" w="21" h="41" refx="0" refy="0" />
+    <Image name="29衣服1.png" x="67" y="1" w="23" h="40" refx="0" refy="0" />
+    <Image name="20衣服1.png" x="91" y="1" w="25" h="38" refx="0" refy="0" />
+    <Image name="25衣服1.png" x="67" y="42" w="24" h="37" refx="0" refy="0" />
+    <Image name="20drum3.png" x="92" y="40" w="33" h="35" refx="0" refy="0" />
+    <Image name="21drum3.png" x="49" y="80" w="33" h="35" refx="0" refy="0" />
+    <Image name="22drum3.png" x="92" y="76" w="33" h="35" refx="0" refy="0" />
+    <Image name="23drum3.png" x="1" y="119" w="34" h="35" refx="0" refy="0" />
+    <Image name="24drum3.png" x="36" y="116" w="33" h="35" refx="0" refy="0" />
+    <Image name="25drum3.png" x="1" y="155" w="33" h="35" refx="0" refy="0" />
+    <Image name="26drum3.png" x="83" y="112" w="33" h="35" refx="0" refy="0" />
+    <Image name="27drum3.png" x="35" y="155" w="33" h="35" refx="0" refy="0" />
+    <Image name="23衣服1.png" x="1" y="191" w="24" h="33" refx="0" refy="0" />
+    <Image name="27衣服1.png" x="70" y="148" w="24" h="33" refx="0" refy="0" />
+    <Image name="26衣服1.png" x="26" y="191" w="22" h="31" refx="0" refy="0" />
+    <Image name="28drum3.png" x="69" y="182" w="34" h="31" refx="0" refy="0" />
+    <Image name="29右小腿1.png" x="117" y="1" w="9" h="28" refx="0" refy="0" />
+    <Image name="29左小腿1 .png" x="70" y="116" w="9" h="28" refx="0" refy="0" />
+    <Image name="2110_10_BritainLine Infantry --9left calf1.png" x="45" y="43" w="8" h="27" refx="0" refy="0" />
+    <Image name="2110_10_BritainLine Infantry --9Right calf1.png" x="54" y="43" w="8" h="27" refx="0" refy="0" />
+    <Image name="21衣服1.png" x="1" y="225" w="23" h="27" refx="0" refy="0" />
+    <Image name="2210_10_BritainLine Infantry --9left calf1.png" x="83" y="80" w="8" h="27" refx="0" refy="0" />
+    <Image name="2410_10_BritainLine Infantry --9left calf1.png" x="117" y="112" w="8" h="27" refx="0" refy="0" />
+    <Image name="2510_10_BritainLine Infantry --9left calf1.png" x="49" y="191" w="8" h="27" refx="0" refy="0" />
+    <Image name="2510_10_BritainLine Infantry --9Right calf1.png" x="26" y="223" w="8" h="27" refx="0" refy="0" />
+    <Image name="2810_10_BritainLine Infantry --9left calf1.png" x="95" y="148" w="12" h="27" refx="0" refy="0" />
+    <Image name="2810_10_BritainLine Infantry --9Right calf1.png" x="58" y="214" w="12" h="27" refx="0" refy="0" />
+    <Image name="28衣服1.png" x="108" y="148" w="17" h="27" refx="0" refy="0" />
+    <Image name="29脸1.png" x="35" y="223" w="18" h="27" refx="0" refy="0" />
+    <Image name="29左大腿1.png" x="104" y="176" w="10" h="24" refx="0" refy="0" />
+    <Image name="5_5_Austria militia--5_Austria militia--Britain militia--left thigh1.png" x="71" y="214" w="11" h="24" refx="0" refy="0" />
+    <Image name="5_5_Austria militia--5_Austria militia--Britain militia--Right thigh1.png" x="83" y="214" w="10" h="24" refx="0" refy="0" />
+    <Image name="drum1.png" x="104" y="201" w="15" h="22" refx="0" refy="0" />
+    <Image name="21帽子1.png" x="94" y="224" w="13" h="21" refx="0" refy="0" />
+    <Image name="shadow.png" x="127" y="1" w="36" h="19" refx="0" refy="0" />
+    <Image name="23帽子1.png" x="127" y="21" w="11" h="18" refx="0" refy="0" />
+    <Image name="20左上袖子1.png" x="139" y="21" w="7" h="17" refx="0" refy="0" />
+    <Image name="20帽子1.png" x="126" y="40" w="11" h="17" refx="0" refy="0" />
+    <Image name="21左上袖子1.png" x="164" y="1" w="7" h="17" refx="0" refy="0" />
+    <Image name="22left arm Upper1.png" x="172" y="1" w="8" h="17" refx="0" refy="0" />
+    <Image name="22左上袖子1.png" x="181" y="1" w="7" h="17" refx="0" refy="0" />
+    <Image name="23eft arm Upper1.png" x="164" y="19" w="8" h="17" refx="0" refy="0" />
+    <Image name="23左上袖子1.png" x="138" y="40" w="7" h="17" refx="0" refy="0" />
+    <Image name="24left arm Upper1.png" x="146" y="39" w="8" h="17" refx="0" refy="0" />
+    <Image name="24左上袖子1.png" x="126" y="58" w="7" h="17" refx="0" refy="0" />
+    <Image name="20eft arm Upper1.png" x="147" y="21" w="8" h="16" refx="0" refy="0" />
+    <Image name="20右下袖子1.png" x="126" y="76" w="8" h="16" refx="0" refy="0" />
+    <Image name="23右下袖子1.png" x="134" y="58" w="8" h="16" refx="0" refy="0" />
+    <Image name="24右下袖子1.png" x="155" y="38" w="8" h="16" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--hip1.png" x="173" y="19" w="15" h="12" refx="0" refy="0" />
+    <Image name="20左下袖子1.png" x="164" y="37" w="10" h="15" refx="0" refy="0" />
+    <Image name="2110_10_BritainLine Infantry --9Right calf2.png" x="189" y="1" w="38" h="11" refx="0" refy="0" />
+    <Image name="21left arm Upper1.png" x="189" y="13" w="8" h="16" refx="0" refy="0" />
+    <Image name="21右下袖子1.png" x="198" y="13" w="8" h="15" refx="0" refy="0" />
+    <Image name="21左下袖子1.png" x="175" y="32" w="10" h="15" refx="0" refy="0" />
+    <Image name="22右下袖子1.png" x="155" y="55" w="8" h="15" refx="0" refy="0" />
+    <Image name="22左下袖子1.png" x="143" y="58" w="10" h="15" refx="0" refy="0" />
+    <Image name="23左下袖子1.png" x="135" y="75" w="10" h="15" refx="0" refy="0" />
+    <Image name="2510_10_BritainLine Infantry --9Right calf2.png" x="146" y="74" w="38" h="11" refx="0" refy="0" />
+    <Image name="2610_10_BritainLine Infantry --9left calf1.png" x="186" y="32" w="8" h="27" refx="0" refy="0" />
+    <Image name="2610_10_BritainLine Infantry --9Right calf1.png" x="207" y="13" w="8" h="27" refx="0" refy="0" />
+    <Image name="2710_10_BritainLine Infantry --9left calf1.png" x="126" y="93" w="8" h="27" refx="0" refy="0" />
+    <Image name="2710_10_BritainLine Infantry --9Right calf1.png" x="135" y="91" w="8" h="27" refx="0" refy="0" />
+    <Image name="29右大腿1.png" x="144" y="91" w="11" h="25" refx="0" refy="0" />
+    <Image name="255_Austria militia--Britain militia--left thigh1.png" x="216" y="13" w="11" h="24" refx="0" refy="0" />
+    <Image name="255_Austria militia--Britain militia--Right thigh1.png" x="175" y="48" w="10" h="24" refx="0" refy="0" />
+    <Image name="265_Austria militia--Britain militia--left thigh1.png" x="195" y="30" w="11" h="24" refx="0" refy="0" />
+    <Image name="265_Austria militia--Britain militia--Right thigh1.png" x="228" y="1" w="10" h="24" refx="0" refy="0" />
+    <Image name="275_Austria militia--Britain militia--left thigh1.png" x="239" y="1" w="11" h="24" refx="0" refy="0" />
+    <Image name="275_Austria militia--Britain militia--Right thigh1.png" x="228" y="26" w="10" h="24" refx="0" refy="0" />
+    <Image name="26drum1.png" x="239" y="26" w="16" h="23" refx="0" refy="0" />
+    <Image name="25帽子1.png" x="195" y="55" w="15" h="21" refx="0" refy="0" />
+    <Image name="26左上袖子1.png" x="164" y="53" w="7" h="17" refx="0" refy="0" />
+    <Image name="27左上袖子1.png" x="211" y="41" w="7" h="17" refx="0" refy="0" />
+    <Image name="28左上袖子1.png" x="219" y="38" w="7" h="17" refx="0" refy="0" />
+    <Image name="29左上袖子1.png" x="211" y="59" w="7" h="17" refx="0" refy="0" />
+    <Image name="25eft arm Upper1.png" x="156" y="86" w="8" h="16" refx="0" refy="0" />
+    <Image name="25右下袖子1.png" x="165" y="86" w="8" h="16" refx="0" refy="0" />
+    <Image name="25左上袖子1.png" x="156" y="21" w="7" h="16" refx="0" refy="0" />
+    <Image name="26eft arm Upper1.png" x="174" y="86" w="8" h="16" refx="0" refy="0" />
+    <Image name="26右下袖子1.png" x="183" y="86" w="8" h="16" refx="0" refy="0" />
+    <Image name="27eft arm Upper1.png" x="156" y="103" w="8" h="16" refx="0" refy="0" />
+    <Image name="27右下袖子1.png" x="165" y="103" w="8" h="16" refx="0" refy="0" />
+    <Image name="29右上手臂1.png" x="144" y="117" w="8" h="16" refx="0" refy="0" />
+    <Image name="251_1_Britain militia--hip1.png" x="126" y="121" w="15" h="12" refx="0" refy="0" />
+    <Image name="25左下袖子1.png" x="126" y="134" w="10" h="15" refx="0" refy="0" />
+    <Image name="261_1_Britain militia--hip1.png" x="137" y="134" w="15" h="12" refx="0" refy="0" />
+    <Image name="2610_10_BritainLine Infantry --9Right calf2.png" x="126" y="150" w="38" h="11" refx="0" refy="0" />
+    <Image name="26左下袖子1.png" x="153" y="120" w="10" h="15" refx="0" refy="0" />
+    <Image name="271_1_Britain militia--hip1.png" x="219" y="56" w="15" h="12" refx="0" refy="0" />
+    <Image name="27左下袖子1.png" x="192" y="77" w="10" h="15" refx="0" refy="0" />
+    <Image name="27帽子1.png" x="203" y="77" w="14" h="15" refx="0" refy="0" />
+    <Image name="2810_10_BritainLine Infantry --9Right calf2.png" x="174" y="103" w="39" h="14" refx="0" refy="0" />
+    <Image name="285_Austria militia--Britain militia--Right thigh1.png" x="174" y="118" w="11" h="24" refx="0" refy="0" />
+    <Image name="28left arm Upper1.png" x="58" y="191" w="8" h="17" refx="0" refy="0" />
+    <Image name="28右下袖子1.png" x="186" y="60" w="8" h="16" refx="0" refy="0" />
+    <Image name="28左下袖子1.png" x="218" y="77" w="10" h="15" refx="0" refy="0" />
+    <Image name="29左下袖子1.png" x="235" y="51" w="10" h="15" refx="0" refy="0" />
+    <Image name="29右下袖子1.png" x="246" y="50" w="8" h="14" refx="0" refy="0" />
+    <Image name="26帽子1.png" x="54" y="242" w="11" h="10" refx="0" refy="0" />
+    <Image name="2710_10_BritainLine Infantry --9Right calf2.png" x="126" y="162" w="38" h="11" refx="0" refy="0" />
+    <Image name="29左小腿2.png" x="115" y="176" w="38" h="11" refx="0" refy="0" />
+    <Image name="drum2.png" x="63" y="43" w="1" h="12" refx="0" refy="0" />
+    <Image name="14_14_face1.png" x="117" y="30" w="9" h="9" refx="0" refy="0" />
+    <Image name="right foot1.png" x="49" y="71" w="9" h="8" refx="0" refy="0" />
+    <Image name="28right foot1.png" x="192" y="93" w="11" h="8" refx="0" refy="0" />
+    <Image name="28帽子1.png" x="219" y="69" w="11" h="7" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--left foot1.png" x="153" y="136" w="11" h="6" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--right foot1.png" x="71" y="239" w="11" h="8" refx="0" refy="0" />
+    <Image name="28left foot1.png" x="153" y="143" w="12" h="6" refx="0" refy="0" />
+    <Image name="21left hand 3.png" x="231" y="69" w="13" h="9" refx="0" refy="0" />
+    <Image name="22left hand 3.png" x="204" y="93" w="13" h="9" refx="0" refy="0" />
+    <Image name="22帽子1.png" x="115" y="188" w="15" h="10" refx="0" refy="0" />
+    <Image name="2210_10_BritainLine Infantry --9Right calf2.png" x="186" y="118" w="38" h="11" refx="0" refy="0" />
+    <Image name="222110_10_BritainLine Infantry --9Right calf1.png" x="186" y="130" w="8" h="27" refx="0" refy="0" />
+    <Image name="225_Austria militia--Britain militia--left thigh1.png" x="131" y="188" w="11" h="24" refx="0" refy="0" />
+    <Image name="225_Austria militia--Britain militia--Right thigh1.png" x="218" y="93" w="10" h="24" refx="0" refy="0" />
+    <Image name="221_1_Britain militia--hip1.png" x="229" y="79" w="15" h="12" refx="0" refy="0" />
+    <Image name="2410_10_BritainLine Infantry --9Right calf2.png" x="143" y="188" w="38" h="11" refx="0" refy="0" />
+    <Image name="242110_10_BritainLine Infantry --9Right calf1.png" x="229" y="92" w="8" h="27" refx="0" refy="0" />
+    <Image name="245_Austria militia--Britain militia--Right thigh1.png" x="245" y="67" w="10" h="24" refx="0" refy="0" />
+    <Image name="24左下袖子1.png" x="83" y="239" w="10" h="15" refx="0" refy="0" />
+    <Image name="24帽子1.png" x="166" y="143" w="10" h="13" refx="0" refy="0" />
+    <Image name="22right hand1.png" x="59" y="71" w="7" h="6" refx="0" refy="0" />
+    <Image name="29手6.png" x="117" y="140" w="6" h="7" refx="0" refy="0" />
+    <Image name="right hand1.png" x="164" y="120" w="7" h="6" refx="0" refy="0" />
+    <Image name="21left hand2.png" x="164" y="127" w="9" h="5" refx="0" refy="0" />
+    <Image name="left foot1.png" x="94" y="246" w="12" h="6" refx="0" refy="0" />
+    <Image name="21right hand4.png" x="165" y="157" w="16" h="6" refx="0" refy="0" />
+    <Image name="22手1.png" x="185" y="77" w="5" h="7" refx="0" refy="0" />
+    <Image name="22手2.png" x="94" y="214" w="5" h="7" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--left hand1.png" x="251" y="1" w="4" h="7" refx="0" refy="0" />
+    <Image name="印第安手1.png" x="66" y="248" w="6" h="7" refx="0" refy="0" />
+    <Image name="印第安手2.png" x="120" y="199" w="6" h="7" refx="0" refy="0" />
+    <Image name="印第安手3.png" x="177" y="143" w="6" h="7" refx="0" refy="0" />
+    <Image name="印第安手4.png" x="120" y="207" w="6" h="7" refx="0" refy="0" />
+    <Image name="手1.png" x="73" y="248" w="5" h="7" refx="0" refy="0" />
+    <Image name="手2.png" x="165" y="164" w="5" h="7" refx="0" refy="0" />
+    <Image name="22right hand3.png" x="165" y="133" w="6" h="6" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--right hand1.png" x="171" y="164" w="7" h="6" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--right hand3.png" x="165" y="172" w="7" h="7" refx="0" refy="0" />
+    <Image name="right hand3.png" x="120" y="215" w="6" h="6" refx="0" refy="0" />
+    <Image name="22left hand2.png" x="238" y="92" w="9" h="5" refx="0" refy="0" />
+    <Image name="290_0_Britain militia--left hand2.png" x="238" y="98" w="9" h="5" refx="0" refy="0" />
+    <Image name="22right hand4.png" x="195" y="130" w="16" h="6" refx="0" refy="0" />
+</Images>

@@ -1,0 +1,13 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('sw.js','utf8');
+for(const n of ['function renderNativeStageIntro','function openNativeStageIntro','function resetNativeStageIntro','function closeNativeStageIntro','function beginNativeCampaignBattleAfterIntro'])assert(app.includes(n),n);
+assert(app.includes("playNativeFormOpenSfx('form_stageintro')"));
+assert(app.includes("!restored&&mode==='campaign'"),'StageIntro must only auto-open for fresh campaign SceneGame');
+assert(app.includes('openNativeStageIntro(b,beginNativeCampaignBattleAfterIntro)'),'fresh campaign must gate first-round dialogue/autosave behind StageIntro');
+assert(app.includes('async function openBattle(b,mapOverride,opts={}){\n  resetNativeStageIntro();'),'new battle/load/restart must clear stale StageIntro without running continuation');
+assert(app.includes("set('stageintro-win',lim.valid?lim.win:0)")&&app.includes("set('stageintro-best',lim.valid?lim.best:0)"),'victory/best round values reversed or missing');
+for(const id of ['stageintro-overlay','stageintro-panel','stageintro-close','stageintro-title','stageintro-portrait','stageintro-commander-name','stageintro-desc','stageintro-win','stageintro-best','stageintro-flower'])assert(html.includes(`id="${id}"`),id);
+assert(html.includes('#stageintro-panel{position:absolute;left:104px;top:50px;width:360px;height:219px'),'original 360x219 geometry missing');
+for(const x of ['pattern_stage_intro.png','common_lineframe.png','Board_generalinfomarker.png','general_nameboard.png'])assert(sw.includes(x),`StageIntro offline asset missing ${x}`);
+assert(/posthandoff(?:20-stageintro|21-upgrade|[2-9][2-9]|30-final-pass)/.test(sw),'P20 or later cache generation required');
+console.log('P20 native SceneStageIntro: PASS');

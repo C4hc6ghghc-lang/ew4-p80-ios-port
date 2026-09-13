@@ -1,0 +1,133 @@
+{
+  "version": 61,
+  "scope": "player_controlled_only",
+  "global": {
+    "rankMaxLevel": 14,
+    "nobilityMaxLevel": 9,
+    "rankHpBonusCap": 500,
+    "nobilityHealCap": 25,
+    "movementOverridesMayExceedOriginalCap": true
+  },
+  "generals": {
+    "1": {
+      "name": "Napoleon",
+      "stats": {
+        "infantry": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        8,
+        1,
+        31,
+        5,
+        7,
+        32,
+        4,
+        3
+      ],
+      "rankHpBonusCap": 1000,
+      "nobilityHealCap": 100
+    },
+    "2": {
+      "name": "Davout",
+      "stats": {
+        "cavalry": 5,
+        "artillery": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        10,
+        11,
+        3,
+        32
+      ]
+    },
+    "5": {
+      "name": "Lannes",
+      "stats": {
+        "cavalry": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        12,
+        13,
+        14,
+        3,
+        4,
+        1,
+        32
+      ]
+    },
+    "10": {
+      "name": "Massena",
+      "stats": {
+        "cavalry": 5,
+        "artillery": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        12,
+        14,
+        15,
+        33,
+        5,
+        6,
+        7,
+        8,
+        35,
+        9,
+        11,
+        34,
+        31
+      ]
+    },
+    "11": {
+      "name": "Suchet",
+      "stats": {
+        "infantry": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        12,
+        14,
+        15,
+        33,
+        9,
+        10,
+        34,
+        31
+      ]
+    },
+    "26": {
+      "name": "Soult",
+      "stats": {
+        "infantry": 5,
+        "artillery": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        3,
+        13,
+        14,
+        1,
+        32
+      ]
+    },
+    "30": {
+      "name": "Murat",
+      "stats": {
+        "cavalry": 5,
+        "artillery": 5,
+        "movement": 7
+      },
+      "addSkills": [
+        1,
+        32,
+        9,
+        10,
+        11,
+        3
+      ]
+    }
+  }
+}

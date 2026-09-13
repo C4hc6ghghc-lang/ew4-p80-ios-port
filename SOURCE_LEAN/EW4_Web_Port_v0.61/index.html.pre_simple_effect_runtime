@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+<meta name="theme-color" content="#111820" />
+<link rel="manifest" href="manifest.webmanifest" />
+<title>欧陆战争 IV Web Port v0.61</title>
+<style>
+  :root{--vw:568;--vh:320}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+  html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#05080a;font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:#fff}
+  body{display:flex;align-items:center;justify-content:center}
+  #shell{position:relative;width:100vw;height:100vh;overflow:hidden;background:#05080a}
+  #stage{position:absolute;left:50%;top:50%;width:568px;height:320px;transform-origin:center center;overflow:hidden;background:#151a18;box-shadow:0 0 0 1px #000,0 16px 50px #000b}
+  .screen{position:absolute;inset:0;display:none;overflow:hidden}.screen.active{display:block}
+  .fullbg{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+  button{font:inherit;color:inherit;border:0;background:transparent;padding:0;cursor:pointer}
+  .imgbtn{position:absolute;background-size:100% 100%;background-repeat:no-repeat;filter:drop-shadow(0 1px 1px #0008)}
+  .imgbtn:active{transform:translateY(1px);filter:brightness(.88) drop-shadow(0 1px 1px #0008)}
+  .mainbtn{position:absolute;left:402px;width:134px;height:33px;background:url('assets/sprites/image_ui_hd/button_mainmenu.png') center/134px 33px no-repeat;color:#f4eee0;text-shadow:0 1px 2px #000;font-size:16px;font-weight:700;letter-spacing:3px;text-align:center}
+  .mainbtn:active{filter:brightness(.8)}
+  #main-title{position:absolute;left:10px;top:7px;width:380px;height:96px;object-fit:contain;object-position:left top}
+  .titlebar{position:absolute;left:0;top:0;width:568px;height:28px;background:linear-gradient(#1b2424e8,#0b1111e8);box-shadow:0 1px 4px #0008;z-index:20;text-align:center;font-weight:700;font-size:15px;line-height:28px;text-shadow:0 1px #000}
+  .back{position:absolute;left:3px;top:1px;width:31px;height:26px;background:url('assets/sprites/image_ui_hd/button_back.png') center/100% 100% no-repeat;z-index:30}
+  .campaign-pin{position:absolute;width:54px;height:62px;background-size:54px 62px;background-repeat:no-repeat;z-index:5}
+  .campaign-pin:active{transform:scale(.94)}
+  .conq-card{position:absolute;width:222px;height:83px;background-size:221px 83px;background-repeat:no-repeat;box-shadow:4px 5px 7px #0007;border-radius:2px;overflow:hidden}
+  .conq-card:active{filter:brightness(.86)}
+  .conq-loc{position:absolute;left:15px;top:46px;height:12px;object-fit:contain;object-position:left center}
+  .conq-year{position:absolute;top:47px;height:11px;object-fit:contain}
+  .conq-line{position:absolute;left:15px;top:61px;width:180px;height:2px;opacity:.85}
+  .conq-country{position:absolute;left:15px;top:65px;font-size:8px;color:#eee;text-shadow:0 1px #000;white-space:nowrap}
+  .campaign-list-bg{position:absolute;right:0;top:25px;width:171px;height:270px;background:rgba(232,228,218,.88);border-left:1px solid #898b88;box-shadow:-3px 0 8px #0004;z-index:8}
+  #battle-list{position:absolute;right:0;top:25px;width:171px;height:270px;overflow-y:auto;padding:0 0 26px;scrollbar-width:none;z-index:10}
+  #battle-list::-webkit-scrollbar{display:none}
+  .battle-row{position:relative;width:164px;height:45px;margin:0 0 0 7px;padding:0 35px 0 28px;background-position:center;background-size:164px 45px;background-repeat:no-repeat;color:#55514c;font-size:8px;font-weight:700;text-shadow:0 1px #fff9;text-align:left;overflow:hidden}
+  .battle-row .stage-no{position:absolute;left:8px;top:14px;width:12px;text-align:center;color:#76736e;font-size:7px}.battle-row .stage-name{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:45px}.battle-row .stage-stars{position:absolute;right:7px;bottom:4px;height:10px;display:flex;gap:1px}.battle-row .stage-stars i{display:block;width:9px;height:9px;background:url('assets/sprites/image_ui_hd/star_campaign_gray.png') center/9px 9px no-repeat}.battle-row .stage-stars i.on{background-image:url('assets/sprites/image_ui_hd/star_campaign.png')}
+  .battle-row.sel{filter:brightness(1.08) saturate(1.18)}.battle-row.sel::before{content:'';position:absolute;left:0;top:0;width:10px;height:45px;background:url('assets/sprites/image_menu_hd/choosestage_back.png') left center/132px 45px no-repeat;opacity:.95}
+  .battle-row.locked{opacity:.9;filter:grayscale(.5) brightness(.93)}.battle-row.locked .stage-name,.battle-row.locked .stage-no,.battle-row.locked .stage-stars{opacity:.35}.battle-row.locked::after{content:'';position:absolute;right:9px;top:12px;width:20px;height:20px;background:url('assets/sprites/image_ui_hd/button_lock.png') center/20px 20px no-repeat}.battle-row:disabled{cursor:default}
+  .campaign-stage-caption{position:absolute;left:13px;top:34px;width:370px;height:20px;color:#f5ead7;font-size:11px;font-weight:700;text-shadow:0 1px 3px #000;z-index:11}
+  .campaign-stage-caption small{font-size:7px;font-weight:400;margin-left:8px;color:#e2d7c6}
+  .intro{position:absolute;left:166px;top:225px;width:248px;height:81px;z-index:12}
+  .intro-board{position:absolute;inset:0;background:linear-gradient(90deg,#efe9dfef,#ded7ccef);border:1px solid #8b8378;box-shadow:0 2px 6px #0007}
+  .intro-pattern{position:absolute;left:58px;right:6px;top:5px;height:8px;background:url('assets/sprites/image_ui_hd/pattern_stage_intro.png') left center/63px 36px repeat-x;opacity:.28}
+  #intro-portrait{position:absolute;left:-48px;bottom:0;width:55px;height:67px;object-fit:cover;object-position:top center;filter:drop-shadow(0 2px 2px #0008);display:none}
+  #intro-title{position:absolute;left:9px;top:7px;width:226px;color:#4e473e;font-size:9px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #intro-text{position:absolute;left:9px;top:22px;width:228px;height:52px;overflow:hidden;color:#514b42;font-size:7px;line-height:1.38;text-shadow:0 1px #fff6}
+  .confirm{position:absolute;left:420px;top:288px;width:80px;height:23px;background:url('assets/sprites/image_ui_hd/new_confirm.png') center/80px 23px no-repeat;color:#f8f0d6;text-shadow:0 1px #000;font-weight:700;font-size:10px;z-index:12}
+  .confirm:disabled{filter:grayscale(1) brightness(.7);opacity:.65}
+  .hud{position:absolute;inset:0;pointer-events:none;z-index:30}.hud button{pointer-events:auto}
+  .resource-board{display:none}
+  .res{position:absolute;top:3px;width:31px;height:14px;padding:0;background:none;font-size:7px;font-weight:700;color:#f2ead4;text-shadow:0 1px 2px #000,0 0 2px #000;white-space:nowrap;line-height:14px}.res img{width:9px;height:9px;vertical-align:-1px;margin-right:2px;filter:drop-shadow(0 1px 1px #000)}
+  .hud-icon{position:absolute;width:30px;height:30px;background-size:30px 30px;background-repeat:no-repeat;filter:drop-shadow(0 1px 1px #0009);opacity:.96}.hud-icon:active{transform:scale(.94)}#battle-pause{left:535px!important;top:2px!important;width:27px;height:27px;background-size:27px 27px}#battle-back{left:4px!important;top:286px!important}#round-btn{left:534px!important;top:285px!important;width:31px;height:31px;background-size:31px 31px}
+  #battle-map{position:absolute;inset:0;overflow:hidden;background:#4c718e;touch-action:none}
+  #battle-canvas{position:absolute;inset:0;width:568px;height:320px;touch-action:none}
+  .battle-note{display:none}
+  #unit-card{position:absolute;left:158px;top:64px;width:252px;min-height:112px;padding:14px 15px 12px;background:linear-gradient(#eee6d6f5,#cfc1a5f5);border:1px solid #6f6251;color:#443b30;z-index:80;font-size:8px;line-height:1.45;display:none;box-shadow:0 5px 14px #000a,inset 0 0 0 1px #f7f0df99}
+  #unit-card b{color:#554b3a;font-size:10px}
+  #unit-card .unit-eq{margin-top:5px;padding-top:4px;border-top:1px solid #a69d8d;color:#665d4f}.unit-eq img{width:20px;height:20px;object-fit:contain;vertical-align:middle;margin-right:3px}
+  .battle-general-wrap{display:grid;grid-template-columns:62px 1fr;gap:8px;align-items:start}.battle-general-wrap .portrait{width:58px;height:67px;object-fit:cover;border:1px solid #8b8172}.battle-general-name{font-size:10px;font-weight:700}.battle-general-stars{color:#bb8c23;font-size:8px;letter-spacing:-1px}.battle-general-stats{margin-top:4px;line-height:1.45}.battle-general-skills{margin-top:5px;padding-top:4px;border-top:1px solid #a69d8d}.battle-general-eq{margin-top:4px;color:#665d4f}.battle-general-eq img{width:20px;height:20px;object-fit:contain;vertical-align:middle}
+  #turn-label{display:none}
+  #battle-actions{position:absolute;left:50%;bottom:2px;transform:translateX(-50%);height:34px;display:none;gap:1px;align-items:flex-end;z-index:55;pointer-events:auto}
+  #battle-actions.show{display:flex}.battle-action-btn{width:32px;height:33px;background-position:center;background-size:32px 33px;background-repeat:no-repeat;filter:drop-shadow(0 1px 1px #000b);transform-origin:center bottom}.battle-action-btn:active{transform:translateY(1px) scale(.95)}.battle-action-btn:disabled{opacity:.38;filter:grayscale(.45) drop-shadow(0 1px 1px #0008)}
+  #battle-action-menu{position:absolute;left:170px;bottom:42px;width:228px;min-height:46px;padding:7px;background:linear-gradient(#efe9dd,#d3c9b8);border:1px solid #746d61;box-shadow:0 4px 12px #0008;color:#4a4338;z-index:79;display:none;font-size:8px}
+  #battle-action-menu.show{display:block}.battle-menu-row{display:flex;gap:5px}.battle-menu-choice{flex:1;min-height:31px;background:#ded6c7;border:1px solid #8f8576;color:#4a4338;font-size:7px;padding:3px}.battle-menu-choice:disabled{opacity:.4}
+  #commerce-panel{position:absolute;left:82px;top:39px;width:404px;height:238px;z-index:92;display:none;box-sizing:border-box;color:#40372b;padding:33px 15px 12px;background:linear-gradient(#efe7d6,#c8b99b);border:2px solid #6c604d;box-shadow:inset 0 0 0 1px #f8f0df,0 8px 22px #000b}
+  #commerce-panel:before{content:"";position:absolute;left:11px;right:11px;top:27px;height:1px;background:url('assets/sprites/image_ui_hd/common_line_hor.png') center/100% 1px no-repeat;opacity:.85}
+  #commerce-panel.show{display:block}.commerce-title{position:absolute;left:44px;right:44px;top:5px;text-align:center;font-size:11px;font-weight:700;line-height:22px;color:#4a4032;text-shadow:0 1px #fff8}.commerce-close{position:absolute;right:-7px;top:-7px;width:25px;height:25px;border:0;background:url('assets/sprites/image_ui_hd/button_close.png') center/100% 100% no-repeat;color:transparent;padding:0;z-index:4}.commerce-rate{height:17px;text-align:center;font-size:7px;line-height:17px;color:#5a4d3c;margin:0 0 4px}.commerce-columns{display:grid;grid-template-columns:1fr 1fr;gap:9px;height:174px}.commerce-group{position:relative;background:linear-gradient(#d9cdb6,#b9a789);border:1px solid #88775d;box-shadow:inset 0 0 0 1px #eaddc5;padding:19px 6px 5px}.commerce-group h4{position:absolute;left:4px;right:4px;top:2px;margin:0;text-align:center;font-size:8px;line-height:14px;color:#4c4031}.commerce-choice{display:block;width:100%;height:34px;margin:3px 0;border:0;background:url('assets/sprites/image_ui_hd/board_buttons.png') center/100% 100% no-repeat;color:#f7edd8;text-shadow:0 1px 2px #000;font-size:6.6px;text-align:center;padding:0 5px}.commerce-choice:disabled{filter:grayscale(1);opacity:.46}.commerce-note{display:none}.shop-grid{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(2,1fr);gap:5px;height:168px;margin-top:2px}.shop-slot{position:relative;min-width:0;background:linear-gradient(#d8ccb5,#b7a487);border:1px solid #7d6c54;box-shadow:inset 0 0 0 1px #eadfc8;color:#3d3429;padding:3px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:6px}.shop-slot:after{content:"";position:absolute;inset:2px;border:1px solid #6c5f4b55;pointer-events:none}.shop-slot img{width:31px;height:31px;object-fit:contain;filter:drop-shadow(0 1px 1px #0005)}.shop-slot b{font-size:5.7px;line-height:1.05;max-width:45px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.shop-slot small{font-size:5.3px;color:#6a2f1d}.shop-slot.empty{opacity:.34;filter:grayscale(1)}.shop-empty{height:156px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:8px;color:#6d5b43}.tavern-grid{display:grid;grid-template-columns:repeat(4,58px);justify-content:center;gap:18px;margin-top:9px}.tavern-candidate{position:relative;width:58px;height:151px;border:0;background:url('assets/sprites/image_ui_hd/board_smallgenerals.png') top center/58px 79px no-repeat;color:#40372a;padding:5px 3px 3px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:2px}.tavern-candidate img{width:44px;height:44px;object-fit:cover;margin-top:4px;clip-path:inset(0 round 2px)}.tavern-candidate b{width:70px;margin-top:25px;font-size:6.5px;line-height:1.05;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tavern-candidate small{font-size:5.2px;line-height:1.1;text-align:center}.tavern-candidate:disabled{filter:grayscale(.85);opacity:.48}
+  #commerce-panel[data-mode="shop"] .commerce-title:before{content:"";display:inline-block;width:20px;height:18px;margin-right:4px;vertical-align:-5px;background:url('assets/sprites/image_ui_hd/image_shop.png') center/contain no-repeat}
+  #commerce-panel[data-mode="market"] .commerce-title:before{content:"";display:inline-block;width:20px;height:20px;margin-right:4px;vertical-align:-6px;background:url('assets/sprites/buildings_hd/marker_trade.png') center/contain no-repeat}
+  #commerce-panel[data-mode="tavern"] .commerce-title:before{content:"";display:inline-block;width:20px;height:20px;margin-right:4px;vertical-align:-6px;background:url('assets/sprites/buildings_hd/marker_bar.png') center/contain no-repeat}
+  .panel{position:absolute;left:54px;top:36px;width:460px;height:247px;background:linear-gradient(#d6c9a9,#b7a884);border:3px ridge #6c5a3b;box-shadow:0 8px 20px #000a;color:#30291e;padding:18px;text-align:center}
+  .panel h2{margin:4px 0 12px;font-size:20px}.panel p{font-size:11px;line-height:1.6;margin:7px 0}.panel .big{font-size:21px;font-weight:800;color:#6e1e16}
+  .smallbtn{display:inline-block;margin:8px 4px;padding:7px 14px;border:2px outset #9d8558;background:#5b4930;color:#fff4d9;font-weight:700;font-size:12px}
+  #rotate-tip{display:none;position:absolute;inset:0;z-index:999;align-items:center;justify-content:center;text-align:center;background:#05080aee;color:#e7d6a4;font-size:14px;padding:32px;pointer-events:none}
+  #status{position:absolute;left:7px;top:292px;z-index:99;color:#f1e7cc;font-size:8px;text-shadow:0 1px 2px #000;background:#0008;padding:3px 5px;display:none}
+
+  /* Original EW4 pause / save-load runtime */
+  #battle-modal-shade{position:absolute;inset:0;z-index:210;background:#0008;display:none}
+  #battle-modal-shade.show{display:block}
+  .ew4-window{position:absolute;background:linear-gradient(#eee6d4,#cbbd9e);border:2px solid #6e624f;box-shadow:0 7px 20px #000b;color:#40382c;z-index:220}
+  .ew4-window-title{position:absolute;left:0;right:0;top:4px;height:22px;text-align:center;font-size:12px;font-weight:700;line-height:22px;color:#4b4438;text-shadow:0 1px #fff9}
+  .ew4-close{position:absolute;right:-8px;top:-8px;width:25px;height:25px;background:url('assets/sprites/image_ui_hd/button_close.png') center/100% 100% no-repeat;z-index:4}
+  #pause-panel{left:201px;top:24px;width:166px;height:272px;display:none}
+  #pause-panel.show{display:block}
+  .pause-deco{position:absolute;top:40px;width:25px;height:8px;background:url('assets/sprites/image_ui_hd/pattern_save.png') center/50px 8px no-repeat}.pause-deco.l{left:23px}.pause-deco.r{right:23px;transform:scaleX(-1)}
+  .pause-round{position:absolute;left:38px;top:34px;width:90px;text-align:center;font-size:10px;color:#474139}.pause-line{position:absolute;left:20px;width:126px;height:1px;background:url('assets/sprites/image_ui_hd/common_line_hor.png') center/100% 1px no-repeat}
+  .pause-action{position:absolute;left:42px;width:83px;height:35px;background:url('assets/sprites/image_ui_hd/btn_common_blue.png') center/100% 100% no-repeat;color:#f7f1e1;text-shadow:0 1px #000;font-size:10px;font-weight:700}
+  #save-panel{left:108px;top:42px;width:352px;height:235px;display:none}
+  #save-panel.show{display:block}
+  #save-grid{position:absolute;inset:31px 3px 3px 3px}
+  .save-slot{position:absolute;width:114px;height:67px;border:1px solid #7b6b4e;background:linear-gradient(#e3d8bf,#baaa88);color:#443a2c;text-align:left;padding:25px 5px 4px;font-size:7px;overflow:hidden;box-shadow:inset 0 0 0 1px #f5ead3}
+  .save-slot.autosave{left:116px;top:57px;height:87px;background:linear-gradient(#d8d0be,#aaa18d)}
+  .save-slot .slot-title{position:absolute;left:0;right:0;top:0;height:23px;background:url('assets/sprites/image_ui_hd/general_nameboard.png') center/100% 100% no-repeat;color:#eee7d7;text-shadow:0 1px #000;text-align:center;line-height:21px;font-size:8px;font-weight:700}
+  .save-slot .slot-date{line-height:1.25;height:19px}.save-slot .slot-meta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#5b4f3d}
+  .save-slot button{position:absolute;right:2px;bottom:2px;width:30px;height:30px;background:url('assets/sprites/image_ui_hd/button_ok_gray_noshadow.png') center/100% 100% no-repeat}
+  .save-slot.empty{opacity:.76}.save-slot.empty .slot-meta{color:#887c68}
+  #save-mode-label{position:absolute;left:126px;top:26px;width:100px;text-align:center;font-size:8px;color:#665b49}
+  .save-load-launch{position:absolute;width:80px;height:23px;background:url('assets/sprites/image_ui_hd/button_load.png') center/100% 100% no-repeat;color:#eee4ce;text-shadow:0 1px #000;font-size:9px;font-weight:700;z-index:26}
+
+  /* v0.61 original-data runtime panels */
+  .woodpanel{position:absolute;background:linear-gradient(#d8c8a5ee,#a99670ee);border:2px ridge #6c5938;box-shadow:0 4px 12px #0009;color:#2d2519}
+  .scroll{overflow:auto;scrollbar-width:none}.scroll::-webkit-scrollbar{display:none}
+  .country-grid{position:absolute;left:42px;top:45px;width:484px;height:230px;display:grid;grid-template-columns:repeat(4,1fr);gap:7px;padding:8px}
+  .country-card{height:64px;background:linear-gradient(#3d443fef,#202622ef);border:1px solid #a28c5f;color:#f4ead3;text-shadow:0 1px #000;display:flex;align-items:center;gap:7px;padding:5px;text-align:left}
+  .country-card.sel{outline:2px solid #f4d477;background:linear-gradient(#6f6038ef,#302d23ef)}
+  .country-card img{width:36px;height:24px;object-fit:contain;image-rendering:auto}.country-card b{font-size:10px}.country-card small{font-size:7px;opacity:.8}
+  /* r14 deployment: closer to original EW4 prepare/deploy layout */
+  .deploy-wrap{position:absolute;left:34px;top:42px;width:500px;height:220px;background:#dedbd5;border:1px solid #6e6a64;box-shadow:0 3px 10px #0008;color:#3d3a35}
+  .deploy-pane{position:absolute;left:0;width:500px;background:#e8e5df;overflow:hidden;border:0;color:#45413c}.deploy-pane:first-child{top:0;height:105px}.deploy-pane:last-child{top:106px;height:114px;border-top:1px solid #b8b1a6}
+  .deploy-head{height:20px;line-height:20px;padding:0 9px;background:#343a39;color:#f1eee8;font-size:8px;font-weight:700;text-align:left;text-shadow:0 1px #000;border-bottom:1px solid #171a19}
+  .deploy-list{height:calc(100% - 20px);overflow-x:auto;overflow-y:hidden;padding:6px 8px;scrollbar-width:none;white-space:nowrap}.deploy-list::-webkit-scrollbar{display:none}
+  #deploy-units{display:flex;gap:8px;align-items:flex-start}
+  .deploy-unit{position:relative;flex:0 0 76px;height:72px;padding:0;background:transparent;border:0;color:#45413b;font-size:6.5px;text-align:center}
+  .deploy-unit .unit-frame{position:relative;width:58px;height:58px;margin:0 auto 2px;background:url('assets/sprites/image_ui_hd/board_smallgenerals.png') center/100% 100% no-repeat}
+  .deploy-unit .unit-frame img{position:absolute;left:7px;top:5px;width:44px;height:44px;object-fit:cover;border:0}
+  .deploy-unit .unit-frame .unit-placeholder{position:absolute;left:7px;top:5px;width:44px;height:44px;background:#b9b4aa url('assets/sprites/image_ui_hd/sample_smallgenerals.png') center/cover no-repeat;opacity:.65}
+  .deploy-unit.sel .unit-frame{filter:drop-shadow(0 0 2px #df8d1b)}
+  .deploy-unit b{display:block;font-size:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .deploy-unit .cmd{color:#7a582a;font-size:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .deploy-unit .slot-mark{position:absolute;right:5px;top:0;width:18px;height:18px;background:url('assets/sprites/image_ui_hd/button_changegeneral.png') center/100% 100% no-repeat;color:transparent}
+  .deploy-unit.sel .slot-mark{background-image:url('assets/sprites/image_ui_hd/button_changegeneral_gray.png')}
+  .general-grid{display:flex;gap:7px;align-items:flex-start;min-width:max-content}
+  .general-card{position:relative;flex:0 0 62px;height:82px;background:transparent;border:0;color:#47413a;text-align:center;padding:0;font-size:7px;overflow:visible}
+  .general-card .portrait-frame{position:relative;width:58px;height:58px;margin:0 auto 1px;background:url('assets/sprites/image_ui_hd/board_smallgenerals.png') center/100% 100% no-repeat}
+  .general-card .portrait-frame img{position:absolute;left:7px;top:5px;width:44px;height:44px;object-fit:cover}
+  .general-card.owned{border:0}.general-card.sel .portrait-frame{filter:drop-shadow(0 0 3px #dc8b1c)}
+  .general-card.used{opacity:.35}.general-card b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:7px}.stars{color:#b87917;letter-spacing:-1px;font-size:6px}
+  .deploy-actions{position:absolute;left:34px;right:34px;bottom:10px;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:8px;z-index:30}
+  .deploy-count{min-width:46px;height:25px;line-height:25px;text-align:center;font-size:8px;color:#403b34;background:url('assets/sprites/image_ui_hd/generalnumber.png') center/100% 100% no-repeat}
+  .orig-confirm{width:82px;height:32px;background:url('assets/sprites/image_ui_hd/button_confirm_green.png') center/100% 100% no-repeat;color:#f7ebca;text-shadow:0 1px #000;font-size:9px;font-weight:700}
+  #deploy-clear{width:76px;height:30px;background:url('assets/sprites/image_ui_hd/button_confirm_blue.png') center/100% 100% no-repeat;color:#eee4ce;text-shadow:0 1px #000;border:0}
+  .hq-toolbar{position:absolute;left:36px;top:35px;width:496px;height:30px;display:flex;gap:6px;align-items:center}.hq-toolbar .smallbtn{margin:0;padding:4px 10px;font-size:9px}.currency{margin-left:auto;color:#ffe5a5;background:#15130fcc;border:1px solid #8d774f;padding:4px 8px;font-size:9px}
+  #hq-grid{position:absolute;left:35px;top:70px;width:498px;height:232px;overflow:auto;display:grid;grid-template-columns:repeat(6,1fr);gap:5px;padding:5px;scrollbar-width:none}#hq-grid::-webkit-scrollbar{display:none}
+  .hq-card{height:101px;background:#2d2b26df;border:1px solid #7c6848;color:#eee;text-align:center;padding:3px;font-size:7px;position:relative}.hq-card img{width:58px;height:62px;object-fit:cover}.hq-card .ownmark{position:absolute;right:2px;top:2px;background:#466b3d;padding:1px 3px;color:#fff4bd}
+
+  /* Original form_getgeneraltips: layout-568h.xml 152x184, tcmder 36,42 78x98. */
+  #getgeneral-tips-shade{position:absolute;inset:0;z-index:330;background:#0007;display:none}
+  #getgeneral-tips-shade.show{display:block}
+  #getgeneral-tips{position:absolute;left:208px;top:68px;width:152px;height:184px;z-index:331;display:none;background:linear-gradient(#eee6d4,#cbbd9e);border:2px solid #6e624f;box-shadow:0 7px 20px #000b;color:#40382c}
+  #getgeneral-tips.show{display:block}
+  .getgeneral-tips-title{position:absolute;left:0;right:0;top:4px;height:22px;line-height:22px;text-align:center;font-size:10px;font-weight:700;color:#4b4438;text-shadow:0 1px #fff9}
+  .getgeneral-tips-cmd{position:absolute;left:36px;top:42px;width:78px;height:98px;background:url('assets/sprites/image_ui_hd/board_smallgenerals.png') top center/78px 98px no-repeat;text-align:center;overflow:hidden}
+  .getgeneral-tips-cmd img{position:absolute;left:9px;top:7px;width:60px;height:62px;object-fit:cover}
+  .getgeneral-tips-cmd b{position:absolute;left:2px;right:2px;bottom:5px;font-size:7px;line-height:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#433b31;text-shadow:0 1px #fff8}
+  .getgeneral-tips-split{position:absolute;left:0;right:0;top:153px;height:1px;background:url('assets/sprites/image_ui_hd/common_boldline.png') center/100% 1px no-repeat}
+  .getgeneral-tips-bottom{position:absolute;left:26px;top:160px;width:100px;height:18px;background:url('assets/sprites/image_ui_hd/pattern_gotgeneral.png') center/contain no-repeat}
+  #getgeneral-tips-ok{position:absolute;right:-10px;bottom:-10px;width:48px;height:28px;background:url('assets/sprites/image_ui_hd/button_confirm_green.png') center/100% 100% no-repeat;color:#f7ebca;text-shadow:0 1px #000;font-size:8px;font-weight:700}
+
+  /* r14-38: original EW4 form_getgeneral (Military Academy) geometry from layout-568h.xml */
+  #academy{color:#4d473f}
+  .academy-native-gray{position:absolute;left:0;top:93px;width:568px;height:152px;background:url('assets/sprites/image_ui_hd/gray_board.png') center/100% 100% no-repeat;opacity:.40;pointer-events:none}
+  .academy-native-frame{position:absolute;left:0;top:93px;width:568px;height:152px;background:url('assets/sprites/image_ui_hd/framebox_thin.png') center/100% 100% no-repeat;pointer-events:none}
+  .academy-tabs{position:absolute;left:51px;top:36px;width:463px;height:55px;display:block;z-index:5}
+  .academy-checkline{position:absolute;left:-5px;top:0;width:158px;height:58px;background:url('assets/sprites/image_ui_hd/button_lottery_generals.png') center/100% 100% no-repeat;pointer-events:none;transition:left .08s linear}
+  .academy-tab{position:absolute;top:0;width:152px;height:55px;background-size:152px 55px;background-position:center;background-repeat:no-repeat;border:0;outline:0;filter:none}
+  .academy-tab[data-pool="6"]{left:0}.academy-tab[data-pool="4"]{left:156px}.academy-tab[data-pool="2"]{left:312px}
+  .academy-deco{position:absolute;top:128px;width:72px;height:52px;background:url('assets/sprites/image_ui_hd/pattern_getgeneral_2_1.png') center/100% 100% no-repeat;pointer-events:none;opacity:.92;transform-origin:0 0}
+  .academy-deco.d1{left:110px;transform:scale(-.8,.8)}.academy-deco.d2{left:206px;transform:scale(.8)}.academy-deco.d3{left:362px;transform:scale(-.8,.8)}.academy-deco.d4{left:458px;transform:scale(.8)}
+  #academy-list{position:absolute;left:25px;top:110px;width:519px;height:98px;display:grid;grid-template-columns:repeat(6,78px);column-gap:10.2px;overflow:hidden;padding:0;background:transparent;border:0;z-index:8}
+  .academy-card{position:relative;width:78px;height:98px;padding:0;border:0;background:transparent;color:#f4f0e9;text-align:center;font-size:7px;overflow:visible}
+  .academy-card .academy-portrait{position:absolute;left:0;top:0;width:78px;height:78px;object-fit:cover;background:#77736b}
+  .academy-card .academy-name{position:absolute;left:0;bottom:0;width:78px;height:20px;line-height:18px;background:#6a6762;color:#f7f4ed;text-shadow:0 1px #000;font-family:Georgia,'Times New Roman',serif;font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .academy-card .academy-info{position:absolute;right:2px;top:2px;width:20px;height:20px;background:url('assets/sprites/image_ui_hd/button_generalinfo_blue.png') center/100% 100% no-repeat;z-index:3}
+  .academy-card.sel:after{content:'';position:absolute;inset:-2px -2px -2px -2px;background:url('assets/sprites/image_ui_hd/item_selected_ex.png') center/100% 100% no-repeat;pointer-events:none;z-index:4}
+  .academy-buy-pair{position:absolute;top:211px;width:115px;height:32px;display:none;z-index:11}
+  .academy-buy-pair.show{display:block}
+  .academy-buy{position:absolute;top:0;width:55px;height:32px;background-size:55px 32px;background-repeat:no-repeat;color:#f4efe5;text-shadow:0 1px #000;font-size:7px;line-height:32px;text-align:center;padding-left:11px}
+  #academy-buy-medal{left:0;background-image:url('assets/sprites/image_ui_hd/btn_common_green.png')}#academy-buy-badge{left:60px;background-image:url('assets/sprites/image_ui_hd/btn_common_red.png')}
+  .academy-buy img{position:absolute;left:6px;top:8px;width:11px;height:11px;object-fit:contain}.academy-buy:disabled{filter:grayscale(1);opacity:.52}
+  .academy-refresh{position:absolute;left:234px;top:257px;width:100px;height:40px;background:url('assets/sprites/image_ui_hd/btn_common_blue.png') center/100% 100% no-repeat;z-index:8}
+  .academy-refresh .r{position:absolute;top:12px;width:18px;height:18px;background:url('assets/sprites/image_ui_hd/button_refresh.png') center/contain no-repeat}.academy-refresh .r1{left:15px}.academy-refresh .r2{left:41px}.academy-refresh .r3{left:68px}
+  .academy-refresh .academy-refresh-percent{position:absolute;left:10px;top:9px;width:80px;height:22px;line-height:22px;text-align:center;background:url('assets/sprites/image_ui_hd/gray_board.png') center/100% 100% no-repeat;color:#4f4b43;font-size:8px;z-index:2}
+  .academy-bottom-left,.academy-bottom-right{position:absolute;top:265px;width:72px;height:52px;background:url('assets/sprites/image_ui_hd/pattern_getgeneral_2_1.png') center/100% 100% no-repeat;opacity:.8;transform-origin:0 0}.academy-bottom-left{left:220px;transform:scale(-.5,.5)}.academy-bottom-right{left:347px;transform:scale(.5)}
+  .academy-native-line{position:absolute;left:0;top:27px;width:568px;height:1px;background:url('assets/sprites/image_ui_hd/common_line_hor.png') center/100% 1px no-repeat}.academy-native-bottom{position:absolute;left:234px;top:303px;width:100px;height:17px;background:url('assets/sprites/image_ui_hd/pattern_bg_bottom.png') center/contain no-repeat}.academy-native-bottomline{position:absolute;left:0;top:316px;width:568px;height:4px;background:url('assets/sprites/image_ui_hd/common_boldline.png') center/100% 4px no-repeat;opacity:.75}
+  .academy-currency{position:absolute;right:38px;top:4px;height:20px;display:flex;gap:8px;align-items:center;z-index:31;color:#e8dfcf;font-size:8px;text-shadow:0 1px #000}.academy-currency span{display:flex;align-items:center;gap:2px}.academy-currency img{width:14px;height:14px;object-fit:contain}
+  .tutorial-grid{position:absolute;left:92px;top:78px;width:384px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.tutorial-card{height:140px;background:linear-gradient(#51472fe8,#25251fe8);border:2px ridge #a58b5a;color:#f8ebcc;text-shadow:0 1px #000;font-size:14px}.tutorial-card small{display:block;font-size:8px;margin-top:10px;color:#d8ccb3}
+  #facility-card{position:absolute;left:145px;top:52px;width:278px;max-height:206px;overflow:auto;padding:13px;background:linear-gradient(#eee6d6f5,#cdbd9ff5);border:1px solid #6f6251;color:#443b30;z-index:80;font-size:8px;display:none;box-shadow:0 5px 14px #000a,inset 0 0 0 1px #f7f0df99}.recruit-btn{display:block;width:100%;height:28px;margin-top:4px;padding:3px 7px;background:linear-gradient(#e6dcc8,#cbbd9f);border:1px solid #85755f;color:#493f31;text-align:left;font-size:7px}.recruit-btn:active{transform:translateY(1px)}.recruit-btn:disabled{opacity:.4}
+  .capture-pop{position:absolute;pointer-events:none;z-index:40;color:#ffe99d;font-size:9px;text-shadow:0 1px 2px #000}
+
+  /* 0.61 player-general detail / growth */
+  #general-detail{position:absolute;left:48px;top:30px;width:472px;height:260px;z-index:90;display:none;background:linear-gradient(#2f2b22f5,#171915f5);border:2px ridge #b59a62;box-shadow:0 8px 24px #000d;color:#f3ead6;padding:10px;font-size:8px}
+  #general-detail.show{display:grid;grid-template-columns:105px 1fr;gap:10px}.gd-close{position:absolute;right:5px;top:5px;width:24px;height:24px;background:#4a3028;border:1px solid #b78b69;color:#fff;font-size:14px}
+  #gd-portrait{width:95px;height:110px;object-fit:cover;border:1px solid #b9965d;background:#111}.gd-left{text-align:center}.gd-left h3{margin:5px 0 2px;font-size:11px;color:#ffe09a}.gd-enh{color:#ffd05e;font-size:8px;min-height:12px}.gd-grow{margin-top:8px;padding:6px;background:#0e120f99;border:1px solid #5f563e;text-align:left;line-height:1.6}
+  .gd-actions{display:flex;gap:4px;margin-top:6px}.gd-actions button{flex:1;padding:5px 2px;background:#5d4d2f;border:1px solid #bca069;color:#fff3d4;font-size:7px}.gd-actions button:disabled{opacity:.4}
+  #gd-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin:5px 0}.gd-stat{background:#25271f;border:1px solid #665a3f;padding:4px;text-align:center}.gd-stat b{display:block;color:#ffe29a;font-size:10px}.gd-section{margin-top:5px;padding-top:5px;border-top:1px solid #5e553f}.gd-skills{display:flex;flex-wrap:wrap;gap:3px;max-height:82px;overflow:auto}.gd-skill{background:#3b3427;border:1px solid #6f6044;padding:3px 5px;color:#f5e7c8}
+
+
+  .gd-equipment{display:flex;gap:5px;margin-top:4px}.gd-eq-slot{width:45px;height:45px;background:#171912;border:1px solid #88734e;padding:2px;color:#ead9b3;font-size:6px;overflow:hidden}.gd-eq-slot img{width:34px;height:34px;object-fit:contain;display:block;margin:auto}.gd-eq-slot:disabled{opacity:.45}
+  #equipment-picker{position:absolute;left:27px;top:22px;width:514px;height:276px;z-index:110;display:none;background:linear-gradient(#332d22fa,#171914fa);border:2px ridge #b59a62;color:#f4ead5;padding:8px}
+  #equipment-picker.show{display:block}.eq-close{position:absolute;right:5px;top:5px;width:24px;height:24px;background:#4a3028;border:1px solid #b78b69;color:#fff}.eq-title{font-size:11px;color:#ffe09a;margin:2px 34px 6px}.eq-current{font-size:7px;color:#d8caa7;margin-bottom:5px}.eq-grid{height:222px;overflow:auto;display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:3px;background:#10130f88}.eq-item{height:78px;background:#2b2a24;border:1px solid #6f6045;color:#f4ead4;font-size:6px;padding:2px;text-align:center;overflow:hidden}.eq-item img{width:48px;height:48px;object-fit:contain;display:block;margin:auto}.eq-item.flaglocked{opacity:.35}.eq-remove{background:#4b332b;border-color:#a86b5c}.eq-desc{position:absolute;left:8px;right:8px;bottom:3px;height:16px;font-size:6px;color:#ddcda9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+
+  #native-talk{position:absolute;z-index:140;bottom:5px;left:7px;width:325px;height:83px;display:none;filter:drop-shadow(0 3px 5px #0008);cursor:pointer;user-select:none}
+  #native-talk.show{display:block}#native-talk.right{left:auto;right:7px}
+  #native-talk .talk-board{position:absolute;inset:0;background-color:#eee9df;background-image:url('assets/sprites/image_ui_hd/board_dialog_ex.png');background-position:center;background-size:100% 100%;background-repeat:no-repeat;border:1px solid #7c756c;border-radius:2px}
+  #native-talk .talk-portrait{position:absolute;left:10px;top:7px;width:72px;height:72px;object-fit:cover;object-position:center top}
+  #native-talk.right .talk-portrait{left:auto;right:10px}
+  #native-talk .talk-content{position:absolute;left:88px;top:7px;width:220px;height:70px;color:#404040;font-size:9px;line-height:1.35;text-align:left}
+  #native-talk.right .talk-content{left:16px}
+  #native-talk .talk-name{font-size:10px;font-weight:800;color:#646464;margin:0 0 4px 2px}.talk-text{white-space:normal}
+  #native-talk .talk-next{position:absolute;right:7px;bottom:5px;width:11px;height:10px;background:url('assets/sprites/image_ui_hd/gray_board_dialoguearrow.png') center/contain no-repeat;animation:talkPulse .7s steps(2,end) infinite}
+  #native-talk.right .talk-next{right:auto;left:7px}@keyframes talkPulse{50%{transform:translateY(2px)}}
+
+  #battle-result{position:absolute;inset:0;z-index:150;display:none;align-items:center;justify-content:center;background:#0009}
+  #battle-result.show{display:flex}.battle-result-panel{width:290px;min-height:164px;padding:22px 18px 14px;background:linear-gradient(#d3c39e,#97825d);border:3px ridge #5d4b2f;box-shadow:0 8px 25px #000c;color:#2b2115;text-align:center;position:relative}
+  #battle-result.victory .battle-result-panel:before{content:'';display:block;width:245px;height:43px;margin:-11px auto 7px;background:url('assets/textures/tex_victory.png') center/contain no-repeat}
+  #battle-result.defeat .battle-result-panel:before{content:'DEFEAT';display:block;font-family:serif;font-weight:900;font-size:28px;letter-spacing:4px;color:#64251f;text-shadow:0 1px #fff7;margin:-6px 0 5px}
+  #battle-result-title{font-size:17px;font-weight:900;color:#5b2a19;margin-bottom:6px}.battle-result-body{font-size:9px;line-height:1.55;min-height:48px}.battle-result-actions{display:flex;justify-content:center;gap:10px;margin-top:10px}.battle-result-actions button{padding:5px 13px;background:#54442e;border:2px outset #a88d5d;color:#fff1d2;font-size:10px;font-weight:700}
+</style>
+<link rel="stylesheet" href="r14_native_forms.css" />
+</head>
+<body>
+<div id="shell"><div id="stage">
+  <section id="main" class="screen active">
+    <img class="fullbg" src="assets/textures/mainmenu_wide.png" alt="">
+    <img id="main-title" src="assets/textures/title_hd.png" alt="欧陆战争 IV">
+    <button class="mainbtn" style="top:100px" data-go="campaign">战　役</button>
+    <button class="mainbtn" style="top:140px" data-go="conquest">征　服</button>
+    <button class="mainbtn" style="top:180px" data-go="tutorial">教　程</button>
+    <button class="mainbtn" style="top:220px" data-go="hq">指挥部</button>
+    <button class="mainbtn" style="top:260px" data-go="options">设　定</button>
+    <button class="imgbtn" title="主页" style="left:0;top:287px;width:33px;height:33px;background-image:url('assets/sprites/image_ui_hd/button_homepage.png')"></button>
+    <button class="imgbtn" title="成就" style="left:35px;top:287px;width:33px;height:33px;background-image:url('assets/sprites/image_ui_hd/button_achievement.png')"></button>
+    <button class="imgbtn" title="邮件" style="left:70px;top:287px;width:33px;height:33px;background-image:url('assets/sprites/image_ui_hd/button_email.png')"></button>
+  </section>
+
+  <section id="campaign" class="screen">
+    <img class="fullbg" src="assets/textures/campaign_wide.png" alt="">
+    <div class="titlebar">战　役</div><button class="back" data-go="main"></button><button class="save-load-launch" id="campaign-load" style="right:5px;top:2px">读 档</button>
+    <button class="campaign-pin" style="left:277px;top:118px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_france.png')" data-zone="1" aria-label="帝国雄鹰"></button>
+    <button class="campaign-pin" style="left:332px;top:70px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_coalition.png')" data-zone="2" aria-label="反法同盟"></button>
+    <button class="campaign-pin" style="left:390px;top:145px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_holyroman.png')" data-zone="3" aria-label="神圣罗马帝国"></button>
+    <button class="campaign-pin" style="left:457px;top:90px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_east.png')" data-zone="4" aria-label="东方霸主"></button>
+    <button class="campaign-pin" style="left:70px;top:104px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_usa.png')" data-zone="5" aria-label="美国的崛起"></button>
+    <button class="campaign-pin" style="left:245px;top:32px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_uk.png')" data-zone="6" aria-label="日不落帝国"></button>
+  </section>
+
+  <section id="campaignList" class="screen">
+    <img class="fullbg" src="assets/textures/campaign_wide.png" alt="">
+    <div class="titlebar" id="campaign-list-title">选择战役</div><button class="back" data-go="campaign"></button>
+    <div class="campaign-list-bg"></div><div id="battle-list"></div>
+    <div class="campaign-stage-caption" id="campaign-stage-caption"></div>
+    <div class="intro"><div class="intro-board"></div><div class="intro-pattern"></div><img id="intro-portrait" alt=""><div id="intro-title"></div><div id="intro-text"></div></div>
+    <button id="battle-confirm" class="confirm">确 定</button>
+  </section>
+
+  <section id="conquest" class="screen">
+    <img class="fullbg" src="assets/textures/campaign_wide.png" alt="">
+    <div class="titlebar">征　服</div><button class="back" data-go="main"></button><button class="save-load-launch" id="conquest-load" style="right:5px;top:2px">读 档</button>
+    <div id="conquest-cards"></div>
+  </section>
+
+  <section id="countrySelect" class="screen"><img class="fullbg" src="assets/textures/campaign_wide.png"><div class="titlebar">选择国家</div><button class="back" id="country-back"></button><div class="woodpanel country-grid scroll" id="country-grid"></div><div class="deploy-actions"><div class="deploy-count" id="country-choice">请选择国家</div><button class="orig-confirm" id="country-confirm">确 定</button></div></section>
+
+  <section id="deploy" class="screen"><img class="fullbg" src="assets/textures/campaign_wide.png"><button class="back" id="deploy-back"></button><div id="deploy-native"><button class="deploy-native-shortcut" id="deploy-princess">公　主</button><button class="deploy-native-shortcut" id="deploy-shop" disabled><img src="assets/sprites/image_ui_hd/image_shop.png" alt=""> 商店</button><button class="deploy-native-shortcut" id="deploy-college">军事学院</button><div id="deploy-number-icon"></div><div id="deploy-count">0</div><div id="deploy-line-top"></div><div id="deploy-generals"></div><div id="deploy-line-bottom"></div><div id="deploy-pattern"></div><button id="deploy-clear"></button><button class="orig-confirm" id="deploy-confirm">部 署</button></div><div id="princess-panel" class="native-user-window" data-title="公　主"><button id="princess-close" class="native-close" aria-label="关闭"></button><div id="princess-grid"></div></div></section>
+
+  <section id="academy" class="screen"><img class="fullbg" src="assets/textures/campaign_wide.png"><div class="titlebar">军事学院</div><button class="back" id="academy-back"></button><div class="academy-currency"><span><img src="assets/sprites/image_ui_hd/badges.png"><b>999</b></span><span><img src="assets/sprites/image_ui_hd/medals.png"><b>9999</b></span></div><div class="academy-native-line"></div><div class="academy-tabs"><div class="academy-checkline" id="academy-checkline"></div><button class="academy-tab" data-pool="6" style="background-image:url('assets/sprites/image_ui_hd/button_general_6.png')"></button><button class="academy-tab" data-pool="4" style="background-image:url('assets/sprites/image_ui_hd/button_general_4.png')"></button><button class="academy-tab" data-pool="2" style="background-image:url('assets/sprites/image_ui_hd/button_general_2.png')"></button></div><div class="academy-native-gray"></div><div class="academy-native-frame"></div><div class="academy-deco d1"></div><div class="academy-deco d2"></div><div class="academy-deco d3"></div><div class="academy-deco d4"></div><div id="academy-list"></div><div class="academy-buy-pair" id="academy-buy-pair"><button class="academy-buy" id="academy-buy-medal"><img src="assets/sprites/image_ui_hd/medals.png"><span id="academy-medal-price">0</span></button><button class="academy-buy" id="academy-buy-badge"><img src="assets/sprites/image_ui_hd/badges.png"><span id="academy-badge-price">0</span></button></div><div class="academy-bottom-left"></div><button class="academy-refresh" id="academy-refresh" title="刷新"><span class="r r1"></span><span class="r r2"></span><span class="r r3"></span><span class="academy-refresh-percent">100%</span></button><div class="academy-bottom-right"></div><div class="academy-native-bottom"></div><div class="academy-native-bottomline"></div></section>
+
+  <section id="battle" class="screen">
+    <div id="battle-map"><canvas id="battle-canvas" width="568" height="320"></canvas></div>
+    <div id="facility-summary"><div class="facility-summary-cell slot1"><img id="facility-summary-icon1" src="assets/sprites/image_ui_hd/marker_money.png"><span id="facility-summary-value1">0</span></div><div class="facility-summary-cell slot2"><img id="facility-summary-icon2" src="assets/sprites/image_ui_hd/marker_industry.png"><span id="facility-summary-value2">0</span></div><div class="facility-summary-cell slot3"><img id="facility-summary-icon3" src="assets/sprites/image_ui_hd/marker_dfs_all.png"><span id="facility-summary-value3">0</span></div><div class="facility-summary-cell slot4"><img id="facility-summary-icon4" src="assets/sprites/image_ui_hd/marker_dfs_artillery.png"><span id="facility-summary-value4">0</span></div></div>
+    <div id="unit-card"></div><div id="facility-card"></div><div id="battle-action-menu"></div><div id="native-action-resource" aria-hidden="true"><div class="native-funcres-board"></div><div class="native-funcres-row row-money"><img src="assets/sprites/image_ui_hd/marker_money.png" alt=""><span id="native-funcres-money">0</span></div><div class="native-funcres-row row-secondary"><img id="native-funcres-secondary-icon" src="assets/sprites/image_ui_hd/marker_industry.png" alt=""><span id="native-funcres-secondary">0</span></div><div class="native-funcres-line"></div><button id="native-funcres-confirm" aria-label="确认"></button></div><div id="battle-actions"></div><div id="commerce-panel"><button class="commerce-close" id="commerce-close">×</button><div class="commerce-title" id="commerce-title">市场</div><div id="commerce-body"></div></div><div id="turn-label">回合 1 · 我方行动</div>
+    <div class="hud">
+      <div class="resource-board"></div>
+      <div class="res" style="left:6px"><img src="assets/sprites/image_ui_hd/marker_money.png"><span id="money-val">800</span></div>
+      <div class="res" style="left:42px"><img src="assets/sprites/image_ui_hd/marker_industry.png"><span id="industry-val">300</span></div>
+      <div class="res" style="left:78px"><img src="assets/sprites/image_ui_hd/marker_food.png"><span id="food-val">500</span></div>
+      <button class="hud-icon" id="battle-pause" style="left:507px;top:0;background-image:url('assets/sprites/image_recruit_hd/button_pause.png')"></button>
+      <button class="hud-icon" id="battle-back" style="left:0;top:283px;background-image:url('assets/sprites/image_recruit_hd/button_return.png')" data-go="campaignList"></button>
+      <button class="hud-icon" style="left:507px;top:283px;background-image:url('assets/sprites/image_recruit_hd/button_round.png')" id="round-btn"></button>
+    </div>
+    <div class="battle-note" id="battle-note"></div>
+    <div id="native-talk"><div class="talk-board"></div><img class="talk-portrait" id="native-talk-portrait"><div class="talk-content"><div class="talk-name" id="native-talk-name"></div><div class="talk-text" id="native-talk-text"></div></div><div class="talk-next"></div></div>
+    <div id="battle-result"><div class="battle-result-panel"><div id="battle-result-title">胜 利</div><div class="battle-result-body" id="battle-result-body"></div><div class="battle-result-actions"><button id="battle-result-retry">重新开始</button><button id="battle-result-exit">返回</button></div></div></div>
+  </section>
+
+  <section id="hq" class="screen"><img class="fullbg" src="assets/textures/campaign_wide.png"><div class="titlebar">指挥部</div><button class="back" data-go="main"></button><div class="hq-toolbar"><button class="smallbtn" id="hq-all">全部将领</button><button class="smallbtn" id="hq-owned">已拥有</button><button class="smallbtn" data-go="academy">军事学院</button></div><div id="hq-grid"></div></section>
+
+  <div id="general-detail"><button class="gd-close" id="gd-close" aria-label="关闭"></button><div class="gd-left"><img id="gd-portrait"><h3 id="gd-name"></h3><div id="gd-country"></div><div class="gd-enh" id="gd-enh"></div><div class="gd-grow" id="gd-grow"></div><div class="gd-actions"><button id="gd-rank">军衔</button><button id="gd-nobility">爵位</button></div></div><div class="gd-native-groups"><div id="gd-stats"></div><div class="gd-section gd-items"><b>装　备</b><div class="gd-equipment" id="gd-equipment"></div></div><div class="gd-section gd-skills-section"><b>技　能</b><div class="gd-skills" id="gd-skills"></div></div></div></div><div id="equipment-picker"><button class="eq-close" id="eq-close" aria-label="关闭"></button><div class="eq-title" id="eq-title">装　备</div><div class="eq-current" id="eq-current"></div><div class="eq-grid" id="eq-grid"></div><div class="eq-desc" id="eq-desc">选择装备</div></div>
+  <section id="tutorial" class="screen"><img class="fullbg" src="assets/textures/campaign_wide.png"><div class="titlebar">教　程</div><button class="back" data-go="main"></button><div class="tutorial-grid"><button class="tutorial-card" data-tutorial="tutorials1.btl">基础教程<small>原 tutorials1.btl · 法国</small></button><button class="tutorial-card" data-tutorial="tutorials2.btl">进阶教程<small>原 tutorials2.btl · 法国</small></button></div></section>
+  <section id="options" class="screen"><img class="fullbg" src="assets/textures/campaign_wide.png"><button class="back option-screen-back" data-go="main"></button><div id="option-native" class="native-user-window show" data-title="游戏设定"><div class="option-label music">音　乐</div><div class="option-volume-back music"></div><input id="option-bgvol" class="option-slider music" type="range" min="0" max="100" step="1" value="50" aria-label="音乐音量"><span id="option-bg-value" class="option-value music">50</span><div class="option-label sound">音　效</div><div class="option-volume-back sound"></div><input id="option-sevol" class="option-slider sound" type="range" min="0" max="100" step="1" value="50" aria-label="音效音量"><span id="option-se-value" class="option-value sound">50</span><div class="option-split s1"></div><div class="option-label speed">游戏速度</div><div class="option-speed-back"></div><div class="option-speed-bricks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="option-split s2"></div><div class="option-label grid">地图网格</div><div class="option-grid-box" aria-hidden="true"></div><div class="option-unresolved" aria-hidden="true"></div></div></section>
+
+
+  <div id="getgeneral-tips-shade"></div>
+  <div id="getgeneral-tips" role="dialog" aria-modal="true" aria-label="获得将军">
+    <div class="getgeneral-tips-title">获得将军</div>
+    <div class="getgeneral-tips-cmd"><img id="getgeneral-tips-portrait"><b id="getgeneral-tips-name"></b></div>
+    <div class="getgeneral-tips-split"></div><div class="getgeneral-tips-bottom"></div>
+    <button id="getgeneral-tips-ok">确 定</button>
+  </div>
+
+  <div id="battle-modal-shade"></div>
+  <div id="pause-panel" class="ew4-window">
+    <div class="ew4-window-title">暂　停</div><button class="ew4-close" id="pause-close" aria-label="关闭"></button>
+    <div class="pause-deco l"></div><div class="pause-deco r"></div><div class="pause-round" id="pause-round">回合 1</div>
+    <div class="pause-line" style="top:58px"></div><div class="pause-line" style="top:108px"></div><div class="pause-line" style="top:158px"></div><div class="pause-line" style="top:208px"></div>
+    <button class="pause-action" id="pause-save" style="top:65px">存　档</button>
+    <button class="pause-action" id="pause-option" style="top:115px">设　定</button>
+    <button class="pause-action" id="pause-restart" style="top:165px">重新开始</button>
+    <button class="pause-action" id="pause-exit" style="top:215px">退　出</button>
+  </div>
+  <div id="save-panel" class="ew4-window">
+    <div class="ew4-window-title" id="save-panel-title">保存游戏</div><button class="ew4-close" id="save-close" aria-label="关闭"></button>
+    <div id="save-mode-label">自动存档 + 6 个手动槽</div><div id="save-grid"></div>
+  </div>
+  <div id="status"></div>
+</div><div id="rotate-tip">本移植严格使用原版 568 × 320 横屏坐标。<br>竖屏不会拉伸画面，横过手机体验更接近原版。</div></div>
+<audio id="battle-music" loop src="assets/audio/battle1.mp3"></audio>
+<audio id="defeat-music" src="assets/audio/defeat_music.mp3"></audio>
+<script src="combat_core.js"></script>
+<script src="player_unit_rules.js"></script>
+<script src="battle_save_core.js"></script>
+<script src="general_deployment_core.js"></script>
+<script src="native_academy_core.js"></script>
+<script src="country_turn_core.js"></script>
+<script src="item_inventory_core.js"></script>
+<script src="native_commerce_core.js"></script>
+<script src="native_event_core.js"></script>
+<script src="compact_bile_runtime.js"></script>
+<script src="native_animation_controller.js"></script>
+<script src="native_maptext_core.js"></script>
+<script src="native_effect_audio_core.js"></script>
+<script src="native_ui_audio_core.js"></script>
+<script src="native_action_audio_core.js"></script>
+<script src="native_training_core.js"></script>
+<script src="native_construction_core.js"></script>
+
+<script src="app.js"></script>
+</body></html>

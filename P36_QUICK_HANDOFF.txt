@@ -1,0 +1,20 @@
+P36 NATIVE HUD POLISH — QUICK HANDOFF
+
+CURRENT:
+- Inherits P35 Final Native Presentation.
+- Current full regression: 123/123 PASS.
+- SW CORE: 1058/1058 present.
+- Protected cores: 4/4 SHA256 MATCH.
+- PORT_ONLY: no APK/AAB in tree or 12 nested ZIPs.
+
+P36 ALREADY LANDED:
+- Native undo button 37x37 at (0,293).
+- Native hextend treatment for board_resources / board_buttons / board_terrain_info.
+- Correct resource icon/text anchors and terrain-summary marker anchors.
+- Native AI action strip (board_aiaction + country flag + >>>); old Web turn label remains hidden.
+
+NEXT:
+- Continue only the last anti-Web-port/native-presentation pass: remaining battle HUD geometry, text baselines, duplicate CSS shadows/filters/scales, and authored PNG extension behavior.
+- DO NOT resize/re-anchor units or alter map geometry to chase clarity. Keep P35 HiDPI + 568x320 logical space + touch mapping frozen.
+- Use original_layout-568h.xml/native assets as authority; no invented modern Web UI.
+- Final gate remains iPhone true-device visual/touch A/B.

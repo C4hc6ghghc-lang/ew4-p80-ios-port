@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const d=require('./assets/data/native_getgeneral_effect.json');
+assert.strictEqual(d.effect_name,'fire');assert.strictEqual(d.atlas,'assets/effects/eff.png');assert.strictEqual(d.emitters.length,3);
+assert.deepStrictEqual(d.emitters.map(e=>e.image.file),['spark.png','star.png','spark.png']);
+assert.deepStrictEqual(d.emitters[0].atlas_rect,{x:1,y:355,w:40,h:40,refx:21,refy:20});
+assert.deepStrictEqual(d.emitters[1].atlas_rect,{x:442,y:131,w:64,h:64,refx:34,refy:31});
+assert.strictEqual(d.emitters[0].image.width,20);assert.strictEqual(d.emitters[1].image.width,32);
+assert.deepStrictEqual(d.emitters[0].timetrack,[{time:0,quantity:300},{time:.1,quantity:200}]);
+assert.deepStrictEqual(d.emitters[1].timetrack,[{time:0,quantity:200},{time:.1,quantity:0}]);
+assert.strictEqual(d.emitters[0].speed.min,60);assert.strictEqual(d.emitters[1].gravity.min,400);
+assert(fs.existsSync('assets/effects/eff.png'));const sw=fs.readFileSync('sw.js','utf8');assert(sw.includes('./assets/data/native_getgeneral_effect.json'));
+console.log('native getgeneral effect data PASS');

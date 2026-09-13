@@ -1,0 +1,17 @@
+'use strict';
+const assert=require('assert');
+const fs=require('fs');
+const app=fs.readFileSync('./app.js','utf8');const html=fs.readFileSync('./index.html','utf8');const sw=fs.readFileSync('./sw.js','utf8');
+assert(app.includes('campaignSecretUnlocks:{}'));assert(app.includes('saveState.campaignSecretUnlocks='));
+assert(app.includes('EW4NativeCampaign?.stageSelectable?.(rows,index,campaignProgressLevel,campaignSecretUnlocked)'));
+assert(app.includes('function recordCampaignSecretUnlocks(b)'));assert(app.includes('yellowSecretCleared?.(battleState,NATIVE_CAMPAIGN_TARGETS,ownerAt)'));assert(app.includes('EW4NativeCampaign.hiddenUnlockFiles(rows,b,code,true)'));assert(app.includes('recordCampaignSecretUnlocks(battleState.battle)'));
+assert(app.includes('function openCampaignCountrySelect(b)'));assert(app.includes('function confirmCampaignCountrySelect()'));assert(app.includes('EW4NativeCampaign.resolveVariant(p.battle,countryChoice,DB?.battles||[])'));assert(app.includes("document.getElementById('country-back').onclick=()=>go(pending?.back||'conquest')"));
+assert(app.includes("fetchJSON('assets/data/native_campaign_targets.json')"),'native target manifest must load');assert(app.includes('NATIVE_CAMPAIGN_TARGETS=null'));
+assert(app.includes('EW4NativeCampaign.targetEntities(battleState,NATIVE_CAMPAIGN_TARGETS,1,ownerAt)'));assert(app.includes('EW4NativeCampaign.targetEntities(battleState,NATIVE_CAMPAIGN_TARGETS,2,ownerAt)'));
+assert(app.includes('EW4NativeCampaign.mainObjectiveOutcome(battleState,NATIVE_CAMPAIGN_TARGETS,battleState.nativeCampaignInitialTargets,ownerAt,me,enemy)'));
+assert(app.includes('battleState.nativeCampaignInitialTargets=EW4NativeCampaign.initialTargetSnapshot'));
+assert(app.includes("battleState?.mode==='campaign'?EW4NativeCampaign?.battleSpec?.(NATIVE_CAMPAIGN_TARGETS,battleState.battle):null"),'campaign relation must use native side manifest');
+assert(!app.includes('EW4NativeCampaign.targetEntities(battleState,1)'),'legacy raw target API must be gone');
+assert(!app.includes('objectTargetType('),'legacy facility-as-target path must be gone from app');
+assert(html.includes('native_campaign_core.js'));assert(sw.includes("'./native_campaign_core.js'"));assert(sw.includes("'./assets/data/native_campaign_targets.json'"),'target manifest must be offline cached');assert(/posthandoff(?:17|1[89]|[2-9][0-9])/.test(sw),'P17 or later cache generation required');
+console.log('native campaign P17 integration: PASS');

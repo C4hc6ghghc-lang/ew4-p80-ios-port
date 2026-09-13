@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('assert'),fs=require('fs');
+const app=fs.readFileSync('./app.js','utf8'),html=fs.readFileSync('./index.html','utf8'),css=fs.readFileSync('./r14_native_forms.css','utf8'),sw=fs.readFileSync('./sw.js','utf8');
+for(const n of ['function dismissalReturnPreview','function openGeneralDismiss','function closeGeneralDismiss','function commitGeneralDismiss'])assert(app.includes(n),n);
+assert(app.includes('EW4ItemInventory.tryAdd(inventory,id,1,ITEMS)'),'dismissal must preflight equipment return through ItemBank');
+assert(app.includes("PRINCESS_IDS.includes(+c.id)"),'princess dismissal lock missing');
+assert(app.includes("saveState.owned=saveState.owned.filter(id=>+id!==+c.id)"));
+assert(app.includes("saveState.equipment[sid]=[null,null]"),'re-recruit must not duplicate returned base equipment');
+assert(app.includes("hqMode&&!PRINCESS_IDS.includes(+c.id)?'<span class=\"hq-dismiss-hotspot\""),'HQ-only non-princess dismiss hotspot missing');
+for(const id of ['general-dismiss-confirm','dismiss-text','dismiss-items','dismiss-ok','dismiss-cancel'])assert(html.includes(`id="${id}"`),id);
+assert(css.includes('.hq-dismiss-hotspot{'));assert(css.includes('#general-dismiss-confirm{'));
+const cache=(sw.match(/posthandoff(\d+)-/)||[])[1];assert(cache&&+cache>=19,'P19+ service worker cache expected');
+console.log('P19 mod general dismissal: PASS');

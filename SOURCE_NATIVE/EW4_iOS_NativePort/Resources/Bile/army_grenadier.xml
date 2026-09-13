@@ -1,0 +1,132 @@
+﻿<Texture name="army_grenadier.png" />
+<Images>
+    <Image name="31手5.png" x="1" y="1" w="9" h="81" refx="0" refy="0" />
+    <Image name="38手5.png" x="11" y="1" w="9" h="81" refx="0" refy="0" />
+    <Image name="31枪1.png" x="21" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="38枪1.png" x="32" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="gun1.png" x="43" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="33衣服1.png" x="54" y="1" w="24" h="48" refx="0" refy="0" />
+    <Image name="36衣服1.png" x="79" y="1" w="24" h="47" refx="0" refy="0" />
+    <Image name="35衣服1.png" x="1" y="83" w="24" h="43" refx="0" refy="0" />
+    <Image name="31衣服1.png" x="26" y="82" w="22" h="38" refx="0" refy="0" />
+    <Image name="37衣服1.png" x="104" y="1" w="22" h="38" refx="0" refy="0" />
+    <Image name="32drum3.png" x="54" y="50" w="33" h="35" refx="0" refy="0" />
+    <Image name="33drum3.png" x="88" y="49" w="33" h="35" refx="0" refy="0" />
+    <Image name="34drum3.png" x="49" y="86" w="33" h="35" refx="0" refy="0" />
+    <Image name="35drum3.png" x="88" y="85" w="33" h="35" refx="0" refy="0" />
+    <Image name="36drum3.png" x="1" y="127" w="33" h="35" refx="0" refy="0" />
+    <Image name="37drum3.png" x="35" y="122" w="33" h="35" refx="0" refy="0" />
+    <Image name="39drum3.png" x="1" y="163" w="33" h="35" refx="0" refy="0" />
+    <Image name="drum3.png" x="83" y="121" w="33" h="35" refx="0" refy="0" />
+    <Image name="34衣服1.png" x="35" y="158" w="23" h="33" refx="0" refy="0" />
+    <Image name="32衣服1.png" x="1" y="199" w="23" h="32" refx="0" refy="0" />
+    <Image name="31剑1.png" x="69" y="157" w="21" h="31" refx="0" refy="0" />
+    <Image name="38drum3.png" x="25" y="199" w="34" h="31" refx="0" refy="0" />
+    <Image name="39衣服1.png" x="60" y="189" w="24" h="33" refx="0" refy="0" />
+    <Image name="38剑1.png" x="91" y="157" w="22" h="31" refx="0" refy="0" />
+    <Image name="38衣服1.png" x="60" y="223" w="23" h="31" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--left calf1.png" x="69" y="122" w="8" h="27" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--Right calf1.png" x="59" y="158" w="8" h="27" refx="0" refy="0" />
+    <Image name="33Britain militia--left calf1.png" x="117" y="121" w="8" h="27" refx="0" refy="0" />
+    <Image name="33Britain militia--Right calf1.png" x="114" y="157" w="9" h="27" refx="0" refy="0" />
+    <Image name="33帽子1.png" x="85" y="189" w="16" h="27" refx="0" refy="0" />
+    <Image name="34Britain militia--left calf1.png" x="102" y="189" w="8" h="27" refx="0" refy="0" />
+    <Image name="34Britain militia--Right calf1.png" x="111" y="189" w="8" h="27" refx="0" refy="0" />
+    <Image name="38Britain militia--left calf1.png" x="85" y="217" w="12" h="27" refx="0" refy="0" />
+    <Image name="38Britain militia--Right calf1.png" x="98" y="217" w="12" h="27" refx="0" refy="0" />
+    <Image name="39Britain militia--left calf1.png" x="111" y="217" w="8" h="27" refx="0" refy="0" />
+    <Image name="39Britain militia--Right calf1.png" x="127" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="38Britain militia--Right thigh1.png" x="136" y="1" w="15" h="26" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--left thigh1.png" x="152" y="1" w="11" h="25" refx="0" refy="0" />
+    <Image name="31肩带2.png" x="164" y="1" w="10" h="24" refx="0" refy="0" />
+    <Image name="33Britain militia--left thigh1.png" x="136" y="28" w="11" h="24" refx="0" refy="0" />
+    <Image name="34Britain militia--left thigh1.png" x="122" y="40" w="11" h="24" refx="0" refy="0" />
+    <Image name="36帽子1.png" x="122" y="65" w="12" h="24" refx="0" refy="0" />
+    <Image name="38Britain militia--left thigh1.png" x="148" y="28" w="13" h="24" refx="0" refy="0" />
+    <Image name="39Britain militia--left thigh1.png" x="162" y="27" w="11" h="24" refx="0" refy="0" />
+    <Image name="drum1.png" x="135" y="53" w="15" h="22" refx="0" refy="0" />
+    <Image name="39帽子1.png" x="175" y="1" w="14" h="20" refx="0" refy="0" />
+    <Image name="31肩带1.png" x="190" y="1" w="13" h="19" refx="0" refy="0" />
+    <Image name="shadow.png" x="204" y="1" w="36" h="19" refx="0" refy="0" />
+    <Image name="32帽子1.png" x="175" y="22" w="9" h="18" refx="0" refy="0" />
+    <Image name="31帽子1.png" x="151" y="53" w="9" h="17" refx="0" refy="0" />
+    <Image name="32左上袖子1.png" x="1" y="232" w="7" h="17" refx="0" refy="0" />
+    <Image name="33左上袖子1.png" x="161" y="53" w="7" h="17" refx="0" refy="0" />
+    <Image name="36left arm Upper1.png" x="151" y="71" w="8" h="17" refx="0" refy="0" />
+    <Image name="36左上袖子1.png" x="185" y="22" w="7" h="17" refx="0" refy="0" />
+    <Image name="37left arm Upper1.png" x="174" y="41" w="8" h="17" refx="0" refy="0" />
+    <Image name="37左上袖子1.png" x="193" y="21" w="7" h="17" refx="0" refy="0" />
+    <Image name="37帽子1.png" x="201" y="21" w="10" h="17" refx="0" refy="0" />
+    <Image name="38left arm Upper1.png" x="183" y="41" w="9" h="17" refx="0" refy="0" />
+    <Image name="38左上袖子1.png" x="135" y="76" w="7" h="17" refx="0" refy="0" />
+    <Image name="32left arm Upper1.png" x="122" y="90" w="8" h="16" refx="0" refy="0" />
+    <Image name="35左下袖子.png" x="25" y="231" w="10" h="16" refx="0" refy="0" />
+    <Image name="37左下袖子.png" x="131" y="94" w="10" h="16" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--hip1.png" x="193" y="39" w="15" h="12" refx="0" refy="0" />
+    <Image name="33Britain militia--hip1.png" x="169" y="59" w="15" h="12" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--Right calf2.png" x="142" y="94" w="38" h="11" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--Right thigh1.png" x="212" y="21" w="11" h="24" refx="0" refy="0" />
+    <Image name="31右下袖子1.png" x="160" y="71" w="8" h="16" refx="0" refy="0" />
+    <Image name="31左下袖子.png" x="9" y="232" w="10" h="15" refx="0" refy="0" />
+    <Image name="32右下袖子1.png" x="224" y="21" w="8" h="15" refx="0" refy="0" />
+    <Image name="32左下袖子.png" x="142" y="106" w="10" h="15" refx="0" refy="0" />
+    <Image name="33Britain militia--Right calf2.png" x="185" y="59" w="38" h="11" refx="0" refy="0" />
+    <Image name="33Britain militia--Right thigh1.png" x="241" y="1" w="11" h="24" refx="0" refy="0" />
+    <Image name="33left arm Upper1.png" x="169" y="72" w="8" h="16" refx="0" refy="0" />
+    <Image name="33右下袖子1.png" x="178" y="72" w="8" h="15" refx="0" refy="0" />
+    <Image name="33左下袖子.png" x="126" y="111" w="10" h="15" refx="0" refy="0" />
+    <Image name="34Britain militia--Right calf2.png" x="126" y="127" w="38" h="11" refx="0" refy="0" />
+    <Image name="34Britain militia--Right thigh1.png" x="126" y="139" w="10" h="24" refx="0" refy="0" />
+    <Image name="34left arm Upper1.png" x="187" y="71" w="8" h="17" refx="0" refy="0" />
+    <Image name="35left arm Upper1.png" x="153" y="106" w="8" h="17" refx="0" refy="0" />
+    <Image name="35左上袖子1.png" x="143" y="76" w="7" h="17" refx="0" refy="0" />
+    <Image name="34左上袖子1.png" x="233" y="21" w="7" h="16" refx="0" refy="0" />
+    <Image name="34左下袖子.png" x="224" y="38" w="10" h="16" refx="0" refy="0" />
+    <Image name="34右下袖子1.png" x="235" y="38" w="8" h="15" refx="0" refy="0" />
+    <Image name="34帽子1.png" x="162" y="106" w="14" h="15" refx="0" refy="0" />
+    <Image name="35右下袖子1.png" x="196" y="71" w="8" h="15" refx="0" refy="0" />
+    <Image name="35帽子1.png" x="36" y="231" w="10" h="15" refx="0" refy="0" />
+    <Image name="36右下袖子1.png" x="47" y="231" w="8" h="15" refx="0" refy="0" />
+    <Image name="36左下袖子.png" x="205" y="71" w="10" h="15" refx="0" refy="0" />
+    <Image name="37右下袖子1.png" x="216" y="71" w="8" h="15" refx="0" refy="0" />
+    <Image name="38Britain militia--hip1.png" x="225" y="55" w="16" h="12" refx="0" refy="0" />
+    <Image name="38Britain militia--Right calf2.png" x="196" y="87" w="38" h="13" refx="0" refy="0" />
+    <Image name="38右下袖子1.png" x="181" y="101" w="10" h="16" refx="0" refy="0" />
+    <Image name="38左下袖子.png" x="192" y="101" w="10" h="15" refx="0" refy="0" />
+    <Image name="31小包包.png" x="209" y="46" w="10" h="10" refx="0" refy="0" />
+    <Image name="38right foot1.png" x="104" y="40" w="11" h="8" refx="0" refy="0" />
+    <Image name="弹弹.png" x="127" y="29" w="8" h="7" refx="0" refy="0" />
+    <Image name="38left foot1.png" x="69" y="150" w="12" h="6" refx="0" refy="0" />
+    <Image name="31右手1.png" x="241" y="26" w="13" h="9" refx="0" refy="0" />
+    <Image name="31脸1.png" x="203" y="101" w="9" h="9" refx="0" refy="0" />
+    <Image name="33脸1.png" x="213" y="101" w="9" h="9" refx="0" refy="0" />
+    <Image name="34right foot1.png" x="203" y="111" w="9" h="8" refx="0" refy="0" />
+    <Image name="38右手1.png" x="177" y="118" w="13" h="9" refx="0" refy="0" />
+    <Image name="39Britain militia--Right calf2.png" x="165" y="128" w="38" h="11" refx="0" refy="0" />
+    <Image name="39Britain militia--Right thigh1.png" x="137" y="140" w="10" h="24" refx="0" refy="0" />
+    <Image name="左上袖子1.png" x="148" y="139" w="7" h="17" refx="0" refy="0" />
+    <Image name="39左下袖子.png" x="148" y="157" w="10" h="16" refx="0" refy="0" />
+    <Image name="left arm Upper1.png" x="156" y="139" w="8" h="16" refx="0" refy="0" />
+    <Image name="39右下袖子1.png" x="124" y="165" w="8" h="15" refx="0" refy="0" />
+    <Image name="drum2.png" x="83" y="86" w="1" h="12" refx="0" refy="0" />
+    <Image name="38帽子1.png" x="133" y="165" w="10" h="9" refx="0" refy="0" />
+    <Image name="38脸1.png" x="133" y="175" w="9" h="9" refx="0" refy="0" />
+    <Image name="right foot1.png" x="191" y="118" w="9" h="8" refx="0" refy="0" />
+    <Image name="31右手2.png" x="116" y="40" w="4" h="7" refx="0" refy="0" />
+    <Image name="31左手1.png" x="35" y="192" w="7" h="6" refx="0" refy="0" />
+    <Image name="31手6.png" x="9" y="248" w="8" h="7" refx="0" refy="0" />
+    <Image name="38右手2.png" x="83" y="99" w="4" h="7" refx="0" refy="0" />
+    <Image name="31左手2.png" x="43" y="192" w="6" h="6" refx="0" refy="0" />
+    <Image name="31左手3.png" x="50" y="192" w="7" h="6" refx="0" refy="0" />
+    <Image name="38左手1.png" x="193" y="52" w="7" h="6" refx="0" refy="0" />
+    <Image name="38手6.png" x="117" y="149" w="8" h="7" refx="0" refy="0" />
+    <Image name="31右手3.png" x="18" y="248" w="9" h="5" refx="0" refy="0" />
+    <Image name="38右手3.png" x="28" y="248" w="9" h="5" refx="0" refy="0" />
+    <Image name="34left foot1.png" x="38" y="247" w="12" h="6" refx="0" refy="0" />
+    <Image name="31左手4.png" x="225" y="68" w="16" h="6" refx="0" refy="0" />
+    <Image name="38手7.png" x="83" y="107" w="4" h="7" refx="0" refy="0" />
+    <Image name="38左手2.png" x="201" y="52" w="6" h="6" refx="0" refy="0" />
+    <Image name="38左手3.png" x="242" y="54" w="7" h="6" refx="0" refy="0" />
+    <Image name="left foot1.png" x="242" y="61" w="12" h="6" refx="0" refy="0" />
+    <Image name="38左手4.png" x="225" y="75" w="16" h="6" refx="0" refy="0" />
+</Images>

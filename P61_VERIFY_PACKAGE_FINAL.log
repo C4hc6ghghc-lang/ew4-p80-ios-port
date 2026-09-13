@@ -1,0 +1,19 @@
+== P61 mature SOURCE_LEAN freeze ==
+SOURCE_LEAN expected=6321 actual=6321 missing=0 extra=0 changed=0
+== P61 EW4 cross-project scope guard ==
+Runtime Swift: 100
+Native resources provenanced: 1751/1751
+EW4_SCOPE_GUARD_PASS
+== P61 native IPA preflight ==
+{
+  "passed": true,
+  "checks": 26,
+  "errors": [],
+  "resource_files": 1751,
+  "duplicate_basename_groups": 232
+}
+== P61 script syntax ==
+P61_PACKAGE_PREFLIGHT_PASS
+NATIVECORE_SWIFT_FILES=166
+ALL_PROJECT_SWIFT_FILES=168
+BUILD_CACHE_DIRS=0

@@ -1,0 +1,22 @@
+{
+  "SOURCE_LEAN": {
+    "existing_files": 6321,
+    "changed": [],
+    "missing": [],
+    "changed_count": 0,
+    "missing_count": 0
+  },
+  "SOURCE_NATIVE": {
+    "existing_files": 1801,
+    "changed": [],
+    "missing": [],
+    "changed_count": 0,
+    "missing_count": 0
+  },
+  "new_source_native_files": [
+    "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeRoundSettlementCore.swift",
+    "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeTrainingParityCore.swift",
+    "EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeRoundSettlementTests.swift",
+    "EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeTrainingParityTests.swift"
+  ]
+}

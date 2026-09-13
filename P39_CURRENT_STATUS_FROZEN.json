@@ -1,0 +1,376 @@
+{
+  "project": "EW4 Web Port 0.61",
+  "checkpoint": "r14-39 P39 Noon-Regression Lock + Native HUD Safety 2026-09-10",
+  "last_historical_frozen": "r14-38",
+  "working": "r14-39 P39 Noon-Regression Lock + Native HUD Safety",
+  "test_result": {
+    "total": 126,
+    "pass": 126,
+    "fail": 0,
+    "p39_full_run": "126/126 PASS",
+    "inherited_p38": "125/125 PASS",
+    "inherited_p37": "124/124 PASS",
+    "inherited_p36": "123/123 PASS",
+    "inherited_p35_five_run": "5/5 at 122/122 PASS"
+  },
+  "animation": {
+    "integrated_unit_definitions": 877,
+    "integrated_motions": 3519,
+    "original_unit_definitions": 877,
+    "original_motions": 3519,
+    "compact_bile_parity": "3519/3519 source coverage; historical repaired subset 1076/1076 PASS",
+    "expanded_runtime_png_required": false,
+    "iphone_visual_verification": "external_acceptance_smoke_not_executed_in_build_environment",
+    "battle_unit_resolution": "7407/7407",
+    "directional_attack_chains": "1754/1754",
+    "full_test": "877/877 units; 3519/3519 motions; 1754/1754 directional chains; 7407/7407 battle units; compact BILE 1076/1076; Machine Gun Finish 18/18"
+  },
+  "maptext": {
+    "integrated": true,
+    "europe_placements": 102,
+    "america_placements": 41
+  },
+  "audio": {
+    "mp3": 5,
+    "wav": 38,
+    "battle_tracks_randomized_native": "battle1..battle4",
+    "timed_effect_audio_timelines": 143,
+    "apk_audio_sha_parity": "43/43 (38 WAV + 5 MP3)"
+  },
+  "player_overrides": {
+    "attack_min_plus": 4,
+    "attack_max_plus": 4,
+    "base_hp_plus": 120,
+    "movement_plus": 2,
+    "ai_unchanged": true
+  },
+  "princess": {
+    "all_8_owned": true,
+    "player_overrides": [
+      208,
+      205,
+      204
+    ]
+  },
+  "academy": {
+    "native_candidate_algorithm": true,
+    "unlimited_zero_cost_refresh": true,
+    "purchase_empty_slot_behavior": true,
+    "getgeneral_tips": true
+  },
+  "training": {
+    "levels": "0-5",
+    "manual_training": true,
+    "automatic_combat_exp": true,
+    "defense_bonus": true,
+    "round_heal": true
+  },
+  "construction": {
+    "per_level_outputs": true,
+    "all_avoid_rule": true,
+    "native_upgrade_costs": true,
+    "funcres_confirm": true
+  },
+  "particles": {
+    "build": true,
+    "recover_runtime": true,
+    "moving1_4": true,
+    "exact_z_order": "native six-layer -> global effects -> strategic-marker order recovered; tactical unit overlay order locked"
+  },
+  "hard_size_ceiling_mb": 450,
+  "critical_scope_cleanup": [],
+  "recommended_next": [
+    "continue only evidence-backed native-presentation cleanup after P39 regression lock",
+    "do not change map/unit geometry, native refs/scales, 568x320 logical space, P35 HiDPI backing, pointer inversion, or battlefield canvas compositing to chase clarity",
+    "prefer true-device iPhone A/B for remaining font/compositing differences before speculative CSS changes",
+    "external IAP/ads/network/platform services remain intentionally excluded"
+  ],
+  "frozen": "P39-noon-regression-lock-native-hud-safety-2026-09-10",
+  "shop": {
+    "shared_scene_shop": true,
+    "seller_slots": 14,
+    "buyer_itembank_slots": 28,
+    "hq_daily_persisted": true,
+    "hq_buy_price": "base",
+    "hq_sell_percent": 60,
+    "battle_buy_discount_percent_per_business_star": 4,
+    "battle_sell_percent": "60 + 4*businessStars, cap 80",
+    "player_medals_infinite_hidden_override": true
+  },
+  "tutorial": {
+    "native_script_executor": true,
+    "scripts": 2,
+    "commands": "273/273",
+    "basic_text_steps": 17,
+    "advanced_text_steps": 16,
+    "text_steps": "33/33",
+    "wait_touch": true,
+    "wait_area": true,
+    "wait_ui": true,
+    "wait_action": true,
+    "auto_start_in_tutorial_battle": true,
+    "recruit_formation_repeated_tap": true,
+    "original_pointer_asset": true,
+    "offline_cache": true,
+    "iphone_true_device_verification": "pending"
+  },
+  "result_controller": {
+    "native_five_grade_formula": true,
+    "cumulative_medal_table": [
+      0,
+      0,
+      5,
+      15,
+      25,
+      50
+    ],
+    "replay_award_delta_only": true,
+    "stage_turn_limit_failure": true,
+    "participating_general_slots": 6,
+    "collect_medal_getmedal": true,
+    "battle_save_schema": 6,
+    "continue_via_scene_main": true,
+    "scene_complete_six_zones": true,
+    "victory_text_seconds": 4.5,
+    "offline_result_assets_cached": true,
+    "hidden_stage_unlock_semantics": "resolved in P17 via native BTL type2 target census and victory-result exposure path"
+  },
+  "campaign_controller": {
+    "native_target_manifest": true,
+    "btl_corpus": 101,
+    "map_type1": 349,
+    "map_type2": 5,
+    "unit_type1": 185,
+    "unit_type2": 6,
+    "hidden_stages": "11/11 mapped to native type2 triggers",
+    "country_side_relations": true,
+    "side_semantics": "1/2 primary opponents; 3 hostile third side; 4 neutral/excluded from primary outcome",
+    "type1_main_objective": true,
+    "type2_secret_unlock": true,
+    "campaign4_10_country_branch": true,
+    "manifest_sha256": "1c0b6e0e64b7e7e4d8e78313727041646bc851a6b4abcf1c60cfd1da3cec9979",
+    "manifest_reproducible_from_original_apk": true,
+    "exhaustive_campaign_behavior": "87 BTL; 84 red-victory sims; 83 red-defeat sims; 11/11 yellow sims"
+  },
+  "player_mods": {
+    "medals_infinite_hidden_override": true,
+    "badges_infinite_hidden_override": true,
+    "battle_consumables_non_consuming": true,
+    "ui_still_shows_original_prices_counts": true
+  },
+  "general_controller": {
+    "native_generalinfo_scene_boundary": true,
+    "native_generalupgrade_scene": true,
+    "military_thresholds": 14,
+    "nobility_thresholds": 9,
+    "rank_progress_persisted": true,
+    "nobility_progress_persisted": true,
+    "upgrade_display_costs_original": true,
+    "upgrade_medals_not_deducted_mod": true,
+    "all_full_medal_cap": 3600,
+    "regroup_native_transfer_formula": true,
+    "regroup_teaching_skills": 7,
+    "regroup_source_deleted": true,
+    "regroup_source_items_disappear": true,
+    "deployitem_native_353x261": true,
+    "deployitem_itembank_slots": 28,
+    "deployitem_prev_next_general": true,
+    "battle_military_growth": "2 * total damage inflicted; equipment function=2 overrides War Expert/Master skill multiplier",
+    "battle_nobility_growth": "on kill: (victim grade + 1) * (2 if victim carries commander); equipment function=1 overrides Nobility skill multiplier",
+    "battle_growth_equipment_priority": true,
+    "battle_growth_player_owned_generals_only": true
+  },
+  "residual_controller": {
+    "mod_general_dismissal": true,
+    "dismissal_princess_lock": true,
+    "dismissal_itembank_preflight": true,
+    "dismissal_equipment_refund": true,
+    "native_roundturn": true,
+    "roundturn_general_slots": 6,
+    "roundturn_turn_limits": true,
+    "roundturn_food_delta": true,
+    "native_exchange_geometry": "440x259",
+    "exchange_original_aliases": "btn_buy_1..4 / btn_sell_1..4",
+    "native_recruitgeneral_geometry": "300x275",
+    "roundturn_assets_offline_cached": true,
+    "stageintro": "frozen native SceneStageIntro: fresh campaign only; restored/tutorial/conquest excluded",
+    "stageintro_geometry": "360x219",
+    "stageintro_victory_best_rounds": true,
+    "stageintro_reset_without_continuation": true,
+    "stageintro_assets_offline_cached": true,
+    "native_defense_geometry": "300x184; list 298x65; desc 296x84",
+    "native_defense_p21_tech_gate_preserved": true,
+    "native_pause_geometry": "166x272",
+    "native_pause_round_split": true,
+    "native_pause_bottom_pattern": true,
+    "native_unitinfo_geometry": "330x187",
+    "native_unitinfo_recruit_art": true,
+    "native_unitinfo_formation_layers": "1/2/3 via buildmaker + original family marker",
+    "native_unitinfo_ability_grid": "attack+formation / HP+food / range+move",
+    "native_unitinfo_desc": "dynamic name_%s + desc_%s; equipment-list substitute removed",
+    "native_useitem_status": "accepted existing native contract: 280x175; IDs 11-15; original validation/effects/action consumption; user non-consuming mod preserved",
+    "native_selcountry_geometry": "234x150; left/right 85x67; default left; native branch resolver preserved",
+    "native_save_presentation": "352x235; 1 autosave + 6 manual slots; battle title/date/flag; schema6 untouched",
+    "next_functional_gap": "no equally clear inert single-player local-controller gap proven after P29; continue evidence-based census; platform Champion/Ranking remains separate unresolved service work",
+    "native_achievement_geometry": "568x320 form; champion/ranking, star, military/nobility, 3 continent sections, general strip restored",
+    "native_achievement_runtime": "main-menu open/back; native historical stage stars /420; native global military+nobility formulas over owned HQ generals; real owned generals",
+    "native_achievement_unknowns": "local continent generation resolved P29; Champion/Ranking Multiplayer/platform service semantics and true-device visual calibration remain unresolved"
+  },
+  "campaign_upgrade_controller": {
+    "native_sceneupgrade": true,
+    "geometry": "421x265",
+    "entry": "Campaign stage list btn_lvlup",
+    "visible_tabs": 5,
+    "visible_military_techs": 22,
+    "internal_techs": 26,
+    "warzone_specific_tech_state": "6 x 26",
+    "original_initial_state_manifest": true,
+    "original_initial_state_source_sha256": "35320e99f2c39ac998c92340cb221653ae3f2c9fe8bb24b9ee3bfb321efe64db",
+    "star_wallet_cap": 999,
+    "star_gain": "only new native stage score minus historical best",
+    "legacy_star_migration": "sum historical best native scores because pre-P21 had no spending path",
+    "upgrade_cost_table": "26 x 4 native costs",
+    "locked_unit_rule": "tech < 0 unavailable for recruitment/build choice",
+    "recruit_training_rule": "tech 0 => training 0; tech 1/2/3 => initial training 1/2/3; formation grade unchanged",
+    "fortress_training_rule": "same initial training rule for newly built fortress units",
+    "farm_bonus": "tech 22: +10/+20/+30 food at internal levels 1/2/3",
+    "financial_bonus": "tech 23: +20/+40/+60 money at internal levels 1/2/3",
+    "factory_bonus": "tech 24: +10/+20/+30 industry at internal levels 1/2/3",
+    "dock_transport_rule": "tech 25 internal >=1 infantry, >=2 cavalry, >=3 artillery; navy native",
+    "battle_tech_snapshot": true,
+    "battle_save_schema": 6,
+    "offline_cache": true,
+    "iphone_true_device_verification": "pending",
+    "end_to_end_growth_chain_regression": true,
+    "growth_chain": "score-delta Stars -> upgrades -> unlock/training/economy/Dock/fort -> Battle Tech Snapshot -> schema6 save/load isolation"
+  },
+  "campaign_session": {
+    "production_core": true,
+    "visible_mainline_first_clears": 73,
+    "worse_replays": 73,
+    "battle_save_load_cycles": 292,
+    "campaign_meta_reload_cycles": 500,
+    "zone_completion_rewards_one_shot": "6/6",
+    "live_tech_upgrade_opportunities": 6
+  },
+  "campaign_info_controller": {
+    "native_form_geometry": "155x83",
+    "def_battleline_rows": "6/6",
+    "pin_to_info_to_confirm_flow": true,
+    "campaign_pin_geometry": "6/6 exact vs form_selcampaign",
+    "exact_dynamic_popup_offset": "requires .so or true-device proof"
+  },
+  "campaign_country_controller": {
+    "native_form_geometry": "234x150",
+    "left_card": "x17 y36 85x67",
+    "right_card": "x132 y36 85x67",
+    "default_selection": "left",
+    "native_assets": true,
+    "campaign_branch_pairs": "campaign3_08<->08b pru/aus; campaign4_10<->10b tur/rus",
+    "conquest_fullscreen_reuse_removed": true
+  },
+  "save_controller": {
+    "native_form_geometry": "352x235",
+    "autosave_group": "x119 y31 114x201",
+    "autosave_slot": "x119 y88 114x87",
+    "manual_slots": "6 original positions",
+    "visible_hierarchy": "battle title + date/time + player nation flag",
+    "web_slot_number_round_row_removed": true,
+    "battle_save_schema": 6,
+    "save_load_semantics_unchanged": true,
+    "offline_core": 305
+  },
+  "achievement_controller": {
+    "native_form": "form_achivement",
+    "native_geometry": "568x320 logical layout from original layout-568h.xml",
+    "main_menu_handler": true,
+    "back_handler": true,
+    "campaign_stars_live": true,
+    "owned_generals_live": true,
+    "global_military_summary": "native: per-general raw 300 + completed thresholds + progress; aggregate level threshold 121 x float32 1.214 to Lv99; score=floor(raw/10)",
+    "global_nobility_summary": "native: per-general raw 60 + completed thresholds + progress; aggregate level threshold 56 x float32 1.125 to Lv99; score=raw*4",
+    "continent_records": "native generation + max-only persistence fully wired in P29: ordinary victory writes Europe/America; fast victory (Europe<=65 / America<=55) overrides to Asia only",
+    "champion_ranking_service": "native Multiplayer/platform calls proven; exact external service behavior unresolved; no fabricated Web navigation",
+    "offline_core": "327/327",
+    "iphone_true_device_verification": "pending",
+    "campaign_stage_stars": "native historical best-rating sum / 420 (84 original stages x 5); separate from spendable Campaign Stars wallet",
+    "general_cap_adaptation": "native aggregates 12 HQ slots; user unlimited-general mod extends same formula to all owned HQ generals",
+    "conquest_value_generator": "x86_64 ~0x7e760 fully decoded: resources + HQ rank/nobility levels + historical Campaign stars + round bands; normal /46660 and Asia /700 native normalization/threshold tables",
+    "conquest_fast_override": "native caller ~0x7ef50 overwrites pending normal record with Asia index2; one victory writes only one continent record"
+  },
+  "singleplayer_final": {
+    "code_data_status": "complete_after_full_singleplayer_census",
+    "external_services_excluded": [
+      "IAP/buy medals",
+      "rewarded ads",
+      "multiplayer/network",
+      "Champion/Ranking platform service",
+      "website/email/update/service/operator unlock"
+    ],
+    "native_forms_last_closed": [
+      "form_loading",
+      "form_failure",
+      "form_complete group_challenge/group_conquest"
+    ],
+    "conquest_extinction_rule": "land infantry/cavalry/artillery gone + all non-port facilities lost + all ports lost; navy/fort remnants do not preserve nation",
+    "conquest_fast_challenge_choice": "fast victory opens native challenge; player chooses Asia record or normal Europe/America record",
+    "service_worker_core": "1054/1054",
+    "true_device_verification": "optional_external_acceptance_smoke; no unresolved local map/unit production rule"
+  },
+  "visual_polish": {
+    "status": "P35_final_native_presentation_candidate",
+    "battle_logical_space": "568x320 preserved",
+    "hidpi_backing": "devicePixelRatio * stageScale, ceil to 0.5 step, max 4x",
+    "pointer_mapping": "client screen rect inverse -> 568x320 logical; no battle offsetX/offsetY",
+    "conquest_preview": "410x320 logical preserved with HiDPI backing",
+    "unit_geometry": "native hex centers/refpoints/unitVisualZoom unchanged; no blur-compensation resizing",
+    "map_unit_integrity": "161 critical native-ref sprites + 877 READY visuals + 7407 battle units PASS",
+    "impact_commit": "simulation immediate; HP/damage/death presentation at end of authored Attack motion",
+    "transport": "function12 Armored Carrier -> transportship2, otherwise transportship1; native refs + current path segment facing",
+    "stageintro_talk": "P34 evidence-backed geometry retained",
+    "camera_lowzoom": "0.2..1.0 + 0.5 strategic split retained; world-scaled labels retained",
+    "z_order": "P34 native battle/effect/strategic-marker/tactical-overlay order retained",
+    "public_shell": "visible Web Port branding removed; iOS standalone/touch shell hardened; save keys preserved",
+    "service_worker_core": "1054/1054 present",
+    "iphone_side_by_side": "not executed in build environment; acceptance smoke remains external"
+  },
+  "p36_handoff": {
+    "native_undo_geometry": "x=0 y=293 37x37",
+    "hextend_boards": [
+      "board_resources.png",
+      "board_buttons.png",
+      "board_terrain_info.png"
+    ],
+    "resource_icon_x": [
+      3,
+      53,
+      103
+    ],
+    "resource_text_x": [
+      21,
+      70,
+      125
+    ],
+    "native_ai_action_strip": true,
+    "test": "test_p36_native_hud_hextend.js PASS"
+  },
+  "visual_polish_p37": {
+    "native_hud_browser_shadow_removed": true,
+    "native_hud_active_scale_removed": true,
+    "hud_icon_opacity_restored": 1,
+    "resource_text_css_shadow_removed": true,
+    "ai_action_text_css_shadow_removed": true,
+    "funcres_secondary_icon_anchor": "x=15,y=29",
+    "funcres_secondary_text_anchor": "x=32,y=28",
+    "map_geometry_changed": false,
+    "unit_native_refs_or_scale_changed": false,
+    "touch_mapping_changed": false
+  },
+  "presentation_checkpoint": "P38_NATIVE_HUD_BASELINE_POLISH_WIP",
+  "full_js_regression": {
+    "pass": 125,
+    "total": 125,
+    "fail": 0
+  },
+  "next_focus": "Evidence-backed native battle HUD/text/compositing cleanup only; true-device iPhone A/B remains final gate."
+}

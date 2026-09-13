@@ -1,0 +1,104 @@
+{
+  "Small Fortress": {
+    "name": "Small Fortress",
+    "id": 37,
+    "type": "fortress",
+    "price": 120,
+    "industry": 10,
+    "army": "Small Fortress",
+    "grade": "0",
+    "buildround": 2,
+    "image": "button_unit_building_fortressgun.png",
+    "intro": "Small Fortress Intro"
+  },
+  "Fortress": {
+    "name": "Fortress",
+    "id": 38,
+    "type": "fortress",
+    "price": 200,
+    "industry": 80,
+    "army": "Fortress",
+    "grade": "0",
+    "buildround": 3,
+    "image": "button_unit_building_fortressgun.png",
+    "intro": "Fortress Intro"
+  },
+  "Large Fortress": {
+    "name": "Large Fortress",
+    "id": 39,
+    "type": "fortress",
+    "price": 280,
+    "industry": 160,
+    "army": "Large Fortress",
+    "grade": "0",
+    "buildround": 4,
+    "image": "button_unit_building_fortressgun.png",
+    "intro": "Large Fortress Intro"
+  },
+  "Coastal Fort": {
+    "name": "Coastal Fort",
+    "id": 40,
+    "type": "fortress",
+    "price": 60,
+    "industry": 60,
+    "army": "Coastal Fort",
+    "grade": "0",
+    "buildround": 3,
+    "image": "button_unit_building_fortressgun.png",
+    "intro": "Coastal Fort Intro"
+  },
+  "Trench": {
+    "name": "Trench",
+    "id": 41,
+    "type": "installation",
+    "price": 30,
+    "industry": 10,
+    "image": "button_unit_building_trench.png",
+    "intro": "Trench Intro"
+  },
+  "Fence": {
+    "name": "Fence",
+    "id": 42,
+    "type": "installation",
+    "price": 20,
+    "industry": 15,
+    "image": "button_unit_building_radar.png",
+    "intro": "Fence Intro"
+  },
+  "Bunker": {
+    "name": "Bunker",
+    "id": 43,
+    "type": "installation",
+    "price": 10,
+    "industry": 25,
+    "image": "button_unit_building_bunker.png",
+    "intro": "Bunker Intro"
+  },
+  "Upgrade Construction": {
+    "name": "Upgrade Construction",
+    "id": 44,
+    "type": "special",
+    "price": 0,
+    "industry": 0,
+    "image": "button_unit_building_antiaircraftgun.png",
+    "intro": "Upgrade Construction Intro"
+  },
+  "Training": {
+    "name": "Training",
+    "id": 45,
+    "type": "special",
+    "price": 0,
+    "industry": 0,
+    "image": "button_unit_building_antiaircraftgun.png",
+    "intro": "Training Intro"
+  },
+  "Troopship": {
+    "name": "Troopship",
+    "id": 46,
+    "type": "special",
+    "price": 40,
+    "industry": 0,
+    "image": "unit_sample_button.png",
+    "intro": "Troopship Intro"
+  }
+}

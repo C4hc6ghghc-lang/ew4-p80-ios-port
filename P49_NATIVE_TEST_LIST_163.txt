@@ -1,0 +1,347 @@
+Building for debugging...
+[0/18] Write sources
+[4/18] Write swift-version--1BA0962812E73E12.txt
+[6/58] Emitting module EW4NativeCore
+[7/67] Compiling EW4NativeCore NativeGeneralGrowthCore.swift
+[8/67] Compiling EW4NativeCore NativeImpactPresentationCore.swift
+[9/67] Compiling EW4NativeCore NativeMovementCore.swift
+[10/67] Compiling EW4NativeCore NativeMovementPresentationCore.swift
+[11/67] Compiling EW4NativeCore NativeOriginalBattleModalCore.swift
+[12/67] Compiling EW4NativeCore NativeOriginalBattleResultCore.swift
+[13/67] Compiling EW4NativeCore NativeOriginalFormContentCore.swift
+[14/67] Compiling EW4NativeCore NativeOriginalFormGeometryCore.swift
+[15/67] Compiling EW4NativeCore NativePlayerProfileCore.swift
+[16/67] Compiling EW4NativeCore NativePresentationLODCore.swift
+[17/67] Compiling EW4NativeCore NativeResourceAudit.swift
+[18/67] Compiling EW4NativeCore NativeResultCore.swift
+[19/67] Compiling EW4NativeCore NativeRoundRuntimeAdapter.swift
+[20/67] Compiling EW4NativeCore NativeRoundSettlementCore.swift
+[21/67] Compiling EW4NativeCore NativeTrainingParityCore.swift
+[22/67] Compiling EW4NativeCore NativeUnitStatusCore.swift
+[23/67] Compiling EW4NativeCore PlayerUnitRules.swift
+[24/67] Compiling EW4NativeCore ResourceModels.swift
+[25/67] Compiling EW4NativeCore NativeBattleSaveSlotStore.swift
+[26/67] Compiling EW4NativeCore NativeBattleSidecarCore.swift
+[27/67] Compiling EW4NativeCore NativeBattleSnapshotCore.swift
+[28/67] Compiling EW4NativeCore NativeCamera.swift
+[29/67] Compiling EW4NativeCore NativeCampaignBattleFlowCore.swift
+[30/67] Compiling EW4NativeCore NativeCampaignCore.swift
+[31/67] Compiling EW4NativeCore NativeCampaignSessionCore.swift
+[32/67] Compiling EW4NativeCore NativeConquestAchievementCore.swift
+[33/67] Compiling EW4NativeCore NativeConquestBattleFlowCore.swift
+[34/67] Compiling EW4NativeCore NativeConquestExtinctionCore.swift
+[35/67] Compiling EW4NativeCore ArmyStatsCore.swift
+[36/67] Compiling EW4NativeCore BattleGameplayCore.swift
+[37/67] Compiling EW4NativeCore BattleSession.swift
+[38/67] Compiling EW4NativeCore CombatCore.swift
+[39/67] Compiling EW4NativeCore CompactBILE.swift
+[40/67] Compiling EW4NativeCore CountryTurnCore.swift
+[41/67] Compiling EW4NativeCore DefMotion.swift
+[42/67] Compiling EW4NativeCore LogicalGeometry.swift
+[43/67] Compiling EW4NativeCore NativeAIPlannerCore.swift
+[44/67] Compiling EW4NativeCore NativeAIPresentationDriverCore.swift
+[45/67] Compiling EW4NativeCore NativeAIRoundSimulationCore.swift
+[46/67] Compiling EW4NativeCore NativeAnimationSequenceCore.swift
+[47/67] Compiling EW4NativeCore NativeAnimationTiming.swift
+[48/67] Compiling EW4NativeCore NativeBattleDialogueQueueCore.swift
+[49/67] Compiling EW4NativeCore NativeBattleEnvironmentCore.swift
+[50/67] Compiling EW4NativeCore NativeBattleEventCore.swift
+[51/67] Compiling EW4NativeCore NativeBattleHUDCore.swift
+[52/67] Compiling EW4NativeCore NativeBattlePresentation.swift
+[53/67] Compiling EW4NativeCore NativeBattleRehydrationCore.swift
+[54/67] Compiling EW4NativeCore NativeBattleSaveCore.swift
+[55/70] Wrapping AST for EW4NativeCore for debugging
+[57/113] Compiling EW4NativeRenderer NativeOriginalTalkRenderer.swift
+[58/114] Compiling EW4NativeRenderer NativeOriginalStageIntroRenderer.swift
+[59/114] Compiling EW4NativeCoreTests BILEMathTests.swift
+[60/114] Compiling EW4NativeCoreTests BattleGameplayTests.swift
+[61/114] Emitting module EW4NativeRenderer
+[62/114] Compiling EW4NativeCoreTests CombatTests.swift
+[63/114] Compiling EW4NativeCoreTests CountryTurnTests.swift
+[64/114] Compiling EW4NativeAudit main.swift
+[65/114] Emitting module EW4NativeAudit
+[66/115] Wrapping AST for EW4NativeAudit for debugging
+[67/115] Write Objects.LinkFileList
+[69/115] Compiling EW4NativeRenderer NativeResourceStore.swift
+[70/116] Linking EW4NativeAudit
+[72/116] Compiling EW4NativeCoreTests NativeCampaignCoreTests.swift
+[73/116] Compiling EW4NativeCoreTests NativeCampaignRuntimeEndTests.swift
+[74/116] Compiling EW4NativeCoreTests NativeCampaignSessionTests.swift
+[75/116] Compiling EW4NativeCoreTests NativeConquestAchievementTests.swift
+[76/116] Compiling EW4NativeCoreTests NativeConquestBattleFlowTests.swift
+[77/116] Compiling EW4NativeCoreTests NativeConquestExtinctionTests.swift
+[78/116] Compiling EW4NativeCoreTests NativeGeneralGrowthTests.swift
+[79/116] Compiling EW4NativeCoreTests NativeImpactPresentationTests.swift
+[80/116] Compiling EW4NativeCoreTests NativeMovementPresentationTests.swift
+[81/124] Compiling EW4NativeCoreTests NativeNoonRegressionLockTests.swift
+[82/124] Compiling EW4NativeCoreTests NativeOriginalBattleResultTests.swift
+[83/124] Compiling EW4NativeCoreTests NativeOriginalFormGeometryTests.swift
+[84/124] Compiling EW4NativeCoreTests NativePlayerEquipmentBattleParityTests.swift
+[85/124] Compiling EW4NativeCoreTests NativePlayerEquipmentCombatParityTests.swift
+[86/124] Compiling EW4NativeCoreTests NativePlayerProfileGrowthRuntimeTests.swift
+[87/124] Compiling EW4NativeCoreTests NativePlayerProfileTests.swift
+[88/124] Compiling EW4NativeCoreTests NativePresentationLODTests.swift
+[89/124] Emitting module EW4NativeCoreTests
+[94/124] Compiling EW4NativeCoreTests GeometryTests.swift
+[95/124] Compiling EW4NativeCoreTests NativeAIPlannerTests.swift
+[96/124] Compiling EW4NativeCoreTests NativeAIPresentationDriverTests.swift
+[97/124] Compiling EW4NativeCoreTests NativeAnimationSequenceTests.swift
+[98/124] Compiling EW4NativeCoreTests NativeBattleDialogueQueueTests.swift
+[99/124] Compiling EW4NativeCoreTests NativeBattleEnvironmentTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[100/124] Compiling EW4NativeCoreTests NativeBattleEventTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[101/124] Compiling EW4NativeCoreTests NativeBattleHUDTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[102/124] Compiling EW4NativeCoreTests NativeBattleRehydrationTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[103/124] Compiling EW4NativeCoreTests NativeBattleSaveSlotStoreTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[104/124] Compiling EW4NativeCoreTests NativeBattleSaveTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[105/124] Compiling EW4NativeCoreTests NativeBattleSidecarTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[106/124] Compiling EW4NativeCoreTests NativeBattleSnapshotTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[107/124] Compiling EW4NativeCoreTests NativeCampaignBattleFlowTests.swift
+/mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[108/124] Compiling EW4NativeCoreTests NativeResultTests.swift
+[109/124] Compiling EW4NativeCoreTests NativeRoundRuntimeAdapterTests.swift
+[110/124] Compiling EW4NativeCoreTests NativeRoundSettlementTests.swift
+[111/124] Compiling EW4NativeCoreTests NativeTrainingParityTests.swift
+[112/124] Compiling EW4NativeCoreTests NativeUnitStatusTests.swift
+[113/124] Compiling EW4NativeCoreTests PresentationTests.swift
+[114/124] Compiling EW4NativeCoreTests TestResourcePaths.swift
+[115/124] Compiling EW4NativeCoreTests VisualResolverTests.swift
+[116/125] /mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[117/125] Write sources
+[118/125] Wrapping AST for EW4NativeCoreTests for debugging
+[120/128] Compiling EW4NativeCorePackageDiscoveredTests EW4NativeCoreTests.swift
+[121/128] Compiling EW4NativeCorePackageDiscoveredTests all-discovered-tests.swift
+[122/128] Emitting module EW4NativeCorePackageDiscoveredTests
+[123/129] /mnt/data/p49_work/EW4_R14_39_P49_NATIVE_CAMPAIGN_CONQUEST_OUTER_FLOW_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageTests.derived/runner.swift
+[124/129] Write sources
+[125/129] Wrapping AST for EW4NativeCorePackageDiscoveredTests for debugging
+[127/131] Emitting module EW4NativeCorePackageTests
+[128/131] Compiling EW4NativeCorePackageTests runner.swift
+[129/132] Wrapping AST for EW4NativeCorePackageTests for debugging
+[130/132] Write Objects.LinkFileList
+[131/132] Linking EW4NativeCorePackageTests.xctest
+Build complete! (19.13s)
+EW4NativeCoreTests.NativeGeneralGrowthTests/testAwardSeparatesMilitaryHitFromKillNobility
+EW4NativeCoreTests.NativeGeneralGrowthTests/testEquipmentOverridesSkillMultiplierAndBestWins
+EW4NativeCoreTests.NativeGeneralGrowthTests/testMaxLevelClearsProgress
+EW4NativeCoreTests.NativeGeneralGrowthTests/testMilitaryDamageGainMatchesP39
+EW4NativeCoreTests.NativeGeneralGrowthTests/testNobilityGainOnlyUsesKillInputs
+EW4NativeCoreTests.NativeGeneralGrowthTests/testProgressMayCrossMultipleThresholdsExactlyLikeP39
+EW4NativeCoreTests.NativePlayerProfileGrowthRuntimeTests/testGrowthEquipmentOverridesSkillUsingRealItemCatalog
+EW4NativeCoreTests.NativePlayerProfileGrowthRuntimeTests/testRuntimeProviderSeesRankGrowthImmediately
+EW4NativeCoreTests.NativePlayerProfileGrowthRuntimeTests/testUnownedCommanderDoesNotGainPlayerGrowth
+EW4NativeCoreTests.advancingDialoguePresentsNextThenDrainsExactlyOnce()
+EW4NativeCoreTests.affineMatchesJSMulOrder()
+EW4NativeCoreTests.aiCommanderNeverConsumesPlayerProfileOrOverrides()
+EW4NativeCoreTests.aiCountryEconomyWritesBackToPersistenceLedger()
+EW4NativeCoreTests.aiExecutionMovesAndAttacksUnderNativePhaseRules()
+EW4NativeCoreTests.aiPlannerIsDeterministicForSameState()
+EW4NativeCoreTests.aiPlannerPrefersLegalFiringCellWhenAvailable()
+EW4NativeCoreTests.aiPlannerTargetsOnlyHostiles()
+EW4NativeCoreTests.all877NativeUnitsBuildAttackChainsInBothHorizontalDirections()
+EW4NativeCoreTests.allCampaignTurnLimitsProduceValidNativeScores()
+EW4NativeCoreTests.armoredCarrierFunction12SuppressesEmbarkedAttackPenalty()
+EW4NativeCoreTests.attackIntervalAndFormationParity()
+EW4NativeCoreTests.attackSidecarAddsCollectedMedalsExactlyOnce()
+EW4NativeCoreTests.authoredBTLRawTrainingLevelFeedsFreshNativeUnitState()
+EW4NativeCoreTests.authoredImpactUsesEndOfAttackPhaseNotFullReloadFinishChain()
+EW4NativeCoreTests.battleGameplayMarkEndedClearsInteractionStateAndStaysEnded()
+EW4NativeCoreTests.battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields()
+EW4NativeCoreTests.battleSaveRoundTripClampsCameraAndPreservesExtendedState()
+EW4NativeCoreTests.battleSaveSchema6EnvelopeMatchesP39Contract()
+EW4NativeCoreTests.battleSaveSlotStoreAtomicallyRoundTripsAndExposesNativeFormMetadata()
+EW4NativeCoreTests.battleSaveSlotsMatchP39AutoPlusSixContract()
+EW4NativeCoreTests.buildingKeyMatchesRecoveredRules()
+EW4NativeCoreTests.campaignAuthoredSnapshotUsesPristineBTLContract()
+EW4NativeCoreTests.campaignBattleFlowTurnLimitIsStrictlyAfterWinRound()
+EW4NativeCoreTests.campaignBattleFlowUsesPristineObjectiveSnapshotAndDetectsCapturedObjectiveVictory()
+EW4NativeCoreTests.campaignContinueCompletionRewardIsOneShot()
+EW4NativeCoreTests.campaignContinueRewardsAndMedalProcMatchP39()
+EW4NativeCoreTests.campaignCountryVariantsAndBranchSpecificSecretsMatchRecoveredP39()
+EW4NativeCoreTests.campaignEconomicBonusesMatchP39UpgradeTable()
+EW4NativeCoreTests.campaignLegacyMigrationMatchesP39ExactlyOnce()
+EW4NativeCoreTests.campaignMetaStorageIsStableAcross500Reloads()
+EW4NativeCoreTests.campaignResultAwardsOnlyPositiveBestRatingDeltaAndCapsStars()
+EW4NativeCoreTests.campaignRowsOpenHiddenProgressionAndSecretSelectionMatchP39()
+EW4NativeCoreTests.campaignSceneSourceLocksAuthoredImpactAndSettlementBeforeResultPresentation()
+EW4NativeCoreTests.campaignTargetManifestMatchesRecoveredTotalsAndRelations()
+EW4NativeCoreTests.campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce()
+EW4NativeCoreTests.campaignYellowObjectiveUnlockPersistsAndDoesNotDuplicate()
+EW4NativeCoreTests.campaignZoneCompletionRewardIsOneShot()
+EW4NativeCoreTests.captureAndDeathBindingsResolveExactRecoveredTargets()
+EW4NativeCoreTests.captureScriptEventAppliesMoraleAndDedupesDialogueAndEffect()
+EW4NativeCoreTests.combatTrainingAwardsAfterPrimaryAndCounterUsingActualDamage()
+EW4NativeCoreTests.compactOriginMatchesRecoveredContract()
+EW4NativeCoreTests.conquestAchievementPrepareVictoryOffersAsiaOnlyWithinRecoveredFastWinThreshold()
+EW4NativeCoreTests.conquestAchievementRecordKeepsBestStoredValueOnly()
+EW4NativeCoreTests.conquestAchievementRoundAndResourceFormulasMatchRecoveredP39()
+EW4NativeCoreTests.conquestAchievementUsesAllOwnedGeneralLevelsAndCampaignStageRatings()
+EW4NativeCoreTests.conquestBattleFlowDelegatesExactFrozenExtinctionRule()
+EW4NativeCoreTests.conquestContinueRequiresFastWinChoiceOnlyWhenAsiaEligible()
+EW4NativeCoreTests.conquestNavyAndFortDoNotPreserveNationAfterLandAndFacilitiesAreGone()
+EW4NativeCoreTests.conquestPlayerCanBeDefeatedWithOnlyNavyRemainingAndNeutralIsExcluded()
+EW4NativeCoreTests.conquestPortOrLandFacilityOrArtilleryEachPreservesNation()
+EW4NativeCoreTests.conquestSceneSourceUsesSharedImpactBoundariesAndChallengeIsDeferredUntilContinue()
+EW4NativeCoreTests.conquestSlowVictoryRecordsNormalContinentImmediately()
+EW4NativeCoreTests.constructionAdvancesAfterGlobalActionResetLikeP39()
+EW4NativeCoreTests.constructionPresenceOverridesTerrainEvenWhenAvoidIsZero()
+EW4NativeCoreTests.corruptOrUnsupportedBattleSaveSlotBehavesAsEmptyLikeP39()
+EW4NativeCoreTests.counterDamageGetsIndependentAuthoredImpact()
+EW4NativeCoreTests.counterDamageResultValueMatchesActuallyAppliedP39Multiplier()
+EW4NativeCoreTests.countryTurnCoreFixtureParity()
+EW4NativeCoreTests.damageBoundsParity()
+EW4NativeCoreTests.defMotionSmallFixture()
+EW4NativeCoreTests.dialogueQueueShowsOnlyOneEventAtATime()
+EW4NativeCoreTests.directionalMotionFallsBackOnlyWhenNeeded()
+EW4NativeCoreTests.enqueueDuringActiveDialogueDoesNotReplaceCurrentSpeaker()
+EW4NativeCoreTests.equipmentFunction0PreservesP39TerrainIgnoreSemantics()
+EW4NativeCoreTests.eventMoraleLastsExactlyThreeRoundsAndLeadershipClearsNegative()
+EW4NativeCoreTests.everyRecoveredCampaignMapTargetResolvesToAuthoredBTLObject()
+EW4NativeCoreTests.facilityIncomeAndUpkeepMatchP39()
+EW4NativeCoreTests.facilityIncomeEquipmentUsesMaxMultiplierNotAddition()
+EW4NativeCoreTests.fireproofCommanderBlocksNativeFireAndClearsExistingCell()
+EW4NativeCoreTests.freshPersistenceContextUsesAuthoredLedgersAndDeployedCommanders()
+EW4NativeCoreTests.freshProfileMatchesP39CoreDefaultsAndUnlocksAllPrincesses()
+EW4NativeCoreTests.fullNativeAIRoundReturnsControlToPlayerDeterministically()
+EW4NativeCoreTests.fullPlayerRoundSettlementMatchesP39Sequence()
+EW4NativeCoreTests.gunsAgainstFortUseAttack1AndSkipTail()
+EW4NativeCoreTests.incrementalAIDriverMatchesHeadlessRoundFinalState()
+EW4NativeCoreTests.incrementalAIDriverYieldsVisibleMovesInsteadOfCollapsingWholeRound()
+EW4NativeCoreTests.legacyCameraGeometryFallsBackToPlayerOpeningFocusButKeepsZoom()
+EW4NativeCoreTests.liveGeneralGrowthHandlerAppliesRankHPDeltaWithoutChangingLegacyAttackAPI()
+EW4NativeCoreTests.liveRoundSettlementBlocksTentWhenUnitAttackedLastRound()
+EW4NativeCoreTests.liveRoundSettlementUsesPreviousAttackedFlagBeforeReset()
+EW4NativeCoreTests.logicalSpaceFrozen()
+EW4NativeCoreTests.machineGunSpeedShortensRealDuration()
+EW4NativeCoreTests.manualTrainingCostAndHealMatchP39()
+EW4NativeCoreTests.moraleAndInstallationsSurviveSchema6Rehydration()
+EW4NativeCoreTests.movementPresentationDurationMatchesP39Contract()
+EW4NativeCoreTests.movementPresentationInterpolatesAlongAuthoredHexPath()
+EW4NativeCoreTests.movementSearchParity()
+EW4NativeCoreTests.napoleonPlayerEffectiveCommanderMatchesP39OverrideUnion()
+EW4NativeCoreTests.nativeAppliedAndFiredEventKeysSurviveSchema6Snapshot()
+EW4NativeCoreTests.nativeAttack0ChainMatchesRecoveredStateMachine()
+EW4NativeCoreTests.nativeBattleCornerHUDGeometryFrozen()
+EW4NativeCoreTests.nativeCameraSemantics()
+EW4NativeCoreTests.nativeEventCatalogMatchesRecoveredP39Coverage()
+EW4NativeCoreTests.nativeFiveGradeResultFormulaMatchesP39()
+EW4NativeCoreTests.nativeGameplayAttackAndCounter()
+EW4NativeCoreTests.nativeGameplayCavalryAnnihilationGrantsExtraAction()
+EW4NativeCoreTests.nativeGameplayEndedProjectionMatchesPhase()
+EW4NativeCoreTests.nativeGameplayHostileFacilityCaptureDisablesUndo()
+EW4NativeCoreTests.nativeGameplayPlayerBuffMoveAndUndo()
+EW4NativeCoreTests.nativeGameplayTurnBoundaryResetsPlayerActions()
+EW4NativeCoreTests.nativeHexCentersAndRoundTrip()
+EW4NativeCoreTests.nativeMedalDeltaAndDescriptionMatchP39()
+EW4NativeCoreTests.nativeNoonRegressionContractFrozen()
+EW4NativeCoreTests.nativeOriginalDefeatResultUsesRecoveredFailureNarrationKeys()
+EW4NativeCoreTests.nativeOriginalVictoryResultUsesExistingP39ScoreAndBattleState()
+EW4NativeCoreTests.nativePresentationLODFrozen()
+EW4NativeCoreTests.nativeSnapshotRoundTripPreservesGameplayAndP39Sidecar()
+EW4NativeCoreTests.nativeTrainingTablesMatchP39()
+EW4NativeCoreTests.nativeUnitStatusRecoveredMath()
+EW4NativeCoreTests.oppositeFlankIsMinusOneAndFullSurroundIsMinusTwo()
+EW4NativeCoreTests.originalFormsKeepRecoveredXMLDimensions()
+EW4NativeCoreTests.originalPauseAndSaveActionHitboxesDoNotDrift()
+EW4NativeCoreTests.originalResultActionHitboxesStayBoundToRecoveredButtons()
+EW4NativeCoreTests.originalVictoryFailureAndVictoryTextGeometryCannotDrift()
+EW4NativeCoreTests.pauseAndSaveHitGeometryMatchesRecoveredLayout()
+EW4NativeCoreTests.pauseAndSaveUseMatureP39BattleScreenPlacement()
+EW4NativeCoreTests.pendingKilledUnitRemainsVisibleUntilImpactThenCommitsHP()
+EW4NativeCoreTests.persistedPlayerGrowthAndEquipmentOverrideEffectiveCommander()
+EW4NativeCoreTests.playerCounterDuringAITurnCanCollectBattleMedal()
+EW4NativeCoreTests.playerMovementEquipmentFunction9MatchesP39TargetRule()
+EW4NativeCoreTests.playerNobilityFlagAndTentHealingMatchP39Ordering()
+EW4NativeCoreTests.playerOverridesParity()
+EW4NativeCoreTests.playerPrimaryAttackCollectsBattleMedalUsingSameRNGStream()
+EW4NativeCoreTests.playerProfileEquipmentNeverLeaksIntoAICommanderMovement()
+EW4NativeCoreTests.playerProfileStoreAtomicRoundTripAndCorruptFallback()
+EW4NativeCoreTests.princessOverridesAffectOnlySpecifiedThreePrincesses()
+EW4NativeCoreTests.profileDecodeMigratesLegacyStarsBeforeDefaultsCanMaskThem()
+EW4NativeCoreTests.profileUnknownFieldsSurviveLosslessRoundTrip()
+EW4NativeCoreTests.realInstallationPenaltiesMatchP39Catalog()
+EW4NativeCoreTests.realTerrainPenaltiesDecodeFromRecoveredWorldData()
+EW4NativeCoreTests.recoveredRoundFireCellUsesNativeWorldWidthAndPersists()
+EW4NativeCoreTests.recoveredRoundMoraleLastsNThroughNPlusTwo()
+EW4NativeCoreTests.roundDialogueUsesFiredDedupeWithoutPollutingAppliedSet()
+EW4NativeCoreTests.roundTrainingHealCapsAtMaxHP()
+EW4NativeCoreTests.roundTurnContentUsesCompletedRoundSettlementAndLivingPlayerGenerals()
+EW4NativeCoreTests.roundTurnGeometryMatchesRecoveredXMLAndP39Placement()
+EW4NativeCoreTests.roundTurnSceneOrderingKeepsSettlementModalDialogueAutosaveContract()
+EW4NativeCoreTests.saveRehydrationDoesNotApplyPlayerHPBonusTwice()
+EW4NativeCoreTests.saveRehydrationRestoresCapturedFacilityAndEndedPhase()
+EW4NativeCoreTests.saveSlotDisplaysKeepOneAutosavePlusSixManualAndResolveCountryFlag()
+EW4NativeCoreTests.snareDrumFunction4ForcesFullFormationAtLowHP()
+EW4NativeCoreTests.stageIntroUsesP39ScreenPlacementAndRecoveredCloseHitbox()
+EW4NativeCoreTests.tacticsAndSpecialsParity()
+EW4NativeCoreTests.talkUsesP39AdaptedBattlePlacementAndOriginalInternals()
+EW4NativeCoreTests.tentDoesNotHealAfterAttackOrInsideConstruction()
+EW4NativeCoreTests.terminalReadyStartsAtFrameZeroAfterActiveChain()
+EW4NativeCoreTests.toulonStageIntroContentComesFromRecoveredP39BattleData()
+EW4NativeCoreTests.trainingAndConstructionRuntimeStateSurvivesNativeSaveRoundTrip()
+EW4NativeCoreTests.trainingExperienceThresholdsMatchP39()
+EW4NativeCoreTests.trainingThenFacilitySupplyApplyToAllOwners()
+EW4NativeCoreTests.victoryGeometryKeepsOriginalButtonAndGeneralRows()
+EW4NativeCoreTests.visualResolverNationalThenGeneric()
+EW4NativeCoreTests.weaponArmorAndAdjacentFlagsMatchP39CombatEquipmentPipeline()

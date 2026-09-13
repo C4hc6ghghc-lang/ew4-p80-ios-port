@@ -1,0 +1,34 @@
+{
+  "source_lean": {
+    "p43_files": 6321,
+    "p44_files": 6321,
+    "missing": [],
+    "new": [],
+    "changed": []
+  },
+  "source_native": {
+    "p43_files": 1814,
+    "p44_files": 1826,
+    "missing": [],
+    "new": [
+      "NativeCore/Sources/EW4NativeCore/NativeAIPresentationDriverCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleRehydrationCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleSaveSlotStore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeBattleSnapshotCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeImpactPresentationCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeMovementPresentationCore.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeAIPresentationDriverTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleRehydrationTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleSaveSlotStoreTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleSnapshotTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeImpactPresentationTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeMovementPresentationTests.swift"
+    ],
+    "changed": [
+      "Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "NativeCore/Sources/EW4NativeCore/BattleGameplayCore.swift",
+      "NativeCore/Sources/EW4NativeCore/ResourceModels.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift"
+    ]
+  }
+}

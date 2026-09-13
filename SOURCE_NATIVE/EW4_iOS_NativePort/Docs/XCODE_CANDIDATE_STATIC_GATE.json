@@ -1,0 +1,37 @@
+{
+  "checkpoint": "P80_NATIVE_FIRE_PRESENTATION_CLOSURE",
+  "passed": true,
+  "checks": [
+    {
+      "name": "swift_package_contract",
+      "passed": true,
+      "detail": "NativeCore/Package.swift"
+    },
+    {
+      "name": "xcodegen_project_contract",
+      "passed": true,
+      "detail": "iOSApp/project.yml"
+    },
+    {
+      "name": "ios_app_entry_contract",
+      "passed": true,
+      "detail": "iOSApp/App/EW4NativePortApp.swift"
+    },
+    {
+      "name": "mac_build_script_contract",
+      "passed": true,
+      "detail": "Tools/build_unsigned_ipa.sh"
+    },
+    {
+      "name": "app_no_web_runtime",
+      "passed": true,
+      "detail": "0 forbidden runtime tokens"
+    },
+    {
+      "name": "p80_product_swift_count",
+      "passed": true,
+      "detail": "110 product Swift files (109 package sources + 1 app entry)"
+    }
+  ],
+  "errors": []
+}

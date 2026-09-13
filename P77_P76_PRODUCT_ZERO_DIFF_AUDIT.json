@@ -1,0 +1,32 @@
+{
+  "checkpoint": "P77",
+  "product_swift": {
+    "baseline_count": 106,
+    "current_count": 106,
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "ios_app_swift": {
+    "baseline_count": 1,
+    "current_count": 1,
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "native_resources": {
+    "baseline_count": 1751,
+    "current_count": 1751,
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "source_lean": {
+    "baseline_count": 6321,
+    "current_count": 6321,
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "passed": true
+}

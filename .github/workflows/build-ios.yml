@@ -1,0 +1,65 @@
+name: Build EW4 P80 unsigned IPA
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ew4-p80-ipa-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 60
+    env:
+      PYTHONUTF8: '1'
+      HOMEBREW_NO_AUTO_UPDATE: '1'
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare Apple toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -d /Applications/Xcode_16.4.app ]; then
+            sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
+          fi
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-path
+          if ! command -v xcodegen >/dev/null; then
+            brew install xcodegen
+          fi
+          chmod +x BUILD_FROM_CODEX_MAC.sh
+          chmod +x SOURCE_NATIVE/EW4_iOS_NativePort/BUILD_FROM_CODEX_MAC.sh
+          chmod +x SOURCE_NATIVE/EW4_iOS_NativePort/Tools/build_unsigned_ipa.sh
+      - name: Run preserved checks and build IPA
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash BUILD_FROM_CODEX_MAC.sh 2>&1 | tee cloud-build.log
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: EW4-P80-unsigned-IPA
+          path: |
+            SOURCE_NATIVE/EW4_iOS_NativePort/build/EW4NativePort-unsigned.ipa
+            SOURCE_NATIVE/EW4_iOS_NativePort/build/EW4NativePort-unsigned.ipa.sha256
+          if-no-files-found: error
+          retention-days: 7
+      - name: Upload diagnostics even if build fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: EW4-P80-build-diagnostics
+          path: |
+            cloud-build.log
+            P80_CODEX_JS_REGRESSION.log
+            P80_MAP_UNIT_DYNAMIC_STATE_AUDIT.log
+            SOURCE_NATIVE/EW4_iOS_NativePort/build/reports/
+          if-no-files-found: warn
+          retention-days: 7

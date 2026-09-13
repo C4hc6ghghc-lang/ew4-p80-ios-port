@@ -1,0 +1,6 @@
+EW4 Web Port r14-39 Post-Handoff 21
+Independent Node test processes: 97 / 97 PASS
+Failures: 0
+Native Campaign SceneUpgrade / Star / 6x26 tech state / recruit-training / economy / Dock / BattleSave schema 6 contracts included.
+Warzone XML reproducibility: 156 / 156 levels matched.
+Service Worker CORE existence census: 231 / 231 present.

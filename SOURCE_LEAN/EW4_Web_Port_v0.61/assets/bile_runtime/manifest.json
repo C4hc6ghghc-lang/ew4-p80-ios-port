@@ -1,0 +1,286 @@
+{
+  "format": "EW4_COMPACT_BILE_RUNTIME_V1",
+  "source_apk_sha256": "20e609437a3659c5cc5573f7df70c75d48839a552e0120770a0afd8f068af05c",
+  "unit_count": 877,
+  "motion_count": 3519,
+  "resources": {
+    "army_armoredcar": {
+      "files": {
+        "bin": {
+          "file": "army_armoredcar.bin",
+          "bytes": 294399,
+          "apk_compressed_bytes": 23256,
+          "sha256": "f7a67e2f33ae51dcd31324ac4800f78f7b0b44750c01398b74ee580e7505d7f8"
+        },
+        "xml": {
+          "file": "army_armoredcar.xml",
+          "bytes": 9325,
+          "apk_compressed_bytes": 1247,
+          "sha256": "e330c7479e27a45df9ddc28cf3bcc1725ef6cb09d533205522c2a6f01a737083"
+        },
+        "png": {
+          "file": "army_armoredcar.png",
+          "bytes": 91129,
+          "apk_compressed_bytes": 91129,
+          "sha256": "55f80f519b18f648ba36681e2c80957248cbc9534021037068d1606c41b077f8"
+        }
+      },
+      "unit_refs": 104
+    },
+    "army_artillery": {
+      "files": {
+        "bin": {
+          "file": "army_artillery.bin",
+          "bytes": 2247164,
+          "apk_compressed_bytes": 308738,
+          "sha256": "562c66389b1c6863108a8d796736266f2aa3ed53107f1f63c67234c756809d37"
+        },
+        "xml": {
+          "file": "army_artillery.xml",
+          "bytes": 13640,
+          "apk_compressed_bytes": 1766,
+          "sha256": "ba9700ce23bdbed1f99a33fca528018290d3d8d76aafa2660ed9c75032874252"
+        },
+        "png": {
+          "file": "army_artillery.png",
+          "bytes": 200722,
+          "apk_compressed_bytes": 200722,
+          "sha256": "17da6aa99612055f2ad153a9fd4c3e07f9647d102a0f88e8dad27c5d3e6e75bc"
+        }
+      },
+      "unit_refs": 208
+    },
+    "army_fort": {
+      "files": {
+        "bin": {
+          "file": "army_fort.bin",
+          "bytes": 1983,
+          "apk_compressed_bytes": 505,
+          "sha256": "c6697bf7f0eabec8759bd0620b0b75b6bc22425ad94eedd11e73517c1bc9eb99"
+        },
+        "xml": {
+          "file": "army_fort.xml",
+          "bytes": 579,
+          "apk_compressed_bytes": 190,
+          "sha256": "8a900b1daa5949509c5861b69bf66ad6d3fec93f0aff0ee811c416a22a25d5e0"
+        },
+        "png": {
+          "file": "army_fort.png",
+          "bytes": 156143,
+          "apk_compressed_bytes": 156143,
+          "sha256": "8ddb65b7d98dc9cec93853913c2f94be504c8841585a243fccd9b932c5e36132"
+        }
+      },
+      "unit_refs": 4
+    },
+    "army_grenadier": {
+      "files": {
+        "bin": {
+          "file": "army_grenadier.bin",
+          "bytes": 793980,
+          "apk_compressed_bytes": 71304,
+          "sha256": "475d1da3f17b69ad664eb58be022e3c1f1f33a56d8223c05f6708824c2dbb4b4"
+        },
+        "xml": {
+          "file": "army_grenadier.xml",
+          "bytes": 11404,
+          "apk_compressed_bytes": 1514,
+          "sha256": "2072a834e85738416334f31bcc5cce939f55097d299ae4f8e3b874044d3a0294"
+        },
+        "png": {
+          "file": "army_grenadier.png",
+          "bytes": 94220,
+          "apk_compressed_bytes": 94220,
+          "sha256": "853b22981421f9a730bb90cf9236acee51e0ad3d1cf9f688e92970e1219a98f3"
+        }
+      },
+      "unit_refs": 78
+    },
+    "army_guards": {
+      "files": {
+        "bin": {
+          "file": "army_guards.bin",
+          "bytes": 961775,
+          "apk_compressed_bytes": 102142,
+          "sha256": "da3bde2c168f28b9059f0d288f6b7b9b7c1a66151b1cdca5805d026320141405"
+        },
+        "xml": {
+          "file": "army_guards.xml",
+          "bytes": 16143,
+          "apk_compressed_bytes": 2078,
+          "sha256": "fc33fd9bf2dd14f1beb27b7bdf40d7c4d3e4e5550fe87f25271a5a01c3cee694"
+        },
+        "png": {
+          "file": "army_guards.png",
+          "bytes": 128426,
+          "apk_compressed_bytes": 128426,
+          "sha256": "6a4bd8c864dfb083ce98ede7a241f454da21e389181924520cba861a52cdd71f"
+        }
+      },
+      "unit_refs": 81
+    },
+    "army_guardscavalry": {
+      "files": {
+        "bin": {
+          "file": "army_guardscavalry.bin",
+          "bytes": 1034923,
+          "apk_compressed_bytes": 74950,
+          "sha256": "d495e49c19372efe1f2ff87ba0167e7738688eda555da9c8fcc4745f6c3652e5"
+        },
+        "xml": {
+          "file": "army_guardscavalry.xml",
+          "bytes": 15325,
+          "apk_compressed_bytes": 1943,
+          "sha256": "fa35a0efa9fb0f62ef3bee633458383741e9e0d6909ca6724e9569a8a30a21d2"
+        },
+        "png": {
+          "file": "army_guardscavalry.png",
+          "bytes": 113243,
+          "apk_compressed_bytes": 113243,
+          "sha256": "528cfa1ac6c769806ffc93b348c025cadc7e524ed1d83edc4081bb697355024c"
+        }
+      },
+      "unit_refs": 52
+    },
+    "army_heavycavalry": {
+      "files": {
+        "bin": {
+          "file": "army_heavycavalry.bin",
+          "bytes": 504447,
+          "apk_compressed_bytes": 33839,
+          "sha256": "552da6180b037cffacbb2a881b75003edb730c269cc599c8d664f43f80b76a43"
+        },
+        "xml": {
+          "file": "army_heavycavalry.xml",
+          "bytes": 10474,
+          "apk_compressed_bytes": 1383,
+          "sha256": "46cc8d240b7a34ea3ea35723e0eec21b2f492e9de6210fc255124940a42ea9e6"
+        },
+        "png": {
+          "file": "army_heavycavalry.png",
+          "bytes": 73242,
+          "apk_compressed_bytes": 73242,
+          "sha256": "50feec2d7a154f18e174fa0cbf37469874b1e2d504e7859c92237cab26f5a00b"
+        }
+      },
+      "unit_refs": 52
+    },
+    "army_lightcavalry": {
+      "files": {
+        "bin": {
+          "file": "army_lightcavalry.bin",
+          "bytes": 671499,
+          "apk_compressed_bytes": 59573,
+          "sha256": "7de70c8f8c7a3123d09e69aadfedc01b3e18b25207f30f934b974cdd5c293694"
+        },
+        "xml": {
+          "file": "army_lightcavalry.xml",
+          "bytes": 13490,
+          "apk_compressed_bytes": 1776,
+          "sha256": "b8ed5514eb521d228ee5dc0e1fefb9b61b94d97b5de9174d81e81d045c759e23"
+        },
+        "png": {
+          "file": "army_lightcavalry.png",
+          "bytes": 99837,
+          "apk_compressed_bytes": 99837,
+          "sha256": "14a7cfb0f1a2fcddedcc6c9dadd7a5f4c9ec2140b34fa06157a38a2b15b11b61"
+        }
+      },
+      "unit_refs": 54
+    },
+    "army_lightinfantry": {
+      "files": {
+        "bin": {
+          "file": "army_lightinfantry.bin",
+          "bytes": 513436,
+          "apk_compressed_bytes": 57917,
+          "sha256": "4891624f6edc84cfa7414ff3534c1802dcb6de9d023f288b1d8f9cf0fa2a66cb"
+        },
+        "xml": {
+          "file": "army_lightinfantry.xml",
+          "bytes": 14257,
+          "apk_compressed_bytes": 1801,
+          "sha256": "d07e4775547726021eca97afa8f2c11d0eecc9acd227d67f6744ef279a5ca15a"
+        },
+        "png": {
+          "file": "army_lightinfantry.png",
+          "bytes": 105317,
+          "apk_compressed_bytes": 105317,
+          "sha256": "fde68c77fe1ec1464eec643d444eb72d01a858b756aac50ff29236ac9fe20cff"
+        }
+      },
+      "unit_refs": 81
+    },
+    "army_lineinfantry": {
+      "files": {
+        "bin": {
+          "file": "army_lineinfantry.bin",
+          "bytes": 550110,
+          "apk_compressed_bytes": 52740,
+          "sha256": "d985d59b94cd9301069bb84b402e90ceb34bb93926a73aca8d811112d8b74642"
+        },
+        "xml": {
+          "file": "army_lineinfantry.xml",
+          "bytes": 11865,
+          "apk_compressed_bytes": 1381,
+          "sha256": "4abdd1a1042f1eff9dcf8eca56291ab850d7f12b4695ac437c16881919cac447"
+        },
+        "png": {
+          "file": "army_lineinfantry.png",
+          "bytes": 88186,
+          "apk_compressed_bytes": 88186,
+          "sha256": "6d14254984c494a6a260b4869978b6eed1402a440ec645f39c8cb6936b3ff7ef"
+        }
+      },
+      "unit_refs": 78
+    },
+    "army_militia": {
+      "files": {
+        "bin": {
+          "file": "army_militia.bin",
+          "bytes": 650148,
+          "apk_compressed_bytes": 65811,
+          "sha256": "4c48e502099e209da0b2997b1c37987f5237d0e10f060225862dd777d2be5180"
+        },
+        "xml": {
+          "file": "army_militia.xml",
+          "bytes": 14313,
+          "apk_compressed_bytes": 1820,
+          "sha256": "329f9265ed9a0e7f0236600dd0ed74c6c953f3fb9bc8fcf59ef4d73e0a8df4c7"
+        },
+        "png": {
+          "file": "army_militia.png",
+          "bytes": 115322,
+          "apk_compressed_bytes": 115322,
+          "sha256": "c773cac47baf7b71ed9db6d7c8d4cf2eca0a6b0a42628fa2b149f210f2e5cc88"
+        }
+      },
+      "unit_refs": 81
+    },
+    "army_ship": {
+      "files": {
+        "bin": {
+          "file": "army_ship.bin",
+          "bytes": 87710,
+          "apk_compressed_bytes": 14564,
+          "sha256": "20bcc6f535370236d2fceb0c610b6f468ab853d997934bab8cef3bb31a2312e9"
+        },
+        "xml": {
+          "file": "army_ship.xml",
+          "bytes": 1184,
+          "apk_compressed_bytes": 301,
+          "sha256": "e6dc8757c61b1b82c08ffd24cece494cdf81ae6b9fdfc0f321051b017b85e391"
+        },
+        "png": {
+          "file": "army_ship.png",
+          "bytes": 310335,
+          "apk_compressed_bytes": 310335,
+          "sha256": "9f2213efbeda6127636e918640e7c55777b9aea033ee08a38a1635bfabdb19c6"
+        }
+      },
+      "unit_refs": 4
+    }
+  },
+  "raw_total_bytes": 10344768,
+  "apk_compressed_resource_bytes": 2458661
+}

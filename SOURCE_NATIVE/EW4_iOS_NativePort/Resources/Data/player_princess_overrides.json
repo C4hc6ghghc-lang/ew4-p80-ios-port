@@ -1,0 +1,25 @@
+{
+  "version": 61,
+  "scope": "player_controlled_only",
+  "unlock": {
+    "allPrincessesImmediatelyAvailable": true,
+    "ids": [201, 202, 203, 204, 205, 206, 207, 208]
+  },
+  "princesses": {
+    "204": {
+      "name": "Isabela",
+      "stats": {"artillery": 5, "movement": 7, "training": 5},
+      "addSkills": [8, 35, 31, 4, 32]
+    },
+    "205": {
+      "name": "Victoria",
+      "stats": {"infantry": 5, "movement": 7},
+      "addSkills": [12, 13, 33, 3, 1]
+    },
+    "208": {
+      "name": "Lan",
+      "stats": {"infantry": 5, "cavalry": 5, "movement": 7},
+      "addSkills": [11, 34, 12, 13, 14, 15, 33, 32, 4]
+    }
+  }
+}

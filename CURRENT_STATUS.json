@@ -1,0 +1,16 @@
+{
+  "project": "EW4 R14-39 unified native migration mainline",
+  "checkpoint": "P80 Dynamic Fire Presentation Closure",
+  "date": "2026-09-13",
+  "product_baseline": "P79 battlefield overlay closure plus Native fire-cell presentation",
+  "p79_to_p80": "1 product Swift added, 1 product Swift modified, 1 test added; Resources and SOURCE_LEAN unchanged",
+  "native_tests": "295/295 PASS = 286 Swift Testing + 9 XCTest",
+  "mature_web": "126/126 PASS",
+  "map_unit_audit": "0 errors; 101 battles; 7407/7407 unit visuals; transport; flags; 190 commander portraits; morale; fireCells six-frame presentation",
+  "native_resources": "1751/1751 unchanged",
+  "source_lean": "6321/6321 unchanged",
+  "xcode_iphoneos_build": "NOT RUN - Linux has no Xcode/iPhoneOS SDK",
+  "true_device_acceptance": "PENDING",
+  "mac_entrypoint": "./BUILD_FROM_CODEX_MAC.sh",
+  "next": "X1 first Release iphoneos build -> device battle smoke -> evidence-led fixes only"
+}

@@ -1,0 +1,30 @@
+{
+  "source_lean": {
+    "parent_files": 6321,
+    "current_files": 6321,
+    "missing": [],
+    "changed": [],
+    "new": []
+  },
+  "source_native": {
+    "parent_files": 1805,
+    "current_files": 1814,
+    "missing": [],
+    "changed": [
+      "Tools/build_unsigned_ipa.sh",
+      "iOSApp/App/EW4NativePortApp.swift",
+      "iOSApp/project.yml"
+    ],
+    "new": [
+      "BUILD_FROM_CODEX_MAC.sh",
+      "Docs/NATIVE_BUILD_CONTRACT.json",
+      "Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "Docs/NATIVE_RESOURCE_MANIFEST_SHA256.tsv",
+      "Docs/P43_LINUX_FAIL_CLOSED_BUILD_GATE.log",
+      "Docs/P43_NATIVE_SWIFT_TEST.log",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeNoonRegressionLockTests.swift",
+      "Tools/native_ipa_preflight.py",
+      "Tools/verify_ipa_payload.py"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+const fs=require('fs'),assert=require('assert');
+const html=fs.readFileSync('index.html','utf8'),css=fs.readFileSync('r14_native_forms.css','utf8'),app=fs.readFileSync('app.js','utf8');
+assert(html.includes('id="deploy-princess"')&&!html.includes('id="deploy-princess" disabled'));
+assert(html.includes('id="princess-panel"')&&html.includes('id="princess-grid"'));
+assert(css.includes('#princess-panel{left:50px!important;top:10px!important;width:468px!important;height:300px!important'));
+assert(css.includes('.princess-entry.r1{top:35px}')&&css.includes('.princess-entry.r2{top:164px}'));
+assert(css.includes('.princess-entry.c1{left:50px}')&&css.includes('.princess-entry.c4{left:344px}'));
+assert(app.includes('ORIGINAL_PRINCESS_ORDER=Object.freeze([202,204,201,203,205,206,207,208])'));
+assert(app.includes("playNativeFormOpenSfx('form_princess')"));
+assert(app.includes("STRINGS?.btn_gobattle||'出征'"));
+assert(app.includes('battleState.summonedPrincesses=[...arr]'));
+assert(app.includes("!PRINCESS_IDS.includes(+c.id)||summoned.has(+c.id)||+c.id===+target.commander_id"));
+assert(!app.includes('msg_no_slot'),'player princess summon path must not reintroduce original hard-slot gate');
+console.log('native princess deployment PASS · original form entry/geometry + 8 unlocked summon flow + no hard-slot gate');

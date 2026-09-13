@@ -1,0 +1,368 @@
+{
+  "source_apk_sha256": "20e609437a3659c5cc5573f7df70c75d48839a552e0120770a0afd8f068af05c",
+  "audio_files": [
+    {
+      "file": "battle1.mp3",
+      "apk_path": "assets/battle1.mp3",
+      "bytes": 2848809,
+      "sha256": "236a006d0d8d58d6ee55df958cfc246b10d5eb697f2f92b8c05cdde6dfcc87e0",
+      "xml_references": [
+        "assets/global_data.xml"
+      ]
+    },
+    {
+      "file": "battle2.mp3",
+      "apk_path": "assets/battle2.mp3",
+      "bytes": 2422491,
+      "sha256": "94c8b0ecc6153d93483232be9d13d19ad2267df45bcf1e10be94d5cd9789b6f0",
+      "xml_references": []
+    },
+    {
+      "file": "battle3.mp3",
+      "apk_path": "assets/battle3.mp3",
+      "bytes": 2368992,
+      "sha256": "0e296554c5b419e21aad97a2d7a7b3c759fdb348d26e3a888b7effb84fe45e7a",
+      "xml_references": []
+    },
+    {
+      "file": "battle4.mp3",
+      "apk_path": "assets/battle4.mp3",
+      "bytes": 2269100,
+      "sha256": "7f0f6dfb62dc4cc72faee33ea93cc98e5358cea68a66f1057c17d61825b0c3d4",
+      "xml_references": []
+    },
+    {
+      "file": "defeat_music.mp3",
+      "apk_path": "assets/defeat_music.mp3",
+      "bytes": 247420,
+      "sha256": "659a0ea8d287be1f4bbb99fd11fab6e9ce09dba37efc8c0b20042fa9a4036273",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_armourmove.wav",
+      "apk_path": "assets/sfx_armourmove.wav",
+      "bytes": 22004,
+      "sha256": "1d03b3843a23599ecd6413648899fc50b9488eaeb17a9452bf16c3231aa923f4",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_buff.wav",
+      "apk_path": "assets/sfx_buff.wav",
+      "bytes": 8834,
+      "sha256": "fe261136b5ef2a295f1a958ee3d63907fef97740e1bef94cc924d213435e2821",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_build.wav",
+      "apk_path": "assets/sfx_build.wav",
+      "bytes": 6380,
+      "sha256": "b939d210591da974dc8ffde8fb403a097619a158f3dbd9dfce9f6a2b448722d8",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_build1.wav",
+      "apk_path": "assets/sfx_build1.wav",
+      "bytes": 20480,
+      "sha256": "8130d0282d6d3ca72b8fb2d746636d2e00e57b7e7357ee4b4a90d34ec4626206",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_cancel.wav",
+      "apk_path": "assets/sfx_cancel.wav",
+      "bytes": 4652,
+      "sha256": "bf2ffe864c9378233234bdc3281282b2d579713fda7a30d2e4fb3723e6120cb0",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_cannon.wav",
+      "apk_path": "assets/sfx_cannon.wav",
+      "bytes": 24544,
+      "sha256": "41951670f741aafa1449e47a7a1d445e0645633846114cea88f25e3f51a8044f",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_cavalrymove.wav",
+      "apk_path": "assets/sfx_cavalrymove.wav",
+      "bytes": 64558,
+      "sha256": "e9233a952a6747d7292dbb7f49b43e4e2bbdb0bd91dbc4a5af9a7cd1ba65b00e",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_celebrate.wav",
+      "apk_path": "assets/sfx_celebrate.wav",
+      "bytes": 66556,
+      "sha256": "62051393a348ac2a1fcf0a5e9af0c5c1d4d8d546abb9d344e1b3779b38dd72d8",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_click.wav",
+      "apk_path": "assets/sfx_click.wav",
+      "bytes": 4576,
+      "sha256": "810c3d8d584b84a4ef8d2369b9e5011f3ec77366dce0388e5251f7b9d3d5ba3c",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_draft.wav",
+      "apk_path": "assets/sfx_draft.wav",
+      "bytes": 7318,
+      "sha256": "057fbccce312834632ea854780d3d4475cd61609a17d3b5d9943c731126f94c9",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_exp.wav",
+      "apk_path": "assets/sfx_exp.wav",
+      "bytes": 28802,
+      "sha256": "1eb0b203e15c35026ad8699ccd90fa6d28d716cf016b6cd08e4d117c2b5eae9f",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_explode.wav",
+      "apk_path": "assets/sfx_explode.wav",
+      "bytes": 38582,
+      "sha256": "dfb71e8674cfe07962274893a604dea45ad22dd9fbbeb781e796e481bf0ffbde",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_fire.wav",
+      "apk_path": "assets/sfx_fire.wav",
+      "bytes": 27564,
+      "sha256": "a71cc6bdd3087a1054728d4c5fa163a777d0880d56a7a3ca50c2c15ce944dc08",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_fire1.wav",
+      "apk_path": "assets/sfx_fire1.wav",
+      "bytes": 13298,
+      "sha256": "08d4a5c728616e0239ef79ce601c89f2d34c69d2fa321e193d180cda3cf76282",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_flip.wav",
+      "apk_path": "assets/sfx_flip.wav",
+      "bytes": 33150,
+      "sha256": "9d942ee0bea5ac24415a4d86b0ffda631eeac6b9d1533f6b2362779761274efe",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_golddrop.wav",
+      "apk_path": "assets/sfx_golddrop.wav",
+      "bytes": 15898,
+      "sha256": "8ec611a227b9c45ece4a637aa55a45dccd9e546c8ec0b265427f30c4b9a5a797",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_gunfire.wav",
+      "apk_path": "assets/sfx_gunfire.wav",
+      "bytes": 32300,
+      "sha256": "3edc128ae0cecc1668326952d14c1317fb618d3b59581be216da6bfacec1d3c8",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_gunfire1.wav",
+      "apk_path": "assets/sfx_gunfire1.wav",
+      "bytes": 17580,
+      "sha256": "1e1bfeb8c8865146f9427317d8d78457caa77563f07485aeb930d10b77a056a0",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_gunfire2.wav",
+      "apk_path": "assets/sfx_gunfire2.wav",
+      "bytes": 8892,
+      "sha256": "083b2aa0759c529f85e664f98ee825ca1ec8bbc6e081cdad04ac2408f73a2fa8",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_gunfire3.wav",
+      "apk_path": "assets/sfx_gunfire3.wav",
+      "bytes": 5966,
+      "sha256": "8ceb4ebf2ef4ed22d01db511b3cc2e99cf416fc9b13e53fcfe3fd4118a121cf1",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_knife1.wav",
+      "apk_path": "assets/sfx_knife1.wav",
+      "bytes": 43936,
+      "sha256": "1468ddc1d26c84267c8e69261ed2dfa9598650a173490f0806ccf3e0f8a307fc",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_knife2.wav",
+      "apk_path": "assets/sfx_knife2.wav",
+      "bytes": 2378,
+      "sha256": "2ba8896f0b79bc34a623b06c3152cc2f30eb1005d172fba6f2bf42dfab9444cb",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_knife3.wav",
+      "apk_path": "assets/sfx_knife3.wav",
+      "bytes": 4460,
+      "sha256": "5c7f539dabdee858a2aa2d4a9e974a0dfb54ded1fa35f62a2438e589aff4bd2c",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_knifestrike1.wav",
+      "apk_path": "assets/sfx_knifestrike1.wav",
+      "bytes": 15318,
+      "sha256": "f4471e5a4f12af1c25650db0278d64221c24e787290bc424fa6516a9d7848853",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_knifestrike2.wav",
+      "apk_path": "assets/sfx_knifestrike2.wav",
+      "bytes": 9986,
+      "sha256": "e2d39dfad8c27314e70f49cdce789a41b14cc5471f0a0c0721c33e62be1dc6d6",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_leg.wav",
+      "apk_path": "assets/sfx_leg.wav",
+      "bytes": 21006,
+      "sha256": "0387a81a45d01615fdaccdf94d0066b58d5f16b7bc88576e8be6db1617794c48",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_lvup.wav",
+      "apk_path": "assets/sfx_lvup.wav",
+      "bytes": 20044,
+      "sha256": "2a057c558b251547fabcafdb6d4bb8d8d59d939c91eec9b9803f04f89737d1e8",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_lvup2.wav",
+      "apk_path": "assets/sfx_lvup2.wav",
+      "bytes": 16872,
+      "sha256": "363ef1d485addd60b2f02c02522684f8bc70b03877c06e7312c3c9a2aff11780",
+      "xml_references": [
+        "assets/layout-1024.xml",
+        "assets/layout-534h.xml",
+        "assets/layout-568h.xml",
+        "assets/layout-640h.xml",
+        "assets/layout-676h.xml",
+        "assets/layout-710h.xml",
+        "assets/layout.xml"
+      ]
+    },
+    {
+      "file": "sfx_machine_gun.wav",
+      "apk_path": "assets/sfx_machine_gun.wav",
+      "bytes": 17044,
+      "sha256": "36e44a4f25660c82f01abb652479d678a55adb12a98bc7c9f722734d09e0c347",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_naval.wav",
+      "apk_path": "assets/sfx_naval.wav",
+      "bytes": 16550,
+      "sha256": "f2be4d3a692a8c22c6468502e8829c7f0851f662161fd3ddbf62967153ead1f2",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_naval_gun.wav",
+      "apk_path": "assets/sfx_naval_gun.wav",
+      "bytes": 31274,
+      "sha256": "a41bd71a81ba81b201641ecf33c520737255eaa64e28c124295b3f7baf12c872",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_occupy.wav",
+      "apk_path": "assets/sfx_occupy.wav",
+      "bytes": 22074,
+      "sha256": "c73d1315ae8225c81953a99e6dec0eaa7809309b83a340258a5021f341ddb8e6",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_pop.wav",
+      "apk_path": "assets/sfx_pop.wav",
+      "bytes": 6042,
+      "sha256": "d2d880617403f8e625fb52c34b208ff93fbd4bdaa63f230bc3eaed38c0fb5833",
+      "xml_references": [
+        "assets/layout-1024.xml",
+        "assets/layout-534h.xml",
+        "assets/layout-568h.xml",
+        "assets/layout-640h.xml",
+        "assets/layout-676h.xml",
+        "assets/layout-710h.xml",
+        "assets/layout.xml"
+      ]
+    },
+    {
+      "file": "sfx_rocket.wav",
+      "apk_path": "assets/sfx_rocket.wav",
+      "bytes": 27186,
+      "sha256": "3d15c2e8d55c7e4ce20cf72901d547e6624192e181f066a212244ec208ce10c5",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_select.wav",
+      "apk_path": "assets/sfx_select.wav",
+      "bytes": 4246,
+      "sha256": "e150e479625e5720d58982f8116097a99c98a5d31cbc52a3abf36e5f75fdcc6f",
+      "xml_references": [
+        "assets/layout-1024.xml",
+        "assets/layout-534h.xml",
+        "assets/layout-568h.xml",
+        "assets/layout-640h.xml",
+        "assets/layout-676h.xml",
+        "assets/layout-710h.xml",
+        "assets/layout.xml"
+      ]
+    },
+    {
+      "file": "sfx_slide.wav",
+      "apk_path": "assets/sfx_slide.wav",
+      "bytes": 17070,
+      "sha256": "e89b865b53d1c2cfdd55f0f1eb2812f1f5205b98805a0395dd8417def0e65016",
+      "xml_references": []
+    },
+    {
+      "file": "sfx_strike.wav",
+      "apk_path": "assets/sfx_strike.wav",
+      "bytes": 13422,
+      "sha256": "440f690fd6da4829b656b1150f1f286d98cfdb832e188715914edadcd55b6443",
+      "xml_references": [
+        "assets/def_effectsanim.xml"
+      ]
+    },
+    {
+      "file": "sfx_supply.wav",
+      "apk_path": "assets/sfx_supply.wav",
+      "bytes": 24290,
+      "sha256": "3a8617d2479fdfc59e46042a24987c1a5048d42e95d96cfe960fdd1f579ffcb1",
+      "xml_references": []
+    }
+  ]
+}

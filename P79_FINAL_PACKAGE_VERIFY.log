@@ -1,0 +1,30 @@
+
+== Current mature SOURCE_LEAN freeze ==
+SOURCE_LEAN expected=6321 actual=6321 missing=0 extra=0 changed=0
+
+== EW4 cross-project scope guard ==
+Runtime Swift: 108
+Native resources provenanced: 1751/1751
+EW4_SCOPE_GUARD_PASS
+
+== Current native IPA preflight ==
+{
+  "passed": true,
+  "checks": 26,
+  "errors": [],
+  "resource_files": 1751,
+  "duplicate_basename_groups": 232
+}
+
+== Xcode candidate static handoff gate ==
+{
+  "passed": true,
+  "checks": 6,
+  "errors": []
+}
+
+== P79 map/unit/dynamic-overlay evidence gate ==
+{"errors": [], "battles": 101, "map_distribution": {"1": 84, "2": 17}, "worlds": {"europe": {"width": 79, "height": 68, "cells": 5372}, "america": {"width": 55, "height": 76, "cells": 4180}}, "unit_count": 7407, "resolved": 7407, "unit_families": 22, "animation_units": 877, "animation_assets": 1272, "bile_resources": 12, "transport_ok": true, "status_ok": true, "markers_ok": true, "battle_flag_codes": 41, "battle_flag_frames_ok": true, "battle_commander_ids": 190, "battle_commander_overlays_ok": true, "morale_overlays_ok": true, "dynamic_overlay_renderer_ok": true}
+
+== Script syntax ==
+P79_PACKAGE_PREFLIGHT_PASS

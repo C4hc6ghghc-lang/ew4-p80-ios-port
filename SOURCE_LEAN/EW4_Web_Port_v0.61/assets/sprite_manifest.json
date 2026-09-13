@@ -1,0 +1,7674 @@
+{
+  "Board_generalinfomarker.png": {
+    "file": "assets/sprites/image_ui_hd/Board_generalinfomarker.png",
+    "w": 80,
+    "h": 55,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "alg1.png": {
+    "file": "assets/sprites/strategicmap_hd/alg1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow.png": {
+    "file": "assets/sprites/image_ui_hd/arrow.png",
+    "w": 18,
+    "h": 14,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "arrow_choosebattlezoneinfo.png": {
+    "file": "assets/sprites/image_ui_hd/arrow_choosebattlezoneinfo.png",
+    "w": 62,
+    "h": 44,
+    "refx": 14,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "arrow_reoganizion.png": {
+    "file": "assets/sprites/image_ui_hd/arrow_reoganizion.png",
+    "w": 84,
+    "h": 82,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "aus1.png": {
+    "file": "assets/sprites/strategicmap_hd/aus1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bad1.png": {
+    "file": "assets/sprites/strategicmap_hd/bad1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "badges.png": {
+    "file": "assets/sprites/image_ui_hd/badges.png",
+    "w": 30,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "bar_rank.png": {
+    "file": "assets/sprites/image_ui_hd/bar_rank.png",
+    "w": 70,
+    "h": 40,
+    "refx": 37,
+    "refy": 36,
+    "atlas": "image_ui_hd"
+  },
+  "bar_standing.png": {
+    "file": "assets/sprites/image_ui_hd/bar_standing.png",
+    "w": 70,
+    "h": 40,
+    "refx": 37,
+    "refy": 36,
+    "atlas": "image_ui_hd"
+  },
+  "bav1.png": {
+    "file": "assets/sprites/strategicmap_hd/bav1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "board_aiaction.png": {
+    "file": "assets/sprites/image_ui_hd/board_aiaction.png",
+    "w": 274,
+    "h": 45,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "board_button.png": {
+    "file": "assets/sprites/image_ui_hd/board_button.png",
+    "w": 168,
+    "h": 112,
+    "refx": 16,
+    "refy": 6,
+    "atlas": "image_ui_hd"
+  },
+  "board_buttons.png": {
+    "file": "assets/sprites/image_ui_hd/board_buttons.png",
+    "w": 109,
+    "h": 22,
+    "refx": 13,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "board_dialog_ex.png": {
+    "file": "assets/sprites/image_ui_hd/board_dialog_ex.png",
+    "w": 133,
+    "h": 100,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "board_rankclass.png": {
+    "file": "assets/sprites/image_ui_hd/board_rankclass.png",
+    "w": 76,
+    "h": 76,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "board_resources.png": {
+    "file": "assets/sprites/image_ui_hd/board_resources.png",
+    "w": 74,
+    "h": 46,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "board_smallgenerals.png": {
+    "file": "assets/sprites/commandermark_hd/board_smallgenerals.png",
+    "w": 58,
+    "h": 79,
+    "refx": 30,
+    "refy": 74,
+    "atlas": "commandermark_hd"
+  },
+  "board_terrain_info.png": {
+    "file": "assets/sprites/image_ui_hd/board_terrain_info.png",
+    "w": 118,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "board_victory.png": {
+    "file": "assets/sprites/image_ui_hd/board_victory.png",
+    "w": 92,
+    "h": 214,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "borad_rank.png": {
+    "file": "assets/sprites/image_ui_hd/borad_rank.png",
+    "w": 57,
+    "h": 57,
+    "refx": 3,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "borad_standing.png": {
+    "file": "assets/sprites/image_ui_hd/borad_standing.png",
+    "w": 57,
+    "h": 57,
+    "refx": 3,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "box_skilldetail.png": {
+    "file": "assets/sprites/image_ui_hd/box_skilldetail.png",
+    "w": 64,
+    "h": 64,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "box_skilldetail_arrow.png": {
+    "file": "assets/sprites/image_ui_hd/box_skilldetail_arrow.png",
+    "w": 37,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "bru1.png": {
+    "file": "assets/sprites/strategicmap_hd/bru1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "btn_common_blue.png": {
+    "file": "assets/sprites/image_ui_hd/btn_common_blue.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "btn_common_green.png": {
+    "file": "assets/sprites/image_ui_hd/btn_common_green.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "btn_common_org.png": {
+    "file": "assets/sprites/image_ui_hd/btn_common_org.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "btn_common_red.png": {
+    "file": "assets/sprites/image_ui_hd/btn_common_red.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "btn_pattern.png": {
+    "file": "assets/sprites/image_ui_hd/btn_pattern.png",
+    "w": 72,
+    "h": 13,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "buildmarker_bunker.png": {
+    "file": "assets/sprites/image_ui_hd/buildmarker_bunker.png",
+    "w": 21,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "buildmarker_fences.png": {
+    "file": "assets/sprites/image_ui_hd/buildmarker_fences.png",
+    "w": 21,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "buildmarker_moat.png": {
+    "file": "assets/sprites/image_ui_hd/buildmarker_moat.png",
+    "w": 21,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_achievement.png": {
+    "file": "assets/sprites/image_ui_hd/button_achievement.png",
+    "w": 66,
+    "h": 66,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_add_generals.png": {
+    "file": "assets/sprites/image_ui_hd/button_add_generals.png",
+    "w": 156,
+    "h": 156,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_addiapp.png": {
+    "file": "assets/sprites/image_ui_hd/button_addiapp.png",
+    "w": 45,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_back.png": {
+    "file": "assets/sprites/image_ui_hd/button_back.png",
+    "w": 45,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_champion.png": {
+    "file": "assets/sprites/image_ui_hd/button_champion.png",
+    "w": 99,
+    "h": 64,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_changegeneral.png": {
+    "file": "assets/sprites/image_ui_hd/button_changegeneral.png",
+    "w": 76,
+    "h": 40,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_changegeneral_2.png": {
+    "file": "assets/sprites/image_ui_hd/button_changegeneral_2.png",
+    "w": 76,
+    "h": 40,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_changegeneral_gray.png": {
+    "file": "assets/sprites/image_ui_hd/button_changegeneral_gray.png",
+    "w": 76,
+    "h": 40,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_changegeneral_gray_2.png": {
+    "file": "assets/sprites/image_ui_hd/button_changegeneral_gray_2.png",
+    "w": 76,
+    "h": 40,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_choosebattlezoneinfo.png": {
+    "file": "assets/sprites/image_ui_hd/button_choosebattlezoneinfo.png",
+    "w": 96,
+    "h": 153,
+    "refx": 18,
+    "refy": 8,
+    "atlas": "image_ui_hd"
+  },
+  "button_close.png": {
+    "file": "assets/sprites/image_ui_hd/button_close.png",
+    "w": 45,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_confirm_blue.png": {
+    "file": "assets/sprites/image_ui_hd/button_confirm_blue.png",
+    "w": 118,
+    "h": 52,
+    "refx": 5,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "button_confirm_green.png": {
+    "file": "assets/sprites/image_ui_hd/button_confirm_green.png",
+    "w": 118,
+    "h": 52,
+    "refx": 5,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "button_confrim.png": {
+    "file": "assets/sprites/image_ui_hd/button_confrim.png",
+    "w": 62,
+    "h": 63,
+    "refx": 3,
+    "refy": 3,
+    "atlas": "image_ui_hd"
+  },
+  "button_confrim_gray.png": {
+    "file": "assets/sprites/image_ui_hd/button_confrim_gray.png",
+    "w": 62,
+    "h": 63,
+    "refx": 3,
+    "refy": 3,
+    "atlas": "image_ui_hd"
+  },
+  "button_fortress_soldiers.png": {
+    "file": "assets/sprites/image_ui_hd/button_fortress_soldiers.png",
+    "w": 64,
+    "h": 171,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_general_2.png": {
+    "file": "assets/sprites/image_ui_hd/button_general_2.png",
+    "w": 308,
+    "h": 114,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_general_4.png": {
+    "file": "assets/sprites/image_ui_hd/button_general_4.png",
+    "w": 308,
+    "h": 114,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_general_6.png": {
+    "file": "assets/sprites/image_ui_hd/button_general_6.png",
+    "w": 308,
+    "h": 114,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_generalinfo.png": {
+    "file": "assets/sprites/image_ui_hd/button_generalinfo.png",
+    "w": 36,
+    "h": 36,
+    "refx": 5,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_generalinfo_blue.png": {
+    "file": "assets/sprites/image_ui_hd/button_generalinfo_blue.png",
+    "w": 52,
+    "h": 52,
+    "refx": 5,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_homepage.png": {
+    "file": "assets/sprites/image_ui_hd/button_homepage.png",
+    "w": 65,
+    "h": 66,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_email.png": {
+    "file": "assets/sprites/image_ui_hd/button_email.png",
+    "w": 65,
+    "h": 66,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_iapp_badge.png": {
+    "file": "assets/sprites/image_ui_hd/button_iapp_badge.png",
+    "w": 225,
+    "h": 312,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_iapp_medal_1.png": {
+    "file": "assets/sprites/image_ui_hd/button_iapp_medal_1.png",
+    "w": 225,
+    "h": 312,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_iapp_medal_2.png": {
+    "file": "assets/sprites/image_ui_hd/button_iapp_medal_2.png",
+    "w": 225,
+    "h": 312,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_iapp_medal_3.png": {
+    "file": "assets/sprites/image_ui_hd/button_iapp_medal_3.png",
+    "w": 225,
+    "h": 312,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_iapp_medal_4.png": {
+    "file": "assets/sprites/image_ui_hd/button_iapp_medal_4.png",
+    "w": 225,
+    "h": 312,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_iapp_shadow.png": {
+    "file": "assets/sprites/image_ui_hd/button_iapp_shadow.png",
+    "w": 204,
+    "h": 72,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_load.png": {
+    "file": "assets/sprites/image_ui_hd/button_load.png",
+    "w": 160,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_lock.png": {
+    "file": "assets/sprites/image_ui_hd/button_lock.png",
+    "w": 156,
+    "h": 156,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_lottery_buy_line.png": {
+    "file": "assets/sprites/image_ui_hd/button_lottery_buy_line.png",
+    "w": 271,
+    "h": 1,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_lottery_buy_line_short.png": {
+    "file": "assets/sprites/image_ui_hd/button_lottery_buy_line_short.png",
+    "w": 100,
+    "h": 1,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_lottery_generals.png": {
+    "file": "assets/sprites/image_ui_hd/button_lottery_generals.png",
+    "w": 156,
+    "h": 40,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_lvlup.png": {
+    "file": "assets/sprites/image_ui_hd/button_lvlup.png",
+    "w": 40,
+    "h": 45,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_mainmenu.png": {
+    "file": "assets/sprites/image_ui_hd/button_mainmenu.png",
+    "w": 268,
+    "h": 65,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_ok_gray_noshadow.png": {
+    "file": "assets/sprites/image_ui_hd/button_ok_gray_noshadow.png",
+    "w": 60,
+    "h": 60,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_ok_noshadow.png": {
+    "file": "assets/sprites/image_ui_hd/button_ok_noshadow.png",
+    "w": 60,
+    "h": 60,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_rank.png": {
+    "file": "assets/sprites/image_ui_hd/button_rank.png",
+    "w": 99,
+    "h": 64,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_refresh.png": {
+    "file": "assets/sprites/image_ui_hd/button_refresh.png",
+    "w": 32,
+    "h": 35,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_rule_america.png": {
+    "file": "assets/sprites/image_ui_hd/button_rule_america.png",
+    "w": 209,
+    "h": 211,
+    "refx": 4,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_rule_asia.png": {
+    "file": "assets/sprites/image_ui_hd/button_rule_asia.png",
+    "w": 209,
+    "h": 211,
+    "refx": 4,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_rule_europa.png": {
+    "file": "assets/sprites/image_ui_hd/button_rule_europa.png",
+    "w": 209,
+    "h": 211,
+    "refx": 4,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_rule_locked.png": {
+    "file": "assets/sprites/image_ui_hd/button_rule_locked.png",
+    "w": 209,
+    "h": 211,
+    "refx": 5,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade.png",
+    "w": 160,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_armored.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_armored.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_coastalartillery.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_coastalartillery.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_fortress1.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_fortress1.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_fortress2.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_fortress2.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_fortress3.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_fortress3.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_fortressartillery.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_fortressartillery.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_grenadier.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_grenadier.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_guard.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_guard.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_heavyartillery.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_heavyartillery.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_heavycavalry.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_heavycavalry.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lancer.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lancer.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_light.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_light.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lightartillery.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lightartillery.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lightcavalry.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lightcavalry.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_line.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_line.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_locked.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_locked.png",
+    "w": 31,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lv1.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lv1.png",
+    "w": 80,
+    "h": 81,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lv2.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lv2.png",
+    "w": 80,
+    "h": 81,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lv3.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lv3.png",
+    "w": 80,
+    "h": 81,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_lv4.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_lv4.png",
+    "w": 80,
+    "h": 81,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_machinegun.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_machinegun.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_militia.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_militia.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_rocket.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_rocket.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_selbox.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_selbox.png",
+    "w": 88,
+    "h": 89,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_ship1.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_ship1.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_ship2.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_ship2.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_ship3.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_ship3.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_upgrade_ship4.png": {
+    "file": "assets/sprites/image_ui_hd/button_upgrade_ship4.png",
+    "w": 54,
+    "h": 50,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "campaign_coalition.png": {
+    "file": "assets/sprites/image_ui_hd/campaign_coalition.png",
+    "w": 129,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "campaign_east.png": {
+    "file": "assets/sprites/image_ui_hd/campaign_east.png",
+    "w": 129,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "campaign_france.png": {
+    "file": "assets/sprites/image_ui_hd/campaign_france.png",
+    "w": 129,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "campaign_holyroman.png": {
+    "file": "assets/sprites/image_ui_hd/campaign_holyroman.png",
+    "w": 129,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "campaign_uk.png": {
+    "file": "assets/sprites/image_ui_hd/campaign_uk.png",
+    "w": 129,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "campaign_usa.png": {
+    "file": "assets/sprites/image_ui_hd/campaign_usa.png",
+    "w": 129,
+    "h": 95,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "che1.png": {
+    "file": "assets/sprites/strategicmap_hd/che1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "class_1.png": {
+    "file": "assets/sprites/image_ui_hd/class_1.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_2.png": {
+    "file": "assets/sprites/image_ui_hd/class_2.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_3.png": {
+    "file": "assets/sprites/image_ui_hd/class_3.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_4.png": {
+    "file": "assets/sprites/image_ui_hd/class_4.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_5.png": {
+    "file": "assets/sprites/image_ui_hd/class_5.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_6.png": {
+    "file": "assets/sprites/image_ui_hd/class_6.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_7.png": {
+    "file": "assets/sprites/image_ui_hd/class_7.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_8.png": {
+    "file": "assets/sprites/image_ui_hd/class_8.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "class_9.png": {
+    "file": "assets/sprites/image_ui_hd/class_9.png",
+    "w": 42,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_blankbox.png": {
+    "file": "assets/sprites/image_ui_hd/common_blankbox.png",
+    "w": 32,
+    "h": 32,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_board_medalsnumber.png": {
+    "file": "assets/sprites/image_ui_hd/common_board_medalsnumber.png",
+    "w": 150,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_boldline.png": {
+    "file": "assets/sprites/image_ui_hd/common_boldline.png",
+    "w": 225,
+    "h": 5,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_line_hor.png": {
+    "file": "assets/sprites/image_ui_hd/common_line_hor.png",
+    "w": 133,
+    "h": 1,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_line_ver.png": {
+    "file": "assets/sprites/image_ui_hd/common_line_ver.png",
+    "w": 1,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_lineframe.png": {
+    "file": "assets/sprites/image_ui_hd/common_lineframe.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_lineframe_bold.png": {
+    "file": "assets/sprites/image_ui_hd/common_lineframe_bold.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_pattern.png": {
+    "file": "assets/sprites/image_ui_hd/common_pattern.png",
+    "w": 22,
+    "h": 24,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "common_shadow.png": {
+    "file": "assets/sprites/image_ui_hd/common_shadow.png",
+    "w": 91,
+    "h": 86,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "defense_bunker.png": {
+    "file": "assets/sprites/buildings_hd/defense_bunker.png",
+    "w": 62,
+    "h": 38,
+    "refx": 30,
+    "refy": 17,
+    "atlas": "buildings_hd"
+  },
+  "defense_fences.png": {
+    "file": "assets/sprites/buildings_hd/defense_fences.png",
+    "w": 66,
+    "h": 36,
+    "refx": 32,
+    "refy": 18,
+    "atlas": "buildings_hd"
+  },
+  "defense_moat.png": {
+    "file": "assets/sprites/buildings_hd/defense_moat.png",
+    "w": 60,
+    "h": 35,
+    "refx": 30,
+    "refy": 16,
+    "atlas": "buildings_hd"
+  },
+  "den1.png": {
+    "file": "assets/sprites/strategicmap_hd/den1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "diffcult_1.png": {
+    "file": "assets/sprites/image_ui_hd/diffcult_1.png",
+    "w": 25,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "diffcult_2.png": {
+    "file": "assets/sprites/image_ui_hd/diffcult_2.png",
+    "w": 63,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "diffcult_3.png": {
+    "file": "assets/sprites/image_ui_hd/diffcult_3.png",
+    "w": 73,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "diffcult_4.png": {
+    "file": "assets/sprites/image_ui_hd/diffcult_4.png",
+    "w": 85,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "diffcult_5.png": {
+    "file": "assets/sprites/image_ui_hd/diffcult_5.png",
+    "w": 85,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "egy1.png": {
+    "file": "assets/sprites/strategicmap_hd/egy1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "fivestar.png": {
+    "file": "assets/sprites/image_ui_hd/fivestar.png",
+    "w": 32,
+    "h": 74,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "food_add.png": {
+    "file": "assets/sprites/image_ui_hd/food_add.png",
+    "w": 39,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "food_reduce.png": {
+    "file": "assets/sprites/image_ui_hd/food_reduce.png",
+    "w": 40,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "form_back.png": {
+    "file": "assets/sprites/image_ui_hd/form_back.png",
+    "w": 108,
+    "h": 108,
+    "refx": 18,
+    "refy": 17,
+    "atlas": "image_ui_hd"
+  },
+  "form_title.png": {
+    "file": "assets/sprites/image_ui_hd/form_title.png",
+    "w": 108,
+    "h": 72,
+    "refx": 18,
+    "refy": 16,
+    "atlas": "image_ui_hd"
+  },
+  "form_title_shadow.png": {
+    "file": "assets/sprites/image_ui_hd/form_title_shadow.png",
+    "w": 100,
+    "h": 50,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "fortress_borad.png": {
+    "file": "assets/sprites/image_ui_hd/fortress_borad.png",
+    "w": 50,
+    "h": 76,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "fra1.png": {
+    "file": "assets/sprites/strategicmap_hd/fra1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "framebox_bold.png": {
+    "file": "assets/sprites/image_ui_hd/framebox_bold.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "framebox_thin.png": {
+    "file": "assets/sprites/image_ui_hd/framebox_thin.png",
+    "w": 64,
+    "h": 64,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "gbr1.png": {
+    "file": "assets/sprites/strategicmap_hd/gbr1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "general_nameboard.png": {
+    "file": "assets/sprites/image_ui_hd/general_nameboard.png",
+    "w": 156,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "generalnumber.png": {
+    "file": "assets/sprites/image_ui_hd/generalnumber.png",
+    "w": 46,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "generalsinfo_move.png": {
+    "file": "assets/sprites/image_ui_hd/generalsinfo_move.png",
+    "w": 44,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "generalsinfo_trade.png": {
+    "file": "assets/sprites/image_ui_hd/generalsinfo_trade.png",
+    "w": 44,
+    "h": 44,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "generalsinfo_training.png": {
+    "file": "assets/sprites/image_ui_hd/generalsinfo_training.png",
+    "w": 44,
+    "h": 44,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "gray_board.png": {
+    "file": "assets/sprites/image_ui_hd/gray_board.png",
+    "w": 225,
+    "h": 68,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "gray_board_dialoguearrow.png": {
+    "file": "assets/sprites/image_ui_hd/gray_board_dialoguearrow.png",
+    "w": 15,
+    "h": 14,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "grid_box.png": {
+    "file": "assets/sprites/image_ui_hd/grid_box.png",
+    "w": 38,
+    "h": 38,
+    "refx": -1,
+    "refy": -2,
+    "atlas": "image_ui_hd"
+  },
+  "grid_box_tick.png": {
+    "file": "assets/sprites/image_ui_hd/grid_box_tick.png",
+    "w": 38,
+    "h": 38,
+    "refx": -1,
+    "refy": -2,
+    "atlas": "image_ui_hd"
+  },
+  "hes1.png": {
+    "file": "assets/sprites/strategicmap_hd/hes1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hpbar_black.png": {
+    "file": "assets/sprites/buildings_hd/hpbar_black.png",
+    "w": 42,
+    "h": 42,
+    "refx": 21,
+    "refy": 22,
+    "atlas": "buildings_hd"
+  },
+  "hpbar_blue.png": {
+    "file": "assets/sprites/buildings_hd/hpbar_blue.png",
+    "w": 42,
+    "h": 43,
+    "refx": 21,
+    "refy": 22,
+    "atlas": "buildings_hd"
+  },
+  "hpbar_green.png": {
+    "file": "assets/sprites/buildings_hd/hpbar_green.png",
+    "w": 42,
+    "h": 43,
+    "refx": 21,
+    "refy": 22,
+    "atlas": "buildings_hd"
+  },
+  "hpbar_hp.png": {
+    "file": "assets/sprites/buildings_hd/hpbar_hp.png",
+    "w": 54,
+    "h": 32,
+    "refx": 27,
+    "refy": 30,
+    "atlas": "buildings_hd"
+  },
+  "hpbar_red.png": {
+    "file": "assets/sprites/buildings_hd/hpbar_red.png",
+    "w": 42,
+    "h": 43,
+    "refx": 21,
+    "refy": 22,
+    "atlas": "buildings_hd"
+  },
+  "hre1.png": {
+    "file": "assets/sprites/strategicmap_hd/hre1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "image_shop.png": {
+    "file": "assets/sprites/image_ui_hd/image_shop.png",
+    "w": 37,
+    "h": 32,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "ind1.png": {
+    "file": "assets/sprites/strategicmap_hd/ind1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "infomarker_attack.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_attack.png",
+    "w": 41,
+    "h": 41,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_board.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_board.png",
+    "w": 50,
+    "h": 47,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_food.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_food.png",
+    "w": 41,
+    "h": 41,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_hp.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_hp.png",
+    "w": 41,
+    "h": 41,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_move.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_move.png",
+    "w": 41,
+    "h": 41,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_range.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_range.png",
+    "w": 41,
+    "h": 41,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_soldiernumber.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_soldiernumber.png",
+    "w": 41,
+    "h": 41,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "infomarker_soldiernumber_empty.png": {
+    "file": "assets/sprites/image_ui_hd/infomarker_soldiernumber_empty.png",
+    "w": 41,
+    "h": 41,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "item_selected_bold.png": {
+    "file": "assets/sprites/image_ui_hd/item_selected_bold.png",
+    "w": 96,
+    "h": 96,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "item_selected_ex.png": {
+    "file": "assets/sprites/image_ui_hd/item_selected_ex.png",
+    "w": 96,
+    "h": 96,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "koi1.png": {
+    "file": "assets/sprites/strategicmap_hd/koi1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mar1.png": {
+    "file": "assets/sprites/strategicmap_hd/mar1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mark_unit_armoredcar.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_armoredcar.png",
+    "w": 22,
+    "h": 19,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_battleship.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_battleship.png",
+    "w": 27,
+    "h": 18,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_coastalartillery.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_coastalartillery.png",
+    "w": 16,
+    "h": 16,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_cruiser.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_cruiser.png",
+    "w": 26,
+    "h": 19,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_fortress1.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_fortress1.png",
+    "w": 18,
+    "h": 18,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_fortress2.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_fortress2.png",
+    "w": 23,
+    "h": 19,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_fortress3.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_fortress3.png",
+    "w": 24,
+    "h": 17,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_fortressartillery.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_fortressartillery.png",
+    "w": 20,
+    "h": 18,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_frigate.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_frigate.png",
+    "w": 22,
+    "h": 18,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_grenadier.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_grenadier.png",
+    "w": 15,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_guard.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_guard.png",
+    "w": 19,
+    "h": 21,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_heavyartillery.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_heavyartillery.png",
+    "w": 27,
+    "h": 15,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_heavycavalry.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_heavycavalry.png",
+    "w": 20,
+    "h": 24,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_ironclads.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_ironclads.png",
+    "w": 22,
+    "h": 17,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_light.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_light.png",
+    "w": 17,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_lightartillery.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_lightartillery.png",
+    "w": 25,
+    "h": 14,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_lightcavalry.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_lightcavalry.png",
+    "w": 24,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_line.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_line.png",
+    "w": 19,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_machinegun.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_machinegun.png",
+    "w": 25,
+    "h": 16,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_militia.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_militia.png",
+    "w": 15,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_musketcavalry.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_musketcavalry.png",
+    "w": 23,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mark_unit_rocket.png": {
+    "file": "assets/sprites/image_ui_hd/mark_unit_rocket.png",
+    "w": 24,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_class.png": {
+    "file": "assets/sprites/image_ui_hd/marker_class.png",
+    "w": 44,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_dfs_all.png": {
+    "file": "assets/sprites/image_ui_hd/marker_dfs_all.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_dfs_artillery.png": {
+    "file": "assets/sprites/image_ui_hd/marker_dfs_artillery.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_dfs_cavalry.png": {
+    "file": "assets/sprites/image_ui_hd/marker_dfs_cavalry.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_dfs_infantry.png": {
+    "file": "assets/sprites/image_ui_hd/marker_dfs_infantry.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_food.png": {
+    "file": "assets/sprites/image_ui_hd/marker_food.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_generalinfo.png": {
+    "file": "assets/sprites/image_ui_hd/marker_generalinfo.png",
+    "w": 37,
+    "h": 36,
+    "refx": 4,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_hp_dark.png": {
+    "file": "assets/sprites/image_ui_hd/marker_hp_dark.png",
+    "w": 30,
+    "h": 27,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_hp_dark_large.png": {
+    "file": "assets/sprites/image_ui_hd/marker_hp_dark_large.png",
+    "w": 39,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_incoming.png": {
+    "file": "assets/sprites/image_ui_hd/marker_incoming.png",
+    "w": 33,
+    "h": 32,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_industry.png": {
+    "file": "assets/sprites/image_ui_hd/marker_industry.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_max_1.png": {
+    "file": "assets/sprites/image_ui_hd/marker_max_1.png",
+    "w": 58,
+    "h": 26,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_max_2.png": {
+    "file": "assets/sprites/image_ui_hd/marker_max_2.png",
+    "w": 57,
+    "h": 58,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_money.png": {
+    "file": "assets/sprites/image_ui_hd/marker_money.png",
+    "w": 39,
+    "h": 39,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_rank.png": {
+    "file": "assets/sprites/image_ui_hd/marker_rank.png",
+    "w": 44,
+    "h": 38,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "marker_recover_dark.png": {
+    "file": "assets/sprites/image_ui_hd/marker_recover_dark.png",
+    "w": 35,
+    "h": 35,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "medals.png": {
+    "file": "assets/sprites/image_ui_hd/medals.png",
+    "w": 30,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "mek1.png": {
+    "file": "assets/sprites/strategicmap_hd/mek1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mol1.png": {
+    "file": "assets/sprites/strategicmap_hd/mol1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nap1.png": {
+    "file": "assets/sprites/strategicmap_hd/nap1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nas1.png": {
+    "file": "assets/sprites/strategicmap_hd/nas1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nds1.png": {
+    "file": "assets/sprites/strategicmap_hd/nds1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ned1.png": {
+    "file": "assets/sprites/strategicmap_hd/ned1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "old1.png": {
+    "file": "assets/sprites/strategicmap_hd/old1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pap1.png": {
+    "file": "assets/sprites/strategicmap_hd/pap1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pattern_1.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_1.png",
+    "w": 124,
+    "h": 10,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_2.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_2.png",
+    "w": 34,
+    "h": 28,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_3.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_3.png",
+    "w": 22,
+    "h": 24,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_bg_bottom.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_bg_bottom.png",
+    "w": 143,
+    "h": 26,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_getgeneral_2_1.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_getgeneral_2_1.png",
+    "w": 144,
+    "h": 104,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_gotgeneral.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_gotgeneral.png",
+    "w": 224,
+    "h": 35,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_inapp.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_inapp.png",
+    "w": 94,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_lottery.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_lottery.png",
+    "w": 101,
+    "h": 32,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_reoganizion.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_reoganizion.png",
+    "w": 77,
+    "h": 23,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_save.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_save.png",
+    "w": 50,
+    "h": 8,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pattern_stage_intro.png": {
+    "file": "assets/sprites/image_ui_hd/pattern_stage_intro.png",
+    "w": 63,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "per1.png": {
+    "file": "assets/sprites/strategicmap_hd/per1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pie1.png": {
+    "file": "assets/sprites/strategicmap_hd/pie1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pol1.png": {
+    "file": "assets/sprites/strategicmap_hd/pol1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "por1.png": {
+    "file": "assets/sprites/strategicmap_hd/por1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "princess_aus.png": {
+    "file": "assets/sprites/image_ui_hd/princess_aus.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_fra.png": {
+    "file": "assets/sprites/image_ui_hd/princess_fra.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_gbr.png": {
+    "file": "assets/sprites/image_ui_hd/princess_gbr.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_jap.png": {
+    "file": "assets/sprites/image_ui_hd/princess_jap.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_qin.png": {
+    "file": "assets/sprites/image_ui_hd/princess_qin.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_rus.png": {
+    "file": "assets/sprites/image_ui_hd/princess_rus.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_tur.png": {
+    "file": "assets/sprites/image_ui_hd/princess_tur.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "princess_usa.png": {
+    "file": "assets/sprites/image_ui_hd/princess_usa.png",
+    "w": 30,
+    "h": 73,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "pru1.png": {
+    "file": "assets/sprites/strategicmap_hd/pru1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rank_1.png": {
+    "file": "assets/sprites/buildings_hd/rank_1.png",
+    "w": 16,
+    "h": 13,
+    "refx": 0,
+    "refy": 14,
+    "atlas": "buildings_hd"
+  },
+  "rank_10.png": {
+    "file": "assets/sprites/image_ui_hd/rank_10.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_11.png": {
+    "file": "assets/sprites/image_ui_hd/rank_11.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_12.png": {
+    "file": "assets/sprites/image_ui_hd/rank_12.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_13.png": {
+    "file": "assets/sprites/image_ui_hd/rank_13.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_14.png": {
+    "file": "assets/sprites/image_ui_hd/rank_14.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_2.png": {
+    "file": "assets/sprites/buildings_hd/rank_2.png",
+    "w": 16,
+    "h": 18,
+    "refx": 0,
+    "refy": 20,
+    "atlas": "buildings_hd"
+  },
+  "rank_3.png": {
+    "file": "assets/sprites/buildings_hd/rank_3.png",
+    "w": 16,
+    "h": 24,
+    "refx": 0,
+    "refy": 26,
+    "atlas": "buildings_hd"
+  },
+  "rank_4.png": {
+    "file": "assets/sprites/buildings_hd/rank_4.png",
+    "w": 17,
+    "h": 29,
+    "refx": 0,
+    "refy": 31,
+    "atlas": "buildings_hd"
+  },
+  "rank_5.png": {
+    "file": "assets/sprites/buildings_hd/rank_5.png",
+    "w": 24,
+    "h": 22,
+    "refx": 4,
+    "refy": 23,
+    "atlas": "buildings_hd"
+  },
+  "rank_6.png": {
+    "file": "assets/sprites/image_ui_hd/rank_6.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_7.png": {
+    "file": "assets/sprites/image_ui_hd/rank_7.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_8.png": {
+    "file": "assets/sprites/image_ui_hd/rank_8.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rank_9.png": {
+    "file": "assets/sprites/image_ui_hd/rank_9.png",
+    "w": 41,
+    "h": 47,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rhc1.png": {
+    "file": "assets/sprites/strategicmap_hd/rhc1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rule_0.png": {
+    "file": "assets/sprites/image_ui_hd/rule_0.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_1.png": {
+    "file": "assets/sprites/image_ui_hd/rule_1.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_2.png": {
+    "file": "assets/sprites/image_ui_hd/rule_2.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_3.png": {
+    "file": "assets/sprites/image_ui_hd/rule_3.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_4.png": {
+    "file": "assets/sprites/image_ui_hd/rule_4.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_5.png": {
+    "file": "assets/sprites/image_ui_hd/rule_5.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_6.png": {
+    "file": "assets/sprites/image_ui_hd/rule_6.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_7.png": {
+    "file": "assets/sprites/image_ui_hd/rule_7.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_8.png": {
+    "file": "assets/sprites/image_ui_hd/rule_8.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rule_9.png": {
+    "file": "assets/sprites/image_ui_hd/rule_9.png",
+    "w": 42,
+    "h": 52,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "rus1.png": {
+    "file": "assets/sprites/strategicmap_hd/rus1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "sample_smallgenerals.png": {
+    "file": "assets/sprites/image_ui_hd/sample_smallgenerals.png",
+    "w": 44,
+    "h": 44,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "save_grayboard.png": {
+    "file": "assets/sprites/image_ui_hd/save_grayboard.png",
+    "w": 225,
+    "h": 107,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "sax1.png": {
+    "file": "assets/sprites/strategicmap_hd/sax1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "scrollbar_darkgray.png": {
+    "file": "assets/sprites/image_ui_hd/scrollbar_darkgray.png",
+    "w": 4,
+    "h": 124,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "scrollbar_gray.png": {
+    "file": "assets/sprites/image_ui_hd/scrollbar_gray.png",
+    "w": 4,
+    "h": 186,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_01.png": {
+    "file": "assets/sprites/image_ui_hd/skill_01.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_02.png": {
+    "file": "assets/sprites/image_ui_hd/skill_02.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_03.png": {
+    "file": "assets/sprites/image_ui_hd/skill_03.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_04.png": {
+    "file": "assets/sprites/image_ui_hd/skill_04.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_05.png": {
+    "file": "assets/sprites/image_ui_hd/skill_05.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_06.png": {
+    "file": "assets/sprites/image_ui_hd/skill_06.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_07.png": {
+    "file": "assets/sprites/image_ui_hd/skill_07.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_08.png": {
+    "file": "assets/sprites/image_ui_hd/skill_08.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_09.png": {
+    "file": "assets/sprites/image_ui_hd/skill_09.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_10.png": {
+    "file": "assets/sprites/image_ui_hd/skill_10.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_11.png": {
+    "file": "assets/sprites/image_ui_hd/skill_11.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_12.png": {
+    "file": "assets/sprites/image_ui_hd/skill_12.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_13.png": {
+    "file": "assets/sprites/image_ui_hd/skill_13.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_14.png": {
+    "file": "assets/sprites/image_ui_hd/skill_14.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_15.png": {
+    "file": "assets/sprites/image_ui_hd/skill_15.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_16.png": {
+    "file": "assets/sprites/image_ui_hd/skill_16.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_17.png": {
+    "file": "assets/sprites/image_ui_hd/skill_17.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_18.png": {
+    "file": "assets/sprites/image_ui_hd/skill_18.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_19.png": {
+    "file": "assets/sprites/image_ui_hd/skill_19.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_20.png": {
+    "file": "assets/sprites/image_ui_hd/skill_20.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_21.png": {
+    "file": "assets/sprites/image_ui_hd/skill_21.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_22.png": {
+    "file": "assets/sprites/image_ui_hd/skill_22.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_23.png": {
+    "file": "assets/sprites/image_ui_hd/skill_23.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_24.png": {
+    "file": "assets/sprites/image_ui_hd/skill_24.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_25.png": {
+    "file": "assets/sprites/image_ui_hd/skill_25.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_26.png": {
+    "file": "assets/sprites/image_ui_hd/skill_26.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_27.png": {
+    "file": "assets/sprites/image_ui_hd/skill_27.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_28.png": {
+    "file": "assets/sprites/image_ui_hd/skill_28.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_29.png": {
+    "file": "assets/sprites/image_ui_hd/skill_29.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_30.png": {
+    "file": "assets/sprites/image_ui_hd/skill_30.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_31.png": {
+    "file": "assets/sprites/image_ui_hd/skill_31.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_32.png": {
+    "file": "assets/sprites/image_ui_hd/skill_32.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_33.png": {
+    "file": "assets/sprites/image_ui_hd/skill_33.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_34.png": {
+    "file": "assets/sprites/image_ui_hd/skill_34.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_35.png": {
+    "file": "assets/sprites/image_ui_hd/skill_35.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_36.png": {
+    "file": "assets/sprites/image_ui_hd/skill_36.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_37.png": {
+    "file": "assets/sprites/image_ui_hd/skill_37.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_38.png": {
+    "file": "assets/sprites/image_ui_hd/skill_38.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_39.png": {
+    "file": "assets/sprites/image_ui_hd/skill_39.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "skill_40.png": {
+    "file": "assets/sprites/image_ui_hd/skill_40.png",
+    "w": 41,
+    "h": 37,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "slider_gray.png": {
+    "file": "assets/sprites/image_ui_hd/slider_gray.png",
+    "w": 15,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "slider_press.png": {
+    "file": "assets/sprites/image_ui_hd/slider_press.png",
+    "w": 15,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "spa1.png": {
+    "file": "assets/sprites/strategicmap_hd/spa1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "speed_bar.png": {
+    "file": "assets/sprites/image_ui_hd/speed_bar.png",
+    "w": 251,
+    "h": 32,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "speed_brick.png": {
+    "file": "assets/sprites/image_ui_hd/speed_brick.png",
+    "w": 39,
+    "h": 29,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "srb1.png": {
+    "file": "assets/sprites/strategicmap_hd/srb1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "stage_star.png": {
+    "file": "assets/sprites/image_ui_hd/stage_star.png",
+    "w": 37,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "star_board.png": {
+    "file": "assets/sprites/image_ui_hd/star_board.png",
+    "w": 102,
+    "h": 127,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "star_campaign.png": {
+    "file": "assets/sprites/image_ui_hd/star_campaign.png",
+    "w": 15,
+    "h": 14,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "star_campaign_gray.png": {
+    "file": "assets/sprites/image_ui_hd/star_campaign_gray.png",
+    "w": 14,
+    "h": 14,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "star_middle.png": {
+    "file": "assets/sprites/image_ui_hd/star_middle.png",
+    "w": 27,
+    "h": 25,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "swe1.png": {
+    "file": "assets/sprites/strategicmap_hd/swe1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "terrain_desert.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_desert.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "terrain_field.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_field.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "terrain_forest.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_forest.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "terrain_hill.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_hill.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "terrain_mountain.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_mountain.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "terrain_sea.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_sea.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "terrain_wood.png": {
+    "file": "assets/sprites/image_ui_hd/terrain_wood.png",
+    "w": 36,
+    "h": 34,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "tri1.png": {
+    "file": "assets/sprites/strategicmap_hd/tri1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tun1.png": {
+    "file": "assets/sprites/strategicmap_hd/tun1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tur1.png": {
+    "file": "assets/sprites/strategicmap_hd/tur1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tutorials_point.png": {
+    "file": "assets/sprites/image_ui_hd/tutorials_point.png",
+    "w": 70,
+    "h": 94,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_back.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_back.png",
+    "w": 37,
+    "h": 35,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag.png",
+    "w": 98,
+    "h": 54,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_artillery.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_artillery.png",
+    "w": 44,
+    "h": 43,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_artillery_s.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_artillery_s.png",
+    "w": 44,
+    "h": 44,
+    "refx": 2,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_cavalry.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_cavalry.png",
+    "w": 44,
+    "h": 44,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_cavalry_s.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_cavalry_s.png",
+    "w": 44,
+    "h": 43,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_fortress.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_fortress.png",
+    "w": 44,
+    "h": 43,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_fortress_s.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_fortress_s.png",
+    "w": 44,
+    "h": 44,
+    "refx": 1,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_infantry.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_infantry.png",
+    "w": 43,
+    "h": 43,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_infantry_s.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_infantry_s.png",
+    "w": 43,
+    "h": 44,
+    "refx": 1,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_selected.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_selected.png",
+    "w": 99,
+    "h": 61,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_ship.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_ship.png",
+    "w": 44,
+    "h": 43,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "upgrade_tag_ship_s.png": {
+    "file": "assets/sprites/image_ui_hd/upgrade_tag_ship_s.png",
+    "w": 44,
+    "h": 44,
+    "refx": 2,
+    "refy": 1,
+    "atlas": "image_ui_hd"
+  },
+  "usa1.png": {
+    "file": "assets/sprites/strategicmap_hd/usa1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "volume_bar.png": {
+    "file": "assets/sprites/image_ui_hd/volume_bar.png",
+    "w": 280,
+    "h": 29,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "wal1.png": {
+    "file": "assets/sprites/strategicmap_hd/wal1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "whiteline_for_button_close.png": {
+    "file": "assets/sprites/image_ui_hd/whiteline_for_button_close.png",
+    "w": 2,
+    "h": 45,
+    "refx": 1,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "wur1.png": {
+    "file": "assets/sprites/strategicmap_hd/wur1.png",
+    "w": 51,
+    "h": 30,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "new_confirm.png": {
+    "file": "assets/sprites/image_ui_hd/new_confirm.png",
+    "w": 160,
+    "h": 45,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_ui_hd"
+  },
+  "button_choosebattlezone_coalition.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_coalition.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosebattlezone_east.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_east.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosebattlezone_france.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_france.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosebattlezone_holyroman.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_holyroman.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosebattlezone_locked.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_locked.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosebattlezone_uk.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_uk.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosebattlezone_usa.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosebattlezone_usa.png",
+    "w": 108,
+    "h": 124,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_coalition.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_coalition.png",
+    "w": 328,
+    "h": 90,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_conquest.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_conquest.png",
+    "w": 328,
+    "h": 90,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_east.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_east.png",
+    "w": 328,
+    "h": 91,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_france.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_france.png",
+    "w": 328,
+    "h": 90,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_holyroman.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_holyroman.png",
+    "w": 328,
+    "h": 90,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_uk.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_uk.png",
+    "w": 328,
+    "h": 91,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_choosestage_usa.png": {
+    "file": "assets/sprites/image_menu_hd/button_choosestage_usa.png",
+    "w": 328,
+    "h": 90,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_conquest_whiteline.png": {
+    "file": "assets/sprites/image_menu_hd/button_conquest_whiteline.png",
+    "w": 361,
+    "h": 1,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "choosestage_back.png": {
+    "file": "assets/sprites/image_menu_hd/choosestage_back.png",
+    "w": 76,
+    "h": 26,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_1775.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_1775.png",
+    "w": 76,
+    "h": 27,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_1798.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_1798.png",
+    "w": 72,
+    "h": 28,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_1806.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_1806.png",
+    "w": 76,
+    "h": 28,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_1809.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_1809.png",
+    "w": 75,
+    "h": 28,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_1812.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_1812.png",
+    "w": 75,
+    "h": 27,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_1815.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_1815.png",
+    "w": 76,
+    "h": 27,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_america.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_america.png",
+    "w": 118,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "conquest_text_europe.png": {
+    "file": "assets/sprites/image_menu_hd/conquest_text_europe.png",
+    "w": 93,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_menu_hd"
+  },
+  "button_pause_x.png": {
+    "file": "assets/sprites/image_uiadd_hd/button_pause_x.png",
+    "w": 92,
+    "h": 92,
+    "refx": 18,
+    "refy": 18,
+    "atlas": "image_uiadd_hd"
+  },
+  "button_return_x.png": {
+    "file": "assets/sprites/image_uiadd_hd/button_return_x.png",
+    "w": 92,
+    "h": 92,
+    "refx": 18,
+    "refy": 18,
+    "atlas": "image_uiadd_hd"
+  },
+  "button_round_x.png": {
+    "file": "assets/sprites/image_uiadd_hd/button_round_x.png",
+    "w": 92,
+    "h": 92,
+    "refx": 18,
+    "refy": 18,
+    "atlas": "image_uiadd_hd"
+  },
+  "button_skip_x.png": {
+    "file": "assets/sprites/image_uiadd_hd/button_skip_x.png",
+    "w": 92,
+    "h": 92,
+    "refx": 18,
+    "refy": 18,
+    "atlas": "image_uiadd_hd"
+  },
+  "btn_addisable.png": {
+    "file": "assets/sprites/image_uiadd_hd/btn_addisable.png",
+    "w": 65,
+    "h": 66,
+    "refx": 5,
+    "refy": 5,
+    "atlas": "image_uiadd_hd"
+  },
+  "btn_rewardedad.png": {
+    "file": "assets/sprites/image_uiadd_hd/btn_rewardedad.png",
+    "w": 65,
+    "h": 66,
+    "refx": 5,
+    "refy": 5,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_play.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_play.png",
+    "w": 26,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_0.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_0.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_1.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_1.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_2.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_2.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_3.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_3.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_4.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_4.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_5.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_5.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_6.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_6.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_7.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_7.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_8.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_8.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "icon_dot_9.png": {
+    "file": "assets/sprites/image_uiadd_hd/icon_dot_9.png",
+    "w": 22,
+    "h": 22,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "adsetting.png": {
+    "file": "assets/sprites/image_uiadd_hd/adsetting.png",
+    "w": 85,
+    "h": 17,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "button_confrim_x.png": {
+    "file": "assets/sprites/image_uiadd_hd/button_confrim_x.png",
+    "w": 134,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_uiadd_hd"
+  },
+  "alg2.png": {
+    "file": "assets/sprites/strategicmap_hd/alg2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "alg3.png": {
+    "file": "assets/sprites/strategicmap_hd/alg3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "alg4.png": {
+    "file": "assets/sprites/strategicmap_hd/alg4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue.png": {
+    "file": "assets/sprites/buildings_hd/arrow_blue.png",
+    "w": 51,
+    "h": 83,
+    "refx": 20,
+    "refy": 83,
+    "atlas": "buildings_hd"
+  },
+  "arrow_red.png": {
+    "file": "assets/sprites/buildings_hd/arrow_red.png",
+    "w": 52,
+    "h": 82,
+    "refx": 22,
+    "refy": 82,
+    "atlas": "buildings_hd"
+  },
+  "arrow_shadow.png": {
+    "file": "assets/sprites/buildings_hd/arrow_shadow.png",
+    "w": 109,
+    "h": 44,
+    "refx": 9,
+    "refy": 41,
+    "atlas": "buildings_hd"
+  },
+  "attack.png": {
+    "file": "assets/sprites/buildings_hd/attack.png",
+    "w": 152,
+    "h": 108,
+    "refx": 76,
+    "refy": 53,
+    "atlas": "buildings_hd"
+  },
+  "aus2.png": {
+    "file": "assets/sprites/strategicmap_hd/aus2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "aus3.png": {
+    "file": "assets/sprites/strategicmap_hd/aus3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "aus4.png": {
+    "file": "assets/sprites/strategicmap_hd/aus4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bad2.png": {
+    "file": "assets/sprites/strategicmap_hd/bad2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bad3.png": {
+    "file": "assets/sprites/strategicmap_hd/bad3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bad4.png": {
+    "file": "assets/sprites/strategicmap_hd/bad4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bav2.png": {
+    "file": "assets/sprites/strategicmap_hd/bav2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bav3.png": {
+    "file": "assets/sprites/strategicmap_hd/bav3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bav4.png": {
+    "file": "assets/sprites/strategicmap_hd/bav4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bridge_1_1.png": {
+    "file": "assets/sprites/buildings_hd/bridge_1_1.png",
+    "w": 136,
+    "h": 56,
+    "refx": 13,
+    "refy": 24,
+    "atlas": "buildings_hd"
+  },
+  "bridge_1_2.png": {
+    "file": "assets/sprites/buildings_hd/bridge_1_2.png",
+    "w": 107,
+    "h": 64,
+    "refx": 15,
+    "refy": -29,
+    "atlas": "buildings_hd"
+  },
+  "bridge_1_3.png": {
+    "file": "assets/sprites/buildings_hd/bridge_1_3.png",
+    "w": 110,
+    "h": 64,
+    "refx": 86,
+    "refy": -37,
+    "atlas": "buildings_hd"
+  },
+  "bridge_2_1.png": {
+    "file": "assets/sprites/buildings_hd/bridge_2_1.png",
+    "w": 112,
+    "h": 44,
+    "refx": -1,
+    "refy": 19,
+    "atlas": "buildings_hd"
+  },
+  "bridge_2_2.png": {
+    "file": "assets/sprites/buildings_hd/bridge_2_2.png",
+    "w": 101,
+    "h": 60,
+    "refx": 11,
+    "refy": -33,
+    "atlas": "buildings_hd"
+  },
+  "bridge_2_3.png": {
+    "file": "assets/sprites/buildings_hd/bridge_2_3.png",
+    "w": 99,
+    "h": 54,
+    "refx": 89,
+    "refy": -40,
+    "atlas": "buildings_hd"
+  },
+  "bridge_3_1.png": {
+    "file": "assets/sprites/buildings_hd/bridge_3_1.png",
+    "w": 102,
+    "h": 42,
+    "refx": -6,
+    "refy": 15,
+    "atlas": "buildings_hd"
+  },
+  "bridge_3_2.png": {
+    "file": "assets/sprites/buildings_hd/bridge_3_2.png",
+    "w": 101,
+    "h": 61,
+    "refx": 9,
+    "refy": -34,
+    "atlas": "buildings_hd"
+  },
+  "bridge_3_3.png": {
+    "file": "assets/sprites/buildings_hd/bridge_3_3.png",
+    "w": 106,
+    "h": 60,
+    "refx": 96,
+    "refy": -33,
+    "atlas": "buildings_hd"
+  },
+  "bru2.png": {
+    "file": "assets/sprites/strategicmap_hd/bru2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bru3.png": {
+    "file": "assets/sprites/strategicmap_hd/bru3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "bru4.png": {
+    "file": "assets/sprites/strategicmap_hd/bru4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "buildinglevel_1.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_1.png",
+    "w": 24,
+    "h": 37,
+    "refx": 11,
+    "refy": 16,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_2.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_2.png",
+    "w": 32,
+    "h": 36,
+    "refx": 15,
+    "refy": 15,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_3.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_3.png",
+    "w": 36,
+    "h": 34,
+    "refx": 17,
+    "refy": 16,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_4.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_4.png",
+    "w": 40,
+    "h": 36,
+    "refx": 18,
+    "refy": 15,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_5.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_5.png",
+    "w": 35,
+    "h": 36,
+    "refx": 17,
+    "refy": 14,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_6.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_6.png",
+    "w": 47,
+    "h": 36,
+    "refx": 28,
+    "refy": 15,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_7.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_7.png",
+    "w": 44,
+    "h": 36,
+    "refx": 21,
+    "refy": 15,
+    "atlas": "buildings_hd"
+  },
+  "buildinglevel_max.png": {
+    "file": "assets/sprites/buildings_hd/buildinglevel_max.png",
+    "w": 52,
+    "h": 57,
+    "refx": 25,
+    "refy": 27,
+    "atlas": "buildings_hd"
+  },
+  "capital_au.png": {
+    "file": "assets/sprites/buildings_hd/capital_au.png",
+    "w": 191,
+    "h": 107,
+    "refx": 40,
+    "refy": 76,
+    "atlas": "buildings_hd"
+  },
+  "capital_ca.png": {
+    "file": "assets/sprites/buildings_hd/capital_ca.png",
+    "w": 175,
+    "h": 159,
+    "refx": 50,
+    "refy": 128,
+    "atlas": "buildings_hd"
+  },
+  "capital_common.png": {
+    "file": "assets/sprites/buildings_hd/capital_common.png",
+    "w": 169,
+    "h": 126,
+    "refx": 57,
+    "refy": 98,
+    "atlas": "buildings_hd"
+  },
+  "capital_eg.png": {
+    "file": "assets/sprites/buildings_hd/capital_eg.png",
+    "w": 176,
+    "h": 102,
+    "refx": 71,
+    "refy": 67,
+    "atlas": "buildings_hd"
+  },
+  "capital_es.png": {
+    "file": "assets/sprites/buildings_hd/capital_es.png",
+    "w": 201,
+    "h": 123,
+    "refx": 46,
+    "refy": 96,
+    "atlas": "buildings_hd"
+  },
+  "capital_fr.png": {
+    "file": "assets/sprites/buildings_hd/capital_fr.png",
+    "w": 161,
+    "h": 125,
+    "refx": 51,
+    "refy": 94,
+    "atlas": "buildings_hd"
+  },
+  "capital_gb.png": {
+    "file": "assets/sprites/buildings_hd/capital_gb.png",
+    "w": 163,
+    "h": 164,
+    "refx": 47,
+    "refy": 133,
+    "atlas": "buildings_hd"
+  },
+  "capital_it.png": {
+    "file": "assets/sprites/buildings_hd/capital_it.png",
+    "w": 129,
+    "h": 81,
+    "refx": 57,
+    "refy": 44,
+    "atlas": "buildings_hd"
+  },
+  "capital_pu.png": {
+    "file": "assets/sprites/buildings_hd/capital_pu.png",
+    "w": 185,
+    "h": 126,
+    "refx": 52,
+    "refy": 99,
+    "atlas": "buildings_hd"
+  },
+  "capital_ru.png": {
+    "file": "assets/sprites/buildings_hd/capital_ru.png",
+    "w": 182,
+    "h": 156,
+    "refx": 47,
+    "refy": 131,
+    "atlas": "buildings_hd"
+  },
+  "capital_tk.png": {
+    "file": "assets/sprites/buildings_hd/capital_tk.png",
+    "w": 191,
+    "h": 168,
+    "refx": 65,
+    "refy": 136,
+    "atlas": "buildings_hd"
+  },
+  "capital_us.png": {
+    "file": "assets/sprites/buildings_hd/capital_us.png",
+    "w": 164,
+    "h": 93,
+    "refx": 50,
+    "refy": 66,
+    "atlas": "buildings_hd"
+  },
+  "che2.png": {
+    "file": "assets/sprites/strategicmap_hd/che2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "che3.png": {
+    "file": "assets/sprites/strategicmap_hd/che3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "che4.png": {
+    "file": "assets/sprites/strategicmap_hd/che4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "city_board_blue.png": {
+    "file": "assets/sprites/buildings_hd/city_board_blue.png",
+    "w": 129,
+    "h": 39,
+    "refx": 65,
+    "refy": 0,
+    "atlas": "buildings_hd"
+  },
+  "city_board_green.png": {
+    "file": "assets/sprites/buildings_hd/city_board_green.png",
+    "w": 129,
+    "h": 39,
+    "refx": 65,
+    "refy": 0,
+    "atlas": "buildings_hd"
+  },
+  "city_board_red.png": {
+    "file": "assets/sprites/buildings_hd/city_board_red.png",
+    "w": 129,
+    "h": 39,
+    "refx": 65,
+    "refy": 0,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv1.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv1.png",
+    "w": 81,
+    "h": 66,
+    "refx": 44,
+    "refy": 32,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv2.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv2.png",
+    "w": 103,
+    "h": 75,
+    "refx": 50,
+    "refy": 50,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv3.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv3.png",
+    "w": 113,
+    "h": 74,
+    "refx": 53,
+    "refy": 41,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv4.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv4.png",
+    "w": 131,
+    "h": 100,
+    "refx": 65,
+    "refy": 47,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv5.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv5.png",
+    "w": 163,
+    "h": 112,
+    "refx": 85,
+    "refy": 54,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv6.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv6.png",
+    "w": 193,
+    "h": 115,
+    "refx": 95,
+    "refy": 61,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv7.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv7.png",
+    "w": 229,
+    "h": 123,
+    "refx": 113,
+    "refy": 68,
+    "atlas": "buildings_hd"
+  },
+  "city_east_lv7_up.png": {
+    "file": "assets/sprites/buildings_hd/city_east_lv7_up.png",
+    "w": 246,
+    "h": 105,
+    "refx": 123,
+    "refy": 38,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv1.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv1.png",
+    "w": 89,
+    "h": 69,
+    "refx": 41,
+    "refy": 31,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv2.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv2.png",
+    "w": 96,
+    "h": 77,
+    "refx": 50,
+    "refy": 43,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv3.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv3.png",
+    "w": 120,
+    "h": 78,
+    "refx": 56,
+    "refy": 44,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv4.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv4.png",
+    "w": 151,
+    "h": 91,
+    "refx": 66,
+    "refy": 54,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv5.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv5.png",
+    "w": 173,
+    "h": 112,
+    "refx": 88,
+    "refy": 61,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv6.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv6.png",
+    "w": 190,
+    "h": 151,
+    "refx": 89,
+    "refy": 92,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv7.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv7.png",
+    "w": 236,
+    "h": 134,
+    "refx": 120,
+    "refy": 78,
+    "atlas": "buildings_hd"
+  },
+  "city_west_lv7_up.png": {
+    "file": "assets/sprites/buildings_hd/city_west_lv7_up.png",
+    "w": 239,
+    "h": 93,
+    "refx": 115,
+    "refy": 28,
+    "atlas": "buildings_hd"
+  },
+  "deck.png": {
+    "file": "assets/sprites/buildings_hd/deck.png",
+    "w": 183,
+    "h": 117,
+    "refx": 94,
+    "refy": 59,
+    "atlas": "buildings_hd"
+  },
+  "den2.png": {
+    "file": "assets/sprites/strategicmap_hd/den2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "den3.png": {
+    "file": "assets/sprites/strategicmap_hd/den3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "den4.png": {
+    "file": "assets/sprites/strategicmap_hd/den4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "egy2.png": {
+    "file": "assets/sprites/strategicmap_hd/egy2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "egy3.png": {
+    "file": "assets/sprites/strategicmap_hd/egy3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "egy4.png": {
+    "file": "assets/sprites/strategicmap_hd/egy4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "factory_east_lv1.png": {
+    "file": "assets/sprites/buildings_hd/factory_east_lv1.png",
+    "w": 140,
+    "h": 85,
+    "refx": 51,
+    "refy": 57,
+    "atlas": "buildings_hd"
+  },
+  "factory_east_lv2.png": {
+    "file": "assets/sprites/buildings_hd/factory_east_lv2.png",
+    "w": 150,
+    "h": 102,
+    "refx": 63,
+    "refy": 64,
+    "atlas": "buildings_hd"
+  },
+  "factory_east_lv3.png": {
+    "file": "assets/sprites/buildings_hd/factory_east_lv3.png",
+    "w": 169,
+    "h": 90,
+    "refx": 71,
+    "refy": 55,
+    "atlas": "buildings_hd"
+  },
+  "factory_east_lv4.png": {
+    "file": "assets/sprites/buildings_hd/factory_east_lv4.png",
+    "w": 184,
+    "h": 109,
+    "refx": 81,
+    "refy": 60,
+    "atlas": "buildings_hd"
+  },
+  "factory_west_lv1.png": {
+    "file": "assets/sprites/buildings_hd/factory_west_lv1.png",
+    "w": 149,
+    "h": 81,
+    "refx": 57,
+    "refy": 57,
+    "atlas": "buildings_hd"
+  },
+  "factory_west_lv2.png": {
+    "file": "assets/sprites/buildings_hd/factory_west_lv2.png",
+    "w": 155,
+    "h": 96,
+    "refx": 53,
+    "refy": 62,
+    "atlas": "buildings_hd"
+  },
+  "factory_west_lv3.png": {
+    "file": "assets/sprites/buildings_hd/factory_west_lv3.png",
+    "w": 177,
+    "h": 91,
+    "refx": 71,
+    "refy": 54,
+    "atlas": "buildings_hd"
+  },
+  "factory_west_lv4.png": {
+    "file": "assets/sprites/buildings_hd/factory_west_lv4.png",
+    "w": 185,
+    "h": 100,
+    "refx": 67,
+    "refy": 65,
+    "atlas": "buildings_hd"
+  },
+  "farm_1_lv1.png": {
+    "file": "assets/sprites/buildings_hd/farm_1_lv1.png",
+    "w": 191,
+    "h": 153,
+    "refx": 87,
+    "refy": 82,
+    "atlas": "buildings_hd"
+  },
+  "farm_1_lv2.png": {
+    "file": "assets/sprites/buildings_hd/farm_1_lv2.png",
+    "w": 191,
+    "h": 139,
+    "refx": 88,
+    "refy": 68,
+    "atlas": "buildings_hd"
+  },
+  "farm_1_lv3.png": {
+    "file": "assets/sprites/buildings_hd/farm_1_lv3.png",
+    "w": 179,
+    "h": 148,
+    "refx": 95,
+    "refy": 73,
+    "atlas": "buildings_hd"
+  },
+  "farm_2_lv1.png": {
+    "file": "assets/sprites/buildings_hd/farm_2_lv1.png",
+    "w": 187,
+    "h": 180,
+    "refx": 100,
+    "refy": 95,
+    "atlas": "buildings_hd"
+  },
+  "farm_2_lv2.png": {
+    "file": "assets/sprites/buildings_hd/farm_2_lv2.png",
+    "w": 177,
+    "h": 141,
+    "refx": 90,
+    "refy": 66,
+    "atlas": "buildings_hd"
+  },
+  "farm_2_lv3.png": {
+    "file": "assets/sprites/buildings_hd/farm_2_lv3.png",
+    "w": 185,
+    "h": 157,
+    "refx": 92,
+    "refy": 77,
+    "atlas": "buildings_hd"
+  },
+  "farm_3_lv1.png": {
+    "file": "assets/sprites/buildings_hd/farm_3_lv1.png",
+    "w": 176,
+    "h": 192,
+    "refx": 89,
+    "refy": 108,
+    "atlas": "buildings_hd"
+  },
+  "farm_3_lv2.png": {
+    "file": "assets/sprites/buildings_hd/farm_3_lv2.png",
+    "w": 176,
+    "h": 146,
+    "refx": 89,
+    "refy": 68,
+    "atlas": "buildings_hd"
+  },
+  "farm_3_lv3.png": {
+    "file": "assets/sprites/buildings_hd/farm_3_lv3.png",
+    "w": 169,
+    "h": 152,
+    "refx": 90,
+    "refy": 70,
+    "atlas": "buildings_hd"
+  },
+  "farm_4_lv1.png": {
+    "file": "assets/sprites/buildings_hd/farm_4_lv1.png",
+    "w": 185,
+    "h": 157,
+    "refx": 90,
+    "refy": 78,
+    "atlas": "buildings_hd"
+  },
+  "farm_4_lv2.png": {
+    "file": "assets/sprites/buildings_hd/farm_4_lv2.png",
+    "w": 202,
+    "h": 133,
+    "refx": 96,
+    "refy": 59,
+    "atlas": "buildings_hd"
+  },
+  "farm_4_lv3.png": {
+    "file": "assets/sprites/buildings_hd/farm_4_lv3.png",
+    "w": 204,
+    "h": 151,
+    "refx": 98,
+    "refy": 72,
+    "atlas": "buildings_hd"
+  },
+  "flagpole.png": {
+    "file": "assets/sprites/buildings_hd/flagpole.png",
+    "w": 18,
+    "h": 94,
+    "refx": 10,
+    "refy": 7,
+    "atlas": "buildings_hd"
+  },
+  "fra2.png": {
+    "file": "assets/sprites/strategicmap_hd/fra2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "fra3.png": {
+    "file": "assets/sprites/strategicmap_hd/fra3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "fra4.png": {
+    "file": "assets/sprites/strategicmap_hd/fra4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "gbr2.png": {
+    "file": "assets/sprites/strategicmap_hd/gbr2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "gbr3.png": {
+    "file": "assets/sprites/strategicmap_hd/gbr3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "gbr4.png": {
+    "file": "assets/sprites/strategicmap_hd/gbr4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hes2.png": {
+    "file": "assets/sprites/strategicmap_hd/hes2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hes3.png": {
+    "file": "assets/sprites/strategicmap_hd/hes3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hes4.png": {
+    "file": "assets/sprites/strategicmap_hd/hes4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hp.png": {
+    "file": "assets/sprites/buildings_hd/hp.png",
+    "w": 6,
+    "h": 5,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "buildings_hd"
+  },
+  "hre2.png": {
+    "file": "assets/sprites/strategicmap_hd/hre2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hre3.png": {
+    "file": "assets/sprites/strategicmap_hd/hre3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "hre4.png": {
+    "file": "assets/sprites/strategicmap_hd/hre4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ind2.png": {
+    "file": "assets/sprites/strategicmap_hd/ind2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ind3.png": {
+    "file": "assets/sprites/strategicmap_hd/ind3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ind4.png": {
+    "file": "assets/sprites/strategicmap_hd/ind4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "koi2.png": {
+    "file": "assets/sprites/strategicmap_hd/koi2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "koi3.png": {
+    "file": "assets/sprites/strategicmap_hd/koi3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "koi4.png": {
+    "file": "assets/sprites/strategicmap_hd/koi4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mar2.png": {
+    "file": "assets/sprites/strategicmap_hd/mar2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mar3.png": {
+    "file": "assets/sprites/strategicmap_hd/mar3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mar4.png": {
+    "file": "assets/sprites/strategicmap_hd/mar4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mark_unit_0.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_0.png",
+    "w": 15,
+    "h": 22,
+    "refx": 7,
+    "refy": 13,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_1.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_1.png",
+    "w": 19,
+    "h": 23,
+    "refx": 11,
+    "refy": 13,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_10.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_10.png",
+    "w": 25,
+    "h": 14,
+    "refx": 14,
+    "refy": 7,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_11.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_11.png",
+    "w": 27,
+    "h": 15,
+    "refx": 14,
+    "refy": 8,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_12.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_12.png",
+    "w": 20,
+    "h": 18,
+    "refx": 9,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_13.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_13.png",
+    "w": 24,
+    "h": 23,
+    "refx": 13,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_15.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_15.png",
+    "w": 26,
+    "h": 19,
+    "refx": 15,
+    "refy": 14,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_14.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_14.png",
+    "w": 22,
+    "h": 18,
+    "refx": 13,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_16.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_16.png",
+    "w": 27,
+    "h": 18,
+    "refx": 16,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_17.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_17.png",
+    "w": 22,
+    "h": 17,
+    "refx": 13,
+    "refy": 10,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_18.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_18.png",
+    "w": 18,
+    "h": 18,
+    "refx": 10,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_19.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_19.png",
+    "w": 23,
+    "h": 19,
+    "refx": 12,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_2.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_2.png",
+    "w": 17,
+    "h": 25,
+    "refx": 9,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_20.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_20.png",
+    "w": 24,
+    "h": 17,
+    "refx": 13,
+    "refy": 12,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_21.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_21.png",
+    "w": 16,
+    "h": 16,
+    "refx": 8,
+    "refy": 9,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_3.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_3.png",
+    "w": 15,
+    "h": 23,
+    "refx": 8,
+    "refy": 14,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_4.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_4.png",
+    "w": 19,
+    "h": 21,
+    "refx": 10,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_5.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_5.png",
+    "w": 25,
+    "h": 16,
+    "refx": 14,
+    "refy": 9,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_6.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_6.png",
+    "w": 24,
+    "h": 25,
+    "refx": 13,
+    "refy": 14,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_7.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_7.png",
+    "w": 20,
+    "h": 24,
+    "refx": 11,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_8.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_8.png",
+    "w": 23,
+    "h": 22,
+    "refx": 12,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "mark_unit_9.png": {
+    "file": "assets/sprites/buildings_hd/mark_unit_9.png",
+    "w": 22,
+    "h": 19,
+    "refx": 11,
+    "refy": 11,
+    "atlas": "buildings_hd"
+  },
+  "marker_bar.png": {
+    "file": "assets/sprites/buildings_hd/marker_bar.png",
+    "w": 36,
+    "h": 33,
+    "refx": 16,
+    "refy": 16,
+    "atlas": "buildings_hd"
+  },
+  "marker_shop.png": {
+    "file": "assets/sprites/buildings_hd/marker_shop.png",
+    "w": 34,
+    "h": 31,
+    "refx": 17,
+    "refy": 17,
+    "atlas": "buildings_hd"
+  },
+  "marker_trade.png": {
+    "file": "assets/sprites/buildings_hd/marker_trade.png",
+    "w": 35,
+    "h": 31,
+    "refx": 18,
+    "refy": 15,
+    "atlas": "buildings_hd"
+  },
+  "medal.png": {
+    "file": "assets/sprites/buildings_hd/medal.png",
+    "w": 44,
+    "h": 41,
+    "refx": 23,
+    "refy": 23,
+    "atlas": "buildings_hd"
+  },
+  "mek2.png": {
+    "file": "assets/sprites/strategicmap_hd/mek2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mek3.png": {
+    "file": "assets/sprites/strategicmap_hd/mek3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mek4.png": {
+    "file": "assets/sprites/strategicmap_hd/mek4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mol2.png": {
+    "file": "assets/sprites/strategicmap_hd/mol2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mol3.png": {
+    "file": "assets/sprites/strategicmap_hd/mol3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "mol4.png": {
+    "file": "assets/sprites/strategicmap_hd/mol4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "morale_down1.png": {
+    "file": "assets/sprites/buildings_hd/morale_down1.png",
+    "w": 85,
+    "h": 105,
+    "refx": 44,
+    "refy": 31,
+    "atlas": "buildings_hd"
+  },
+  "morale_down2.png": {
+    "file": "assets/sprites/buildings_hd/morale_down2.png",
+    "w": 88,
+    "h": 111,
+    "refx": 45,
+    "refy": 32,
+    "atlas": "buildings_hd"
+  },
+  "morale_down3.png": {
+    "file": "assets/sprites/buildings_hd/morale_down3.png",
+    "w": 85,
+    "h": 60,
+    "refx": 42,
+    "refy": 32,
+    "atlas": "buildings_hd"
+  },
+  "morale_up.png": {
+    "file": "assets/sprites/buildings_hd/morale_up.png",
+    "w": 82,
+    "h": 108,
+    "refx": 41,
+    "refy": 36,
+    "atlas": "buildings_hd"
+  },
+  "move.png": {
+    "file": "assets/sprites/buildings_hd/move.png",
+    "w": 86,
+    "h": 59,
+    "refx": 43,
+    "refy": 27,
+    "atlas": "buildings_hd"
+  },
+  "nap2.png": {
+    "file": "assets/sprites/strategicmap_hd/nap2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nap3.png": {
+    "file": "assets/sprites/strategicmap_hd/nap3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nap4.png": {
+    "file": "assets/sprites/strategicmap_hd/nap4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nas2.png": {
+    "file": "assets/sprites/strategicmap_hd/nas2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nas3.png": {
+    "file": "assets/sprites/strategicmap_hd/nas3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nas4.png": {
+    "file": "assets/sprites/strategicmap_hd/nas4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nds2.png": {
+    "file": "assets/sprites/strategicmap_hd/nds2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nds3.png": {
+    "file": "assets/sprites/strategicmap_hd/nds3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "nds4.png": {
+    "file": "assets/sprites/strategicmap_hd/nds4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ned2.png": {
+    "file": "assets/sprites/strategicmap_hd/ned2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ned3.png": {
+    "file": "assets/sprites/strategicmap_hd/ned3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ned4.png": {
+    "file": "assets/sprites/strategicmap_hd/ned4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "old2.png": {
+    "file": "assets/sprites/strategicmap_hd/old2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "old3.png": {
+    "file": "assets/sprites/strategicmap_hd/old3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "old4.png": {
+    "file": "assets/sprites/strategicmap_hd/old4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pap2.png": {
+    "file": "assets/sprites/strategicmap_hd/pap2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pap3.png": {
+    "file": "assets/sprites/strategicmap_hd/pap3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pap4.png": {
+    "file": "assets/sprites/strategicmap_hd/pap4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "per2.png": {
+    "file": "assets/sprites/strategicmap_hd/per2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "per3.png": {
+    "file": "assets/sprites/strategicmap_hd/per3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "per4.png": {
+    "file": "assets/sprites/strategicmap_hd/per4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pie2.png": {
+    "file": "assets/sprites/strategicmap_hd/pie2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pie3.png": {
+    "file": "assets/sprites/strategicmap_hd/pie3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pie4.png": {
+    "file": "assets/sprites/strategicmap_hd/pie4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pol2.png": {
+    "file": "assets/sprites/strategicmap_hd/pol2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pol3.png": {
+    "file": "assets/sprites/strategicmap_hd/pol3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pol4.png": {
+    "file": "assets/sprites/strategicmap_hd/pol4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "por2.png": {
+    "file": "assets/sprites/strategicmap_hd/por2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "por3.png": {
+    "file": "assets/sprites/strategicmap_hd/por3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "por4.png": {
+    "file": "assets/sprites/strategicmap_hd/por4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "port_1.png": {
+    "file": "assets/sprites/buildings_hd/port_1.png",
+    "w": 186,
+    "h": 120,
+    "refx": 92,
+    "refy": 95,
+    "atlas": "buildings_hd"
+  },
+  "port_2.png": {
+    "file": "assets/sprites/buildings_hd/port_2.png",
+    "w": 176,
+    "h": 174,
+    "refx": 21,
+    "refy": 93,
+    "atlas": "buildings_hd"
+  },
+  "port_3.png": {
+    "file": "assets/sprites/buildings_hd/port_3.png",
+    "w": 180,
+    "h": 191,
+    "refx": 142,
+    "refy": 100,
+    "atlas": "buildings_hd"
+  },
+  "port_4.png": {
+    "file": "assets/sprites/buildings_hd/port_4.png",
+    "w": 181,
+    "h": 120,
+    "refx": 85,
+    "refy": 26,
+    "atlas": "buildings_hd"
+  },
+  "pru2.png": {
+    "file": "assets/sprites/strategicmap_hd/pru2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pru3.png": {
+    "file": "assets/sprites/strategicmap_hd/pru3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "pru4.png": {
+    "file": "assets/sprites/strategicmap_hd/pru4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rhc2.png": {
+    "file": "assets/sprites/strategicmap_hd/rhc2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rhc3.png": {
+    "file": "assets/sprites/strategicmap_hd/rhc3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rhc4.png": {
+    "file": "assets/sprites/strategicmap_hd/rhc4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rus2.png": {
+    "file": "assets/sprites/strategicmap_hd/rus2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rus3.png": {
+    "file": "assets/sprites/strategicmap_hd/rus3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "rus4.png": {
+    "file": "assets/sprites/strategicmap_hd/rus4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "sax2.png": {
+    "file": "assets/sprites/strategicmap_hd/sax2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "sax3.png": {
+    "file": "assets/sprites/strategicmap_hd/sax3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "sax4.png": {
+    "file": "assets/sprites/strategicmap_hd/sax4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "ship_mark.png": {
+    "file": "assets/sprites/buildings_hd/ship_mark.png",
+    "w": 32,
+    "h": 40,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "buildings_hd"
+  },
+  "spa2.png": {
+    "file": "assets/sprites/strategicmap_hd/spa2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "spa3.png": {
+    "file": "assets/sprites/strategicmap_hd/spa3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "spa4.png": {
+    "file": "assets/sprites/strategicmap_hd/spa4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "srb2.png": {
+    "file": "assets/sprites/strategicmap_hd/srb2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "srb3.png": {
+    "file": "assets/sprites/strategicmap_hd/srb3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "srb4.png": {
+    "file": "assets/sprites/strategicmap_hd/srb4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "stable_east_lv1.png": {
+    "file": "assets/sprites/buildings_hd/stable_east_lv1.png",
+    "w": 112,
+    "h": 63,
+    "refx": 51,
+    "refy": 36,
+    "atlas": "buildings_hd"
+  },
+  "stable_east_lv2.png": {
+    "file": "assets/sprites/buildings_hd/stable_east_lv2.png",
+    "w": 136,
+    "h": 75,
+    "refx": 68,
+    "refy": 36,
+    "atlas": "buildings_hd"
+  },
+  "stable_east_lv3.png": {
+    "file": "assets/sprites/buildings_hd/stable_east_lv3.png",
+    "w": 176,
+    "h": 120,
+    "refx": 79,
+    "refy": 74,
+    "atlas": "buildings_hd"
+  },
+  "stable_west_lv1.png": {
+    "file": "assets/sprites/buildings_hd/stable_west_lv1.png",
+    "w": 109,
+    "h": 67,
+    "refx": 53,
+    "refy": 34,
+    "atlas": "buildings_hd"
+  },
+  "stable_west_lv2.png": {
+    "file": "assets/sprites/buildings_hd/stable_west_lv2.png",
+    "w": 140,
+    "h": 77,
+    "refx": 66,
+    "refy": 40,
+    "atlas": "buildings_hd"
+  },
+  "stable_west_lv3.png": {
+    "file": "assets/sprites/buildings_hd/stable_west_lv3.png",
+    "w": 176,
+    "h": 111,
+    "refx": 90,
+    "refy": 63,
+    "atlas": "buildings_hd"
+  },
+  "swe2.png": {
+    "file": "assets/sprites/strategicmap_hd/swe2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "swe3.png": {
+    "file": "assets/sprites/strategicmap_hd/swe3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "swe4.png": {
+    "file": "assets/sprites/strategicmap_hd/swe4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "transportship1.png": {
+    "file": "assets/sprites/buildings_hd/transportship1.png",
+    "w": 151,
+    "h": 170,
+    "refx": 70,
+    "refy": 107,
+    "atlas": "buildings_hd"
+  },
+  "transportship2.png": {
+    "file": "assets/sprites/buildings_hd/transportship2.png",
+    "w": 150,
+    "h": 194,
+    "refx": 94,
+    "refy": 119,
+    "atlas": "buildings_hd"
+  },
+  "tri2.png": {
+    "file": "assets/sprites/strategicmap_hd/tri2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tri3.png": {
+    "file": "assets/sprites/strategicmap_hd/tri3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tri4.png": {
+    "file": "assets/sprites/strategicmap_hd/tri4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tun2.png": {
+    "file": "assets/sprites/strategicmap_hd/tun2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tun3.png": {
+    "file": "assets/sprites/strategicmap_hd/tun3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tun4.png": {
+    "file": "assets/sprites/strategicmap_hd/tun4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tur2.png": {
+    "file": "assets/sprites/strategicmap_hd/tur2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tur3.png": {
+    "file": "assets/sprites/strategicmap_hd/tur3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "tur4.png": {
+    "file": "assets/sprites/strategicmap_hd/tur4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "usa2.png": {
+    "file": "assets/sprites/strategicmap_hd/usa2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "usa3.png": {
+    "file": "assets/sprites/strategicmap_hd/usa3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "usa4.png": {
+    "file": "assets/sprites/strategicmap_hd/usa4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "wal2.png": {
+    "file": "assets/sprites/strategicmap_hd/wal2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "wal3.png": {
+    "file": "assets/sprites/strategicmap_hd/wal3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "wal4.png": {
+    "file": "assets/sprites/strategicmap_hd/wal4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "wur2.png": {
+    "file": "assets/sprites/strategicmap_hd/wur2.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "wur3.png": {
+    "file": "assets/sprites/strategicmap_hd/wur3.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "wur4.png": {
+    "file": "assets/sprites/strategicmap_hd/wur4.png",
+    "w": 51,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_6.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_6.png",
+    "w": 95,
+    "h": 88,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_6.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_6.png",
+    "w": 95,
+    "h": 88,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_7.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_7.png",
+    "w": 66,
+    "h": 68,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_7.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_7.png",
+    "w": 66,
+    "h": 68,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_4.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_4.png",
+    "w": 97,
+    "h": 61,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_4.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_4.png",
+    "w": 97,
+    "h": 61,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_3.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_3.png",
+    "w": 103,
+    "h": 88,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_3.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_3.png",
+    "w": 103,
+    "h": 88,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_2.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_2.png",
+    "w": 126,
+    "h": 51,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_2.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_2.png",
+    "w": 126,
+    "h": 51,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_1.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_1.png",
+    "w": 130,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_1.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_1.png",
+    "w": 130,
+    "h": 43,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_5.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_5.png",
+    "w": 30,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_9.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_9.png",
+    "w": 38,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_8.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_8.png",
+    "w": 48,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_5.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_5.png",
+    "w": 30,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_9.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_9.png",
+    "w": 38,
+    "h": 36,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_8.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_8.png",
+    "w": 48,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_12.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_12.png",
+    "w": 28,
+    "h": 27,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_12.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_12.png",
+    "w": 28,
+    "h": 27,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_11.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_11.png",
+    "w": 20,
+    "h": 20,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_11.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_11.png",
+    "w": 20,
+    "h": 20,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_blue_10.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_blue_10.png",
+    "w": 13,
+    "h": 13,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "arrow_red_10.png": {
+    "file": "assets/sprites/strategicmap_hd/arrow_red_10.png",
+    "w": 13,
+    "h": 13,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "strategicmap_hd"
+  },
+  "build_frame.png": {
+    "file": "assets/sprites/image_recruit_hd/build_frame.png",
+    "w": 144,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "build_side.png": {
+    "file": "assets/sprites/image_recruit_hd/build_side.png",
+    "w": 135,
+    "h": 5,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "buildmaker.png": {
+    "file": "assets/sprites/image_recruit_hd/buildmaker.png",
+    "w": 37,
+    "h": 39,
+    "refx": 3,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "buildmarker_coastalartillery.png": {
+    "file": "assets/sprites/image_recruit_hd/buildmarker_coastalartillery.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "buildmarker_largefortress.png": {
+    "file": "assets/sprites/image_recruit_hd/buildmarker_largefortress.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "buildmarker_mediumfortress.png": {
+    "file": "assets/sprites/image_recruit_hd/buildmarker_mediumfortress.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_builddefense.png": {
+    "file": "assets/sprites/image_recruit_hd/button_builddefense.png",
+    "w": 65,
+    "h": 67,
+    "refx": 3,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_buildfortress.png": {
+    "file": "assets/sprites/image_recruit_hd/button_buildfortress.png",
+    "w": 64,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_buildupgrade.png": {
+    "file": "assets/sprites/image_recruit_hd/button_buildupgrade.png",
+    "w": 65,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_buyship.png": {
+    "file": "assets/sprites/image_recruit_hd/button_buyship.png",
+    "w": 64,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_city.png": {
+    "file": "assets/sprites/image_recruit_hd/button_city.png",
+    "w": 64,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_info.png": {
+    "file": "assets/sprites/image_recruit_hd/button_info.png",
+    "w": 65,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_pause.png": {
+    "file": "assets/sprites/image_recruit_hd/button_pause.png",
+    "w": 73,
+    "h": 74,
+    "refx": 18,
+    "refy": 2,
+    "atlas": "image_recruit_hd"
+  },
+  "button_return.png": {
+    "file": "assets/sprites/image_recruit_hd/button_return.png",
+    "w": 73,
+    "h": 74,
+    "refx": 0,
+    "refy": 19,
+    "atlas": "image_recruit_hd"
+  },
+  "button_round.png": {
+    "file": "assets/sprites/image_recruit_hd/button_round.png",
+    "w": 73,
+    "h": 74,
+    "refx": 18,
+    "refy": 19,
+    "atlas": "image_recruit_hd"
+  },
+  "button_shop.png": {
+    "file": "assets/sprites/image_recruit_hd/button_shop.png",
+    "w": 65,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "button_skip.png": {
+    "file": "assets/sprites/image_recruit_hd/button_skip.png",
+    "w": 74,
+    "h": 74,
+    "refx": 1,
+    "refy": 18,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_armoredcar.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_armoredcar.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_battleship.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_battleship.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_cruiser.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_cruiser.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_fortressartillery.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_fortressartillery.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_frigate.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_frigate.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_grenadier.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_grenadier.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_guard.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_guard.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_heavyartillery.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_heavyartillery.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_heavycavalry.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_heavycavalry.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_ironclads.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_ironclads.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "recruit_light.png": {
+    "file": "assets/sprites/image_recruit_hd/recruit_light.png",
+    "w": 144,
+    "h": 106,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "resource_small_food.png": {
+    "file": "assets/sprites/image_recruit_hd/resource_small_food.png",
+    "w": 21,
+    "h": 21,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "resource_small_industry.png": {
+    "file": "assets/sprites/image_recruit_hd/resource_small_industry.png",
+    "w": 15,
+    "h": 19,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "resource_small_money.png": {
+    "file": "assets/sprites/image_recruit_hd/resource_small_money.png",
+    "w": 18,
+    "h": 19,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd"
+  },
+  "build_bunker.png": {
+    "file": "assets/sprites/image_recruit_hd2/build_bunker.png",
+    "w": 190,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "build_coastalartillery.png": {
+    "file": "assets/sprites/image_recruit_hd2/build_coastalartillery.png",
+    "w": 145,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "build_fences.png": {
+    "file": "assets/sprites/image_recruit_hd2/build_fences.png",
+    "w": 190,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "build_largefortress.png": {
+    "file": "assets/sprites/image_recruit_hd2/build_largefortress.png",
+    "w": 145,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "build_mediumfortress.png": {
+    "file": "assets/sprites/image_recruit_hd2/build_mediumfortress.png",
+    "w": 145,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "buildmarker_smallfortress.png": {
+    "file": "assets/sprites/image_recruit_hd2/buildmarker_smallfortress.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "button_bar.png": {
+    "file": "assets/sprites/image_recruit_hd2/button_bar.png",
+    "w": 65,
+    "h": 66,
+    "refx": 3,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "button_build.png": {
+    "file": "assets/sprites/image_recruit_hd2/button_build.png",
+    "w": 65,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "button_trade.png": {
+    "file": "assets/sprites/image_recruit_hd2/button_trade.png",
+    "w": 65,
+    "h": 67,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_lightartillery.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_lightartillery.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_lightcavalry.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_lightcavalry.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_line.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_line.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_machinegun.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_machinegun.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_militia.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_militia.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_musketcavalry.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_musketcavalry.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruit_rocket.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruit_rocket.png",
+    "w": 144,
+    "h": 107,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_armoredcar.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_armoredcar.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_battleship.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_battleship.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_cruiser.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_cruiser.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_fortressartillery.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_fortressartillery.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_frigate.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_frigate.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_grenadier.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_grenadier.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_guard.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_guard.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_heavyartillery.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_heavyartillery.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_heavycavalry.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_heavycavalry.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_ironclads.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_ironclads.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_light.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_light.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_lightartillery.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_lightartillery.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_lightcavalry.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_lightcavalry.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "recruitmarker_line.png": {
+    "file": "assets/sprites/image_recruit_hd2/recruitmarker_line.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd2"
+  },
+  "build_moat.png": {
+    "file": "assets/sprites/image_recruit_hd3/build_moat.png",
+    "w": 190,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "build_smallfortress.png": {
+    "file": "assets/sprites/image_recruit_hd3/build_smallfortress.png",
+    "w": 145,
+    "h": 130,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_dock.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_dock.png",
+    "w": 64,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_factory.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_factory.png",
+    "w": 64,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_generals.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_generals.png",
+    "w": 65,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_items.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_items.png",
+    "w": 65,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_ok.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_ok.png",
+    "w": 64,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_ok_gray.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_ok_gray.png",
+    "w": 65,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_stable.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_stable.png",
+    "w": 64,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "button_training.png": {
+    "file": "assets/sprites/image_recruit_hd3/button_training.png",
+    "w": 64,
+    "h": 66,
+    "refx": 2,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "recruitmarker_machinegun.png": {
+    "file": "assets/sprites/image_recruit_hd3/recruitmarker_machinegun.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "recruitmarker_militia.png": {
+    "file": "assets/sprites/image_recruit_hd3/recruitmarker_militia.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "recruitmarker_musketcavalry.png": {
+    "file": "assets/sprites/image_recruit_hd3/recruitmarker_musketcavalry.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "recruitmarker_rocket.png": {
+    "file": "assets/sprites/image_recruit_hd3/recruitmarker_rocket.png",
+    "w": 31,
+    "h": 31,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "image_recruit_hd3"
+  },
+  "1.png": {
+    "file": "assets/sprites/choose_hd/1.png",
+    "w": 39,
+    "h": 42,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "choose_hd"
+  },
+  "2.png": {
+    "file": "assets/sprites/choose_hd/2.png",
+    "w": 40,
+    "h": 42,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "choose_hd"
+  },
+  "3.png": {
+    "file": "assets/sprites/choose_hd/3.png",
+    "w": 39,
+    "h": 42,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "choose_hd"
+  },
+  "4.png": {
+    "file": "assets/sprites/choose_hd/4.png",
+    "w": 40,
+    "h": 42,
+    "refx": 0,
+    "refy": 0,
+    "atlas": "choose_hd"
+  },
+  "Abercromby.png": {
+    "file": "assets/sprites/commandermark_hd/Abercromby.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Agha.png": {
+    "file": "assets/sprites/commandermark_hd/Agha.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "AlexanderI.png": {
+    "file": "assets/sprites/commandermark_hd/AlexanderI.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Alten.png": {
+    "file": "assets/sprites/commandermark_hd/Alten.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "AmadeoIII.png": {
+    "file": "assets/sprites/commandermark_hd/AmadeoIII.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Andrade.png": {
+    "file": "assets/sprites/commandermark_hd/Andrade.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Archduke.C.png": {
+    "file": "assets/sprites/commandermark_hd/Archduke.C.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Archduke.J.png": {
+    "file": "assets/sprites/commandermark_hd/Archduke.J.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Arnold.png": {
+    "file": "assets/sprites/commandermark_hd/Arnold.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Arrighi.png": {
+    "file": "assets/sprites/commandermark_hd/Arrighi.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Augereau.png": {
+    "file": "assets/sprites/commandermark_hd/Augereau.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "AugustI.png": {
+    "file": "assets/sprites/commandermark_hd/AugustI.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bachmann.png": {
+    "file": "assets/sprites/commandermark_hd/Bachmann.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Baggovut.png": {
+    "file": "assets/sprites/commandermark_hd/Baggovut.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bagration.png": {
+    "file": "assets/sprites/commandermark_hd/Bagration.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Balabio.png": {
+    "file": "assets/sprites/commandermark_hd/Balabio.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Ballesteros.png": {
+    "file": "assets/sprites/commandermark_hd/Ballesteros.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Barclay.png": {
+    "file": "assets/sprites/commandermark_hd/Barclay.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bennigsen.png": {
+    "file": "assets/sprites/commandermark_hd/Bennigsen.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Beresford.png": {
+    "file": "assets/sprites/commandermark_hd/Beresford.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bernadotte.png": {
+    "file": "assets/sprites/commandermark_hd/Bernadotte.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Berthier.png": {
+    "file": "assets/sprites/commandermark_hd/Berthier.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Blasius.png": {
+    "file": "assets/sprites/commandermark_hd/Blasius.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Blucher.png": {
+    "file": "assets/sprites/commandermark_hd/Blucher.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bouvet.png": {
+    "file": "assets/sprites/commandermark_hd/Bouvet.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Brock.png": {
+    "file": "assets/sprites/commandermark_hd/Brock.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Brueys.png": {
+    "file": "assets/sprites/commandermark_hd/Brueys.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bruix.png": {
+    "file": "assets/sprites/commandermark_hd/Bruix.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bubna.png": {
+    "file": "assets/sprites/commandermark_hd/Bubna.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bulow.png": {
+    "file": "assets/sprites/commandermark_hd/Bulow.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Buxhoeveden.png": {
+    "file": "assets/sprites/commandermark_hd/Buxhoeveden.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Bylandt.png": {
+    "file": "assets/sprites/commandermark_hd/Bylandt.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Calder.png": {
+    "file": "assets/sprites/commandermark_hd/Calder.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Caradja.png": {
+    "file": "assets/sprites/commandermark_hd/Caradja.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Carteaux.png": {
+    "file": "assets/sprites/commandermark_hd/Carteaux.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Charles.png": {
+    "file": "assets/sprites/commandermark_hd/Charles.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Chasse.png": {
+    "file": "assets/sprites/commandermark_hd/Chasse.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Chichagov.png": {
+    "file": "assets/sprites/commandermark_hd/Chichagov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Cisneros.png": {
+    "file": "assets/sprites/commandermark_hd/Cisneros.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Claude.png": {
+    "file": "assets/sprites/commandermark_hd/Claude.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Clausewitz.png": {
+    "file": "assets/sprites/commandermark_hd/Clausewitz.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Clinton.png": {
+    "file": "assets/sprites/commandermark_hd/Clinton.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Collingwood.png": {
+    "file": "assets/sprites/commandermark_hd/Collingwood.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Cornplanter.png": {
+    "file": "assets/sprites/commandermark_hd/Cornplanter.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Cornwallis.png": {
+    "file": "assets/sprites/commandermark_hd/Cornwallis.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Cosmao.png": {
+    "file": "assets/sprites/commandermark_hd/Cosmao.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Cotton.png": {
+    "file": "assets/sprites/commandermark_hd/Cotton.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Cronstedt.png": {
+    "file": "assets/sprites/commandermark_hd/Cronstedt.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Davidovich.png": {
+    "file": "assets/sprites/commandermark_hd/Davidovich.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Davout.png": {
+    "file": "assets/sprites/commandermark_hd/Davout.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Dearborn.png": {
+    "file": "assets/sprites/commandermark_hd/Dearborn.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Deroy.png": {
+    "file": "assets/sprites/commandermark_hd/Deroy.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Desaix.png": {
+    "file": "assets/sprites/commandermark_hd/Desaix.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Diez.png": {
+    "file": "assets/sprites/commandermark_hd/Diez.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Dobeln.png": {
+    "file": "assets/sprites/commandermark_hd/Dobeln.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Dobrnjac.png": {
+    "file": "assets/sprites/commandermark_hd/Dobrnjac.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Dombrowski.png": {
+    "file": "assets/sprites/commandermark_hd/Dombrowski.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Dornberg.png": {
+    "file": "assets/sprites/commandermark_hd/Dornberg.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Drouot.png": {
+    "file": "assets/sprites/commandermark_hd/Drouot.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Drummond.png": {
+    "file": "assets/sprites/commandermark_hd/Drummond.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Duckworth.png": {
+    "file": "assets/sprites/commandermark_hd/Duckworth.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Dumouriez.png": {
+    "file": "assets/sprites/commandermark_hd/Dumouriez.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Elphinstone.png": {
+    "file": "assets/sprites/commandermark_hd/Elphinstone.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Emil.png": {
+    "file": "assets/sprites/commandermark_hd/Emil.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Eugen.png": {
+    "file": "assets/sprites/commandermark_hd/Eugen.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Eugene.png": {
+    "file": "assets/sprites/commandermark_hd/Eugene.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Exelmans.png": {
+    "file": "assets/sprites/commandermark_hd/Exelmans.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Falsen.png": {
+    "file": "assets/sprites/commandermark_hd/Falsen.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Fatimah.png": {
+    "file": "assets/sprites/commandermark_hd/Fatimah.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Ferdinand.png": {
+    "file": "assets/sprites/commandermark_hd/Ferdinand.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "FerdinandVII.png": {
+    "file": "assets/sprites/commandermark_hd/FerdinandVII.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "FerdinandoI.png": {
+    "file": "assets/sprites/commandermark_hd/FerdinandoI.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Fischer.png": {
+    "file": "assets/sprites/commandermark_hd/Fischer.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Fontanelli.png": {
+    "file": "assets/sprites/commandermark_hd/Fontanelli.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Franquemont.png": {
+    "file": "assets/sprites/commandermark_hd/Franquemont.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Frederick.png": {
+    "file": "assets/sprites/commandermark_hd/Frederick.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Galvez.png": {
+    "file": "assets/sprites/commandermark_hd/Galvez.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Gazan.png": {
+    "file": "assets/sprites/commandermark_hd/Gazan.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Georg.png": {
+    "file": "assets/sprites/commandermark_hd/Georg.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Gerard.png": {
+    "file": "assets/sprites/commandermark_hd/Gerard.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Godebski.png": {
+    "file": "assets/sprites/commandermark_hd/Godebski.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Golitsyn.png": {
+    "file": "assets/sprites/commandermark_hd/Golitsyn.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Gouvion.png": {
+    "file": "assets/sprites/commandermark_hd/Gouvion.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Graham.png": {
+    "file": "assets/sprites/commandermark_hd/Graham.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Gravina.png": {
+    "file": "assets/sprites/commandermark_hd/Gravina.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Greene.png": {
+    "file": "assets/sprites/commandermark_hd/Greene.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Grouchy.png": {
+    "file": "assets/sprites/commandermark_hd/Grouchy.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "HeinrichXV.png": {
+    "file": "assets/sprites/commandermark_hd/HeinrichXV.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Hood.png": {
+    "file": "assets/sprites/commandermark_hd/Hood.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Hopkins.png": {
+    "file": "assets/sprites/commandermark_hd/Hopkins.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Hotze.png": {
+    "file": "assets/sprites/commandermark_hd/Hotze.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Howe.png": {
+    "file": "assets/sprites/commandermark_hd/Howe.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Huarte.png": {
+    "file": "assets/sprites/commandermark_hd/Huarte.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Hull.png": {
+    "file": "assets/sprites/commandermark_hd/Hull.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Isabela.png": {
+    "file": "assets/sprites/commandermark_hd/Isabela.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "J.Bonaparte.png": {
+    "file": "assets/sprites/commandermark_hd/J.Bonaparte.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Jackson.png": {
+    "file": "assets/sprites/commandermark_hd/Jackson.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Janssens.png": {
+    "file": "assets/sprites/commandermark_hd/Janssens.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Jerome.png": {
+    "file": "assets/sprites/commandermark_hd/Jerome.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Jervis.png": {
+    "file": "assets/sprites/commandermark_hd/Jervis.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "JohannI.png": {
+    "file": "assets/sprites/commandermark_hd/JohannI.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Joubert.png": {
+    "file": "assets/sprites/commandermark_hd/Joubert.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Jourdan.png": {
+    "file": "assets/sprites/commandermark_hd/Jourdan.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Joyes.png": {
+    "file": "assets/sprites/commandermark_hd/Joyes.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Junot.png": {
+    "file": "assets/sprites/commandermark_hd/Junot.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kahia.png": {
+    "file": "assets/sprites/commandermark_hd/Kahia.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Karamanli.png": {
+    "file": "assets/sprites/commandermark_hd/Karamanli.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kate.png": {
+    "file": "assets/sprites/commandermark_hd/Kate.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kienmayer.png": {
+    "file": "assets/sprites/commandermark_hd/Kienmayer.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kleist.png": {
+    "file": "assets/sprites/commandermark_hd/Kleist.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Klenau.png": {
+    "file": "assets/sprites/commandermark_hd/Klenau.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kollowrat.png": {
+    "file": "assets/sprites/commandermark_hd/Kollowrat.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Konopka.png": {
+    "file": "assets/sprites/commandermark_hd/Konopka.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kosciuszko.png": {
+    "file": "assets/sprites/commandermark_hd/Kosciuszko.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kozietulski.png": {
+    "file": "assets/sprites/commandermark_hd/Kozietulski.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kruse.png": {
+    "file": "assets/sprites/commandermark_hd/Kruse.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kutaisov.png": {
+    "file": "assets/sprites/commandermark_hd/Kutaisov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Kutuzov.png": {
+    "file": "assets/sprites/commandermark_hd/Kutuzov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "L'Estocq.png": {
+    "file": "assets/sprites/commandermark_hd/L_Estocq.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "L.Bonaparte.png": {
+    "file": "assets/sprites/commandermark_hd/L.Bonaparte.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Lan.png": {
+    "file": "assets/sprites/commandermark_hd/Lan.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Lannes.png": {
+    "file": "assets/sprites/commandermark_hd/Lannes.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Lasalle.png": {
+    "file": "assets/sprites/commandermark_hd/Lasalle.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Latour.png": {
+    "file": "assets/sprites/commandermark_hd/Latour.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Lechi.png": {
+    "file": "assets/sprites/commandermark_hd/Lechi.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Lefebvre.png": {
+    "file": "assets/sprites/commandermark_hd/Lefebvre.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Leiberich.png": {
+    "file": "assets/sprites/commandermark_hd/Leiberich.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Lusignan.png": {
+    "file": "assets/sprites/commandermark_hd/Lusignan.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "MacDonald.png": {
+    "file": "assets/sprites/commandermark_hd/MacDonald.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Maria.png": {
+    "file": "assets/sprites/commandermark_hd/Maria.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Marmont.png": {
+    "file": "assets/sprites/commandermark_hd/Marmont.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Massena.png": {
+    "file": "assets/sprites/commandermark_hd/Massena.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Mehemet.A.png": {
+    "file": "assets/sprites/commandermark_hd/Mehemet.A.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Melas.png": {
+    "file": "assets/sprites/commandermark_hd/Melas.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Mercer.png": {
+    "file": "assets/sprites/commandermark_hd/Mercer.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Merveldt.png": {
+    "file": "assets/sprites/commandermark_hd/Merveldt.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Milinovic.png": {
+    "file": "assets/sprites/commandermark_hd/Milinovic.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Miloradovih.png": {
+    "file": "assets/sprites/commandermark_hd/Miloradovih.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Mirza.png": {
+    "file": "assets/sprites/commandermark_hd/Mirza.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Moreau.png": {
+    "file": "assets/sprites/commandermark_hd/Moreau.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Mortier.png": {
+    "file": "assets/sprites/commandermark_hd/Mortier.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Mourousis.png": {
+    "file": "assets/sprites/commandermark_hd/Mourousis.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Murad.png": {
+    "file": "assets/sprites/commandermark_hd/Murad.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Murat.png": {
+    "file": "assets/sprites/commandermark_hd/Murat.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Nansouty.png": {
+    "file": "assets/sprites/commandermark_hd/Nansouty.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Napoleon.png": {
+    "file": "assets/sprites/commandermark_hd/Napoleon.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Nelson.png": {
+    "file": "assets/sprites/commandermark_hd/Nelson.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Nenadovic.png": {
+    "file": "assets/sprites/commandermark_hd/Nenadovic.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Ney.png": {
+    "file": "assets/sprites/commandermark_hd/Ney.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Nunziante.png": {
+    "file": "assets/sprites/commandermark_hd/Nunziante.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Oudinot.png": {
+    "file": "assets/sprites/commandermark_hd/Oudinot.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Paget.png": {
+    "file": "assets/sprites/commandermark_hd/Paget.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Palafox.png": {
+    "file": "assets/sprites/commandermark_hd/Palafox.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Pasha.png": {
+    "file": "assets/sprites/commandermark_hd/Pasha.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Perignon.png": {
+    "file": "assets/sprites/commandermark_hd/Perignon.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Picton.png": {
+    "file": "assets/sprites/commandermark_hd/Picton.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "PiusVII.png": {
+    "file": "assets/sprites/commandermark_hd/PiusVII.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Platov.png": {
+    "file": "assets/sprites/commandermark_hd/Platov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Poniatowski.png": {
+    "file": "assets/sprites/commandermark_hd/Poniatowski.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Prevost.png": {
+    "file": "assets/sprites/commandermark_hd/Prevost.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Qajar.png": {
+    "file": "assets/sprites/commandermark_hd/Qajar.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Quosdanovih.png": {
+    "file": "assets/sprites/commandermark_hd/Quosdanovih.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Radetzky.png": {
+    "file": "assets/sprites/commandermark_hd/Radetzky.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Raevsky.png": {
+    "file": "assets/sprites/commandermark_hd/Raevsky.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Reding.png": {
+    "file": "assets/sprites/commandermark_hd/Reding.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Ricardos.png": {
+    "file": "assets/sprites/commandermark_hd/Ricardos.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Rosenberg.png": {
+    "file": "assets/sprites/commandermark_hd/Rosenberg.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Rowland.png": {
+    "file": "assets/sprites/commandermark_hd/Rowland.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sacken.png": {
+    "file": "assets/sprites/commandermark_hd/Sacken.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sakurako.png": {
+    "file": "assets/sprites/commandermark_hd/Sakurako.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Saltykov.png": {
+    "file": "assets/sprites/commandermark_hd/Saltykov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Savary.png": {
+    "file": "assets/sprites/commandermark_hd/Savary.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Scharnhorst.png": {
+    "file": "assets/sprites/commandermark_hd/Scharnhorst.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Schwerin.png": {
+    "file": "assets/sprites/commandermark_hd/Schwerin.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sebastiani.png": {
+    "file": "assets/sprites/commandermark_hd/Sebastiani.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "SelimIII.png": {
+    "file": "assets/sprites/commandermark_hd/SelimIII.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Senyavin.png": {
+    "file": "assets/sprites/commandermark_hd/Senyavin.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Serurier.png": {
+    "file": "assets/sprites/commandermark_hd/Serurier.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sidney.png": {
+    "file": "assets/sprites/commandermark_hd/Sidney.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Silveira.png": {
+    "file": "assets/sprites/commandermark_hd/Silveira.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Slimane.png": {
+    "file": "assets/sprites/commandermark_hd/Slimane.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sokolnicki.png": {
+    "file": "assets/sprites/commandermark_hd/Sokolnicki.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sophia.png": {
+    "file": "assets/sprites/commandermark_hd/Sophia.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Soult.png": {
+    "file": "assets/sprites/commandermark_hd/Soult.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Strachan.png": {
+    "file": "assets/sprites/commandermark_hd/Strachan.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Suchet.png": {
+    "file": "assets/sprites/commandermark_hd/Suchet.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Sulkowski.png": {
+    "file": "assets/sprites/commandermark_hd/Sulkowski.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Suvorov.png": {
+    "file": "assets/sprites/commandermark_hd/Suvorov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Tormasov.png": {
+    "file": "assets/sprites/commandermark_hd/Tormasov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Treville.png": {
+    "file": "assets/sprites/commandermark_hd/Treville.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Ushakov.png": {
+    "file": "assets/sprites/commandermark_hd/Ushakov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Vandamme.png": {
+    "file": "assets/sprites/commandermark_hd/Vandamme.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Vecsey.png": {
+    "file": "assets/sprites/commandermark_hd/Vecsey.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Verhuell.png": {
+    "file": "assets/sprites/commandermark_hd/Verhuell.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Victoria.png": {
+    "file": "assets/sprites/commandermark_hd/Victoria.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Villeneuve.png": {
+    "file": "assets/sprites/commandermark_hd/Villeneuve.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Washington.png": {
+    "file": "assets/sprites/commandermark_hd/Washington.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Wellesley.png": {
+    "file": "assets/sprites/commandermark_hd/Wellesley.png",
+    "w": 44,
+    "h": 43,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Weyrother.png": {
+    "file": "assets/sprites/commandermark_hd/Weyrother.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "WilhelmIII.png": {
+    "file": "assets/sprites/commandermark_hd/WilhelmIII.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Wittgenstein.png": {
+    "file": "assets/sprites/commandermark_hd/Wittgenstein.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Wrede.png": {
+    "file": "assets/sprites/commandermark_hd/Wrede.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Wurmb.png": {
+    "file": "assets/sprites/commandermark_hd/Wurmb.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Wurmser.png": {
+    "file": "assets/sprites/commandermark_hd/Wurmser.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Yermolov.png": {
+    "file": "assets/sprites/commandermark_hd/Yermolov.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Yorck.png": {
+    "file": "assets/sprites/commandermark_hd/Yorck.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Zakrevsky.png": {
+    "file": "assets/sprites/commandermark_hd/Zakrevsky.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  },
+  "Zebulon.png": {
+    "file": "assets/sprites/commandermark_hd/Zebulon.png",
+    "w": 44,
+    "h": 44,
+    "refx": 23,
+    "refy": 24,
+    "atlas": "commandermark_hd"
+  }
+}

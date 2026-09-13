@@ -1,0 +1,143 @@
+battle save core PASS {"schema":6,"round":7,"units":1,"slots":"auto+1..6"}
+cavalry + facility supply rules PASS
+combat_core 0.61 native-skill tests: PASS
+compact BILE full parity PASS · 1076/1076 assets · Machine Gun Finish corrected 18/18
+compact BILE production-render contract PASS · direct Canvas path + native anchor math + offline source cache
+compact BILE runtime PASS · 877 units / 3519 motions / 9.87 MiB raw source pack
+core map/unit contract PASS: native odd-row 64x54 grid + commander-first opening camera + native pose anchor path
+country turn core PASS {"conquestOwners":14,"russia":{"money":50,"industry":70,"food":500},"campaignOwners":8,"campaignSameHint":"not-used-as-alliance"}
+data integrity PASS: 101 battles, 208 commanders, 3 fieldworks, Coastal Fort preserved
+effective UI contract PASS: battle/recruit/general display paths consume effective values; original raw data remains untouched
+enhanced player-general combat regressions: PASS
+full compact animation coverage PASS · 877/877 units · 3519/3519 motions · 1754/1754 directional chains · 7407/7407 battle units resolved
+in-battle general deployment core PASS
+item inventory core PASS {"slots":28,"slot0Max":999,"normalMax":99}
+P19 mod general dismissal: PASS
+native academy core PASS
+native action audio: PASS
+native AI action camera focus: PASS
+native animation integration PASS: 877 units / 3519 motions / 1272 compact assets / direct BILE production runtime
+native artillery visual timeline PASS: light/heavy/siege original effects + timing/offset/rotation wired
+native audio inventory PASS: 38 WAV + 5 MP3 byte-identical to APK
+native battle music PASS: 4 APK tracks restored, randomized per battle scene, BGVol-driven with original 50% default
+P32 native battle overlay visuals PASS
+native camera interaction PASS: zoom .2..1, detail .5, tap 15px/axis, pinch >40 stationary-anchor, incremental pan, no drag fling
+native programmatic camera PASS: GameSpeed motor + no-fling separation + commander-first fresh-battle focus
+native campaign P17 integration: PASS
+native campaign exhaustive P17 PASS: 87 campaign BTL · red stages 84 · red victory sims 84 · red defeat sims 83 · yellow 11/11
+native campaign target/secret P17: PASS
+native commerce core PASS
+P19 native exchange / recruitgeneral geometry: PASS
+native conquest UI contract PASS
+native construction economy/UI/avoidance PASS
+P18 native deployitem: PASS
+native effect audio core PASS: 143 timelines; all current army grades resolve both directions
+native effects visual coverage PASS {"effects":65,"groups":23,"combatSourceGroups":22}
+native entity triggers PASS {
+  capture_total: 33,
+  capture_high_confidence: 31,
+  capture_unresolved: 2,
+  death_total: 25,
+  death_high_confidence: 23,
+  death_unresolved: 2
+}
+PASS native fire events: events=31 battles=16 round11=6 dialogues=3
+native group_funcres contract PASS
+native general core: PASS
+native general battle growth: PASS
+P18 native general integration: PASS
+native getgeneral effect data PASS
+native getgeneral tips contract PASS
+native headquarters/deploygeneral flow PASS
+native hex BTL roundtrip PASS: 101 battles / 7407 units / 8001 objects
+native hex geometry PASS {"center00":{"x":0,"y":-18},"center01":{"x":32,"y":36},"campaign101Fallback":{"x":1472,"y":2133}}
+native impact selector PASS
+native low-zoom strategic marker LOD: PASS
+native low-zoom relation/HP status layer: PASS
+native machine-gun visual timeline PASS: original offsets/rotation + dual emitters wired
+native main/campaign layout PASS
+native maptext core PASS · 338 BILE items / 178 atlas elements / Europe 102 placements / America 41 placements
+native maptext runtime PASS · original BILE/atlas/placements cached + battle world-layer draw wired
+native morale events PASS 31
+native Motion@speed PASS: live duration/frame math uses native deltaTime*speed semantics
+native movement effect core PASS: sea-first + infantry/cavalry/artillery moving1-4 mapping
+native movement effect integration PASS: moving emitter follows unit world path and stops with move animation
+native moving effect canvas PASS: dust 1102px + water 704px rasterized
+native option audio tests passed
+native option controller PASS
+PASS native movement route direction/tie-break contract
+native player action camera focus PASS: 64/72 safe-view test + midpoint motor + wait-before-player-action
+native princess deployment PASS · original form entry/geometry + 8 unlocked summon flow + no hard-slot gate
+P32 native READY/movement runtime PASS
+native result core PASS: exact 5-grade turn formula + cumulative medal delta table 0/5/15/25/50
+native result integration PASS: runtime limits + 5-grade result form + reward delta + defeat timeout bridge
+P16 behavior PASS: result grades + generals + Continue/Complete + getmedal + current save schema
+P16 integration PASS: ContinueBattle SceneMain handoff + offline result assets
+native rocket visual timeline PASS: original triple cue 1.6/1.8/2.0 + offsets/220deg left rotation + two native emitters wired
+P19 native form_roundturn: PASS
+native SceneShop core PASS: shared 14-slot seller, 28-slot bank, HQ daily stock, buy/sell pricing
+native simple effect canvas PASS: build raster 563 nontransparent pixels, max alpha 182
+native simple effect integration PASS: static + moving world-space emitters wired into battle renderer
+native simple effect runtime PASS: native rate accumulator + area spawn + native moving particle integration
+native simple effects data PASS: build/recover + moving1-4 XML and original eff.png atlas preserved
+P20 native SceneStageIntro: PASS
+P33 native stageintro/talk visuals PASS
+native timed battle SFX PASS: def_effectsanim at= seconds drive battle sounds; AI presentation scaling isolated
+native training core PASS
+PASS native triggers: battles=101 objectives=144/144 events=360 countryCodes=86 dialogues=323
+native tutorial core PASS: 2 original scripts / 273 commands / exact source SHA + wait-state semantics
+native tutorial/playnotice forms PASS
+native tutorial integration PASS: 273/273 commands wired · 19 wait-ui aliases · undo/fortress/defense/ship/recruit formation controllers present
+native UI/result audio tests passed
+native upgrade core PASS
+native use-item form/runtime contract tests passed
+native use-item core tests passed
+P21 native warzone tech manifest reproducibility: PASS
+original 568h forms contract PASS
+P21 native SceneUpgrade integration: PASS
+P22 native form_defense: PASS
+P23 native form_pause: PASS
+P24 campaign growth end-to-end chain: PASS
+P24 native form_unitinfo controller contract: PASS
+P25 six-zone long session: PASS (73 first clears + 73 replays, 292 battle save/load cycles, 500 meta reloads, 6 one-shot zone rewards)
+P25 campaign session core + migration/idempotence: PASS
+P25 native campaigninfo: PASS (6/6 original battle lines + 155x83 controller + pin->info->confirm flow)
+P26 native Campaign form_selcountry: PASS
+P26 native form_save presentation: PASS
+P27 native form_achivement geometry/runtime entry remains covered after P28 exact semantics: PASS
+P28 native achievement exact local semantics: PASS
+P29 native conquest Achievement formula + persistence: PASS
+P30 conquest extinction core PASS
+P30 conquest extinction all-country matrix PASS { cases: 98 }
+P30 real conquest extinction + navy-remnant + JSON reconstruction PASS { owner: 10, land: 6, navy: 2 }
+P30 native Conquest form_complete + fast challenge choice flow PASS
+P30 native form_failure + extinction notification PASS
+P30 native form_loading startup contract PASS
+P33 visual timing / transport / touch integration PASS
+P34 final visual closure contracts PASS
+P35 map/unit asset integrity PASS: 161 critical native-ref sprites + 877 READY visuals + 7407 battle units
+P35 native-presentation hardening PASS: HiDPI battlefield + exact transformed touch mapping + Web-chrome removal
+PASS test_p36_native_hud_hextend
+PASS test_p37_native_hud_deweb
+PASS player infinite medals/badges + non-consuming battle consumables
+player_general_overrides 0.61 tests: PASS
+player princess overrides PASS: all 8 unlocked; Lan/Victoria/Isabela only; no forced campaign turn-limit defeat
+player unit rules PASS: attack +4/+4 lives in combat_core; HP +120; movement +2; old +40 saves migrate by delta; AI unchanged
+r14 runtime contract PASS: SW navigation, phase/skip, camera clamp/semantic scale
+reinforcement safety PASS {"copenhagenRaw4Round4":0,"positionHighByteEquals4":13,"frenchUnitsAlreadyDecoded":3,"raw31ConstantUnits":7407,"campaign4_03_action":1}
+PASS native round dialogue schedule: {
+  '1': 217,
+  '2': 6,
+  '3': 6,
+  '4': 3,
+  '5': 2,
+  '6': 3,
+  '7': 1,
+  '10': 1,
+  '14': 1
+}
+shared SceneShop contract PASS {"battleStores":151,"filledSlots":515,"sellerSlots":14,"buyerSlots":28,"hqConsumables":6}
+stage turn limits PASS: 87/87 campaign BTLs, raw12>=raw13
+tavern contract PASS {"battles":7,"taverns":38,"sample":5}
+ui/runtime contract PASS: pause save/load fire turn-limits country-turn-ledger r14
+PASS=124 FAIL=0 TOTAL=124

@@ -1,0 +1,11 @@
+P39 NOON-REGRESSION LOCK / NATIVE HUD SAFETY
+- Base: P38 125/125 PASS.
+- Current full JS regression: 126/126 PASS.
+- Protected cores: 4/4 SHA256 MATCH.
+- Service Worker CORE: 1058/1058 present.
+- New: battlefield canvas compositing-neutral guard.
+- New: regression test locks 568x320, HiDPI backing, pointer inversion, unit .5*uz/native origins, form_game HUD geometry/hextend/de-Web rules.
+- SW cache generation advanced for the changed CSS.
+- Fixed: stale CURRENT_STATUS P37/124 metadata.
+- Map/unit/touch geometry: NOT RETUNED.
+- True-device iPhone font/WebKit acceptance: still pending.

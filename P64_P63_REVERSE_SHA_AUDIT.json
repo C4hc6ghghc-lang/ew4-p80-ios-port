@@ -1,0 +1,48 @@
+{
+  "product_swift": {
+    "baseline_files": 101,
+    "current_files": 101,
+    "added": 0,
+    "modified": 1,
+    "removed": 0,
+    "added_files": [],
+    "modified_files": [
+      "EW4NativeRenderer/NativeOriginalBattleModalRenderer.swift"
+    ],
+    "removed_files": []
+  },
+  "tests": {
+    "baseline_files": 67,
+    "current_files": 68,
+    "added": 1,
+    "modified": 0,
+    "removed": 0,
+    "added_files": [
+      "EW4NativeCoreTests/P64BattleModalStringFidelityTests.swift"
+    ],
+    "modified_files": [],
+    "removed_files": []
+  },
+  "native_resources": {
+    "baseline_files": 1751,
+    "current_files": 1751,
+    "added": 0,
+    "modified": 0,
+    "removed": 0,
+    "added_files": [],
+    "modified_files": [],
+    "removed_files": []
+  },
+  "source_lean": {
+    "baseline_files": 6321,
+    "current_files": 6321,
+    "added": 0,
+    "modified": 0,
+    "removed": 0,
+    "added_files": [],
+    "modified_files": [],
+    "removed_files": []
+  },
+  "baseline_root": "/mnt/data/p63_base/EW4_R14_39_P63_NATIVE_CN_STRING_FIDELITY_AUDITED_PORT_ONLY_2026-09-11",
+  "current_root": "/mnt/data/p63_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11"
+}

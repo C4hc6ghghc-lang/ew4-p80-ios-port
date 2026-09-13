@@ -1,0 +1,1350 @@
+{
+  "format": "EW4_NATIVE_ANIMATION_FAMILY_V1",
+  "source_apk": "ouluzhanzheng4_v1.4.42_uhrfojh_anfensi.com(1)(3).apk",
+  "prefix": null,
+  "selected_units": [
+    "Light Cavalry 1",
+    "Light Cavalry 2",
+    "Heavy Cavalry 1",
+    "Heavy Cavalry 2",
+    "Guards Cavalry 1",
+    "Guards Cavalry 2",
+    "Armored Car 1",
+    "Armored Car 2"
+  ],
+  "unit_count": 8,
+  "unique_asset_count": 32,
+  "fps": 24,
+  "units": {
+    "Light Cavalry 1": {
+      "resource": "army_lightcavalry",
+      "native_anchor": {
+        "x": -38,
+        "y": -38
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__ready_i0_all__3627dcea32",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__undoready_i0_all__e0367cec30",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__attack_i0_all__0c18b68350",
+          "speed": 1.0,
+          "effect": "light cavalry 1"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__finish_i0_all__5fb4bdf890",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Light Cavalry 2": {
+      "resource": "army_lightcavalry",
+      "native_anchor": {
+        "x": -41,
+        "y": -43
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__ready_i0_all__555f3ce438",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__undoready_i0_all__c1fc2e4523",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__attack_i0_all__0ed2e00674",
+          "speed": 1.0,
+          "effect": "light cavalry 2"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__finish_i0_all__c9b268420a",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Heavy Cavalry 1": {
+      "resource": "army_heavycavalry",
+      "native_anchor": {
+        "x": -38,
+        "y": -38
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__ready_i0_all__0e66c73686",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__undoready_i0_all__3cbc0af614",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__attack_i0_all__075dadf0be",
+          "speed": 1.0,
+          "effect": "heavy cavalry 1"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__finish_i0_all__d62d90dce1",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Heavy Cavalry 2": {
+      "resource": "army_heavycavalry",
+      "native_anchor": {
+        "x": -42,
+        "y": -42
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__ready_i0_all__0cfe73e107",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__undoready_i0_all__5e1841b5ec",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__attack_i0_all__1ff74b7644",
+          "speed": 1.0,
+          "effect": "heavy cavalry 2"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__finish_i0_all__42ef3ea955",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Guards Cavalry 1": {
+      "resource": "army_guardscavalry",
+      "native_anchor": {
+        "x": -38,
+        "y": -38
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__ready_i0_all__b12ee1d8f1",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__undoready_i0_all__a1c3a0b3f4",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i0_all__d21f26a8ad",
+          "speed": 1.0,
+          "effect": "guards cavalry 1"
+        },
+        {
+          "type": "attack",
+          "index": 1,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i1_all__f2f8e43083",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__reload_i0_all__7c8336ba27",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__finish_i0_all__661bac98ca",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Guards Cavalry 2": {
+      "resource": "army_guardscavalry",
+      "native_anchor": {
+        "x": -42,
+        "y": -42
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__ready_i0_all__0d2477a06f",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__undoready_i0_all__b0f1e3eeb9",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i0_all__8c69f52aab",
+          "speed": 1.0,
+          "effect": "guards cavalry 2"
+        },
+        {
+          "type": "attack",
+          "index": 1,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i1_all__836a30433a",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__reload_i0_all__376eff4489",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__finish_i0_all__8df1f7c51e",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Armored Car 1": {
+      "resource": "army_armoredcar",
+      "native_anchor": {
+        "x": -5,
+        "y": -10
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__ready_i0_all__ca062f6d55",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__attack_i0_all__0eef6f2356",
+          "speed": 2.5,
+          "effect": "armored chariot 1"
+        }
+      ]
+    },
+    "Armored Car 2": {
+      "resource": "army_armoredcar",
+      "native_anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__ready_i0_all__59e5b37fcf",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__attack_i0_all__6205db7995",
+          "speed": 2.5,
+          "effect": "armored chariot 2"
+        }
+      ]
+    }
+  },
+  "assets": {
+    "army_lightcavalry__ready_i0_all__3627dcea32": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1通用轻骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 23,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 155,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__ready_i0_all__3627dcea32/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 159,
+        "frame_h": 155
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -2.4288711547851562,
+        148.1126251220703,
+        141.63447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__undoready_i0_all__e0367cec30": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1通用轻骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__undoready_i0_all__e0367cec30/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry 1",
+      "world_union": [
+        0.031323837116360664,
+        0.05784149095416069,
+        148.18204088695347,
+        141.6600625757128
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__attack_i0_all__0c18b68350": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1通用轻骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 29,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 165,
+        "h": 191,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__attack_i0_all__0c18b68350/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 165,
+        "frame_h": 191
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "light cavalry 1",
+      "representative_unit": "Light Cavalry 1",
+      "world_union": [
+        -5.949005126953125,
+        -38.39900207519531,
+        148.1126251220703,
+        141.63447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__finish_i0_all__5fb4bdf890": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1通用轻骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__finish_i0_all__5fb4bdf890/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry 1",
+      "world_union": [
+        -0.0989990234375,
+        0.1009979248046875,
+        148.0626220703125,
+        141.68448066711426
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__ready_i0_all__555f3ce438": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2通用轻骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 25,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 164,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__ready_i0_all__555f3ce438/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 168,
+        "frame_h": 164
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry 2",
+      "world_union": [
+        0.00099945068359375,
+        -2.4288711547851562,
+        157.7126235961914,
+        151.23448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__undoready_i0_all__c1fc2e4523": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2通用轻骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__undoready_i0_all__c1fc2e4523/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry 2",
+      "world_union": [
+        -0.01867539994418621,
+        0.05784149095416069,
+        157.68204088695347,
+        151.2100656274706
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__attack_i0_all__0ed2e00674": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2通用轻骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 32,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 184,
+        "h": 200,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__attack_i0_all__0ed2e00674/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 184,
+        "frame_h": 200
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "light cavalry 2",
+      "representative_unit": "Light Cavalry 2",
+      "world_union": [
+        -5.999000549316406,
+        -38.449005126953125,
+        167.79463958740234,
+        151.18448066711426
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__finish_i0_all__c9b268420a": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2通用轻骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__finish_i0_all__c9b268420a/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry 2",
+      "world_union": [
+        -0.19899749755859375,
+        -0.04900360107421875,
+        157.5126190185547,
+        151.13447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__ready_i0_all__0e66c73686": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1通用重骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 23,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 177,
+        "h": 188,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__ready_i0_all__0e66c73686/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 177,
+        "frame_h": 188
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry 1",
+      "world_union": [
+        -18.105918884277344,
+        -35.26210021972656,
+        148.37583923339844,
+        141.78447914123535
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__undoready_i0_all__3cbc0af614": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1通用重骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 173,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__undoready_i0_all__3cbc0af614/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 173
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry 1",
+      "world_union": [
+        -0.04900360107421875,
+        -20.413162231445312,
+        148.32584381103516,
+        141.78447914123535
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__attack_i0_all__075dadf0be": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1通用重骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 33,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 211,
+        "h": 224,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__attack_i0_all__075dadf0be/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 211,
+        "frame_h": 224
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "heavy cavalry 1",
+      "representative_unit": "Heavy Cavalry 1",
+      "world_union": [
+        -16.760130882263184,
+        -71.39900207519531,
+        183.9860076904297,
+        141.73447608947754
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__finish_i0_all__d62d90dce1": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1通用重骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 170,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__finish_i0_all__d62d90dce1/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 170
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -17.728294372558594,
+        148.37583923339844,
+        141.73447608947754
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__ready_i0_all__0cfe73e107": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2通用重骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 27,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 203,
+        "h": 220,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__ready_i0_all__0cfe73e107/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 203,
+        "frame_h": 220
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry 2",
+      "world_union": [
+        -18.105918884277344,
+        -58.14899444580078,
+        174.5009994506836,
+        151.53447151184082
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__undoready_i0_all__5e1841b5ec": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2通用重骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 182,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__undoready_i0_all__5e1841b5ec/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 182
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry 2",
+      "world_union": [
+        -0.04900360107421875,
+        -20.413162231445312,
+        157.87583923339844,
+        151.53447151184082
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__attack_i0_all__1ff74b7644": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2通用重骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 34,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 221,
+        "h": 233,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__attack_i0_all__1ff74b7644/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 221,
+        "frame_h": 233
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "heavy cavalry 2",
+      "representative_unit": "Heavy Cavalry 2",
+      "world_union": [
+        -16.760130882263184,
+        -71.39900207519531,
+        193.58600616455078,
+        151.48448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__finish_i0_all__42ef3ea955": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2通用重骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 180,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__finish_i0_all__42ef3ea955/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 180
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry 2",
+      "world_union": [
+        0.1009979248046875,
+        -17.728294372558594,
+        157.97584533691406,
+        151.53447151184082
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__ready_i0_all__b12ee1d8f1": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1通用枪骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 22,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 155,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__ready_i0_all__b12ee1d8f1/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 159,
+        "frame_h": 155
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -3.9288711547851562,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__undoready_i0_all__a1c3a0b3f4": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1通用枪骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 153,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__undoready_i0_all__a1c3a0b3f4/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 153
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -2.4527359008789062,
+        148.1626205444336,
+        140.2844753265381
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i0_all__d21f26a8ad": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1通用枪骑兵射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 30,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 184,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i0_all__d21f26a8ad/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 159,
+        "frame_h": 184
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "guards cavalry 1",
+      "representative_unit": "Guards Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -33.58428192138672,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i1_all__f2f8e43083": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1通用枪骑兵投弹",
+      "motion_type": "attack",
+      "motion_index": 1,
+      "direction": "all",
+      "frame_count": 42,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 162,
+        "h": 214,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i1_all__f2f8e43083/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 162,
+        "frame_h": 214
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -63.5989990234375,
+        151.0803108215332,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__reload_i0_all__7c8336ba27": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1通用枪骑兵上膛",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 45,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__reload_i0_all__7c8336ba27/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -1.4990005493164062,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__finish_i0_all__661bac98ca": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1通用枪骑兵结束",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__finish_i0_all__661bac98ca/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 1",
+      "world_union": [
+        0.00099945068359375,
+        -1.4489974975585938,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__ready_i0_all__0d2477a06f": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2通用枪骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 24,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 164,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__ready_i0_all__0d2477a06f/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 168,
+        "frame_h": 164
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 2",
+      "world_union": [
+        0.00099945068359375,
+        -3.9288711547851562,
+        157.7126235961914,
+        149.98448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__undoready_i0_all__b0f1e3eeb9": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2通用枪骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 163,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__undoready_i0_all__b0f1e3eeb9/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 163
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 2",
+      "world_union": [
+        0.00099945068359375,
+        -2.4027328491210938,
+        157.7126235961914,
+        150.0344753265381
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i0_all__8c69f52aab": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2通用枪骑兵射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 36,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 194,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i0_all__8c69f52aab/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 168,
+        "frame_h": 194
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "guards cavalry 2",
+      "representative_unit": "Guards Cavalry 2",
+      "world_union": [
+        0.00099945068359375,
+        -33.58428192138672,
+        157.7126235961914,
+        149.98448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i1_all__836a30433a": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2通用枪骑兵投弹",
+      "motion_type": "attack",
+      "motion_index": 1,
+      "direction": "all",
+      "frame_count": 42,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 171,
+        "h": 224,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i1_all__836a30433a/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 171,
+        "frame_h": 224
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 2",
+      "world_union": [
+        0.00099945068359375,
+        -63.5989990234375,
+        160.5803108215332,
+        149.98448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__reload_i0_all__376eff4489": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2通用枪骑兵上膛",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 51,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__reload_i0_all__376eff4489/runtime_sheet.png",
+        "cols": 8,
+        "rows": 7,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 2",
+      "world_union": [
+        -0.0489959716796875,
+        -1.6989974975585938,
+        157.7126235961914,
+        149.88447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__finish_i0_all__8df1f7c51e": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2通用枪骑兵结束",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__finish_i0_all__8df1f7c51e/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry 2",
+      "world_union": [
+        -0.0489959716796875,
+        -1.6490020751953125,
+        157.7126235961914,
+        149.88447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__ready_i0_all__ca062f6d55": {
+      "resource": "army_armoredcar",
+      "motion_name": "通用装甲车组合1预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 12,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 118,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__ready_i0_all__ca062f6d55/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 191,
+        "frame_h": 118
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Armored Car 1",
+      "world_union": [
+        -103.4990005493164,
+        -49.89900207519531,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__attack_i0_all__0eef6f2356": {
+      "resource": "army_armoredcar",
+      "motion_name": "通用装甲车组合1射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 85,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 118,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__attack_i0_all__0eef6f2356/runtime_sheet.png",
+        "cols": 8,
+        "rows": 11,
+        "frame_w": 191,
+        "frame_h": 118
+      },
+      "motion_speed_attr": 2.5,
+      "effect": "armored chariot 1",
+      "representative_unit": "Armored Car 1",
+      "world_union": [
+        -103.4990005493164,
+        -49.89799979329109,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__ready_i0_all__59e5b37fcf": {
+      "resource": "army_armoredcar",
+      "motion_name": "通用装甲车组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 12,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 112,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__ready_i0_all__59e5b37fcf/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 191,
+        "frame_h": 112
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Armored Car 2",
+      "world_union": [
+        -103.4990005493164,
+        -43.3489990234375,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__attack_i0_all__6205db7995": {
+      "resource": "army_armoredcar",
+      "motion_name": "通用装甲车组合射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 85,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 112,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__attack_i0_all__6205db7995/runtime_sheet.png",
+        "cols": 8,
+        "rows": 11,
+        "frame_w": 191,
+        "frame_h": 112
+      },
+      "motion_speed_attr": 2.5,
+      "effect": "armored chariot 2",
+      "representative_unit": "Armored Car 2",
+      "world_union": [
+        -103.4990005493164,
+        -43.3489990234375,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    }
+  }
+}

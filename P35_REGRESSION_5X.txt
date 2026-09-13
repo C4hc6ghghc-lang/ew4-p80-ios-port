@@ -1,0 +1,10 @@
+RUN 1
+RESULT run=1 pass=122 fail=0
+RUN 2
+RESULT run=2 pass=122 fail=0
+RUN 3
+RESULT run=3 pass=122 fail=0
+RUN 4
+RESULT run=4 pass=122 fail=0
+RUN 5
+RESULT run=5 pass=122 fail=0

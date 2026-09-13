@@ -1,0 +1,26 @@
+{
+  "SOURCE_LEAN": {
+    "p44_files": 6321,
+    "p45_files": 6321,
+    "changed": [],
+    "missing": [],
+    "new": []
+  },
+  "SOURCE_NATIVE": {
+    "p44_files": 1826,
+    "p45_files": 1828,
+    "changed": [
+      "EW4_iOS_NativePort/Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/BattleGameplayCore.swift",
+      "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeAIPresentationDriverCore.swift",
+      "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+      "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift",
+      "EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeAIPresentationDriverTests.swift"
+    ],
+    "missing": [],
+    "new": [
+      "EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeRoundRuntimeAdapter.swift",
+      "EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeRoundRuntimeAdapterTests.swift"
+    ]
+  }
+}

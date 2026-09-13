@@ -1,0 +1,50 @@
+{
+  "product_sources": {
+    "added": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeShopFormCore.swift"
+    ],
+    "changed": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalBattleShopRenderer.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalHQShopScene.swift"
+    ],
+    "deleted": [],
+    "counts": {
+      "added": 1,
+      "changed": 3,
+      "deleted": 0
+    }
+  },
+  "tests": {
+    "added": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeShopFormCoreTests.swift"
+    ],
+    "changed": [],
+    "deleted": [],
+    "counts": {
+      "added": 1,
+      "changed": 0,
+      "deleted": 0
+    }
+  },
+  "native_resources": {
+    "added": [],
+    "changed": [],
+    "deleted": [],
+    "counts": {
+      "added": 0,
+      "changed": 0,
+      "deleted": 0
+    }
+  },
+  "source_lean": {
+    "added": [],
+    "changed": [],
+    "deleted": [],
+    "counts": {
+      "added": 0,
+      "changed": 0,
+      "deleted": 0
+    }
+  }
+}

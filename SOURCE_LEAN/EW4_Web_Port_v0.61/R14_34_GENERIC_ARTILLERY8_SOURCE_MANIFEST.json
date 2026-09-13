@@ -1,0 +1,1195 @@
+{
+  "format": "EW4_NATIVE_ANIMATION_FAMILY_V1",
+  "source_apk": "ouluzhanzheng4_v1.4.42_uhrfojh_anfensi.com(1)(3).apk",
+  "prefix": null,
+  "selected_units": [
+    "Light Artillery 1",
+    "Light Artillery 2",
+    "Heavy Artillery 1",
+    "Heavy Artillery 2",
+    "Siege Artillery 1",
+    "Siege Artillery 2",
+    "Rocket 1",
+    "Rocket 2"
+  ],
+  "unit_count": 8,
+  "unique_asset_count": 28,
+  "fps": 24,
+  "units": {
+    "Light Artillery 1": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__6bd59889c4",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__e9f07e3921",
+          "speed": 1.0,
+          "effect": "light artillery 1"
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__reload_i0_all__ca89e841eb",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__finish_i0_all__6d159dee9e",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Light Artillery 2": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__2ab6778c04",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__60b42049f8",
+          "speed": 1.0,
+          "effect": "light artillery 2"
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__reload_i0_all__f6c7b44ff9",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__finish_i0_all__0d33ab0922",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Heavy Artillery 1": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__3e010422be",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__6ffa6fcbb0",
+          "speed": 1.0,
+          "effect": "heavy artillery 1"
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__reload_i0_all__d8f5746a5b",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__finish_i0_all__89edfb23b2",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Heavy Artillery 2": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__0416b7a9aa",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__6c810cf7cb",
+          "speed": 1.0,
+          "effect": "heavy artillery 2"
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__reload_i0_all__69d7765227",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__finish_i0_all__2850875748",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Siege Artillery 1": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__27e5a549ed",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__128e9eefb9",
+          "speed": 1.0,
+          "effect": "siege artillery 1"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__finish_i0_all__e3aa38a0e2",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Siege Artillery 2": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__a73cf10005",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__3434411a57",
+          "speed": 1.0,
+          "effect": "siege artillery 2"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__finish_i0_all__9d6019f5ff",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Rocket 1": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__45b8cb162f",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__4ed1e02d3e",
+          "speed": 1.0,
+          "effect": "rocket 1"
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__reload_i0_all__8c6f85732c",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Rocket 2": {
+      "resource": "army_artillery",
+      "native_anchor": {
+        "x": 5,
+        "y": 5
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__ready_i0_all__44167445b1",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__attack_i0_all__af59b57934",
+          "speed": 1.0,
+          "effect": "rocket 2"
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_artillery__reload_i0_all__48c035ea0e",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    }
+  },
+  "assets": {
+    "army_artillery__ready_i0_all__6bd59889c4": {
+      "resource": "army_artillery",
+      "motion_name": "91组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 221,
+        "h": 125,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__6bd59889c4/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 221,
+        "frame_h": 125
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Artillery 1",
+      "world_union": [
+        -81.19900207221508,
+        -76.8312931060791,
+        129.55099983513355,
+        37.483628273010254
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__e9f07e3921": {
+      "resource": "army_artillery",
+      "motion_name": "91组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 247,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__e9f07e3921/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 247,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "light artillery 1",
+      "representative_unit": "Light Artillery 1",
+      "world_union": [
+        -107.09900359809399,
+        -76.74678230285645,
+        129.55099983513355,
+        64.78333950042725
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__reload_i0_all__ca89e841eb": {
+      "resource": "army_artillery",
+      "motion_name": "91组合推车",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 60,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 241,
+        "h": 112,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__reload_i0_all__ca89e841eb/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 241,
+        "frame_h": 112
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Artillery 1",
+      "world_union": [
+        -101.1989974975586,
+        -63.917219161987305,
+        129.50099992752075,
+        37.4833402633667
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__finish_i0_all__6d159dee9e": {
+      "resource": "army_artillery",
+      "motion_name": "91组合退步",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 39,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 221,
+        "h": 125,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__finish_i0_all__6d159dee9e/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 221,
+        "frame_h": 125
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Artillery 1",
+      "world_union": [
+        -81.19900207221508,
+        -76.89899921417236,
+        129.55099983513355,
+        37.48363018035889
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__2ab6778c04": {
+      "resource": "army_artillery",
+      "motion_name": "101组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 221,
+        "h": 129,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__2ab6778c04/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 221,
+        "frame_h": 129
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Artillery 2",
+      "world_union": [
+        -81.44800207391381,
+        -80.83129262924194,
+        129.30199983343482,
+        37.483628273010254
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__60b42049f8": {
+      "resource": "army_artillery",
+      "motion_name": "101组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 247,
+        "h": 156,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__60b42049f8/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 247,
+        "frame_h": 156
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "light artillery 2",
+      "representative_unit": "Light Artillery 2",
+      "world_union": [
+        -107.34800359979272,
+        -80.74678182601929,
+        129.30199983343482,
+        64.78333950042725
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__reload_i0_all__f6c7b44ff9": {
+      "resource": "army_artillery",
+      "motion_name": "101组合推车",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 60,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 241,
+        "h": 122,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__reload_i0_all__f6c7b44ff9/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 241,
+        "frame_h": 122
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Artillery 2",
+      "world_union": [
+        -101.4489974975586,
+        -68.94900035858154,
+        129.25099992752075,
+        42.13334035873413
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__finish_i0_all__0d33ab0922": {
+      "resource": "army_artillery",
+      "motion_name": "101组合退步",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 39,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 221,
+        "h": 129,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__finish_i0_all__0d33ab0922/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 221,
+        "frame_h": 129
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Artillery 2",
+      "world_union": [
+        -81.44800207391381,
+        -80.79899883270264,
+        129.30199983343482,
+        37.48363018035889
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__3e010422be": {
+      "resource": "army_artillery",
+      "motion_name": "71组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 252,
+        "h": 125,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__3e010422be/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 252,
+        "frame_h": 125
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Artillery 1",
+      "world_union": [
+        -81.49899749457836,
+        -77.33129262924194,
+        160.50100012123585,
+        36.983628273010254
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__6ffa6fcbb0": {
+      "resource": "army_artillery",
+      "motion_name": "71组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 273,
+        "h": 126,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__6ffa6fcbb0/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 273,
+        "frame_h": 126
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "heavy artillery 1",
+      "representative_unit": "Heavy Artillery 1",
+      "world_union": [
+        -100.69900357723236,
+        -77.24678230285645,
+        161.40100014209747,
+        38.05099940299988
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__reload_i0_all__d8f5746a5b": {
+      "resource": "army_artillery",
+      "motion_name": "71组合推车",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 60,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 272,
+        "h": 113,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__reload_i0_all__d8f5746a5b/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 272,
+        "frame_h": 113
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Artillery 1",
+      "world_union": [
+        -100.89899748563766,
+        -64.44899940490723,
+        160.4510000348091,
+        37.9010009765625
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__finish_i0_all__89edfb23b2": {
+      "resource": "army_artillery",
+      "motion_name": "71组合退步",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 39,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 252,
+        "h": 125,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__finish_i0_all__89edfb23b2/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 252,
+        "frame_h": 125
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Artillery 1",
+      "world_union": [
+        -81.49899749457836,
+        -77.14900207519531,
+        160.50100012123585,
+        37.283629417419434
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__0416b7a9aa": {
+      "resource": "army_artillery",
+      "motion_name": "81组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 252,
+        "h": 129,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__0416b7a9aa/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 252,
+        "frame_h": 129
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Artillery 2",
+      "world_union": [
+        -81.6989974975586,
+        -80.83129262924194,
+        160.30100011825562,
+        37.483628273010254
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__6c810cf7cb": {
+      "resource": "army_artillery",
+      "motion_name": "81组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 274,
+        "h": 129,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__6c810cf7cb/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 274,
+        "frame_h": 129
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "heavy artillery 2",
+      "representative_unit": "Heavy Artillery 2",
+      "world_union": [
+        -102.14800360798836,
+        -80.69678211212158,
+        161.3520002067089,
+        37.98333930969238
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__reload_i0_all__69d7765227": {
+      "resource": "army_artillery",
+      "motion_name": "81组合推车",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 60,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 273,
+        "h": 117,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__reload_i0_all__69d7765227/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 273,
+        "frame_h": 117
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Artillery 2",
+      "world_union": [
+        -101.79900360107422,
+        -68.69900369644165,
+        160.40100002288818,
+        37.4833402633667
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__finish_i0_all__2850875748": {
+      "resource": "army_artillery",
+      "motion_name": "81组合退步",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 39,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 252,
+        "h": 129,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__finish_i0_all__2850875748/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 252,
+        "frame_h": 129
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Artillery 2",
+      "world_union": [
+        -81.6989974975586,
+        -80.79899883270264,
+        160.30100011825562,
+        37.533629417419434
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__27e5a549ed": {
+      "resource": "army_artillery",
+      "motion_name": "131组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 192,
+        "h": 179,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__27e5a549ed/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 192,
+        "frame_h": 179
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Siege Artillery 1",
+      "world_union": [
+        -64.79800224304199,
+        -82.33129262924194,
+        116.70099997520447,
+        86.5
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__128e9eefb9": {
+      "resource": "army_artillery",
+      "motion_name": "131组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 207,
+        "h": 179,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__128e9eefb9/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 207,
+        "frame_h": 179
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "siege artillery 1",
+      "representative_unit": "Siege Artillery 1",
+      "world_union": [
+        -76.24800109863281,
+        -82.24678182601929,
+        119.90100002288818,
+        86.50099992752075
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__finish_i0_all__e3aa38a0e2": {
+      "resource": "army_artillery",
+      "motion_name": "131组合退步",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 67,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 190,
+        "h": 179,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__finish_i0_all__e3aa38a0e2/runtime_sheet.png",
+        "cols": 8,
+        "rows": 9,
+        "frame_w": 190,
+        "frame_h": 179
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Siege Artillery 1",
+      "world_union": [
+        -62.898000717163086,
+        -82.14900207519531,
+        116.70099997520447,
+        86.5
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__a73cf10005": {
+      "resource": "army_artillery",
+      "motion_name": "141组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 192,
+        "h": 178,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__a73cf10005/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 192,
+        "frame_h": 178
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Siege Artillery 2",
+      "world_union": [
+        -64.99799919128418,
+        -81.08129262924194,
+        116.70099997520447,
+        86.5
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__3434411a57": {
+      "resource": "army_artillery",
+      "motion_name": "141组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 207,
+        "h": 178,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__3434411a57/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 207,
+        "frame_h": 178
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "siege artillery 2",
+      "representative_unit": "Siege Artillery 2",
+      "world_union": [
+        -76.24800109863281,
+        -80.99678182601929,
+        119.90100002288818,
+        86.50099992752075
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__finish_i0_all__9d6019f5ff": {
+      "resource": "army_artillery",
+      "motion_name": "141组合退步",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 66,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 190,
+        "h": 178,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__finish_i0_all__9d6019f5ff/runtime_sheet.png",
+        "cols": 8,
+        "rows": 9,
+        "frame_w": 190,
+        "frame_h": 178
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Siege Artillery 2",
+      "world_union": [
+        -63.09799766540527,
+        -80.89900207519531,
+        116.70099997520447,
+        86.5
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__45b8cb162f": {
+      "resource": "army_artillery",
+      "motion_name": "111组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 166,
+        "h": 116,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__45b8cb162f/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 166,
+        "frame_h": 116
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Rocket 1",
+      "world_union": [
+        -82.49899749457836,
+        -68.09900045394897,
+        73.50100250542164,
+        37.483628273010254
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__4ed1e02d3e": {
+      "resource": "army_artillery",
+      "motion_name": "111组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 232,
+        "h": 140,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__4ed1e02d3e/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 232,
+        "frame_h": 140
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "rocket 1",
+      "representative_unit": "Rocket 1",
+      "world_union": [
+        -85.54900208115578,
+        -91.49799752235413,
+        135.52532958984375,
+        37.883338928222656
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__reload_i0_all__8c6f85732c": {
+      "resource": "army_artillery",
+      "motion_name": "111组合推车",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 44,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 166,
+        "h": 116,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__reload_i0_all__8c6f85732c/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 166,
+        "frame_h": 116
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Rocket 1",
+      "world_union": [
+        -82.44899901747704,
+        -67.9990005493164,
+        73.55100098252296,
+        37.883338928222656
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__ready_i0_all__44167445b1": {
+      "resource": "army_artillery",
+      "motion_name": "121组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 10,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 166,
+        "h": 117,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__ready_i0_all__44167445b1/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 166,
+        "frame_h": 117
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Rocket 2",
+      "world_union": [
+        -108.34799766540527,
+        -68.79900074005127,
+        47.65200233459473,
+        37.533629417419434
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__attack_i0_all__af59b57934": {
+      "resource": "army_artillery",
+      "motion_name": "121组合捂耳朵",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 64,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 231,
+        "h": 137,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__attack_i0_all__af59b57934/runtime_sheet.png",
+        "cols": 8,
+        "rows": 8,
+        "frame_w": 231,
+        "frame_h": 137
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "rocket 2",
+      "representative_unit": "Rocket 2",
+      "world_union": [
+        -111.64800262451172,
+        -88.99899744987488,
+        109.02632904052734,
+        37.933340072631836
+      ],
+      "per_frame_bounds": null
+    },
+    "army_artillery__reload_i0_all__48c035ea0e": {
+      "resource": "army_artillery",
+      "motion_name": "121收好",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 68,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 179,
+        "h": 120,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_artillery__reload_i0_all__48c035ea0e/runtime_sheet.png",
+        "cols": 8,
+        "rows": 9,
+        "frame_w": 179,
+        "frame_h": 120
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Rocket 2",
+      "world_union": [
+        -108.3479995727539,
+        -72.07659387588501,
+        59.98432207107544,
+        37.033629417419434
+      ],
+      "per_frame_bounds": null
+    }
+  },
+  "extractor_note": "r14-34 cycle-guard patch cuts only recursive re-entry on active BILE item path; needed by original siege-artillery Finish self-reference timelines."
+}

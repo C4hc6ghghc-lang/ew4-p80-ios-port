@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+import json,sys,zipfile,xml.etree.ElementTree as ET
+from pathlib import Path
+
+NAMES=['effect_build','effect_recover','effect_moving1','effect_moving2','effect_moving3','effect_moving4']
+
+def f(v,d=0.0):
+    try:return float(v)
+    except:return d
+
+def parse_effect(xml_bytes,atlas):
+    root=ET.fromstring(xml_bytes); em=root.find('emitter')
+    params={p.attrib.get('name'):p for p in em.findall('param')}
+    settings=params['settings'].attrib.copy(); image=params['image'].attrib
+    out={'effect_name':root.attrib.get('name',''),'emitter_name':em.attrib.get('name',''),'emitter_life':f(em.attrib.get('life')),
+         'settings':settings,'image':image.get('file'),'particle_width':f(image.get('width')),'particle_height':f(image.get('height')),'blend':image.get('blend','alpha'),
+         'atlas_rect':atlas[image.get('file')]}
+    for key,prefix in [('life','particle_life'),('angle','angle'),('speed','speed'),('gravity','gravity'),('scale','scale'),('rotspeed','rotspeed')]:
+        p=params.get(key);out[prefix+'_min']=f(p.attrib.get('min')) if p is not None else 0;out[prefix+'_max']=f(p.attrib.get('max')) if p is not None else out[prefix+'_min']
+    rp=params.get('rotangle');out['rotangle_type']=rp.attrib.get('type','') if rp is not None else '';out['rotangle_min']=f(rp.attrib.get('min')) if rp is not None else 0;out['rotangle_max']=f(rp.attrib.get('max')) if rp is not None else 0
+    cmin={};cmax={}
+    for ch in 'rgba':
+        p=params.get(ch);cmin[ch]=int(round(f(p.attrib.get('min'),255))) if p is not None else 255;cmax[ch]=int(round(f(p.attrib.get('max'),cmin[ch]))) if p is not None else cmin[ch]
+    out['color_min']=cmin;out['color_max']=cmax
+    if cmin==cmax: out['color']=cmin.copy()
+    tt=params.get('timetrack');out['timetrack']=[{'time':f(x.attrib.get('time')),'quantity':f(x.attrib.get('quantity'))} for x in tt.findall('track')] if tt is not None else []
+    lt=params.get('lifetrack');out['lifetrack']=[]
+    if lt is not None:
+        for x in lt.findall('track'):
+            row={'life':f(x.attrib.get('life'))}
+            for k in ['speed','gravity','scale','rotspeed','r','g','b','a']:row[k]=f(x.attrib.get(k),1 if k!='rotspeed' else 0)
+            out['lifetrack'].append(row)
+    return out
+
+def main():
+    if len(sys.argv)<3: raise SystemExit('usage: extract_native_simple_effects.py ORIGINAL.apk OUTPUT.json')
+    apk,outp=Path(sys.argv[1]),Path(sys.argv[2])
+    with zipfile.ZipFile(apk) as z:
+        # eff.xml is an EasyTech atlas descriptor with two top-level roots
+        # (<Texture/> followed by <Images/>), so it is not standalone XML.
+        # Wrap it only for parsing; the bytes in the APK remain authoritative.
+        eff_xml=z.read('assets/eff.xml')
+        atlasroot=ET.fromstring(b'<EW4Atlas>'+eff_xml+b'</EW4Atlas>');atlas={}
+        for im in atlasroot.iter('Image'):
+            a=im.attrib;atlas[a['name']]={k:int(a[k]) for k in ['x','y','w','h','refx','refy']}
+        effects={}
+        for name in NAMES:
+            rec=parse_effect(z.read('assets/'+name+'.xml'),atlas);rec={'source_xml':name+'.xml',**rec};effects[name]=rec
+    outp.write_text(json.dumps({'atlas':'assets/effects/eff.png','effects':effects},ensure_ascii=False,indent=2)+'\n')
+if __name__=='__main__':main()

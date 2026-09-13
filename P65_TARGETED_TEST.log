@@ -1,0 +1,277 @@
+Building for debugging...
+[0/18] Write sources
+[4/18] Write swift-version--1BA0962812E73E12.txt
+[6/75] Emitting module EW4NativeCore
+[7/89] Compiling EW4NativeCore NativeBattleShopCore.swift
+[8/89] Compiling EW4NativeCore NativeBattleSidecarCore.swift
+[9/89] Compiling EW4NativeCore NativeBattleSnapshotCore.swift
+[10/89] Compiling EW4NativeCore NativeBattleTavernCore.swift
+[11/89] Compiling EW4NativeCore NativeBattleUnitInfoCore.swift
+[12/89] Compiling EW4NativeCore NativeCamera.swift
+[13/89] Compiling EW4NativeCore NativeCampaignBattleFlowCore.swift
+[14/89] Compiling EW4NativeCore NativeCampaignCore.swift
+[15/89] Compiling EW4NativeCore NativeCampaignSessionCore.swift
+[16/89] Compiling EW4NativeCore NativeConquestAchievementCore.swift
+[17/89] Compiling EW4NativeCore NativeConquestBattleFlowCore.swift
+[18/89] Compiling EW4NativeCore NativeConquestExtinctionCore.swift
+[19/89] Compiling EW4NativeCore NativeGeneralDeploymentCore.swift
+[20/89] Compiling EW4NativeCore NativeGeneralGrowthCore.swift
+[21/89] Compiling EW4NativeCore NativeAudioPolicyCore.swift
+[22/89] Compiling EW4NativeCore NativeBattleCommerceCore.swift
+[23/89] Compiling EW4NativeCore NativeBattleConstructionCore.swift
+[24/89] Compiling EW4NativeCore NativeBattleConsumableCore.swift
+[25/89] Compiling EW4NativeCore NativeBattleDefenseCore.swift
+[26/89] Compiling EW4NativeCore NativeBattleDialogueQueueCore.swift
+[27/89] Compiling EW4NativeCore NativeBattleEnvironmentCore.swift
+[28/89] Compiling EW4NativeCore NativeBattleEventCore.swift
+[29/89] Compiling EW4NativeCore NativeBattleHUDCore.swift
+[30/89] Compiling EW4NativeCore NativeBattlePresentation.swift
+[31/89] Compiling EW4NativeCore NativeBattleRecruitCore.swift
+[32/89] Compiling EW4NativeCore NativeBattleRehydrationCore.swift
+[33/89] Compiling EW4NativeCore NativeBattleSaveCore.swift
+[34/89] Compiling EW4NativeCore NativeBattleSaveSlotStore.swift
+[35/89] Compiling EW4NativeCore ArmyStatsCore.swift
+[36/89] Compiling EW4NativeCore BattleGameplayCore.swift
+[37/89] Compiling EW4NativeCore BattleSession.swift
+[38/89] Compiling EW4NativeCore CombatCore.swift
+[39/89] Compiling EW4NativeCore CompactBILE.swift
+[40/89] Compiling EW4NativeCore CountryTurnCore.swift
+[41/89] Compiling EW4NativeCore DefMotion.swift
+[42/89] Compiling EW4NativeCore LogicalGeometry.swift
+[43/89] Compiling EW4NativeCore NativeAIPlannerCore.swift
+[44/89] Compiling EW4NativeCore NativeAIPresentationDriverCore.swift
+[45/89] Compiling EW4NativeCore NativeAIRoundSimulationCore.swift
+[46/89] Compiling EW4NativeCore NativeActionCameraFocusCore.swift
+[47/89] Compiling EW4NativeCore NativeAnimationSequenceCore.swift
+[48/89] Compiling EW4NativeCore NativeAnimationTiming.swift
+[49/89] Compiling EW4NativeCore NativeHeadquartersCommerceCore.swift
+[50/89] Compiling EW4NativeCore NativeHeadquartersCore.swift
+[51/89] Compiling EW4NativeCore NativeHeadquartersManagementCore.swift
+[52/89] Compiling EW4NativeCore NativeImpactPresentationCore.swift
+[53/89] Compiling EW4NativeCore NativeMovementCore.swift
+[54/89] Compiling EW4NativeCore NativeMovementPresentationCore.swift
+[55/89] Compiling EW4NativeCore NativeOptionsCore.swift
+[56/89] Compiling EW4NativeCore NativeOriginalBattleModalCore.swift
+[57/89] Compiling EW4NativeCore NativeOriginalBattleResultCore.swift
+[58/89] Compiling EW4NativeCore NativeOriginalDefenseArtCore.swift
+[59/89] Compiling EW4NativeCore NativeOriginalFormContentCore.swift
+[60/89] Compiling EW4NativeCore NativeOriginalFormGeometryCore.swift
+[61/89] Compiling EW4NativeCore NativeOriginalItemArtCore.swift
+[62/89] Compiling EW4NativeCore NativeOriginalMainMenuCore.swift
+[63/89] Compiling EW4NativeCore NativeOriginalOuterShellCore.swift
+[64/89] Compiling EW4NativeCore NativeOriginalRecruitArtCore.swift
+[65/89] Compiling EW4NativeCore NativePlayerProfileCore.swift
+[66/89] Compiling EW4NativeCore NativePresentationLODCore.swift
+[67/89] Compiling EW4NativeCore NativeResourceAudit.swift
+[68/89] Compiling EW4NativeCore NativeResultCore.swift
+[69/89] Compiling EW4NativeCore NativeRoundRuntimeAdapter.swift
+[70/89] Compiling EW4NativeCore NativeRoundSettlementCore.swift
+[71/89] Compiling EW4NativeCore NativeShopFormCore.swift
+[72/89] Compiling EW4NativeCore NativeTrainingParityCore.swift
+[73/89] Compiling EW4NativeCore NativeTutorialCore.swift
+[74/89] Compiling EW4NativeCore NativeUnitStatusCore.swift
+[75/89] Compiling EW4NativeCore PlayerUnitRules.swift
+[76/89] Compiling EW4NativeCore ResourceModels.swift
+[77/90] Wrapping AST for EW4NativeCore for debugging
+[79/174] Compiling EW4NativeCoreTests NativeBattleSaveSlotStoreTests.swift
+[80/174] Compiling EW4NativeCoreTests NativeBattleSaveTests.swift
+[81/174] Compiling EW4NativeCoreTests NativeBattleShopCoreTests.swift
+[82/174] Compiling EW4NativeCoreTests NativeBattleSidecarTests.swift
+[83/174] Compiling EW4NativeCoreTests NativeBattleSnapshotTests.swift
+[84/174] Compiling EW4NativeCoreTests NativeBattleTavernCoreTests.swift
+[85/180] Compiling EW4NativeCoreTests NativeBattleUnitInfoCoreTests.swift
+[86/180] Compiling EW4NativeCoreTests NativeCampaignBattleFlowTests.swift
+[87/180] Compiling EW4NativeCoreTests BILEMathTests.swift
+[88/180] Compiling EW4NativeCoreTests BattleGameplayTests.swift
+[89/180] Compiling EW4NativeCoreTests CombatTests.swift
+[90/180] Compiling EW4NativeCoreTests CountryTurnTests.swift
+[91/180] Compiling EW4NativeCoreTests GeometryTests.swift
+[92/180] Compiling EW4NativeCoreTests NativeAIPlannerTests.swift
+[93/180] Compiling EW4NativeCoreTests NativeAIPresentationDriverTests.swift
+[94/180] Compiling EW4NativeCoreTests NativeActionCameraFocusCoreTests.swift
+[95/180] Compiling EW4NativeCoreTests NativeAnimationSequenceTests.swift
+[96/180] Compiling EW4NativeCoreTests NativeAudioPolicyCoreTests.swift
+[97/180] Emitting module EW4NativeRenderer
+[98/180] Compiling EW4NativeCoreTests NativeBattleEnvironmentTests.swift
+[99/180] Compiling EW4NativeCoreTests NativeBattleEventTests.swift
+[100/180] Compiling EW4NativeCoreTests NativeBattleHUDTests.swift
+[101/180] Compiling EW4NativeCoreTests NativeBattleRecruitConsumableCoreTests.swift
+[102/180] Compiling EW4NativeCoreTests NativeBattleRecruitDefenseGameplayTests.swift
+[103/180] Compiling EW4NativeCoreTests NativeBattleRehydrationTests.swift
+[104/180] Emitting module EW4NativeAudit
+[105/180] Compiling EW4NativeAudit main.swift
+[106/181] Wrapping AST for EW4NativeAudit for debugging
+[107/181] Write Objects.LinkFileList
+[109/181] Compiling EW4NativeRenderer NativeOriginalStageIntroRenderer.swift
+[110/181] Compiling EW4NativeRenderer NativeOriginalTalkRenderer.swift
+[111/181] Compiling EW4NativeRenderer NativeOriginalTavernRenderer.swift
+[112/181] Compiling EW4NativeRenderer NativeOriginalTutorialScene.swift
+[113/181] Compiling EW4NativeRenderer NativeOriginalUseItemRenderer.swift
+[114/181] Compiling EW4NativeRenderer NativeResourceStore.swift
+[115/182] Linking EW4NativeAudit
+[117/182] Emitting module EW4NativeCoreTests
+[120/195] Compiling EW4NativeCoreTests NativeOriginalBattleResultTests.swift
+[121/195] Compiling EW4NativeCoreTests NativeOriginalFormGeometryTests.swift
+[122/195] Compiling EW4NativeCoreTests NativeOriginalMainMenuTests.swift
+[123/195] Compiling EW4NativeCoreTests NativeOriginalOuterShellTests.swift
+[124/195] Compiling EW4NativeCoreTests NativeOriginalRecruitFormCoreTests.swift
+[125/195] Compiling EW4NativeCoreTests NativeOriginalStringFidelityTests.swift
+[126/195] Compiling EW4NativeCoreTests NativeOuterCoordinatorContractTests.swift
+[127/195] Compiling EW4NativeCoreTests NativePlayerEquipmentBattleParityTests.swift
+[128/195] Compiling EW4NativeCoreTests NativePlayerEquipmentCombatParityTests.swift
+[129/195] Compiling EW4NativeCoreTests NativePlayerProfileGrowthRuntimeTests.swift
+[130/195] Compiling EW4NativeCoreTests NativePlayerProfileTests.swift
+[131/195] Compiling EW4NativeCoreTests NativePresentationLODTests.swift
+[132/195] Compiling EW4NativeCoreTests NativeCampaignCoreTests.swift
+[133/195] Compiling EW4NativeCoreTests NativeCampaignRuntimeEndTests.swift
+[134/195] Compiling EW4NativeCoreTests NativeCampaignSessionTests.swift
+[135/195] Compiling EW4NativeCoreTests NativeConquestAchievementTests.swift
+[136/195] Compiling EW4NativeCoreTests NativeConquestBattleFlowTests.swift
+[137/195] Compiling EW4NativeCoreTests NativeConquestExtinctionTests.swift
+[138/195] Compiling EW4NativeCoreTests NativeGeneralDeploymentCoreTests.swift
+[139/195] Compiling EW4NativeCoreTests NativeGeneralGrowthTests.swift
+[140/195] Compiling EW4NativeCoreTests NativeHeadquartersCommerceCoreTests.swift
+[141/195] Compiling EW4NativeCoreTests NativeHeadquartersCoreTests.swift
+[142/195] Compiling EW4NativeCoreTests NativeHeadquartersManagementCoreTests.swift
+[143/195] Compiling EW4NativeCoreTests NativeImpactPresentationTests.swift
+[144/195] Compiling EW4NativeCoreTests NativeMovementPresentationTests.swift
+[145/195] Compiling EW4NativeCoreTests NativeNoonRegressionLockTests.swift
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+/mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift:76:35: warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 74 | 
+ 75 | @Test func campaignVictoryCommitAwardsOnlyRatingDeltaAndUnlocksSecretOnlyOnce() throws {
+ 76 |     let (battles, _, _, manifest, battle, gameplay) = try campaignFlowFixture("campaign1_17.btl")
+    |                                   `- warning: immutable value 'battle' was never used; consider replacing with '_' or removing it [#no-usage]
+ 77 |     var profile = NativePlayerProfile.fresh()
+ 78 |     let first = NativeCampaignBattleFlowCore.commitVictory(
+[174/195] Compiling EW4NativeCoreTests NativeProgrammaticCameraContractTests.swift
+[175/195] Compiling EW4NativeCoreTests NativeResultTests.swift
+[176/195] Compiling EW4NativeCoreTests NativeRoundRuntimeAdapterTests.swift
+[177/195] Compiling EW4NativeCoreTests NativeRoundSettlementTests.swift
+[178/195] Compiling EW4NativeCoreTests NativeShopFormCoreTests.swift
+[179/195] Compiling EW4NativeCoreTests NativeTrainingParityTests.swift
+[180/195] Compiling EW4NativeCoreTests NativeTutorialCoreTests.swift
+[181/195] Compiling EW4NativeCoreTests NativeUnitStatusTests.swift
+[182/195] Compiling EW4NativeCoreTests P64BattleModalStringFidelityTests.swift
+[183/195] Compiling EW4NativeCoreTests P65OuterHQStringFidelityTests.swift
+[184/195] Compiling EW4NativeCoreTests PresentationTests.swift
+[185/195] Compiling EW4NativeCoreTests TestResourcePaths.swift
+[186/195] Compiling EW4NativeCoreTests VisualResolverTests.swift
+[187/196] /mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[188/196] Write sources
+[189/196] Wrapping AST for EW4NativeCoreTests for debugging
+[191/199] Compiling EW4NativeCorePackageDiscoveredTests all-discovered-tests.swift
+[192/199] Emitting module EW4NativeCorePackageDiscoveredTests
+[193/199] Compiling EW4NativeCorePackageDiscoveredTests EW4NativeCoreTests.swift
+[194/200] /mnt/data/p65_work/EW4_R14_39_P64_NATIVE_BATTLE_MODAL_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageTests.derived/runner.swift
+[195/200] Write sources
+[196/200] Wrapping AST for EW4NativeCorePackageDiscoveredTests for debugging
+[198/202] Emitting module EW4NativeCorePackageTests
+[199/202] Compiling EW4NativeCorePackageTests runner.swift
+[200/203] Wrapping AST for EW4NativeCorePackageTests for debugging
+[201/203] Write Objects.LinkFileList
+[202/203] Linking EW4NativeCorePackageTests.xctest
+Build complete! (23.15s)
+Test Suite 'Selected tests' started at 2026-09-11 13:57:25.206
+Test Suite 'Selected tests' passed at 2026-09-11 13:57:25.208
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Test p65OuterAndHQOriginalCNValuesAreFrozen() started.
+◇ Test p65OriginalXMLBindsOuterAndHQKeys() started.
+◇ Test p65NativeRenderersConsumeOuterAndHQStringAuthority() started.
+✔ Test p65OuterAndHQOriginalCNValuesAreFrozen() passed after 0.002 seconds.
+✔ Test p65NativeRenderersConsumeOuterAndHQStringAuthority() passed after 0.004 seconds.
+✔ Test p65OriginalXMLBindsOuterAndHQKeys() passed after 0.007 seconds.
+✔ Test run with 3 tests in 0 suites passed after 0.008 seconds.

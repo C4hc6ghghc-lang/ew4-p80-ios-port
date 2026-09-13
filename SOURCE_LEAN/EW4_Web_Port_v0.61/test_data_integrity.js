@@ -1,0 +1,14 @@
+const fs=require('fs'),assert=require('assert');
+const j=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const cmd=j('./assets/data/commanders.json'),b=j('./assets/data/battles_runtime.json'),ov=j('./assets/data/player_general_overrides.json');
+const inst=j('./assets/data/installations.json'),build=j('./assets/data/build_cards.json');
+const army=j('./assets/data/army_stats.json'),ready=j('./assets/data/unit_ready_manifest.json'),attack=j('./assets/data/unit_attack_manifest.json');
+assert(Object.keys(cmd).filter(k=>+k>=1&&+k<=208).length===208,'208 commanders');
+assert(b.battles.length>=101,'BTL catalog');
+assert.deepStrictEqual(Object.keys(inst).sort(),['bunker','fence','trench']);
+for(const k of ['Trench','Fence','Bunker','Troopship'])assert(build[k],`build card ${k}`);
+for(const id of ['1','2','5','10','11','26','30'])assert(ov.generals[id],`override ${id}`);
+for(const cc of ['fra','gbr','rus','pru','aus','tur','spa','usa','others'])assert(army[cc]?.['Coastal Fort|0'],`Coastal Fort stats ${cc}`);
+assert(ready['Coastal Fort'],'Coastal Fort ready visual');
+assert(attack['Coastal Fort'],'Coastal Fort attack visual');
+console.log(`data integrity PASS: ${b.battles.length} battles, 208 commanders, 3 fieldworks, Coastal Fort preserved`);

@@ -1,0 +1,38 @@
+{
+  "SOURCE_LEAN": {
+    "old": 6321,
+    "new": 6321,
+    "changed": [],
+    "missing": [],
+    "added": []
+  },
+  "SOURCE_NATIVE/EW4_iOS_NativePort/Resources": {
+    "old": 1751,
+    "new": 1751,
+    "changed": [],
+    "missing": [],
+    "added": []
+  },
+  "SOURCE_NATIVE_EXCL_CACHE": {
+    "old": 1864,
+    "new": 1872,
+    "changed": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/Docs/PORT_STATUS.md",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift"
+    ],
+    "missing": [],
+    "added": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOriginalMainMenuCore.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOriginalOuterShellCore.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalMainMenuScene.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalOuterCompletionRenderer.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalOuterMenuScene.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeOriginalMainMenuTests.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeOriginalOuterShellTests.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeOuterCoordinatorContractTests.swift"
+    ]
+  },
+  "visual_sensitive": []
+}

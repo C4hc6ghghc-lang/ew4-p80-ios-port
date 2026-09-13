@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8'),layout=fs.readFileSync('assets/data/original_layout-568h.xml','utf8');
+assert(/<Layout id="form_failure"[^>]*w="151" h="184"/.test(layout));
+for(const id of ['country-failure-overlay','country-failure-panel','country-failure-group','country-failure-flag','country-failure-name','country-failure-ok'])assert(html.includes(`id="${id}"`),id);
+assert(html.includes('#country-failure-panel{position:absolute;left:208.5px;top:68px;width:151px;height:184px}'));
+for(const fn of ['resetNativeCountryFailure','renderNativeCountryFailure','openNextNativeCountryFailure','closeNativeCountryFailure','syncConquestDefeatedOwners'])assert(app.includes(`function ${fn}`),fn);
+assert(app.includes("playNativeFormOpenSfx('form_failure')"));
+assert(app.includes("if(mode==='conquest')syncConquestDefeatedOwners({announce:false})"),'restored/new conquest must seed already-extinct owners without replaying popups');
+assert(app.includes("countryFailureActive"),'AI/modal pause gate missing');
+console.log('P30 native form_failure + extinction notification PASS');

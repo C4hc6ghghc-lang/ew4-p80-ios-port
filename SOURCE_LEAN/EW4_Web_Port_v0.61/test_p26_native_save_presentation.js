@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('assert'),fs=require('fs');
+const layout=fs.readFileSync('./assets/data/original_layout-568h.xml','utf8'),html=fs.readFileSync('./index.html','utf8'),css=fs.readFileSync('./r14_native_forms.css','utf8'),app=fs.readFileSync('./app.js','utf8'),sw=fs.readFileSync('./sw.js','utf8');
+const form=(layout.match(/<Layout id="form_save"[\s\S]*?<\/Layout>/)||[])[0]||'';
+assert(/w="352" h="235"/.test(form));assert(/id="group_autosave"[^>]*x="119" y="31" w="114" h="201"/.test(form));assert(/id="group_save_0"[^>]*x="119" y="88" w="114" h="87"/.test(form));for(const [id,x,y] of [[1,4,31],[2,4,98],[3,4,165],[4,235,31],[5,235,98],[6,235,165]])assert(new RegExp(`id="group_save_${id}"[^>]*x="${x}" y="${y}" w="114" h="67"`).test(form));
+assert(html.includes('<div id="save-mode-label">自动保存</div>'));assert(!html.includes('自动存档 + 6 个手动槽'));
+assert(css.includes('#save-grid{position:absolute!important;left:4px!important;top:31px!important'));assert(css.includes('.save-slot.autosave{left:115px!important;top:57px!important;width:114px!important;height:87px!important'));assert(css.includes('.save-slot .slot-flag{position:absolute;left:44px;top:47px;width:26px;height:15px'));
+assert(app.includes("const m=battleSaveMeta(slot)"));assert(app.includes("title=m?.battleTitle||(STRINGS?.text_empty||'无')"));assert(app.includes("flag=code?spriteFile(`${code}1.png`):''"));assert(app.includes("document.getElementById('save-mode-label').textContent=STRINGS?.text_autosave||'自动保存'"));assert(!app.includes("slotHtml(1,'存档 1'"));assert(!app.includes('slot-meta'), 'form_save must not keep Web-only battle/round metadata row');
+for(const f of ['save_grayboard.png','button_ok_gray_noshadow.png','common_lineframe_bold.png'])assert(sw.includes(f),`offline CORE missing ${f}`);
+console.log('P26 native form_save presentation: PASS');

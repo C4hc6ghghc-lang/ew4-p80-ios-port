@@ -1,0 +1,20 @@
+EW4 Web Port 0.61 — Post-Handoff 17 Native Campaign
+Date: 2026-09-09
+
+Full independent Node regression tree: 87 / 87 PASS
+Failures: 0
+
+P17-specific proof:
+- native campaign target/secret unit behavior: PASS
+- exhaustive 87 campaign BTL behavior replay: PASS
+  - red-target stages: 84
+  - hostile red clear => victory simulations: 84
+  - friendly red loss => defeat simulations: 83
+  - yellow hidden-stage simulations: 11 / 11
+- production integration/offline cache: PASS
+- native_campaign_targets.json regeneration from extracted original APK: byte parity PASS
+- production manifest SHA256: 1c0b6e0e64b7e7e4d8e78313727041646bc851a6b4abcf1c60cfd1da3cec9979
+- app.js syntax: PASS
+- native_campaign_core.js syntax: PASS
+
+Important: the earlier preliminary P17 86/86 state based on a wrong object raw-byte hypothesis was explicitly rejected and never frozen. This 87/87 checkpoint uses the corrected native BTL loader layout and independent manifest.

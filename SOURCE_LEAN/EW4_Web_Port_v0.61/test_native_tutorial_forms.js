@@ -1,0 +1,16 @@
+const fs=require('fs'),assert=require('assert');
+const html=fs.readFileSync('index.html','utf8'),css=fs.readFileSync('r14_native_forms.css','utf8'),app=fs.readFileSync('app.js','utf8'),sw=fs.readFileSync('sw.js','utf8');
+assert(html.includes('id="tutorial-native" class="native-user-window show" data-title="教  程"'));
+assert(html.includes('id="tutorial-basic" data-tutorial="tutorials1.btl">基础教程'));
+assert(html.includes('id="tutorial-classic" data-tutorial="tutorials2.btl">高级教程'));
+assert(html.includes('id="tutorial-notice">如何游戏'));
+assert(css.includes('#tutorial-native{left:159px;top:60px;width:250px;height:200px'));
+assert(css.includes('.tutorial-native-btn{position:absolute;left:53px;width:145px;height:40px'));
+assert(css.includes('#tutorial-basic{top:40px}#tutorial-classic{top:85px}#tutorial-notice{top:130px}'));
+assert(html.includes('id="playnotice-native" class="native-user-window" data-title="玩法说明"'));
+assert(css.includes('#playnotice-native{left:84px;top:47px;width:400px;height:225px'));
+assert(css.includes('#playnotice-body{position:absolute;left:5px;top:33px;width:390px;height:186px'));
+assert(app.includes("body.innerHTML=STRINGS.html_notice||''"));
+assert(sw.includes("posthandoff"));
+assert(sw.includes("'./native_impact_effect_core.js'"));
+console.log('native tutorial/playnotice forms PASS');

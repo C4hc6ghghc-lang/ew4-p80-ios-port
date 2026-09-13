@@ -1,0 +1,1101 @@
+Building for debugging...
+[0/18] Write sources
+[4/18] Write swift-version--1BA0962812E73E12.txt
+[6/71] Emitting module EW4NativeCore
+[7/84] Compiling EW4NativeCore NativeAudioPolicyCore.swift
+[8/84] Compiling EW4NativeCore NativeBattleCommerceCore.swift
+[9/84] Compiling EW4NativeCore NativeBattleConstructionCore.swift
+[10/84] Compiling EW4NativeCore NativeBattleConsumableCore.swift
+[11/84] Compiling EW4NativeCore NativeBattleDefenseCore.swift
+[12/84] Compiling EW4NativeCore NativeBattleDialogueQueueCore.swift
+[13/84] Compiling EW4NativeCore NativeBattleEnvironmentCore.swift
+[14/84] Compiling EW4NativeCore NativeBattleEventCore.swift
+[15/84] Compiling EW4NativeCore NativeBattleHUDCore.swift
+[16/84] Compiling EW4NativeCore NativeBattlePresentation.swift
+[17/84] Compiling EW4NativeCore NativeBattleRecruitCore.swift
+[18/84] Compiling EW4NativeCore NativeBattleRehydrationCore.swift
+[19/84] Compiling EW4NativeCore NativeBattleSaveCore.swift
+[20/84] Compiling EW4NativeCore NativeGeneralDeploymentCore.swift
+[21/84] Compiling EW4NativeCore NativeGeneralGrowthCore.swift
+[22/84] Compiling EW4NativeCore NativeHeadquartersCommerceCore.swift
+[23/84] Compiling EW4NativeCore NativeHeadquartersCore.swift
+[24/84] Compiling EW4NativeCore NativeHeadquartersManagementCore.swift
+[25/84] Compiling EW4NativeCore NativeImpactPresentationCore.swift
+[26/84] Compiling EW4NativeCore NativeMovementCore.swift
+[27/84] Compiling EW4NativeCore NativeMovementPresentationCore.swift
+[28/84] Compiling EW4NativeCore NativeOptionsCore.swift
+[29/84] Compiling EW4NativeCore NativeOriginalBattleModalCore.swift
+[30/84] Compiling EW4NativeCore NativeOriginalBattleResultCore.swift
+[31/84] Compiling EW4NativeCore NativeOriginalFormContentCore.swift
+[32/84] Compiling EW4NativeCore NativeOriginalFormGeometryCore.swift
+[33/84] Compiling EW4NativeCore NativeBattleSaveSlotStore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[34/84] Compiling EW4NativeCore NativeBattleShopCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[35/84] Compiling EW4NativeCore NativeBattleSidecarCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[36/84] Compiling EW4NativeCore NativeBattleSnapshotCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[37/84] Compiling EW4NativeCore NativeBattleTavernCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[38/84] Compiling EW4NativeCore NativeBattleUnitInfoCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[39/84] Compiling EW4NativeCore NativeCamera.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[40/84] Compiling EW4NativeCore NativeCampaignBattleFlowCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[41/84] Compiling EW4NativeCore NativeCampaignCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[42/84] Compiling EW4NativeCore NativeCampaignSessionCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[43/84] Compiling EW4NativeCore NativeConquestAchievementCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[44/84] Compiling EW4NativeCore NativeConquestBattleFlowCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[45/84] Compiling EW4NativeCore NativeConquestExtinctionCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[46/84] Compiling EW4NativeCore ArmyStatsCore.swift
+[47/84] Compiling EW4NativeCore BattleGameplayCore.swift
+[48/84] Compiling EW4NativeCore BattleSession.swift
+[49/84] Compiling EW4NativeCore CombatCore.swift
+[50/84] Compiling EW4NativeCore CompactBILE.swift
+[51/84] Compiling EW4NativeCore CountryTurnCore.swift
+[52/84] Compiling EW4NativeCore DefMotion.swift
+[53/84] Compiling EW4NativeCore LogicalGeometry.swift
+[54/84] Compiling EW4NativeCore NativeAIPlannerCore.swift
+[55/84] Compiling EW4NativeCore NativeAIPresentationDriverCore.swift
+[56/84] Compiling EW4NativeCore NativeAIRoundSimulationCore.swift
+[57/84] Compiling EW4NativeCore NativeAnimationSequenceCore.swift
+[58/84] Compiling EW4NativeCore NativeAnimationTiming.swift
+[59/84] Compiling EW4NativeCore NativeOriginalMainMenuCore.swift
+[60/84] Compiling EW4NativeCore NativeOriginalOuterShellCore.swift
+[61/84] Compiling EW4NativeCore NativePlayerProfileCore.swift
+[62/84] Compiling EW4NativeCore NativePresentationLODCore.swift
+[63/84] Compiling EW4NativeCore NativeResourceAudit.swift
+[64/84] Compiling EW4NativeCore NativeResultCore.swift
+[65/84] Compiling EW4NativeCore NativeRoundRuntimeAdapter.swift
+[66/84] Compiling EW4NativeCore NativeRoundSettlementCore.swift
+[67/84] Compiling EW4NativeCore NativeTrainingParityCore.swift
+[68/84] Compiling EW4NativeCore NativeTutorialCore.swift
+[69/84] Compiling EW4NativeCore NativeUnitStatusCore.swift
+[70/84] Compiling EW4NativeCore PlayerUnitRules.swift
+[71/84] Compiling EW4NativeCore ResourceModels.swift
+error: fatalError
+[0/1] Planning build
+Building for debugging...
+[0/14] Write swift-version--1BA0962812E73E12.txt
+[2/26] Compiling EW4NativeCore NativeCampaignSessionCore.swift
+[3/26] Compiling EW4NativeCore NativeConquestAchievementCore.swift
+[4/26] Compiling EW4NativeCore NativeCamera.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[5/26] Compiling EW4NativeCore NativeCampaignBattleFlowCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[6/26] Compiling EW4NativeCore NativeCampaignCore.swift
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:104: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                        `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:54: error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                      `- error: binary operator '<=' cannot be applied to operands of type 'String' and 'Double'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:21: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                     `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:39: error: value of type 'NativeRect' has no member 'x'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                       `- error: value of type 'NativeRect' has no member 'x'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:48: error: value of type 'NativeRect' has no member 'width'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                `- error: value of type 'NativeRect' has no member 'width'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:71: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                       `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:88: error: value of type 'NativeRect' has no member 'y'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                        `- error: value of type 'NativeRect' has no member 'y'
+ 81 |     }
+ 82 | 
+
+/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeCamera.swift:80:97: error: value of type 'NativeRect' has no member 'height'
+ 78 |         let top = camera.y - halfHeight + focusInsetY
+ 79 |         let bottom = camera.y + halfHeight - focusInsetY
+ 80 |         return rect.x >= left && rect.x + rect.width <= right && rect.y >= top && rect.y + rect.height <= bottom
+    |                                                                                                 `- error: value of type 'NativeRect' has no member 'height'
+ 81 |     }
+ 82 | 
+[7/29] Compiling EW4NativeCore NativeBattleSaveSlotStore.swift
+[8/29] Compiling EW4NativeCore NativeBattleShopCore.swift
+[9/29] Compiling EW4NativeCore NativeBattleSidecarCore.swift
+[10/30] Compiling EW4NativeCore NativeBattleSnapshotCore.swift
+[11/30] Compiling EW4NativeCore NativeBattleTavernCore.swift
+[12/30] Compiling EW4NativeCore NativeBattleUnitInfoCore.swift
+[13/31] Compiling EW4NativeCore NativeConquestBattleFlowCore.swift
+[14/31] Compiling EW4NativeCore NativeConquestExtinctionCore.swift
+[15/32] Compiling EW4NativeCore NativeOriginalBattleModalCore.swift
+[16/33] Compiling EW4NativeCore NativeOriginalOuterShellCore.swift
+[17/33] Emitting module EW4NativeCore
+[18/33] Compiling EW4NativeCore NativeRoundRuntimeAdapter.swift
+[19/33] Compiling EW4NativeCore NativePlayerProfileCore.swift
+[20/33] Compiling EW4NativeCore NativeBattleEventCore.swift
+error: fatalError

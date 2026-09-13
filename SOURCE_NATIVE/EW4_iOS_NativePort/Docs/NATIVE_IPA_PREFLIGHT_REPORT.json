@@ -1,0 +1,141 @@
+{
+  "project": "EW4 Native unified Codex IPA handoff preflight",
+  "passed": true,
+  "root": "/mnt/data/p80_work/EW4_R14_39_P79_NATIVE_BATTLE_OVERLAY_CLOSURE_AUDITED_PORT_ONLY_2026-09-13/SOURCE_NATIVE/EW4_iOS_NativePort",
+  "checks": [
+    {
+      "name": "exists:Resources",
+      "status": "PASS",
+      "detail": "Resources"
+    },
+    {
+      "name": "exists:NativeCore",
+      "status": "PASS",
+      "detail": "NativeCore"
+    },
+    {
+      "name": "exists:iOSApp",
+      "status": "PASS",
+      "detail": "iOSApp"
+    },
+    {
+      "name": "exists:NATIVE_RESOURCE_MANIFEST_SHA256.tsv",
+      "status": "PASS",
+      "detail": "Docs/NATIVE_RESOURCE_MANIFEST_SHA256.tsv"
+    },
+    {
+      "name": "essential_resources",
+      "status": "PASS",
+      "detail": "15/15 present"
+    },
+    {
+      "name": "resource_inventory",
+      "status": "PASS",
+      "detail": "files=1751 bytes=45620426 duplicate_basename_groups=232"
+    },
+    {
+      "name": "xcodegen_resource_folder_reference",
+      "status": "PASS",
+      "detail": "folder reference required; duplicate basename groups=232"
+    },
+    {
+      "name": "resource_sha256_manifest",
+      "status": "PASS",
+      "detail": "1751/1751 exact"
+    },
+    {
+      "name": "no_absolute_container_paths",
+      "status": "PASS",
+      "detail": "0 hits"
+    },
+    {
+      "name": "no_web_runtime_shortcut",
+      "status": "PASS",
+      "detail": "0 WebKit/JavaScriptCore runtime hits"
+    },
+    {
+      "name": "freeze_568_width",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/LogicalGeometry.swift"
+    },
+    {
+      "name": "freeze_320_height",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/LogicalGeometry.swift"
+    },
+    {
+      "name": "freeze_camera_min_zoom",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeCamera.swift"
+    },
+    {
+      "name": "freeze_camera_max_zoom",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeCamera.swift"
+    },
+    {
+      "name": "freeze_camera_detail_zoom",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeCamera.swift"
+    },
+    {
+      "name": "freeze_tap_slop",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeCamera.swift"
+    },
+    {
+      "name": "freeze_pinch_threshold",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeCamera.swift"
+    },
+    {
+      "name": "freeze_unit_zoom_exponent",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativePresentationLODCore.swift"
+    },
+    {
+      "name": "freeze_unit_zoom_min",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativePresentationLODCore.swift"
+    },
+    {
+      "name": "freeze_unit_zoom_max",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativePresentationLODCore.swift"
+    },
+    {
+      "name": "freeze_native_animation_half_scale",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeAnimationTiming.swift"
+    },
+    {
+      "name": "freeze_native_undo_geometry",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeBattleHUDCore.swift"
+    },
+    {
+      "name": "freeze_native_next_geometry",
+      "status": "PASS",
+      "detail": "NativeCore/Sources/EW4NativeCore/NativeBattleHUDCore.swift"
+    },
+    {
+      "name": "release_boot_audit_disabled",
+      "status": "PASS",
+      "detail": "full audit is DEBUG-only"
+    },
+    {
+      "name": "no_apk_aab",
+      "status": "PASS",
+      "detail": "0 direct APK/AAB"
+    },
+    {
+      "name": "no_web_payload_in_native_resources",
+      "status": "PASS",
+      "detail": "0 html/js/mjs runtime resources"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "resource_file_count": 1751,
+  "duplicate_basename_groups": 232
+}

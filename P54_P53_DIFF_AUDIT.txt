@@ -1,0 +1,14 @@
+CHANGED 4
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalAcademyScene.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift
+ADDED 6
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeAudioPolicyCore.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOptionsCore.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeTutorialCore.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeAudioController.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalOptionsScene.swift
+SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalTutorialScene.swift
+REMOVED 0
+

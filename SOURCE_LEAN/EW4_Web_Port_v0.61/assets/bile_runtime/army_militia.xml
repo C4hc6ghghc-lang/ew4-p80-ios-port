@@ -1,0 +1,166 @@
+﻿<Texture name="army_militia.png" />
+<Images>
+    <Image name="gun1.png" x="1" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="gun2.png" x="12" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--gun1.png" x="23" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--gun2.png" x="34" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="5coat2.png" x="23" y="71" w="23" h="47" refx="0" refy="0" />
+    <Image name="6coat2.png" x="45" y="1" w="23" h="47" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--coat1.png" x="1" y="82" w="21" h="38" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--coat2.png" x="69" y="1" w="21" h="38" refx="0" refy="0" />
+    <Image name="8coat1.png" x="91" y="1" w="19" h="37" refx="0" refy="0" />
+    <Image name="1drum3.png" x="91" y="39" w="33" h="35" refx="0" refy="0" />
+    <Image name="2drum3.png" x="47" y="49" w="34" h="35" refx="0" refy="0" />
+    <Image name="3drum3.png" x="47" y="85" w="33" h="35" refx="0" refy="0" />
+    <Image name="4drum3.png" x="82" y="75" w="33" h="35" refx="0" refy="0" />
+    <Image name="5drum3.png" x="1" y="121" w="33" h="35" refx="0" refy="0" />
+    <Image name="6drum3.png" x="35" y="121" w="33" h="35" refx="0" refy="0" />
+    <Image name="8coat2.png" x="1" y="157" w="28" h="35" refx="0" refy="0" />
+    <Image name="drum3.png" x="81" y="111" w="33" h="35" refx="0" refy="0" />
+    <Image name="3coat1.png" x="30" y="157" w="23" h="33" refx="0" refy="0" />
+    <Image name="3coat2.png" x="1" y="193" w="22" h="33" refx="0" refy="0" />
+    <Image name="4coat2.png" x="69" y="147" w="24" h="33" refx="0" refy="0" />
+    <Image name="coat1.png" x="24" y="193" w="24" h="33" refx="0" refy="0" />
+    <Image name="coat2.png" x="54" y="181" w="24" h="33" refx="0" refy="0" />
+    <Image name="1coat1.png" x="94" y="147" w="23" h="32" refx="0" refy="0" />
+    <Image name="1coat2.png" x="49" y="215" w="22" h="32" refx="0" refy="0" />
+    <Image name="2coat1.png" x="79" y="181" w="23" h="31" refx="0" refy="0" />
+    <Image name="2coat2.png" x="103" y="180" w="23" h="31" refx="0" refy="0" />
+    <Image name="2普鲁士民兵后.png" x="79" y="213" w="32" h="31" refx="0" refy="0" />
+    <Image name="7coat1.png" x="111" y="1" w="17" h="31" refx="0" refy="0" />
+    <Image name="7coat2.png" x="129" y="1" w="16" h="31" refx="0" refy="0" />
+    <Image name="7俄国民兵后.png" x="125" y="33" w="32" h="31" refx="0" refy="0" />
+    <Image name="8drum3.png" x="146" y="1" w="34" h="31" refx="0" refy="0" />
+    <Image name="8Right thigh1.png" x="181" y="1" w="20" h="33" refx="0" refy="0" />
+    <Image name="8left thigh1.png" x="158" y="33" w="13" h="32" refx="0" refy="0" />
+    <Image name="2普鲁士民兵大腿1.png" x="125" y="65" w="16" h="29" refx="0" refy="0" />
+    <Image name="7俄国民兵大腿1.png" x="202" y="1" w="17" h="29" refx="0" refy="0" />
+    <Image name="2Right thigh1.png" x="142" y="65" w="15" h="28" refx="0" refy="0" />
+    <Image name="7Right thigh1.png" x="116" y="95" w="15" h="28" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--Right calf1.png" x="172" y="35" w="9" h="28" refx="0" refy="0" />
+    <Image name="1left calf1.png" x="182" y="35" w="8" h="27" refx="0" refy="0" />
+    <Image name="1Right calf1.png" x="220" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="3left calf1.png" x="158" y="66" w="8" h="27" refx="0" refy="0" />
+    <Image name="3Right calf1.png" x="1" y="227" w="8" h="27" refx="0" refy="0" />
+    <Image name="4left calf1.png" x="191" y="35" w="8" h="27" refx="0" refy="0" />
+    <Image name="4Right calf1.png" x="132" y="95" w="9" h="27" refx="0" refy="0" />
+    <Image name="5left calf1.png" x="142" y="94" w="8" h="27" refx="0" refy="0" />
+    <Image name="5Right calf1.png" x="200" y="35" w="8" h="27" refx="0" refy="0" />
+    <Image name="6left calf1.png" x="10" y="227" w="8" h="27" refx="0" refy="0" />
+    <Image name="6Right calf1.png" x="167" y="66" w="8" h="27" refx="0" refy="0" />
+    <Image name="7left calf1.png" x="229" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="7Right calf1.png" x="238" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="8left calf1.png" x="19" y="227" w="11" h="27" refx="0" refy="0" />
+    <Image name="8Right calf1.png" x="176" y="64" w="12" h="27" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left calf1.png" x="247" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="left calf1.png" x="209" y="31" w="8" h="27" refx="0" refy="0" />
+    <Image name="Right calf1.png" x="151" y="94" w="9" h="27" refx="0" refy="0" />
+    <Image name="1left thigh1.png" x="69" y="121" w="11" h="25" refx="0" refy="0" />
+    <Image name="2left thigh1.png" x="220" y="29" w="12" h="25" refx="0" refy="0" />
+    <Image name="7left thigh1.png" x="118" y="124" w="12" h="25" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left thigh1.png" x="233" y="29" w="11" h="25" refx="0" refy="0" />
+    <Image name="3left thigh1.png" x="131" y="124" w="11" h="24" refx="0" refy="0" />
+    <Image name="4left thigh1.png" x="161" y="94" w="11" h="24" refx="0" refy="0" />
+    <Image name="4Right thigh1.png" x="189" y="63" w="10" h="24" refx="0" refy="0" />
+    <Image name="5left thigh1.png" x="31" y="227" w="11" h="24" refx="0" refy="0" />
+    <Image name="5Right thigh1.png" x="200" y="63" w="10" h="24" refx="0" refy="0" />
+    <Image name="6left thigh1.png" x="173" y="94" w="11" h="24" refx="0" refy="0" />
+    <Image name="6Right thigh1.png" x="143" y="122" w="10" h="24" refx="0" refy="0" />
+    <Image name="left thigh1.png" x="118" y="150" w="11" h="24" refx="0" refy="0" />
+    <Image name="Right thigh1.png" x="130" y="150" w="10" h="24" refx="0" refy="0" />
+    <Image name="5drum1.png" x="141" y="149" w="16" h="23" refx="0" refy="0" />
+    <Image name="drum1.png" x="154" y="122" w="15" h="22" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--face1.png" x="54" y="157" w="13" h="19" refx="0" refy="0" />
+    <Image name="shadow.png" x="170" y="119" w="36" h="19" refx="0" refy="0" />
+    <Image name="4hat1.png" x="185" y="92" w="13" h="18" refx="0" refy="0" />
+    <Image name="1left arm Upper1.png" x="82" y="40" w="8" h="17" refx="0" refy="0" />
+    <Image name="1Right arm Upper1.png" x="116" y="75" w="7" h="17" refx="0" refy="0" />
+    <Image name="2left arm Upper1.png" x="199" y="88" w="8" h="17" refx="0" refy="0" />
+    <Image name="2Right arm Upper1.png" x="208" y="88" w="7" h="17" refx="0" refy="0" />
+    <Image name="3left arm Upper1.png" x="211" y="59" w="8" h="17" refx="0" refy="0" />
+    <Image name="3Right arm Upper1.png" x="220" y="55" w="7" h="17" refx="0" refy="0" />
+    <Image name="4Right arm Upper1.png" x="228" y="55" w="7" h="17" refx="0" refy="0" />
+    <Image name="5Right arm Upper1.png" x="236" y="55" w="7" h="17" refx="0" refy="0" />
+    <Image name="6left arm Upper1.png" x="220" y="73" w="8" h="17" refx="0" refy="0" />
+    <Image name="6Right arm Upper1.png" x="245" y="29" w="7" h="17" refx="0" refy="0" />
+    <Image name="7left arm Upper1.png" x="245" y="47" w="8" h="17" refx="0" refy="0" />
+    <Image name="7Right arm Upper1.png" x="244" y="65" w="7" h="17" refx="0" refy="0" />
+    <Image name="8Right arm Upper1.png" x="229" y="73" w="7" h="17" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--Right arm Upper1.png" x="216" y="91" w="7" h="17" refx="0" refy="0" />
+    <Image name="5left arm Upper1.png" x="82" y="58" w="8" h="16" refx="0" refy="0" />
+    <Image name="5right arm low1.png" x="170" y="139" w="10" h="16" refx="0" refy="0" />
+    <Image name="6left arm lower1.png" x="158" y="145" w="9" h="16" refx="0" refy="0" />
+    <Image name="8left arm lower1.png" x="141" y="173" w="9" h="16" refx="0" refy="0" />
+    <Image name="8left arm Upper1.png" x="127" y="175" w="8" h="16" refx="0" refy="0" />
+    <Image name="8Right calf2.png" x="127" y="192" w="44" h="16" refx="0" refy="0" />
+    <Image name="8奥斯曼后面.png" x="158" y="162" w="9" h="20" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left arm Upper1.png" x="207" y="106" w="7" h="16" refx="0" refy="0" />
+    <Image name="1hat1.png" x="181" y="139" w="15" h="11" refx="0" refy="0" />
+    <Image name="1hip1.png" x="224" y="91" w="15" h="12" refx="0" refy="0" />
+    <Image name="1left arm lower1.png" x="112" y="212" w="8" h="15" refx="0" refy="0" />
+    <Image name="1right arm low1.png" x="215" y="109" w="10" h="15" refx="0" refy="0" />
+    <Image name="2hip1.png" x="168" y="156" w="15" h="13" refx="0" refy="0" />
+    <Image name="right hand4.png" x="43" y="248" w="16" h="6" refx="0" refy="0" />
+    <Image name="1Right calf2.png" x="127" y="209" w="38" h="11" refx="0" refy="0" />
+    <Image name="1Right thigh1.png" x="240" y="83" w="11" h="24" refx="0" refy="0" />
+    <Image name="2left arm lower1.png" x="226" y="104" w="8" h="15" refx="0" refy="0" />
+    <Image name="2right arm low1.png" x="172" y="170" w="10" h="15" refx="0" refy="0" />
+    <Image name="3left arm lower1.png" x="226" y="120" w="9" h="15" refx="0" refy="0" />
+    <Image name="3right arm low1.png" x="236" y="108" w="11" h="15" refx="0" refy="0" />
+    <Image name="6right arm low1.png" x="121" y="221" w="11" h="15" refx="0" refy="0" />
+    <Image name="8hat1.png" x="184" y="151" w="12" h="15" refx="0" refy="0" />
+    <Image name="8right arm low1.png" x="207" y="125" w="10" h="15" refx="0" refy="0" />
+    <Image name="6hat1.png" x="166" y="209" w="14" h="14" refx="0" refy="0" />
+    <Image name="3hat1.png" x="197" y="141" w="12" h="13" refx="0" refy="0" />
+    <Image name="7hip1.png" x="184" y="167" w="15" h="13" refx="0" refy="0" />
+    <Image name="7left arm lower1.png" x="112" y="228" w="8" h="15" refx="0" refy="0" />
+    <Image name="7right arm low1.png" x="133" y="221" w="10" h="15" refx="0" refy="0" />
+    <Image name="8right foot1.png" x="69" y="40" w="11" h="8" refx="0" refy="0" />
+    <Image name="2hat1.png" x="72" y="245" w="12" h="8" refx="0" refy="0" />
+    <Image name="7hat1.png" x="85" y="245" w="12" h="10" refx="0" refy="0" />
+    <Image name="8left foot1.png" x="185" y="111" w="12" h="6" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--hip1.png" x="98" y="245" w="15" h="10" refx="0" refy="0" />
+    <Image name="3Right calf2.png" x="210" y="141" w="38" h="11" refx="0" refy="0" />
+    <Image name="3Right thigh1.png" x="144" y="224" w="10" h="24" refx="0" refy="0" />
+    <Image name="43Right calf2.png" x="197" y="155" w="38" h="11" refx="0" refy="0" />
+    <Image name="4left arm Upper1.png" x="121" y="237" w="8" h="17" refx="0" refy="0" />
+    <Image name="4hip1.png" x="236" y="124" w="15" h="12" refx="0" refy="0" />
+    <Image name="4left arm lower1.png" x="172" y="186" w="8" h="15" refx="0" refy="0" />
+    <Image name="4right arm low1.png" x="130" y="237" w="10" h="15" refx="0" refy="0" />
+    <Image name="5hip1.png" x="181" y="186" w="15" h="12" refx="0" refy="0" />
+    <Image name="5hat1.png" x="200" y="167" w="16" h="9" refx="0" refy="0" />
+    <Image name="53Right calf2.png" x="181" y="199" w="38" h="11" refx="0" refy="0" />
+    <Image name="5left arm lower1.png" x="217" y="167" w="9" h="15" refx="0" refy="0" />
+    <Image name="7Right calf2.png" x="197" y="183" w="38" h="11" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left arm lower1.png" x="218" y="125" w="7" h="15" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--right arm low1.png" x="155" y="221" w="8" h="14" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--Right calf2.png" x="155" y="236" w="38" h="11" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--Right thigh1.png" x="181" y="211" w="10" h="24" refx="0" refy="0" />
+    <Image name="Right arm Upper1.png" x="236" y="153" w="7" h="17" refx="0" refy="0" />
+    <Image name="left arm Upper1.png" x="220" y="195" w="8" h="16" refx="0" refy="0" />
+    <Image name="left arm lower1.png" x="244" y="153" w="8" h="15" refx="0" refy="0" />
+    <Image name="right arm low1.png" x="236" y="171" w="10" h="15" refx="0" refy="0" />
+    <Image name="drum2.png" x="45" y="49" w="1" h="12" refx="0" refy="0" />
+    <Image name="6right foot1.png" x="151" y="183" w="9" h="8" refx="0" refy="0" />
+    <Image name="7face1.png" x="192" y="211" w="9" h="9" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left foot1.png" x="60" y="248" w="11" h="6" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--right foot1.png" x="202" y="211" w="11" h="8" refx="0" refy="0" />
+    <Image name="6left foot1.png" x="141" y="249" w="12" h="6" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left hand1.png" x="49" y="191" w="4" h="7" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--left hand2.png" x="111" y="33" w="9" h="5" refx="0" refy="0" />
+    <Image name="left foot1.png" x="154" y="249" w="12" h="6" refx="0" refy="0" />
+    <Image name="hat1.png" x="192" y="221" w="13" h="11" refx="0" refy="0" />
+    <Image name="left hand 3.png" x="194" y="233" w="13" h="9" refx="0" refy="0" />
+    <Image name="hip1.png" x="236" y="187" w="15" h="12" refx="0" refy="0" />
+    <Image name="Right calf2.png" x="206" y="220" w="38" h="11" refx="0" refy="0" />
+    <Image name="face1.png" x="194" y="243" w="9" h="9" refx="0" refy="0" />
+    <Image name="right foot1.png" x="161" y="183" w="9" h="8" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--right hand1.png" x="211" y="77" w="7" h="6" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--right hand2.png" x="198" y="111" w="7" h="6" refx="0" refy="0" />
+    <Image name="left hand1.png" x="49" y="199" w="4" h="7" refx="0" refy="0" />
+    <Image name="90_0_Britain militia--right hand3.png" x="72" y="215" w="6" h="6" refx="0" refy="0" />
+    <Image name="right hand1.png" x="248" y="108" w="7" h="6" refx="0" refy="0" />
+    <Image name="right hand2.png" x="72" y="222" w="6" h="6" refx="0" refy="0" />
+    <Image name="right hand3.png" x="248" y="115" w="7" h="6" refx="0" refy="0" />
+    <Image name="left hand2.png" x="200" y="177" w="9" h="5" refx="0" refy="0" />
+</Images>

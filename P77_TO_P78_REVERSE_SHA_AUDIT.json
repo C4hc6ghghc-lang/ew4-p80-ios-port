@@ -1,0 +1,36 @@
+{
+  "product_swift": {
+    "added": [
+      "EW4NativeCore/NativeTransportPresentationCore.swift"
+    ],
+    "removed": [],
+    "modified": [
+      "EW4NativeRenderer/NativeBattleScene.swift"
+    ],
+    "base_count": 106,
+    "current_count": 107
+  },
+  "tests_swift": {
+    "added": [
+      "EW4NativeCoreTests/P78TransportPresentationTests.swift"
+    ],
+    "removed": [],
+    "modified": [],
+    "base_count": 79,
+    "current_count": 80
+  },
+  "native_resources": {
+    "added": [],
+    "removed": [],
+    "modified": [],
+    "base_count": 1751,
+    "current_count": 1751
+  },
+  "source_lean": {
+    "added": [],
+    "removed": [],
+    "modified": [],
+    "base_count": 6321,
+    "current_count": 6321
+  }
+}

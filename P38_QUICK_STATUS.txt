@@ -1,0 +1,9 @@
+P38 NATIVE HUD BASELINE POLISH — WIP
+
+- Full JS regression: 125/125 PASS.
+- P35/P36/P37 frozen map/unit/HUD invariants preserved.
+- P38: group_incom lower text baseline corrected to native y=30.
+- P38: group_funcres btn_done bitmap now fills native 33x33 control.
+- P38: group_aiaction >>> text box restored to native h=23.
+- No map geometry, unit native refs/scales, 568x320 logic, HiDPI or touch-mapping changes.
+- Next: only further evidence-backed anti-Web/native-presentation cleanup; true iPhone A/B remains final gate.

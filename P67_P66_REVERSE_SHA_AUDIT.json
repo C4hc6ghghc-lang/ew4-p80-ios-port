@@ -1,0 +1,67 @@
+{
+  "baseline": "EW4_R14_39_P66_NATIVE_TUTORIAL_REGROUP_CN_FIDELITY_AUDITED_PORT_ONLY_2026-09-11.zip",
+  "target": "P67 working tree",
+  "scopes": {
+    "product_swift": {
+      "counts": {
+        "added": 1,
+        "modified": 2,
+        "deleted": 0
+      },
+      "added": [
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOriginalPlayNoticeCore.swift",
+          "sha256": "873c9deee854eb80513de54a44a8d99edb2b32a5602f99395e9ccfc746805acb"
+        }
+      ],
+      "modified": [
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+          "old_sha256": "9f16f72822264d3dd03e89533d0af355b676d2dcca7da4574d5eb7fc5c2f48d8",
+          "new_sha256": "63e0cfd1b97ecc7d3cfe5ffcadb295e4439f0d42975ec43bec7155f4ab7dd0bf"
+        },
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalTutorialScene.swift",
+          "old_sha256": "806b169ac4b6f429c2be19eb9078c97c395b461246a23fbbf1f59c4e3bbffc6f",
+          "new_sha256": "95c04366217e10886d9c01b269b634ae1a4e769df8e927ea0953ceafe3c2c580"
+        }
+      ],
+      "deleted": []
+    },
+    "test_swift": {
+      "counts": {
+        "added": 1,
+        "modified": 0,
+        "deleted": 0
+      },
+      "added": [
+        {
+          "path": "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/P67PlayNoticeScrollFidelityTests.swift",
+          "sha256": "91d042ca79131e9f6cd2ddd6db4ae9dacc36eaf0de136397e6efd1b3e1a007b1"
+        }
+      ],
+      "modified": [],
+      "deleted": []
+    },
+    "native_resources": {
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "added": [],
+      "modified": [],
+      "deleted": []
+    },
+    "source_lean": {
+      "counts": {
+        "added": 0,
+        "modified": 0,
+        "deleted": 0
+      },
+      "added": [],
+      "modified": [],
+      "deleted": []
+    }
+  }
+}

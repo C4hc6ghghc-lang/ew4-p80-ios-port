@@ -1,0 +1,5 @@
+[0/1] Planning build
+Building for debugging...
+[0/3] Write swift-version--1BA0962812E73E12.txt
+Build of product 'EW4NativeAudit' complete! (0.88s)
+{"battleUnitVisualResolved":7407,"battleObjectSpriteResolved":5482,"battleObjectCount":8001,"animationUnitCount":877,"worldCount":2,"battleCount":101,"bileResourceCount":12,"errors":[],"animationAssetCount":1272,"battleObjectSpriteEligible":5482,"europeSize":"79x68","bileDecoded":12,"animationFPS":24,"defMotionMotionCount":3519,"defMotionUnitCount":877,"battleUnitCount":7407}

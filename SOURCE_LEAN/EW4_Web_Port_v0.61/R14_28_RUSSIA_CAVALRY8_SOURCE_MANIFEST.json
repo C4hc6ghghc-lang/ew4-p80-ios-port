@@ -1,0 +1,1350 @@
+{
+  "format": "EW4_NATIVE_ANIMATION_FAMILY_V1",
+  "source_apk": "ouluzhanzheng4_v1.4.42_uhrfojh_anfensi.com(1)(3).apk",
+  "prefix": null,
+  "selected_units": [
+    "Light Cavalry rus 1",
+    "Light Cavalry rus 2",
+    "Heavy Cavalry rus 1",
+    "Heavy Cavalry rus 2",
+    "Guards Cavalry rus 1",
+    "Guards Cavalry rus 2",
+    "Armored Car rus 1",
+    "Armored Car rus 2"
+  ],
+  "unit_count": 8,
+  "unique_asset_count": 32,
+  "fps": 24,
+  "units": {
+    "Light Cavalry rus 1": {
+      "resource": "army_lightcavalry",
+      "native_anchor": {
+        "x": -38,
+        "y": -38
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__ready_i0_all__e95c6189e0",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__undoready_i0_all__cea08a965c",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__attack_i0_all__17c3bdc7bd",
+          "speed": 1.0,
+          "effect": "light cavalry 1"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__finish_i0_all__4d9dfee178",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Light Cavalry rus 2": {
+      "resource": "army_lightcavalry",
+      "native_anchor": {
+        "x": -41,
+        "y": -43
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__ready_i0_all__14bd544093",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__undoready_i0_all__6800cfd1ce",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__attack_i0_all__7c36a5ac85",
+          "speed": 1.0,
+          "effect": "light cavalry 2"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_lightcavalry__finish_i0_all__bc8582711e",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Heavy Cavalry rus 1": {
+      "resource": "army_heavycavalry",
+      "native_anchor": {
+        "x": -38,
+        "y": -38
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__ready_i0_all__8157f4ad4f",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__undoready_i0_all__7b2f223f34",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__attack_i0_all__7dfcae98ed",
+          "speed": 1.0,
+          "effect": "heavy cavalry 1"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__finish_i0_all__822516c76b",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Heavy Cavalry rus 2": {
+      "resource": "army_heavycavalry",
+      "native_anchor": {
+        "x": -42,
+        "y": -42
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__ready_i0_all__2874cd658c",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__undoready_i0_all__68d1b5bc6d",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__attack_i0_all__4078bfa23c",
+          "speed": 1.0,
+          "effect": "heavy cavalry 2"
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_heavycavalry__finish_i0_all__edefd2d279",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Guards Cavalry rus 1": {
+      "resource": "army_guardscavalry",
+      "native_anchor": {
+        "x": -38,
+        "y": -38
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__ready_i0_all__b312edfe1b",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__undoready_i0_all__d25a1b168c",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i0_all__c563fe0f97",
+          "speed": 1.0,
+          "effect": "guards cavalry 1"
+        },
+        {
+          "type": "attack",
+          "index": 1,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i1_all__f66e7d0c5b",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__reload_i0_all__15613e5d2c",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__finish_i0_all__66eedccd09",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Guards Cavalry rus 2": {
+      "resource": "army_guardscavalry",
+      "native_anchor": {
+        "x": -42,
+        "y": -42
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__ready_i0_all__f32c6ad205",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "undoready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__undoready_i0_all__c3ec3f5de6",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i0_all__94c7953cb1",
+          "speed": 1.0,
+          "effect": "guards cavalry 2"
+        },
+        {
+          "type": "attack",
+          "index": 1,
+          "direction": "all",
+          "asset": "army_guardscavalry__attack_i1_all__9832749e7f",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "reload",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__reload_i0_all__3bece981dd",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "finish",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_guardscavalry__finish_i0_all__6c10b68e05",
+          "speed": 1.0,
+          "effect": null
+        }
+      ]
+    },
+    "Armored Car rus 1": {
+      "resource": "army_armoredcar",
+      "native_anchor": {
+        "x": -5,
+        "y": -10
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__ready_i0_all__68778f8d38",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__attack_i0_all__9c6bbc3daf",
+          "speed": 2.5,
+          "effect": "armored chariot 1"
+        }
+      ]
+    },
+    "Armored Car rus 2": {
+      "resource": "army_armoredcar",
+      "native_anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "dir": "1",
+      "motions": [
+        {
+          "type": "ready",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__ready_i0_all__c55c77fd18",
+          "speed": 1.0,
+          "effect": null
+        },
+        {
+          "type": "attack",
+          "index": 0,
+          "direction": "all",
+          "asset": "army_armoredcar__attack_i0_all__42a4c1f388",
+          "speed": 2.5,
+          "effect": "armored chariot 2"
+        }
+      ]
+    }
+  },
+  "assets": {
+    "army_lightcavalry__ready_i0_all__e95c6189e0": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1俄国轻骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 23,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 155,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__ready_i0_all__e95c6189e0/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 159,
+        "frame_h": 155
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -2.4288711547851562,
+        148.1126251220703,
+        141.63447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__undoready_i0_all__cea08a965c": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1俄国轻骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__undoready_i0_all__cea08a965c/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry rus 1",
+      "world_union": [
+        0.031323837116360664,
+        0.05686492845416069,
+        148.18204088695347,
+        141.6600625757128
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__attack_i0_all__17c3bdc7bd": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1俄国轻骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 29,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 165,
+        "h": 191,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__attack_i0_all__17c3bdc7bd/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 165,
+        "frame_h": 191
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "light cavalry 1",
+      "representative_unit": "Light Cavalry rus 1",
+      "world_union": [
+        -5.949005126953125,
+        -38.39900207519531,
+        148.1126251220703,
+        141.63447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__finish_i0_all__4d9dfee178": {
+      "resource": "army_lightcavalry",
+      "motion_name": "1俄国轻骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__finish_i0_all__4d9dfee178/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry rus 1",
+      "world_union": [
+        -0.0989990234375,
+        0.1009979248046875,
+        148.0626220703125,
+        141.68448066711426
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__ready_i0_all__14bd544093": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2俄国轻骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 25,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 164,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__ready_i0_all__14bd544093/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 168,
+        "frame_h": 164
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry rus 2",
+      "world_union": [
+        0.00099945068359375,
+        -2.4288711547851562,
+        157.7126235961914,
+        151.23448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__undoready_i0_all__6800cfd1ce": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2俄国轻骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__undoready_i0_all__6800cfd1ce/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry rus 2",
+      "world_union": [
+        -0.01867539994418621,
+        0.05686492845416069,
+        157.68204088695347,
+        151.2100656274706
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__attack_i0_all__7c36a5ac85": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2俄国轻骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 32,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 184,
+        "h": 200,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__attack_i0_all__7c36a5ac85/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 184,
+        "frame_h": 200
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "light cavalry 2",
+      "representative_unit": "Light Cavalry rus 2",
+      "world_union": [
+        -5.999000549316406,
+        -38.449005126953125,
+        167.79463958740234,
+        151.18448066711426
+      ],
+      "per_frame_bounds": null
+    },
+    "army_lightcavalry__finish_i0_all__bc8582711e": {
+      "resource": "army_lightcavalry",
+      "motion_name": "2俄国轻骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_lightcavalry__finish_i0_all__bc8582711e/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Light Cavalry rus 2",
+      "world_union": [
+        -0.19899749755859375,
+        -0.04900360107421875,
+        157.5126190185547,
+        151.13447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__ready_i0_all__8157f4ad4f": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1俄国重骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 23,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 177,
+        "h": 188,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__ready_i0_all__8157f4ad4f/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 177,
+        "frame_h": 188
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry rus 1",
+      "world_union": [
+        -18.105918884277344,
+        -35.26210021972656,
+        148.37583923339844,
+        141.78447914123535
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__undoready_i0_all__7b2f223f34": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1俄国重骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 173,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__undoready_i0_all__7b2f223f34/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 173
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry rus 1",
+      "world_union": [
+        -0.04900360107421875,
+        -20.413162231445312,
+        148.32584381103516,
+        141.78447914123535
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__attack_i0_all__7dfcae98ed": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1俄国重骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 32,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 211,
+        "h": 224,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__attack_i0_all__7dfcae98ed/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 211,
+        "frame_h": 224
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "heavy cavalry 1",
+      "representative_unit": "Heavy Cavalry rus 1",
+      "world_union": [
+        -16.760130882263184,
+        -71.39900207519531,
+        183.9860076904297,
+        141.73447608947754
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__finish_i0_all__822516c76b": {
+      "resource": "army_heavycavalry",
+      "motion_name": "1俄国重骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 170,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__finish_i0_all__822516c76b/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 170
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -17.728294372558594,
+        148.37583923339844,
+        141.73447608947754
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__ready_i0_all__2874cd658c": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2俄国重骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 27,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 203,
+        "h": 220,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__ready_i0_all__2874cd658c/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 203,
+        "frame_h": 220
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry rus 2",
+      "world_union": [
+        -18.105918884277344,
+        -58.14899444580078,
+        174.5009994506836,
+        151.53447151184082
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__undoready_i0_all__68d1b5bc6d": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2俄国重骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 182,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__undoready_i0_all__68d1b5bc6d/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 182
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry rus 2",
+      "world_union": [
+        -0.04900360107421875,
+        -20.413162231445312,
+        157.87583923339844,
+        151.53447151184082
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__attack_i0_all__4078bfa23c": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2俄国重骑兵砍",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 34,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 221,
+        "h": 233,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__attack_i0_all__4078bfa23c/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 221,
+        "frame_h": 233
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "heavy cavalry 2",
+      "representative_unit": "Heavy Cavalry rus 2",
+      "world_union": [
+        -16.760130882263184,
+        -71.39900207519531,
+        193.58600616455078,
+        151.48448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_heavycavalry__finish_i0_all__edefd2d279": {
+      "resource": "army_heavycavalry",
+      "motion_name": "2俄国重骑兵回刀",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 180,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_heavycavalry__finish_i0_all__edefd2d279/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 180
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Heavy Cavalry rus 2",
+      "world_union": [
+        0.1009979248046875,
+        -17.728294372558594,
+        157.97584533691406,
+        151.53447151184082
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__ready_i0_all__b312edfe1b": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1俄国枪骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 22,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 155,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__ready_i0_all__b312edfe1b/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 159,
+        "frame_h": 155
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -3.9288711547851562,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__undoready_i0_all__d25a1b168c": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1俄国枪骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 153,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__undoready_i0_all__d25a1b168c/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 153
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -2.3035354614257812,
+        148.1626205444336,
+        140.2844753265381
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i0_all__c563fe0f97": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1俄国枪骑兵射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 30,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 184,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i0_all__c563fe0f97/runtime_sheet.png",
+        "cols": 8,
+        "rows": 4,
+        "frame_w": 159,
+        "frame_h": 184
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "guards cavalry 1",
+      "representative_unit": "Guards Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -33.58428192138672,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i1_all__f66e7d0c5b": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1俄国枪骑兵投弹",
+      "motion_type": "attack",
+      "motion_index": 1,
+      "direction": "all",
+      "frame_count": 42,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 162,
+        "h": 214,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i1_all__f66e7d0c5b/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 162,
+        "frame_h": 214
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -63.5989990234375,
+        151.0803108215332,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__reload_i0_all__15613e5d2c": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1俄国枪骑兵上膛",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 45,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__reload_i0_all__15613e5d2c/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -1.4990005493164062,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__finish_i0_all__66eedccd09": {
+      "resource": "army_guardscavalry",
+      "motion_name": "1俄国枪骑兵结束",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 159,
+        "h": 152,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__finish_i0_all__66eedccd09/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 159,
+        "frame_h": 152
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 1",
+      "world_union": [
+        0.00099945068359375,
+        -1.4489974975585938,
+        148.1626205444336,
+        140.33447456359863
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__ready_i0_all__f32c6ad205": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2俄国枪骑兵预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 24,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 164,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__ready_i0_all__f32c6ad205/runtime_sheet.png",
+        "cols": 8,
+        "rows": 3,
+        "frame_w": 168,
+        "frame_h": 164
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 2",
+      "world_union": [
+        0.00099945068359375,
+        -3.9288711547851562,
+        157.7126235961914,
+        149.98448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__undoready_i0_all__c3ec3f5de6": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2俄国枪骑兵取消预备",
+      "motion_type": "undoready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 11,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 163,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__undoready_i0_all__c3ec3f5de6/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 163
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 2",
+      "world_union": [
+        0.00099945068359375,
+        -2.2535324096679688,
+        157.7126235961914,
+        150.0344753265381
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i0_all__94c7953cb1": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2俄国枪骑兵射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 36,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 194,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i0_all__94c7953cb1/runtime_sheet.png",
+        "cols": 8,
+        "rows": 5,
+        "frame_w": 168,
+        "frame_h": 194
+      },
+      "motion_speed_attr": 1.0,
+      "effect": "guards cavalry 2",
+      "representative_unit": "Guards Cavalry rus 2",
+      "world_union": [
+        0.00099945068359375,
+        -33.58428192138672,
+        157.7126235961914,
+        149.98448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__attack_i1_all__9832749e7f": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2俄国枪骑兵投弹",
+      "motion_type": "attack",
+      "motion_index": 1,
+      "direction": "all",
+      "frame_count": 42,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 171,
+        "h": 224,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__attack_i1_all__9832749e7f/runtime_sheet.png",
+        "cols": 8,
+        "rows": 6,
+        "frame_w": 171,
+        "frame_h": 224
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 2",
+      "world_union": [
+        0.00099945068359375,
+        -63.5989990234375,
+        160.5803108215332,
+        149.98448371887207
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__reload_i0_all__3bece981dd": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2俄国枪骑兵上膛",
+      "motion_type": "reload",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 51,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__reload_i0_all__3bece981dd/runtime_sheet.png",
+        "cols": 8,
+        "rows": 7,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 2",
+      "world_union": [
+        -0.0489959716796875,
+        -1.6989974975585938,
+        157.7126235961914,
+        149.88447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_guardscavalry__finish_i0_all__6c10b68e05": {
+      "resource": "army_guardscavalry",
+      "motion_name": "2俄国枪骑兵结束",
+      "motion_type": "finish",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 9,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 168,
+        "h": 162,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_guardscavalry__finish_i0_all__6c10b68e05/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 168,
+        "frame_h": 162
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Guards Cavalry rus 2",
+      "world_union": [
+        -0.0489959716796875,
+        -1.6490020751953125,
+        157.7126235961914,
+        149.88447761535645
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__ready_i0_all__68778f8d38": {
+      "resource": "army_armoredcar",
+      "motion_name": "156俄国装甲车组合1预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 12,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 118,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__ready_i0_all__68778f8d38/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 191,
+        "frame_h": 118
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Armored Car rus 1",
+      "world_union": [
+        -103.4990005493164,
+        -49.89900207519531,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__attack_i0_all__9c6bbc3daf": {
+      "resource": "army_armoredcar",
+      "motion_name": "156俄国装甲车组合1射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 85,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 118,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__attack_i0_all__9c6bbc3daf/runtime_sheet.png",
+        "cols": 8,
+        "rows": 11,
+        "frame_w": 191,
+        "frame_h": 118
+      },
+      "motion_speed_attr": 2.5,
+      "effect": "armored chariot 1",
+      "representative_unit": "Armored Car rus 1",
+      "world_union": [
+        -103.4990005493164,
+        -49.89799979329109,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__ready_i0_all__c55c77fd18": {
+      "resource": "army_armoredcar",
+      "motion_name": "156俄国装甲车组合预备",
+      "motion_type": "ready",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 12,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 112,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__ready_i0_all__c55c77fd18/runtime_sheet.png",
+        "cols": 8,
+        "rows": 2,
+        "frame_w": 191,
+        "frame_h": 112
+      },
+      "motion_speed_attr": 1.0,
+      "effect": null,
+      "representative_unit": "Armored Car rus 2",
+      "world_union": [
+        -103.4990005493164,
+        -43.3489990234375,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    },
+    "army_armoredcar__attack_i0_all__42a4c1f388": {
+      "resource": "army_armoredcar",
+      "motion_name": "156俄国装甲车组合射击",
+      "motion_type": "attack",
+      "motion_index": 0,
+      "direction": "all",
+      "frame_count": 85,
+      "fps": 24.0,
+      "fixed_canvas": {
+        "w": 191,
+        "h": 112,
+        "padding": 5
+      },
+      "runtime_sheet": {
+        "file": "assets/unit_anim_native/assets/army_armoredcar__attack_i0_all__42a4c1f388/runtime_sheet.png",
+        "cols": 8,
+        "rows": 11,
+        "frame_w": 191,
+        "frame_h": 112
+      },
+      "motion_speed_attr": 2.5,
+      "effect": "armored chariot 2",
+      "representative_unit": "Armored Car rus 2",
+      "world_union": [
+        -103.4990005493164,
+        -43.3489990234375,
+        77.0009994506836,
+        58.05099868774414
+      ],
+      "per_frame_bounds": null
+    }
+  }
+}

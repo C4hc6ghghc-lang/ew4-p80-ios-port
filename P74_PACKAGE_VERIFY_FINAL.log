@@ -1,0 +1,20 @@
+
+== Current mature SOURCE_LEAN freeze ==
+SOURCE_LEAN expected=6321 actual=6321 missing=0 extra=0 changed=0
+
+== EW4 cross-project scope guard ==
+Runtime Swift: 106
+Native resources provenanced: 1751/1751
+EW4_SCOPE_GUARD_PASS
+
+== Current native IPA preflight ==
+{
+  "passed": true,
+  "checks": 26,
+  "errors": [],
+  "resource_files": 1751,
+  "duplicate_basename_groups": 232
+}
+
+== Script syntax ==
+P74_PACKAGE_PREFLIGHT_PASS

@@ -1,0 +1,28 @@
+'use strict';
+const assert=require('assert');const G=require('./native_general_core.js');
+assert.deepStrictEqual(G.MILITARY_THRESHOLDS,[500,800,1200,1900,3000,4800,7500,12000,19000,30000,48000,76000,120000,200000]);
+assert.deepStrictEqual(G.NOBILITY_THRESHOLDS,[100,200,300,450,675,1000,1500,2250,3375]);
+assert.strictEqual(G.nextMilitaryCost(0,0),4);assert.strictEqual(G.nextMilitaryCost(0,250),2);assert.strictEqual(G.nextMilitaryCost(14,0),0);
+assert.strictEqual(G.nextNobilityCost(0,0),20);assert.strictEqual(G.nextNobilityCost(0,50),10);assert.strictEqual(G.nextNobilityCost(9,0),0);
+assert.strictEqual(G.allFullCost(0,0,0,0),3600);assert.strictEqual(G.allFullCost(14,0,9,0),0);
+assert.deepStrictEqual(G.addMilitaryProgress(0,0,500),{level:1,progress:0});assert.deepStrictEqual(G.addMilitaryProgress(0,0,1300),{level:2,progress:0});
+assert.deepStrictEqual(G.addNobilityProgress(0,0,300),{level:2,progress:0});
+assert.strictEqual(G.militaryTransfer(0,0),300);assert.strictEqual(G.nobilityTransfer(0,0),60);
+assert.strictEqual(G.militaryTransfer(1,0),Math.floor((300+500)*.97));assert.strictEqual(G.nobilityTransfer(1,0),Math.floor((60+100)*.96));
+const target={rank:0,nobility:0,infantry:4,cavalry:5,artillery:2,warship:1,fort:0,business:3,movement:4,training:5};
+const source={rank:0,nobility:0,skill1:33,skill2:34,skill3:39,skill4:7};
+const p=G.regroupPreview(target,source);assert.strictEqual(p.militaryGain,300);assert.strictEqual(p.nobilityGain,60);assert.strictEqual(p.stats.infantry,5);assert.strictEqual(p.stats.cavalry,5);assert.strictEqual(p.stats.movement,5);assert.strictEqual(p.stats.training,5);assert.strictEqual(p.sourceDeleted,true);assert.strictEqual(p.sourceItemsDisappear,true);
+console.log('native general core: PASS');
+// Native battle growth: equipment overrides skill multipliers rather than stacking.
+assert.strictEqual(G.battleMilitaryGain(10,{}),20);
+assert.strictEqual(G.battleMilitaryGain(10,{skills:[20]}),28);
+assert.strictEqual(G.battleMilitaryGain(10,{skills:[21]}),36);
+assert.strictEqual(G.battleMilitaryGain(10,{skills:[20,21]}),36);
+assert.strictEqual(G.battleMilitaryGain(10,{skills:[21],items:[{function:2,value:200}]}),40);
+assert.strictEqual(G.battleMilitaryGain(10,{items:[{function:2,value:200},{function:2,value:300}]}),60);
+assert.strictEqual(G.battleNobilityGain(0,false,{}),1);
+assert.strictEqual(G.battleNobilityGain(2,false,{}),3);
+assert.strictEqual(G.battleNobilityGain(2,true,{}),6);
+assert.strictEqual(G.battleNobilityGain(2,true,{skills:[19]}),9);
+assert.strictEqual(G.battleNobilityGain(2,true,{skills:[19],items:[{function:1,value:400}]}),24);
+console.log('native general battle growth: PASS');

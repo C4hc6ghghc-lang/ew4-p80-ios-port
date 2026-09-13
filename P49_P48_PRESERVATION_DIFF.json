@@ -1,0 +1,40 @@
+{
+  "source_lean": {
+    "p48_files": 6321,
+    "p49_files": 6321,
+    "common": 6321,
+    "changed": [],
+    "missing": [],
+    "new": []
+  },
+  "source_native": {
+    "p48_files": 1853,
+    "p49_files": 1864,
+    "common": 1853,
+    "changed": [
+      "Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "Docs/PORT_STATUS.md",
+      "NativeCore/Sources/EW4NativeCore/BattleGameplayCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativePlayerProfileCore.swift",
+      "NativeCore/Sources/EW4NativeCore/ResourceModels.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift"
+    ],
+    "missing": [],
+    "new": [
+      "NativeCore/Sources/EW4NativeCore/NativeCampaignBattleFlowCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeCampaignCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeCampaignSessionCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeConquestAchievementCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeConquestBattleFlowCore.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeCampaignBattleFlowTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeCampaignCoreTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeCampaignRuntimeEndTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeCampaignSessionTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeConquestAchievementTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeConquestBattleFlowTests.swift"
+    ]
+  },
+  "frozen_sensitive_existing_changed": [],
+  "native_resource_existing_changed": []
+}

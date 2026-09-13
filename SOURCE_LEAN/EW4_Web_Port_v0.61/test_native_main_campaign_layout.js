@@ -1,0 +1,13 @@
+const fs=require('fs');
+const assert=(x,m)=>{if(!x)throw new Error(m)};
+const html=fs.readFileSync('index.html','utf8');
+const sw=fs.readFileSync('sw.js','utf8');
+assert(html.includes('.mainbtn{position:absolute;left:435px;width:134px;height:33px'),'main menu native x=435 / 134x33 contract missing');
+assert(html.includes('#main-title{position:absolute;left:20px;top:15px;width:380px;height:96px'),'native title 0.5x placement missing');
+for(const [go,y] of [['campaign',115],['conquest',153],['tutorial',191],['options',267]]) assert(html.includes(`class="mainbtn" style="top:${y}px" data-go="${go}"`),`main ${go} y=${y} missing`);
+assert(html.includes('class="mainbtn" style="top:229px" id="main-hq"'),'main HQ native y=229 dedicated controller entry missing');
+const pins=[['300','118','france'],['356','70','coalition'],['415','140','holyroman'],['490','95','east'],['76','103','usa'],['265','38','uk']];
+for(const [x,y,k] of pins) assert(html.includes(`style="left:${x}px;top:${y}px;background-image:url('assets/sprites/image_menu_hd/button_choosebattlezone_${k}.png')"`),`campaign pin ${k} native ${x},${y} missing`);
+assert(html.includes('<div class="titlebar">剧　　本</div>'),'campaign native title string should be 剧本');
+assert(sw.includes('posthandoff'),'P11 cache version missing');
+console.log('native main/campaign layout PASS');

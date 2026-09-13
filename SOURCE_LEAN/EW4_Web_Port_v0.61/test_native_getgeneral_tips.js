@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const html=fs.readFileSync('index.html','utf8'),app=fs.readFileSync('app.js','utf8');
+assert(html.includes('id="getgeneral-tips"'));
+assert(html.includes('width:152px;height:184px'));
+assert(html.includes('left:36px;top:42px;width:78px;height:98px'));
+assert(html.includes('pattern_gotgeneral.png'));
+assert(app.includes("playNativeFormOpenSfx('form_getgeneraltips')"));
+assert(app.includes('openGetGeneralTips(c)'));
+assert(!app.includes("playSfx('select');flash(`${commanderName(c)} 已加入指挥部`)"));
+console.log('native getgeneral tips contract PASS');

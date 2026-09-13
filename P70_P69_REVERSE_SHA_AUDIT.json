@@ -1,0 +1,51 @@
+{
+  "baseline": "P69",
+  "candidate": "P70",
+  "product_swift": {
+    "added": [],
+    "modified": [
+      "EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+      "EW4NativeRenderer/NativeOriginalDeployItemScene.swift"
+    ],
+    "deleted": []
+  },
+  "tests": {
+    "added": [
+      "EW4NativeCoreTests/P70DeployItemFormFidelityTests.swift"
+    ],
+    "modified": [],
+    "deleted": []
+  },
+  "native_resources": {
+    "added": [],
+    "modified": [],
+    "deleted": []
+  },
+  "source_lean": {
+    "added": [],
+    "modified": [],
+    "deleted": []
+  },
+  "counts": {
+    "product_swift": {
+      "added": 0,
+      "modified": 2,
+      "deleted": 0
+    },
+    "tests": {
+      "added": 1,
+      "modified": 0,
+      "deleted": 0
+    },
+    "native_resources": {
+      "added": 0,
+      "modified": 0,
+      "deleted": 0
+    },
+    "source_lean": {
+      "added": 0,
+      "modified": 0,
+      "deleted": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+const assert=require('assert');
+const fs=require('fs');
+const app=fs.readFileSync('app.js','utf8');
+assert(app.includes('medals:Infinity'));
+assert(app.includes('badges:Infinity'));
+assert(app.includes('academyRefresh:Infinity'));
+assert(app.includes('battleConsumables:Infinity'));
+assert(app.includes('function isUnlimitedBattleConsumable(id)'));
+assert(app.includes('EW4NativeUseItem.USE_ITEM_IDS.includes(+id)'));
+assert(app.includes('return isUnlimitedBattleConsumable(id)?Math.max(1,n):n'));
+assert(app.includes("const unlimited=isUnlimitedBattleConsumable(id),taken=unlimited?{ok:true,inventory:saveState.itemInventory}:EW4ItemInventory.remove"));
+assert(app.includes('if(!unlimited)saveState.itemInventory=taken.inventory'));
+console.log('PASS player infinite medals/badges + non-consuming battle consumables');

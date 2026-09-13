@@ -1,0 +1,9 @@
+<Texture name="anim_upgrade.png" />
+<Images>
+    <Image name="mark_classup.png" x="1" y="1" w="44" h="37" refx="0" refy="0" />
+    <Image name="mark_getmedal.png" x="46" y="1" w="44" h="41" refx="0" refy="0" />
+    <Image name="mark_refresh.png" x="1" y="39" w="44" h="36" refx="0" refy="0" />
+    <Image name="mark_rankup.png" x="46" y="43" w="45" h="38" refx="0" refy="0" />
+    <Image name="mark_defense.png" x="1" y="76" w="32" h="35" refx="0" refy="0" />
+    <Image name="mark_attack.png" x="91" y="1" w="36" h="31" refx="0" refy="0" />
+</Images>

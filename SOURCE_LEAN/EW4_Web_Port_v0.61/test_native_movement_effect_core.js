@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('assert');
+const R=require('./native_movement_effect_core.js');
+assert.strictEqual(R.effectForMovement({army_name:'Militia'},{type:'infantry'}),'effect_moving1');
+assert.strictEqual(R.effectForMovement({army_name:'Light Cavalry'},{type:'cavalry'}),'effect_moving2');
+assert.strictEqual(R.effectForMovement({army_name:'Light Artillery'},{type:'artillery'}),'effect_moving3');
+assert.strictEqual(R.effectForMovement({army_name:'Frigate'},{type:'warship'}),'effect_moving4');
+assert.strictEqual(R.effectForMovement({army_name:'Line Infantry',embarked:true},{type:'infantry'}),'effect_moving4');
+assert.strictEqual(R.effectForMovement({army_name:'Fortress'},{type:'fort'}),null);
+console.log('native movement effect core PASS: sea-first + infantry/cavalry/artillery moving1-4 mapping');

@@ -1,0 +1,9 @@
+<Texture name="army_fort.png" />
+<Images>
+    <Image name="coastalartillery.png" x="1" y="1" w="112" h="84" refx="0" refy="0" />
+    <Image name="fortress_lv1.png" x="1" y="86" w="146" h="92" refx="0" refy="0" />
+    <Image name="fortress_lv2.png" x="148" y="1" w="171" h="109" refx="0" refy="0" />
+    <Image name="fortress_lv0.png" x="148" y="111" w="180" h="109" refx="0" refy="0" />
+    <Image name="fortress_lv3.png" x="1" y="221" w="192" h="112" refx="0" refy="0" />
+    <Image name="fortress_cannon.png" x="1" y="179" w="54" h="34" refx="0" refy="0" />
+</Images>

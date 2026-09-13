@@ -1,0 +1,52 @@
+{
+  "product_swift": {
+    "baseline_files": 99,
+    "current_files": 100,
+    "added": 1,
+    "modified": 3,
+    "removed": 0,
+    "added_files": [
+      "EW4NativeCore/NativeOriginalItemArtCore.swift"
+    ],
+    "modified_files": [
+      "EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+      "EW4NativeRenderer/NativeOriginalDefenseRenderer.swift",
+      "EW4NativeRenderer/NativeOriginalUseItemRenderer.swift"
+    ],
+    "removed_files": []
+  },
+  "tests": {
+    "baseline_files": 65,
+    "current_files": 66,
+    "added": 1,
+    "modified": 0,
+    "removed": 0,
+    "added_files": [
+      "EW4NativeCoreTests/NativeOriginalBattleAuxFormTests.swift"
+    ],
+    "modified_files": [],
+    "removed_files": []
+  },
+  "native_resources": {
+    "baseline_files": 1751,
+    "current_files": 1751,
+    "added": 0,
+    "modified": 0,
+    "removed": 0,
+    "added_files": [],
+    "modified_files": [],
+    "removed_files": []
+  },
+  "source_lean": {
+    "baseline_files": 6321,
+    "current_files": 6321,
+    "added": 0,
+    "modified": 0,
+    "removed": 0,
+    "added_files": [],
+    "modified_files": [],
+    "removed_files": []
+  },
+  "baseline_zip": "/mnt/data/EW4_R14_39_P60_NATIVE_RECRUIT_FORM_AUDITED_PORT_ONLY_2026-09-11.zip",
+  "current_root": "/mnt/data/p61_work/EW4_R14_39_P61_NATIVE_BATTLE_AUX_FORMS_AUDITED_PORT_ONLY_2026-09-11"
+}

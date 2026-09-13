@@ -1,0 +1,29 @@
+{
+  "all_match": true,
+  "files": [
+    {
+      "file": "native_upgrade_core.js",
+      "expected": "2ae064cb5d8c3733945b970ef255cefa7c5b2ae4981f26099182f4206da7204c",
+      "actual": "2ae064cb5d8c3733945b970ef255cefa7c5b2ae4981f26099182f4206da7204c",
+      "match": true
+    },
+    {
+      "file": "battle_save_core.js",
+      "expected": "4858c7f862dac736d3624b8e64567af1484382b63bd8482aa544cd3204272dc2",
+      "actual": "4858c7f862dac736d3624b8e64567af1484382b63bd8482aa544cd3204272dc2",
+      "match": true
+    },
+    {
+      "file": "assets/data/native_warzone_tech.json",
+      "expected": "1c7a9d71d1f33cee03262908e8aa1195e543b44a53ef584a81dcdcbda0170da1",
+      "actual": "1c7a9d71d1f33cee03262908e8aa1195e543b44a53ef584a81dcdcbda0170da1",
+      "match": true
+    },
+    {
+      "file": "assets/data/def_warzonetech.xml",
+      "expected": "35320e99f2c39ac998c92340cb221653ae3f2c9fe8bb24b9ee3bfb321efe64db",
+      "actual": "35320e99f2c39ac998c92340cb221653ae3f2c9fe8bb24b9ee3bfb321efe64db",
+      "match": true
+    }
+  ]
+}

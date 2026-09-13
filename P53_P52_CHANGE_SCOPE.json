@@ -1,0 +1,30 @@
+{
+  "baseline": "P52 clean",
+  "candidate": "P53",
+  "added": [
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeBattleTavernCore.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeHeadquartersManagementCore.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalDeployItemScene.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalDismissScene.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalRegroupScene.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalTavernRenderer.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeBattleTavernCoreTests.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeHeadquartersManagementCoreTests.swift"
+  ],
+  "changed": [
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalHeadquartersScene.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift"
+  ],
+  "removed": [],
+  "counts": {
+    "added": 8,
+    "changed": 4,
+    "removed": 0
+  },
+  "intentional_battle_scene_change": "NativeBattleScene.swift: Tavern state initialization, modal routing/input blocking, recruitment persistence/autosave only.",
+  "frozen_visual_contract_files_changed": [],
+  "native_runtime_resource_files_changed": 0,
+  "source_lean_files_changed": 0
+}

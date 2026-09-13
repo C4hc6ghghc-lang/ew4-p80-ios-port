@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const h=fs.readFileSync('index.html','utf8'),a=fs.readFileSync('app.js','utf8'),sw=fs.readFileSync('sw.js','utf8');
+assert(h.includes('<script src="native_movement_effect_core.js"></script>'));
+assert(sw.includes('./native_movement_effect_core.js'));
+assert(a.includes('spawnNativeMovementEffect(u,u.moveAnim)'));
+assert(a.includes('worldSpace:true'));
+assert(a.includes('unitDisplayWorldPointAt(u,now)'));
+assert(a.includes("EW4NativeSimpleEffect.stopInstance(inst.runtime)"));
+console.log('native movement effect integration PASS: moving emitter follows unit world path and stops with move animation');

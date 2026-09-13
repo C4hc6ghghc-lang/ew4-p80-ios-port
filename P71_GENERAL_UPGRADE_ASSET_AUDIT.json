@@ -1,0 +1,47 @@
+{
+  "core_ui": {
+    "button_rank.png": true,
+    "gray_board.png": true,
+    "arrow_reoganizion.png": true,
+    "marker_hp_dark.png": true,
+    "marker_recover_dark.png": true,
+    "medals.png": true,
+    "marker_max_2.png": true,
+    "btn_common_blue.png": true,
+    "btn_common_green.png": true,
+    "pattern_stage_intro.png": true
+  },
+  "rank_icons": {
+    "rank_1.png": true,
+    "rank_2.png": true,
+    "rank_3.png": true,
+    "rank_4.png": true,
+    "rank_5.png": true,
+    "rank_6.png": true,
+    "rank_7.png": true,
+    "rank_8.png": true,
+    "rank_9.png": true,
+    "rank_10.png": true,
+    "rank_11.png": true,
+    "rank_12.png": true,
+    "rank_13.png": true,
+    "rank_14.png": true
+  },
+  "class_icons": {
+    "class_1.png": true,
+    "class_2.png": true,
+    "class_3.png": true,
+    "class_4.png": true,
+    "class_5.png": true,
+    "class_6.png": true,
+    "class_7.png": true,
+    "class_8.png": true,
+    "class_9.png": true
+  },
+  "note": "rank_0.png/class_0.png are intentionally not referenced; level 0 renders no rank/class icon.",
+  "counts": {
+    "core_ui": "10/10",
+    "rank_icons": "14/14",
+    "class_icons": "9/9"
+  }
+}

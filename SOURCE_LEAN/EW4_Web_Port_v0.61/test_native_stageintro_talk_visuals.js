@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const html=fs.readFileSync('index.html','utf8');
+assert(html.includes('width:360px;height:219px'),'stageintro must remain original 360x219');
+assert(!html.includes('id="stageintro-panel" class="ew4-window"'),'stageintro must not inherit generic Web window chrome');
+assert(!html.includes("common_lineframe.png') center/100% 100% stretch"),'invalid CSS stretch background must be gone');
+assert((html.match(/border-image:url\('assets\/sprites\/image_ui_hd\/common_lineframe\.png'\) 1 stretch/g)||[]).length>=2,'stageintro native lineframes must use non-distorting 9-slice border-image');
+assert(html.includes('#native-talk{position:absolute;z-index:140;bottom:12px;left:0;width:325px;height:83px'),'form_talk must be native 325x83 and native bottom placement');
+assert(!html.includes('filter:drop-shadow(0 3px 5px #0008);cursor:pointer'),'talk must not have extra Web drop shadow');
+assert(html.includes("background:url('assets/sprites/image_ui_hd/board_dialog_ex.png') center/100% 100% no-repeat;border:0"),'form_talk must use original board_dialog_ex art without Web border');
+assert(html.includes('#stageintro-title{display:none}'),'form_stageintro has no invented Web title label');
+console.log('P33 native stageintro/talk visuals PASS');

@@ -1,0 +1,157 @@
+<script>
+	<cmd name="rand seed" id="100"/>
+	
+	<cmd name="show text" id="1"/>
+	<cmd name="wait touch"/>
+	
+	<cmd name="show text" id="2"/>
+	<cmd name="draw ui rect" string="group_res" w="-90" h="0"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	<cmd name="moveto area" id="2783"/>
+	
+	<cmd name="show text" id="3"/>
+	<cmd name="wait area" id="2783"/>
+	<cmd name="draw ui rect" string="group_incom" w="-5" h="0"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	
+	<cmd name="show text" id="4"/>
+	<cmd name="moveto area" id="3097"/>
+	<cmd name="draw rect" id="3097" x="-45" y="-45" w="90" h="90"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	
+	<cmd name="moveto area" id="2786"/>
+	<cmd name="show text" id="5"/>
+	<cmd name="draw rect" id="2786" x="-30" y="-2" w="34" h="34"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	
+	<cmd name="show text" id="6"/>
+	<cmd name="moveto area" id="2787"/>
+	<cmd name="draw rect" id="2787" x="-30" y="-51" w="40" h="30"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	
+	<cmd name="show text" id="7"/>
+	<cmd name="moveto area" id="2550"/>
+	<cmd name="sel area" id="2550"/>
+	<cmd name="hide text"/>
+	<cmd name="draw ui rect" string="btn_city" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_city"/>
+	<cmd name="draw ui rect" string="lbox_unit" row="0"/>
+	<cmd name="wait touch"/>
+	<cmd name="draw ui rect" string="winbtn_close" w="-24" h="-22"/>
+	<cmd name="wait ui" string="winbtn_close"/>
+	<cmd name="moveto area" id="2552"/>
+	<cmd name="sel area" id="2552"/>
+	<cmd name="draw ui rect" string="btn_factory" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_factory"/>
+	<cmd name="draw ui rect" string="lbox_unit" row="0"/>
+	<cmd name="wait touch"/>
+	<cmd name="draw ui rect" string="lbox_unit" row="1"/>
+	<cmd name="wait touch"/>
+	<cmd name="draw ui rect" string="winbtn_close" w="-24" h="-22"/>
+	<cmd name="wait ui" string="winbtn_close"/>
+	
+	<cmd name="moveto area" id="2551"/>
+	<cmd name="show text" id="8"/>
+	<cmd name="wait area" id="2551"/>
+	<cmd name="hide text"/>
+	<cmd name="draw ui rect" string="btn_city" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_city"/>
+	<cmd name="draw ui rect" string="lbox_unit" row="2"/>
+	<cmd name="wait ui" string="lbox_unit" row="2"/>
+	<cmd name="draw ui rect" string="lbox_unit" row="2"/>
+	<cmd name="wait ui" string="lbox_unit" row="2"/>
+	<cmd name="draw ui rect" string="lbox_unit" row="2"/>
+	<cmd name="wait ui" string="lbox_unit" row="2"/>
+	<cmd name="draw ui rect" string="winbtn_ok"/>
+	<cmd name="wait ui" string="winbtn_ok"/>
+	
+	<cmd name="moveto area" id="2947"/>
+	<cmd name="show text" id="9"/>
+	<cmd name="wait area" id="2947"/>
+	<cmd name="moveto area" id="3027"/>
+	<cmd name="wait area" id="3027"/>
+	<cmd name="moveto area" id="3028"/>
+	<cmd name="wait area" id="3028"/>
+	<cmd name="wait action"/>
+	
+	<cmd name="moveto area" id="2786"/>
+	<cmd name="show text" id="10"/>
+	<cmd name="wait area" id="2786"/>
+	<cmd name="moveto area" id="2865"/>
+	<cmd name="hide text"/>
+	<cmd name="wait area" id="2865"/>
+	<cmd name="draw ui rect" string="btn_undo" w="-2" h="-2"/>
+	<cmd name="wait ui" string="btn_undo"/>
+	<cmd name="wait action"/>
+	
+	<cmd name="moveto area" id="2786"/>
+	<cmd name="unsel area" id="2786"/>
+	<cmd name="show text" id="11"/>
+	<cmd name="wait area" id="2786"/>
+	<cmd name="hide text"/>
+	<cmd name="draw ui rect" string="btn_defense" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_defense"/>
+	<cmd name="draw ui rect" string="lbox_defense" row="1"/>
+	<cmd name="wait ui" string="lbox_defense" row="1"/>
+	<cmd name="draw ui rect" string="winbtn_ok"/>
+	<cmd name="wait ui" string="winbtn_ok"/>
+	
+	<cmd name="show text" id="12"/>
+	<cmd name="moveto area" id="3026"/>
+	<cmd name="wait area" id="3026"/>
+	<cmd name="hide text"/>
+	<cmd name="draw ui rect" string="btn_fortress" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_fortress"/>
+	<cmd name="draw ui rect" string="lbox_defense" row="0"/>
+	<cmd name="wait ui" string="lbox_defense" row="0"/>
+	<cmd name="draw ui rect" string="winbtn_ok"/>
+	<cmd name="wait ui" string="winbtn_ok"/>
+	
+	<cmd name="show text" id="13"/>
+	<cmd name="moveto area" id="3429"/>
+	<cmd name="wait area" id="3429"/>
+	<cmd name="hide text"/>
+	<cmd name="draw ui rect" string="btn_ship" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_ship"/>
+	<cmd name="draw ui rect" string="btn_done" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_done"/>
+	<cmd name="moveto area" id="3351"/>
+	<cmd name="wait area" id="3351"/>
+	<cmd name="wait action"/>
+	
+	<cmd name="show text" id="14"/>
+	<cmd name="unsel area" id="3351"/>
+	<cmd name="moveto area" id="2709"/>
+	<cmd name="wait area" id="2709"/>
+	<cmd name="hide text"/>
+	<cmd name="draw ui rect" string="btn_general" w="-4" h="-4"/>
+	<cmd name="wait ui" string="btn_general"/>
+	<cmd name="draw ui rect" string="grid_general" row="0"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	<cmd name="draw ui rect" string="grid_general" row="1"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	<cmd name="draw ui rect" string="winbtn_back" w="-24" h="-22"/>
+	<cmd name="wait ui" string="winbtn_back"/>
+	
+	<cmd name="show text" id="15"/>
+	<cmd name="moveto area" id="3028"/>
+	<cmd name="draw rect" id="3028" x="-45" y="-45" w="90" h="90"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	
+	<cmd name="show text" id="16"/>
+	<cmd name="draw ui rect" string="btn_next" w="-2" h="-2"/>
+	<cmd name="wait touch"/>
+	<cmd name="clear rect"/>
+	
+	<cmd name="show text" id="17"/>
+	<cmd name="wait touch"/>
+	<cmd name="exit"/>
+</script>

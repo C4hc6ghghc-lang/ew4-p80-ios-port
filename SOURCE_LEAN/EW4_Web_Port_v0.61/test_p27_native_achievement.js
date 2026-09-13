@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),A=require('./native_achievement_core.js');
+const layout=fs.readFileSync('./assets/data/original_layout-568h.xml','utf8'),html=fs.readFileSync('./index.html','utf8'),css=fs.readFileSync('./r14_native_forms.css','utf8'),app=fs.readFileSync('./app.js','utf8'),sw=fs.readFileSync('./sw.js','utf8');
+const form=(layout.match(/<Layout id="form_achivement"[\s\S]*?<\/Layout>/)||[])[0]||'';
+assert(form.includes('id="btn_champion"')&&/x="15" y="31" w="49" h="32"/.test(form));assert(form.includes('id="btn_ranking"')&&/x="80" y="31" w="49" h="32"/.test(form));assert(/id="image_medal"[^>]*x="193" y="37"/.test(form));assert(/id="group_milrank"[^>]*x="327" y="28" w="120" h="38"/.test(form));assert(/id="group_nobrank"[^>]*x="448" y="28" w="120" h="38"/.test(form));assert(/id="lbox_general"[^>]*x="23" y="223" w="600" h="98" scale="0.75"/.test(form));
+assert(html.includes('id="main-achievement"'));assert(html.includes('id="achievement" class="screen native-achievement-screen"'));assert(html.includes('id="achievement-generals"'));assert(css.includes('#achievement-champion{left:15px'));assert(css.includes('.achievement-rankbox.military{left:327px'));assert(css.includes('#achievement-generals{position:absolute;left:23px;top:223px;width:450px;height:59px'));
+assert(app.includes("EW4NativeAchievement.viewModel(saveState,COMMANDERS)"));assert(app.includes("playNativeFormOpenSfx('form_achivement')"));assert(app.includes("go('achievement')"));assert(!app.includes('highestRank('),'do not invent global achievement rank from general rank');
+const commanders={1:{id:1,rank:0,nobilityrank:0},2:{id:2,rank:1,nobilityrank:1},5:{id:5,rank:0,nobilityrank:0}};
+const vm=A.viewModel({campaignStars:37,owned:[2,2,209,5],rank:{},nobility:{},campaignBestRating:{'campaign1_01.btl':5}},commanders);assert.deepEqual(vm.generalIds,[2,5]);assert.deepEqual(vm.stageStars,{earned:5,max:420});assert(vm.military&&vm.military.level>=1);assert(vm.nobility&&vm.nobility.level>=1);assert.deepEqual(vm.continents.europe.digits,[0]);
+assert(!html.includes('class="year-value"'),'native achievement has no separate Web year value field');
+assert(app.includes('vm.stageStars.earned'));assert(app.includes('`Lv ${vm.military.level}`'));assert(app.includes('rec.digits||[0]'));
+for(const f of ['native_achievement_core.js','button_champion.png','button_rank.png','board_rankclass.png','marker_rank.png','marker_class.png','button_rule_europa.png','button_rule_america.png','button_rule_asia.png','rule_0.png','pattern_bg_bottom.png','board_smallgenerals.png'])assert(sw.includes(f),`offline CORE missing ${f}`);
+console.log('P27 native form_achivement geometry/runtime entry remains covered after P28 exact semantics: PASS');

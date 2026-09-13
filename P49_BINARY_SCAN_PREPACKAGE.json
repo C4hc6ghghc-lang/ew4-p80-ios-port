@@ -1,0 +1,10 @@
+{
+  "checkpoint": "P49 prepackage scan",
+  "direct_apk_aab": [],
+  "nested_zip_count": 12,
+  "nested_zip_entries_scanned": 254,
+  "nested_apk_aab": [],
+  "nested_zip_errors": [],
+  "forbidden_cache_dirs": [],
+  "pass": true
+}

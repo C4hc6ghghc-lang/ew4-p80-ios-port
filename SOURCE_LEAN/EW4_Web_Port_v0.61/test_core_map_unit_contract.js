@@ -1,0 +1,13 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8');
+assert(app.includes('function worldPoint(q,r){return EW4NativeHex.cellCenter(q,r)}'));
+assert(app.includes('EW4NativeHex.worldToCell(wx,wy)'));
+assert(app.includes('function neighbors(q,r){return EW4NativeHex.neighbors(q,r)}'));
+assert(app.includes('EW4NativeCamera.openingFocusUnit(units,+playerOwner)'));
+assert(app.includes('EW4NativeHex.battleRectCenter(h)'));
+assert(!app.includes('b.meta?.centerx'), 'campaign-selection centerx must not drive battle camera');
+assert(!app.includes('b.meta?.centery'), 'campaign-selection centery must not drive battle camera');
+assert(html.includes('<script src="native_hex_core.js"></script>'));
+assert(app.includes('staticNativePoseRect'));
+assert(app.includes('nativeFrameDrawSpec'));
+console.log('core map/unit contract PASS: native odd-row 64x54 grid + commander-first opening camera + native pose anchor path');

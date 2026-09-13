@@ -1,0 +1,17 @@
+{
+  "added": [
+    "NativeCore/Tests/EW4NativeCoreTests/NativeProgrammaticCameraContractTests.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/Docs/NATIVE_IPA_PREFLIGHT_REPORT.json"
+  ],
+  "deleted": [],
+  "changed": [
+    "NativeCore/Sources/EW4NativeCore/NativeCamera.swift",
+    "NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+    "NativeCore/Tests/EW4NativeCoreTests/GeometryTests.swift"
+  ],
+  "counts": {
+    "added": 2,
+    "deleted": 0,
+    "changed": 3
+  }
+}

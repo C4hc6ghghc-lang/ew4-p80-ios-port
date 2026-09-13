@@ -1,0 +1,39 @@
+{
+  "source_lean": {
+    "parent": 6321,
+    "current": 6321,
+    "changed": [],
+    "missing": [],
+    "new": []
+  },
+  "source_native": {
+    "parent": 1841,
+    "current": 1853,
+    "changed": [
+      "Docs/NATIVE_IPA_PREFLIGHT_REPORT.json",
+      "Docs/PORT_STATUS.md",
+      "NativeCore/Sources/EW4NativeCore/BattleGameplayCore.swift",
+      "NativeCore/Sources/EW4NativeCore/ResourceModels.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeBattleScene.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/BattleGameplayTests.swift",
+      "iOSApp/App/EW4NativePortApp.swift"
+    ],
+    "missing": [],
+    "new": [
+      "NativeCore/Sources/EW4NativeCore/NativeBattleDialogueQueueCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeOriginalBattleModalCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeOriginalBattleResultCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeOriginalFormContentCore.swift",
+      "NativeCore/Sources/EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeOriginalBattleModalRenderer.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeOriginalBattleResultRenderer.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeOriginalStageIntroRenderer.swift",
+      "NativeCore/Sources/EW4NativeRenderer/NativeOriginalTalkRenderer.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeBattleDialogueQueueTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeOriginalBattleResultTests.swift",
+      "NativeCore/Tests/EW4NativeCoreTests/NativeOriginalFormGeometryTests.swift"
+    ]
+  },
+  "frozen_sensitive_changed": []
+}

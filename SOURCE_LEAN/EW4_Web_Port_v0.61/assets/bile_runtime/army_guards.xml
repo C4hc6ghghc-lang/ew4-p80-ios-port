@@ -1,0 +1,191 @@
+﻿<Texture name="army_guards.png" />
+<Images>
+    <Image name="27手5.png" x="1" y="1" w="8" h="69" refx="0" refy="0" />
+    <Image name="40Britain militia--gun1.png" x="10" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="40Britain militia--gun2.png" x="21" y="1" w="10" h="69" refx="0" refy="0" />
+    <Image name="49手5.png" x="32" y="1" w="8" h="69" refx="0" refy="0" />
+    <Image name="49衣服3.png" x="41" y="1" w="25" h="57" refx="0" refy="0" />
+    <Image name="49衣服2.png" x="1" y="71" w="30" h="52" refx="0" refy="0" />
+    <Image name="43衣服1.png" x="67" y="1" w="19" h="47" refx="0" refy="0" />
+    <Image name="48衣服1.png" x="87" y="1" w="19" h="47" refx="0" refy="0" />
+    <Image name="45衣服1.png" x="32" y="71" w="18" h="43" refx="0" refy="0" />
+    <Image name="46衣服1.png" x="51" y="59" w="17" h="43" refx="0" refy="0" />
+    <Image name="49元件 1.png" x="107" y="1" w="19" h="41" refx="0" refy="0" />
+    <Image name="41衣服1.png" x="69" y="49" w="17" h="38" refx="0" refy="0" />
+    <Image name="41衣服2.png" x="87" y="49" w="17" h="38" refx="0" refy="0" />
+    <Image name="47衣服1.png" x="107" y="43" w="17" h="38" refx="0" refy="0" />
+    <Image name="40衣服1.png" x="69" y="88" w="22" h="37" refx="0" refy="0" />
+    <Image name="40衣服2.png" x="92" y="88" w="22" h="37" refx="0" refy="0" />
+    <Image name="42drum3.png" x="1" y="124" w="33" h="35" refx="0" refy="0" />
+    <Image name="43drum3.png" x="35" y="115" w="33" h="35" refx="0" refy="0" />
+    <Image name="44drum3.png" x="1" y="160" w="33" h="35" refx="0" refy="0" />
+    <Image name="45drum3.png" x="35" y="151" w="33" h="35" refx="0" refy="0" />
+    <Image name="46drum3.png" x="69" y="126" w="33" h="35" refx="0" refy="0" />
+    <Image name="47drum3.png" x="1" y="196" w="33" h="35" refx="0" refy="0" />
+    <Image name="48drum3.png" x="35" y="187" w="33" h="35" refx="0" refy="0" />
+    <Image name="drum3.png" x="69" y="162" w="33" h="35" refx="0" refy="0" />
+    <Image name="44衣服1.png" x="103" y="126" w="17" h="33" refx="0" refy="0" />
+    <Image name="42衣服1.png" x="35" y="223" w="17" h="32" refx="0" refy="0" />
+    <Image name="43帽子1.png" x="69" y="198" w="14" h="32" refx="0" refy="0" />
+    <Image name="10剑1.png" x="103" y="160" w="21" h="31" refx="0" refy="0" />
+    <Image name="49drum3.png" x="84" y="198" w="34" h="31" refx="0" refy="0" />
+    <Image name="49剑1.png" x="127" y="1" w="22" h="31" refx="0" refy="0" />
+    <Image name="40Britain militia--Right calf1.png" x="150" y="1" w="9" h="28" refx="0" refy="0" />
+    <Image name="40左大腿1.png" x="160" y="1" w="15" h="28" refx="0" refy="0" />
+    <Image name="41左大腿1.png" x="127" y="33" w="17" h="28" refx="0" refy="0" />
+    <Image name="41左大腿2.png" x="145" y="33" w="15" h="28" refx="0" refy="0" />
+    <Image name="49右小腿1.png" x="176" y="1" w="8" h="28" refx="0" refy="0" />
+    <Image name="40Britain militia--left calf1.png" x="185" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="41右小腿1.png" x="194" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="41左小腿1.png" x="203" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="42右小腿1.png" x="212" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="42左小腿1.png" x="185" y="29" w="8" h="27" refx="0" refy="0" />
+    <Image name="43右小腿1.png" x="161" y="30" w="8" h="27" refx="0" refy="0" />
+    <Image name="43左小腿1.png" x="170" y="30" w="8" h="27" refx="0" refy="0" />
+    <Image name="45右小腿1.png" x="125" y="62" w="8" h="27" refx="0" refy="0" />
+    <Image name="45左小腿1.png" x="134" y="62" w="8" h="27" refx="0" refy="0" />
+    <Image name="46右小腿1.png" x="143" y="62" w="8" h="27" refx="0" refy="0" />
+    <Image name="46左小腿1.png" x="152" y="62" w="8" h="27" refx="0" refy="0" />
+    <Image name="48右小腿1.png" x="115" y="90" w="8" h="27" refx="0" refy="0" />
+    <Image name="48左小腿1.png" x="124" y="90" w="8" h="27" refx="0" refy="0" />
+    <Image name="49左小腿1.png" x="161" y="58" w="8" h="27" refx="0" refy="0" />
+    <Image name="49衣脚2.png" x="170" y="58" w="10" h="27" refx="0" refy="0" />
+    <Image name="40右大腿1.png" x="133" y="90" w="12" h="26" refx="0" refy="0" />
+    <Image name="41右大腿1.png" x="194" y="29" w="15" h="26" refx="0" refy="0" />
+    <Image name="44帽子1.png" x="221" y="1" w="12" h="26" refx="0" refy="0" />
+    <Image name="47帽子1.png" x="121" y="118" w="16" h="25" refx="0" refy="0" />
+    <Image name="41肩带2.png" x="234" y="1" w="10" h="24" refx="0" refy="0" />
+    <Image name="41裤衩1.png" x="210" y="29" w="20" h="24" refx="0" refy="0" />
+    <Image name="42右大腿1.png" x="146" y="90" w="11" h="24" refx="0" refy="0" />
+    <Image name="42左大腿1.png" x="181" y="57" w="11" h="24" refx="0" refy="0" />
+    <Image name="42左大腿2.png" x="193" y="57" w="11" h="24" refx="0" refy="0" />
+    <Image name="43右大腿1.png" x="158" y="90" w="11" h="24" refx="0" refy="0" />
+    <Image name="43左大腿1.png" x="245" y="1" w="10" h="24" refx="0" refy="0" />
+    <Image name="43左大腿2.png" x="170" y="86" w="10" h="24" refx="0" refy="0" />
+    <Image name="45右大腿1.png" x="205" y="56" w="11" h="24" refx="0" refy="0" />
+    <Image name="45左大腿1.png" x="181" y="82" w="10" h="24" refx="0" refy="0" />
+    <Image name="45左大腿2.png" x="146" y="115" w="10" h="24" refx="0" refy="0" />
+    <Image name="48右大腿1.png" x="231" y="28" w="11" h="24" refx="0" refy="0" />
+    <Image name="48左大腿1.png" x="243" y="26" w="10" h="24" refx="0" refy="0" />
+    <Image name="48左大腿2.png" x="231" y="53" w="10" h="24" refx="0" refy="0" />
+    <Image name="49右大腿1.png" x="157" y="115" w="14" h="24" refx="0" refy="0" />
+    <Image name="49左大腿1.png" x="172" y="111" w="14" h="24" refx="0" refy="0" />
+    <Image name="49左大腿2.png" x="138" y="140" w="14" h="24" refx="0" refy="0" />
+    <Image name="46帽子1.png" x="1" y="232" w="15" h="23" refx="0" refy="0" />
+    <Image name="49多一块2.png" x="192" y="82" w="21" h="23" refx="0" refy="0" />
+    <Image name="41帽子1.png" x="17" y="232" w="14" h="22" refx="0" refy="0" />
+    <Image name="41裤衩2.png" x="53" y="231" w="18" h="22" refx="0" refy="0" />
+    <Image name="drum1.png" x="214" y="81" w="15" h="22" refx="0" refy="0" />
+    <Image name="48帽子1.png" x="217" y="54" w="13" h="21" refx="0" refy="0" />
+    <Image name="45帽子1.png" x="192" y="106" w="13" h="20" refx="0" refy="0" />
+    <Image name="41肩带1.png" x="153" y="140" w="13" h="19" refx="0" refy="0" />
+    <Image name="shadow.png" x="84" y="230" w="36" h="19" refx="0" refy="0" />
+    <Image name="42左上袖子1.png" x="138" y="117" w="7" h="17" refx="0" refy="0" />
+    <Image name="43左上袖子1.png" x="125" y="144" w="7" h="17" refx="0" refy="0" />
+    <Image name="45left arm Upper1.png" x="125" y="162" w="8" h="17" refx="0" refy="0" />
+    <Image name="45左上袖子1.png" x="242" y="53" w="7" h="17" refx="0" refy="0" />
+    <Image name="46左上袖子1.png" x="167" y="140" w="7" h="17" refx="0" refy="0" />
+    <Image name="48left arm Upper1.png" x="125" y="180" w="8" h="17" refx="0" refy="0" />
+    <Image name="48左上袖子1.png" x="153" y="160" w="7" h="17" refx="0" refy="0" />
+    <Image name="49left arm Upper1.png" x="206" y="106" w="8" h="17" refx="0" refy="0" />
+    <Image name="49左上袖子1.png" x="230" y="78" w="7" h="17" refx="0" refy="0" />
+    <Image name="41右下袖子1.png" x="72" y="231" w="8" h="16" refx="0" refy="0" />
+    <Image name="41小包包.png" x="119" y="198" w="17" h="16" refx="0" refy="0" />
+    <Image name="41左上袖子1.png" x="134" y="165" w="7" h="17" refx="0" refy="0" />
+    <Image name="41左下袖子.png" x="142" y="165" w="10" h="16" refx="0" refy="0" />
+    <Image name="42left arm Upper1.png" x="238" y="78" w="8" h="16" refx="0" refy="0" />
+    <Image name="42左下袖子.png" x="175" y="136" w="11" h="16" refx="0" refy="0" />
+    <Image name="43left arm Upper1.png" x="187" y="127" w="8" h="16" refx="0" refy="0" />
+    <Image name="43右下袖子1.png" x="196" y="127" w="8" h="16" refx="0" refy="0" />
+    <Image name="43左下袖子.png" x="205" y="127" w="10" h="16" refx="0" refy="0" />
+    <Image name="45右下袖子1.png" x="187" y="144" w="9" h="16" refx="0" refy="0" />
+    <Image name="45左下袖子.png" x="175" y="153" w="10" h="16" refx="0" refy="0" />
+    <Image name="46left arm Upper1.png" x="247" y="71" w="8" h="16" refx="0" refy="0" />
+    <Image name="46右下袖子1.png" x="238" y="95" w="9" h="16" refx="0" refy="0" />
+    <Image name="46左下袖子.png" x="142" y="182" w="10" h="16" refx="0" refy="0" />
+    <Image name="47左下袖子.png" x="215" y="104" w="10" h="16" refx="0" refy="0" />
+    <Image name="48右下袖子1.png" x="226" y="104" w="8" h="16" refx="0" refy="0" />
+    <Image name="48左下袖子.png" x="161" y="160" w="10" h="16" refx="0" refy="0" />
+    <Image name="49右下袖子1.png" x="153" y="178" w="8" h="16" refx="0" refy="0" />
+    <Image name="49左下袖子.png" x="121" y="215" w="10" h="16" refx="0" refy="0" />
+    <Image name="left arm Upper1.png" x="162" y="177" w="8" h="16" refx="0" refy="0" />
+    <Image name="40裤衩1.png" x="153" y="195" w="12" h="15" refx="0" refy="0" />
+    <Image name="42右下袖子1.png" x="132" y="215" w="8" h="15" refx="0" refy="0" />
+    <Image name="49衣脚1.png" x="216" y="121" w="14" h="14" refx="0" refy="0" />
+    <Image name="10右手1.png" x="51" y="103" w="13" h="9" refx="0" refy="0" />
+    <Image name="40Britain militia--drum2.png" x="105" y="49" w="1" h="12" refx="0" refy="0" />
+    <Image name="42帽子1.png" x="235" y="112" w="14" h="12" refx="0" refy="0" />
+    <Image name="42裤衩1.png" x="171" y="177" w="15" h="13" refx="0" refy="0" />
+    <Image name="44裤衩1.png" x="197" y="144" w="15" h="12" refx="0" refy="0" />
+    <Image name="45裤衩1.png" x="186" y="161" w="15" h="12" refx="0" refy="0" />
+    <Image name="48裤衩1.png" x="121" y="232" w="15" h="12" refx="0" refy="0" />
+    <Image name="40Britain militia--Right calf2.png" x="216" y="136" w="38" h="11" refx="0" refy="0" />
+    <Image name="40斧头1.png" x="141" y="199" w="10" h="20" refx="0" refy="0" />
+    <Image name="40左上手臂1.png" x="152" y="211" w="7" h="17" refx="0" refy="0" />
+    <Image name="40右上袖子1.png" x="141" y="220" w="8" h="16" refx="0" refy="0" />
+    <Image name="40多一块.png" x="202" y="157" w="14" h="16" refx="0" refy="0" />
+    <Image name="40左下袖子.png" x="171" y="191" w="10" h="16" refx="0" refy="0" />
+    <Image name="40右下袖子1.png" x="187" y="174" w="9" h="15" refx="0" refy="0" />
+    <Image name="40帽子1.png" x="197" y="174" w="18" h="14" refx="0" refy="0" />
+    <Image name="49衣脚3.png" x="134" y="183" w="6" h="14" refx="0" refy="0" />
+    <Image name="49衣脚4.png" x="248" y="88" w="7" h="13" refx="0" refy="0" />
+    <Image name="41包包2.png" x="216" y="174" w="8" h="12" refx="0" refy="0" />
+    <Image name="49face1.png" x="41" y="59" w="9" h="9" refx="0" refy="0" />
+    <Image name="40Britain militia--right foot1.png" x="231" y="125" w="11" h="8" refx="0" refy="0" />
+    <Image name="41左小腿2.png" x="197" y="189" w="38" h="11" refx="0" refy="0" />
+    <Image name="42左小腿2.png" x="166" y="208" w="38" h="11" refx="0" refy="0" />
+    <Image name="43左小腿2.png" x="160" y="220" w="38" h="11" refx="0" refy="0" />
+    <Image name="44右小腿1.png" x="236" y="148" w="8" h="27" refx="0" refy="0" />
+    <Image name="44左小腿1.png" x="245" y="148" w="8" h="27" refx="0" refy="0" />
+    <Image name="44左大腿2.png" x="199" y="220" w="10" h="25" refx="0" refy="0" />
+    <Image name="44右大腿1.png" x="236" y="176" w="11" h="24" refx="0" refy="0" />
+    <Image name="44左大腿1.png" x="210" y="201" w="10" h="24" refx="0" refy="0" />
+    <Image name="44left arm Upper1.png" x="187" y="190" w="8" h="17" refx="0" refy="0" />
+    <Image name="44左上袖子1.png" x="137" y="237" w="7" h="17" refx="0" refy="0" />
+    <Image name="44右下袖子1.png" x="145" y="237" w="8" h="16" refx="0" refy="0" />
+    <Image name="44左下袖子.png" x="217" y="148" w="10" h="16" refx="0" refy="0" />
+    <Image name="43裤衩1.png" x="154" y="232" w="15" h="12" refx="0" refy="0" />
+    <Image name="44左小腿2.png" x="210" y="226" w="38" h="11" refx="0" refy="0" />
+    <Image name="45左小腿2.png" x="210" y="238" w="38" h="11" refx="0" refy="0" />
+    <Image name="46左小腿2.png" x="256" y="1" w="38" h="11" refx="0" refy="0" />
+    <Image name="47left arm Upper1.png" x="256" y="13" w="8" h="17" refx="0" refy="0" />
+    <Image name="47左上袖子1.png" x="265" y="13" w="7" h="17" refx="0" refy="0" />
+    <Image name="47右下袖子1.png" x="273" y="13" w="8" h="16" refx="0" refy="0" />
+    <Image name="40脸1.png" x="254" y="31" w="9" h="9" refx="0" refy="0" />
+    <Image name="42right foot1.png" x="264" y="31" w="9" h="8" refx="0" refy="0" />
+    <Image name="44face1.png" x="254" y="41" w="9" h="9" refx="0" refy="0" />
+    <Image name="40肩膀1.png" x="282" y="13" w="11" h="8" refx="0" refy="0" />
+    <Image name="49right foot1.png" x="295" y="1" w="11" h="8" refx="0" refy="0" />
+    <Image name="10右手2.png" x="179" y="30" w="4" h="7" refx="0" refy="0" />
+    <Image name="10左手1.png" x="53" y="223" w="7" h="6" refx="0" refy="0" />
+    <Image name="10手6.png" x="250" y="51" w="8" h="7" refx="0" refy="0" />
+    <Image name="10左手2.png" x="61" y="223" w="6" h="6" refx="0" refy="0" />
+    <Image name="10左手3.png" x="295" y="10" w="7" h="6" refx="0" refy="0" />
+    <Image name="40Britain militia--right hand1.png" x="282" y="22" w="7" h="6" refx="0" refy="0" />
+    <Image name="40Britain militia--right hand2.png" x="264" y="40" w="7" h="6" refx="0" refy="0" />
+    <Image name="40Britain militia--right hand3.png" x="274" y="30" w="6" h="7" refx="0" refy="0" />
+    <Image name="40手6.png" x="307" y="1" w="8" h="7" refx="0" refy="0" />
+    <Image name="10右手3.png" x="105" y="82" w="9" h="5" refx="0" refy="0" />
+    <Image name="40Britain militia--left hand2.png" x="115" y="82" w="9" h="5" refx="0" refy="0" />
+    <Image name="40Britain militia--left foot1.png" x="281" y="30" w="11" h="6" refx="0" refy="0" />
+    <Image name="42left foot1.png" x="264" y="47" w="12" h="6" refx="0" refy="0" />
+    <Image name="49left foot1.png" x="250" y="59" w="12" h="6" refx="0" refy="0" />
+    <Image name="10左手4.png" x="274" y="38" w="16" h="6" refx="0" refy="0" />
+    <Image name="49元件 2.png" x="303" y="10" w="6" h="10" refx="0" refy="0" />
+    <Image name="49帽子1.png" x="316" y="1" w="12" h="9" refx="0" refy="0" />
+    <Image name="49右手1.png" x="329" y="1" w="13" h="9" refx="0" refy="0" />
+    <Image name="49裤衩1.png" x="310" y="11" w="15" h="12" refx="0" refy="0" />
+    <Image name="49左小腿2.png" x="291" y="37" w="38" h="11" refx="0" refy="0" />
+    <Image name="drum2.png" x="105" y="62" w="1" h="12" refx="0" refy="0" />
+    <Image name="face1.png" x="263" y="54" w="9" h="9" refx="0" refy="0" />
+    <Image name="right foot1.png" x="273" y="54" w="9" h="8" refx="0" refy="0" />
+    <Image name="49右手2.png" x="179" y="38" w="4" h="7" refx="0" refy="0" />
+    <Image name="49左手1.png" x="290" y="22" w="7" h="6" refx="0" refy="0" />
+    <Image name="49手6.png" x="298" y="21" w="8" h="7" refx="0" refy="0" />
+    <Image name="弹弹.png" x="293" y="29" w="8" h="7" refx="0" refy="0" />
+    <Image name="49左手2.png" x="302" y="29" w="6" h="6" refx="0" refy="0" />
+    <Image name="49左手3.png" x="263" y="64" w="7" h="6" refx="0" refy="0" />
+    <Image name="49右手3.png" x="103" y="192" w="9" h="5" refx="0" refy="0" />
+    <Image name="left foot1.png" x="277" y="45" w="12" h="6" refx="0" refy="0" />
+    <Image name="49左手4.png" x="256" y="71" w="16" h="6" refx="0" refy="0" />
+</Images>

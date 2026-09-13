@@ -1,0 +1,166 @@
+Building for debugging...
+[0/18] Write sources
+[4/18] Write swift-version--1BA0962812E73E12.txt
+[6/39] Emitting module EW4NativeCore
+[7/43] Compiling EW4NativeCore NativeResultCore.swift
+[8/43] Compiling EW4NativeCore NativeUnitStatusCore.swift
+[9/43] Compiling EW4NativeCore PlayerUnitRules.swift
+[10/43] Compiling EW4NativeCore ResourceModels.swift
+[11/43] Compiling EW4NativeCore NativeAnimationSequenceCore.swift
+[12/43] Compiling EW4NativeCore NativeAnimationTiming.swift
+[13/43] Compiling EW4NativeCore NativeBattleHUDCore.swift
+[14/43] Compiling EW4NativeCore NativeBattlePresentation.swift
+[15/43] Compiling EW4NativeCore NativeBattleSaveCore.swift
+[16/43] Compiling EW4NativeCore CountryTurnCore.swift
+[17/43] Compiling EW4NativeCore DefMotion.swift
+[18/43] Compiling EW4NativeCore LogicalGeometry.swift
+[19/43] Compiling EW4NativeCore NativeAIPlannerCore.swift
+[20/43] Compiling EW4NativeCore NativeAIRoundSimulationCore.swift
+[21/43] Compiling EW4NativeCore NativeCamera.swift
+[22/43] Compiling EW4NativeCore NativeConquestExtinctionCore.swift
+[23/43] Compiling EW4NativeCore NativeMovementCore.swift
+[24/43] Compiling EW4NativeCore NativePresentationLODCore.swift
+[25/43] Compiling EW4NativeCore NativeResourceAudit.swift
+[26/43] Compiling EW4NativeCore ArmyStatsCore.swift
+[27/43] Compiling EW4NativeCore BattleGameplayCore.swift
+[28/43] Compiling EW4NativeCore BattleSession.swift
+[29/43] Compiling EW4NativeCore CombatCore.swift
+[30/43] Compiling EW4NativeCore CompactBILE.swift
+[31/44] Wrapping AST for EW4NativeCore for debugging
+[33/64] Compiling EW4NativeRenderer NativeBattleScene.swift
+[34/64] Emitting module EW4NativeRenderer
+[35/64] Compiling EW4NativeRenderer BILEFrameRasterizer.swift
+[36/64] Emitting module EW4NativeAudit
+[37/64] Compiling EW4NativeAudit main.swift
+[39/65] Compiling EW4NativeRenderer NativeResourceStore.swift
+[39/66] Wrapping AST for EW4NativeAudit for debugging
+[40/66] Write Objects.LinkFileList
+[42/66] Linking EW4NativeAudit
+[44/66] Compiling EW4NativeCoreTests BILEMathTests.swift
+[45/66] Compiling EW4NativeCoreTests BattleGameplayTests.swift
+[46/66] Compiling EW4NativeCoreTests CombatTests.swift
+[47/66] Compiling EW4NativeCoreTests CountryTurnTests.swift
+[48/69] Compiling EW4NativeCoreTests NativePresentationLODTests.swift
+[49/69] Compiling EW4NativeCoreTests NativeResultTests.swift
+[50/69] Compiling EW4NativeCoreTests NativeUnitStatusTests.swift
+[51/69] Compiling EW4NativeCoreTests NativeBattleHUDTests.swift
+[52/69] Compiling EW4NativeCoreTests NativeBattleSaveTests.swift
+[53/69] Compiling EW4NativeCoreTests NativeConquestExtinctionTests.swift
+[54/69] Emitting module EW4NativeCoreTests
+[55/69] Compiling EW4NativeCoreTests GeometryTests.swift
+[56/69] Compiling EW4NativeCoreTests NativeAIPlannerTests.swift
+[57/69] Compiling EW4NativeCoreTests NativeAnimationSequenceTests.swift
+[58/69] Compiling EW4NativeCoreTests PresentationTests.swift
+[59/69] Compiling EW4NativeCoreTests TestResourcePaths.swift
+[60/69] Compiling EW4NativeCoreTests VisualResolverTests.swift
+[61/70] /mnt/data/p41_work/EW4_R14_39_P41_NATIVE_RESULT_CONQUEST_SAVE_WIP_PORT_ONLY_2026-09-10/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[62/70] Write sources
+[63/70] Wrapping AST for EW4NativeCoreTests for debugging
+[65/73] Emitting module EW4NativeCorePackageDiscoveredTests
+[66/73] Compiling EW4NativeCorePackageDiscoveredTests all-discovered-tests.swift
+[67/73] Compiling EW4NativeCorePackageDiscoveredTests EW4NativeCoreTests.swift
+[68/74] /mnt/data/p41_work/EW4_R14_39_P41_NATIVE_RESULT_CONQUEST_SAVE_WIP_PORT_ONLY_2026-09-10/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageTests.derived/runner.swift
+[69/74] Write sources
+[70/74] Wrapping AST for EW4NativeCorePackageDiscoveredTests for debugging
+[72/76] Compiling EW4NativeCorePackageTests runner.swift
+[73/76] Emitting module EW4NativeCorePackageTests
+[74/77] Wrapping AST for EW4NativeCorePackageTests for debugging
+[75/77] Write Objects.LinkFileList
+[76/77] Linking EW4NativeCorePackageTests.xctest
+Build complete! (12.81s)
+Test Suite 'All tests' started at 2026-09-10 11:53:38.902
+Test Suite 'debug.xctest' started at 2026-09-10 11:53:38.904
+Test Suite 'debug.xctest' passed at 2026-09-10 11:53:38.904
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+Test Suite 'All tests' passed at 2026-09-10 11:53:38.904
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Test conquestPortOrLandFacilityOrArtilleryEachPreservesNation() started.
+◇ Test battleSaveSchema6EnvelopeMatchesP39Contract() started.
+◇ Test allCampaignTurnLimitsProduceValidNativeScores() started.
+◇ Test machineGunSpeedShortensRealDuration() started.
+◇ Test countryTurnCoreFixtureParity() started.
+◇ Test battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields() started.
+◇ Test playerOverridesParity() started.
+◇ Test battleSaveRoundTripClampsCameraAndPreservesExtendedState() started.
+◇ Test aiPlannerPrefersLegalFiringCellWhenAvailable() started.
+◇ Test nativeGameplayAttackAndCounter() started.
+◇ Test nativeGameplayTurnBoundaryResetsPlayerActions() started.
+◇ Test fullNativeAIRoundReturnsControlToPlayerDeterministically() started.
+◇ Test nativeHexCentersAndRoundTrip() started.
+◇ Test nativeMedalDeltaAndDescriptionMatchP39() started.
+◇ Test nativeCameraSemantics() started.
+◇ Test damageBoundsParity() started.
+◇ Test nativeFiveGradeResultFormulaMatchesP39() started.
+◇ Test aiPlannerIsDeterministicForSameState() started.
+◇ Test affineMatchesJSMulOrder() started.
+◇ Test nativeGameplayPlayerBuffMoveAndUndo() started.
+◇ Test all877NativeUnitsBuildAttackChainsInBothHorizontalDirections() started.
+◇ Test aiExecutionMovesAndAttacksUnderNativePhaseRules() started.
+◇ Test terminalReadyStartsAtFrameZeroAfterActiveChain() started.
+◇ Test nativeAttack0ChainMatchesRecoveredStateMachine() started.
+◇ Test tacticsAndSpecialsParity() started.
+◇ Test aiPlannerTargetsOnlyHostiles() started.
+◇ Test conquestNavyAndFortDoNotPreserveNationAfterLandAndFacilitiesAreGone() started.
+◇ Test gunsAgainstFortUseAttack1AndSkipTail() started.
+◇ Test campaignContinueRewardsAndMedalProcMatchP39() started.
+◇ Test attackIntervalAndFormationParity() started.
+◇ Test movementSearchParity() started.
+◇ Test logicalSpaceFrozen() started.
+◇ Test nativeGameplayHostileFacilityCaptureDisablesUndo() started.
+◇ Test nativeBattleCornerHUDGeometryFrozen() started.
+◇ Test buildingKeyMatchesRecoveredRules() started.
+◇ Test nativeUnitStatusRecoveredMath() started.
+◇ Test directionalMotionFallsBackOnlyWhenNeeded() started.
+◇ Test nativePresentationLODFrozen() started.
+◇ Test nativeGameplayCavalryAnnihilationGrantsExtraAction() started.
+◇ Test compactOriginMatchesRecoveredContract() started.
+◇ Test defMotionSmallFixture() started.
+◇ Test visualResolverNationalThenGeneric() started.
+◇ Test conquestPlayerCanBeDefeatedWithOnlyNavyRemainingAndNeutralIsExcluded() started.
+✔ Test battleSaveSchema6EnvelopeMatchesP39Contract() passed after 0.561 seconds.
+✔ Test battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields() passed after 0.561 seconds.
+✔ Test playerOverridesParity() passed after 0.562 seconds.
+✔ Test countryTurnCoreFixtureParity() passed after 0.562 seconds.
+✔ Test battleSaveRoundTripClampsCameraAndPreservesExtendedState() passed after 0.562 seconds.
+✔ Test nativeGameplayAttackAndCounter() passed after 0.562 seconds.
+✔ Test nativeGameplayTurnBoundaryResetsPlayerActions() passed after 0.562 seconds.
+✔ Test conquestPortOrLandFacilityOrArtilleryEachPreservesNation() passed after 0.564 seconds.
+✔ Test nativeHexCentersAndRoundTrip() passed after 0.564 seconds.
+✔ Test nativeMedalDeltaAndDescriptionMatchP39() passed after 0.564 seconds.
+✔ Test damageBoundsParity() passed after 0.564 seconds.
+✔ Test machineGunSpeedShortensRealDuration() passed after 0.564 seconds.
+✔ Test nativeCameraSemantics() passed after 0.564 seconds.
+✔ Test affineMatchesJSMulOrder() passed after 0.564 seconds.
+✔ Test nativeFiveGradeResultFormulaMatchesP39() passed after 0.564 seconds.
+✔ Test nativeGameplayPlayerBuffMoveAndUndo() passed after 0.564 seconds.
+✔ Test allCampaignTurnLimitsProduceValidNativeScores() passed after 0.564 seconds.
+✔ Test all877NativeUnitsBuildAttackChainsInBothHorizontalDirections() passed after 0.564 seconds.
+✔ Test aiPlannerIsDeterministicForSameState() passed after 0.564 seconds.
+✔ Test terminalReadyStartsAtFrameZeroAfterActiveChain() passed after 0.564 seconds.
+✔ Test tacticsAndSpecialsParity() passed after 0.564 seconds.
+✔ Test aiPlannerPrefersLegalFiringCellWhenAvailable() passed after 0.564 seconds.
+✔ Test conquestNavyAndFortDoNotPreserveNationAfterLandAndFacilitiesAreGone() passed after 0.564 seconds.
+✔ Test nativeAttack0ChainMatchesRecoveredStateMachine() passed after 0.564 seconds.
+✔ Test campaignContinueRewardsAndMedalProcMatchP39() passed after 0.564 seconds.
+✔ Test attackIntervalAndFormationParity() passed after 0.564 seconds.
+✔ Test movementSearchParity() passed after 0.564 seconds.
+✔ Test logicalSpaceFrozen() passed after 0.564 seconds.
+✔ Test nativeGameplayHostileFacilityCaptureDisablesUndo() passed after 0.564 seconds.
+✔ Test nativeBattleCornerHUDGeometryFrozen() passed after 0.564 seconds.
+✔ Test nativeUnitStatusRecoveredMath() passed after 0.564 seconds.
+✔ Test buildingKeyMatchesRecoveredRules() passed after 0.564 seconds.
+✔ Test gunsAgainstFortUseAttack1AndSkipTail() passed after 0.564 seconds.
+✔ Test nativePresentationLODFrozen() passed after 0.557 seconds.
+✔ Test directionalMotionFallsBackOnlyWhenNeeded() passed after 0.564 seconds.
+✔ Test compactOriginMatchesRecoveredContract() passed after 0.557 seconds.
+✔ Test nativeGameplayCavalryAnnihilationGrantsExtraAction() passed after 0.557 seconds.
+✔ Test visualResolverNationalThenGeneric() passed after 0.557 seconds.
+✔ Test defMotionSmallFixture() passed after 0.557 seconds.
+✔ Test conquestPlayerCanBeDefeatedWithOnlyNavyRemainingAndNeutralIsExcluded() passed after 0.520 seconds.
+✔ Test aiExecutionMovesAndAttacksUnderNativePhaseRules() passed after 0.594 seconds.
+✔ Test aiPlannerTargetsOnlyHostiles() passed after 0.731 seconds.
+✔ Test fullNativeAIRoundReturnsControlToPlayerDeterministically() passed after 1.052 seconds.
+✔ Test run with 43 tests in 0 suites passed after 1.053 seconds.

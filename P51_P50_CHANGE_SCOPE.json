@@ -1,0 +1,17 @@
+{
+  "parent": "P50 Native Campaign + Conquest Original Shell",
+  "checkpoint": "P51 WIP HQ General + Princess",
+  "existing_source_files_changed": [
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeResourceStore.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift"
+  ],
+  "new_source_files": [
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeHeadquartersCore.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalHeadquartersScene.swift",
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Tests/EW4NativeCoreTests/NativeHeadquartersCoreTests.swift"
+  ],
+  "source_lean_changed": 0,
+  "native_resources_changed": 0,
+  "battle_visual_sensitive_changed": 0,
+  "missing_parent_files": 0
+}

@@ -1,0 +1,11 @@
+'use strict';
+const assert=require('assert'),fs=require('fs');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8'),css=fs.readFileSync('r14_native_forms.css','utf8');
+assert.match(app,/gameSpeed:2,showGrids:false/,'global_data defaults must be GameSpeed=2 / ShowGrids=0');
+assert.match(app,/function currentGameSpeed\(\)/);assert.match(app,/gameSpeed=currentGameSpeed\(\)/,'camera motor must consume current GameSpeed');
+assert.match(app,/if\(showNativeGrid\(\)\)\{ctx\.strokeStyle=/,'ShowGrids must gate native hex stroke');
+assert.match(app,/function commitNativeOptions\(\)/);assert.match(app,/function closeNativeOptions\(cancel=true\)/);
+for(let i=1;i<=5;i++)assert.ok(html.includes(`data-speed="${i}"`),`missing speed brick ${i}`);
+assert.ok(html.includes('id="option-grid-toggle"'));assert.ok(html.includes('id="option-ok"'));assert.ok(html.includes('id="option-close"'));
+assert.match(css,/grid_box_tick\.png/);assert.match(css,/#options\.battle-overlay/);
+console.log('native option controller PASS');

@@ -1,0 +1,54 @@
+'use strict';
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;root.EW4NativeCampaign=api})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  function canonicalFile(battle){return String(battle?.meta?.paired_from||battle?.file||'')}
+  function originalHide(battle){return +battle?.meta?.hide===1?1:0}
+  function stageNumber(file){const m=String(file||'').match(/^campaign([1-6])_(\d+)/);return m?{zone:+m[1],stage:+m[2]}:null}
+  function buildOpenStates(rows,progressFn){
+    const list=Array.isArray(rows)?rows:[],states=new Array(list.length).fill(0);if(list.length)states[0]=1;
+    const done=i=>Math.max(0,+progressFn?.(canonicalFile(list[i]))||0)>0;
+    for(let i=0;i<list.length;i++){
+      if(!done(i))continue;let j=i+1;
+      while(j<list.length&&originalHide(list[j])){states[j]=Math.max(states[j],1);j++}
+      if(j<list.length)states[j]=Math.max(states[j],1);
+    }
+    return states;
+  }
+  function effectiveHide(battle,secretUnlocked){return originalHide(battle)&&!secretUnlocked?.(canonicalFile(battle))?1:0}
+  function stageSelectable(rows,index,progressFn,secretUnlocked){
+    const list=Array.isArray(rows)?rows:[];if(index<0||index>=list.length)return false;
+    const states=buildOpenStates(list,progressFn);return states[index]>effectiveHide(list[index],secretUnlocked);
+  }
+  function selectableCountryCodes(battle){return String(battle?.meta?.countries||'').split(',').map(s=>s.trim()).filter(Boolean)}
+  function resolveVariant(baseBattle,countryCode,battles){
+    if(!baseBattle)return null;const codes=selectableCountryCodes(baseBattle),code=String(countryCode||'').trim();
+    if(codes.length<2||!code)return{battle:baseBattle,playerCode:baseBattle?.countries?.[baseBattle.player_owner_default??0]?.code||code,variant:false};
+    if(code===codes[0])return{battle:baseBattle,playerCode:code,variant:false};
+    if(code===codes[1]&&baseBattle?.meta?.file2){const alt=(battles||[]).find(b=>b?.file===baseBattle.meta.file2);if(alt)return{battle:alt,playerCode:code,variant:true}}
+    return null;
+  }
+  function unitTargetType(u){const raw=u?.raw;return Array.isArray(raw)&&raw.length>27?Math.max(0,Math.trunc(+raw[27]||0)):0}
+  function objectTargetType(o){const raw=o?.raw;return Array.isArray(raw)&&raw.length>14?Math.max(0,Math.trunc(+raw[14]||0)):0}
+  function targetEntities(state,type){
+    const t=Math.trunc(+type||0),out=[];
+    for(const u of state?.units||[])if(!u?.dead&&unitTargetType(u)===t)out.push({kind:'unit',entity:u,type:t,owner:+u.owner,q:+u.q,r:+u.r});
+    for(const o of state?.objects||[])if(objectTargetType(o)===t)out.push({kind:'object',entity:o,type:t,owner:+o.owner,q:+o.q,r:+o.r});
+    return out;
+  }
+  // Native campaign result loops all Country records with country+0x54 != 0; 0x805b0 proves
+  // the sole +0x54==0 record is the currently selected player country. Captured constructions
+  // migrate to the player country, so their target count disappears naturally.
+  function remainingNonPlayerTargets(state,type){return targetEntities(state,type).filter(x=>+x.owner!==+state?.playerOwner)}
+  function yellowSecretCleared(state){return remainingNonPlayerTargets(state,2).length===0}
+  function followingHidden(rows,currentFile){
+    const list=Array.isArray(rows)?rows:[],canon=String(currentFile||''),idx=list.findIndex(b=>canonicalFile(b)===canon||b?.file===canon);if(idx<0)return[];
+    const out=[];for(let i=idx+1;i<list.length&&originalHide(list[i]);i++)out.push(list[i]);return out;
+  }
+  function hiddenUnlockFiles(rows,currentBattle,playerCode,yellowCleared){
+    if(!yellowCleared)return[];const current=canonicalFile(currentBattle),followers=followingHidden(rows,current);if(!followers.length)return[];
+    const branch=selectableCountryCodes(currentBattle);if(branch.length){const code=String(playerCode||'');const matched=followers.filter(b=>selectableCountryCodes(b).includes(code));return matched.length?matched.map(canonicalFile):[]}
+    // Native simple path clears hide[currentStage+1] only; extra consecutive hidden entries are branch cases.
+    return[canonicalFile(followers[0])];
+  }
+  function hasTargets(state,type){return targetEntities(state,type).length>0}
+  return{canonicalFile,originalHide,stageNumber,buildOpenStates,effectiveHide,stageSelectable,selectableCountryCodes,resolveVariant,unitTargetType,objectTargetType,targetEntities,remainingNonPlayerTargets,yellowSecretCleared,followingHidden,hiddenUnlockFiles,hasTargets};
+});

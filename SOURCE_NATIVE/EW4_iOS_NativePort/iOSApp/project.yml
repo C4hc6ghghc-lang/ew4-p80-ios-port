@@ -1,0 +1,39 @@
+name: EW4NativePort
+options:
+  bundleIdPrefix: local.ew4
+  deploymentTarget:
+    iOS: "15.0"
+packages:
+  EW4NativeCore:
+    path: ../NativeCore
+targets:
+  EW4NativePort:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      # CRITICAL: keep the whole Resources directory as a folder reference.
+      # There are hundreds of duplicate basenames in different subdirectories;
+      # flattening resources would silently overwrite runtime assets.
+      - path: ../Resources
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: EW4NativeCore
+        product: EW4NativeCore
+      - package: EW4NativeCore
+        product: EW4NativeRenderer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.ew4.nativeport
+        PRODUCT_NAME: EW4NativePort
+        SWIFT_VERSION: 6.0
+        IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UIStatusBarHidden: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Automatic

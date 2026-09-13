@@ -1,0 +1,28 @@
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--1BA0962812E73E12.txt
+[3/7] Emitting module EW4NativeCoreTests
+[4/7] Compiling EW4NativeCoreTests P75BattleDeployGeneralPrincessTests.swift
+[5/8] /mnt/data/p75_work/EW4_R14_39_P74_NATIVE_RECRUITGENERAL_FORM_AUDITED_PORT_ONLY_2026-09-12/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[6/9] Write sources
+[8/12] Compiling EW4NativeCorePackageDiscoveredTests all-discovered-tests.swift
+[9/12] Emitting module EW4NativeCorePackageDiscoveredTests
+[10/12] Compiling EW4NativeCorePackageDiscoveredTests EW4NativeCoreTests.swift
+[11/13] Write Objects.LinkFileList
+[12/13] Linking EW4NativeCorePackageTests.xctest
+Build complete! (5.15s)
+Test Suite 'Selected tests' started at 2026-09-12 07:34:14.447
+Test Suite 'Selected tests' passed at 2026-09-12 07:34:14.449
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Test p75OriginalDeployGeneralAndPrincessGeometryIsFrozen() started.
+◇ Test p75BattleDeploymentKeepsPrincessesEligible() started.
+◇ Test p75RendererConsumesOriginalDeploymentFlow() started.
+◇ Test p75AcademyReturnsToSameBattleScene() started.
+✔ Test p75BattleDeploymentKeepsPrincessesEligible() passed after 0.001 seconds.
+✔ Test p75AcademyReturnsToSameBattleScene() passed after 0.001 seconds.
+✔ Test p75OriginalDeployGeneralAndPrincessGeometryIsFrozen() passed after 0.007 seconds.
+✔ Test p75RendererConsumesOriginalDeploymentFlow() passed after 0.009 seconds.
+✔ Test run with 4 tests in 0 suites passed after 0.009 seconds.

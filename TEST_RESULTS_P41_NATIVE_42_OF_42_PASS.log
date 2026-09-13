@@ -1,0 +1,97 @@
+Building for debugging...
+[0/3] Write swift-version--1BA0962812E73E12.txt
+Build complete! (0.09s)
+Test Suite 'All tests' started at 2026-09-10 11:51:21.796
+Test Suite 'debug.xctest' started at 2026-09-10 11:51:21.798
+Test Suite 'debug.xctest' passed at 2026-09-10 11:51:21.798
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+Test Suite 'All tests' passed at 2026-09-10 11:51:21.798
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Test nativePresentationLODFrozen() started.
+◇ Test battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields() started.
+◇ Test nativeGameplayHostileFacilityCaptureDisablesUndo() started.
+◇ Test nativeMedalDeltaAndDescriptionMatchP39() started.
+◇ Test aiPlannerTargetsOnlyHostiles() started.
+◇ Test nativeFiveGradeResultFormulaMatchesP39() started.
+◇ Test visualResolverNationalThenGeneric() started.
+◇ Test countryTurnCoreFixtureParity() started.
+◇ Test defMotionSmallFixture() started.
+◇ Test fullNativeAIRoundReturnsControlToPlayerDeterministically() started.
+◇ Test battleSaveSchema6EnvelopeMatchesP39Contract() started.
+◇ Test terminalReadyStartsAtFrameZeroAfterActiveChain() started.
+◇ Test machineGunSpeedShortensRealDuration() started.
+◇ Test allCampaignTurnLimitsProduceValidNativeScores() started.
+◇ Test nativeUnitStatusRecoveredMath() started.
+◇ Test conquestPlayerExtinctionBeatsSurvivingNavyOrFort() started.
+◇ Test directionalMotionFallsBackOnlyWhenNeeded() started.
+◇ Test tacticsAndSpecialsParity() started.
+◇ Test nativeGameplayTurnBoundaryResetsPlayerActions() started.
+◇ Test buildingKeyMatchesRecoveredRules() started.
+◇ Test aiExecutionMovesAndAttacksUnderNativePhaseRules() started.
+◇ Test nativeCameraSemantics() started.
+◇ Test campaignContinueRewardsAndMedalProcMatchP39() started.
+◇ Test nativeHexCentersAndRoundTrip() started.
+◇ Test affineMatchesJSMulOrder() started.
+◇ Test nativeGameplayPlayerBuffMoveAndUndo() started.
+◇ Test battleSaveRoundTripClampsCameraAndPreservesExtendedState() started.
+◇ Test attackIntervalAndFormationParity() started.
+◇ Test all877NativeUnitsBuildAttackChainsInBothHorizontalDirections() started.
+◇ Test nativeGameplayCavalryAnnihilationGrantsExtraAction() started.
+◇ Test playerOverridesParity() started.
+◇ Test nativeGameplayAttackAndCounter() started.
+◇ Test aiPlannerPrefersLegalFiringCellWhenAvailable() started.
+◇ Test damageBoundsParity() started.
+◇ Test movementSearchParity() started.
+◇ Test aiPlannerIsDeterministicForSameState() started.
+◇ Test gunsAgainstFortUseAttack1AndSkipTail() started.
+◇ Test logicalSpaceFrozen() started.
+◇ Test nativeBattleCornerHUDGeometryFrozen() started.
+◇ Test compactOriginMatchesRecoveredContract() started.
+◇ Test conquestCountryStatusUsesOnlyLandArmyAndCountedFacilities() started.
+◇ Test nativeAttack0ChainMatchesRecoveredStateMachine() started.
+✔ Test nativePresentationLODFrozen() passed after 0.591 seconds.
+✔ Test nativeMedalDeltaAndDescriptionMatchP39() passed after 0.630 seconds.
+✔ Test battleSaveAcceptsLegacySchema1Through6AndDefaultsNewFields() passed after 0.630 seconds.
+✔ Test countryTurnCoreFixtureParity() passed after 0.630 seconds.
+✔ Test visualResolverNationalThenGeneric() passed after 0.630 seconds.
+✔ Test nativeGameplayHostileFacilityCaptureDisablesUndo() passed after 0.630 seconds.
+✔ Test battleSaveSchema6EnvelopeMatchesP39Contract() passed after 0.630 seconds.
+✔ Test defMotionSmallFixture() passed after 0.630 seconds.
+✔ Test terminalReadyStartsAtFrameZeroAfterActiveChain() passed after 0.630 seconds.
+✔ Test machineGunSpeedShortensRealDuration() passed after 0.630 seconds.
+✔ Test nativeUnitStatusRecoveredMath() passed after 0.630 seconds.
+✔ Test allCampaignTurnLimitsProduceValidNativeScores() passed after 0.630 seconds.
+✔ Test nativeFiveGradeResultFormulaMatchesP39() passed after 0.630 seconds.
+✔ Test tacticsAndSpecialsParity() passed after 0.630 seconds.
+✔ Test nativeGameplayTurnBoundaryResetsPlayerActions() passed after 0.630 seconds.
+✔ Test buildingKeyMatchesRecoveredRules() passed after 0.630 seconds.
+✔ Test aiPlannerTargetsOnlyHostiles() passed after 0.630 seconds.
+✔ Test nativeCameraSemantics() passed after 0.630 seconds.
+✔ Test campaignContinueRewardsAndMedalProcMatchP39() passed after 0.630 seconds.
+✔ Test nativeHexCentersAndRoundTrip() passed after 0.630 seconds.
+✔ Test affineMatchesJSMulOrder() passed after 0.630 seconds.
+✔ Test nativeGameplayPlayerBuffMoveAndUndo() passed after 0.630 seconds.
+✔ Test battleSaveRoundTripClampsCameraAndPreservesExtendedState() passed after 0.630 seconds.
+✔ Test directionalMotionFallsBackOnlyWhenNeeded() passed after 0.630 seconds.
+✔ Test attackIntervalAndFormationParity() passed after 0.630 seconds.
+✔ Test nativeGameplayCavalryAnnihilationGrantsExtraAction() passed after 0.630 seconds.
+✔ Test playerOverridesParity() passed after 0.630 seconds.
+✔ Test nativeGameplayAttackAndCounter() passed after 0.630 seconds.
+✔ Test all877NativeUnitsBuildAttackChainsInBothHorizontalDirections() passed after 0.630 seconds.
+✔ Test damageBoundsParity() passed after 0.630 seconds.
+✔ Test movementSearchParity() passed after 0.630 seconds.
+✔ Test conquestPlayerExtinctionBeatsSurvivingNavyOrFort() passed after 0.630 seconds.
+✔ Test gunsAgainstFortUseAttack1AndSkipTail() passed after 0.630 seconds.
+✔ Test logicalSpaceFrozen() passed after 0.630 seconds.
+✔ Test nativeBattleCornerHUDGeometryFrozen() passed after 0.630 seconds.
+✔ Test compactOriginMatchesRecoveredContract() passed after 0.630 seconds.
+✔ Test aiExecutionMovesAndAttacksUnderNativePhaseRules() passed after 0.630 seconds.
+✔ Test nativeAttack0ChainMatchesRecoveredStateMachine() passed after 0.630 seconds.
+✔ Test aiPlannerIsDeterministicForSameState() passed after 0.704 seconds.
+✔ Test aiPlannerPrefersLegalFiringCellWhenAvailable() passed after 0.728 seconds.
+✔ Test conquestCountryStatusUsesOnlyLandArmyAndCountedFacilities() passed after 0.747 seconds.
+✔ Test fullNativeAIRoundReturnsControlToPlayerDeterministically() passed after 1.151 seconds.
+✔ Test run with 42 tests in 0 suites passed after 1.152 seconds.

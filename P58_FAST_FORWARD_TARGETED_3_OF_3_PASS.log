@@ -1,0 +1,17 @@
+[0/1] Planning build
+Building for debugging...
+[0/4] Write swift-version--1BA0962812E73E12.txt
+Build complete! (0.18s)
+Test Suite 'Selected tests' started at 2026-09-11 11:28:01.397
+Test Suite 'Selected tests' passed at 2026-09-11 11:28:01.399
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Test fastAIPresentationCapsAuthoredImpactAtNinetyMilliseconds() started.
+◇ Test fastAIPresentationPreservesAlreadyShortImpact() started.
+◇ Test nativeAIFastForwardKeepsSimulationDriverButBypassesCameraAndCompressesPresentation() started.
+✔ Test fastAIPresentationPreservesAlreadyShortImpact() passed after 0.001 seconds.
+✔ Test fastAIPresentationCapsAuthoredImpactAtNinetyMilliseconds() passed after 0.001 seconds.
+✔ Test nativeAIFastForwardKeepsSimulationDriverButBypassesCameraAndCompressesPresentation() passed after 0.006 seconds.
+✔ Test run with 3 tests in 0 suites passed after 0.007 seconds.

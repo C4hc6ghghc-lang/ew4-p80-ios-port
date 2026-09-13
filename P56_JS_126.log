@@ -1,0 +1,2031 @@
+count=126
+[1/126] test_battle_save_core.js status=0
+battle save core PASS {"schema":6,"round":7,"units":1,"slots":"auto+1..6"}
+
+[2/126] test_cavalry_supply_rules.js status=0
+cavalry + facility supply rules PASS
+
+[3/126] test_combat_core.js status=0
+combat_core 0.61 native-skill tests: PASS
+
+[4/126] test_compact_bile_full_parity.js status=0
+compact BILE full parity PASS · 1076/1076 assets · Machine Gun Finish corrected 18/18
+
+[5/126] test_compact_bile_render_contract.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_animation_core265.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_compact_bile_render_contract.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_animation_core265.json'
+}
+
+Node.js v22.16.0
+
+[6/126] test_compact_bile_runtime.js status=0
+compact BILE runtime PASS · 877 units / 3519 motions / 9.87 MiB raw source pack
+
+[7/126] test_core_map_unit_contract.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_core_map_unit_contract.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[8/126] test_country_turn_core.js status=0
+country turn core PASS {"conquestOwners":14,"russia":{"money":50,"industry":70,"food":500},"campaignOwners":8,"campaignSameHint":"not-used-as-alliance"}
+
+[9/126] test_data_integrity.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/commanders.json'
+    at Object.readFileSync (node:fs:442:20)
+    at j (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_data_integrity.js:2:26)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_data_integrity.js:3:11)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/commanders.json'
+}
+
+Node.js v22.16.0
+
+[10/126] test_effective_ui_contract.js status=0
+effective UI contract PASS: battle/recruit/general display paths consume effective values; original raw data remains untouched
+
+[11/126] test_enhanced_generals_combat.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/commanders.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_enhanced_generals_combat.js:4:32)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/commanders.json'
+}
+
+Node.js v22.16.0
+
+[12/126] test_full_animation_877.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_animation_core877.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_full_animation_877.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_animation_core877.json'
+}
+
+Node.js v22.16.0
+
+[13/126] test_general_deployment_core.js status=0
+in-battle general deployment core PASS
+
+[14/126] test_item_inventory_core.js status=0
+item inventory core PASS {"slots":28,"slot0Max":999,"normalMax":99}
+
+[15/126] test_mod_general_dismissal_p19.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_mod_general_dismissal_p19.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './app.js'
+}
+
+Node.js v22.16.0
+
+[16/126] test_native_academy_core.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/commanders.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_academy_core.js:4:32)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/commanders.json'
+}
+
+Node.js v22.16.0
+
+[17/126] test_native_action_audio.js status=0
+native action audio: PASS
+
+[18/126] test_native_ai_action_camera_focus.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_ai_action_camera_focus.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[19/126] test_native_animation_integration.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_animation_integration.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[20/126] test_native_artillery_visual_timeline.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_simple_effects.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_artillery_visual_timeline.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_simple_effects.json'
+}
+
+Node.js v22.16.0
+
+[21/126] test_native_audio_inventory.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_audio_inventory.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_audio_inventory.js:2:25)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_audio_inventory.json'
+}
+
+Node.js v22.16.0
+
+[22/126] test_native_battle_music.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_battle_music.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[23/126] test_native_battle_overlay_visuals.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_battle_overlay_visuals.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[24/126] test_native_camera_interaction.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_camera_interaction.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[25/126] test_native_camera_programmatic.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_camera_programmatic.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[26/126] test_native_campaign_p17_integration.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_campaign_p17_integration.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './app.js'
+}
+
+Node.js v22.16.0
+
+[27/126] test_native_campaign_targets_exhaustive_p17.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_campaign_targets_exhaustive_p17.js:3:29)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[28/126] test_native_campaign_targets_p17.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_campaign_targets_p17.js:5:25)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[29/126] test_native_commerce_core.js status=0
+native commerce core PASS
+
+[30/126] test_native_commerce_forms_p19.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_commerce_forms_p19.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[31/126] test_native_conquest_ui.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_conquest_ui.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[32/126] test_native_construction_core.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/constructions.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_construction_core.js:3:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/constructions.json'
+}
+
+Node.js v22.16.0
+
+[33/126] test_native_deployitem_p18.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './r14_native_forms.css'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_deployitem_p18.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './r14_native_forms.css'
+}
+
+Node.js v22.16.0
+
+[34/126] test_native_effect_audio_core.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_effects_audio.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_effect_audio_core.js:2:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_effects_audio.json'
+}
+
+Node.js v22.16.0
+
+[35/126] test_native_effects_visual_coverage.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_simple_effects.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_effects_visual_coverage.js:3:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_simple_effects.json'
+}
+
+Node.js v22.16.0
+
+[36/126] test_native_entity_triggers.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_trigger_targets.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_entity_triggers.js:4:29)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_trigger_targets.json'
+}
+
+Node.js v22.16.0
+
+[37/126] test_native_fire_events.js status=0
+PASS native fire events: events=31 battles=16 round11=6 dialogues=3
+
+[38/126] test_native_funcres_contract.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_funcres_contract.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[39/126] test_native_general_core.js status=0
+native general core: PASS
+native general battle growth: PASS
+
+[40/126] test_native_general_p18_integration.js status=0
+P18 native general integration: PASS
+
+[41/126] test_native_getgeneral_effect.js status=1
+node:internal/assert/utils:281
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(fs.existsSync('assets/effects/eff.png'))
+
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_getgeneral_effect.js:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+
+Node.js v22.16.0
+
+[42/126] test_native_getgeneral_tips.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_getgeneral_tips.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[43/126] test_native_headquarters_flow.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_headquarters_flow.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[44/126] test_native_hex_battle_roundtrip.js status=0
+native hex BTL roundtrip PASS: 101 battles / 7407 units / 8001 objects
+
+[45/126] test_native_hex_geometry.js status=0
+native hex geometry PASS {"center00":{"x":0,"y":-18},"center01":{"x":32,"y":36},"campaign101Fallback":{"x":1472,"y":2133}}
+
+[46/126] test_native_impact_effect_core.js status=0
+native impact selector PASS
+
+[47/126] test_native_lowzoom_lod.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_lowzoom_lod.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[48/126] test_native_lowzoom_status.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_lowzoom_status.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[49/126] test_native_machinegun_visual_timeline.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_simple_effects.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_machinegun_visual_timeline.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_simple_effects.json'
+}
+
+Node.js v22.16.0
+
+[50/126] test_native_main_campaign_layout.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_main_campaign_layout.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[51/126] test_native_maptext_core.js status=0
+native maptext core PASS · 338 BILE items / 178 atlas elements / Europe 102 placements / America 41 placements
+
+[52/126] test_native_maptext_runtime.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_maptext_runtime.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[53/126] test_native_morale_events.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/battle_native_triggers.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_morale_events.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/battle_native_triggers.json'
+}
+
+Node.js v22.16.0
+
+[54/126] test_native_motion_speed.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_animation_core265.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_motion_speed.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_animation_core265.json'
+}
+
+Node.js v22.16.0
+
+[55/126] test_native_movement_effect_core.js status=0
+native movement effect core PASS: sea-first + infantry/cavalry/artillery moving1-4 mapping
+
+[56/126] test_native_movement_effect_integration.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_movement_effect_integration.js:3:12)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[57/126] test_native_moving_effect_canvas.js status=0
+native moving effect canvas PASS: dust 1102px + water 704px rasterized
+
+[58/126] test_native_option_audio.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_option_audio.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[59/126] test_native_option_controller.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_option_controller.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[60/126] test_native_path_tiebreak.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_path_tiebreak.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[61/126] test_native_player_action_camera_focus.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_player_action_camera_focus.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[62/126] test_native_princess_deployment.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_princess_deployment.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[63/126] test_native_ready_motion_runtime.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_ready_motion_runtime.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[64/126] test_native_result_core.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_result_core.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[65/126] test_native_result_integration.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_result_integration.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[66/126] test_native_result_p16_behavior.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_result_p16_behavior.js:4:24)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[67/126] test_native_result_p16_integration.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_result_p16_integration.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[68/126] test_native_rocket_visual_timeline.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_simple_effects.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_rocket_visual_timeline.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_simple_effects.json'
+}
+
+Node.js v22.16.0
+
+[69/126] test_native_roundturn_p19.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_roundturn_p19.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[70/126] test_native_scene_shop_core.js status=0
+native SceneShop core PASS: shared 14-slot seller, 28-slot bank, HQ daily stock, buy/sell pricing
+
+[71/126] test_native_simple_effect_canvas.js status=0
+native simple effect canvas PASS: build raster 563 nontransparent pixels, max alpha 182
+
+[72/126] test_native_simple_effect_integration.js status=0
+native simple effect integration PASS: static + moving world-space emitters wired into battle renderer
+
+[73/126] test_native_simple_effect_runtime.js status=0
+native simple effect runtime PASS: native rate accumulator + area spawn + native moving particle integration
+
+[74/126] test_native_simple_effects.js status=0
+native simple effects data PASS: build/recover + moving1-4 XML and original eff.png atlas preserved
+
+[75/126] test_native_stageintro_p20.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_stageintro_p20.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[76/126] test_native_stageintro_talk_visuals.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_stageintro_talk_visuals.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[77/126] test_native_timed_battle_sfx.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_effects_audio.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_timed_battle_sfx.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_effects_audio.json'
+}
+
+Node.js v22.16.0
+
+[78/126] test_native_training_core.js status=0
+native training core PASS
+
+[79/126] test_native_triggers.js status=0
+PASS native triggers: battles=101 objectives=144/144 events=360 countryCodes=86 dialogues=323
+
+[80/126] test_native_tutorial_core.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/native_tutorial_scripts.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_tutorial_core.js:4:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/native_tutorial_scripts.json'
+}
+
+Node.js v22.16.0
+
+[81/126] test_native_tutorial_forms.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_tutorial_forms.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[82/126] test_native_tutorial_integration.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_tutorial_integration.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[83/126] test_native_ui_audio.js status=0
+native UI/result audio tests passed
+
+[84/126] test_native_upgrade_core.js status=0
+native upgrade core PASS
+
+[85/126] test_native_useitem_contract.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_native_useitem_contract.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[86/126] test_native_useitem_core.js status=0
+native use-item core tests passed
+
+[87/126] test_native_warzone_tech_manifest.js status=0
+P21 native warzone tech manifest reproducibility: PASS
+
+[88/126] test_original_forms_568h.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_original_forms_568h.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[89/126] test_p21_scene_upgrade_integration.js status=0
+P21 native SceneUpgrade integration: PASS
+
+[90/126] test_p22_native_defense.js status=0
+P22 native form_defense: PASS
+
+[91/126] test_p23_native_pause.js status=0
+P23 native form_pause: PASS
+
+[92/126] test_p24_campaign_growth_chain.js status=0
+P24 campaign growth end-to-end chain: PASS
+
+[93/126] test_p24_native_unitinfo.js status=0
+P24 native form_unitinfo controller contract: PASS
+
+[94/126] test_p25_campaign_long_session.js status=0
+P25 six-zone long session: PASS (73 first clears + 73 replays, 292 battle save/load cycles, 500 meta reloads, 6 one-shot zone rewards)
+
+[95/126] test_p25_campaign_session_core.js status=0
+P25 campaign session core + migration/idempotence: PASS
+
+[96/126] test_p25_native_campaigninfo.js status=0
+P25 native campaigninfo: PASS (6/6 original battle lines + 155x83 controller + pin->info->confirm flow)
+
+[97/126] test_p26_native_campaign_selcountry.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p26_native_campaign_selcountry.js:4:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[98/126] test_p26_native_save_presentation.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/original_layout-568h.xml'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p26_native_save_presentation.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/original_layout-568h.xml'
+}
+
+Node.js v22.16.0
+
+[99/126] test_p27_native_achievement.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './assets/data/original_layout-568h.xml'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p27_native_achievement.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './assets/data/original_layout-568h.xml'
+}
+
+Node.js v22.16.0
+
+[100/126] test_p28_native_achievement_exact.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open './app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p28_native_achievement_exact.js:33:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './app.js'
+}
+
+Node.js v22.16.0
+
+[101/126] test_p29_native_conquest_achievement.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p29_native_conquest_achievement.js:50:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[102/126] test_p30_conquest_extinction.js status=0
+P30 conquest extinction core PASS
+
+[103/126] test_p30_conquest_extinction_matrix.js status=1
+node:fs:562
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/battles_runtime.json'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p30_conquest_extinction_matrix.js:3:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[104/126] test_p30_conquest_extinction_runtime.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p30_conquest_extinction_runtime.js:3:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[105/126] test_p30_native_conquest_complete.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p30_native_conquest_complete.js:4:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[106/126] test_p30_native_country_failure.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p30_native_country_failure.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[107/126] test_p30_native_loading.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p30_native_loading.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[108/126] test_p33_visual_timing_transport.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p33_visual_timing_transport.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[109/126] test_p34_final_visual_closure.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p34_final_visual_closure.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[110/126] test_p35_map_unit_asset_integrity.js status=0
+P35 map/unit asset integrity PASS: 161 critical native-ref sprites + 877 READY visuals + 7407 battle units
+
+[111/126] test_p35_native_presentation_hardening.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p35_native_presentation_hardening.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[112/126] test_p36_native_hud_hextend.js status=0
+PASS test_p36_native_hud_hextend
+
+[113/126] test_p37_native_hud_deweb.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'r14_native_forms.css'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p37_native_hud_deweb.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'r14_native_forms.css'
+}
+
+Node.js v22.16.0
+
+[114/126] test_p38_native_hud_baselines.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'r14_native_forms.css'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p38_native_hud_baselines.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'r14_native_forms.css'
+}
+
+Node.js v22.16.0
+
+[115/126] test_p39_noon_regression_lock.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_p39_noon_regression_lock.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[116/126] test_player_infinite_resources.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'app.js'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_player_infinite_resources.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'app.js'
+}
+
+Node.js v22.16.0
+
+[117/126] test_player_overrides.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/player_general_overrides.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_player_overrides.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/player_general_overrides.json'
+}
+
+Node.js v22.16.0
+
+[118/126] test_player_princess_overrides.js status=0
+player princess overrides PASS: all 8 unlocked; Lan/Victoria/Isabela only; no forced campaign turn-limit defeat
+
+[119/126] test_player_unit_rules.js status=0
+player unit rules PASS: attack +4/+4 lives in combat_core; HP +120; movement +2; old +40 saves migrate by delta; AI unchanged
+
+[120/126] test_r14_runtime_contract.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_r14_runtime_contract.js:3:12)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+
+[121/126] test_reinforcement_safety.js status=0
+reinforcement safety PASS {"copenhagenRaw4Round4":0,"positionHighByteEquals4":13,"frenchUnitsAlreadyDecoded":3,"raw31ConstantUnits":7407,"campaign4_03_action":1}
+
+[122/126] test_round_dialogues.js status=0
+PASS native round dialogue schedule: {
+  '1': 217,
+  '2': 6,
+  '3': 6,
+  '4': 3,
+  '5': 2,
+  '6': 3,
+  '7': 1,
+  '10': 1,
+  '14': 1
+}
+
+[123/126] test_shop_itemstore_contract.js status=0
+shared SceneShop contract PASS {"battleStores":151,"filledSlots":515,"sellerSlots":14,"buyerSlots":28,"hqConsumables":6}
+
+[124/126] test_stage_turn_limits.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'assets/data/battles_runtime.json'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_stage_turn_limits.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'assets/data/battles_runtime.json'
+}
+
+Node.js v22.16.0
+
+[125/126] test_tavern_contract.js status=0
+tavern contract PASS {"battles":7,"taverns":38,"sample":5}
+
+[126/126] test_ui_contract.js status=1
+node:fs:442
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'index.html'
+    at Object.readFileSync (node:fs:442:20)
+    at Object.<anonymous> (/mnt/data/p56_work/EW4_R14_39_P56_NATIVE_CAMERA_MOTOR_WIP_PORT_ONLY_2026-09-11/SOURCE_LEAN/EW4_Web_Port_v0.61/test_ui_contract.js:3:12)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'index.html'
+}
+
+Node.js v22.16.0
+

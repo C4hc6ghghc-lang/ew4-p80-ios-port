@@ -1,0 +1,32 @@
+'use strict';
+const assert=require('assert');
+const R=require('./native_simple_effect_runtime.js');
+const D=require('./assets/data/native_simple_effects.json');
+const b=D.effects.effect_build,r=D.effects.effect_recover;
+assert(Math.abs(R.effectDuration(b)-1.5)<1e-9);assert(Math.abs(R.effectDuration(r)-1.4)<1e-9);
+const pos=R.sampleAreaPosition({x0:10,x1:20,y0:30,y1:50},{width:8,height:4},()=>.5);assert.deepStrictEqual(pos,{x:15,y:40});
+// Native area uses one shared interpolation RNG for x/y, then separate jitter RNGs.
+const seq=[.25,.75,.1];let si=0;const exact=R.sampleAreaPosition({x0:10,x1:30,y0:40,y1:80},{width:8,height:10},()=>seq[si++]);
+assert.deepStrictEqual(exact,{x:17,y:46});
+assert(Math.abs(R.sampleTrack(b.lifetrack,.05,'a')-.5)<1e-9);assert.strictEqual(R.sampleTrack(b.lifetrack,.15,'a'),1);
+// Native timetrack quantity is an emission rate, not a burst count. Simulate
+// a normal 60-Hz update: build emits one particle over the 0.1s emitter life.
+const inst=R.createInstance(b,{x:123,y:77},{rng:()=>.5});
+for(let i=0;i<6;i++)R.advance(inst,1/60);
+assert.strictEqual(inst.active,false);assert.strictEqual(inst.particles.length,1);assert.strictEqual(inst.particles[0].x,123);assert.strictEqual(inst.particles[0].y,77);
+assert(R.isAlive(inst));
+for(let i=0;i<90;i++)R.advance(inst,1/60);
+assert.strictEqual(R.isAlive(inst),false);
+
+// Recover uses the native uniform RGB 200/255 multiplier; the simple renderer
+// must not silently drop it.
+let filterSeen=null,draws=0;const fake={globalAlpha:1,filter:'none',save(){this._ga=this.globalAlpha;this._f=this.filter},restore(){this.globalAlpha=this._ga;this.filter=this._f},drawImage(){filterSeen=this.filter;draws++}};
+const rp={x:0,y:0,age:.13,life:1.3};R.drawParticle(fake,{},r,rp,R.particleState(r,rp),1,{x:0,y:0});
+assert.strictEqual(draws,1);assert(filterSeen&&filterSeen.startsWith('brightness(78.4313'));
+
+// Native parser/runtime: mode=cont does not self-stop at emitter_life.
+const cont={...b,emitter_life:.05,settings:{...b.settings,mode:'cont'},timetrack:[{time:0,quantity:30}]};
+const ci=R.createInstance(cont,{x:0,y:0},{rng:()=>.5});for(let i=0;i<12;i++)R.advance(ci,1/60);
+assert.strictEqual(R.isContinuous(cont),true);assert.strictEqual(ci.active,true);R.stopInstance(ci);assert.strictEqual(ci.active,false);
+assert.strictEqual(R.isContinuous(b),false);
+console.log('native simple effect runtime PASS: native rate accumulator + area spawn + life-track interpolation');

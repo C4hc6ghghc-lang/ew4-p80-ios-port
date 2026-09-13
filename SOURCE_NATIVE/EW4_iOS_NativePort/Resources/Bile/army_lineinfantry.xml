@@ -1,0 +1,117 @@
+<Texture name="army_lineinfantry.png" />
+<Images>
+    <Image name="gun1.png" x="1" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="gun2.png" x="12" y="1" w="10" h="80" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9coat1.png" x="23" y="1" w="24" h="47" refx="0" refy="0" />
+    <Image name="149_9_BritainLine Infantry --9coat1.png" x="1" y="82" w="23" h="43" refx="0" refy="0" />
+    <Image name="11drum3.png" x="25" y="49" w="33" h="35" refx="0" refy="0" />
+    <Image name="12drum3.png" x="25" y="85" w="33" h="35" refx="0" refy="0" />
+    <Image name="13drum3.png" x="48" y="1" w="33" h="35" refx="0" refy="0" />
+    <Image name="14drum3.png" x="82" y="1" w="33" h="35" refx="0" refy="0" />
+    <Image name="15drum3.png" x="59" y="37" w="33" h="35" refx="0" refy="0" />
+    <Image name="16drum3.png" x="93" y="37" w="33" h="35" refx="0" refy="0" />
+    <Image name="17drum3.png" x="59" y="73" w="33" h="35" refx="0" refy="0" />
+    <Image name="drum3.png" x="93" y="73" w="33" h="35" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9coat1.png" x="1" y="126" w="24" h="33" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9coat1.png" x="26" y="121" w="23" h="33" refx="0" refy="0" />
+    <Image name="169_9_BritainLine Infantry --9coat1.png" x="1" y="160" w="21" h="33" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9coat1.png" x="59" y="109" w="24" h="33" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9coat1.png" x="84" y="109" w="24" h="32" refx="0" refy="0" />
+    <Image name="18drum3.png" x="23" y="160" w="34" h="31" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9coat1.png" x="1" y="194" w="24" h="33" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9coat2.png" x="58" y="143" w="24" h="33" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9coat1.png" x="84" y="142" w="17" h="30" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9left calf1.png" x="116" y="1" w="8" h="27" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9Right calf1.png" x="26" y="192" w="8" h="27" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9left calf1.png" x="109" y="109" w="8" h="27" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9Right calf1.png" x="1" y="228" w="8" h="27" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9left calf1.png" x="118" y="109" w="8" h="27" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9Right calf1.png" x="35" y="192" w="8" h="27" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9left calf1.png" x="58" y="177" w="8" h="27" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9Right calf1.png" x="83" y="173" w="8" h="27" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9left calf1.png" x="67" y="177" w="8" h="27" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9Right calf1.png" x="44" y="192" w="8" h="27" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9hat1.png" x="26" y="220" w="12" h="25" refx="0" refy="0" />
+    <Image name="175_5_Austria militia--5_Austria militia--Britain militia--left thigh1.png" x="10" y="228" w="11" h="24" refx="0" refy="0" />
+    <Image name="175_5_Austria militia--5_Austria militia--Britain militia--Right thigh1.png" x="109" y="137" w="11" h="24" refx="0" refy="0" />
+    <Image name="185_5_Austria militia--5_Austria militia--Britain militia--left thigh1.png" x="53" y="205" w="14" h="24" refx="0" refy="0" />
+    <Image name="185_5_Austria militia--5_Austria militia--Britain militia--Right thigh1.png" x="76" y="201" w="14" h="24" refx="0" refy="0" />
+    <Image name="13drum1.png" x="39" y="230" w="16" h="23" refx="0" refy="0" />
+    <Image name="drum1.png" x="102" y="162" w="15" h="22" refx="0" refy="0" />
+    <Image name="169_9_BritainLine Infantry --9hat1.png" x="68" y="226" w="14" h="20" refx="0" refy="0" />
+    <Image name="shadow.png" x="91" y="201" w="36" h="19" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9hat1.png" x="91" y="221" w="12" h="18" refx="0" refy="0" />
+    <Image name="11left arm Upper1.png" x="50" y="121" w="8" h="17" refx="0" refy="0" />
+    <Image name="11Right arm Upper1.png" x="50" y="139" w="7" h="17" refx="0" refy="0" />
+    <Image name="13Right arm Upper1.png" x="68" y="205" w="7" h="17" refx="0" refy="0" />
+    <Image name="14left arm Upper1.png" x="92" y="173" w="8" h="17" refx="0" refy="0" />
+    <Image name="14Right arm Upper1.png" x="118" y="162" w="7" h="17" refx="0" refy="0" />
+    <Image name="154Right arm Upper1.png" x="56" y="230" w="7" h="17" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9hat1.png" x="104" y="221" w="15" h="17" refx="0" refy="0" />
+    <Image name="15left arm Upper1.png" x="118" y="180" w="8" h="17" refx="0" refy="0" />
+    <Image name="164Right arm Upper1.png" x="83" y="226" w="7" h="17" refx="0" refy="0" />
+    <Image name="16left arm Upper1.png" x="125" y="1" w="8" h="17" refx="0" refy="0" />
+    <Image name="13left arm Upper1.png" x="134" y="1" w="8" h="16" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9hat1.png" x="143" y="1" w="15" h="11" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9left arm lower1.png" x="125" y="19" w="8" h="15" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9right arm low1.png" x="127" y="35" w="10" h="15" refx="0" refy="0" />
+    <Image name="149_9_BritainLine Infantry --9hat1.png" x="134" y="18" w="18" h="10" refx="0" refy="0" />
+    <Image name="119_9_BritainLine Infantry --9Right calf2.png" x="159" y="1" w="38" h="11" refx="0" refy="0" />
+    <Image name="169_9_BritainLine Infantry --9left arm lower1.png" x="153" y="13" w="8" h="16" refx="0" refy="0" />
+    <Image name="169_9_BritainLine Infantry --9right arm low1.png" x="162" y="13" w="11" h="16" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9left arm lower1.png" x="174" y="13" w="8" h="15" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9right arm low1.png" x="138" y="30" w="10" h="15" refx="0" refy="0" />
+    <Image name="129_9_BritainLine Infantry --9Right calf2.png" x="149" y="30" w="38" h="11" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9left calf1.png" x="149" y="42" w="8" h="27" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9Right calf1.png" x="138" y="46" w="8" h="27" refx="0" refy="0" />
+    <Image name="135_5_Austria militia--5_Austria militia--Britain militia--left thigh1.png" x="198" y="1" w="11" h="24" refx="0" refy="0" />
+    <Image name="135_5_Austria militia--5_Austria militia--Britain militia--Right thigh1.png" x="127" y="51" w="10" h="24" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9hat1.png" x="127" y="76" w="12" h="18" refx="0" refy="0" />
+    <Image name="12Right arm Upper1.png" x="140" y="74" w="7" h="17" refx="0" refy="0" />
+    <Image name="12left arm Upper1.png" x="183" y="13" w="8" h="16" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9left arm lower1.png" x="210" y="1" w="8" h="15" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9right arm low1.png" x="158" y="42" w="10" h="15" refx="0" refy="0" />
+    <Image name="149_9_BritainLine Infantry --9left arm lower1.png" x="169" y="42" w="9" h="15" refx="0" refy="0" />
+    <Image name="149_9_BritainLine Infantry --9right arm low1.png" x="158" y="58" w="10" h="15" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9left arm lower1.png" x="179" y="42" w="9" h="15" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9right arm low1.png" x="219" y="1" w="10" h="15" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9left arm lower1.png" x="148" y="70" w="8" h="15" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9right arm low1.png" x="127" y="95" w="10" h="15" refx="0" refy="0" />
+    <Image name="12left foot1.png" x="192" y="26" w="12" h="6" refx="0" refy="0" />
+    <Image name="131_1_Britain militia--hip1.png" x="189" y="33" w="15" h="12" refx="0" refy="0" />
+    <Image name="171_1_Britain militia--hip1.png" x="205" y="26" w="15" h="12" refx="0" refy="0" />
+    <Image name="181_1_Britain militia--hip1.png" x="205" y="39" w="15" h="12" refx="0" refy="0" />
+    <Image name="right hand4.png" x="138" y="95" w="16" h="6" refx="0" refy="0" />
+    <Image name="139_9_BritainLine Infantry --9Right calf2.png" x="138" y="102" w="38" h="11" refx="0" refy="0" />
+    <Image name="159_9_BritainLine Infantry --9Right calf2.png" x="169" y="58" w="38" h="11" refx="0" refy="0" />
+    <Image name="179_9_BritainLine Infantry --9Right calf2.png" x="169" y="70" w="38" h="11" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9hat1.png" x="230" y="1" w="11" h="15" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9left arm lower1.png" x="242" y="1" w="9" h="15" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9right arm low1.png" x="127" y="111" w="10" h="15" refx="0" refy="0" />
+    <Image name="189_9_BritainLine Infantry --9Right calf2.png" x="157" y="82" w="38" h="11" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9left calf1.png" x="221" y="17" w="8" h="27" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9Right calf1.png" x="230" y="17" w="8" h="27" refx="0" refy="0" />
+    <Image name="5_5_Austria militia--5_Austria militia--Britain militia--left thigh1.png" x="138" y="114" w="11" h="24" refx="0" refy="0" />
+    <Image name="5_5_Austria militia--5_Austria militia--Britain militia--Right thigh1.png" x="127" y="127" w="10" h="24" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9hat1.png" x="239" y="17" w="13" h="15" refx="0" refy="0" />
+    <Image name="1_1_Britain militia--hip1.png" x="150" y="114" w="15" h="12" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9left arm lower1.png" x="221" y="45" w="8" h="15" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9right arm low1.png" x="208" y="52" w="10" h="15" refx="0" refy="0" />
+    <Image name="9_9_BritainLine Infantry --9Right calf2.png" x="208" y="68" w="38" h="11" refx="0" refy="0" />
+    <Image name="Right arm Upper1.png" x="239" y="33" w="7" h="17" refx="0" refy="0" />
+    <Image name="left arm Upper1.png" x="247" y="33" w="8" h="16" refx="0" refy="0" />
+    <Image name="drum2.png" x="23" y="49" w="1" h="12" refx="0" refy="0" />
+    <Image name="12right foot1.png" x="48" y="37" w="9" h="8" refx="0" refy="0" />
+    <Image name="16face1.png" x="189" y="46" w="9" h="9" refx="0" refy="0" />
+    <Image name="18face1.png" x="39" y="220" w="9" h="9" refx="0" refy="0" />
+    <Image name="face1.png" x="22" y="246" w="9" h="9" refx="0" refy="0" />
+    <Image name="right foot1.png" x="210" y="17" w="9" h="8" refx="0" refy="0" />
+    <Image name="18right foot1.png" x="101" y="185" w="11" h="8" refx="0" refy="0" />
+    <Image name="right hand1.png" x="116" y="29" w="7" h="6" refx="0" refy="0" />
+    <Image name="right hand3.png" x="148" y="86" w="7" h="6" refx="0" refy="0" />
+    <Image name="18left foot1.png" x="155" y="94" w="12" h="6" refx="0" refy="0" />
+    <Image name="left foot1.png" x="168" y="94" w="12" h="6" refx="0" refy="0" />
+    <Image name="left hand 3.png" x="181" y="94" w="13" h="9" refx="0" refy="0" />
+    <Image name="left hand1.png" x="192" y="13" w="4" h="7" refx="0" refy="0" />
+    <Image name="left hand2.png" x="157" y="74" w="9" h="5" refx="0" refy="0" />
+</Images>

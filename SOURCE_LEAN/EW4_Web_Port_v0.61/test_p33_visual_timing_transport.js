@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8');
+assert(app.includes("attackPhase=(player.chain||[]).find(x=>x?.kind==='attack')"),'native impact point must derive from authored Attack phase, not full reload/finish chain');
+assert(app.includes('authoredAttackMs/speed'),'native Attack phase duration must honor presentation speed');
+assert(app.includes('deferVisual:true'),'player/AI attacks must defer HP/death presentation');
+assert(app.includes("Object.defineProperty(u,key,{value,writable:true,configurable:true,enumerable:false})"),'presentation-only unit state must stay out of protected battle-save payloads');
+assert(app.includes('queueDamagePresentation(b,hit,impactMs)'),'primary target HP presentation must commit at impact');
+assert(app.includes('unitPresentationHp(u)'),'HP rings must read presentation HP during pending impact');
+assert(app.includes('u?.presentationHp!=null&&Number.isFinite(+u.presentationHp)'),'null presentation HP must fall back to real HP instead of becoming zero');
+assert(app.includes('unitPresentationVisible(u)'),'pending-impact killed units must remain drawable until hit commit');
+assert(app.includes('scheduleVictoryAfterPresentation(presentationMs)'),'battle result must not pre-empt impact/death presentation');
+assert(app.includes("desired=u.nativeFacing||naturalFacing,flip=desired!==naturalFacing"),'transport mirroring must respect each source sprite natural orientation');
+assert(app.includes("if(isSeaUnit(u)||u.embarked)u.nativeFacing=B.x<A.x?'left':'right'"),'embarked ship facing must follow the active movement segment');
+assert(app.includes("canvas.addEventListener('lostpointercapture'"),'touch runtime must clear lost pointer capture to avoid stuck pinch/drag state');
+console.log('P33 visual timing / transport / touch integration PASS');

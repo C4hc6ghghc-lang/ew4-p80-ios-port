@@ -1,0 +1,1061 @@
+'use strict';
+
+const MODS=Object.freeze({medals:Infinity,badges:Infinity,academyRefresh:Infinity,generalCap:Infinity,lowerBoundFix:true,playerAttackMinBonus:4,playerAttackMaxBonus:4,playerBaseHpBonus:120,playerMovementBonus:2});
+const SAVE_KEY='ew4_web_port_v061';
+const LEGACY_SAVE_KEYS=['ew4_web_port_v06','ew4_web_port_v05'];
+const BATTLE_AUTOSAVE_KEY='ew4_web_port_v061_battle_autosave';
+const BATTLE_SLOT_PREFIX='ew4_web_port_v061_battle_slot_';
+const PRINCESS_IDS=Object.freeze([201,202,203,204,205,206,207,208]);
+const ORIGINAL_PRINCESS_ORDER=Object.freeze([202,204,201,203,205,206,207,208]);
+const stage=document.getElementById('stage');
+const screens=[...document.querySelectorAll('.screen')];
+const statusEl=document.getElementById('status');
+const canvas=document.getElementById('battle-canvas'),ctx=canvas.getContext('2d');
+const zoneNames={1:'帝国雄鹰',2:'反法同盟',3:'神圣罗马帝国',4:'东方霸主',5:'美国的崛起',6:'日不落帝国'};
+const conquests=[
+ {idx:1,tex:'1793',loc:'europe',year:'1798',map:'europe',countries:'法国 · 英国 · 奥地利 · 俄国 · 普鲁士 …'},
+ {idx:2,tex:'1775',loc:'america',year:'1775',map:'america',countries:'美国 · 英国 · 原住民势力 …'},
+ {idx:3,tex:'1806',loc:'europe',year:'1806',map:'europe',countries:'法国 · 普鲁士 · 俄国 · 奥地利 …'},
+ {idx:4,tex:'1809',loc:'europe',year:'1809',map:'europe',countries:'法国 · 奥地利 · 英国 · 俄国 …'},
+ {idx:5,tex:'1812',loc:'america',year:'1812',map:'america',countries:'美国 · 英国 · 加拿大地区 …'},
+ {idx:6,tex:'1815',loc:'europe',year:'1815',map:'europe',countries:'法国 · 英国 · 普鲁士 · 俄国 …'}
+];
+
+let DB=null,WORLDS=null,ARMIES=null,COMMANDERS=null,READY=null,ATTACK_POSES=null,RELOAD_POSES=null,FINISH_POSES=null,TERRAIN=null,PORTRAITS=null,SPRITES=null,STRINGS=null,CONSTRUCTIONS=null,CARDS=null,ITEMS=null,ITEM_ICONS=null,PLAYER_OVERRIDES=null,PLAYER_PRINCESS_OVERRIDES=null,INSTALLATIONS=null,BUILD_CARDS=null,BATTLE_NATIVE=null,NATIVE_TRIGGER_TARGETS=null,BATTLE_ITEMSTORES=null,BATTLE_TAVERNS=null,NATIVE_ANIM_PACK=null,NATIVE_EFFECT_AUDIO_DATA=null,NATIVE_SIMPLE_EFFECTS_DATA=null;
+let COMPACT_BILE_PACK=null;const COMPACT_BILE_RESOURCES=new Map(),COMPACT_BILE_PROMISES=new Map();
+let MAPTEXT_BILE=null,MAPTEXT_ATLAS=null,MAPTEXT_BASE_PROMISE=null;const MAPTEXT_PLACEMENTS=new Map(),MAPTEXT_PLACEMENT_PROMISES=new Map();
+const ORIGINAL_BATTLE_MUSIC=Object.freeze(['battle1.mp3','battle2.mp3','battle3.mp3','battle4.mp3']);
+let selectedZone=1,selectedBattle=null,battleState=null,music=false;
+let pending=null,pendingPlayerOwner=null,countryChoice=null,selectedDeployGeneral=null,deploymentTargetUnitIndex=null;
+let academyPool='6',academyCandidates=[],academySelectedId=null,academyReturnScreen='hq';
+let hqFilter='all',detailCommander=null;
+const imageCache=new Map();
+const audio={select:new Audio('assets/audio/sfx_select.wav'),gun:new Audio('assets/audio/sfx_gunfire1.wav'),cannon:new Audio('assets/audio/sfx_cannon.wav'),knife:new Audio('assets/audio/sfx_knife1.wav'),cavalry:new Audio('assets/audio/sfx_cavalrymove.wav'),naval:new Audio('assets/audio/sfx_naval_gun.wav'),fire:new Audio('assets/audio/sfx_fire.wav')};
+
+function defaultSave(){return{version:61,owned:[...PRINCESS_IDS],rank:{},nobility:{},equipment:{},itemInventory:EW4ItemInventory.emptyBank(),academyPool:'6',academyCandidatesByPool:{'6':[],'4':[],'2':[]},music:true,bgVol:50,seVol:50,campaignProgress:{}}}
+function ensurePrincessUnlocks(state){state.owned=[...new Set([...(Array.isArray(state.owned)?state.owned:[]),...PRINCESS_IDS])];return state}
+function loadSave(){for(const key of [SAVE_KEY,...LEGACY_SAVE_KEYS]){try{const v=JSON.parse(localStorage.getItem(key)||'null');if(v&&Array.isArray(v.owned)){const out=ensurePrincessUnlocks(Object.assign(defaultSave(),v,{version:61}));out.equipment=out.equipment&&typeof out.equipment==='object'?out.equipment:{};out.itemInventory=(out.itemInventory&&Array.isArray(out.itemInventory.slots))?EW4ItemInventory.sanitizeInventory(out.itemInventory):((out.itemInventory&&typeof out.itemInventory==='object')?out.itemInventory:EW4ItemInventory.emptyBank());if(key!==SAVE_KEY){try{localStorage.setItem(SAVE_KEY,JSON.stringify(out))}catch(e){}}return out}}catch(e){}}return ensurePrincessUnlocks(defaultSave())}
+let saveState=loadSave();
+saveState.academyCandidatesByPool=EW4NativeAcademy.normalizePools(saveState.academyCandidatesByPool);
+function clampSettingPercent(v,fallback=50){v=Number(v);return Number.isFinite(v)?Math.max(0,Math.min(100,Math.round(v))):fallback}
+if(saveState.bgVol==null)saveState.bgVol=saveState.music===false?0:50;
+if(saveState.seVol==null)saveState.seVol=50;
+saveState.bgVol=clampSettingPercent(saveState.bgVol);saveState.seVol=clampSettingPercent(saveState.seVol);music=saveState.bgVol>0;saveState.music=music;
+function persist(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(saveState))}catch(e){}}
+function battleSaveKey(slot){return slot==='auto'?BATTLE_AUTOSAVE_KEY:`${BATTLE_SLOT_PREFIX}${slot}`}
+function readBattleSave(slot){try{const p=JSON.parse(localStorage.getItem(battleSaveKey(slot))||'null');return EW4BattleSave.validate(p)?p:null}catch(e){return null}}
+function writeBattleSave(slot='auto',quiet=false){
+  if(!battleState||battleState.dialogueActive||battleState.ended)return false;
+  try{const p=EW4BattleSave.makePayload(battleState);localStorage.setItem(battleSaveKey(slot),JSON.stringify(p));if(!quiet)flash(slot==='auto'?'自动存档完成':`存档 ${slot} 已保存`);return true}catch(e){if(!quiet)flash('存档失败：'+e.message,2600);return false}
+}
+function battleSaveMeta(slot){const p=readBattleSave(slot);if(!p)return null;const d=new Date(p.savedAt||0);return{...p,date:d.toLocaleDateString('zh-CN',{month:'2-digit',day:'2-digit'}),time:d.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false})}}
+let savePanelMode='save',optionsReturnScreen='main';
+function activeScreenId(){return screens.find(x=>x.classList.contains('active'))?.id||'main'}
+function hideBattleModals(){document.getElementById('battle-modal-shade')?.classList.remove('show');document.getElementById('pause-panel')?.classList.remove('show');document.getElementById('save-panel')?.classList.remove('show')}
+function openPausePanel(){if(!battleState||battleState.ended||battleState.dialogueActive)return;document.getElementById('pause-round').textContent=`回合 ${battleState.round}`;document.getElementById('battle-modal-shade').classList.add('show');document.getElementById('pause-panel').classList.add('show')}
+function slotHtml(slot,label,mode,posClass=''){
+  const m=battleSaveMeta(slot),empty=!m,action=mode==='save'?'保存':'读取';
+  return `<div class="save-slot ${slot==='auto'?'autosave ':''}${empty?'empty ':''}${posClass}" data-slot="${slot}"><div class="slot-title">${label}</div><div class="slot-date">${m?`${m.date} ${m.time}`:'空存档'}</div><div class="slot-meta">${m?`${m.battleTitle} · 回合${m.round}`:'尚未保存'}</div>${(mode==='load'||slot!=='auto')&&(!empty||mode==='save')?`<button title="${action}" data-slot-action="${slot}"></button>`:''}</div>`
+}
+function renderSavePanel(){
+  const root=document.getElementById('save-grid');if(!root)return;document.getElementById('save-panel-title').textContent=savePanelMode==='save'?'保存游戏':'读取游戏';
+  const pos={1:'',2:'',3:'',4:'',5:'',6:''};
+  root.innerHTML=slotHtml('auto','自动存档',savePanelMode)+slotHtml(1,'存档 1',savePanelMode)+slotHtml(2,'存档 2',savePanelMode)+slotHtml(3,'存档 3',savePanelMode)+slotHtml(4,'存档 4',savePanelMode)+slotHtml(5,'存档 5',savePanelMode)+slotHtml(6,'存档 6',savePanelMode);
+  const els=[...root.querySelectorAll('.save-slot:not(.autosave)')],coords=[[0,0],[0,67],[0,134],[232,0],[232,67],[232,134]];els.forEach((el,i)=>{el.style.left=coords[i][0]+'px';el.style.top=coords[i][1]+'px'});
+  root.querySelectorAll('[data-slot-action]').forEach(btn=>btn.onclick=async e=>{e.stopPropagation();const raw=btn.dataset.slotAction,slot=raw==='auto'?'auto':+raw;if(savePanelMode==='save'){if(slot==='auto')return;writeBattleSave(slot);renderSavePanel()}else await loadBattleSave(slot)});
+}
+function openSavePanel(mode='save'){
+  savePanelMode=mode;if(mode==='save'&&(!battleState||battleState.dialogueActive)){flash('当前不能存档');return}
+  playNativeFormOpenSfx('form_save');document.getElementById('battle-modal-shade').classList.add('show');document.getElementById('pause-panel').classList.remove('show');document.getElementById('save-panel').classList.add('show');renderSavePanel()
+}
+async function loadBattleSave(slot){
+  const raw=readBattleSave(slot);if(!raw){flash('这个存档槽是空的');return false}
+  await loadDB();const p=EW4BattleSave.normalize(raw),b=DB.battles.find(x=>x.file===p.battleFile);if(!b){flash('找不到该存档对应的原版关卡',2600);return false}
+  hideBattleModals();await openBattle(b,p.map,{mode:p.mode,playerOwner:p.playerOwner,assignments:p.assignments,restore:p});flash(`已读取 ${p.battleTitle} · 回合 ${p.round}`);return true
+}
+function owns(id){return saveState.owned.includes(+id)}
+function acquire(id){id=+id;if(!owns(id)){saveState.owned.push(id);persist();return true}return false}
+function commanderList(){return Object.values(COMMANDERS||{}).filter(c=>+c.id>=1&&+c.id<=208).sort((a,b)=>(+b.star-+a.star)||(+a.id-+b.id))}
+function commanderName(c){return c?(STRINGS?.[`name_${c.name}`]||c.name):''}
+function armyName(n){return STRINGS?.[`name_${n}`]||n}
+function spriteFile(k){return SPRITES?.[k]?.file||''}
+function portrait(id){return PORTRAITS?.[String(id)]||''}
+function stars(n){return '★'.repeat(Math.max(0,Math.min(8,+n||0)))}
+function skillName(id){return STRINGS?.[`name_skill_${String(+id+1).padStart(2,'0')}`]||`技能${id}`}
+function itemName(it){return it?(STRINGS?.[`name_${it.name}`]||it.name):'空'}
+function itemDesc(it){return it?(STRINGS?.[`desc_${it.name}`]||''):''}
+function itemIcon(it){return it?ITEM_ICONS?.[it.name]?.file||'':''}
+function baseEquipmentSlots(c){return c?EW4ItemInventory.normalizeSlots([c.item1,c.item2]):[null,null]}
+function equipmentSlotsForCommander(c){if(!c)return[null,null];const override=saveState.equipment?.[String(c.id)];return Array.isArray(override)?EW4ItemInventory.normalizeSlots(override):baseEquipmentSlots(c)}
+function baseSkillIds(c){return c?[c.skill1,c.skill2,c.skill3,c.skill4].map(Number).filter(x=>x>=0):[]}
+function playerOverride(c){if(!c)return null;return PLAYER_OVERRIDES?.generals?.[String(c.id)]||PLAYER_PRINCESS_OVERRIDES?.princesses?.[String(c.id)]||null}
+function effectiveCommander(c,playerControlled=false){
+  if(!c||!playerControlled)return c;
+  const o=playerOverride(c);if(!o)return {...c,skills:baseSkillIds(c)};
+  const out={...c,...(o.stats||{})};
+  out.skills=[...new Set([...baseSkillIds(c),...(o.addSkills||[]).map(Number)])];
+  out.playerEnhanced=true;out.rankHpBonusCap=+o.rankHpBonusCap||+PLAYER_OVERRIDES?.global?.rankHpBonusCap||500;
+  out.nobilityHealCap=+o.nobilityHealCap||+PLAYER_OVERRIDES?.global?.nobilityHealCap||25;
+  return out;
+}
+function effectiveCommanderForUnit(u){const c=u?.commander_id?COMMANDERS?.[String(u.commander_id)]:null;return effectiveCommander(c,!!u&&isMine(u))}
+function rankLevel(c){return Math.max(0,Math.min(+PLAYER_OVERRIDES?.global?.rankMaxLevel||14,+(saveState.rank?.[String(c.id)]??c.rank??0)))}
+function nobilityLevel(c){return Math.max(0,Math.min(+PLAYER_OVERRIDES?.global?.nobilityMaxLevel||9,+(saveState.nobility?.[String(c.id)]??c.nobilityrank??0)))}
+function playerRankHpBonus(c){if(!c)return 0;const max=+PLAYER_OVERRIDES?.global?.rankMaxLevel||14,cap=+c.rankHpBonusCap||+PLAYER_OVERRIDES?.global?.rankHpBonusCap||500;return Math.round(cap*rankLevel(c)/max)}
+function playerNobilityHeal(c){if(!c)return 0;const max=+PLAYER_OVERRIDES?.global?.nobilityMaxLevel||9,cap=+c.nobilityHealCap||+PLAYER_OVERRIDES?.global?.nobilityHealCap||25;return Math.round(cap*nobilityLevel(c)/max)}
+function applyPlayerCommanderHp(u){const c=effectiveCommanderForUnit(u);if(!c||!isMine(u))return;const bonus=playerRankHpBonus(c);if(bonus<=0)return;u.playerCommanderHpBonus=bonus;u.max_hp=(+u.max_hp||0)+bonus;u.hp=(+u.hp||0)+bonus}
+function commanderMovementBonus(u){const c=effectiveCommanderForUnit(u),st=armyStat(u);let n=0;if(c){/* EW4: land units use commander movement stars; regular navy does not. */if(st.type!=='warship')n+=+c.movement||0;if(st.type==='artillery'&&EW4Combat.hasSkill(c,6))n+=2;if(st.type==='warship'&&EW4Combat.hasSkill(c,18))n+=1}for(const id of equippedItemIds(u)){const it=ITEMS?.[String(id)];if(!it||!itemTargetMatches(it,st))continue;if(+it.function===9)n+=+it.value||0}return n}
+function effectiveMovePoints(u){const st=armyStat(u);return EW4PlayerUnitRules.effectiveMovement(+st.movement||0,st.type,isMine(u))+commanderMovementBonus(u)}
+
+function bgVolume(){return clampSettingPercent(saveState.bgVol)/100}
+function seVolume(){return clampSettingPercent(saveState.seVol)/100}
+function playSfx(n){const a=audio[n];if(!a||seVolume()<=0)return;try{a.currentTime=0;a.volume=seVolume();a.play().catch(()=>{})}catch(e){}}
+const nativeSfxBases=new Map();
+function playNativeSfxFile(file){if(!file||seVolume()<=0)return false;try{let base=nativeSfxBases.get(file);if(!base){base=new Audio(`assets/audio/${file}`);base.preload='auto';nativeSfxBases.set(file,base)}const a=base.cloneNode(true);a.volume=seVolume();a.play().catch(()=>{});return true}catch(e){return false}}
+function playNativeFormOpenSfx(formId){const file=EW4NativeUIAudio?.formOpenSfx?.(formId);return file?playNativeSfxFile(file):false}
+function playNativeActionSfx(action){const file=window.EW4NativeActionAudio?.actionSfx?.(action);return file?playNativeSfxFile(file):false}
+function playNativeMovementSfx(u){const file=window.EW4NativeActionAudio?.movementSfx?.(u,armyStat(u));return file?playNativeSfxFile(file):false}
+function scheduleNativeAttackSfx(u,target,presentationSpeed=1){if(!u||!target||!NATIVE_EFFECT_AUDIO_DATA||!window.EW4NativeEffectAudio)return false;const dx=(+target.q||0)-(+u.q||0),dir=EW4NativeEffectAudio.directionFromDelta(dx||1),timeline=EW4NativeEffectAudio.resolveTimeline(u,dir,countryCode(u.owner)),cues=EW4NativeEffectAudio.scheduledAudioCues(NATIVE_EFFECT_AUDIO_DATA,timeline,presentationSpeed);if(!cues.length)return false;const battleRef=battleState;for(const cue of cues){const fire=()=>{if(battleState!==battleRef||activeScreenId()!=='battle')return;playNativeSfxFile(cue.sound)};if(cue.delayMs<=1)fire();else setTimeout(fire,cue.delayMs)}return true}
+function resize(){const s=Math.min(innerWidth/568,innerHeight/320);stage.style.transform=`translate(-50%,-50%) scale(${s})`;document.getElementById('rotate-tip').style.display=(innerHeight>innerWidth*1.25)?'flex':'none'}
+addEventListener('resize',resize);resize();
+function go(id){const previous=activeScreenId();if(id==='options'&&previous!=='options')playNativeFormOpenSfx('form_option');screens.forEach(s=>s.classList.toggle('active',s.id===id));if(id==='conquest')buildConquests();if(id==='hq')renderHQ();if(id==='academy')renderAcademy();if(id==='battle')startBattleMusic();else{pauseBattleMusic();if(battleState)battleState.dragging=false}}
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g){if(g.dataset.go==='options')optionsReturnScreen=activeScreenId()==='battle'?'battle':'main';if(g.dataset.go==='academy')academyReturnScreen=activeScreenId()==='deploy'?'deploy':'hq';go(g.dataset.go)}});
+function flash(t,ms=1700){statusEl.textContent=t;statusEl.style.display='block';clearTimeout(flash.t);flash.t=setTimeout(()=>statusEl.style.display='none',ms)}
+async function fetchJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(path+' '+r.status);return r.json()}
+function compactBileResource(name){return COMPACT_BILE_RESOURCES.get(name)||null}
+function preloadCompactBileResource(name){
+  if(!name||!COMPACT_BILE_PACK)return Promise.resolve(null);
+  if(COMPACT_BILE_RESOURCES.has(name))return Promise.resolve(COMPACT_BILE_RESOURCES.get(name));
+  if(COMPACT_BILE_PROMISES.has(name))return COMPACT_BILE_PROMISES.get(name);
+  const p=COMPACT_BILE_PACK.loadResource(name).then(r=>{
+    const atlas=img(r.atlasUrl),rec={...r,atlas};COMPACT_BILE_RESOURCES.set(name,rec);COMPACT_BILE_PROMISES.delete(name);
+    if(atlas){const old=atlas.onload;atlas.onload=()=>{if(typeof old==='function')old.call(atlas);requestBattleAnimation(80)}}
+    requestBattleAnimation(80);return rec
+  }).catch(e=>{COMPACT_BILE_PROMISES.delete(name);console.warn('compact BILE load failed',name,e);return null});
+  COMPACT_BILE_PROMISES.set(name,p);return p
+}
+async function fetchText(path){const r=await fetch(path);if(!r.ok)throw new Error(path+' '+r.status);return r.text()}
+async function fetchBuffer(path){const r=await fetch(path);if(!r.ok)throw new Error(path+' '+r.status);return r.arrayBuffer()}
+function loadNativeMapTextBase(){
+  if(MAPTEXT_BILE&&MAPTEXT_ATLAS)return Promise.resolve({bile:MAPTEXT_BILE,atlas:MAPTEXT_ATLAS});
+  if(MAPTEXT_BASE_PROMISE)return MAPTEXT_BASE_PROMISE;
+  MAPTEXT_BASE_PROMISE=Promise.all([fetchBuffer('assets/maptext_native/maptext.bin'),fetchText('assets/maptext_native/maptext.xml')]).then(([bin,xml])=>{
+    MAPTEXT_BILE=new EW4CompactBile.Bile(bin,xml);MAPTEXT_ATLAS=img('assets/maptext_native/maptext.png');return{bile:MAPTEXT_BILE,atlas:MAPTEXT_ATLAS}
+  }).catch(e=>{MAPTEXT_BASE_PROMISE=null;console.warn('native maptext base load failed',e);return null});return MAPTEXT_BASE_PROMISE
+}
+function loadNativeMapText(map){
+  if(MAPTEXT_PLACEMENTS.has(map))return Promise.resolve(MAPTEXT_PLACEMENTS.get(map));
+  if(MAPTEXT_PLACEMENT_PROMISES.has(map))return MAPTEXT_PLACEMENT_PROMISES.get(map);
+  const file=map==='america'?'maptextpos_america.xml':'maptextpos_europe.xml';
+  const p=Promise.all([loadNativeMapTextBase(),fetchText(`assets/maptext_native/${file}`)]).then(([base,xml])=>{
+    if(!base||!window.EW4NativeMapText)return null;const rows=EW4NativeMapText.preparePlacements(base.bile,EW4NativeMapText.parsePlacements(xml));MAPTEXT_PLACEMENTS.set(map,rows);MAPTEXT_PLACEMENT_PROMISES.delete(map);requestBattleAnimation(80);return rows
+  }).catch(e=>{MAPTEXT_PLACEMENT_PROMISES.delete(map);console.warn('native maptext placement load failed',map,e);return null});MAPTEXT_PLACEMENT_PROMISES.set(map,p);return p
+}
+function drawNativeMapTextWorld(map,c){
+  const rows=MAPTEXT_PLACEMENTS.get(map);if(!rows?.length||!MAPTEXT_BILE||!MAPTEXT_ATLAS?.complete||!window.EW4NativeMapText)return;
+  const margin=100/c.zoom,b={left:c.x-284/c.zoom-margin,right:c.x+284/c.zoom+margin,top:c.y-160/c.zoom-margin,bottom:c.y+160/c.zoom+margin};
+  for(const p of rows)if(EW4NativeMapText.intersects(p,b))EW4NativeMapText.drawPrepared(ctx,MAPTEXT_BILE,MAPTEXT_ATLAS,p)
+}
+async function loadDB(){if(DB)return DB;[DB,WORLDS,ARMIES,COMMANDERS,READY,ATTACK_POSES,RELOAD_POSES,FINISH_POSES,TERRAIN,PORTRAITS,SPRITES,STRINGS,CONSTRUCTIONS,CARDS,ITEMS,ITEM_ICONS,PLAYER_OVERRIDES,PLAYER_PRINCESS_OVERRIDES,INSTALLATIONS,BUILD_CARDS,BATTLE_NATIVE,NATIVE_TRIGGER_TARGETS,BATTLE_ITEMSTORES,BATTLE_TAVERNS,NATIVE_ANIM_PACK,NATIVE_EFFECT_AUDIO_DATA,NATIVE_SIMPLE_EFFECTS_DATA]=await Promise.all([
+ fetchJSON('assets/data/battles_runtime.json'),fetchJSON('assets/data/worldmaps.json'),fetchJSON('assets/data/army_stats.json'),fetchJSON('assets/data/commanders.json'),fetchJSON('assets/data/unit_ready_manifest.json'),fetchJSON('assets/data/unit_attack_manifest.json'),fetchJSON('assets/data/unit_reload_manifest.json'),fetchJSON('assets/data/unit_finish_manifest.json'),fetchJSON('assets/data/terrain_manifest.json'),fetchJSON('assets/data/portrait_manifest.json'),fetchJSON('assets/sprite_manifest.json'),fetchJSON('assets/data/strings_cn.json'),fetchJSON('assets/data/constructions.json'),fetchJSON('assets/data/cards.json'),fetchJSON('assets/data/items.json'),fetchJSON('assets/data/item_icon_manifest.json'),fetchJSON('assets/data/player_general_overrides.json'),fetchJSON('assets/data/player_princess_overrides.json'),fetchJSON('assets/data/installations.json'),fetchJSON('assets/data/build_cards.json'),fetchJSON('assets/data/battle_native_triggers.json'),fetchJSON('assets/data/native_trigger_targets.json'),fetchJSON('assets/data/battle_itemstores.json'),fetchJSON('assets/data/battle_taverns.json'),fetchJSON('assets/data/native_animation_core265.json'),fetchJSON('assets/data/native_effects_audio.json'),fetchJSON('assets/data/native_simple_effects.json')]);if(window.EW4CompactBile&&!COMPACT_BILE_PACK){COMPACT_BILE_PACK=new EW4CompactBile.BrowserPack('assets/bile_runtime');await COMPACT_BILE_PACK.loadManifest()}saveState.itemInventory=EW4ItemInventory.sanitizeInventory(saveState.itemInventory,ITEMS);ensureAcademyCandidatesPersisted();persist();return DB}
+
+/* ---------- Campaign / conquest / tutorial ---------- */
+function campaignRows(zone){return DB.battles.filter(b=>new RegExp(`^campaign${zone}_[0-9]+\\.btl$`).test(b.file)).sort((a,b)=>a.file.localeCompare(b.file,undefined,{numeric:true}))}
+function campaignProgressLevel(file){return Math.max(0,+saveState.campaignProgress?.[file]||0)}
+function campaignUnlocked(rows,index){return index===0||campaignProgressLevel(rows[index-1]?.file)>=1}
+function recordCampaignResult(b,major){if(!b||battleState?.mode!=='campaign')return;saveState.campaignProgress=saveState.campaignProgress||{};const next=major?2:1;if(next>campaignProgressLevel(b.file)){saveState.campaignProgress[b.file]=next;persist()}}
+function campaignIntroCommander(b){
+  const owner=b?.player_owner_default??0;const unit=(b?.units||[]).find(u=>u.owner===owner&&u.commander_id)|| (b?.units||[]).find(u=>u.commander_id);return unit?.commander_id?COMMANDERS?.[String(unit.commander_id)]:null
+}
+async function openZone(zone){
+  selectedZone=zone;await loadDB();const rows=campaignRows(zone);document.getElementById('campaign-list-title').textContent=zoneNames[zone];document.getElementById('campaign-stage-caption').innerHTML=`${zoneNames[zone]}<small>${rows.length} 个战役</small>`;const box=document.getElementById('battle-list');box.innerHTML='';selectedBattle=null;
+  let preferred=-1;
+  const zoneAsset={1:'france',2:'coalition',3:'holyroman',4:'east',5:'usa',6:'uk'}[zone]||'france';
+  rows.forEach((b,i)=>{const unlocked=campaignUnlocked(rows,i),done=campaignProgressLevel(b.file),btn=document.createElement('button');btn.className='battle-row'+(unlocked?'':' locked');btn.disabled=!unlocked;btn.style.backgroundImage=`url('assets/sprites/image_menu_hd/button_choosestage_${zoneAsset}.png')`;btn.innerHTML=`<span class="stage-no">${i+1}</span><span class="stage-name">${b.name_cn||b.file}</span><span class="stage-stars"><i class="${done>=1?'on':''}"></i><i class="${done>=2?'on':''}"></i></span>`;if(unlocked)btn.onclick=()=>selectBattle(b,btn);box.appendChild(btn);if(unlocked&&done===0&&preferred<0)preferred=i});
+  if(preferred<0){for(let i=rows.length-1;i>=0;i--)if(campaignUnlocked(rows,i)){preferred=i;break}}
+  if(preferred>=0)selectBattle(rows[preferred],box.children[preferred]);else{document.getElementById('intro-title').textContent='';document.getElementById('intro-text').textContent='';document.getElementById('intro-portrait').style.display='none'}
+  document.getElementById('battle-confirm').disabled=!selectedBattle;go('campaignList')
+}
+function selectBattle(b,btn){
+  selectedBattle=b;document.querySelectorAll('.battle-row').forEach(x=>x.classList.remove('sel'));if(btn)btn.classList.add('sel');
+  const lim=nativeStageTurnLimits(b),done=campaignProgressLevel(b.file),status=done===2?'　重大胜利':done===1?'　胜利':'',tail=lim.valid?`胜利 ${lim.win}回合 / 重大胜利 ${lim.best}回合${status}`:(status.trim()||'');
+  document.getElementById('intro-title').textContent=`${b.name_cn||b.file}${tail?`　${tail}`:''}`;document.getElementById('intro-text').textContent=b?.desc_cn||'';
+  const c=campaignIntroCommander(b),img=document.getElementById('intro-portrait'),src=c?portrait(c.id):'';if(src){img.src=src;img.style.display='block';img.alt=commanderName(c)}else img.style.display='none';
+  document.getElementById('battle-confirm').disabled=false
+}
+document.querySelectorAll('.campaign-pin').forEach(b=>b.onclick=()=>openZone(+b.dataset.zone));
+document.getElementById('battle-confirm').onclick=async()=>{if(!selectedBattle)return;await loadDB();openBattle(selectedBattle,selectedBattle.header.map_id===2?'america':'europe',{mode:'campaign',playerOwner:selectedBattle.player_owner_default??0,assignments:new Map()})};
+function buildConquests(){const root=document.getElementById('conquest-cards');if(root.childElementCount)return;conquests.forEach((c,i)=>{const x=i%2?292:52,y=Math.floor(i/2)*95+37;const b=document.createElement('button');b.className='conq-card';b.style.left=x+'px';b.style.top=y+'px';b.style.backgroundImage=`url('assets/textures/tex_conquest_${c.tex}.png')`;b.innerHTML=`<img class="conq-loc" src="assets/sprites/image_menu_hd/conquest_text_${c.loc}.png"><img class="conq-year" style="left:${c.loc==='america'?78:65}px" src="assets/sprites/image_menu_hd/conquest_text_${c.year}.png"><img class="conq-line" src="assets/sprites/image_menu_hd/button_conquest_whiteline.png"><div class="conq-country">${c.countries}</div>`;b.onclick=async()=>{await loadDB();const battle=DB.battles.find(x=>x.file===`conquest${c.idx}.btl`);if(battle)openCountrySelect(battle,c.map)};root.appendChild(b)})}
+document.querySelectorAll('[data-tutorial]').forEach(btn=>btn.onclick=async()=>{await loadDB();const b=DB.battles.find(x=>x.file===btn.dataset.tutorial);if(b)openBattle(b,b.header.map_id===2?'america':'europe',{mode:'tutorial',playerOwner:b.player_owner_default??0,assignments:new Map()})});
+
+function openCountrySelect(b,map){pending={battle:b,mode:'conquest',map,back:'conquest',assignments:new Map()};countryChoice=null;const root=document.getElementById('country-grid');root.innerHTML='';b.countries.forEach(c=>{const el=document.createElement('button');el.className='country-card';const flag=spriteFile(`${c.code}1.png`);el.innerHTML=`${flag?`<img src="${flag}">`:''}<div><b>${c.name_cn||c.code.toUpperCase()}</b><br><small>${c.code.toUpperCase()} · 国家 ${c.index+1}</small></div>`;el.onclick=()=>{countryChoice=c.index;root.querySelectorAll('.country-card').forEach(x=>x.classList.remove('sel'));el.classList.add('sel');document.getElementById('country-choice').textContent=`已选择：${c.name_cn||c.code}`};root.appendChild(el)});document.getElementById('country-choice').textContent='请选择国家';go('countrySelect')}
+document.getElementById('country-back').onclick=()=>go('conquest');
+document.getElementById('country-confirm').onclick=()=>{if(countryChoice==null){flash('先选择一个国家');return}openBattle(pending.battle,pending.map,{mode:'conquest',playerOwner:countryChoice,assignments:new Map()})};
+
+/* ---------- HQ / Academy ---------- */
+function renderHQ(){if(!COMMANDERS||!PLAYER_OVERRIDES){loadDB().then(renderHQ);return}const root=document.getElementById('hq-grid');root.innerHTML='';const list=commanderList().filter(c=>hqFilter==='all'||owns(c.id));for(const c of list){const el=document.createElement('button'),ov=playerOverride(c),ec=effectiveCommander(c,true);el.className='hq-card';el.innerHTML=`${owns(c.id)?'<span class="ownmark">已拥有</span>':''}<img src="${portrait(c.id)}"><div><b>${commanderName(c)}</b></div><div class="stars">${stars(c.star)}</div><div>${c.country.toUpperCase()} · 军衔${rankLevel(c)}</div>`;el.onclick=()=>openHQCommander(c);root.appendChild(el)}}
+function openHQCommander(c,{playOpenSound=true}={}){detailCommander=c;if(playOpenSound)playNativeFormOpenSfx('form_generalinfo');const ec=effectiveCommander(c,true),ov=playerOverride(c),owned=owns(c.id),base=new Set(baseSkillIds(c)),skills=ec.skills||baseSkillIds(ec);document.getElementById('gd-portrait').src=portrait(c.id);document.getElementById('gd-name').textContent=commanderName(c);document.getElementById('gd-country').textContent=`${c.country.toUpperCase()} · ${stars(c.star)}`;document.getElementById('gd-enh').textContent='';const rows=[['步',ec.infantry],['骑',ec.cavalry],['炮',ec.artillery],['海',ec.warship],['塞',ec.fort],['商',ec.business],['行',ec.movement],['训',ec.training]];document.getElementById('gd-stats').innerHTML=rows.map(([n,v])=>`<div class="gd-stat">${n}<b>${v}</b></div>`).join('');document.getElementById('gd-skills').innerHTML=skills.map(id=>`<span class="gd-skill">${skillName(id)}</span>`).join('');const rl=rankLevel(c),nl=nobilityLevel(c),hp=playerRankHpBonus(ec),heal=playerNobilityHeal(ec),hpCap=ec.rankHpBonusCap||PLAYER_OVERRIDES.global.rankHpBonusCap,healCap=ec.nobilityHealCap||PLAYER_OVERRIDES.global.nobilityHealCap;document.getElementById('gd-grow').innerHTML=`军衔 ${rl}/${PLAYER_OVERRIDES.global.rankMaxLevel} · 当前额外HP +${hp}<br>满级军衔HP上限 +${hpCap}<br>爵位 ${nl}/${PLAYER_OVERRIDES.global.nobilityMaxLevel} · 当前每回合回血 +${heal}<br>满级爵位回血 +${healCap}/回合`;document.getElementById('gd-rank').disabled=!owned||rl>=PLAYER_OVERRIDES.global.rankMaxLevel;document.getElementById('gd-nobility').disabled=!owned||nl>=PLAYER_OVERRIDES.global.nobilityMaxLevel;renderEquipmentSlots(c);document.getElementById('general-detail').classList.add('show')}
+let equipmentSlotEditing=0;
+function renderEquipmentSlots(c){
+  const root=document.getElementById('gd-equipment');if(!root)return;root.innerHTML='';const ids=equipmentSlotsForCommander(c);
+  for(let slot=0;slot<2;slot++){const id=ids[slot],it=id!=null?ITEMS?.[String(id)]:null,b=document.createElement('button');b.className='gd-eq-slot';b.disabled=!owns(c.id);b.title=it?`${itemName(it)}：${itemDesc(it)}`:'空装备槽';b.innerHTML=it?`${itemIcon(it)?`<img src="${itemIcon(it)}">`:''}<span>${itemName(it)}</span>`:`<span>空槽 ${slot+1}</span>`;b.onclick=()=>openEquipmentPicker(c,slot);root.appendChild(b)}
+}
+function inventoryEquipmentPool(){return EW4ItemInventory.inventoryIds(saveState.itemInventory).map(id=>ITEMS?.[String(id)]).filter(it=>it&&!it.consumable).sort((a,b)=>+a.id-+b.id)}
+function openEquipmentPicker(c,slot){
+  if(!c||!owns(c.id))return;equipmentSlotEditing=slot;const ec=effectiveCommander(c,true),box=document.getElementById('eq-grid'),slots=equipmentSlotsForCommander(c),currentId=slots[slot],current=currentId!=null?ITEMS?.[String(currentId)]:null;box.innerHTML='';document.getElementById('eq-title').textContent=`${commanderName(c)} · 装备槽 ${slot+1}`;document.getElementById('eq-current').textContent=`当前：${current?itemName(current):'空'} · 旗帜类装备需要“旗手”技能`;
+  const rem=document.createElement('button');rem.className='eq-item eq-remove';rem.textContent='卸下装备';rem.disabled=currentId==null;rem.onclick=()=>setEquipmentSlot(c,slot,null);box.appendChild(rem);
+  const pool=inventoryEquipmentPool();
+  for(const it of pool){const locked=!!it.flag&&!EW4Combat.hasSkill(ec,0),b=document.createElement('button'),count=EW4ItemInventory.count(saveState.itemInventory,it.id);b.className='eq-item'+(locked?' flaglocked':'');b.disabled=locked;const icon=itemIcon(it);b.innerHTML=`${icon?`<img src="${icon}">`:''}<b>${itemName(it)}</b><small>×${count}</small>`;b.title=itemDesc(it);b.onmouseenter=()=>document.getElementById('eq-desc').textContent=itemDesc(it)||itemName(it);b.onclick=()=>setEquipmentSlot(c,slot,+it.id);box.appendChild(b)}
+  if(!pool.length){const empty=document.createElement('div');empty.className='eq-empty';empty.textContent='暂无库存装备';box.appendChild(empty)}
+  document.getElementById('equipment-picker').classList.add('show');
+}
+function setEquipmentSlot(c,slot,id){
+  const it=id==null?null:ITEMS?.[String(id)],ec=effectiveCommander(c,true);if(id!=null&&!it){flash('装备不存在');return}if(it?.flag&&!EW4Combat.hasSkill(ec,0)){flash('需要“旗手”技能');return}
+  const r=EW4ItemInventory.changeSlot({inventory:saveState.itemInventory,slots:equipmentSlotsForCommander(c),slot,itemId:id,items:ITEMS});if(!r.ok){flash(r.reason==='insufficient'?'库存不足':'无法更换装备');return}
+  saveState.itemInventory=r.inventory;saveState.equipment=saveState.equipment||{};saveState.equipment[String(c.id)]=r.slots;persist();document.getElementById('equipment-picker').classList.remove('show');openHQCommander(c,{playOpenSound:false});flash(id==null?'装备已卸下':`${itemName(it)} 已装备`)
+}
+function closeHQCommander(){document.getElementById('general-detail').classList.remove('show');document.getElementById('equipment-picker').classList.remove('show');detailCommander=null}
+
+document.getElementById('hq-all').onclick=()=>{hqFilter='all';renderHQ()};document.getElementById('hq-owned').onclick=()=>{hqFilter='owned';renderHQ()};
+document.getElementById('commerce-close').onclick=()=>document.getElementById('commerce-panel').classList.remove('show');
+document.getElementById('gd-close').onclick=closeHQCommander;document.getElementById('eq-close').onclick=()=>document.getElementById('equipment-picker').classList.remove('show');document.getElementById('gd-rank').onclick=()=>{if(!detailCommander||!owns(detailCommander.id))return;saveState.rank[String(detailCommander.id)]=Math.min(+PLAYER_OVERRIDES.global.rankMaxLevel,rankLevel(detailCommander)+1);persist();openHQCommander(detailCommander,{playOpenSound:false});renderHQ();flash('军衔提升')};document.getElementById('gd-nobility').onclick=()=>{if(!detailCommander||!owns(detailCommander.id))return;saveState.nobility[String(detailCommander.id)]=Math.min(+PLAYER_OVERRIDES.global.nobilityMaxLevel,nobilityLevel(detailCommander)+1);persist();openHQCommander(detailCommander,{playOpenSound:false});renderHQ();flash('爵位提升')};
+document.querySelectorAll('.academy-tab').forEach(b=>b.onclick=()=>{academyPool=b.dataset.pool;saveState.academyPool=academyPool;academySelectedId=null;syncAcademyCandidates();persist();renderAcademy()});
+document.getElementById('academy-refresh').onclick=()=>refreshAcademy();
+function academyCandidateCount(){return EW4NativeAcademy.config(academyPool).count}
+function ensureAcademyCandidatesPersisted(){
+  if(!COMMANDERS||!window.EW4NativeAcademy)return false;
+  const before=EW4NativeAcademy.normalizePools(saveState.academyCandidatesByPool),after=EW4NativeAcademy.ensurePools({commanders:COMMANDERS,owned:saveState.owned,pools:before});
+  saveState.academyCandidatesByPool=after;syncAcademyCandidates();return true
+}
+function syncAcademyCandidates(){
+  if(!COMMANDERS){academyCandidates=[];return academyCandidates}
+  const ids=EW4NativeAcademy.normalizePools(saveState.academyCandidatesByPool)[academyPool]||[];
+  academyCandidates=ids.map(id=>id==null?null:(COMMANDERS[String(id)]||null));return academyCandidates
+}
+function refreshAcademy(){
+  if(!COMMANDERS||!window.EW4NativeAcademy)return;
+  ensureAcademyCandidatesPersisted();
+  saveState.academyCandidatesByPool=EW4NativeAcademy.refreshTier({commanders:COMMANDERS,owned:saveState.owned,pools:saveState.academyCandidatesByPool,tier:academyPool});
+  syncAcademyCandidates();academySelectedId=null;persist();renderAcademy()
+}
+function academySelected(){return academyCandidates.find(c=>c&&+c.id===+academySelectedId)||null}
+
+function closeGetGeneralTips(){document.getElementById('getgeneral-tips-shade')?.classList.remove('show');document.getElementById('getgeneral-tips')?.classList.remove('show')}
+function openGetGeneralTips(c){if(!c)return;document.getElementById('getgeneral-tips-portrait').src=portrait(c.id);document.getElementById('getgeneral-tips-name').textContent=commanderName(c);document.getElementById('getgeneral-tips-shade').classList.add('show');document.getElementById('getgeneral-tips').classList.add('show');playNativeFormOpenSfx('form_getgeneraltips')}
+function academySelect(id){academySelectedId=+id;renderAcademy()}
+function academyAcquire(cur){const c=academySelected();if(!c)return;if(owns(c.id)){flash('该上将已拥有');return}if(!EW4NativeAcademy.canUseCurrency(c,cur))return;if(acquire(c.id)){saveState.academyCandidatesByPool=EW4NativeAcademy.clearCandidate(saveState.academyCandidatesByPool,academyPool,c.id);academySelectedId=null;syncAcademyCandidates();persist();renderAcademy();renderHQ();openGetGeneralTips(c)}}
+function renderAcademy(){
+  if(!COMMANDERS){loadDB().then(()=>{academyPool=saveState.academyPool||'6';ensureAcademyCandidatesPersisted();renderAcademy()});return}
+  ensureAcademyCandidatesPersisted();syncAcademyCandidates();
+  const poolPos={6:0,4:156,2:312},line=document.getElementById('academy-checkline');if(line)line.style.left=(poolPos[academyPool]??0)-5+'px';
+  const root=document.getElementById('academy-list');root.innerHTML='';
+  academyCandidates.forEach((c,idx)=>{const el=document.createElement('div');if(!c){el.className='academy-card academy-empty';el.setAttribute('aria-hidden','true');root.appendChild(el);return}const owned=owns(c.id),sel=+academySelectedId===+c.id;el.className='academy-card'+(sel?' sel':'');el.dataset.id=c.id;el.tabIndex=0;el.setAttribute('role','button');el.innerHTML=`<img class="academy-portrait" src="${portrait(c.id)}"><span class="academy-name">${commanderName(c)}</span><button class="academy-info" title="信息"></button>`;el.onclick=e=>{if(e.target.closest('.academy-info'))return;academySelect(c.id)};el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();academySelect(c.id)}};el.querySelector('.academy-info').onclick=e=>{e.stopPropagation();openHQCommander(c)};if(owned)el.style.opacity='.58';root.appendChild(el)});
+  const pair=document.getElementById('academy-buy-pair'),c=academySelected();
+  if(c){const idx=Math.max(0,academyCandidates.findIndex(x=>x&&+x.id===+c.id)),slotLeft=25+idx*(78+10.2),left=Math.max(4,Math.min(449,slotLeft+39-57.5));pair.style.left=left+'px';pair.classList.add('show');const owned=owns(c.id),prices=EW4NativeAcademy.prices(c),medalBtn=document.getElementById('academy-buy-medal'),badgeBtn=document.getElementById('academy-buy-badge');document.getElementById('academy-medal-price').textContent=prices.medal||'';document.getElementById('academy-badge-price').textContent=prices.badge||'';medalBtn.hidden=prices.medal<=0;badgeBtn.hidden=prices.badge<=0;medalBtn.disabled=owned||prices.medal<=0;badgeBtn.disabled=owned||prices.badge<=0}else pair.classList.remove('show');
+}
+document.getElementById('academy-buy-medal').onclick=()=>academyAcquire('medal');document.getElementById('academy-buy-badge').onclick=()=>academyAcquire('badge');
+document.getElementById('getgeneral-tips-ok').onclick=closeGetGeneralTips;document.getElementById('getgeneral-tips-shade').onclick=closeGetGeneralTips;
+
+/* ---------- Native in-battle general deployment (form_deploygeneral) ---------- */
+function deploymentTargetUnit(){
+  if(!battleState||deploymentTargetUnitIndex==null)return null;
+  return battleState.units.find(u=>+u.index===+deploymentTargetUnitIndex&&!u.dead)||null
+}
+function deployedGeneralIds(exceptUnitIndex=null){return battleState?EW4GeneralDeployment.deployedIds(battleState.units,battleState.playerOwner,exceptUnitIndex):new Set()}
+function commanderHpBonusForDeployment(cid){const c=COMMANDERS?.[String(cid)];return c?Math.max(0,playerRankHpBonus(effectiveCommander(c,true))):0}
+function openGeneralDeploymentForUnit(u){
+  if(!battleState||!u||u.dead||!isMine(u))return;
+  deploymentTargetUnitIndex=+u.index;selectedDeployGeneral=u.commander_id==null?null:+u.commander_id;renderDeployment();go('deploy')
+}
+function renderDeployment(){
+  const target=deploymentTargetUnit(),gRoot=document.getElementById('deploy-generals');if(!target||!gRoot)return;
+  gRoot.innerHTML='';const occupied=deployedGeneralIds(target.index),summoned=new Set((battleState?.summonedPrincesses||[]).map(Number)),owned=commanderList().filter(c=>owns(c.id)&&(!PRINCESS_IDS.includes(+c.id)||summoned.has(+c.id)||+c.id===+target.commander_id)&&(!occupied.has(+c.id)||+c.id===+target.commander_id));
+  for(const c of owned){const el=document.createElement('button'),isSel=+selectedDeployGeneral===+c.id;el.className='deploy-native-general'+(isSel?' sel':'');el.dataset.id=c.id;el.innerHTML=`<div class="frame"><img src="${portrait(c.id)}"></div><b>${commanderName(c)}</b><div class="stars">${stars(c.star)}</div>`;el.onclick=()=>{selectedDeployGeneral=+c.id;renderDeployment()};gRoot.appendChild(el)}
+  if(!owned.length)gRoot.innerHTML='<div style="grid-column:1/7;padding-top:70px;text-align:center;font-size:8px;color:#554e43">暂无可部署将领</div>';
+  document.getElementById('deploy-count').textContent=String([...deployedGeneralIds()].length);
+  const confirm=document.getElementById('deploy-confirm');if(confirm)confirm.disabled=selectedDeployGeneral==null
+}
+function hidePrincessDeploymentPanel(){const p=document.getElementById('princess-panel');if(p)p.classList.remove('show')}
+function renderPrincessDeploymentPanel(){
+  const root=document.getElementById('princess-grid'),target=deploymentTargetUnit();if(!root||!target)return;
+  root.innerHTML='';const occupied=deployedGeneralIds(target.index);
+  ORIGINAL_PRINCESS_ORDER.forEach((cid,i)=>{const c=COMMANDERS?.[String(cid)];if(!c)return;const el=document.createElement('div'),row=i<4?1:2,col=(i%4)+1,deployedElsewhere=occupied.has(+cid);el.className=`princess-entry r${row} c${col}`;el.innerHTML=`<img class="portrait" src="${portrait(cid)}" alt=""><div class="name">${commanderName(c)}</div><button class="go" data-princess-id="${cid}" ${deployedElsewhere?'disabled':''}>${deployedElsewhere?'已出征':(STRINGS?.btn_gobattle||'出征')}</button>`;const btn=el.querySelector('.go');if(!deployedElsewhere)btn.onclick=()=>{const arr=new Set((battleState.summonedPrincesses||[]).map(Number));arr.add(+cid);battleState.summonedPrincesses=[...arr];selectedDeployGeneral=+cid;hidePrincessDeploymentPanel();renderDeployment()};root.appendChild(el)
+  })
+}
+function openPrincessDeploymentPanel(){if(!deploymentTargetUnit())return;renderPrincessDeploymentPanel();playNativeFormOpenSfx('form_princess');document.getElementById('princess-panel')?.classList.add('show')}
+function commitGeneralDeployment(){
+  const target=deploymentTargetUnit();if(!target||selectedDeployGeneral==null)return false;const cid=+selectedDeployGeneral;if(!owns(cid)){flash('该将领尚未加入指挥部');return false}
+  // Native deployment is unit-targeted. Never auto-fill a list of units: only the selected unit changes.
+  const assigned=EW4GeneralDeployment.assign(battleState.units,target.index,cid,battleState.playerOwner,commanderHpBonusForDeployment);if(!assigned)return false;
+  battleState.assignments.set(+target.index,cid);writeBattleSave('auto',true);playSfx('select');return true
+}
+document.getElementById('deploy-back').onclick=()=>{hidePrincessDeploymentPanel();deploymentTargetUnitIndex=null;selectedDeployGeneral=null;go('battle');renderBattleActions();renderBattle()};
+document.getElementById('deploy-princess').onclick=openPrincessDeploymentPanel;
+document.getElementById('princess-close').onclick=hidePrincessDeploymentPanel;
+document.getElementById('deploy-clear').onclick=()=>{};
+document.getElementById('deploy-college').onclick=()=>{hidePrincessDeploymentPanel();academyReturnScreen='deploy';go('academy')};
+document.getElementById('deploy-confirm').onclick=()=>{hidePrincessDeploymentPanel();if(commitGeneralDeployment()){const target=deploymentTargetUnit(),name=target?.commander_id?commanderName(COMMANDERS?.[String(target.commander_id)]):'';deploymentTargetUnitIndex=null;selectedDeployGeneral=null;go('battle');renderBattleActions();renderBattle();flash(name?`${name} 已部署到该部队`:'将领已部署')}};
+
+/* ---------- Battle rendering ---------- */
+function img(path){if(!path)return null;if(imageCache.has(path))return imageCache.get(path);const im=new Image();im.decoding='async';im.src=path;im.onload=()=>renderBattle();imageCache.set(path,im);return im}
+function worldPoint(q,r){return{x:q*64,y:r*53+(q&1)*26.5}}
+function screenPoint(q,r){const p=worldPoint(q,r),c=battleState.camera;return{x:(p.x-c.x)*c.zoom+284,y:(p.y-c.y)*c.zoom+160}}
+function screenToWorld(x,y){const c=battleState.camera;return{x:(x-284)/c.zoom+c.x,y:(y-160)/c.zoom+c.y}}
+const CAMERA_MIN_ZOOM=.58,CAMERA_MAX_ZOOM=1.65;
+function cameraMapSize(){const S=battleState,im=S?.mapImg,w=im?.naturalWidth||im?.width||((S?.world?.width||79)*64),h=im?.naturalHeight||im?.height||((S?.world?.height||68)*53+53);return{w,h}}
+function clampCamera(c=battleState?.camera){if(!battleState||!c)return c;c.zoom=Math.max(CAMERA_MIN_ZOOM,Math.min(CAMERA_MAX_ZOOM,c.zoom));const size=cameraMapSize(),hx=284/c.zoom,hy=160/c.zoom,minX=hx,maxX=size.w-hx,minY=hy,maxY=size.h-hy;c.x=minX<=maxX?Math.max(minX,Math.min(maxX,c.x)):size.w/2;c.y=minY<=maxY?Math.max(minY,Math.min(maxY,c.y)):size.h/2;return c}
+function zoomCameraAt(nextZoom,sx=284,sy=160,worldAnchor=null){if(!battleState)return;const c=battleState.camera,a=worldAnchor||screenToWorld(sx,sy),z=Math.max(CAMERA_MIN_ZOOM,Math.min(CAMERA_MAX_ZOOM,nextZoom));c.zoom=z;c.x=a.x-(sx-284)/z;c.y=a.y-(sy-160)/z;clampCamera(c)}
+function unitVisualZoom(z=battleState?.camera?.zoom||1){return Math.max(.76,Math.min(1.18,Math.pow(z,.46)))}
+function nearestCell(wx,wy){let best=null,bd=1e9;const h=battleState.battle.header;const q0=Math.max(h.origin_x,Math.floor(wx/64)-2),q1=Math.min(h.origin_x+h.width-1,Math.floor(wx/64)+2);for(let q=q0;q<=q1;q++){const approx=Math.round((wy-(q&1)*26.5)/53);for(let r=Math.max(h.origin_y,approx-2);r<=Math.min(h.origin_y+h.height-1,approx+2);r++){const p=worldPoint(q,r),d=(p.x-wx)**2+(p.y-wy)**2;if(d<bd){bd=d;best={q,r}}}}return best}
+function hexPath(x,y,scale=1){const rx=36*scale,ry=30*scale;ctx.beginPath();for(let i=0;i<6;i++){const a=Math.PI/3*i,px=x+Math.cos(a)*rx,py=y+Math.sin(a)*ry;if(!i)ctx.moveTo(px,py);else ctx.lineTo(px,py)}ctx.closePath()}
+function ownershipIndex(q,r){const b=battleState.battle,h=b.header,x=q-h.origin_x,y=r-h.origin_y;if(x<0||y<0||x>=h.width||y>=h.height)return-1;return y*h.width+x-(b.owner_index_bias??0)}
+function ownerAt(q,r){const idx=ownershipIndex(q,r);if(idx<0)return 255;return battleState.ownership[idx]??255}
+function setOwnerAt(q,r,owner){const idx=ownershipIndex(q,r);if(idx>=0&&idx<battleState.ownership.length)battleState.ownership[idx]=owner}
+function countryColor(i,alpha=.18){const c=battleState.battle.countries[i];if(!c)return`rgba(100,100,100,${alpha})`;const a=c.rgba||[100,100,100,40];return`rgba(${a[0]},${a[1]},${a[2]},${alpha})`}
+function countryCode(i){return battleState.battle.countries[i]?.code||'fra'}
+function terrainCell(q,r){const w=battleState.world;if(q<0||r<0||q>=w.width||r>=w.height)return null;return w.cells[r*w.width+q]}
+function armyStat(u){const code=countryCode(u.owner),key=`${u.army_name}|${u.grade}`;return ARMIES[code]?.[key]||Object.values(ARMIES).find(x=>x[key])?.[key]||{movement:6,minatk:1,maxatk:5,minatkrange:1,maxatkrange:1,type:'infantry',weapon:'gun',strength:u.max_hp||100,consumption:0}}
+function ensureUnitTrainingState(u,{fromBTL=false}={}){if(!u)return u;if(u.trainingLevel==null){const raw=fromBTL&&Array.isArray(u.raw)?+u.raw[20]:0;u.trainingLevel=EW4NativeTraining.level(raw)}else u.trainingLevel=EW4NativeTraining.level(u.trainingLevel);if(u.trainingExp==null||!Number.isFinite(+u.trainingExp))u.trainingExp=0;else u.trainingExp=Math.max(0,Math.trunc(+u.trainingExp));return u}
+function trainingDefenseBonus(u){return EW4NativeTraining.defenseBonus(u)}
+function trainingRoundHeal(u){return EW4NativeTraining.roundHeal(u)}
+function readyKey(u){if(['Privateer','Frigate','Battleship','Ironclad','Small Fortress','Fortress','Large Fortress','Coastal Fort'].includes(u.army_name))return u.army_name;const g=Math.max(1,(u.grade||0)+1),cc=countryCode(u.owner);return READY[`${u.army_name} ${cc} ${g}`]?`${u.army_name} ${cc} ${g}`:`${u.army_name} ${g}`}
+let battleAnimUntil=0,battleAnimRaf=0;
+function requestBattleAnimation(ms=720){battleAnimUntil=Math.max(battleAnimUntil,performance.now()+ms);if(battleAnimRaf)return;const tick=()=>{battleAnimRaf=0;if(!battleState)return;renderBattle();if(performance.now()<battleAnimUntil)battleAnimRaf=requestAnimationFrame(tick)};battleAnimRaf=requestAnimationFrame(tick)}
+function attackAnimationProfile(u){
+  const k=readyKey(u),a=ATTACK_POSES?.[k],r=RELOAD_POSES?.[k],f=FINISH_POSES?.[k];
+  const ad=Math.max(1,+a?.duration||32),rd=Math.max(1,+r?.duration||0),fd=Math.max(1,+f?.duration||0),sum=ad+rd+fd;
+  const totalMs=Math.max(760,Math.min(1580,Math.round(sum*11.2)));return{attackEnd:ad/sum,reloadEnd:(ad+rd)/sum,totalMs};
+}
+function nativeAnimationUnitName(u){const k=readyKey(u);return NATIVE_ANIM_PACK?.units?.[k]?k:null}
+function nativeAnimationTargetClass(u){if(!u)return'';if(isFort(u))return'fort';return armyStat(u).type||''}
+function startAttackAnim(u,target=null,ms=null){
+  if(!u)return;const now=performance.now(),nativeName=nativeAnimationUnitName(u);
+  if(nativeName&&window.EW4NativeAnimation){
+    const st=armyStat(u),player=new EW4NativeAnimation.NativeAnimationPlayer(NATIVE_ANIM_PACK,nativeName,{weapon:st.weapon||'',targetClass:nativeAnimationTargetClass(target)},0);
+    for(const phase of player.chain||[])if(phase?.asset?.resource)preloadCompactBileResource(phase.asset.resource);
+    const speed=(battleState?.aiFastForward&&!isMine(u))?Math.max(1,player.activeDurationMs/90):1,realMs=Math.max(1,player.activeDurationMs/speed);
+    u.nativeAnim={player,start:now,presentationSpeed:speed,until:now+realMs,unitName:nativeName};u.attackAnimStart=0;u.attackPoseUntil=now+realMs;
+    scheduleNativeAttackSfx(u,target,speed);if(battleState&&isMine(u))battleState.inputLockedUntil=Math.max(battleState.inputLockedUntil||0,now+realMs);requestBattleAnimation(realMs+40);return;
+  }
+  const prof=attackAnimationProfile(u);ms=ms==null?prof.totalMs:ms;let presentationSpeed=1;if(battleState?.aiFastForward&&!isMine(u)){presentationSpeed=Math.max(1,ms/90);ms=Math.min(ms,90)}scheduleNativeAttackSfx(u,target,presentationSpeed);u.attackAnimStart=now;u.attackPoseUntil=now+ms;if(battleState&&isMine(u))battleState.inputLockedUntil=Math.max(battleState.inputLockedUntil||0,now+ms);requestBattleAnimation(ms+40)
+}
+function nativeAnimationSample(u,now=performance.now()){
+  const a=u?.nativeAnim;if(!a||!NATIVE_ANIM_PACK)return null;
+  const elapsed=Math.max(0,now-a.start)*(a.presentationSpeed||1),s=a.player.sample(elapsed),asset=NATIVE_ANIM_PACK.assets?.[s.assetId];
+  if(now>=a.until){u.nativeAnim=null;return null}return{s,asset,unit:NATIVE_ANIM_PACK.units[a.unitName]};
+}
+function staticNativePoseRect(u,m,p,uz){
+  if(!m)return null;const ready=READY?.[readyKey(u)]||m,ax=+ready.x||0,ay=+ready.y||0,minx=Number.isFinite(+m.minx)?+m.minx:0,miny=Number.isFinite(+m.miny)?+m.miny:0,scale=.5*uz;
+  return{x:p.x+(ax+minx)*scale,y:p.y+(ay+miny)*scale,w:(+m.w||1)*uz,h:(+m.h||1)*uz};
+}
+function nativeFrameDrawSpec(u,p,uz,now=performance.now()){
+  const sample=nativeAnimationSample(u,now);if(!sample?.asset)return null;const {s,asset,unit}=sample,compact=compactBileResource(asset.resource);
+  // Production/lean path: draw the original BILE motion directly from its atlas.
+  // Pre-expanded runtime_sheet.png files are development cache only and are not
+  // required for rendering. Raw BILE coordinates are already world-relative, so
+  // only the native Unit anchor is added here (no second world_union translation).
+  if(compact?.bile&&compact?.atlas?.complete){const itemIndex=compact.bile.nameToItem[asset.motion_name],origin=EW4NativeAnimation.compactDrawOrigin(unit,p,uz);if(itemIndex!==undefined)return{kind:'compact',bile:compact.bile,atlas:compact.atlas,itemIndex,frameIndex:s.frameIndex,...origin}}
+  return null;
+}
+function unitDisplayWorldPoint(u){
+  const a=u?.moveAnim,now=performance.now();
+  if(!a||!Array.isArray(a.path)||a.path.length<2||now>=a.until)return worldPoint(u.q,u.r);
+  const span=Math.max(1,a.until-a.start),p=Math.max(0,Math.min(.999999,(now-a.start)/span));
+  const segs=a.path.length-1,x=p*segs,i=Math.min(segs-1,Math.floor(x)),f=x-i;
+  const A=worldPoint(a.path[i].q,a.path[i].r),B=worldPoint(a.path[i+1].q,a.path[i+1].r);
+  return{x:A.x+(B.x-A.x)*f,y:A.y+(B.y-A.y)*f};
+}
+function unitScreenPoint(u){const p=unitDisplayWorldPoint(u),c=battleState.camera;return{x:(p.x-c.x)*c.zoom+284,y:(p.y-c.y)*c.zoom+160}}
+function startMoveAnim(u,path){if(!u||!Array.isArray(path)||path.length<2)return;const now=performance.now(),normal=Math.max(220,Math.min(1180,(path.length-1)*150)),ms=(battleState?.aiFastForward&&!isMine(u))?Math.min(80,normal):normal;u.moveAnim={path,start:now,until:now+ms};if(battleState&&isMine(u))battleState.inputLockedUntil=Math.max(battleState.inputLockedUntil||0,now+ms);requestBattleAnimation(ms+30)}
+function unitVisual(u){
+  const k=readyKey(u),now=performance.now();
+  if(u?.attackPoseUntil&&u?.attackAnimStart&&now<u.attackPoseUntil){
+    const p=Math.max(0,Math.min(1,(now-u.attackAnimStart)/(u.attackPoseUntil-u.attackAnimStart))),prof=attackAnimationProfile(u);
+    let src;
+    if(p<prof.attackEnd)src=ATTACK_POSES?.[k];
+    else if(p<prof.reloadEnd)src=RELOAD_POSES?.[k]||ATTACK_POSES?.[k];
+    else src=FINISH_POSES?.[k]||RELOAD_POSES?.[k]||ATTACK_POSES?.[k];
+    return src||READY?.[k]||null;
+  }
+  return READY?.[k]||null;
+}
+function unitImage(u){const m=unitVisual(u);return m?img(m.file):null}
+function specialFacilityType(o){const n=+o?.extra||0;return n===1?'trade':n===2?'shop':n===3?'bar':null}
+function specialFacilityMarker(o){const t=specialFacilityType(o);return t?`marker_${t}.png`:null}
+function buildingKey(o){let lv=Math.max(1,o.level||1),code=countryCode(o.owner),east=['rus','tur','per'].includes(code),style=east?'east':'west';if(o.construction_type==='city')return`city_${style}_lv${Math.min(7,lv)}.png`;if(o.construction_type==='industry')return`factory_${style}_lv${Math.min(4,lv)}.png`;if(o.construction_type==='stable')return`stable_${style}_lv${Math.min(3,lv)}.png`;if(o.construction_type==='port')return`port_${Math.min(4,lv)}.png`;if(o.construction_type==='farmland')return`farm_${1+(o.q+o.r)%4}_lv${Math.min(3,lv)}.png`;return null}
+function drawSpriteManifest(key,q,r,scale=.5){const m=SPRITES[key];if(!m)return;const im=img(m.file);if(!im?.complete)return;const p=screenPoint(q,r),s=scale*battleState.camera.zoom;ctx.drawImage(im,p.x-m.refx*s,p.y-m.refy*s,m.w*s,m.h*s)}
+function terrainSprite(t){if(!t||t.terrain_id<2)return null;const td=WORLDS.terrains[t.terrain_id];if(!td?.tiles?.length)return null;const idx=(t.variant===255?0:t.variant)%td.tiles.length;return td.tiles[idx]?.image}
+function drawTerrain(q,r){const t=terrainCell(q,r),name=terrainSprite(t);if(!name)return;const m=TERRAIN[name],im=m&&img(m.file);if(!im?.complete)return;const p=screenPoint(q,r),s=.48*battleState.camera.zoom;ctx.drawImage(im,p.x-m.refx*s,p.y-m.refy*s,m.w*s,m.h*s)}
+function visibleBounds(){const w0=screenToWorld(-100,-100),w1=screenToWorld(668,420);return{minx:Math.min(w0.x,w1.x),maxx:Math.max(w0.x,w1.x),miny:Math.min(w0.y,w1.y),maxy:Math.max(w0.y,w1.y)}}
+function cellVisible(q,r,b=visibleBounds()){const p=worldPoint(q,r);return p.x>b.minx-180&&p.x<b.maxx+180&&p.y>b.miny-180&&p.y<b.maxy+180}
+function relationBetweenOwners(a,b){return EW4CountryTurn.relation(battleState.battle,+a,+b,{mode:battleState.mode,playerOwner:battleState.playerOwner})}
+function relationOwner(owner){if(owner===255||owner==null)return'neutral';if(+owner===+battleState.playerOwner)return'player';return relationBetweenOwners(battleState.playerOwner,owner)}
+function isHostileOwner(owner){return relationOwner(owner)==='hostile'}
+function isMine(u){return u&&u.owner===battleState.playerOwner}
+
+function nativeBattleMeta(){return BATTLE_NATIVE?.battles?.[battleState?.battle?.file]||null}
+function nativeObjectives(){return nativeBattleMeta()?.objectives||[]}
+function nativeEvents(){return nativeBattleMeta()?.events||[]}
+function nativeRoundDialogueEvents(round){return nativeEvents().filter(e=>+e.trigger_type===2&&+e.param_a===4&&+e.param_b===+round&&e.dialogue?.text).sort((a,b)=>(+a.sequence-+b.sequence)||(+a.event_id-+b.event_id))}
+function nativeRoundFireEvents(round){return nativeEvents().filter(e=>+e.trigger_type===2&&+e.param_a===5&&+e.param_b===+round&&+e.param_c>0).sort((a,b)=>(+a.sequence-+b.sequence)||(+a.param_c-+b.param_c))}
+function nativeRoundMoraleEvents(round){return nativeEvents().filter(e=>EW4NativeEvent.isRoundMoraleEvent(e,round)).sort((a,b)=>(+a.sequence-+b.sequence)||(+a.event_id-+b.event_id))}
+function nativeEventCell(e){const pos=+e?.param_c||0,gw=battleState?.battle?.header?.map_id===2?55:79;return{pos,q:pos%gw,r:Math.floor(pos/gw)}}
+function nativeEventKey(e){return`${e.trigger_type}:${e.param_a}:${e.param_b}:${e.sequence}:${e.event_id}:${e.param_c}`}
+function nativeTriggerBindingList(kind){
+  const f=battleState?.battle?.file;if(!f||!NATIVE_TRIGGER_TARGETS)return[];
+  return (NATIVE_TRIGGER_TARGETS?.[kind]?.[f]||[]);
+}
+function nativeEventForBinding(type,binding){
+  return nativeEvents().find(e=>+e.trigger_type===+type&&+e.sequence===+binding.sequence&&(!binding.event_id||+e.event_id===+binding.event_id))||null;
+}
+function applyNativeFireEvent(e){
+  if(!battleState||+e?.param_c<=0)return{applied:false,blocked:false};
+  battleState.fireCells??=new Set();const c=nativeEventCell(e);
+  if(fireproofAt(c.q,c.r)){battleState.fireCells.delete(`${c.q},${c.r}`);return{applied:false,blocked:true,...c}}
+  battleState.fireCells.add(`${c.q},${c.r}`);playSfx('fire');requestBattleAnimation(1100);return{applied:true,blocked:false,...c}
+}
+function applyNativeScriptEvent(e,reason='原生事件'){
+  if(!battleState||!e)return false;battleState.nativeAppliedEvents??=new Set();const key=nativeEventKey(e);if(battleState.nativeAppliedEvents.has(key))return false;
+  battleState.nativeAppliedEvents.add(key);const action=+e.param_a,morale=EW4NativeEvent.moraleForAction(action);let count=0,fire=null;
+  if(morale!==null&&e.country)count=EW4NativeEvent.applyCountryMorale(battleState.units,e.country,action,battleState.round,countryCode);
+  if(action===5)fire=applyNativeFireEvent(e);
+  if(e.dialogue?.text)queueNativeDialogues([e]);
+  const bits=[];if(morale!==null&&e.country)bits.push(`${e.country.toUpperCase()} 士气 ${morale>0?'+':''}${morale}（${count}支）`);if(fire?.applied)bits.push(`起火 ${fire.q},${fire.r}`);if(fire?.blocked)bits.push(`防火阻止 ${fire.q},${fire.r}`);
+  renderBattle();if(bits.length)flash(`${reason}：${bits.join(' · ')}`,1900);if(!battleState.dialogueActive)writeBattleSave('auto',true);return true;
+}
+function fireNativeCaptureEventsForObject(o){
+  if(!o)return 0;let n=0;for(const b of nativeTriggerBindingList('capture')){if(+b.target_index!==+o.index)continue;const e=nativeEventForBinding(0,b);if(e&&applyNativeScriptEvent(e,'占领触发'))n++}return n;
+}
+function fireNativeDeathEventsForUnit(u){
+  if(!u)return 0;let n=0;for(const b of nativeTriggerBindingList('death')){if(+b.target_index!==+u.index)continue;const e=nativeEventForBinding(1,b);if(e&&applyNativeScriptEvent(e,'击毁触发'))n++}return n;
+}
+function fireproofUnit(u){if(!u||u.dead)return false;const c=effectiveCommanderForUnit(u);return EW4Combat.hasSkill(c,2)||hasEquipmentFunction(u,16)}
+function fireproofAt(q,r){const u=unitAt(q,r);return !!(u&&fireproofUnit(u))}
+function applyNativeRoundFireEvents(round){
+  if(!battleState)return[];battleState.nativeAppliedEvents??=new Set();battleState.fireCells??=new Set();const applied=[],blocked=[];
+  for(const e of nativeRoundFireEvents(round)){const key=nativeEventKey(e);if(battleState.nativeAppliedEvents.has(key))continue;battleState.nativeAppliedEvents.add(key);const c=nativeEventCell(e);if(fireproofAt(c.q,c.r)){battleState.fireCells.delete(`${c.q},${c.r}`);blocked.push({...e,...c});if(e.dialogue?.text)queueNativeDialogues([e]);continue}battleState.fireCells.add(`${c.q},${c.r}`);applied.push({...e,...c});if(e.dialogue?.text)queueNativeDialogues([e])}
+  if(applied.length||blocked.length){playSfx('fire');requestBattleAnimation(1100);renderBattle();flash(`原生火灾事件：起火 ${applied.length}${blocked.length?` · 防火 ${blocked.length}`:''}`,1800)}return applied
+}
+function applyNativeRoundMoraleEvents(round){
+  if(!battleState)return[];battleState.nativeAppliedEvents??=new Set();const applied=[];
+  for(const e of nativeRoundMoraleEvents(round)){const key=nativeEventKey(e);if(battleState.nativeAppliedEvents.has(key))continue;battleState.nativeAppliedEvents.add(key);const base=EW4NativeEvent.moraleForAction(e.param_a),count=EW4NativeEvent.applyCountryMorale(battleState.units,e.country,e.param_a,round,countryCode);applied.push({...e,morale:base,unitCount:count});if(e.dialogue?.text)queueNativeDialogues([e])}
+  if(applied.length){const up=applied.filter(x=>x.morale>0).reduce((n,x)=>n+x.unitCount,0),down=applied.filter(x=>x.morale<0).reduce((n,x)=>n+x.unitCount,0);renderBattle();flash(`原生士气事件：振奋 ${up} · 低落 ${down}`,1800)}
+  return applied
+}
+function fireNativeRoundEvents(round){const morale=applyNativeRoundMoraleEvents(round);const fires=applyNativeRoundFireEvents(round);const talks=nativeRoundDialogueEvents(round);if(talks.length)queueNativeDialogues(talks);return{morale,fires,talks}}
+
+function queueNativeDialogues(events){
+  if(!battleState||!events?.length)return;
+  battleState.dialogueQueue??=[];battleState.nativeFiredEvents??=new Set();
+  for(const e of events){const key=`${e.sequence}:${e.event_id}`;if(battleState.nativeFiredEvents.has(key))continue;battleState.nativeFiredEvents.add(key);battleState.dialogueQueue.push(e)}
+  if(!battleState.dialogueActive)showNextNativeDialogue();
+}
+function showNextNativeDialogue(){
+  if(!battleState)return;const e=battleState.dialogueQueue?.shift(),el=document.getElementById('native-talk');
+  if(!e){battleState.dialogueActive=false;el?.classList.remove('show','right');writeBattleSave('auto',true);return}
+  battleState.dialogueActive=true;const d=e.dialogue||{},c=COMMANDERS?.[String(d.commander_id)],left=!!d.left;
+  el.classList.toggle('right',!left);const pi=document.getElementById('native-talk-portrait'),pp=portrait(d.commander_id);if(pp){pi.src=pp;pi.style.display='block'}else pi.style.display='none';
+  document.getElementById('native-talk-name').textContent=commanderName(c)||`将领 ${d.commander_id}`;document.getElementById('native-talk-text').textContent=d.text||'';el.classList.add('show');
+}
+function hideNativeDialogue(){const el=document.getElementById('native-talk');el?.classList.remove('show','right');if(battleState){battleState.dialogueActive=false;battleState.dialogueQueue=[]}}
+function fireNativeRoundDialogues(round){return fireNativeRoundEvents(round)}
+function objectiveObjectByPosition(pos){return battleState?.objects?.find(o=>+o.pos===+pos)||null}
+function objectiveStatus(o){
+  const obj=objectiveObjectByPosition(o.position);if(!obj)return'unknown';
+  if(obj.owner===battleState.playerOwner)return'player';
+  return isHostileOwner(obj.owner)?'hostile':'other';
+}
+function drawNativeObjectiveMarkers(){
+  if(!battleState)return;const z=battleState.camera.zoom,star=SPRITES?.['stage_star.png'],im=star&&img(star.file);
+  for(const o of nativeObjectives()){
+    if(o.q==null||o.r==null||!cellVisible(o.q,o.r,visibleBounds()))continue;
+    const p=screenPoint(o.q,o.r),st=objectiveStatus(o);
+    ctx.save();ctx.globalAlpha=.96;
+    if(im?.complete){const s=Math.max(12,18*z);ctx.drawImage(im,p.x-s/2,p.y-42*z,s,s)}
+    else{ctx.fillStyle='#ffd965';ctx.font=`bold ${Math.max(10,13*z)}px sans-serif`;ctx.textAlign='center';ctx.fillText('★',p.x,p.y-27*z)}
+    ctx.strokeStyle=st==='player'?'#7ee17d':st==='hostile'?'#ff725e':'#e8d16a';ctx.lineWidth=Math.max(1,1.5*z);ctx.beginPath();ctx.arc(p.x,p.y-31*z,10*z,0,Math.PI*2);ctx.stroke();ctx.restore();
+  }
+}
+function nativeObjectiveSummary(){
+  const arr=nativeObjectives();if(!arr.length)return'本关 BTL 未记录战略目标点';
+  return arr.map(o=>{const obj=objectiveObjectByPosition(o.position),name=obj?.area_name||obj?.construction_type||`格 ${o.q},${o.r}`,st=objectiveStatus(o);return`${name}${st==='player'?'✓':st==='hostile'?'⚔':'◆'}`}).join(' · ')
+}
+function showBattleResult(kind,reason=''){
+  if(!battleState||battleState.ended)return;hideNativeDialogue();battleState.ended=kind;
+  const box=document.getElementById('battle-result'),title=document.getElementById('battle-result-title'),body=document.getElementById('battle-result-body');
+  const lim=nativeStageTurnLimits(battleState.battle),major=kind==='victory'&&battleState.mode!=='conquest'&&lim.valid&&battleState.round<=lim.best;if(kind==='victory'&&battleState.mode==='campaign')recordCampaignResult(battleState.battle,major);title.textContent=kind==='victory'?(major?'重 大 胜 利':'胜　利'):'失　败';
+  box.classList.toggle('victory',kind==='victory');box.classList.toggle('defeat',kind!=='victory');
+  body.innerHTML=`${battleState.battle.title_cn||battleState.battle.name_cn||battleState.battle.file}<br>回合 ${battleState.round}${lim.valid&&battleState.mode!=='conquest'?` / 胜利≤${lim.win} · 重大≤${lim.best}`:''}<br>${reason||''}<br><small>BTL目标：${nativeObjectiveSummary()}</small>`;
+  box.classList.add('show');selectUnit(null);renderBattle();
+  const resultAudio=EW4NativeUIAudio?.battleResultAudio?.(kind)||{};if(resultAudio.stopBattleMusic)pauseBattleMusic();stopDefeatMusic();
+  if(resultAudio.sfx)playNativeSfxFile(resultAudio.sfx);
+  if(resultAudio.bgm&&music){try{const d=document.getElementById('defeat-music');d.volume=bgVolume();d.currentTime=0;d.play().catch(()=>{})}catch(e){}}
+}
+function hideBattleResult(){document.getElementById('battle-result')?.classList.remove('show')}
+function renderBattle(){if(!battleState||!document.getElementById('battle').classList.contains('active'))return;ctx.clearRect(0,0,568,320);const S=battleState,c=S.camera;clampCamera(c);if(S.mapImg?.complete){ctx.save();ctx.translate(284,160);ctx.scale(c.zoom,c.zoom);ctx.translate(-c.x,-c.y);ctx.drawImage(S.mapImg,0,0);drawNativeMapTextWorld(S.map,c);ctx.restore()}else{ctx.fillStyle='#4c718e';ctx.fillRect(0,0,568,320)}const h=S.battle.header,vb=visibleBounds();
+ for(let q=h.origin_x;q<h.origin_x+h.width;q++)for(let r=h.origin_y;r<h.origin_y+h.height;r++){if(!cellVisible(q,r,vb))continue;const p=screenPoint(q,r),own=ownerAt(q,r);hexPath(p.x,p.y,c.zoom);if(own!==255){ctx.fillStyle=countryColor(own,.17);ctx.fill()}ctx.strokeStyle='rgba(30,42,37,.30)';ctx.lineWidth=Math.max(.45,c.zoom*.65);ctx.stroke()}
+ for(let q=h.origin_x;q<h.origin_x+h.width;q++)for(let r=h.origin_y;r<h.origin_y+h.height;r++)if(cellVisible(q,r,vb))drawTerrain(q,r);
+ for(const ins of S.installations||[]){if(!cellVisible(ins.q,ins.r,vb))continue;const d=INSTALLATIONS?.[ins.type];if(d?.image)drawSpriteManifest(d.image,ins.q,ins.r,.5)}
+ if(S.selected){
+  /* Original EW4 uses hollow destination/target rings rather than filling the whole hex. */
+  for(const k of S.reachable.keys()){
+    const[q,r]=k.split(',').map(Number),p=screenPoint(q,r),rz=unitVisualZoom(c.zoom);
+    ctx.beginPath();ctx.ellipse(p.x,p.y+5*rz,10.5*rz,5.1*rz,0,0,Math.PI*2);
+    ctx.strokeStyle='rgba(246,247,236,.88)';ctx.lineWidth=Math.max(1.1,1.45*rz);ctx.stroke();
+  }
+  for(const u of S.units){if(u.dead||!isHostilePair(S.selected,u))continue;if(inAttackRange(S.selected,u)){
+    const p=unitScreenPoint(u),rz=unitVisualZoom(c.zoom);ctx.beginPath();ctx.ellipse(p.x,p.y+7*rz,24*rz,11*rz,0,0,Math.PI*2);ctx.strokeStyle='rgba(235,73,62,.92)';ctx.lineWidth=Math.max(1.4,2*rz);ctx.stroke()
+  }}
+ }
+ [...S.objects].sort((a,b)=>a.r-b.r).forEach(o=>{if(!cellVisible(o.q,o.r,vb))return;const k=buildingKey(o);if(k)drawSpriteManifest(k,o.q,o.r,.5);const mk=specialFacilityMarker(o);if(mk)drawSpriteManifest(mk,o.q,o.r,.5);if(o.area_name&&['city','port'].includes(o.construction_type)){const p=screenPoint(o.q,o.r);ctx.font=`${Math.max(6,7*c.zoom)}px sans-serif`;ctx.textAlign='center';ctx.fillStyle='#f5ead2';ctx.strokeStyle='#15120f';ctx.lineWidth=2;ctx.strokeText(o.area_name,p.x,p.y+22*c.zoom);ctx.fillText(o.area_name,p.x,p.y+22*c.zoom)}});
+ drawNativeFireCells();drawNativeObjectiveMarkers();[...S.units].filter(u=>!u.dead).sort((a,b)=>(a.r+(a.q&1)*.5)-(b.r+(b.q&1)*.5)).forEach(drawUnit);
+ drawNativeSimpleEffects();
+ if(S.selected&&!S.selected.dead){const p=unitScreenPoint(S.selected),uz=unitVisualZoom(c.zoom);ctx.beginPath();ctx.ellipse(p.x,p.y+8*uz,26*uz,12*uz,0,0,Math.PI*2);ctx.strokeStyle='rgba(250,244,203,.95)';ctx.lineWidth=Math.max(1.4,1.8*uz);ctx.stroke()}
+ if(S.selectedObject){const p=screenPoint(S.selectedObject.q,S.selectedObject.r),uz=unitVisualZoom(c.zoom);ctx.beginPath();ctx.ellipse(p.x,p.y+8*uz,24*uz,11*uz,0,0,Math.PI*2);ctx.strokeStyle='rgba(250,244,203,.9)';ctx.lineWidth=Math.max(1.2,1.7*uz);ctx.stroke()}
+ drawBattleFloats()}
+function drawNativeFireCells(){
+  if(!battleState?.fireCells?.size)return;const atlas=img('assets/effects/anim_fire_hd.png'),z=battleState.camera.zoom,t=performance.now()/160;const frames=[[1,1,108,236],[110,1,105,230],[1,238,100,214],[110,232,98,214],[216,1,87,202],[304,1,96,191]];let i=0;
+  for(const key of battleState.fireCells){const[q,r]=key.split(',').map(Number);if(!cellVisible(q,r,visibleBounds()))continue;const p=screenPoint(q,r),fr=frames[(Math.floor(t)+i++)%frames.length];ctx.save();ctx.globalAlpha=.86;if(atlas?.complete){const h=42*z,w=h*(fr[2]/fr[3]);ctx.drawImage(atlas,fr[0],fr[1],fr[2],fr[3],p.x-w/2,p.y-h+17*z,w,h)}else{ctx.fillStyle='rgba(255,110,30,.8)';ctx.beginPath();ctx.arc(p.x,p.y-10*z,9*z,0,Math.PI*2);ctx.fill()}ctx.restore()}
+  if(performance.now()<battleAnimUntil)requestBattleAnimation(250)
+}
+function drawUnit(u){
+  const p=unitScreenPoint(u),z=battleState.camera.zoom,uz=unitVisualZoom(z),embarked=!!u.embarked&&!isSeaUnit(u),m=embarked?SPRITES[hasEquipmentFunction(u,12)?'transportship2.png':'transportship1.png']:unitVisual(u),im=embarked?(m&&img(m.file)):unitImage(u);
+  /* Keep the tactical model visually stable across zoom levels. Original EW4
+     scales the map much more aggressively than unit UI overlays. */
+  const nativeSpec=!embarked?nativeFrameDrawSpec(u,p,uz):null;
+  if(nativeSpec?.kind==='compact'){nativeSpec.bile.drawFrame(ctx,nativeSpec.itemIndex,nativeSpec.frameIndex,nativeSpec.atlas,nativeSpec.x,nativeSpec.y,nativeSpec.scale,1)}
+  else if(im?.complete&&m){if(embarked){const k=.58*uz,w=m.w*k,h=m.h*k;ctx.drawImage(im,p.x-w/2,p.y-h+18*uz,w,h)}else{const rr=staticNativePoseRect(u,m,p,uz);ctx.drawImage(im,rr.x,rr.y,rr.w,rr.h)}}
+  else{ctx.fillStyle=countryColor(u.owner,.9);ctx.beginPath();ctx.arc(p.x,p.y,11*uz,0,Math.PI*2);ctx.fill()}
+
+  /* Original battlefield composition: flag above the model, commander medallion
+     tucked into the upper-left of the formation, HP immediately below. */
+  const fk=`${countryCode(u.owner)}1.png`,fm=SPRITES[fk],fi=fm&&img(fm.file);
+  if(fi?.complete){const sw=17*uz,sh=10*uz;ctx.drawImage(fi,p.x-9*uz,p.y-47*uz,sw,sh)}
+  if(u.commander_id){const pp=portrait(u.commander_id),pi=pp&&img(pp);if(pi?.complete){const rr=6.8*uz,cx=p.x-15*uz,cy=p.y-28*uz;ctx.save();ctx.beginPath();ctx.arc(cx,cy,rr,0,Math.PI*2);ctx.clip();ctx.drawImage(pi,cx-rr,cy-rr,rr*2,rr*2);ctx.restore();ctx.strokeStyle='#e6c56b';ctx.lineWidth=Math.max(.8,1.05*uz);ctx.beginPath();ctx.arc(cx,cy,rr,0,Math.PI*2);ctx.stroke()}}
+
+  const ratio=Math.max(0,Math.min(1,u.hp/u.max_hp)),barW=31*uz,barH=3.8*uz,barX=p.x-barW/2,barY=p.y+10.5*uz;
+  ctx.fillStyle='rgba(18,24,19,.92)';ctx.fillRect(barX,barY,barW,barH);
+  const rel=relationOwner(u.owner);ctx.fillStyle=rel==='player'?'#63bf61':rel==='ally'?'#67acc7':rel==='neutral'?'#baa95f':'#c9574c';ctx.fillRect(barX+1*uz,barY+1*uz,(barW-2*uz)*ratio,Math.max(1.4,barH-2*uz));
+
+  const mor=moraleState(u);if(mor!==0){const mk=mor>0?'morale_up.png':mor<=-3?'morale_down3.png':mor<=-2?'morale_down2.png':'morale_down1.png',mm=SPRITES[mk],mi=mm&&img(mm.file);if(mi?.complete){const hh=14*uz,ww=hh*(mm.w/mm.h);ctx.drawImage(mi,p.x+9*uz,p.y-31*uz,ww,hh)}}
+}
+
+/* ---------- Battle rules checkpoint ---------- */
+function neighbors(q,r){return(q&1)?[[q,r-1],[q+1,r],[q+1,r+1],[q,r+1],[q-1,r+1],[q-1,r]]:[[q,r-1],[q+1,r-1],[q+1,r],[q,r+1],[q-1,r],[q-1,r-1]]}
+function oddqCube(q,r){const z=r-(q-(q&1))/2,x=q,y=-x-z;return[x,y,z]}
+function hexDist(a,b){const A=oddqCube(a.q,a.r),B=oddqCube(b.q,b.r);return Math.max(Math.abs(A[0]-B[0]),Math.abs(A[1]-B[1]),Math.abs(A[2]-B[2]))}
+function isSeaUnit(u){return['Privateer','Frigate','Battleship','Ironclad'].includes(u.army_name)}
+function isFort(u){return u.army_id>=18&&['Small Fortress','Fortress','Large Fortress','Coastal Fort'].includes(u.army_name)}
+function isCavalryUnit(u){return !!u&&armyStat(u).type==='cavalry'}
+function grantCavalryExtraAction(attacker,defender){
+  /* Native tutorial rule: cavalry may act again after annihilating an enemy.
+     Do not gate this behind player buffs; it is a base EW4 rule for both sides. */
+  if(!attacker||attacker.dead||!defender?.dead||!isCavalryUnit(attacker))return false;
+  attacker.moved=false;attacker.attacked=false;
+  spawnBattleFloat(attacker.q,attacker.r,'再动','#ffe17a');
+  if(isMine(attacker))battleState.reachable=computeReachable(attacker);
+  return true;
+}
+function passable(u,q,r){const h=battleState.battle.header;if(q<h.origin_x||r<h.origin_y||q>=h.origin_x+h.width||r>=h.origin_y+h.height)return false;const t=terrainCell(q,r);if(!t)return false;const sea=t.type==='sea';if(isSeaUnit(u)){if(!sea)return false}else if(sea&&!u.embarked)return false;return !battleState.units.some(x=>!x.dead&&x!==u&&x.q===q&&x.r===r)}
+function moveCost(u,q,r){const t=terrainCell(q,r),type=t?.type||'land',st=armyStat(u),c=effectiveCommanderForUnit(u);if(type==='sea')return isSeaUnit(u)?(WORLDS.terrain_types[type]?.movementcost||1):3;/* APK tutorial: Light Infantry retains full mobility in complex terrain. Geography/equipment grants terrain-ignore to other land troops. */if(u.army_name==='Light Infantry'||EW4Combat.hasSkill(c,1)||hasEquipmentFunction(u,0))return 3;return WORLDS.terrain_types[type]?.movementcost||3}
+function computeReachable(u){const result=new Map(),stat=armyStat(u);if(isFort(u)||u.moved)return result;const max=effectiveMovePoints(u),queue=[[u.q,u.r,0]];result.set(`${u.q},${u.r}`,0);while(queue.length){const[q,r,cost]=queue.shift();for(const[nq,nr]of neighbors(q,r)){if(!passable(u,nq,nr))continue;const nc=cost+moveCost(u,nq,nr);if(nc>max)continue;const k=`${nq},${nr}`;if(result.has(k)&&result.get(k)<=nc)continue;result.set(k,nc);queue.push([nq,nr,nc])}}result.delete(`${u.q},${u.r}`);return result}
+function movementPath(u,tq,tr){
+  const start=`${u.q},${u.r}`,goal=`${tq},${tr}`,max=effectiveMovePoints(u),costs=new Map([[start,0]]),prev=new Map(),queue=[[u.q,u.r,0]];
+  while(queue.length){queue.sort((a,b)=>a[2]-b[2]);const[q,r,cost]=queue.shift(),key=`${q},${r}`;if(cost!==costs.get(key))continue;if(key===goal)break;
+    for(const[nq,nr]of neighbors(q,r)){if(!passable(u,nq,nr))continue;const nc=cost+moveCost(u,nq,nr);if(nc>max)continue;const nk=`${nq},${nr}`;if(costs.has(nk)&&costs.get(nk)<=nc)continue;costs.set(nk,nc);prev.set(nk,key);queue.push([nq,nr,nc])}
+  }
+  if(!costs.has(goal))return[{q:u.q,r:u.r},{q:tq,r:tr}];const rev=[];let k=goal;while(k){const[q,r]=k.split(',').map(Number);rev.push({q,r});if(k===start)break;k=prev.get(k)}return rev.reverse();
+}
+function canRange(a,b,ignoreAction=false){if(!a||!b||a.dead||b.dead||!isHostilePair(a,b))return false;const st=armyStat(a),d=hexDist(a,b);return d>=+st.minatkrange&&d<=+st.maxatkrange&&(ignoreAction||!a.attacked)}
+function isHostilePair(a,b){return !!a&&!!b&&relationBetweenOwners(a.owner,b.owner)==='hostile'}
+function inAttackRange(a,b){return canRange(a,b,false)}
+function itemTargetMatches(item,st){const t=item?.target;return t==='all'||t===st.type||(t==='navy'&&st.type==='warship')}
+function equippedItemIds(u){const c=u.commander_id?COMMANDERS[String(u.commander_id)]:null;if(!c)return[];return equipmentSlotsForCommander(c).filter(id=>id!=null)}
+function hasEquipmentFunction(u,fn){return equippedItemIds(u).some(id=>+ITEMS?.[String(id)]?.function===+fn)}
+function equipmentFunctionValue(u,fn){let n=0;for(const id of equippedItemIds(u)){const it=ITEMS?.[String(id)];if(it&&+it.function===+fn)n+=+it.value||0}return n}
+function friendlyAuraSource(src,target){if(!src||!target||src.dead||target.dead)return false;if(src===target)return false;if(hexDist(src,target)!==1)return false;return relationBetweenOwners(src.owner,target.owner)==='ally'}
+function auraValueAround(u,fn){let n=0;for(const src of battleState?.units||[]){if(!friendlyAuraSource(src,u))continue;n+=equipmentFunctionValue(src,fn)}return n}
+function combatUnit(u){return hasEquipmentFunction(u,4)?{...u,forceFullFormation:true}:u}
+function attackModifiers(u){const st=armyStat(u);let fixed=(+u.attackBonus||0)+auraValueAround(u,14),lower=+u.attackMinBonus||0,upper=+u.attackMaxBonus||0;for(const id of equippedItemIds(u)){const it=ITEMS?.[String(id)];if(!it||!itemTargetMatches(it,st))continue;if(+it.function===11){/* Native EW4 weapon equipment is a fixed damage contribution, not a per-die panel interval increase. */fixed+=+it.value||0}}return{fixed,lower,upper}}
+function attackInterval(u){const st=armyStat(u),m=attackModifiers(u),cmd=effectiveCommanderForUnit(u),sb=EW4Combat.skillIntervalBonus(cmd,st.type);return EW4Combat.effectiveAttackInterval({min:st.minatk,max:st.maxatk,isPlayer:isMine(u),lowerBonus:m.lower+sb.lower,upperBonus:m.upper+sb.upper})}
+function damageProfile(u){const st=armyStat(u),cmd=effectiveCommanderForUnit(u),m=attackModifiers(u);return EW4Combat.damageBounds({unit:combatUnit(u),stat:st,commander:cmd,isPlayer:isMine(u),isFort:isFort(u),fixedBonus:m.fixed,lowerBonus:m.lower,upperBonus:m.upper})}
+function hideNativeActionResource(){
+  const p=document.getElementById('native-action-resource');if(!p)return;p.classList.remove('show');p.setAttribute('aria-hidden','true');p._confirmAction=null
+}
+function positionNativeActionResource(panel,anchor){
+  const screen=document.getElementById('battle');if(!panel||!anchor||!screen)return;
+  const sr=screen.getBoundingClientRect(),ar=anchor.getBoundingClientRect(),sx=sr.width/Math.max(1,screen.offsetWidth||568),sy=sr.height/Math.max(1,screen.offsetHeight||320);
+  const cx=(ar.left-sr.left+ar.width/2)/Math.max(.001,sx),top=(ar.top-sr.top)/Math.max(.001,sy);
+  panel.style.left=`${Math.max(0,Math.min(484,Math.round(cx-42)))}px`;panel.style.top=`${Math.max(0,Math.round(top-88))}px`
+}
+function openNativeActionResource(anchor,{money=0,secondary=0,secondaryKind='industry',onConfirm=null}={}){
+  const p=document.getElementById('native-action-resource'),m=document.getElementById('native-funcres-money'),sv=document.getElementById('native-funcres-secondary'),si=document.getElementById('native-funcres-secondary-icon'),ok=document.getElementById('native-funcres-confirm');if(!p||!m||!sv||!si||!ok)return;
+  const secondaryResource=secondaryKind==='food'?'food':'industry',secondaryIcon=secondaryKind==='food'?'marker_food.png':'marker_industry.png';
+  m.textContent=String(Math.max(0,+money||0));sv.textContent=String(Math.max(0,+secondary||0));si.src=`assets/sprites/image_ui_hd/${secondaryIcon}`;
+  const haveMoney=+battleState?.resources?.money||0,haveSecondary=+battleState?.resources?.[secondaryResource]||0,affordable=haveMoney>=(+money||0)&&haveSecondary>=(+secondary||0);
+  m.classList.toggle('insufficient',haveMoney<(+money||0));sv.classList.toggle('insufficient',haveSecondary<(+secondary||0));ok.disabled=!affordable;ok.classList.toggle('gray',!affordable);
+  p._confirmAction=affordable&&typeof onConfirm==='function'?onConfirm:null;ok.onclick=e=>{e.stopPropagation();const fn=p._confirmAction;if(!fn)return;hideNativeActionResource();fn()};
+  positionNativeActionResource(p,anchor);p.classList.add('show');p.setAttribute('aria-hidden','false')
+}
+function closeBattlePanels(){
+  const u=document.getElementById('unit-card'),f=document.getElementById('facility-card'),m=document.getElementById('battle-action-menu'),c=document.getElementById('commerce-panel');
+  if(u)u.style.display='none';if(f)f.style.display='none';if(m){m.classList.remove('show');m.innerHTML=''}if(c)c.classList.remove('show');hideNativeActionResource()
+}
+function showUnitCard(u){
+  const el=document.getElementById('unit-card');document.getElementById('facility-card').style.display='none';document.getElementById('battle-action-menu').classList.remove('show');
+  if(!u){el.style.display='none';return}
+  const st=armyStat(u),cmd=effectiveCommanderForUnit(u),atk=attackInterval(u),mor=moraleState(u),eq=equippedItemIds(u).map(id=>ITEMS?.[String(id)]).filter(Boolean);
+  const eqHtml=eq.length?eq.map(it=>`${itemIcon(it)?`<img src="${itemIcon(it)}">`:''}${itemName(it)}`).join('　'):'无装备';
+  el.innerHTML=`<b>${armyName(u.army_name)} ${u.grade+1}</b><br>${battleState.battle.countries[u.owner]?.name_cn||countryCode(u.owner).toUpperCase()}　HP ${Math.max(0,u.hp)}/${u.max_hp}<br>攻击 ${atk.min}-${atk.max}　移动 ${effectiveMovePoints(u)}　射程 ${st.minatkrange}-${st.maxatkrange}<br>士气 ${mor>0?'振奋':mor<0?'低落':'正常'}${cmd?`　上将 ${commanderName(cmd)}`:''}<div class="unit-eq">装备：${eqHtml}</div>`;
+  el.style.display='block'
+}
+function showBattleCommanderInfo(u){
+  if(!u?.commander_id)return;const c=effectiveCommanderForUnit(u);if(!c)return;const el=document.getElementById('unit-card');document.getElementById('facility-card').style.display='none';document.getElementById('battle-action-menu').classList.remove('show');
+  const eq=equippedItemIds(u).map(id=>ITEMS?.[String(id)]).filter(Boolean),skills=(c.skills||baseSkillIds(c)).map(id=>skillName(id)).filter(Boolean);
+  const eqHtml=eq.length?eq.map(it=>`${itemIcon(it)?`<img src="${itemIcon(it)}">`:''}${itemName(it)}`).join('　'):'无装备';
+  el.innerHTML=`<div class="battle-general-wrap"><img class="portrait" src="${portrait(c.id)}"><div><div class="battle-general-name">${commanderName(c)}</div><div class="battle-general-stars">${stars(c.star)}</div><div class="battle-general-stats">步 ${c.infantry}　骑 ${c.cavalry}　炮 ${c.artillery}　海 ${c.warship}<br>行军 ${c.movement}　训练 ${c.training}</div></div></div><div class="battle-general-skills">技能：${skills.join(' · ')||'无'}</div><div class="battle-general-eq">装备：${eqHtml}</div>`;
+  el.style.display='block'
+}
+function addBattleAction(asset,title,handler,disabled=false,folder='image_recruit_hd'){
+  const root=document.getElementById('battle-actions'),b=document.createElement('button');b.className='battle-action-btn';b.style.backgroundImage=`url('assets/sprites/${folder}/${asset}.png')`;b.title=title;b.setAttribute('aria-label',title);b.disabled=disabled;b.onclick=e=>{e.stopPropagation();hideNativeActionResource();handler(b,e)};root.appendChild(b);return b
+}
+function commerceCommanderAt(o){
+  const u=o?unitAt(o.q,o.r):null;return u&&!u.dead&&u.owner===o.owner&&u.commander_id?effectiveCommanderForUnit(u):null
+}
+function facilityBusinessStars(o){return EW4Commerce.businessStars(commerceCommanderAt(o)?.business||0)}
+function marketResourceLabel(key){return key==='money'?'金币':key==='industry'?'工业':'粮食'}
+function executeMarketQuote(o,quote){
+  if(!o||o.owner!==battleState?.playerOwner||!quote)return;
+  if(!EW4Commerce.applyQuote(battleState.resources,quote)){flash(`${marketResourceLabel(quote.payResource)}不足`);return}
+  updateResources();openMarketPanel(o);playSfx('select');flash(`${marketResourceLabel(quote.payResource)} -${quote.pay}　${marketResourceLabel(quote.receiveResource)} +${quote.receive}`)
+}
+function initialBattleItemStores(file){
+  const raw=BATTLE_ITEMSTORES?.battles?.[file]||{},out={};
+  for(const [storeId,store] of Object.entries(raw))out[String(storeId)]={...store,slots:(store.slots||[]).map(x=>x?{item:+x.item,count:+x.count||1,active:true}:null)};
+  return out
+}
+function battleItemStoreForObject(o){return o&&battleState?.itemStores?.[String(+o.pos)]||null}
+function initialBattleTaverns(file){
+  const raw=BATTLE_TAVERNS?.battles?.[file]||{},out={};
+  for(const [id,t] of Object.entries(raw))out[String(id)]={object_index:+t.object_index,file_offset:+t.file_offset,count:Math.max(0,+t.count||0),slots:(t.slots||[]).slice(0,5).map(x=>x?{commander:+x.commander,money:+x.money||0,industry:+x.industry||0,medal:+x.medal||0,round:+x.round||0}:null)};
+  return out
+}
+function battleTavernForObject(o){return o&&battleState?.taverns?.[String(+o.pos)]||null}
+function tavernCandidateAvailable(slot){return !!(slot&&COMMANDERS?.[String(slot.commander)]&&!owns(slot.commander)&&battleState&&battleState.round>=Math.max(0,+slot.round||0)&&battleState.resources.money>=(+slot.money||0)&&battleState.resources.industry>=(+slot.industry||0))}
+function recruitTavernCandidate(o,index){
+  const tavern=battleTavernForObject(o),i=+index;if(!tavern||i<0||i>=Math.min(4,tavern.count||0))return;
+  const slot=tavern.slots?.[i],c=slot&&COMMANDERS?.[String(slot.commander)];if(!slot||!c)return;
+  if(owns(slot.commander)){flash('该将领已经在指挥部');return}
+  if(battleState.round<Math.max(0,+slot.round||0)){flash(`回合 ${slot.round} 后可招募`);return}
+  if(battleState.resources.money<(+slot.money||0)||battleState.resources.industry<(+slot.industry||0)){flash('资源不足，无法招募');return}
+  battleState.resources.money-=+slot.money||0;battleState.resources.industry-=+slot.industry||0;
+  // This build intentionally keeps medals infinite. Native medal cost is shown but not deducted.
+  acquire(slot.commander);
+  for(let k=i;k<4;k++)tavern.slots[k]=tavern.slots[k+1]||null;
+  tavern.slots[4]=null;tavern.count=Math.max(0,(+tavern.count||0)-1);
+  updateResources();writeBattleSave('auto',true);playSfx('select');openTavernPanel(o);flash(`${commanderName(c)} 已加入指挥部`)
+}
+function openTavernPanel(o){
+  if(!battleState||!o||o.owner!==battleState.playerOwner||specialFacilityType(o)!=='bar')return;
+  document.getElementById('unit-card').style.display='none';document.getElementById('facility-card').style.display='none';document.getElementById('battle-action-menu').classList.remove('show');
+  const panel=document.getElementById('commerce-panel'),body=document.getElementById('commerce-body'),tavern=battleTavernForObject(o);panel.dataset.mode='tavern';document.getElementById('commerce-title').textContent='酒　馆';
+  if(!tavern){body.innerHTML='';panel.classList.add('show');return}
+  body.innerHTML='<div class="tavern-grid" data-tavern-grid></div>';
+  const grid=body.querySelector('[data-tavern-grid]'),visible=Math.min(4,Math.max(0,+tavern.count||0));
+  for(let i=0;i<4;i++){
+    const slot=i<visible?tavern.slots?.[i]:null,c=slot&&COMMANDERS?.[String(slot.commander)],b=document.createElement('button');b.className='tavern-candidate';
+    if(!slot||!c){b.disabled=true;b.innerHTML='<span style="position:absolute;left:0;right:0;top:18px;text-align:center;opacity:.35">—</span>';grid.appendChild(b);continue}
+    const pic=portrait(c.id),roundLocked=battleState.round<Math.max(0,+slot.round||0),owned=owns(c.id),moneyLocked=battleState.resources.money<(+slot.money||0)||battleState.resources.industry<(+slot.industry||0);b.disabled=roundLocked||owned||moneyLocked;
+    const state=roundLocked?`回合${slot.round}`:owned?'已拥有':moneyLocked?'资源不足':'招募';
+    b.innerHTML=`${pic?`<img src="${pic}">`:''}<b>${commanderName(c)}</b><small>${stars(c.star)}<br>🏅 ${slot.medal}<br>💰 ${slot.money}　⚙️ ${slot.industry}</small><span class="tavern-recruit-label">${state}</span>`;
+    b.onclick=e=>{e.stopPropagation();recruitTavernCandidate(o,i)};grid.appendChild(b)
+  }
+  panel.classList.add('show')
+}
+
+function shopItemPrice(item,business){return EW4Commerce.shopBuyPrice(+item?.price||0,business)}
+function buyShopSlot(o,slotIndex){
+  const store=battleItemStoreForObject(o),slot=store?.slots?.[slotIndex];if(!store||!slot||!slot.active||slot.count<=0)return;
+  const item=ITEMS?.[String(slot.item)];if(!item){flash('该原版商品数据尚未解码');return}
+  const business=facilityBusinessStars(o),price=shopItemPrice(item,business);
+  /* Player medals are intentionally infinite in this build. Preserve native pricing/UI, but do not expose a fake finite counter. */
+  const added=EW4ItemInventory.tryAdd(saveState.itemInventory,slot.item,1,ITEMS);if(!added.ok){flash(added.reason==='full'?'物品栏已满':'无法购入该物品');return}
+  saveState.itemInventory=added.inventory;persist();
+  slot.count=0;slot.active=false;writeBattleSave('auto',true);playSfx('select');openShopPanel(o);flash(`${itemName(item)} 已购入　🏅 ${price}`)
+}
+function shopBuyerCommander(o){const u=o?unitAt(o.q,o.r):null;return u?.commander_id?effectiveCommanderForUnit(u):null}
+function openShopPanel(o){
+  if(!battleState||!o||o.owner!==battleState.playerOwner||specialFacilityType(o)!=='shop')return;
+  document.getElementById('unit-card').style.display='none';document.getElementById('facility-card').style.display='none';document.getElementById('battle-action-menu').classList.remove('show');
+  const panel=document.getElementById('commerce-panel'),body=document.getElementById('commerce-body'),business=facilityBusinessStars(o),store=battleItemStoreForObject(o),buyer=shopBuyerCommander(o);
+  panel.dataset.mode='shop';document.getElementById('commerce-title').textContent='商　店';
+  if(!store){body.innerHTML='';panel.classList.add('show');return}
+  body.innerHTML=`<div class="shop-merchant"><div class="portrait"></div><div class="name">商人</div></div><div class="shop-seller-grid" data-shop-seller></div><div class="commerce-rate">商业 ${business}/5　价格 -${EW4Commerce.shopDiscountPercent(business)}%</div><div class="shop-buyer-grid" data-shop-buyer></div><div class="shop-buyer">${buyer?`<img class="portrait" src="${portrait(buyer.id)}"><div class="name">${commanderName(buyer)}</div>`:'<div class="portrait"></div><div class="name">物品栏</div>'}</div>`;
+  const seller=body.querySelector('[data-shop-seller]'),buyerGrid=body.querySelector('[data-shop-buyer]');
+  for(let i=0;i<14;i++){
+    const slot=store.slots?.[i],b=document.createElement('button');b.className='shop-slot';
+    if(!slot||!slot.active||slot.count<=0){b.classList.add('empty');b.disabled=true;b.innerHTML='<span>—</span>';seller.appendChild(b);continue}
+    const it=ITEMS?.[String(slot.item)],icon=itemIcon(it),price=shopItemPrice(it,business);b.disabled=!it;b.innerHTML=`${icon?`<img src="${icon}">`:''}<b>${it?itemName(it):`#${slot.item}`}</b><small>🏅 ${price}</small>`;b.title=it?(itemDesc(it)||itemName(it)):`Item ${slot.item}`;b.onclick=e=>{e.stopPropagation();buyShopSlot(o,i)};seller.appendChild(b)
+  }
+  const bank=EW4ItemInventory.sanitizeInventory(saveState.itemInventory,ITEMS);for(let i=0;i<14;i++){
+    const slot=bank.slots[i],b=document.createElement('button');b.className='shop-slot';b.disabled=true;
+    if(!slot||slot.item<0||slot.count<=0){b.classList.add('empty');b.innerHTML='<span>—</span>'}else{const it=ITEMS?.[String(slot.item)],icon=itemIcon(it);b.innerHTML=`${icon?`<img src="${icon}">`:''}<b>${it?itemName(it):`#${slot.item}`}</b><small>×${slot.count}</small>`}buyerGrid.appendChild(b)
+  }
+  panel.classList.add('show')
+}
+
+
+function openMarketPanel(o){
+  if(!battleState||!o||o.owner!==battleState.playerOwner||specialFacilityType(o)!=='trade')return;
+  document.getElementById('unit-card').style.display='none';document.getElementById('facility-card').style.display='none';document.getElementById('battle-action-menu').classList.remove('show');
+  const panel=document.getElementById('commerce-panel'),body=document.getElementById('commerce-body'),business=facilityBusinessStars(o),rate=EW4Commerce.tradeRate(business);
+  panel.dataset.mode='market';document.getElementById('commerce-title').textContent='市场';body.innerHTML=`<div class="commerce-rate">商业 ${business}/5　　倍率 ×${rate.toFixed(1)}</div><div class="commerce-columns"><div class="commerce-group"><h4>购 买</h4><div data-market-buy></div></div><div class="commerce-group"><h4>出 售</h4><div data-market-sell></div></div></div>`;
+  const buy=body.querySelector('[data-market-buy]'),sell=body.querySelector('[data-market-sell]');
+  for(let i=0;i<4;i++){
+    const q=EW4Commerce.marketBuyQuote(i,business),b=document.createElement('button');b.className='commerce-choice';b.disabled=!EW4Commerce.canApplyQuote(battleState.resources,q);b.textContent=`${marketResourceLabel(q.payResource)} ${q.pay}  →  ${marketResourceLabel(q.receiveResource)} ${q.receive}`;b.onclick=e=>{e.stopPropagation();executeMarketQuote(o,q)};buy.appendChild(b)
+  }
+  for(let i=0;i<4;i++){
+    const q=EW4Commerce.marketSellQuote(i,business),b=document.createElement('button');b.className='commerce-choice';b.disabled=!EW4Commerce.canApplyQuote(battleState.resources,q);b.textContent=`${marketResourceLabel(q.payResource)} ${q.pay}  →  ${marketResourceLabel(q.receiveResource)} ${q.receive}`;b.onclick=e=>{e.stopPropagation();executeMarketQuote(o,q)};sell.appendChild(b)
+  }
+  panel.classList.add('show')
+}
+function renderBattleActions(){
+  const root=document.getElementById('battle-actions');if(!root)return;root.innerHTML='';root.classList.remove('show');
+  const S=battleState;if(!S||S.ended||S.phase==='ai')return;
+  const u=S.selected,o=S.selectedObject;
+  if(u&&!u.dead){
+    if(isMine(u)&&canEmbark(u))addBattleAction('button_buyship','运输船',()=>embarkUnit(u));
+    if(isMine(u)&&!isSeaUnit(u)&&!isFort(u)&&armyStat(u).type==='infantry'&&terrainCell(u.q,u.r)?.type!=='sea'&&!installationAt(u.q,u.r))addBattleAction('button_builddefense','修筑工事',()=>showBuildMenu(u),!!u.attacked);
+    if(isMine(u)&&u.commander_id){const tc=effectiveCommanderForUnit(u),eligible=EW4NativeTraining.canManualTrain(u,tc);addBattleAction('button_training','训练',(button)=>promptManualTrainUnit(u,button),!eligible,'image_recruit_hd3')}
+    if(isMine(u))addBattleAction('button_generals','部署将领',()=>openGeneralDeploymentForUnit(u),false,'image_ui_hd');
+    if(u.commander_id)addBattleAction('button_generalinfo','将领信息',()=>showBattleCommanderInfo(u),false,'image_ui_hd');
+    addBattleAction('button_info','部队信息',()=>showUnitCard(u));
+  }else if(o){
+    const lv=constructionLevel(o),mine=o.owner===S.playerOwner,special=specialFacilityType(o);
+    if(mine&&special==='trade')addBattleAction('button_trade','市场',()=>openMarketPanel(o),false,'image_recruit_hd2');
+    if(mine&&special==='shop')addBattleAction('button_shop','商店',()=>openShopPanel(o));
+    if(mine&&special==='bar')addBattleAction('button_bar','酒馆',()=>openTavernPanel(o),false,'image_recruit_hd2');
+    if(mine&&canUpgradeConstruction(o))addBattleAction('button_buildupgrade','升级建筑',(button)=>promptUpgradeConstruction(o,button));
+    if(mine&&lv?.recruit?.length)addBattleAction('button_city','征募部队',()=>showFacilityCard(o));
+    addBattleAction('button_info','设施信息',()=>showFacilityCard(o));
+  }
+  if(root.childElementCount)root.classList.add('show')
+}
+function showBuildMenu(u){
+  if(!u||!isMine(u))return;document.getElementById('unit-card').style.display='none';document.getElementById('facility-card').style.display='none';const el=document.getElementById('battle-action-menu');el.innerHTML='<div style="margin-bottom:5px;font-weight:700">修筑野战工事</div><div class="battle-menu-row"></div>';const row=el.querySelector('.battle-menu-row');
+  for(const [type,label] of [['trench','战壕'],['fence','栅栏'],['bunker','掩体']]){const c=buildCostForInstallation(type,effectiveCommanderForUnit(u)),b=document.createElement('button');b.className='battle-menu-choice';b.disabled=!!u.attacked;b.innerHTML=`${label}<br>💰${c?.money??'?'}　⚙️${c?.industry??'?'}`;b.onclick=e=>{e.stopPropagation();buildInstallation(u,type);el.classList.remove('show')};row.appendChild(b)}
+  el.classList.add('show')
+}
+
+function canEmbark(u){if(!u||u.dead||!isMine(u)||isSeaUnit(u)||isFort(u)||u.embarked)return false;return neighbors(u.q,u.r).some(([q,r])=>terrainCell(q,r)?.type==='sea')}
+function troopshipCost(u){const card=BUILD_CARDS?.Troopship;return{money:+card?.price||40,industry:+card?.industry||0}}
+function embarkUnit(u){
+  if(!canEmbark(u))return;const cost=troopshipCost(u);
+  if(battleState.resources.money<cost.money||battleState.resources.industry<cost.industry){flash('资源不足，无法建造运输船');return}
+  battleState.resources.money-=cost.money;battleState.resources.industry-=cost.industry;u.embarked=true;updateResources();closeBattlePanels();renderBattleActions();renderBattle();flash(`运输船准备完成　💰-${cost.money}`)
+}
+function installationAt(q,r){return (battleState?.installations||[]).find(x=>x.q===q&&x.r===r)||null}
+function installationReductionAt(attacker,defender){const ins=installationAt(defender.q,defender.r);if(!ins)return 0;const st=armyStat(attacker),d=INSTALLATIONS?.[ins.type];return Math.max(0,+d?.[`penalty_${st.type}`]||0)}
+function buildCostForInstallation(type,commander){
+  const names={trench:'Trench',fence:'Fence',bunker:'Bunker'},card=BUILD_CARDS?.[names[type]];if(!card)return null;
+  let money=+card.price||0,industry=+card.industry||0;
+  return{money,industry,card};
+}
+function buildInstallation(u,type){
+  if(!battleState||!u||!isMine(u)||u.dead||u.attacked||isFort(u)||isSeaUnit(u)||armyStat(u).type!=='infantry')return;
+  if(terrainCell(u.q,u.r)?.type==='sea'){flash('海面不能修筑工事');return}
+  if(installationAt(u.q,u.r)){flash('该位置已经存在野战工事');return}
+  const cost=buildCostForInstallation(type,effectiveCommanderForUnit(u));if(!cost)return;
+  if(battleState.resources.money<cost.money||battleState.resources.industry<cost.industry){flash('金币或工业不足');return}
+  battleState.resources.money-=cost.money;battleState.resources.industry-=cost.industry;
+  battleState.installations.push({q:u.q,r:u.r,type,owner:u.owner});u.attacked=true;u.moved=true;
+  updateResources();closeBattlePanels();renderBattleActions();renderBattle();playNativeActionSfx('buildInstallation');flash(`已修筑${type==='trench'?'战壕':type==='fence'?'栅栏':'掩体'}　💰-${cost.money} ⚙️-${cost.industry}`)
+}
+function selectUnit(u){battleState.selected=u;battleState.selectedObject=null;battleState.reachable=(u&&isMine(u)&&!u.dead)?computeReachable(u):new Map();closeBattlePanels();updateFacilitySummary(null);renderBattleActions();if(u)playSfx('select');renderBattle()}
+/* ---------- Native-style combat pipeline ---------- */
+function moraleState(u){
+  if(!u||u.dead)return 0;
+  const c=effectiveCommanderForUnit(u),dirs=neighbors(u.q,u.r),hostile=dirs.map(([q,r])=>{const x=unitAt(q,r);return !!(x&&!x.dead&&isHostilePair(u,x))});
+  let flank=0;
+  if(hostile.every(Boolean))flank=-2;
+  else if((hostile[0]&&hostile[3])||(hostile[1]&&hostile[4])||(hostile[2]&&hostile[5]))flank=-1;
+  const base=EW4NativeEvent.eventMoraleBase(u,battleState?.round||1);
+  return EW4NativeEvent.combinedMorale(base,flank,EW4Combat.hasSkill(c,3));
+}
+function terrainReductionAgainst(a,b){const st=armyStat(a),t=terrainCell(b.q,b.r),def=WORLDS.terrain_types[t?.type||'land']||{};return Math.max(0,+def[`penalty_${st.type}`]||0)}
+function buildingReductionAt(u){const o=objectAt(u.q,u.r);if(!o)return 0;return Math.max(0,+constructionLevel(o)?.avoid||0)}
+function hasConstructionAt(u){return !!(u&&objectAt(u.q,u.r))}
+function defenseEquipmentBonus(u){const st=armyStat(u);let n=auraValueAround(u,15);for(const id of equippedItemIds(u)){const it=ITEMS?.[String(id)];if(!it||!itemTargetMatches(it,st))continue;if(+it.function===10)n+=+it.value||0}return n}
+
+function spawnBattleFloat(q,r,text,color='#fff0c8'){if(!battleState)return;const now=performance.now();(battleState.floatTexts||(battleState.floatTexts=[])).push({q,r,text:String(text),color,start:now,until:now+850});requestBattleAnimation(900)}
+function spawnNativeSimpleEffect(effectId,q,r){
+  if(!battleState||!NATIVE_SIMPLE_EFFECTS_DATA||!window.EW4NativeSimpleEffect)return false;
+  const effect=NATIVE_SIMPLE_EFFECTS_DATA.effects?.[effectId];if(!effect)return false;
+  const now=performance.now(),runtime=EW4NativeSimpleEffect.createInstance(effect,{x:0,y:0});if(!runtime)return false;
+  const duration=EW4NativeSimpleEffect.effectDuration(effect);
+  (battleState.simpleEffects||(battleState.simpleEffects=[])).push({effectId,q:+q,r:+r,start:now,last:now,until:now+duration*1000+80,runtime});
+  img(NATIVE_SIMPLE_EFFECTS_DATA.atlas);requestBattleAnimation(duration*1000+100);return true;
+}
+function drawNativeSimpleEffects(){
+  if(!battleState?.simpleEffects?.length||!NATIVE_SIMPLE_EFFECTS_DATA||!window.EW4NativeSimpleEffect)return;
+  const atlas=img(NATIVE_SIMPLE_EFFECTS_DATA.atlas),now=performance.now(),z=battleState.camera.zoom;
+  battleState.simpleEffects=battleState.simpleEffects.filter(inst=>{
+    const dt=Math.max(0,Math.min(.1,(now-inst.last)/1000));inst.last=now;EW4NativeSimpleEffect.advance(inst.runtime,dt);
+    if(!EW4NativeSimpleEffect.isAlive(inst.runtime)||now>=inst.until)return false;
+    if(atlas?.complete){const anchor=screenPoint(inst.q,inst.r);EW4NativeSimpleEffect.drawInstance(ctx,atlas,inst.runtime,z,anchor)}
+    return true;
+  });
+}
+function drawBattleFloats(){if(!battleState?.floatTexts?.length)return;const now=performance.now(),z=battleState.camera.zoom;ctx.save();ctx.textAlign='center';ctx.font=`bold ${Math.max(9,12*z)}px sans-serif`;battleState.floatTexts=battleState.floatTexts.filter(f=>{if(now>=f.until)return false;const p=screenPoint(f.q,f.r),t=(now-f.start)/(f.until-f.start);ctx.globalAlpha=Math.max(0,1-t);ctx.lineWidth=2;ctx.strokeStyle='#1b0b06';ctx.fillStyle=f.color;const y=p.y-20*z-t*20;ctx.strokeText(f.text,p.x,y);ctx.fillText(f.text,p.x,y);return true});ctx.restore();ctx.globalAlpha=1}
+function combatResult(a,b,{multiplier=1,isCounter=false,rng=Math.random}={}){
+  const st=armyStat(a),dst=armyStat(b),cmd=effectiveCommanderForUnit(a),dcmd=effectiveCommanderForUnit(b),m=attackModifiers(a),at=terrainCell(a.q,a.r);
+  let out=EW4Combat.resolveDamage({
+    attacker:combatUnit(a),defender:b,attackerStat:st,defenderStat:dst,attackerCommander:cmd,defenderCommander:dcmd,
+    isPlayerAttacker:isMine(a),attackerIsFort:isFort(a),defenderIsFort:isFort(b),isCounter,
+    fixedBonus:m.fixed,lowerBonus:m.lower,upperBonus:m.upper,
+    attackerMorale:moraleState(a),defenderMorale:moraleState(b),
+    attackerEmbarked:at?.type==='sea'&&st.type!=='warship'&&!hasEquipmentFunction(a,12),
+    terrainReduction:terrainReductionAgainst(a,b),buildingReduction:buildingReductionAt(b),defenderHasConstruction:hasConstructionAt(b),installationReduction:installationReductionAt(a,b),countryReduction:0,
+    defenderTrainingDefense:trainingDefenseBonus(b)
+  },rng);
+  let value=Math.max(1,Math.round(out.value*multiplier));
+  const armor=defenseEquipmentBonus(b);if(armor>0){value=Math.max(1,value-armor);out.notes=[...out.notes,`armor-${armor}`]}
+  return {...out,value};
+}
+function damageValue(a,b,rng=Math.random){return combatResult(a,b,{rng}).value}
+function awardCombatTrainingExp(u,damage){
+  if(!u||damage<=0)return null;ensureUnitTrainingState(u);
+  const out=EW4NativeTraining.awardExp(u,damage,{hasCommander:u.commander_id!=null,unitType:armyStat(u).type});
+  if(out.leveled){playNativeSfxFile('sfx_lvup.wav');spawnBattleFloat(u.q,u.r,`训练 ${out.after}级`,'#9be7ff')}
+  return out
+}
+function applyDamage(a,b,opts={}){if(typeof opts==='number')opts={multiplier:opts};const wasAlive=!b.dead&&(+b.hp||0)>0,out=combatResult(a,b,opts);b.hp-=out.value;spawnBattleFloat(b.q,b.r,`-${out.value}`,out.defenseTactic?'#9ad8ff':out.attackTactic?'#ffd35a':'#fff0c8');if(b.hp<=0){b.hp=0;b.dead=true;spawnBattleFloat(b.q,b.r,'✦','#f6c66b');if(wasAlive)fireNativeDeathEventsForUnit(b)}return out}
+function attack(a,b){if(!inAttackRange(a,b))return;const st=armyStat(a);startAttackAnim(a,b);const hit=applyDamage(a,b,{multiplier:1,isCounter:false});a.attacked=true;let counter=null;if(!b.dead&&st.type!=='artillery'&&canRange(b,a,true)){startAttackAnim(b,a);counter=applyDamage(b,a,{multiplier:.68,isCounter:true})}awardCombatTrainingExp(a,hit.value);if(counter)awardCombatTrainingExp(b,counter.value);const extra=grantCavalryExtraAction(a,b);const fx=[hit.attackTactic?'致命一击':'',hit.defenseTactic?'防御战术':'',extra?'骑兵再动':'',...(hit.notes||[]).filter(x=>!['attack-tactics','defense-tactics'].includes(x))].filter(Boolean);flash(`${armyName(a.army_name)} → ${armyName(b.army_name)}　-${hit.value}${fx.length?` [${fx.join('·')}]`:''}${counter?`　反击 -${counter.value}`:''}`);if(!extra)battleState.reachable=new Map();checkVictory();closeBattlePanels();renderBattleActions();renderBattle();setTimeout(()=>{if(battleState)renderBattle()},760);return{hit,counter,extra}}
+function captureAt(u){
+  if(!u||u.dead)return;let captured=[],eventCount=0;
+  for(const o of battleState.objects){if(o.q!==u.q||o.r!==u.r||o.owner===u.owner)continue;if(relationBetweenOwners(u.owner,o.owner)!=='hostile')continue;o.owner=u.owner;captured.push(o.area_name||o.construction_type);eventCount+=fireNativeCaptureEventsForObject(o)}
+  if(captured.length){setOwnerAt(u.q,u.r,u.owner);playNativeActionSfx('occupy');if(isMine(u)&&!eventCount)flash(`占领 ${captured.filter(Boolean).join(' / ')||'设施'}`);checkVictory()}
+}
+function moveUnit(u,q,r){if(!battleState.reachable.has(`${q},${r}`))return;const path=movementPath(u,q,r);startMoveAnim(u,path);u.q=q;u.r=r;if(u.embarked&&terrainCell(q,r)?.type!=='sea')u.embarked=false;if(fireproofUnit(u))battleState.fireCells?.delete(`${q},${r}`);u.moved=true;battleState.reachable=new Map();battleState.selected=u;captureAt(u);playNativeMovementSfx(u);closeBattlePanels();renderBattleActions();renderBattle()}
+function unitAt(q,r){return battleState.units.find(u=>!u.dead&&u.q===q&&u.r===r)}
+function objectAt(q,r){return battleState.objects.find(o=>o.q===q&&o.r===r&&o.construction_type)}
+function constructionLevel(o){const d=CONSTRUCTIONS[o.construction_type],levels=d?.levels||[];return levels.find(x=>+x.idx===+o.level)||levels[Math.max(0,Math.min(levels.length-1,+o.level||0))]||null}
+function upgradeConstructionCost(o){
+  if(!o)return null;
+  const g=unitAt(o.q,o.r),c=g&&g.owner===o.owner&&g.commander_id?effectiveCommanderForUnit(g):null;
+  return EW4NativeConstruction.upgradeCost(o.construction_type,{architecture:!!(c&&EW4Combat.hasSkill(c,30))});
+}
+function nextConstructionLevel(o){const levels=CONSTRUCTIONS[o?.construction_type]?.levels||[],cur=+o?.level||0;return levels.filter(x=>+x.idx>cur).sort((a,b)=>+a.idx-+b.idx)[0]||null}
+function canUpgradeConstruction(o){return !!(o&&o.owner===battleState?.playerOwner&&nextConstructionLevel(o)&&upgradeConstructionCost(o))}
+function promptUpgradeConstruction(o,anchor){
+  if(!canUpgradeConstruction(o))return;const cost=upgradeConstructionCost(o);openNativeActionResource(anchor,{money:cost.money,secondary:cost.industry,secondaryKind:'industry',onConfirm:()=>upgradeConstruction(o)})
+}
+function upgradeConstruction(o){
+  if(!canUpgradeConstruction(o))return;const cost=upgradeConstructionCost(o),next=nextConstructionLevel(o);
+  if(battleState.resources.money<cost.money||battleState.resources.industry<cost.industry){flash('金币或工业不足');return}
+  battleState.resources.money-=cost.money;battleState.resources.industry-=cost.industry;o.level=+next.idx;
+  updateResources();closeBattlePanels();renderBattleActions();playNativeActionSfx('upgradeConstruction');spawnNativeSimpleEffect('effect_build',o.q,o.r);renderBattle();flash(`建筑升级　💰-${cost.money} ⚙️-${cost.industry}`)
+}
+function updateFacilitySummary(o){
+  const el=document.getElementById('facility-summary');if(!el)return;if(!o){el.classList.remove('show');return}
+  const lv=constructionLevel(o)||{},entries=EW4NativeConstruction.summaryEntries(lv);
+  for(let i=0;i<4;i++){
+    const cell=el.querySelector(`.slot${i+1}`),img=document.getElementById(`facility-summary-icon${i+1}`),val=document.getElementById(`facility-summary-value${i+1}`),entry=entries[i];
+    if(!cell||!img||!val)continue;
+    cell.classList.toggle('empty',!entry);
+    if(entry){img.src=`assets/sprites/image_ui_hd/${entry.icon}`;img.alt='';val.textContent=String(entry.value)}
+  }
+  el.classList.add('show')
+}
+function recruitSelectionStats(rec,card){
+  const proto={owner:battleState.playerOwner,army_name:rec.name,grade:+rec.grade},st=armyStat(proto);return{st,card}
+}
+function showFacilityCard(o){
+  if(!o)return;document.getElementById('unit-card').style.display='none';document.getElementById('battle-action-menu').classList.remove('show');
+  const el=document.getElementById('facility-card'),lv=constructionLevel(o),mine=o.owner===battleState.playerOwner;if(!mine||!lv?.recruit?.length){el.style.display='none';return}
+  el.className='native-recruit';el.innerHTML='<div class="recruit-native-list" data-recruit-list></div><div class="recruit-native-info" data-recruit-info></div><div class="recruit-native-desc" data-recruit-desc></div><button class="native-recruit-confirm" data-recruit-confirm>征 募</button>';
+  const list=el.querySelector('[data-recruit-list]'),info=el.querySelector('[data-recruit-info]'),desc=el.querySelector('[data-recruit-desc]'),confirm=el.querySelector('[data-recruit-confirm]');let selected=0;
+  function renderSel(){
+    [...list.children].forEach((x,i)=>x.classList.toggle('sel',i===selected));const rec=lv.recruit[selected],card=CARDS[`${rec.name}|${rec.grade}`],{st}=recruitSelectionStats(rec,card),atk=EW4Combat.effectiveAttackInterval({min:+st.minatk||0,max:+st.maxatk||0,isPlayer:true}),hp=EW4PlayerUnitRules.effectiveBaseHp(+st.strength||0,true),mv=EW4PlayerUnitRules.effectiveMovement(+st.movement||0,st.type,true);
+    info.innerHTML=`<span>HP<br>${hp}</span><span>攻<br>${atk.min}-${atk.max}</span><span>移<br>${mv}</span><span>粮<br>${+st.consumption||0}</span><span>射程<br>${+st.minatkrange||0}-${+st.maxatkrange||0}</span><span>💰<br>${card?.price??'?'}</span><span>⚙️<br>${card?.industry??'?'}</span><span>Lv<br>${+rec.grade+1}</span><span></span><span></span><span></span><span></span>`;
+    desc.innerHTML=`<b>${armyName(rec.name)} ${+rec.grade+1}</b>${STRINGS?.[`desc_${String(rec.name).toLowerCase().replace(/ /g,'_')}`]||'选择兵种后确认征募。'}`;confirm.disabled=!card;confirm.onclick=e=>{e.stopPropagation();recruitAt(o,rec,card)}
+  }
+  lv.recruit.forEach((rec,i)=>{const b=document.createElement('button');b.className='recruit-native-card';const key=READY[`${rec.name} ${countryCode(o.owner)} ${+rec.grade+1}`]?`${rec.name} ${countryCode(o.owner)} ${+rec.grade+1}`:`${rec.name} ${+rec.grade+1}`,m=READY[key],pic=m?.file||'';b.innerHTML=`${pic?`<img src="${pic}">`:''}<b>${armyName(rec.name)} ${+rec.grade+1}</b>`;b.onclick=e=>{e.stopPropagation();selected=i;renderSel()};list.appendChild(b)});
+  renderSel();el.style.display='block';playSfx('select')
+}
+function selectFacility(o){battleState.selected=null;battleState.reachable=new Map();battleState.selectedObject=o;closeBattlePanels();updateFacilitySummary(o);renderBattleActions();if(o)playSfx('select');renderBattle()}
+
+function recruitAt(o,rec,card){if(o.owner!==battleState.playerOwner)return;if(unitAt(o.q,o.r)){flash('该设施上已有部队，无法征募');return}if(!card){flash('原版征募卡数据未找到');return}if(battleState.resources.money<card.price||battleState.resources.industry<card.industry){flash('金币或工业不足');return}const proto={owner:battleState.playerOwner,army_name:rec.name,grade:+rec.grade};const st=armyStat(proto);battleState.resources.money-=card.price;battleState.resources.industry-=card.industry;const u={index:100000+battleState.units.length,q:o.q,r:o.r,army_id:armyIdByName(rec.name),army_name:rec.name,grade:+rec.grade,hp:+st.strength||100,max_hp:+st.strength||100,commander_id:null,owner:battleState.playerOwner,dead:false,moved:true,attacked:true,trainingLevel:0,trainingExp:0};EW4PlayerUnitRules.applyBaseHp(u,true);battleState.units.push(u);updateResources();showFacilityCard(o);playNativeActionSfx('recruit');renderBattle();flash(`${armyName(rec.name)} 已征募`)}
+function promptManualTrainUnit(u,anchor){
+  if(!battleState||!u||u.dead||!isMine(u)||!u.commander_id)return;const c=effectiveCommanderForUnit(u),st=armyStat(u);ensureUnitTrainingState(u);if(!EW4NativeTraining.canManualTrain(u,c))return;const cost=EW4NativeTraining.manualCost(u,st);openNativeActionResource(anchor,{money:cost.money,secondary:cost.food,secondaryKind:'food',onConfirm:()=>manualTrainUnit(u)})
+}
+function manualTrainUnit(u){
+  if(!battleState||!u||u.dead||!isMine(u)||!u.commander_id)return;
+  const c=effectiveCommanderForUnit(u),st=armyStat(u);ensureUnitTrainingState(u);
+  if(!EW4NativeTraining.canManualTrain(u,c)){flash('当前上将的训练能力无法继续提升该部队');return}
+  const cost=EW4NativeTraining.manualCost(u,st);
+  if(!EW4NativeTraining.canAfford(battleState.resources,cost)){flash(`训练资源不足　需要 💰${cost.money}　🌾${cost.food}`);return}
+  const out=EW4NativeTraining.manualTrain(u,c,st,battleState.resources);if(!out.ok)return;
+  updateResources();playNativeActionSfx('training');spawnBattleFloat(u.q,u.r,`训练 ${out.after}级`,'#9be7ff');
+  closeBattlePanels();renderBattleActions();renderBattle();flash(`部队训练提升至 ${out.after} 级　💰-${out.cost.money} 🌾-${out.cost.food}${out.heal?`　HP +${out.heal}`:''}`);
+}
+function handleTap(x,y){if(!battleState||performance.now()<(battleState.inputLockedUntil||0))return;const w=screenToWorld(x,y),cell=nearestCell(w.x,w.y);if(!cell)return;const u=unitAt(cell.q,cell.r),sel=battleState.selected;if(sel&&u&&isHostilePair(sel,u)&&inAttackRange(sel,u)){attack(sel,u);return}if(sel&&isMine(sel)&&battleState.reachable.has(`${cell.q},${cell.r}`)){moveUnit(sel,cell.q,cell.r);return}if(u){selectUnit(u);return}const o=objectAt(cell.q,cell.r);if(o){selectFacility(o);return}selectUnit(null)}
+function checkVictory(){if(!battleState||battleState.ended)return;const me=battleState.units.some(u=>!u.dead&&isMine(u)),enemy=battleState.units.some(u=>!u.dead&&isHostileOwner(u.owner));if(!me){showBattleResult('defeat','我方可战斗部队已全部失去');return}if(!enemy){showBattleResult('victory','敌对战斗单位已清空');return}}
+function facilityIncome(owner){let money=0,industry=0,food=0;for(const o of battleState.objects){if(o.owner!==owner)continue;const l=constructionLevel(o);if(!l)continue;let mult=1;const u=unitAt(o.q,o.r);if(u&&!u.dead&&u.owner===owner&&u.commander_id){const c=effectiveCommanderForUnit(u);if(EW4Combat.hasSkill(c,24))mult=Math.max(mult,1.8);else if(EW4Combat.hasSkill(c,23))mult=Math.max(mult,1.4);for(const id of equippedItemIds(u)){const it=ITEMS?.[String(id)];if(it&&+it.function===3)mult=Math.max(mult,(+it.value||100)/100)}}money+=Math.floor((+l.tax||0)*mult);industry+=Math.floor((+l.industry||0)*mult);food+=Math.floor((+l.food||0)*mult)}return{money,industry,food}}
+function upkeep(owner){return battleState.units.filter(u=>!u.dead&&u.owner===owner).reduce((a,u)=>{const c=effectiveCommanderForUnit(u);return a+(EW4Combat.hasSkill(c,22)?0:(+armyStat(u).consumption||0))},0)}
+function resourceLedger(owner){const k=String(+owner);if(!battleState.countryResources[k])battleState.countryResources[k]={money:0,industry:0,food:0};return battleState.countryResources[k]}
+function settleCountryEconomy(owner){const r=resourceLedger(owner),inc=facilityIncome(owner),cost=upkeep(owner);r.money+=inc.money;r.industry+=inc.industry;r.food=Math.max(0,r.food+inc.food-cost);return{inc,cost,resources:r}}
+function facilitySupplyFor(u){const o=objectAt(u.q,u.r);if(!o||o.owner!==u.owner)return 0;return Math.max(0,+constructionLevel(o)?.supply||0)}
+function applyTrainingRecoveryAll(){
+  let total=0;for(const u of battleState?.units||[]){if(u.dead)continue;ensureUnitTrainingState(u);total+=EW4NativeTraining.applyRoundHeal(u)}return total
+}
+function applyFacilitySupplyAll(){
+  /* APK tutorial/def_construction rule: every owned construction supplies a wounded friendly unit stationed on it.
+     This is a base EW4 rule, so it must apply to player, allies and AI alike. */
+  const totals=new Map();
+  for(const u of battleState.units){
+    if(u.dead||u.hp>=u.max_hp)continue;
+    const supply=facilitySupplyFor(u);if(supply<=0)continue;
+    const before=u.hp;u.hp=Math.min(u.max_hp,u.hp+supply);const got=u.hp-before;
+    if(got>0)totals.set(u.owner,(totals.get(u.owner)||0)+got);
+  }
+  return totals;
+}
+function settlePlayerRound(){
+  const settled=settleCountryEconomy(battleState.playerOwner),inc=settled.inc,cost=settled.cost;
+  battleState.resources=settled.resources;
+  const trainingHealed=applyTrainingRecoveryAll(),supplyTotals=applyFacilitySupplyAll(),facilityHealed=supplyTotals.get(battleState.playerOwner)||0;
+  let playerSpecialHealed=0;
+  for(const u of battleState.units){
+    if(u.dead||!isMine(u)||u.hp>=u.max_hp)continue;
+    const c=effectiveCommanderForUnit(u),noble=c?playerNobilityHeal(c):0,flag=auraValueAround(u,13),outside=!objectAt(u.q,u.r),tent=(!u.attacked&&outside)?equipmentFunctionValue(u,5):0,h=noble+flag+tent;
+    if(h>0){const before=u.hp;u.hp=Math.min(u.max_hp,u.hp+h);playerSpecialHealed+=u.hp-before}
+  }
+  updateResources();
+  const healed=trainingHealed+facilityHealed+playerSpecialHealed;
+  flash(`本回合收入 💰+${inc.money} ⚙️+${inc.industry} 🌾+${inc.food}｜军粮 -${cost}${healed?`｜补给回血 +${healed}`:''}${trainingHealed?`（训练恢复 ${trainingHealed}）`:''}${facilityHealed?`（建筑 ${facilityHealed}）`:''}`,2200);
+}
+function updateResources(){const r=battleState?.resources;if(!r)return;document.getElementById('money-val').textContent=Math.floor(r.money);document.getElementById('industry-val').textContent=Math.floor(r.industry);document.getElementById('food-val').textContent=Math.floor(r.food)}
+function aiTargetsFor(u){return battleState.units.filter(x=>!x.dead&&relationBetweenOwners(u.owner,x.owner)==='hostile')}
+function aiAttackableFrom(u,q,r,targets){const st=armyStat(u);return targets.filter(t=>{const d=hexDist({q,r},t);return d>=+st.minatkrange&&d<=+st.maxatkrange})}
+function chooseAIDestination(u,targets){
+  if(isFort(u)||u.moved)return{q:u.q,r:u.r,path:[{q:u.q,r:u.r}],target:null};
+  const reach=computeReachable(u),cells=[{q:u.q,r:u.r},...[...reach.keys()].map(k=>{const[q,r]=k.split(',').map(Number);return{q,r}})];
+  let best=null;
+  for(const cell of cells){
+    const attackable=aiAttackableFrom(u,cell.q,cell.r,targets).sort((a,b)=>(a.hp-b.hp)||hexDist(cell,a)-hexDist(cell,b));
+    const nearest=targets.reduce((m,t)=>Math.min(m,hexDist(cell,t)),9999);
+    // Prefer a legal firing cell, then a low-HP target, then closing distance.
+    const score=(attackable.length?100000-attackable[0].hp*4:0)-nearest*100-(reach.get(`${cell.q},${cell.r}`)||0);
+    if(!best||score>best.score)best={...cell,score,target:attackable[0]||null};
+  }
+  if(!best)return{q:u.q,r:u.r,path:[{q:u.q,r:u.r}],target:null};
+  return{q:best.q,r:best.r,target:best.target,path:(best.q===u.q&&best.r===u.r)?[{q:u.q,r:u.r}]:movementPath(u,best.q,best.r)};
+}
+function setBattlePhase(phase){
+  if(!battleState)return;const S=battleState;S.phase=phase;if(phase!=='ai')S.aiFastForward=false;
+  const btn=document.getElementById('round-btn'),back=document.getElementById('battle-back');if(!btn)return;
+  const ai=phase==='ai';btn.style.backgroundImage=`url('assets/sprites/image_recruit_hd/${ai?'button_skip':'button_round'}.png')`;
+  btn.style.setProperty('left',ai?'0px':'541px','important');btn.style.setProperty('top','293px','important');if(back)back.style.display=ai?'none':'block';
+  btn.title=ai?'快进敌军行动':'结束回合';btn.setAttribute('aria-label',btn.title);btn.disabled=!!S.ended;renderBattleActions();
+}
+function aiDelay(fn,ms){setTimeout(fn,battleState?.aiFastForward?10:ms)}
+function enemyTurn(){
+  const S=battleState;if(!S||S.phase==='ai'||S.ended)return;setBattlePhase('ai');
+  const owners=EW4CountryTurn.aiTurnOrder(S.battle,S.units,S.playerOwner,S.mode);let oi=0;
+  function finishRound(){
+    if(S.ended)return;S.round++;settlePlayerRound();S.units.forEach(u=>{u.moved=false;u.attacked=false});setBattlePhase('player');
+    document.getElementById('turn-label').textContent=`回合 ${S.round} · 我方行动`;checkVictory();renderBattle();
+    if(!S.ended)aiDelay(()=>{fireNativeRoundDialogues(S.round);if(!S.dialogueActive)writeBattleSave('auto',true)},90)
+  }
+  function runNextCountry(){
+    if(S.ended)return;if(oi>=owners.length){finishRound();return}
+    const owner=owners[oi++],name=S.battle.countries[owner]?.name_cn||countryCode(owner).toUpperCase();
+    document.getElementById('turn-label').textContent=`回合 ${S.round} · ${name}行动`;
+    const units=S.units.filter(u=>!u.dead&&u.owner===owner);let i=0;
+    function endCountry(){
+      const settled=settleCountryEconomy(owner);S.activeAIResource={owner,...settled.resources};
+      aiDelay(runNextCountry,80)
+    }
+    function step(){
+      if(S.ended)return;if(i>=units.length){endCountry();return}
+      const u=units[i++];if(u.dead){step();return}
+      let targets=aiTargetsFor(u);if(!targets.length){step();return}
+      targets.sort((a,b)=>hexDist(u,a)-hexDist(u,b));
+      if(canRange(u,targets[0],false)){const rr=attackAI(u,targets[0]);if(rr?.extra)i--;aiDelay(step,145);return}
+      const plan=chooseAIDestination(u,targets),moved=plan.q!==u.q||plan.r!==u.r;
+      if(moved){const path=plan.path,oq=u.q,or=u.r;u.q=plan.q;u.r=plan.r;if(u.embarked&&terrainCell(u.q,u.r)?.type!=='sea')u.embarked=false;u.moved=true;startMoveAnim(u,path?.length>1?path:[{q:oq,r:or},{q:u.q,r:u.r}]);captureAt(u)}else u.moved=true;
+      renderBattle();
+      const afterTargets=aiTargetsFor(u),attackable=aiAttackableFrom(u,u.q,u.r,afterTargets).sort((a,b)=>(a.hp-b.hp)||hexDist(u,a)-hexDist(u,b));
+      if(attackable.length&&!u.attacked){aiDelay(()=>{let rr=null;if(battleState&&!u.dead&&!attackable[0].dead)rr=attackAI(u,attackable[0]);if(rr?.extra)i--;aiDelay(step,120)},moved?135:20)}else aiDelay(step,moved?145:75)
+    }
+    step()
+  }
+  runNextCountry()
+}
+function attackAI(a,b){const st=armyStat(a);startAttackAnim(a,b);const hit=applyDamage(a,b,{multiplier:1,isCounter:false});a.attacked=true;let counter=null;if(!b.dead&&st.type!=='artillery'&&canRange(b,a,true)){startAttackAnim(b,a);counter=applyDamage(b,a,{multiplier:.68,isCounter:true})}awardCombatTrainingExp(a,hit.value);if(counter)awardCombatTrainingExp(b,counter.value);if(b.hp<=0)b.dead=true;const extra=grantCavalryExtraAction(a,b);renderBattle();checkVictory();return{hit,counter,extra}}
+
+async function openBattle(b,mapOverride,opts={}){
+  await loadDB();selectedBattle=b||selectedBattle;if(!b)return;
+  const restored=opts.restore?EW4BattleSave.normalize(opts.restore):null;
+  const mode=restored?.mode||opts.mode||'campaign';if(mode==='campaign'){const zm=String(b.file||'').match(/^campaign([1-6])_/);if(zm)selectedZone=+zm[1]}const playerOwner=restored?.playerOwner??opts.playerOwner??b.player_owner_default??0,map=restored?.map||mapOverride||(b.header.map_id===2?'america':'europe'),world=WORLDS.worlds[map],h=b.header,mx=+b.meta?.centerx||h.width*32,my=+b.meta?.centery||h.height*26.5;
+  const assignments=restored?.assignments||opts.assignments||new Map();
+  const units=restored?restored.units.map(u=>({...u,moveAnim:null,nativeAnim:null,attackAnimStart:0,attackPoseUntil:0})):b.units.map(u=>{const x={...u,dead:false,moved:false,attacked:false,nativeAnim:null};if(assignments.has(u.index))x.commander_id=assignments.get(u.index);return x});
+  const countryResources=EW4CountryTurn.buildLedgers(b,{mode,playerOwner,restored:restored?.countryResources});
+  if(restored&&!restored.countryResources)countryResources[String(+playerOwner)]={...restored.resources};
+  const resources=countryResources[String(+playerOwner)]||EW4CountryTurn.headerResources(b);
+  const camera=restored?{...restored.camera}:{x:h.origin_x*64+mx,y:h.origin_y*53+my,zoom:1};
+  battleState={battle:b,world,map,mode,playerOwner:+playerOwner,round:restored?.round||1,phase:'player',aiFastForward:false,musicTrack:chooseOriginalBattleMusic(),units,summonedPrincesses:[...new Set(units.filter(u=>u&&u.commander_id!=null&&PRINCESS_IDS.includes(+u.commander_id)&&+u.owner===+playerOwner).map(u=>+u.commander_id))],objects:restored?restored.objects.map(o=>({...o})):b.objects.map(o=>({...o})),ownership:restored?[...restored.ownership]:[...b.ownership],countryResources,resources,camera,assignments:new Map(assignments),selected:null,selectedObject:null,reachable:new Map(),dragging:false,installations:restored?restored.installations.map(x=>({...x})):[],fireCells:restored?new Set(restored.fireCells):new Set(),floatTexts:[],simpleEffects:[],dialogueQueue:[],nativeFiredEvents:restored?new Set(restored.nativeFiredEvents):new Set(),nativeAppliedEvents:restored?new Set(restored.nativeAppliedEvents):new Set(),itemStores:restored?.itemStores||initialBattleItemStores(b.file),taverns:restored?.taverns||initialBattleTaverns(b.file),dialogueActive:false,ended:restored?.ended||null,mapImg:img(`assets/maps/${map}.png`)};
+  loadNativeMapText(map);
+  setBattleMusicTrack(battleState.musicTrack);
+  clampCamera(battleState.camera);for(const u of battleState.units){ensureUnitTrainingState(u,{fromBTL:!restored});EW4PlayerUnitRules.applyBaseHp(u,isMine(u));if(!restored){if(!isSeaUnit(u)&&!isFort(u)&&terrainCell(u.q,u.r)?.type==='sea')u.embarked=true;applyPlayerCommanderHp(u)}}
+  hideBattleResult();hideNativeDialogue();hideBattleModals();stopDefeatMusic();document.getElementById('battle-note').textContent=`${b.title_cn||b.name_cn||b.file}｜原 BTL：${b.runtime_counts?.units??b.units.length} 支部队 / ${b.runtime_counts?.objects??b.objects.length} 个地图对象；原生目标 ${BATTLE_NATIVE?.battles?.[b.file]?.objective_count||0} 个 / trigger ${BATTLE_NATIVE?.battles?.[b.file]?.event_count||0} 条。`;
+  document.getElementById('turn-label').textContent=`回合 ${battleState.round} · 我方行动`;setBattlePhase('player');const back=document.getElementById('battle-back');back.dataset.go=mode==='conquest'?'conquest':mode==='tutorial'?'tutorial':'campaignList';closeBattlePanels();renderBattleActions();updateResources();go('battle');primeAssets();renderBattle();
+  if(!restored)setTimeout(()=>{if(battleState&&!battleState.ended){fireNativeRoundDialogues(1);if(!battleState.dialogueActive)writeBattleSave('auto',true)}},220)
+}
+function primeAssets(){if(!battleState)return;const S=battleState;S.units.forEach(u=>{unitImage(u);const k=readyKey(u);for(const db of [ATTACK_POSES,RELOAD_POSES,FINISH_POSES]){const m=db?.[k];if(m)img(m.file)}const nu=NATIVE_ANIM_PACK?.units?.[k];if(nu)for(const rec of nu.motions||[]){const a=NATIVE_ANIM_PACK.assets?.[rec.asset];if(a?.resource)preloadCompactBileResource(a.resource)}});S.objects.forEach(o=>{const k=buildingKey(o),m=k&&SPRITES[k];if(m)img(m.file);const mk=specialFacilityMarker(o),mm=mk&&SPRITES[mk];if(mm)img(mm.file)});S.battle.countries.forEach(c=>{const m=SPRITES[`${c.code}1.png`];if(m)img(m.file)});requestAnimationFrame(renderBattle)}
+document.getElementById('battle-pause').onclick=openPausePanel;
+document.getElementById('pause-close').onclick=hideBattleModals;
+document.getElementById('save-close').onclick=()=>{document.getElementById('save-panel').classList.remove('show');if(activeScreenId()==='battle')document.getElementById('pause-panel').classList.add('show');else document.getElementById('battle-modal-shade').classList.remove('show')};
+document.getElementById('battle-modal-shade').onclick=hideBattleModals;
+document.getElementById('pause-save').onclick=()=>openSavePanel('save');
+document.getElementById('pause-restart').onclick=()=>{hideBattleModals();if(battleState)openBattle(battleState.battle,battleState.map,{mode:battleState.mode,playerOwner:battleState.playerOwner,assignments:new Map(battleState.assignments||[])})};
+document.getElementById('pause-exit').onclick=()=>{const dest=battleState?.mode==='conquest'?'conquest':battleState?.mode==='tutorial'?'tutorial':'campaignList';writeBattleSave('auto',true);hideBattleModals();go(dest)};
+document.getElementById('pause-option').onclick=()=>{optionsReturnScreen='battle';hideBattleModals();go('options')};
+document.getElementById('campaign-load').onclick=()=>openSavePanel('load');document.getElementById('conquest-load').onclick=()=>openSavePanel('load');
+document.getElementById('battle-back').addEventListener('click',()=>writeBattleSave('auto',true));
+const academyBack=document.getElementById('academy-back');if(academyBack){academyBack.onclick=()=>{const d=academyReturnScreen||'hq';academyReturnScreen='hq';if(d==='deploy')renderDeployment();go(d)}}
+const optionsBack=document.querySelector('#options .back');if(optionsBack){optionsBack.removeAttribute('data-go');optionsBack.onclick=()=>{const d=optionsReturnScreen;optionsReturnScreen='main';go(d)}}
+document.getElementById('round-btn').onclick=()=>{if(!battleState||battleState.ended||battleState.dialogueActive)return;if(battleState.phase==='ai'){battleState.aiFastForward=true;flash('快进敌军行动',700);return}if(performance.now()<(battleState.inputLockedUntil||0))return;selectUnit(null);enemyTurn()};
+document.getElementById('battle-result-retry').onclick=()=>{if(battleState)openBattle(battleState.battle,battleState.map,{mode:battleState.mode,playerOwner:battleState.playerOwner,assignments:new Map(battleState.assignments||[])})};document.getElementById('battle-result-exit').onclick=()=>{hideBattleResult();if(battleState?.mode==='conquest')go('conquest');else if(battleState?.mode==='tutorial')go('tutorial');else openZone(selectedZone)};
+
+document.getElementById('native-talk').onclick=()=>{if(battleState?.dialogueActive)showNextNativeDialogue()};
+
+/* ---------- Gestures ---------- */
+let pointers=new Map(),gesture={down:null,moved:false,pinchDist:0,pinchZoom:1,pinchWorld:null};
+function pointerPair(){return[...pointers.values()]}
+function beginPinch(){const a=pointerPair();if(a.length!==2||!battleState)return;const cx=(a[0].x+a[1].x)/2,cy=(a[0].y+a[1].y)/2;gesture.pinchDist=Math.max(1,Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y));gesture.pinchZoom=battleState.camera.zoom;gesture.pinchWorld=screenToWorld(cx,cy);gesture.moved=true}
+canvas.addEventListener('pointerdown',e=>{if(!battleState||battleState.dialogueActive)return;if(music&&au?.paused)startBattleMusic();canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.offsetX,y:e.offsetY});if(pointers.size===1){gesture.down={x:e.offsetX,y:e.offsetY,cx:battleState.camera.x,cy:battleState.camera.y};gesture.moved=false}else if(pointers.size===2)beginPinch()});
+canvas.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId)||!battleState)return;pointers.set(e.pointerId,{x:e.offsetX,y:e.offsetY});if(pointers.size===1&&gesture.down){const dx=e.offsetX-gesture.down.x,dy=e.offsetY-gesture.down.y;if(Math.hypot(dx,dy)>3)gesture.moved=true;battleState.camera.x=gesture.down.cx-dx/battleState.camera.zoom;battleState.camera.y=gesture.down.cy-dy/battleState.camera.zoom;clampCamera();renderBattle()}else if(pointers.size===2){const a=pointerPair(),d=Math.max(1,Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y)),cx=(a[0].x+a[1].x)/2,cy=(a[0].y+a[1].y)/2,z=Math.max(CAMERA_MIN_ZOOM,Math.min(CAMERA_MAX_ZOOM,gesture.pinchZoom*d/gesture.pinchDist)),anchor=gesture.pinchWorld||screenToWorld(cx,cy);battleState.camera.zoom=z;battleState.camera.x=anchor.x-(cx-284)/z;battleState.camera.y=anchor.y-(cy-160)/z;clampCamera();gesture.moved=true;renderBattle()}});
+canvas.addEventListener('pointerup',e=>{const wasSingle=pointers.size===1;if(wasSingle&&!gesture.moved&&battleState)handleTap(e.offsetX,e.offsetY);pointers.delete(e.pointerId);if(pointers.size===1){const [p]=pointerPair();gesture.down={x:p.x,y:p.y,cx:battleState.camera.x,cy:battleState.camera.y};gesture.moved=true}else{gesture.down=null;gesture.pinchWorld=null}});canvas.addEventListener('pointercancel',e=>{pointers.delete(e.pointerId);gesture.down=null;gesture.pinchWorld=null});
+canvas.addEventListener('wheel',e=>{if(!battleState)return;e.preventDefault();zoomCameraAt(battleState.camera.zoom*(e.deltaY<0?1.12:.89),e.offsetX,e.offsetY);renderBattle()},{passive:false});
+
+const au=document.getElementById('battle-music'),defeatAudio=document.getElementById('defeat-music');
+function chooseOriginalBattleMusic(){return ORIGINAL_BATTLE_MUSIC[Math.floor(Math.random()*ORIGINAL_BATTLE_MUSIC.length)]}
+function setBattleMusicTrack(file){if(!au||!ORIGINAL_BATTLE_MUSIC.includes(file))return false;if(au.dataset.track===file)return true;pauseBattleMusic(true);au.dataset.track=file;au.src=`assets/audio/${file}`;try{au.load()}catch(e){}return true}
+function syncNativeOptionAudio(){
+  const bg=document.getElementById('option-bgvol'),se=document.getElementById('option-sevol'),bgt=document.getElementById('option-bg-value'),set=document.getElementById('option-se-value');
+  if(bg)bg.value=clampSettingPercent(saveState.bgVol);if(se)se.value=clampSettingPercent(saveState.seVol);
+  if(bgt)bgt.textContent=String(clampSettingPercent(saveState.bgVol));if(set)set.textContent=String(clampSettingPercent(saveState.seVol));
+}
+function setBackgroundVolume(v){saveState.bgVol=clampSettingPercent(v);music=saveState.bgVol>0;saveState.music=music;persist();if(au)au.volume=bgVolume();if(defeatAudio)defeatAudio.volume=bgVolume();if(!music){pauseBattleMusic(false);stopDefeatMusic()}syncNativeOptionAudio()}
+function setSoundVolume(v){saveState.seVol=clampSettingPercent(v);persist();for(const a of Object.values(audio))try{a.volume=seVolume()}catch(e){}syncNativeOptionAudio()}
+function pauseBattleMusic(reset=false){if(!au)return;try{au.pause();if(reset)au.currentTime=0}catch(e){}}
+function stopDefeatMusic(){if(!defeatAudio)return;try{defeatAudio.pause();defeatAudio.currentTime=0}catch(e){}}
+async function startBattleMusic(){if(!music||bgVolume()<=0||activeScreenId()!=='battle'||!battleState||battleState.ended)return false;stopDefeatMusic();setBattleMusicTrack(battleState.musicTrack||chooseOriginalBattleMusic());try{au.volume=bgVolume();await au.play();battleState.musicArmed=false;return true}catch(e){battleState.musicArmed=true;return false}}
+const bgSlider=document.getElementById('option-bgvol'),seSlider=document.getElementById('option-sevol');
+if(bgSlider)bgSlider.addEventListener('input',()=>setBackgroundVolume(bgSlider.value));
+if(seSlider)seSlider.addEventListener('input',()=>setSoundVolume(seSlider.value));
+syncNativeOptionAudio();
+if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+loadDB().then(()=>{academyPool=saveState.academyPool||'6';renderHQ();const qs=new URLSearchParams(location.search),auto=qs.get('autobattle');if(auto){const b=DB.battles.find(x=>x.file===auto||x.file===`${auto}.btl`);if(b)openBattle(b,b.header.map_id===2?'america':'europe',{mode:'campaign',playerOwner:+qs.get('owner')||b.player_owner_default||0,assignments:new Map()})}}).catch(e=>flash('资源加载失败：'+e.message,4000));

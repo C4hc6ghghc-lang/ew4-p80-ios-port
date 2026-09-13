@@ -1,0 +1,40 @@
+const CACHE='ew4-port-v061-r14-39-posthandoff14-sceneshop';
+const CORE=['./index.html','./r14_native_forms.css','./combat_core.js','./player_unit_rules.js','./assets/audio/sfx_armourmove.wav','./assets/audio/sfx_buff.wav','./assets/audio/sfx_build.wav','./assets/audio/sfx_build1.wav','./assets/audio/sfx_cancel.wav','./assets/audio/sfx_cannon.wav','./assets/audio/sfx_cavalrymove.wav','./assets/audio/sfx_celebrate.wav','./assets/audio/sfx_click.wav','./assets/audio/sfx_draft.wav','./assets/audio/sfx_exp.wav','./assets/audio/sfx_explode.wav','./assets/audio/sfx_fire.wav','./assets/audio/sfx_fire1.wav','./assets/audio/sfx_flip.wav','./assets/audio/sfx_golddrop.wav','./assets/audio/sfx_gunfire.wav','./assets/audio/sfx_gunfire1.wav','./assets/audio/sfx_gunfire2.wav','./assets/audio/sfx_gunfire3.wav','./assets/audio/sfx_knife1.wav','./assets/audio/sfx_knife2.wav','./assets/audio/sfx_knife3.wav','./assets/audio/sfx_knifestrike1.wav','./assets/audio/sfx_knifestrike2.wav','./assets/audio/sfx_leg.wav','./assets/audio/sfx_lvup.wav','./assets/audio/sfx_lvup2.wav','./assets/audio/sfx_machine_gun.wav','./assets/audio/sfx_naval.wav','./assets/audio/sfx_naval_gun.wav','./assets/audio/sfx_occupy.wav','./assets/audio/sfx_pop.wav','./assets/audio/sfx_rocket.wav','./assets/audio/sfx_select.wav','./assets/audio/sfx_slide.wav','./assets/audio/sfx_strike.wav','./assets/audio/sfx_supply.wav','./assets/data/native_audio_inventory.json','./assets/data/native_effects_audio.json','./assets/data/native_simple_effects.json','./assets/data/native_getgeneral_effect.json','./assets/effects/anim_fire_hd.png','./assets/effects/eff.png','./battle_save_core.js','./native_academy_core.js','./country_turn_core.js','./item_inventory_core.js','./native_commerce_core.js','./native_scene_shop_core.js','./native_event_core.js','./compact_bile_runtime.js','./native_animation_controller.js','./native_maptext_core.js','./native_effect_audio_core.js','./native_ui_audio_core.js','./native_action_audio_core.js','./native_movement_effect_core.js','./native_training_core.js','./native_useitem_core.js','./native_construction_core.js','./native_simple_effect_runtime.js','./native_impact_effect_core.js','./native_camera_core.js','./native_hex_core.js','./native_lowzoom_core.js','./app.js','./manifest.webmanifest','./assets/textures/mainmenu_wide.png','./assets/textures/campaign_wide.png','./assets/textures/title_hd.png','./assets/maps/europe.png','./assets/maps/america.png','./assets/data/battles_runtime.json','./assets/data/worldmaps.json','./assets/data/army_stats.json','./assets/data/commanders.json','./assets/data/unit_ready_manifest.json','./assets/data/unit_attack_manifest.json','./assets/data/unit_reload_manifest.json','./assets/data/unit_finish_manifest.json','./assets/data/native_animation_core877.json','./assets/maptext_native/maptext.bin','./assets/maptext_native/maptext.xml','./assets/maptext_native/maptext.png','./assets/maptext_native/maptextpos_europe.xml','./assets/maptext_native/maptextpos_america.xml','./assets/bile_runtime/manifest.json','./assets/bile_runtime/def_motion.xml','./assets/bile_runtime/army_armoredcar.bin','./assets/bile_runtime/army_armoredcar.xml','./assets/bile_runtime/army_armoredcar.png','./assets/bile_runtime/army_artillery.bin','./assets/bile_runtime/army_artillery.xml','./assets/bile_runtime/army_artillery.png','./assets/bile_runtime/army_fort.bin','./assets/bile_runtime/army_fort.xml','./assets/bile_runtime/army_fort.png','./assets/bile_runtime/army_grenadier.bin','./assets/bile_runtime/army_grenadier.xml','./assets/bile_runtime/army_grenadier.png','./assets/bile_runtime/army_guards.bin','./assets/bile_runtime/army_guards.xml','./assets/bile_runtime/army_guards.png','./assets/bile_runtime/army_guardscavalry.bin','./assets/bile_runtime/army_guardscavalry.xml','./assets/bile_runtime/army_guardscavalry.png','./assets/bile_runtime/army_heavycavalry.bin','./assets/bile_runtime/army_heavycavalry.xml','./assets/bile_runtime/army_heavycavalry.png','./assets/bile_runtime/army_lightcavalry.bin','./assets/bile_runtime/army_lightcavalry.xml','./assets/bile_runtime/army_lightcavalry.png','./assets/bile_runtime/army_lightinfantry.bin','./assets/bile_runtime/army_lightinfantry.xml','./assets/bile_runtime/army_lightinfantry.png','./assets/bile_runtime/army_lineinfantry.bin','./assets/bile_runtime/army_lineinfantry.xml','./assets/bile_runtime/army_lineinfantry.png','./assets/bile_runtime/army_militia.bin','./assets/bile_runtime/army_militia.xml','./assets/bile_runtime/army_militia.png','./assets/bile_runtime/army_ship.bin','./assets/bile_runtime/army_ship.xml','./assets/bile_runtime/army_ship.png','./assets/data/portrait_manifest.json','./assets/data/terrain_manifest.json','./assets/data/constructions.json','./assets/data/cards.json','./assets/data/items.json','./assets/data/battle_itemstores.json','./assets/data/battle_taverns.json','./assets/data/item_icon_manifest.json','./assets/data/strings_cn.json','./assets/data/player_general_overrides.json','./assets/data/player_princess_overrides.json','./assets/data/installations.json','./assets/data/build_cards.json','./assets/data/battle_native_triggers.json','./assets/data/native_trigger_targets.json','./assets/data/battle_dialogues.json','./assets/sprite_manifest.json','./assets/textures/tex_victory.png','./assets/audio/battle1.mp3','./assets/audio/battle2.mp3','./assets/audio/battle3.mp3','./assets/audio/battle4.mp3','./assets/audio/defeat_music.mp3','./assets/sprites/image_ui_hd/volume_bar.png','./assets/sprites/image_ui_hd/slider_gray.png','./assets/sprites/image_ui_hd/slider_press.png','./assets/sprites/image_ui_hd/speed_bar.png','./assets/sprites/image_ui_hd/speed_brick.png','./assets/sprites/image_ui_hd/grid_box.png','./assets/sprites/image_ui_hd/board_dialog_ex.png','./assets/sprites/image_ui_hd/gray_board_dialoguearrow.png','./assets/sprites/image_recruit_hd/button_round.png','./assets/sprites/image_recruit_hd/button_skip.png','./assets/sprites/image_menu_hd/choosestage_back.png','./assets/sprites/image_ui_hd/new_confirm.png'];
+
+self.addEventListener('install',event=>{
+  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));
+});
+
+self.addEventListener('activate',event=>{
+  event.waitUntil(Promise.all([
+    self.clients.claim(),
+    caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE&&key.startsWith('ew4-port-')).map(key=>caches.delete(key))))
+  ]));
+});
+
+function cacheable(request,response){
+  return request.method==='GET'&&response&&response.ok&&!response.redirected&&response.type==='basic';
+}
+
+self.addEventListener('fetch',event=>{
+  const request=event.request;
+  if(request.method!=='GET')return;
+
+  // Safari refuses a navigation response that came from Cache Storage if that
+  // cached Response carries a redirect chain. Never cache navigation requests.
+  if(request.mode==='navigate'){
+    event.respondWith(fetch(request,{redirect:'follow'}).catch(()=>caches.match('./index.html')));
+    return;
+  }
+
+  event.respondWith(caches.match(request).then(cached=>{
+    if(cached&&!cached.redirected)return cached;
+    return fetch(request).then(response=>{
+      if(cacheable(request,response)){
+        const copy=response.clone();
+        caches.open(CACHE).then(cache=>cache.put(request,copy));
+      }
+      return response;
+    });
+  }));
+});

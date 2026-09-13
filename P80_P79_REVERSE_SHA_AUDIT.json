@@ -1,0 +1,57 @@
+{
+  "product": {
+    "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources": {
+      "added": [
+        "EW4NativeCore/NativeBattleFirePresentationCore.swift"
+      ],
+      "removed": [],
+      "modified": [
+        "EW4NativeRenderer/NativeBattleScene.swift"
+      ]
+    },
+    "SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App": {
+      "added": [],
+      "removed": [],
+      "modified": []
+    }
+  },
+  "tests": {
+    "added": [
+      "EW4NativeCoreTests/P80BattleFirePresentationTests.swift"
+    ],
+    "removed": [],
+    "modified": [],
+    "base_count": 81,
+    "current_count": 82
+  },
+  "resources": {
+    "added": [],
+    "removed": [],
+    "modified": [],
+    "base_count": 1751,
+    "current_count": 1751
+  },
+  "source_lean": {
+    "added": [],
+    "removed": [],
+    "modified": [],
+    "base_count": 6321,
+    "current_count": 6321
+  },
+  "summary": {
+    "product_added": [
+      "EW4NativeCore/NativeBattleFirePresentationCore.swift"
+    ],
+    "product_removed": [],
+    "product_modified": [
+      "EW4NativeRenderer/NativeBattleScene.swift"
+    ],
+    "test_added": [
+      "EW4NativeCoreTests/P80BattleFirePresentationTests.swift"
+    ],
+    "test_removed": [],
+    "test_modified": [],
+    "resources_changed": 0,
+    "source_lean_changed": 0
+  }
+}

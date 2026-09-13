@@ -1,0 +1,34 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--1BA0962812E73E12.txt
+[4/8] Emitting module EW4NativeCore
+[5/8] Compiling EW4NativeCore NativeOriginalOuterShellCore.swift
+[6/10] Wrapping AST for EW4NativeCore for debugging
+[7/16] Write Objects.LinkFileList
+[8/18] Linking EW4NativeAudit
+[10/18] Emitting module EW4NativeCoreTests
+[11/18] Compiling EW4NativeCoreTests P73CampaignInfoRouteFidelityTests.swift
+[12/18] /mnt/data/p73_work/EW4_R14_39_P72_NATIVE_ACHIEVEMENT_ROUTE_AUDITED_PORT_ONLY_2026-09-12/SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/.build/x86_64-unknown-linux-gnu/debug/EW4NativeCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[13/19] Write sources
+[15/22] Compiling EW4NativeCorePackageDiscoveredTests all-discovered-tests.swift
+[16/22] Compiling EW4NativeCorePackageDiscoveredTests EW4NativeCoreTests.swift
+[17/22] Emitting module EW4NativeCorePackageDiscoveredTests
+[18/20] Write Objects.LinkFileList
+[19/20] Linking EW4NativeCorePackageTests.xctest
+Build complete! (5.49s)
+Test Suite 'Selected tests' started at 2026-09-12 04:27:54.114
+Test Suite 'Selected tests' passed at 2026-09-12 04:27:54.120
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.0 (0.0) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+◇ Test p73CampaignInfoBattleLinesMatchFrozenDefBattleline() started.
+◇ Test p73CampaignInfoUsesOriginalFrozenAssetsAndCountryFlags() started.
+◇ Test p73CampaignPinNowRoutesThroughInfoBeforeCampaignList() started.
+◇ Test p73CampaignInfoGeometryAndMaturePinPlacementMatchP25() started.
+✔ Test p73CampaignInfoUsesOriginalFrozenAssetsAndCountryFlags() passed after 0.001 seconds.
+✔ Test p73CampaignInfoBattleLinesMatchFrozenDefBattleline() passed after 0.001 seconds.
+✔ Test p73CampaignInfoGeometryAndMaturePinPlacementMatchP25() passed after 0.001 seconds.
+✔ Test p73CampaignPinNowRoutesThroughInfoBeforeCampaignList() passed after 0.002 seconds.
+✔ Test run with 4 tests in 0 suites passed after 0.003 seconds.

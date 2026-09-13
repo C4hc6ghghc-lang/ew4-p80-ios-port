@@ -1,0 +1,15 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),path=require('path');
+const U=require('./native_upgrade_core');
+const M=JSON.parse(fs.readFileSync(path.join(__dirname,'assets/data/native_warzone_tech.json'),'utf8'));
+assert.equal(M.tech_count,26);assert.equal(M.zones.length,6);
+const z=U.initialZones(M);assert.equal(z['1'][0],1);assert.equal(z['1'][5],-1);assert.equal(z['6'][16],1);
+assert.deepEqual(U.pageTechIds(0),[0,1,2,3,4,5]);assert.deepEqual(U.pageTechIds(4),[18,19,20,21]);
+assert.equal(U.upgradeCost(0,-1),0);assert.equal(U.upgradeCost(0,0),3);assert.equal(U.upgradeCost(25,2),16);assert.equal(U.upgradeCost(25,3),0);
+assert.equal(U.displayLevel(-1),0);assert.equal(U.displayLevel(0),1);assert.equal(U.displayLevel(3),4);
+assert.equal(U.nativeScoreDelta(2,5),3);assert.deepEqual(U.awardScoreDelta(998,0,5),{stars:999,delta:5});
+assert.equal(U.recruitAllowed(-1),false);assert.equal(U.recruitAllowed(0),true);assert.equal(U.initialTrainingLevel(0),0);assert.equal(U.initialTrainingLevel(2),2);assert.equal(U.initialTrainingLevel(3),3);
+assert.deepEqual(U.zoneEconomicBonuses({'1':Array(26).fill(0).map((x,i)=>i===22?3:i===23?2:i===24?1:0)},1),{food:30,money:40,industry:10});
+assert.equal(U.canEmbarkArmy('Militia',0),false);assert.equal(U.canEmbarkArmy('Militia',1),true);assert.equal(U.canEmbarkArmy('Light Cavalry',1),false);assert.equal(U.canEmbarkArmy('Light Cavalry',2),true);assert.equal(U.canEmbarkArmy('Light Artillery',2),false);assert.equal(U.canEmbarkArmy('Light Artillery',3),true);
+let out=U.upgrade(z,99,1,5);assert.equal(out.ok,true);assert.equal(out.cost,8);assert.equal(out.level,0);assert.equal(out.stars,91);
+console.log('native upgrade core PASS');

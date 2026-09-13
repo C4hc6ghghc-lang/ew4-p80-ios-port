@@ -1,0 +1,52 @@
+{
+  "product_swift": {
+    "added": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeGeneralUpgradeCore.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalGeneralUpgradeScene.swift"
+    ],
+    "modified": [
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeHeadquartersCore.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/NativeCore/Sources/EW4NativeRenderer/NativeOriginalHeadquartersScene.swift",
+      "SOURCE_NATIVE/EW4_iOS_NativePort/iOSApp/App/EW4NativePortApp.swift"
+    ],
+    "deleted": [],
+    "counts": {
+      "added": 2,
+      "modified": 4,
+      "deleted": 0
+    }
+  },
+  "tests_swift": {
+    "added": [
+      "EW4NativeCoreTests/P71GeneralUpgradeNativeParityTests.swift"
+    ],
+    "modified": [],
+    "deleted": [],
+    "counts": {
+      "added": 1,
+      "modified": 0,
+      "deleted": 0
+    }
+  },
+  "native_resources": {
+    "added": [],
+    "modified": [],
+    "deleted": [],
+    "counts": {
+      "added": 0,
+      "modified": 0,
+      "deleted": 0
+    }
+  },
+  "source_lean": {
+    "added": [],
+    "modified": [],
+    "deleted": [],
+    "counts": {
+      "added": 0,
+      "modified": 0,
+      "deleted": 0
+    }
+  }
+}

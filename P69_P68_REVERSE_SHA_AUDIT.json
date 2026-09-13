@@ -1,0 +1,27 @@
+{
+  "product_swift": {
+    "added": [],
+    "deleted": [],
+    "modified": [
+      "EW4NativeCore/NativeOriginalFormGeometryCore.swift",
+      "EW4NativeRenderer/NativeOriginalRegroupScene.swift"
+    ]
+  },
+  "tests": {
+    "added": [
+      "EW4NativeCoreTests/P69MainRegroupFormFidelityTests.swift"
+    ],
+    "deleted": [],
+    "modified": []
+  },
+  "native_resources": {
+    "added": [],
+    "deleted": [],
+    "modified": []
+  },
+  "source_lean": {
+    "added": [],
+    "deleted": [],
+    "modified": []
+  }
+}

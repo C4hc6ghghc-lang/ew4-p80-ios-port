@@ -1,0 +1,39 @@
+{
+  "product_swift": {
+    "p75_files": 187,
+    "p76_files": 187,
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "counts": {
+      "added": 0,
+      "deleted": 0,
+      "modified": 0
+    }
+  },
+  "native_resources": {
+    "p75_files": 1751,
+    "p76_files": 1751,
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "counts": {
+      "added": 0,
+      "deleted": 0,
+      "modified": 0
+    }
+  },
+  "source_lean": {
+    "p75_files": 6321,
+    "p76_files": 6321,
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "counts": {
+      "added": 0,
+      "deleted": 0,
+      "modified": 0
+    }
+  },
+  "product_unchanged": true
+}

@@ -1,0 +1,56 @@
+{
+  "direct_apk_aab": [],
+  "nested_zip_count": 12,
+  "nested_zip_apk_aab_hits": 0,
+  "nested": [
+    {
+      "file": "FROZEN_R14_38/EW4_Web_Port_v0.61_r14-38_AUSTRIA_ARTILLERY8_ACADEMY_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF4_NATIVE_CAMERA_LAYER_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF3_ROCKET_VIS_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF10_NATIVE_CONQUEST_UI_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF6_NATIVE_CAMERA_PRESENTATION_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF11_NATIVE_MAIN_HQ_UI_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF5_NATIVE_HEX_LOWZOOM_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF2_ARTILLERY_VIS_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF9_VISUAL_UI_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF7_PLAYER_ACTION_CAMERA_FOCUS_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF1_INFITEM_MGVIS_DELTA.zip",
+      "apk_aab_hits": []
+    },
+    {
+      "file": "APPLIED_DELTAS/EW4_r14-39_POSTHANDOFF8_AI_CAMERA_NATIVE_PATH_DELTA.zip",
+      "apk_aab_hits": []
+    }
+  ],
+  "build_cache_dirs": []
+}

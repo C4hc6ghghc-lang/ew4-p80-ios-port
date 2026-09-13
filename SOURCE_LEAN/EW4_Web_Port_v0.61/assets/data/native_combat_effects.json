@@ -1,0 +1,3403 @@
+{
+  "atlas": "assets/effects/eff.png",
+  "effects": {
+    "effect_mgunfire": {
+      "source_xml": "effect_mgunfire.xml",
+      "effect_name": "mgunfire",
+      "emitters": [
+        {
+          "emitter_name": "gunflash1",
+          "emitter_life": 0.8,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "area"
+          },
+          "image": "gunflash1.png",
+          "particle_width": 24.0,
+          "particle_height": 12.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 42,
+            "y": 355,
+            "w": 60,
+            "h": 30,
+            "refx": 3,
+            "refy": 14
+          },
+          "particle_life_min": 0.1,
+          "particle_life_max": 0.12,
+          "angle_min": 0.0,
+          "angle_max": 0.0,
+          "speed_min": 0.0,
+          "speed_max": 0.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 0.7,
+          "scale_max": 1.2,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 0.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 8.0
+            },
+            {
+              "time": 0.79,
+              "quantity": 8.0
+            },
+            {
+              "time": 0.8,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            },
+            {
+              "life": 0.5,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.5
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "gunflashsmoke1",
+          "emitter_life": 0.8,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "area"
+          },
+          "image": "gunflashsmoke1.png",
+          "particle_width": 20.0,
+          "particle_height": 20.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 1,
+            "y": 396,
+            "w": 60,
+            "h": 60,
+            "refx": 28,
+            "refy": 30
+          },
+          "particle_life_min": 0.1,
+          "particle_life_max": 0.12,
+          "angle_min": 0.0,
+          "angle_max": 0.0,
+          "speed_min": 0.0,
+          "speed_max": 0.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 0.7,
+          "scale_max": 1.2,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 360.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 8.0
+            },
+            {
+              "time": 0.79,
+              "quantity": 8.0
+            },
+            {
+              "time": 0.8,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.3
+            },
+            {
+              "life": 0.5,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    "effect_lightgun": {
+      "source_xml": "effect_lightgun.xml",
+      "effect_name": "gunnery",
+      "emitters": [
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 8.0,
+          "particle_height": 8.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.8,
+          "particle_life_max": 1.0,
+          "angle_min": -40.0,
+          "angle_max": 40.0,
+          "speed_min": 3.0,
+          "speed_max": 25.0,
+          "gravity_min": 80.0,
+          "gravity_max": 120.0,
+          "scale_min": 1.0,
+          "scale_max": 1.2,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 360.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 200.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 15.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 0.1,
+              "speed": 3.0,
+              "gravity": -0.4,
+              "scale": 4.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.3,
+              "gravity": -1.0,
+              "scale": 4.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 8.0,
+          "particle_height": 8.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.8,
+          "particle_life_max": 1.0,
+          "angle_min": -40.0,
+          "angle_max": 40.0,
+          "speed_min": 3.0,
+          "speed_max": 25.0,
+          "gravity_min": 80.0,
+          "gravity_max": 120.0,
+          "scale_min": 1.0,
+          "scale_max": 1.2,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 360.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 200.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 15.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 0.1,
+              "speed": 3.0,
+              "gravity": -0.4,
+              "scale": 4.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.3,
+              "gravity": -1.0,
+              "scale": 4.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "ray0000",
+          "emitter_life": 0.5,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "ray0000.png",
+          "particle_width": 17.0,
+          "particle_height": 4.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 1,
+            "y": 457,
+            "w": 120,
+            "h": 38,
+            "refx": 12,
+            "refy": 18
+          },
+          "particle_life_min": 0.1,
+          "particle_life_max": 0.12,
+          "angle_min": 0.0,
+          "angle_max": 0.0,
+          "speed_min": 0.0,
+          "speed_max": 0.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 1.0,
+          "scale_max": 2.0,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 0.0,
+          "color_min": {
+            "r": 157,
+            "g": 43,
+            "b": 20,
+            "a": 255
+          },
+          "color_max": {
+            "r": 157,
+            "g": 43,
+            "b": 20,
+            "a": 255
+          },
+          "color": {
+            "r": 157,
+            "g": 43,
+            "b": 20,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.4,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.4,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "fiery1",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point",
+            "width": "20",
+            "heigth": "20"
+          },
+          "image": "fiery1.png",
+          "particle_width": 20.0,
+          "particle_height": 20.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 100,
+            "y": 193,
+            "w": 60,
+            "h": 60,
+            "refx": 32,
+            "refy": 29
+          },
+          "particle_life_min": 0.5,
+          "particle_life_max": 0.5,
+          "angle_min": -20.0,
+          "angle_max": 20.0,
+          "speed_min": 100.0,
+          "speed_max": 100.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 0.5,
+          "scale_max": 1.0,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 360.0,
+          "color_min": {
+            "r": 160,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "color_max": {
+            "r": 180,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 10.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 10.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 1.0,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            },
+            {
+              "life": 0.1,
+              "speed": 0.0,
+              "gravity": 1.0,
+              "scale": 0.8,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            },
+            {
+              "life": 0.2,
+              "speed": 2.0,
+              "gravity": 1.0,
+              "scale": 0.7,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.8,
+              "gravity": 1.0,
+              "scale": 0.5,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.7
+            },
+            {
+              "life": 0.6,
+              "speed": 0.4,
+              "gravity": 1.0,
+              "scale": 0.7,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 0.8,
+              "speed": 0.2,
+              "gravity": 1.0,
+              "scale": 0.7,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "effect_gunnery": {
+      "source_xml": "effect_gunnery.xml",
+      "effect_name": "gunnery",
+      "emitters": [
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 12.0,
+          "particle_height": 12.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.8,
+          "particle_life_max": 1.0,
+          "angle_min": -80.0,
+          "angle_max": 30.0,
+          "speed_min": 10.0,
+          "speed_max": 50.0,
+          "gravity_min": 300.0,
+          "gravity_max": 350.0,
+          "scale_min": 1.0,
+          "scale_max": 1.5,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 0.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 200.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 10.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 0.1,
+              "speed": 3.0,
+              "gravity": -0.4,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.3,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 10.0,
+          "particle_height": 10.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.8,
+          "particle_life_max": 1.0,
+          "angle_min": -40.0,
+          "angle_max": 40.0,
+          "speed_min": 6.0,
+          "speed_max": 30.0,
+          "gravity_min": 80.0,
+          "gravity_max": 100.0,
+          "scale_min": 1.6,
+          "scale_max": 2.4,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 360.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 100.0
+            },
+            {
+              "time": 0.12,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 8.0,
+              "gravity": 0.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 0.1,
+              "speed": 5.0,
+              "gravity": -0.4,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 0.3,
+              "speed": 0.6,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.2
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "ray0000",
+          "emitter_life": 0.5,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "ray0000.png",
+          "particle_width": 22.0,
+          "particle_height": 7.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 1,
+            "y": 457,
+            "w": 120,
+            "h": 38,
+            "refx": 12,
+            "refy": 18
+          },
+          "particle_life_min": 0.1,
+          "particle_life_max": 0.12,
+          "angle_min": 0.0,
+          "angle_max": 0.0,
+          "speed_min": 0.0,
+          "speed_max": 0.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 1.0,
+          "scale_max": 2.0,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": -20.0,
+          "rotangle_max": -20.0,
+          "color_min": {
+            "r": 234,
+            "g": 63,
+            "b": 17,
+            "a": 255
+          },
+          "color_max": {
+            "r": 234,
+            "g": 63,
+            "b": 17,
+            "a": 255
+          },
+          "color": {
+            "r": 234,
+            "g": 63,
+            "b": 17,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.4,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.4,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "fiery1",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point",
+            "width": "20",
+            "heigth": "20"
+          },
+          "image": "fiery1.png",
+          "particle_width": 20.0,
+          "particle_height": 20.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 100,
+            "y": 193,
+            "w": 60,
+            "h": 60,
+            "refx": 32,
+            "refy": 29
+          },
+          "particle_life_min": 0.5,
+          "particle_life_max": 0.5,
+          "angle_min": -60.0,
+          "angle_max": 0.0,
+          "speed_min": 100.0,
+          "speed_max": 100.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 0.5,
+          "scale_max": 1.0,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 360.0,
+          "color_min": {
+            "r": 160,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "color_max": {
+            "r": 180,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 10.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 10.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 1.0,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            },
+            {
+              "life": 0.1,
+              "speed": 0.0,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            },
+            {
+              "life": 0.2,
+              "speed": 2.0,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.8,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.7
+            },
+            {
+              "life": 0.6,
+              "speed": 0.4,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 0.8,
+              "speed": 0.2,
+              "gravity": 1.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "effect_gunnery1": {
+      "source_xml": "effect_gunnery1.xml",
+      "effect_name": "gunnery",
+      "emitters": [
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 15.0,
+          "particle_height": 15.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.8,
+          "particle_life_max": 1.0,
+          "angle_min": -80.0,
+          "angle_max": 30.0,
+          "speed_min": 10.0,
+          "speed_max": 50.0,
+          "gravity_min": 100.0,
+          "gravity_max": 150.0,
+          "scale_min": 1.0,
+          "scale_max": 1.5,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 0.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 250.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 10.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 0.1,
+              "speed": 3.0,
+              "gravity": -0.4,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.3,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 15.0,
+          "particle_height": 15.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.8,
+          "particle_life_max": 1.0,
+          "angle_min": -80.0,
+          "angle_max": 30.0,
+          "speed_min": 10.0,
+          "speed_max": 50.0,
+          "gravity_min": 100.0,
+          "gravity_max": 150.0,
+          "scale_min": 1.0,
+          "scale_max": 1.5,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 0.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 250.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 10.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.4
+            },
+            {
+              "life": 0.1,
+              "speed": 3.0,
+              "gravity": -0.4,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 0.3,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "ray0000",
+          "emitter_life": 0.5,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "ray0000.png",
+          "particle_width": 20.0,
+          "particle_height": 12.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 1,
+            "y": 457,
+            "w": 120,
+            "h": 38,
+            "refx": 12,
+            "refy": 18
+          },
+          "particle_life_min": 0.1,
+          "particle_life_max": 0.12,
+          "angle_min": 0.0,
+          "angle_max": 0.0,
+          "speed_min": 0.0,
+          "speed_max": 0.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 1.0,
+          "scale_max": 2.0,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": -35.0,
+          "rotangle_max": -35.0,
+          "color_min": {
+            "r": 234,
+            "g": 63,
+            "b": 17,
+            "a": 255
+          },
+          "color_max": {
+            "r": 234,
+            "g": 63,
+            "b": 17,
+            "a": 255
+          },
+          "color": {
+            "r": 234,
+            "g": 63,
+            "b": 17,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.4,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.4,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "effect_rocket1": {
+      "source_xml": "effect_rocket1.xml",
+      "effect_name": "rocket",
+      "emitters": [
+        {
+          "emitter_name": "cloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "cloud.png",
+          "particle_width": 13.0,
+          "particle_height": 13.0,
+          "blend": "alpha",
+          "atlas_rect": {
+            "x": 327,
+            "y": 97,
+            "w": 64,
+            "h": 64,
+            "refx": 31,
+            "refy": 25
+          },
+          "particle_life_min": 0.6,
+          "particle_life_max": 1.0,
+          "angle_min": 140.0,
+          "angle_max": 160.0,
+          "speed_min": 15.0,
+          "speed_max": 40.0,
+          "gravity_min": 100.0,
+          "gravity_max": 100.0,
+          "scale_min": 0.8,
+          "scale_max": 1.3,
+          "rotspeed_min": 0.4,
+          "rotspeed_max": 1.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 0.0,
+          "color_min": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color_max": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 180
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 80.0
+            },
+            {
+              "time": 0.2,
+              "quantity": 80.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 6.0,
+              "gravity": 0.0,
+              "scale": 1.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.1,
+              "speed": 5.0,
+              "gravity": -0.4,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.3,
+              "speed": 1.3,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": -1.0,
+              "scale": 3.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        },
+        {
+          "emitter_name": "firecloud",
+          "emitter_life": 0.2,
+          "settings": {
+            "name": "settings",
+            "mode": "once",
+            "type": "point"
+          },
+          "image": "firecloud.png",
+          "particle_width": 7.0,
+          "particle_height": 7.0,
+          "blend": "add",
+          "atlas_rect": {
+            "x": 1,
+            "y": 294,
+            "w": 60,
+            "h": 60,
+            "refx": 31,
+            "refy": 26
+          },
+          "particle_life_min": 0.1,
+          "particle_life_max": 0.12,
+          "angle_min": 0.0,
+          "angle_max": 90.0,
+          "speed_min": 0.0,
+          "speed_max": 0.0,
+          "gravity_min": 0.0,
+          "gravity_max": 0.0,
+          "scale_min": 1.0,
+          "scale_max": 1.3,
+          "rotspeed_min": 0.0,
+          "rotspeed_max": 0.0,
+          "rotangle_type": "random",
+          "rotangle_min": 0.0,
+          "rotangle_max": 90.0,
+          "color_min": {
+            "r": 255,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "color_max": {
+            "r": 255,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "color": {
+            "r": 255,
+            "g": 108,
+            "b": 74,
+            "a": 255
+          },
+          "timetrack": [
+            {
+              "time": 0.0,
+              "quantity": 60.0
+            },
+            {
+              "time": 0.1,
+              "quantity": 0.0
+            }
+          ],
+          "lifetrack": [
+            {
+              "life": 0.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.8
+            },
+            {
+              "life": 0.1,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.6
+            },
+            {
+              "life": 1.0,
+              "speed": 0.0,
+              "gravity": 0.0,
+              "scale": 2.0,
+              "rotspeed": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "flat_effects": {
+    "effect_mgunfire__gunflash1": {
+      "source_xml": "effect_mgunfire.xml",
+      "emitter_name": "gunflash1",
+      "emitter_life": 0.8,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "area"
+      },
+      "image": "gunflash1.png",
+      "particle_width": 24.0,
+      "particle_height": 12.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 42,
+        "y": 355,
+        "w": 60,
+        "h": 30,
+        "refx": 3,
+        "refy": 14
+      },
+      "particle_life_min": 0.1,
+      "particle_life_max": 0.12,
+      "angle_min": 0.0,
+      "angle_max": 0.0,
+      "speed_min": 0.0,
+      "speed_max": 0.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 0.7,
+      "scale_max": 1.2,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 0.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 8.0
+        },
+        {
+          "time": 0.79,
+          "quantity": 8.0
+        },
+        {
+          "time": 0.8,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        },
+        {
+          "life": 0.5,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.5
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_mgunfire__gunflashsmoke1": {
+      "source_xml": "effect_mgunfire.xml",
+      "emitter_name": "gunflashsmoke1",
+      "emitter_life": 0.8,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "area"
+      },
+      "image": "gunflashsmoke1.png",
+      "particle_width": 20.0,
+      "particle_height": 20.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 1,
+        "y": 396,
+        "w": 60,
+        "h": 60,
+        "refx": 28,
+        "refy": 30
+      },
+      "particle_life_min": 0.1,
+      "particle_life_max": 0.12,
+      "angle_min": 0.0,
+      "angle_max": 0.0,
+      "speed_min": 0.0,
+      "speed_max": 0.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 0.7,
+      "scale_max": 1.2,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 360.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 8.0
+        },
+        {
+          "time": 0.79,
+          "quantity": 8.0
+        },
+        {
+          "time": 0.8,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.3
+        },
+        {
+          "life": 0.5,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.3
+        }
+      ]
+    },
+    "effect_lightgun__cloud1": {
+      "source_xml": "effect_lightgun.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 8.0,
+      "particle_height": 8.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.8,
+      "particle_life_max": 1.0,
+      "angle_min": -40.0,
+      "angle_max": 40.0,
+      "speed_min": 3.0,
+      "speed_max": 25.0,
+      "gravity_min": 80.0,
+      "gravity_max": 120.0,
+      "scale_min": 1.0,
+      "scale_max": 1.2,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 360.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 200.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 15.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 0.1,
+          "speed": 3.0,
+          "gravity": -0.4,
+          "scale": 4.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.3,
+          "gravity": -1.0,
+          "scale": 4.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_lightgun__cloud2": {
+      "source_xml": "effect_lightgun.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 8.0,
+      "particle_height": 8.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.8,
+      "particle_life_max": 1.0,
+      "angle_min": -40.0,
+      "angle_max": 40.0,
+      "speed_min": 3.0,
+      "speed_max": 25.0,
+      "gravity_min": 80.0,
+      "gravity_max": 120.0,
+      "scale_min": 1.0,
+      "scale_max": 1.2,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 360.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 200.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 15.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 0.1,
+          "speed": 3.0,
+          "gravity": -0.4,
+          "scale": 4.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.3,
+          "gravity": -1.0,
+          "scale": 4.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_lightgun__ray0000": {
+      "source_xml": "effect_lightgun.xml",
+      "emitter_name": "ray0000",
+      "emitter_life": 0.5,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "ray0000.png",
+      "particle_width": 17.0,
+      "particle_height": 4.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 1,
+        "y": 457,
+        "w": 120,
+        "h": 38,
+        "refx": 12,
+        "refy": 18
+      },
+      "particle_life_min": 0.1,
+      "particle_life_max": 0.12,
+      "angle_min": 0.0,
+      "angle_max": 0.0,
+      "speed_min": 0.0,
+      "speed_max": 0.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 1.0,
+      "scale_max": 2.0,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 0.0,
+      "color_min": {
+        "r": 157,
+        "g": 43,
+        "b": 20,
+        "a": 255
+      },
+      "color_max": {
+        "r": 157,
+        "g": 43,
+        "b": 20,
+        "a": 255
+      },
+      "color": {
+        "r": 157,
+        "g": 43,
+        "b": 20,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.4,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.4,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_lightgun__fiery1": {
+      "source_xml": "effect_lightgun.xml",
+      "emitter_name": "fiery1",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point",
+        "width": "20",
+        "heigth": "20"
+      },
+      "image": "fiery1.png",
+      "particle_width": 20.0,
+      "particle_height": 20.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 100,
+        "y": 193,
+        "w": 60,
+        "h": 60,
+        "refx": 32,
+        "refy": 29
+      },
+      "particle_life_min": 0.5,
+      "particle_life_max": 0.5,
+      "angle_min": -20.0,
+      "angle_max": 20.0,
+      "speed_min": 100.0,
+      "speed_max": 100.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 0.5,
+      "scale_max": 1.0,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 360.0,
+      "color_min": {
+        "r": 160,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "color_max": {
+        "r": 180,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 10.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 10.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 1.0,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        },
+        {
+          "life": 0.1,
+          "speed": 0.0,
+          "gravity": 1.0,
+          "scale": 0.8,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        },
+        {
+          "life": 0.2,
+          "speed": 2.0,
+          "gravity": 1.0,
+          "scale": 0.7,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.8,
+          "gravity": 1.0,
+          "scale": 0.5,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.7
+        },
+        {
+          "life": 0.6,
+          "speed": 0.4,
+          "gravity": 1.0,
+          "scale": 0.7,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 0.8,
+          "speed": 0.2,
+          "gravity": 1.0,
+          "scale": 0.7,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery__cloud1": {
+      "source_xml": "effect_gunnery.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 12.0,
+      "particle_height": 12.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.8,
+      "particle_life_max": 1.0,
+      "angle_min": -80.0,
+      "angle_max": 30.0,
+      "speed_min": 10.0,
+      "speed_max": 50.0,
+      "gravity_min": 300.0,
+      "gravity_max": 350.0,
+      "scale_min": 1.0,
+      "scale_max": 1.5,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 0.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 200.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 10.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 0.1,
+          "speed": 3.0,
+          "gravity": -0.4,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.3,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery__cloud2": {
+      "source_xml": "effect_gunnery.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 10.0,
+      "particle_height": 10.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.8,
+      "particle_life_max": 1.0,
+      "angle_min": -40.0,
+      "angle_max": 40.0,
+      "speed_min": 6.0,
+      "speed_max": 30.0,
+      "gravity_min": 80.0,
+      "gravity_max": 100.0,
+      "scale_min": 1.6,
+      "scale_max": 2.4,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 360.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 100.0
+        },
+        {
+          "time": 0.12,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 8.0,
+          "gravity": 0.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 0.1,
+          "speed": 5.0,
+          "gravity": -0.4,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 0.3,
+          "speed": 0.6,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.2
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery__ray0000": {
+      "source_xml": "effect_gunnery.xml",
+      "emitter_name": "ray0000",
+      "emitter_life": 0.5,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "ray0000.png",
+      "particle_width": 22.0,
+      "particle_height": 7.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 1,
+        "y": 457,
+        "w": 120,
+        "h": 38,
+        "refx": 12,
+        "refy": 18
+      },
+      "particle_life_min": 0.1,
+      "particle_life_max": 0.12,
+      "angle_min": 0.0,
+      "angle_max": 0.0,
+      "speed_min": 0.0,
+      "speed_max": 0.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 1.0,
+      "scale_max": 2.0,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": -20.0,
+      "rotangle_max": -20.0,
+      "color_min": {
+        "r": 234,
+        "g": 63,
+        "b": 17,
+        "a": 255
+      },
+      "color_max": {
+        "r": 234,
+        "g": 63,
+        "b": 17,
+        "a": 255
+      },
+      "color": {
+        "r": 234,
+        "g": 63,
+        "b": 17,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.4,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.4,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery__fiery1": {
+      "source_xml": "effect_gunnery.xml",
+      "emitter_name": "fiery1",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point",
+        "width": "20",
+        "heigth": "20"
+      },
+      "image": "fiery1.png",
+      "particle_width": 20.0,
+      "particle_height": 20.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 100,
+        "y": 193,
+        "w": 60,
+        "h": 60,
+        "refx": 32,
+        "refy": 29
+      },
+      "particle_life_min": 0.5,
+      "particle_life_max": 0.5,
+      "angle_min": -60.0,
+      "angle_max": 0.0,
+      "speed_min": 100.0,
+      "speed_max": 100.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 0.5,
+      "scale_max": 1.0,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 360.0,
+      "color_min": {
+        "r": 160,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "color_max": {
+        "r": 180,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 10.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 10.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 1.0,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        },
+        {
+          "life": 0.1,
+          "speed": 0.0,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        },
+        {
+          "life": 0.2,
+          "speed": 2.0,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.8,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.7
+        },
+        {
+          "life": 0.6,
+          "speed": 0.4,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 0.8,
+          "speed": 0.2,
+          "gravity": 1.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery1__cloud1": {
+      "source_xml": "effect_gunnery1.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 15.0,
+      "particle_height": 15.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.8,
+      "particle_life_max": 1.0,
+      "angle_min": -80.0,
+      "angle_max": 30.0,
+      "speed_min": 10.0,
+      "speed_max": 50.0,
+      "gravity_min": 100.0,
+      "gravity_max": 150.0,
+      "scale_min": 1.0,
+      "scale_max": 1.5,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 0.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 250.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 10.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 0.1,
+          "speed": 3.0,
+          "gravity": -0.4,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.3,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery1__cloud2": {
+      "source_xml": "effect_gunnery1.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 15.0,
+      "particle_height": 15.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.8,
+      "particle_life_max": 1.0,
+      "angle_min": -80.0,
+      "angle_max": 30.0,
+      "speed_min": 10.0,
+      "speed_max": 50.0,
+      "gravity_min": 100.0,
+      "gravity_max": 150.0,
+      "scale_min": 1.0,
+      "scale_max": 1.5,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 0.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 250.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 10.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.4
+        },
+        {
+          "life": 0.1,
+          "speed": 3.0,
+          "gravity": -0.4,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 0.3,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_gunnery1__ray0000": {
+      "source_xml": "effect_gunnery1.xml",
+      "emitter_name": "ray0000",
+      "emitter_life": 0.5,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "ray0000.png",
+      "particle_width": 20.0,
+      "particle_height": 12.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 1,
+        "y": 457,
+        "w": 120,
+        "h": 38,
+        "refx": 12,
+        "refy": 18
+      },
+      "particle_life_min": 0.1,
+      "particle_life_max": 0.12,
+      "angle_min": 0.0,
+      "angle_max": 0.0,
+      "speed_min": 0.0,
+      "speed_max": 0.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 1.0,
+      "scale_max": 2.0,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": -35.0,
+      "rotangle_max": -35.0,
+      "color_min": {
+        "r": 234,
+        "g": 63,
+        "b": 17,
+        "a": 255
+      },
+      "color_max": {
+        "r": 234,
+        "g": 63,
+        "b": 17,
+        "a": 255
+      },
+      "color": {
+        "r": 234,
+        "g": 63,
+        "b": 17,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.4,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.4,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_rocket1__cloud": {
+      "source_xml": "effect_rocket1.xml",
+      "emitter_name": "cloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "cloud.png",
+      "particle_width": 13.0,
+      "particle_height": 13.0,
+      "blend": "alpha",
+      "atlas_rect": {
+        "x": 327,
+        "y": 97,
+        "w": 64,
+        "h": 64,
+        "refx": 31,
+        "refy": 25
+      },
+      "particle_life_min": 0.6,
+      "particle_life_max": 1.0,
+      "angle_min": 140.0,
+      "angle_max": 160.0,
+      "speed_min": 15.0,
+      "speed_max": 40.0,
+      "gravity_min": 100.0,
+      "gravity_max": 100.0,
+      "scale_min": 0.8,
+      "scale_max": 1.3,
+      "rotspeed_min": 0.4,
+      "rotspeed_max": 1.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 0.0,
+      "color_min": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color_max": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 180
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 80.0
+        },
+        {
+          "time": 0.2,
+          "quantity": 80.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 6.0,
+          "gravity": 0.0,
+          "scale": 1.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.1,
+          "speed": 5.0,
+          "gravity": -0.4,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.3,
+          "speed": 1.3,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": -1.0,
+          "scale": 3.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    },
+    "effect_rocket1__firecloud": {
+      "source_xml": "effect_rocket1.xml",
+      "emitter_name": "firecloud",
+      "emitter_life": 0.2,
+      "settings": {
+        "name": "settings",
+        "mode": "once",
+        "type": "point"
+      },
+      "image": "firecloud.png",
+      "particle_width": 7.0,
+      "particle_height": 7.0,
+      "blend": "add",
+      "atlas_rect": {
+        "x": 1,
+        "y": 294,
+        "w": 60,
+        "h": 60,
+        "refx": 31,
+        "refy": 26
+      },
+      "particle_life_min": 0.1,
+      "particle_life_max": 0.12,
+      "angle_min": 0.0,
+      "angle_max": 90.0,
+      "speed_min": 0.0,
+      "speed_max": 0.0,
+      "gravity_min": 0.0,
+      "gravity_max": 0.0,
+      "scale_min": 1.0,
+      "scale_max": 1.3,
+      "rotspeed_min": 0.0,
+      "rotspeed_max": 0.0,
+      "rotangle_type": "random",
+      "rotangle_min": 0.0,
+      "rotangle_max": 90.0,
+      "color_min": {
+        "r": 255,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "color_max": {
+        "r": 255,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "color": {
+        "r": 255,
+        "g": 108,
+        "b": 74,
+        "a": 255
+      },
+      "timetrack": [
+        {
+          "time": 0.0,
+          "quantity": 60.0
+        },
+        {
+          "time": 0.1,
+          "quantity": 0.0
+        }
+      ],
+      "lifetrack": [
+        {
+          "life": 0.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.8
+        },
+        {
+          "life": 0.1,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.6
+        },
+        {
+          "life": 1.0,
+          "speed": 0.0,
+          "gravity": 0.0,
+          "scale": 2.0,
+          "rotspeed": 1.0,
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 0.0
+        }
+      ]
+    }
+  },
+  "groups": {
+    "effect_mgunfire.xml": [
+      "effect_mgunfire__gunflash1",
+      "effect_mgunfire__gunflashsmoke1"
+    ],
+    "effect_lightgun.xml": [
+      "effect_lightgun__cloud1",
+      "effect_lightgun__cloud2",
+      "effect_lightgun__ray0000",
+      "effect_lightgun__fiery1"
+    ],
+    "effect_gunnery.xml": [
+      "effect_gunnery__cloud1",
+      "effect_gunnery__cloud2",
+      "effect_gunnery__ray0000",
+      "effect_gunnery__fiery1"
+    ],
+    "effect_gunnery1.xml": [
+      "effect_gunnery1__cloud1",
+      "effect_gunnery1__cloud2",
+      "effect_gunnery1__ray0000"
+    ],
+    "effect_rocket1.xml": [
+      "effect_rocket1__cloud",
+      "effect_rocket1__firecloud"
+    ]
+  }
+}

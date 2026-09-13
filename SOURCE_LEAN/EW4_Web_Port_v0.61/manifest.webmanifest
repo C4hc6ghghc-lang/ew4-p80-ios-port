@@ -1,0 +1,9 @@
+{
+  "name": "欧陆战争 IV",
+  "short_name": "欧陆战争4",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#05080a",
+  "theme_color": "#111820"
+}

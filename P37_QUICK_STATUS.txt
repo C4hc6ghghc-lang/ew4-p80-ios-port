@@ -1,0 +1,16 @@
+P37 NATIVE HUD DE-WEB — WIP
+
+CURRENT:
+- Full regression: 124/124 PASS.
+- Inherits P36 native hextend/anchors and P35 frozen map/unit/HiDPI/touch work.
+- Removed Web-only HUD drop shadows / press scaling / corner-button opacity.
+- Removed extra resource/AI CSS text shadows.
+- Corrected group_funcres secondary icon/text to native asymmetric XML baselines.
+- Protected cores: 4/4 SHA256 MATCH.
+- Service Worker CORE: 1058/1058 present.
+- PORT_ONLY: APK/AAB = 0 in tree and nested ZIP scan.
+
+NEXT:
+- Continue only evidence-backed final battle-HUD/native-presentation cleanup.
+- DO NOT alter map geometry, unit native refs/scales, 568x320 logical space, P35 HiDPI or touch mapping.
+- True iPhone A/B remains the last acceptance gate.
