@@ -29,4 +29,20 @@ jobs:
         run: |
           set -euo pipefail
           zip -qr simulator-evidence.zip smoke-results
-          gh release create "smoke-${GITHUB_RUN_ID}" simulator-evidence.zip --draft --target "$GITHUB_SHA" --title "P80 simulator smoke ${GITHUB_RUN_NUMBER}" --notes "Private iPhone and iPad simulator launch evidence. This does not replace physical-device gameplay testing."
+          tag="smoke-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          for attempt in 1 2 3; do
+            if gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --draft --target "$GITHUB_SHA" --title "P80 simulator smoke ${GITHUB_RUN_NUMBER}" --notes "iPhone and iPad simulator launch evidence. Physical-device gameplay testing is still required."; then
+              break
+            fi
+            sleep 5
+          done
+          gh release view "$tag" >/dev/null
+          uploaded=false
+          for attempt in 1 2 3; do
+            if gh release upload "$tag" simulator-evidence.zip --clobber; then
+              uploaded=true
+              break
+            fi
+            sleep 5
+          done
+          test "$uploaded" = true
