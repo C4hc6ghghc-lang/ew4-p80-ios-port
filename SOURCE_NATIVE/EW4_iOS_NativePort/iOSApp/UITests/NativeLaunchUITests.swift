@@ -3,6 +3,37 @@ import UIKit
 
 final class NativeLaunchUITests: XCTestCase {
     @MainActor
+    func testBattleLandIsRendered() throws {
+        continueAfterFailure = false
+        XCUIDevice.shared.orientation = .landscapeLeft
+        let app = XCUIApplication()
+        app.launch()
+        sleep(5)
+        func tap(_ x: Double, _ y: Double) {
+            let frame = app.windows.firstMatch.frame
+            let scale = min(frame.width / 568, frame.height / 320)
+            app.windows.firstMatch.coordinate(withNormalizedOffset: .zero).withOffset(CGVector(
+                dx: (frame.width - 568 * scale) / 2 + x * scale,
+                dy: (frame.height - 320 * scale) / 2 + y * scale)).tap()
+        }
+        tap(502, 207.5) // Main menu: tutorial.
+        sleep(2)
+        tap(284, 120) // Basic tutorial opens a real battlefield.
+        sleep(6)
+        let surface = app.otherElements["native.game.surface"]
+        XCTAssertEqual(surface.value as? String, "NativeBattleScene")
+        let pixels = try capture(app, name: "battle-land")
+        // Land is neutral, textured grey; opaque blue sea and black holes
+        // cannot satisfy this check. UI text alone covers far less than 10%.
+        let ground = stride(from: 0, to: pixels.count, by: 4).filter {
+            let r = Int(pixels[$0]), g = Int(pixels[$0+1]), b = Int(pixels[$0+2])
+            return min(r, min(g, b)) > 90 && max(r, max(g, b)) - min(r, min(g, b)) < 25
+        }.count
+        XCTAssertGreaterThan(Double(ground) / 4096, 0.10, "Land base texture must be visible")
+        app.terminate()
+    }
+
+    @MainActor
     func testMainMenuAndModeNavigationRender() throws {
         continueAfterFailure = false
         XCUIDevice.shared.orientation = .landscapeLeft

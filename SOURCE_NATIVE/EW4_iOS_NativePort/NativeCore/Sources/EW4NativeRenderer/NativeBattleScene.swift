@@ -590,6 +590,37 @@ public final class NativeBattleScene: SKScene {
         guard let image = UIImage(data: data)?.cgImage else {
             throw CocoaError(.fileReadCorruptFile)
         }
+        // The coast/river map is transparent on land. As in the reference
+        // renderer, repeat map_pt underneath it instead of exposing black.
+        let groundData = try Data(contentsOf: store.url("Maps", "map_pt.png"))
+        guard let groundImage = UIImage(data: groundData)?.cgImage else {
+            throw CocoaError(.fileReadCorruptFile)
+        }
+        let ground = SKNode()
+        ground.name = "native-map-ground"
+        ground.zPosition = -1001
+        let groundTexture = SKTexture(cgImage: groundImage)
+        for y in stride(from: 0, to: image.height, by: groundImage.height) {
+            for x in stride(from: 0, to: image.width, by: groundImage.width) {
+                let width = min(groundImage.width, image.width - x)
+                let height = min(groundImage.height, image.height - y)
+                let texture: SKTexture
+                if width == groundImage.width && height == groundImage.height {
+                    texture = groundTexture
+                } else {
+                    guard let edge = groundImage.cropping(to: CGRect(x: 0, y: 0, width: width, height: height)) else {
+                        throw CocoaError(.fileReadCorruptFile)
+                    }
+                    texture = SKTexture(cgImage: edge)
+                }
+                let tile = SKSpriteNode(texture: texture)
+                tile.anchorPoint = CGPoint(x: 0, y: 1)
+                tile.position = CGPoint(x: x, y: -y)
+                tile.size = CGSize(width: width, height: height)
+                ground.addChild(tile)
+            }
+        }
+        worldLayer.addChild(ground)
         let node = SKSpriteNode(texture: SKTexture(cgImage: image))
         node.anchorPoint = CGPoint(x: 0, y: 1)
         node.position = .zero
